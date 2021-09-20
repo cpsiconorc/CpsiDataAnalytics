@@ -1,0 +1,30 @@
+<AnimatedMapDataXML>
+  <MapSpec InternalID="38" ShortName="E" LongName="Blagoevgrad" />
+  <MapSpec InternalID="39" ShortName="A" LongName="Burgas" />
+  <MapSpec InternalID="40" ShortName="TX" LongName="Dobrich" />
+  <MapSpec InternalID="41" ShortName="EB" LongName="Gabrovo" />
+  <MapSpec InternalID="42" ShortName="CO" LongName="Grad Sofiya" />
+  <MapSpec InternalID="43" ShortName="X" LongName="Haskovo" />
+  <MapSpec InternalID="44" ShortName="K" LongName="Kurdzhali" />
+  <MapSpec InternalID="45" ShortName="KH" LongName="Kyustendil" />
+  <MapSpec InternalID="46" ShortName="OB" LongName="Lovech" />
+  <MapSpec InternalID="47" ShortName="M" LongName="Montana" />
+  <MapSpec InternalID="48" ShortName="PA" LongName="Pazardzhik" />
+  <MapSpec InternalID="49" ShortName="PK" LongName="Pernik" />
+  <MapSpec InternalID="50" ShortName="EH" LongName="Pleven" />
+  <MapSpec InternalID="51" ShortName="PB" LongName="Plovdiv" />
+  <MapSpec InternalID="52" ShortName="PP" LongName="Razgrad" />
+  <MapSpec InternalID="53" ShortName="P" LongName="Ruse" />
+  <MapSpec InternalID="54" ShortName="H" LongName="Shumen" />
+  <MapSpec InternalID="55" ShortName="CC" LongName="Silistra" />
+  <MapSpec InternalID="56" ShortName="CH" LongName="Sliven" />
+  <MapSpec InternalID="57" ShortName="CM" LongName="Smolyan" />
+  <MapSpec InternalID="58" ShortName="C" LongName="Sofiya" />
+  <MapSpec InternalID="59" ShortName="CT" LongName="Stara Zagora" />
+  <MapSpec InternalID="60" ShortName="T" LongName="Turgovishte" />
+  <MapSpec InternalID="61" ShortName="B" LongName="Varna" />
+  <MapSpec InternalID="62" ShortName="BT" LongName="Veliko Turnovo" />
+  <MapSpec InternalID="63" ShortName="BH" LongName="Vidin" />
+  <MapSpec InternalID="64" ShortName="BP" LongName="Vratsa" />
+  <MapSpec InternalID="65" ShortName="Y" LongName="Yambol" />
+</AnimatedMapDataXML>

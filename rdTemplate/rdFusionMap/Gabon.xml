@@ -1,0 +1,11 @@
+<AnimatedMapDataXML>
+  <MapSpec InternalID="GA.ES" ShortName="ES" LongName="Estuaire" />
+  <MapSpec InternalID="GA.HO" ShortName="HO" LongName="Haut-Ogooue" />
+  <MapSpec InternalID="GA.MO" ShortName="MO" LongName="Moyen-Ogooue" />
+  <MapSpec InternalID="GA.NG" ShortName="NG" LongName="Ngounie" />
+  <MapSpec InternalID="GA.NY" ShortName="NY" LongName="Nyanga" />
+  <MapSpec InternalID="GA.OI" ShortName="OI" LongName="Ogooue-Ivindo" />
+  <MapSpec InternalID="GA.OL" ShortName="OL" LongName="Ogooue-Lolo" />
+  <MapSpec InternalID="GA.OM" ShortName="OM" LongName="Ogooue-Maritime" />
+  <MapSpec InternalID="GA.WN" ShortName="WN" LongName="Woleu-Ntem" />
+</AnimatedMapDataXML>

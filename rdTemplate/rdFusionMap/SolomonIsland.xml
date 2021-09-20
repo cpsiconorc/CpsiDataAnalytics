@@ -1,0 +1,11 @@
+<AnimatedMapDataXML>
+  <MapSpec InternalID="SB.CN" ShortName="CN" LongName="Central" />
+  <MapSpec InternalID="SB.CH" ShortName="CH" LongName="Choiseul" />
+  <MapSpec InternalID="SB.GC" ShortName="GC" LongName="Guadalcanal" />
+  <MapSpec InternalID="SB.IS" ShortName="IS" LongName="Isabel" />
+  <MapSpec InternalID="SB.MK" ShortName="MK" LongName="Makira" />
+  <MapSpec InternalID="SB.ML" ShortName="ML" LongName="Malaita" />
+  <MapSpec InternalID="SB.RB" ShortName="RB" LongName="Rennell and Bellona" />
+  <MapSpec InternalID="SB.TE" ShortName="TE" LongName="Temotu" />
+  <MapSpec InternalID="SB.WE" ShortName="WE" LongName="Western" />
+</AnimatedMapDataXML>

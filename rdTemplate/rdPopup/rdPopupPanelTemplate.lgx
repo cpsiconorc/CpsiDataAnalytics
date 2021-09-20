@@ -1,0 +1,25 @@
+﻿<Rows ID="rdPopupPanelTable_rdPopupPanelID" Class="rdPopupPanel">
+	<Row ID="rdPopupPanelTitle_rdPopupPanelID">
+		<Column Class="rdPopupPanelTitle">
+			<Rows Width="100" WidthScale="%">
+				<Row>
+					<Column ID="rdPopupPanelColumn_rdPopupTitleID" Class="rdPopupPanelTitle">
+						<Division>
+							<Label ID="rdPopupPanelCaption" Caption="Caption" Class="rdPopupPanelTitleCaption"/>
+						</Division>
+					</Column>
+					<Column ID="rdPopupPanelControl_rdPopupTitleID" Class="rdPopupPanelControl">
+						<Label ID="rdPopupPanelX" Caption="X" Class="rdPopupPanelCommand">
+							<Action Type="ShowElement" Display="Hide" ElementID="rdPopupPanelID" ID="actionHidePanel" />
+						</Label>
+					</Column>
+				</Row>
+			</Rows>
+		</Column>
+	</Row>
+	<Row Class="rdPopupContent">
+		<Column>
+			<Division ID="PopupPanelContent" HtmlDiv="True"/>
+		</Column>
+	</Row>
+</Rows>

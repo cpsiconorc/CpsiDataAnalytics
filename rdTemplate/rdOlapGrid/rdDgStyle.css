@@ -1,0 +1,218 @@
+
+.rdDg
+{ 
+	font-size: 11px;
+	font-family: arial, sans-serif;
+}
+.rdDg TABLE
+{ 
+	font-size: 11px;
+	font-family: arial, sans-serif;
+}
+
+.rdDg IMG 	{
+	border: 0;
+	margin-top: 0px;
+	margin-left: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	}
+
+.rdDg A:link	{	
+	text-decoration:none;
+	color: #555555;
+}
+	
+.rdDgCaptionRow
+{
+    background-image: url(rd666666.png);
+    font-size: 11px; 
+    font-weight:bold;	
+	color: #FFFFFF;
+	height:26px;
+}
+.rdDgCaptionRow TD {
+	background-color: #666666;
+}
+
+.rdDgPanel {
+    background-color: #F8F8F8;
+	vertical-align: top;
+	border: 1px solid #C1C1C1;
+
+}
+
+.rdDgPanelLine {
+	border-top: 1px solid #C1C1C1;
+}
+
+.rdDgContentHeadingRow
+{
+	background-color:#EEEEEE;
+	width:100%;
+	padding:0;
+	margin-bottom:5px;
+}
+.rdDgContentHeading
+{
+	font-weight: bold;
+	vertical-align:middle;
+	white-space: nowrap;
+	padding:0;
+}
+
+.rdDgSubContentHeading
+{
+	font-weight: bold;
+}
+
+
+.rdDgOlapTable
+{    	
+	background-color : #CCCCCC;
+}
+.rdDgOlapTable tr:hover td 
+{	
+	background-color:#f4f4f4;
+}
+.rdOgPositionCellXAxis
+{
+	background-color: #ECECEC;
+	border-right-style:solid;
+	border-right-width:2px;
+	border-right-color:#CCCCCC;
+	vertical-align: top;
+	font-weight: normal;
+	padding:3px;
+}
+.rdOgPositionCellYAxis
+{
+	background-color: #ECECEC;
+    background-image: url(rdF7F7F7-ECECEC.png);
+    background-repeat:repeat-x; 
+	vertical-align: top;
+	font-weight: normal;
+	padding:3px;
+}
+.rdOgPositionLabelYAxis
+{
+	white-space:nowrap;
+}
+
+.rdOgSortColumn
+{
+	background-color: #ECECEC;
+    background-image: url(rdF7F7F7-ECECEC.png);
+    background-repeat:repeat-x; 
+	font-size: 10px;
+	vertical-align: top;
+	font-weight: normal;
+	padding:3px;
+}
+
+.rdOgDataCell
+{
+	background-color: white;
+	text-align: right;
+	padding:4px;
+	vertical-align:middle;
+}
+
+.rdDgChartContainer
+{
+	padding:5;
+}
+
+.rdOgPopupItem
+{
+	font-weight:normal;
+}
+.rdOgPopupItemSelected
+{
+	font-weight:bold;
+}
+
+.rdDgRowSpacer
+{
+	height:6px;
+}
+
+.rdDgNoPadding
+{
+	padding:0;
+}
+
+.rdOgCommand
+{
+	font-weight:normal;
+	color:#555555;
+	text-decoration: none;
+    background-image: url(../rdButton.png);
+    background-color: #DDDDDD;
+	border-top: 1px solid #DDDDDD;
+	border-bottom: 1px solid #777777;
+	border-right: 1px solid #777777;
+	border-left: 1px solid #DDDDDD;
+	margin-left: 3px;
+	padding-right: 3px;
+	padding-left: 3px;
+	padding-top: 2px;
+	padding-bottom: 2px;
+	line-height:24px;
+	white-space: nowrap;
+}
+
+.rdDgError
+{
+	color: DarkRed;
+	font-weight:bold;	
+}
+
+.rdDgSelected
+{
+    font-weight:bold;	
+	background-color: #666666;
+	border-color:#666666;
+	padding:2px;
+	color: White;
+}
+.rdDgSelected A:link	{	
+	color: White;
+}
+	
+.rdDgSelectedNot
+{
+	color: #555555;
+}
+
+.rdAlignMiddle 
+{
+	vertical-align: middle;
+}
+
+.rdDgFilterTable TD  { 
+	background-image: none;
+	background-color: transparent;
+	border-color:transparent;
+}
+	
+.rdBackgroundLevel0 {background-color: #F8F8F8;}
+.rdBackgroundLevel1 {background-color: #F0F0F0;}
+.rdBackgroundLevel2 {background-color: #E8E8E8;}
+.rdBackgroundLevel3 {background-color: #E0E0E0;}
+.rdBackgroundLevel4 {background-color: #D8D8D8;}
+.rdBackgroundLevel5 {background-color: #D0D0D0;}
+.rdBackgroundLevel6 {background-color: #C8C8C8;}
+.rdBackgroundLevel7 {background-color: #C0C0C0;}
+
+.rdHidden
+{
+	display:none;
+}
+
+.rdDgAlignRight
+{
+	text-align: right;
+}
+
+

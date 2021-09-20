@@ -1,0 +1,8 @@
+<AnimatedMapDataXML>
+  <MapSpec InternalID="01" ShortName="BY" LongName="Belarus" />
+  <MapSpec InternalID="02" ShortName="BG" LongName="Bulgaria" />
+  <MapSpec InternalID="03" ShortName="MD" LongName="Moldova" />
+  <MapSpec InternalID="04" ShortName="RO" LongName="Romania" />
+  <MapSpec InternalID="05" ShortName="UA" LongName="Ukraine" />
+  <MapSpec InternalID="06" ShortName="RU" LongName="Russia" />
+</AnimatedMapDataXML>

@@ -1,0 +1,11 @@
+<AnimatedMapDataXML>
+  <MapSpec InternalID="01" ShortName="AL" LongName="Alabama" />
+  <MapSpec InternalID="05" ShortName="AR" LongName="Arkansas" />
+  <MapSpec InternalID="12" ShortName="FL" LongName="Florida" />
+  <MapSpec InternalID="13" ShortName="GA" LongName="Georgia" />
+  <MapSpec InternalID="22" ShortName="LA" LongName="Louisiana" />
+  <MapSpec InternalID="37" ShortName="NC" LongName="North Carolina" />
+  <MapSpec InternalID="45" ShortName="SC" LongName="South Carolina" />
+  <MapSpec InternalID="47" ShortName="TN" LongName="Tennessee" />
+  <MapSpec InternalID="28" ShortName="MS" LongName="Mississippi" />
+</AnimatedMapDataXML>

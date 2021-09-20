@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Report ID="ReportAuthorDev.Templates.RowTemplate">
+  <Body>
+    <ResponsiveRow rdReportAuthorElementType="Row" ID="rdElementID">
+      <ResponsiveColumn ID="rdElementID_rdColumnID" Class="col-xs-6" />
+      <ResponsiveColumn ID="rdElementID_rdColumnID" Class="col-xs-6" />
+    </ResponsiveRow>
+  </Body>
+</Report>

@@ -1,0 +1,66 @@
+<Report>
+	<Body>
+		<Rows ID="rowsDrillGrid" CellSpacing="4">
+			<Row>
+				<Label Caption="Back" ID="lblGoback" Class="ThemeLinkButtonSmall">
+					<Action Type="Report">
+						<Target Type="Report" Report="@Request.rdParentReport~" RequestForwarding="True"/>
+					</Action>
+				</Label>
+			</Row>
+			<Row ID="rowDrillthroughTitle">
+				<Column ID="colDrillthroughTitle" ColSpan="2">
+					<Label ID="lblDrillthroughTitle" Caption="Drillthrough" Class="ThemeHeaderLarger" />
+				</Column>
+				<Column ShowModes="rdBrowser" >
+					<Spaces Size="3" />
+					<Image ID="lblExportExcel" Caption="rdTemplate/rdExport.png" Tooltip="Export">
+						<Action Type="Popup" ID="agExportPopupMenu" Class="rdThemePopupMenu">
+							<PopupOption ID="lblExportExcel" Caption="Excel">
+								<Action Type="NativeExcel" ID="exportExcel">
+									<Target Type="NativeExcel" ExportDataTableID="dtDrillthrough" RequestForwarding="True" />
+								</Action>
+							</PopupOption>
+							<PopupOption ID="lblExportCsv" Caption="CSV">
+								<Action Type="CSV" ID="exportCSV">
+									<Target Type="CSV" ExportDataTableID="dtDrillthrough" RequestForwarding="True" />
+								</Action>
+							</PopupOption>
+							<PopupOption ID="lblExportPdf" Caption="PDF">
+								<Action Type="PDF" ID="exportPDF">
+									<Target Type="PDF" RequestForwarding="True" ID="targetPDF" />
+									<LinkParams rdGroupDrillthroughId="" />
+								</Action>
+							</PopupOption>
+						</Action>
+					</Image>
+				</Column>
+			</Row>
+			<Row ID="rowTable">
+				<Column ColSpan="2">
+					<Division ID="divHeader">
+						<Rows>
+							<Row>
+								<Column>
+									<Label Caption="Drillthrough on:" ID="lblDrillDownBy" Class="ThemeBold" />
+								</Column>
+								<Column>
+									<Label ID="lblDrillDownByValue" />
+								</Column>
+							</Row>
+						</Rows>
+					</Division>
+					<LineBreak Lines="2" />
+					<DataTable CellSpacing="1" TableBorder="0" ID="dtDrillthrough" AltRowClass="ThemeAlternatingRow TD" AjaxPaging="True">
+						<DataLayer Type="Static" ID="dlDrillthrough" />
+						<AutoColumns Class="ThemeTextNormal" />
+						<InteractivePaging ShowPageNumber="Numbered" IDnotSupportedHere="pagingTableNumbered" HideShowPrevNextCaptions="False" PageRowCount="1000" HideWhenOnePage="True" Location="Top" CaptionType="Image" />
+					</DataTable>
+					<Division ID="rdNoIrrelevanceDrillthrough" ShowModes="None">
+						<Label ID="lblNotAvailable" Caption="Drillthrough is not available for this selection." />
+					</Division>
+				</Column>
+			</Row>
+		</Rows>
+	</Body>	
+</Report>

@@ -1,0 +1,18 @@
+<AnimatedMapDataXML>
+  <MapSpec InternalID="10" ShortName="PU" LongName="Busan" />
+  <MapSpec InternalID="05" ShortName="GB" LongName="Chungcheongbuk-do" />
+  <MapSpec InternalID="17" ShortName="GN" LongName="Chungcheongnam-do" />
+  <MapSpec InternalID="15" ShortName="TG" LongName="Daegu" />
+  <MapSpec InternalID="19" ShortName="TJ" LongName="Daejeon" />
+  <MapSpec InternalID="06" ShortName="KW" LongName="Gangwon-do" />
+  <MapSpec InternalID="18" ShortName="KJ" LongName="Gwangju" />
+  <MapSpec InternalID="13" ShortName="KG" LongName="Gyeonggi-do" />
+  <MapSpec InternalID="14" ShortName="KB" LongName="Gyeongsangbuk-do" />
+  <MapSpec InternalID="20" ShortName="KN" LongName="Gyeongsangnam-do" />
+  <MapSpec InternalID="12" ShortName="IN" LongName="Incheon" />
+  <MapSpec InternalID="01" ShortName="CJ" LongName="Jeju" />
+  <MapSpec InternalID="03" ShortName="CB" LongName="Jeollabuk-do" />
+  <MapSpec InternalID="16" ShortName="CN" LongName="Jeollanam-do" />
+  <MapSpec InternalID="11" ShortName="SO" LongName="Seoul" />
+  <MapSpec InternalID="21" ShortName="UL" LongName="Ulsan" />
+</AnimatedMapDataXML>

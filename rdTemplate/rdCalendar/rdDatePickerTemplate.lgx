@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report ID="DatePicker">
+  <Body>
+    <DataCalendar ID="rdTemp" DataColumn="rdNone" WeekdayCaptionFormat="dddd" TimePeriod="Month">
+      <DataLayer ID="rdDatePicker" Type="Static" />
+      <DataCalendarDay>
+        <DataCalendarRows>
+          <Label Class="rdDataCalendarDayLabel" ID="lblDayNo" Caption="@Data.Day~" >
+            <!-- Do not rename the element ID's as they may change the ID's in the end HTML which breaks the Calendar javascript -->
+            <Action Type="Link" ID="actInsertDates">
+              <Target Type="Link" ID="tgtInsertDates" Link="javascript:rdInserDates();" />
+              <!-- End -->
+            </Action>
+          </Label>
+        </DataCalendarRows>
+      </DataCalendarDay>
+      <DataCalendarPaging AjaxPaging="True" RerunDataLayer="False" />
+    </DataCalendar>
+  </Body>
+</Report>

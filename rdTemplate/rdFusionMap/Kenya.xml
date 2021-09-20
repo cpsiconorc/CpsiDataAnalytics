@@ -1,0 +1,10 @@
+<AnimatedMapDataXML>
+  <MapSpec InternalID="01" ShortName="CE" LongName="Central" />
+  <MapSpec InternalID="02" ShortName="CO" LongName="Coast" />
+  <MapSpec InternalID="03" ShortName="EA" LongName="Eastern" />
+  <MapSpec InternalID="05" ShortName="NA" LongName="Nairobi" />
+  <MapSpec InternalID="06" ShortName="NE" LongName="North Eastern" />
+  <MapSpec InternalID="07" ShortName="NY" LongName="Nyanza" />
+  <MapSpec InternalID="08" ShortName="RV" LongName="Rift Valley" />
+  <MapSpec InternalID="09" ShortName="WE" LongName="Western" />
+</AnimatedMapDataXML>

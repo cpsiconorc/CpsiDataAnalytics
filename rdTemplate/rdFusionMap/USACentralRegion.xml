@@ -1,0 +1,14 @@
+<AnimatedMapDataXML>
+  <MapSpec InternalID="17" ShortName="IL" LongName="Illinois" />
+  <MapSpec InternalID="19" ShortName="IA" LongName="Iowa" />
+  <MapSpec InternalID="20" ShortName="KS" LongName="Kansas" />
+  <MapSpec InternalID="26" ShortName="MI" LongName="Michigan" />
+  <MapSpec InternalID="27" ShortName="MN" LongName="Minnesota" />
+  <MapSpec InternalID="29" ShortName="MO" LongName="Missouri" />
+  <MapSpec InternalID="31" ShortName="NE" LongName="Nebraska" />
+  <MapSpec InternalID="38" ShortName="ND" LongName="North Dakota" />
+  <MapSpec InternalID="40" ShortName="OK" LongName="Oklahoma" />
+  <MapSpec InternalID="46" ShortName="SD" LongName="South Dakota" />
+  <MapSpec InternalID="48" ShortName="TX" LongName="Texas" />
+  <MapSpec InternalID="55" ShortName="WI" LongName="Wisconsin" />
+</AnimatedMapDataXML>

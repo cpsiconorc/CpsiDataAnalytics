@@ -1,0 +1,9 @@
+<AnimatedMapDataXML>
+  <MapSpec InternalID="GQ.AN" ShortName="AN" LongName="Annobon" />
+  <MapSpec InternalID="GQ.BN" ShortName="BN" LongName="Bioko Norte" />
+  <MapSpec InternalID="GQ.BS" ShortName="BS" LongName="Bioko Sur" />
+  <MapSpec InternalID="GQ.CS" ShortName="CS" LongName="Centro Sur" />
+  <MapSpec InternalID="GQ.KN" ShortName="KN" LongName="Kie Ntem" />
+  <MapSpec InternalID="GQ.LI" ShortName="LI" LongName="Litoral" />
+  <MapSpec InternalID="GQ.WN" ShortName="WN" LongName="Wele Nzas" />
+</AnimatedMapDataXML>

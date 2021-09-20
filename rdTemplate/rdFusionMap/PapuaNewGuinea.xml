@@ -1,0 +1,22 @@
+<AnimatedMapDataXML>
+  <MapSpec InternalID="PG.CE" ShortName="CE" LongName="Central" />
+  <MapSpec InternalID="PG.CH" ShortName="CH" LongName="Chimbu" />
+  <MapSpec InternalID="PG.EN" ShortName="EN" LongName="East New Britain" />
+  <MapSpec InternalID="PG.ES" ShortName="ES" LongName="East Sepik" />
+  <MapSpec InternalID="PG.EH" ShortName="EH" LongName="Eastern Highlands" />
+  <MapSpec InternalID="PG.EG" ShortName="EG" LongName="Enga" />
+  <MapSpec InternalID="PG.GU" ShortName="GU" LongName="Gulf" />
+  <MapSpec InternalID="PG.MD" ShortName="MD" LongName="Madang" />
+  <MapSpec InternalID="PG.MN" ShortName="MN" LongName="Manus" />
+  <MapSpec InternalID="PG.MB" ShortName="MB" LongName="Milne Bay" />
+  <MapSpec InternalID="PG.MR" ShortName="MR" LongName="Morobe" />
+  <MapSpec InternalID="PG.NC" ShortName="NC" LongName="National Capital District" />
+  <MapSpec InternalID="PG.NI" ShortName="NI" LongName="New Ireland" />
+  <MapSpec InternalID="PG.NS" ShortName="NS" LongName="North Solomons" />
+  <MapSpec InternalID="PG.NO" ShortName="NO" LongName="Northern" />
+  <MapSpec InternalID="PG.SA" ShortName="SA" LongName="Sanduan" />
+  <MapSpec InternalID="PG.SH" ShortName="SH" LongName="Southern Highlands" />
+  <MapSpec InternalID="PG.WN" ShortName="WN" LongName="West New Britain" />
+  <MapSpec InternalID="PG.WE" ShortName="WE" LongName="Western" />
+  <MapSpec InternalID="PG.WH" ShortName="WH" LongName="Western Highlands" />
+</AnimatedMapDataXML>

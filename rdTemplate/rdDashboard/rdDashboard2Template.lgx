@@ -1,0 +1,512 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Report ID="Dashboard.rdDashboard2Template">
+	<StyleSheet StyleSheet="rdTemplate/rdDashboard/rdDashboard2.css"/>
+	<Body>
+
+		<Tabs ID="rdDashboardTabs" TabbingStyle="RefreshPage" Class="rdDashboard rdDashboardTabs" ActiveTabBackgroundColor="transparent" BorderColor="#888888" Width="100" WidthScale="%">
+			<TabPanel ID="rdTabTemplate" Caption="" Class="rdDashboardTab" rdNewTabCaption="New Tab">
+			</TabPanel>
+			<TabPanel ID="rdTabAddNewTab" Caption="Add a New Tab" rdNewTabCaption="New Tab">
+			</TabPanel>
+		</Tabs>
+		<Division ID="rdDashboardRoot" Class="rdDashboard">
+			<InputHidden ID="rdDashboardSingleInstanceOnlyPanelsList" DefaultValue=""/>
+			<InputHidden ID="rdDraggableTabs" DefaultValue="True"/>
+			<InputHidden ID="DashboardIdentifier" DefaultValue="rdDashboardId"/>
+			<InputHidden ID="ActiveTabIdentifier" DefaultValue="rdActiveTabId"/>
+      <InputHidden ID="rdUseGalleryFile" DefaultValue="False"/>
+      <InputHidden ID="rdGlobalFilterVisible" DefaultValue="@Request.rdGlobalFilterVisible~"/>
+      <Label Class="rdDashboardHidden" ID="rdDashboardAdjustable" Caption="True"/>
+			<Rows ID="rdDashboardPanelContainer" Width="100" WidthScale="%" CellSpacing="0" Class="rdDashboardPanelContainer">
+				<Row ID="rdDashboardMenu">
+					<Column Class="rdDashboardMenu">
+            <Division ID="rdAddTabCog" ShowModes="None">
+              <Image Caption="../rdTemplate/rdDashboard/rdAddNewTab.png" AltText="Add Tab" Tooltip="Add Tab" ID="rdAddNewTabCog" Width="24" Height="24">
+                <Action Type="Javascript" ID="actRenamethisTab" Javascript="LogiXML.Dashboard.pageDashboard.rdAddNewTab();" />
+              </Image>
+              <Division ID="divUndoRedo">
+                <Division ID="divUndo">
+                  <Division ShowModes="None" ID="divUndoEnabled">
+                    <EventHandler DhtmlEvent="onclick">
+                      <Action Type="Report" ID="actUndo">
+                        <Target Type="Report" ID="tgtUndo" >
+                          <WaitPage />
+                        </Target>
+                        <LinkParams rdCommand="Undo" rdDbCommandID="@Function.GUID~" />
+                      </Action>
+                    </EventHandler>
+                    <Division>
+                      <Image Caption="rdTemplate/rdUndo.png" ID="imgUndoEnabled" AltText="Undo." Tooltip="Undo. Ctrl+Z" />
+                    </Division>
+                  </Division>
+                  <Division ShowModes="None" ID="divUndoDisabled">
+                    <Image Caption="rdTemplate/rdUndoDisable.png" ID="imgUndoDisabled" AltText="Undo." Tooltip="Undo. Ctrl+Z" />
+                  </Division>
+                </Division>
+                <Division ID="divRedo">
+                  <Division ShowModes="None" ID="divRedoEnabled">
+                    <EventHandler DhtmlEvent="onclick">
+                      <Action Type="Report" ID="actRedo">
+                        <Target Type="Report" ID="tgtRedo" >
+                          <WaitPage />
+                        </Target>
+                        <LinkParams rdCommand="Redo" rdDbCommandID="@Function.GUID~" />
+                      </Action>
+                    </EventHandler>
+                    <Division>
+                      <Image Caption="rdTemplate/rdRedo.png" ID="imgRedoEnabled" AltText="Redo." Tooltip="Redo. Ctrl+Y" />
+                    </Division>
+                  </Division>
+                  <Division ShowModes="None" ID="divRedoDisabled">
+                    <Image Caption="rdTemplate/rdRedoDisable.png" ID="imgRedoDisabled" AltText="Redo." Tooltip="Redo. Ctrl+Y" />
+                  </Division>
+                </Division>
+              </Division>
+            </Division>
+            <Division ID="rdRenameTabDiv" ShowModes="None">
+              <InputText ID="txtRenameTab" Class="rdDashboardText" >
+                <EventHandler DhtmlEvent="onblur">
+                  <Action Type="Link" ID="actionRenameTab">
+                    <Target Type="Link" Link="javascript: LogiXML.Dashboard.pageDashboard.rdRenameDashboardTab();" />
+                  </Action>
+                </EventHandler>
+              </InputText>
+            </Division>
+            <Division ID="rdSettingsCog"  ShowModes="None">
+              <Image Caption="../rdTemplate/rdDashboard/rdSettingsCog.png" AltText="Settings" Tooltip="Settings" ID="rdTabSettingsCog" Width="16" Height="16">
+                <Action Type="Popup" ID="ppMenu">
+                  <PopupOption Caption="Add Panels" ID="ppoAddPanels">
+                    <Action Type="Javascript" ID="actAddPanels" Javascript="LogiXML.Dashboard.pageDashboard.rdShowAddDashboardPanels();" />
+                  </PopupOption>
+                  <PopupOption Caption="Add Global Filters" ID="ppoGlobalFilter">
+                    <Action Type="Javascript" ID="actShowGlobalFilter" Javascript="document.getElementById('rdGlobalFilterVisible').value='True'; ShowElement(this.id, 'rdGlobalAfContainer', 'Show'); ShowElement(this.id, 'rowGlobalFilterCaption', 'Hide')" />
+                  </PopupOption>
+                  <PopupOption Caption="Change Layout" ID="ppoChangeLayout">
+                    <Action Type="Javascript" ID="actChangeLayout" Javascript="LogiXML.Dashboard.pageDashboard.rdSetDashboardColumns('rdChangeLayout'); ShowElement(this.id, 'ppChangeLayout', 'Show');" />
+                  </PopupOption>
+                  <PopupOption Caption="Rename Tab" ID="ppoRenamethisTab">
+                    <Action Type="Javascript" ID="actRenamethisTab" Javascript="LogiXML.Dashboard.pageDashboard.rdShowRenameTab();" />
+                  </PopupOption>
+                  <PopupOption Caption="Remove Tab" ID="ppoRemovethisTab">
+                    <Action Type="Report" ID="actionRemoveTab" ConfirmMessage="Remove?  Are you sure?">
+                      <Target Type="Report" ID="targetRemoveTab" RequestForwarding="True" />
+                      <LinkParams rdDashboardRemoveTab="" />
+                    </Action>
+                  </PopupOption>
+                </Action>
+              </Image>
+            </Division>
+            <Division ID="divChangeLayout">
+              <PopupPanel ID="ppChangeLayout" PopupModal="True" Draggable="True" PopupPanelLocation="Center" Caption="Tab Layout">
+                <Rows ID="rdTabChangeTable" TableBorder="0" CellSpacing="2" Width="100" WidthScale="%">
+                  <Row ID="rowTabChange">
+                    <Column>
+                      <Rows Class="rdDashboardPanel" Width="100" WidthScale="%" ID="rowsTabChange">
+                        <Row>
+                          <Column>
+                            <Rows CellSpacing="10">
+                              <Row ShowModes="None">
+                                <Column>
+                                  <Label ID="lblRenameTabSave" Caption="Rename this Tab:" Class="rdDashboardText" For="txtRenameTab" />
+                                </Column>
+                              </Row>
+                              <Row ID="rowTabColumnCount">
+                                <Column>
+                                  <Label ID="lblColumnCount" Caption="Number of Panel Columns: " Class="rdDashboardText" For="lstColumnCount" />
+                                </Column>
+                                <Column>
+                                  <InputSelectList ID="lstColumnCount" OptionValueColumn="ColumnCount" OptionCaptionColumn="ColumnCount">
+                                    <DataLayer Type="Static" ID="dlColumnCnt">
+                                      <StaticDataRow ColumnCount="1" />
+                                      <StaticDataRow ColumnCount="2" />
+                                      <StaticDataRow ColumnCount="3" />
+                                      <StaticDataRow ColumnCount="4" />
+                                      <StaticDataRow ColumnCount="5" />
+                                      <StaticDataRow ColumnCount="6" />
+                                      <StaticDataRow ColumnCount="7" />
+                                      <StaticDataRow ColumnCount="8" />
+                                    </DataLayer>
+                                    <EventHandler DhtmlEvent="onchange">
+                                      <Action Type="Link" ID="actionSetWideColumn">
+                                        <Target Type="Link" Link="javascript: LogiXML.Dashboard.pageDashboard.rdSetDashboardColumns('rdChangeLayout');" />
+                                      </Action>
+                                    </EventHandler>
+                                  </InputSelectList>
+                                  <Spaces Size="8" />
+                                  <Division ID="divFreeformPanels" ShowModes="None">
+                                    <Image Caption="../rdTemplate/rdDashboard/rdFreeformLayout.gif" ID="rdImgFreeformLayout" Tooltip="Freeform Layout." />
+                                  </Division>
+                                </Column>
+                              </Row>
+                            </Rows>
+                          </Column>
+                        </Row>
+                      </Rows>
+                    </Column>
+                  </Row>
+                </Rows>
+                <Rows Width="100" WidthScale="%">
+                  <Row>
+                    <Column Width="100" WidthScale="%" Class="rdDashboardControl">
+                      <Label Caption="Done" Class="rdDashboardCommand rdDashboardControl" ID="tabLayoutDoneButton">
+                        <EventHandler DhtmlEvent="onmouseup">
+                          <Action Type="ShowElement" ElementID="ppChangeLayout" ID="actHidePopupLayout" Display="Hide" />
+                        </EventHandler>
+                        <Action Type="Javascript" Javascript="LogiXML.Dashboard.pageDashboard.rdSetDashboardColumns()" ID="actRefreshDasboardOnLayoutChange" />
+                      </Label>
+                    </Column>
+                  </Row>
+                </Rows>
+              </PopupPanel>
+            </Division>
+            <Rows TableBorder="0" CellSpacing="0" Width="100" WidthScale="%">
+							<Row ID="rowChangeTab">
+								<Column>
+									<Division ID="rdDivMobileDashboardTabs">
+										<PopupPanel ID="pnlMobileDashboardTabs" Caption="Dashboard Tabs" Class="ThemeTextLarge" CloseButtonCaption="X" Draggable="True" PopupModal="True" PopupPanelLocation="left, top" Width="100" WidthScale="%">
+											<DataMenu ID="menuDashboardTabs" ActionIDColumn="Action" CaptionColumn="Caption" HideDataMenuArrows="True" Class="ThemeTextLarge">
+												<DataLayer Type="Static" ID="dlDashboardTabs">
+												</DataLayer>
+												<Action ID="actionLink" Type="Link">
+													<Target ID="targetLink" Type="Link" Link="javascript: LogiXML.Dashboard.pageDashboard.rdNavigateBetweenDashboardTabs('@Data.Value~', pnlMobileDashboardTabs)"/>
+												</Action>
+											</DataMenu>
+										</PopupPanel>
+									</Division>
+									<Division ID="rdAjaxFeedback" ShowModes="None">
+										<Label ID="lblAjaxFeedback" Caption="Working..." />
+									</Division>
+								</Column>
+              </Row>
+						</Rows>
+					</Column>
+				</Row>
+				<Row ID="rdDashboardPanels">
+          <InputHidden DefaultValue="None" ID="lblAutoBookmark" />
+          <Column Class="rdDashboard">
+
+            
+						<Division HtmlDiv="True" ID="rdDivDashboardPanelTable" Class="dashboardPanelContainer" >
+							<Rows TableBorder="0" ID="rdDashboardPanelTable"  CellSpacing="0" Width="100" WidthScale="%">
+                <Row ID="rdGlobalFilterCaption_Container" ShowModes="None">
+                  <Column Class="rdDashboardFilterCaption" ColSpan="99">
+									  <Image Caption="../rdTemplate/rdDashboard/rdGlobalFilterIcon.png" AltText="Change Filter" Tooltip="Change Filter" ID="imgShowGlobalFilter2" />
+                    <Label ID="rdGlobalFilterCaption" Caption="(set by AnalysisFilter)" />
+                    <Action Type="Javascript" ID="actShowGlobalFilter2" Javascript="document.getElementById('rdGlobalFilterVisible').value='True'; ShowElement(this.id, 'rdGlobalAfContainer', 'Toggle', 'FadeIn'); ShowElement(this.id, 'rowGlobalFilterCaption', 'Hide'); Y.LogiXML.ChartCanvas.reflowAllCharts();" />
+                  </Column>
+                </Row>
+                <Row ID="rdSpacer" />
+                <Row ID="rdGlobalAfContainer" Class="rdDashboardGlobalFilterContainer" ShowModes="None">
+                  <Column ColSpan="99" Class="rdDashboardColumn rdDashboardGlobalFilterContainer">
+                    <Rows Class="rdDashboardPanel rdDashboardFilterPanel" >
+                      <Row>
+                        <Column>
+                          <Label ID="GlobalCaption" Caption="Global Filter" Class="rdDashboardTitleCaption" />
+                          <AnalysisFilter ID="rdGlobalAf" SaveFile="" FilterCaptionElementID="rdGlobalFilterCaption" >
+                          </AnalysisFilter>
+                        </Column>
+                        <Column Class="rdDashboardFilterAlignement" >
+                          <Label ID="rdPopupPanelX" Caption="X" Class="rdPopupPanelCommand">
+                            <Action Type="Javascript" ID="actHideGlobalFilter" Javascript="document.getElementById('rdGlobalFilterVisible').value=''; ShowElement(this.id, 'rdGlobalAfContainer', 'Hide'); ShowElement(this.id, 'rowGlobalFilterCaption', 'Show'); Y.LogiXML.ChartCanvas.reflowAllCharts();" />
+                          </Label>
+                        </Column>
+                      </Row>
+                    </Rows>
+                  </Column>
+                </Row>
+                
+								<Row ID="rowPanels">
+ 									<Column>
+                    
+										<Division ID="rdDashboardPanelID" HtmlDiv="True" Class="rdDashboardPanel" >
+             					<Rows ID="rdDashboardPanelInnerTable" Class="panelInnerTable">
+												<Row ID="rdDashboardPanelTitleID" Class="panelTitle">
+													<Column Class="rdDashboardTitle">
+														<Rows Width="100" WidthScale="%" Class="rdDashboardTitle">
+															<Row>
+																<Column ID="rdDashboardCaptionBarID">
+																	<Division ID="rdDashboardPanelCaptionDivID" >
+																		<Label ID="rdDashboardCaptionID" Caption="Caption" Class="rdDashboardTitleCaption" For="rdDashboardPanelRenameID" />
+																	</Division>
+																	<Division ID="rdDashboardPanelRenameDivID" ShowModes="None">
+																		<InputText ID="rdDashboardPanelRenameID" Class="rdDashboardText panelTitleRename" Value="Caption" InputSize="60" >
+																			<EventHandler DhtmlEvent="onblur">
+																				<Action Type="Link" ID="actionRenamePanel">
+																					<Target Type="Link" Link="javascript: LogiXML.Dashboard.pageDashboard.rdSaveDashboardParams('rdDashboardPanelID', true, true);" />
+																				</Action>
+																			</EventHandler>
+																		</InputText>
+																	</Division>
+																</Column>
+																<Column ID="rdDashboardControl" Class="rdDashboardControl">
+																	<Image Caption="../rdTemplate/rdDashboard/rdSettingsCog.png" AltText="Settings" Tooltip="Settings" ID="rdPanelSettingsCog_rdPnlInstanceID"
+																		 Width="16" Height="16">
+																		<Action Type="Popup" ID="ppPanelMenu_rdPnlInstanceID" PopupLocation="Left">
+                                      <PopupOption Caption="Edit" ID="ppoEditAgViz_rdPnlInstanceID" >
+                                        <Action ID="actEditAgViz" Type="ShowElement" ElementID="popupEditAgViz_rdPnlInstanceID" />
+                                      </PopupOption>
+																			<PopupOption Caption="Edit" ID="ppoEdit_rdPnlInstanceID" AutoFilterCaption="Filter">
+																				<Action ID="actDashboardEditPanel" Type="Link">
+																					<Target Type="Link" Link="javascript: ShowElement(null, 'ppPanelParamsID', 'Show');LogiXML.Dashboard.pageDashboard.rdAddRefreshEventForPanelEditPopupCloseButton('rdDashboardPanelID', 'rdRefreshForCancel');" ID="tgtRenamepanel" />
+																				</Action>
+																			</PopupOption>
+																			<PopupOption Caption="Rename" ID="ppoRename_rdPnlInstanceID">
+																				<Action ID="actDashboardRenamePanel" Type="Link">
+																					<Target Type="Link" Link="javascript: LogiXML.Dashboard.pageDashboard.rdShowRenamePanel('rdDashboardPanelID', 'rdPnlInstanceID');" ID="tgtRenamepanel" />
+																				</Action>
+																			</PopupOption>
+																			<PopupOption Caption="Remove" ID="ppoRemove_">
+																				<Action ID="actDashboardRemovePanel" Type="Link" ConfirmMessage="Remove?  Are you sure?">
+																					<Target Type="Link" Link="javascript: LogiXML.Dashboard.pageDashboard.rdRemoveDashboardPanel('rdDashboardPanelID');" />
+																				</Action>
+																			</PopupOption>
+                                      <PopupOption ID="ppoExportMenu_rdPnlInstanceID" Caption="Export" Condition="1=2">
+                                        <Action Type="Popup" ID="ppoExportAct_rdPnlInstanceID">
+                                          <PopupOption ID="ppoExport_rdPnlInstanceID" Caption="Excel" >
+                                            <Action Type="NativeExcel" ID="actDashPanelExportExcel">
+                                              <Target Type="NativeExcel" ID="tgDashPanelExportExcel" />
+                                              <LinkParams rdDashboardPanelExportEnabled="True" />
+                                            </Action>
+                                          </PopupOption>
+                                          <PopupOption ID="ppoExportCSV_rdPnlInstanceID" Caption="CSV" >
+                                            <Action Type="CSV" ID="actDashPanelExportCSV">
+                                              <Target Type="CSV" ID="tgDashPanelExportCSV" />
+                                              <LinkParams rdDashboardPanelExportEnabled="True" />
+                                            </Action>
+                                          </PopupOption>
+                                        </Action>
+                                      </PopupOption>
+                                      <PopupOption Caption="Edit visualization" ID="ppoEditVis_rdPnlInstanceID" Condition="&quot;@Constant.goAnalysisType~&quot; != &quot;&quot;">
+                                        <Action ID="actEditViz" Type="Report">
+                                          <Target Report="InfoGo.goDiscovery" Type="Report">
+                                            <WaitPage />
+                                          </Target>
+                                          <LinkParams rdBookmarkCollection="@Request.rdBookmarkCollection~" rdBookmarkID="@Request.rdBookmarkID~" rdBookmarkUserName="@Request.rdBookmarkUserName~" rdDashPanelId="rdDashboardPanelID" rdEditThinkspace="True" rdOriginalReport="@Request.rdReport~"/>
+                                        </Action>
+                                      </PopupOption>
+                                    </Action>
+																	</Image>
+
+                                  <PopupPanel ID="popupEditAgViz_rdPnlInstanceID" Draggable="True" PopupModal="True" Caption="Edit Panel" rdNoElementShowHistory="True">
+                                    <IncludeFrame ID="subEditAgViz_rdPnlInstanceID" FrameBorder="False" Class="rdEditAgVizFrame" Title="Edit Panel">
+                                      <Target Type="IncludeFrameReport" Report="rdDashboardEditXX" ID="targetEditAgViz_rdPnlInstanceID" />
+                                      <LinkParams rdDashboardReportID="@Function.Report~" rdDashboardPanelID="rdPnlInstanceID" rdInstanceID="rdInstanceID" rdRnd="@Function.GUID~" />
+                                    </IncludeFrame>
+                                  </PopupPanel>
+																</Column>
+															</Row>
+                              <Row ID="MissingDataMessage" Class="rdDashboardHidden">
+                                <Column>
+                                  <Label ID="rdMissingDataMessage" Caption="This panel's data is no longer available. {0}" Class="ThemeErrorText" />
+                                </Column>
+                              </Row>
+														</Rows>
+													</Column>
+												</Row>
+												<Row ID="rdMobileDashboardPanelTitleID" Class="panelTitle">
+													<Note Note="This Row element is specific to Mobile Dashboards, almost similar to the Row element above with a few changes. The one above gets replaced with this one in Dashboard.vb code." />
+													<Column Class="rdDashboardTitle">
+														<Rows Width="100" WidthScale="%" Class="rdDashboardTitle">
+															<Row>
+																<Column ID="rdDashboardCaptionBarID">
+																	<Division ID="rdDashboardPanelCaptionDivID" >
+																		<Label ID="rdDashboardCaptionID" Caption="Caption" Class="rdDashboardTitleCaption" For="rdDashboardPanelRenameID" />
+																	</Division>
+																	<Division ID="rdDashboardPanelRenameDivID" ShowModes="None">
+																		<InputText ID="rdDashboardPanelRenameID" Class="rdDashboardText" Value="Caption" InputSize="20" >
+																			<EventHandler DhtmlEvent="onblur">
+																				<Action Type="Link" ID="actionRenamePanel">
+																					<Target Type="Link" Link="javascript: LogiXML.Dashboard.pageDashboard.rdSaveDashboardParams('rdDashboardPanelID', true, true);" />
+																				</Action>
+																			</EventHandler>
+																		</InputText>
+																	</Division>
+																</Column>
+																<Column Width="33" WidthScale="%"  ID="rdDashboardChangePanelID" Class="rdDashboardControl">
+																	<Division HtmlDiv="True">
+																		<Action Type="Javascript" ID="showChange_rdPnlInstanceID" Javascript="LogiXML.Dashboard.pageDashboard.rdShowChangePanelMenu('ppPanelMenu_rdPnlInstanceID', 'rdDashboardPanelID')" />
+																		<Division HtmlDiv="True">
+																			<Image Caption="../rdTemplate/rdDashboard/rdSettingsCog.png" AltText="Settings" Tooltip="Settings" ID="rdPanelSettingsCog_rdPnlInstanceID" Width="16" Height="16">
+																				<Action Type="Popup" ID="ppPanelMenu_rdPnlInstanceID" PopupLocation="Left" rdMobileDashboard="True">
+																					<PopupOption Caption="Edit" ID="ppoEdit_rdPnlInstanceID">
+																						<Action ID="actDashboardEditPanel" Type="Link">
+																							<Target Type="Link" Link="javascript: ShowElement(null, 'ppPanelParamsID', 'Show');LogiXML.Dashboard.pageDashboard.rdAddRefreshEventForPanelEditPopupCloseButton('rdDashboardPanelID', 'rdPnlInstanceID');" ID="tgtRenamepanel" />
+																						</Action>
+																					</PopupOption>
+																					<PopupOption Caption="Rename" ID="ppoRename_rdPnlInstanceID">
+																						<Action ID="actDashboardRenamePanel" Type="Link">
+																							<Target Type="Link" Link="javascript: LogiXML.Dashboard.pageDashboard.rdShowRenamePanel('rdDashboardPanelID', 'rdPnlInstanceID');" ID="tgtRenamepanel" />
+																						</Action>
+																					</PopupOption>
+																					<PopupOption Caption="Remove" ID="ppoRemove_rdPnlInstanceID">
+																						<Action ID="actDashboardRemovePanel" Type="Link" ConfirmMessage="Remove?  Are you sure?">
+																							<Target Type="Link" Link="javascript: LogiXML.Dashboard.pageDashboard.rdRemoveDashboardPanel('rdDashboardPanelID');" />
+																						</Action>
+																					</PopupOption>
+																					<PopupOption Caption="Move Up" ID="ppoMoveUp_rdPnlInstanceID">
+																						<Action ID="actDashboardMovePanelUp" Type="Link">
+																							<Target Type="Link" Link="javascript: LogiXML.Dashboard.pageDashboard.rdMoveMobileDashboardPanel('rdDashboardPanelID', 'MoveUp', 'pnlChangePanelsID')" />
+																						</Action>
+																					</PopupOption>
+																					<PopupOption Caption="Move Down" ID="ppoMoveDown_rdPnlInstanceID">
+																						<Action ID="actDashboardMovePanelDown" Type="Link">
+																							<Target Type="Link" Link="javascript: LogiXML.Dashboard.pageDashboard.rdMoveMobileDashboardPanel('rdDashboardPanelID', 'MoveDown', 'pnlChangePanelsID')"/>
+																						</Action>
+																					</PopupOption>
+																				</Action>
+																			</Image>
+																		</Division>
+																	</Division>
+																</Column>
+															</Row>
+														</Rows>
+													</Column>
+												</Row>
+                        <Row ID="rdPanelFilterCaption_rdInstanceID_Container" ShowModes="None">
+                          <Column Class="rdDashboardFilterCaption">
+                            <Action ID="actShowPanelFilter" Type="Link">
+                              <Target Type="Link" Link="javascript: ShowElement(null, 'ppPanelParamsID', 'Show');LogiXML.Dashboard.pageDashboard.rdAddRefreshEventForPanelEditPopupCloseButton('rdDashboardPanelID', 'rdRefreshForCancel');" ID="tgtRenamepanel" />
+                            </Action>
+                            <Image Caption="../rdTemplate/rdDashboard/rdFilterIcon.png" AltText="Change Filter" Tooltip="Change Filter" ID="imgShowPanelFilter2" />
+                            <Label ID="rdPanelFilterCaption_rdInstanceID" />
+                          </Column>
+                        </Row>
+                        <Row ID="rdPanelGlobalFilterCaption_rdInstanceID_Container" ShowModes="None">
+                          <Column Class="rdDashboardGlobalFilterCaption">
+                            <Action Type="Javascript" ID="actShowGlobalFilter2" Javascript="document.getElementById('rdGlobalFilterVisible').value='True'; ShowElement(this.id, 'rdGlobalAfContainer', 'Toggle', 'FadeIn'); ShowElement(this.id, 'rowGlobalFilterCaption', 'Hide'); Y.LogiXML.ChartCanvas.reflowAllCharts();" />
+                            <Image Caption="../rdTemplate/rdDashboard/rdGlobalFilterIcon.png" AltText="Change Filter" Tooltip="Change Filter" ID="imgShowPanelFilter2" />
+                            <Label ID="rdPanelGlobalFilterCaption_rdInstanceID" />
+                          </Column>
+                        </Row>
+                        <Row ID="rdDrillFilterCaption_rdInstanceID_Container" Class="rdChartDrillToBreadcrumb" ShowModes="None">
+                          <Column Class="rdDrillFilterCaption">
+                            <Division HtmlDiv="True" Class="rdDrillFilterRow">
+                              <Label ID="rdDrillFilterCaption_rdInstanceID" Class="rdDrillFilterContent"/>
+                              <Label ID="rdDrillFilterClearButton_rdInstanceID" Class="rdDrillFilterClearButton" Caption="X" Tooltip="Clear Drill States"/>
+                            </Division>
+                          </Column>
+						  <Division HtmlDiv="True" Class="rdPopupMenu rdDrillFilterMenu" ShowModes="None" ID="rdDrillFilterMenu_rdInstanceID_rdPopup">
+                            <Division HtmlDiv="True" Class="bd">
+                            </Division>
+                          </Division>
+                        </Row>
+                        <Row ID="rdDashboard2PanelParamsID" Class="rdDashboardParams" ShowModes="None">
+													<Column>
+														<PopupPanel ID="ppPanelParamsID" PopupModal="True" Draggable="True" PopupPanelLocation="Mouse" CloseButtonCaption="X" Caption="Edit">
+															<Rows TableBorder="0" CellSpacing="0" Width="100" WidthScale="%">
+                                <Row Width="100" WidthScale="%">
+																	<Column ID="rdDashboardParamsID" Class="rdDashboardParams" ColSpan="2">
+																	</Column>
+																</Row>
+																<Row ID="rowDashboardSave">
+																	<Column Width="100" WidthScale="%" Class="rdDashboardControl">
+																		<Division ID="rdDashboardSaveID" Class="rdDashboardParamsSave">
+																			<Label ID="lblSavePanel" Caption="Done" Class="rdDashboardCommand">
+																				<EventHandler DhtmlEvent="onclick">
+																					<Action Type="Javascript" ID="actSaveParams" Javascript="LogiXML.Dashboard.pageDashboard.rdSaveDashboardParams('rdDashboardPanelID');ShowElement(null, 'ppPanelParamsID', 'Hide');" Validate="True" />
+																				</EventHandler>
+																			</Label>
+																		</Division>
+																	</Column>
+																</Row>
+															</Rows>
+														</PopupPanel>
+													</Column>
+												</Row>
+												<Row ID="Dashboard2PanelContent" Class="rdDashboardContent">
+													<Column>
+														<Division HtmlDiv="True" rdDashboardContent="True" Class="panelBody">
+                            </Division>
+													</Column>
+												</Row>
+											</Rows>
+											<Resizer/>
+										</Division>
+									</Column>
+								</Row>
+							</Rows>
+						</Division>
+					</Column>
+				</Row>
+			</Rows>
+			<IncludeSharedElement ID="includeSharedAddPanelsGallery" DefinitionFile="rdDashboard/rdAddPanelsGallery.lgx" SharedElementID="AddPanelsGallery" />
+
+      <Division ShowModes="None" ID="rdDashboardHiddenWaitPage">
+        <Label ID="rdWaitCfg" Caption="" >
+          <Action Type="Report" >
+            <Target Type="Report" >
+              <WaitPage />
+            </Target>
+          </Action>
+        </Label>
+      </Division>
+      <Division ID="rdDivFreeFormLabel" ShowModes="None">
+        <Label Caption="Free-form" ID="rdLabelFreeForm" />
+      </Division>
+      
+      
+
+      <ElementTemplate>
+
+        <InputSelection TemplateID="Categorized" ID="rdFilteredXAxis_rdPnlInstanceID" Type="Point" PopupMenuCaption="Global Filter" PointValueColumn="--DataColumn--">
+          <InputSelectionEvent Type="Point">
+            <Action Type="Javascript" Javascript="rdDbSetGlobalFilterFromChart('rdPnlInstanceID','Categorized','--DataColumnID--');" PopupMenuCaption="Global Filter" />
+          </InputSelectionEvent>
+          <Division ID="rdGlobalFilterHiddenValues_rdPnlInstanceID">
+            <InputHidden ID="rdFilteredXAxis_rdPnlInstanceID" DefaultValue="" rdIsGlobalFilterValue="True" rdDashboardPanelID="rdPnlInstanceID" DataColumn="--DataColumn--" DataColumnID="--DataColumnID--"/>
+          </Division>
+          <InputSelectionStyle CursorStyle="url(rdTemplate/rdDashboard/rdHandFilter.cur),auto" />
+        </InputSelection>
+
+        <InputSelection TemplateID="CategorizedDate" ID="rdFilteredXAxis_rdPnlInstanceID" Type="Point" PopupMenuCaption="Global Filter" SelectionType="ClickRangePoints" >
+          <InputSelectionEvent Type="Point" >
+            <Action Type="Javascript" Javascript="rdDbSetGlobalFilterFromChart('rdPnlInstanceID','Date Range','--DataColumnID--');" PopupMenuCaption="Global Filter" />
+          </InputSelectionEvent>
+          <Division ID="rdGlobalFilterHiddenValues_rdPnlInstanceID">
+            <InputHidden ID="rdFilteredXAxis_rdPnlInstanceID" DefaultValue="" rdIsGlobalFilterValue="True" rdDashboardPanelID="rdPnlInstanceID" DataColumn="--DataColumn--" DataColumnID="--DataColumnID--" InputSelectionType="Point"/>
+            <InputHidden ID="rdFilteredXAxisTimePeriod_rdPnlInstanceID" DefaultValue="--TimePeriod--" />
+          </Division>
+          <InputSelectionStyle CursorStyle="url(rdTemplate/rdDashboard/rdHandFilter.cur),auto" />
+        </InputSelection>
+
+        <InputSelection TemplateID="LinearX" ID="rdFilteredXAxis_rdPnlInstanceID" Type="Range" PopupMenuCaption="Global Filter" SelectionType="AreaXAxis" MinXaxisID="rdFilteredXAxisMin_rdPnlInstanceID" MaxXaxisID="rdFilteredXAxisMax_rdPnlInstanceID" >
+          <InputSelectionEvent Type="Range" >
+            <Action Type="Javascript" Javascript="rdDbSetGlobalFilterFromChart('rdPnlInstanceID','LinearX','--DataColumnID--');" PopupMenuCaption="Global Filter" />
+          </InputSelectionEvent>
+          <Division ID="rdGlobalFilterHiddenValues_rdPnlInstanceID">
+            <InputHidden ID="rdFilteredXAxisMin_rdPnlInstanceID" DefaultValue="" DataColumn="--DataColumn--" DataColumnID="--DataColumnID--" rdIsGlobalFilterValue="True" rdDashboardPanelID="rdPnlInstanceID" />
+            <InputHidden ID="rdFilteredXAxisMax_rdPnlInstanceID" DefaultValue="" DataColumn="--DataColumn--" DataColumnID="--DataColumnID--"/>
+          </Division>
+          <InputSelectionStyle CursorStyle="url(rdTemplate/rdDashboard/rdCrossFilter.cur),auto" />
+        </InputSelection>
+
+        <InputSelection TemplateID="LinearDate" ID="rdFilteredXAxis_rdPnlInstanceID" Type="Point" PopupMenuCaption="Global Filter" SelectionType="AreaXAxis" >
+          <InputSelectionEvent Type="Point" >
+            <Action Type="Javascript" Javascript="rdDbSetGlobalFilterFromChart('rdPnlInstanceID','Date Range','--DataColumnID--');" PopupMenuCaption="Global Filter" />
+          </InputSelectionEvent>
+          <Division ID="rdGlobalFilterHiddenValues_rdPnlInstanceID">
+            <InputHidden ID="rdFilteredXAxis_rdPnlInstanceID" DefaultValue="" rdIsGlobalFilterValue="True" rdDashboardPanelID="rdPnlInstanceID" DataColumn="--DataColumn--" DataColumnID="--DataColumnID--" InputSelectionType="Point"/>
+            <InputHidden ID="rdFilteredXAxisTimePeriod_rdPnlInstanceID" DefaultValue="--TimePeriod--" />
+          </Division>
+          <InputSelectionStyle CursorStyle="url(rdTemplate/rdDashboard/rdCrossFilter.cur),auto" BorderThickness="5" BorderColor="#aaaaaa" />
+        </InputSelection>
+
+        <InputSelection TemplateID="LinearXY" ID="rdFilteredXAxis_rdPnlInstanceID" Type="Range" PopupMenuCaption="Global Filter" SelectionType="Area" MinXaxisID="rdFilteredXAxisMin_rdPnlInstanceID" MaxXaxisID="rdFilteredXAxisMax_rdPnlInstanceID" MinYaxisID="rdFilteredYAxisMin_rdPnlInstanceID" MaxYaxisID="rdFilteredYAxisMax_rdPnlInstanceID" >
+          <InputSelectionEvent Type="Range">
+            <Action Type="Javascript" Javascript="rdDbSetGlobalFilterFromChart('rdPnlInstanceID','LinearXY','--DataColumnID--','--DataColumnYID--');" PopupMenuCaption="Global Filter" />
+          </InputSelectionEvent>
+          <Division ID="rdGlobalFilterHiddenValues_rdPnlInstanceID">
+            <InputHidden ID="rdFilteredXAxisMin_rdPnlInstanceID" DefaultValue="" DataColumn="--DataColumn--" DataColumnID="--DataColumnID--" rdIsGlobalFilterValue="True" rdDashboardPanelID="rdPnlInstanceID" />
+            <InputHidden ID="rdFilteredXAxisMax_rdPnlInstanceID" DefaultValue="" DataColumn="--DataColumn--" DataColumnID="--DataColumnID--"/>
+            <InputHidden ID="rdFilteredYAxisMin_rdPnlInstanceID" DefaultValue="" DataColumn="--DataColumnY--" DataColumnID="--DataColumnYID--" rdIsGlobalFilterValue="True" rdDashboardPanelID="rdPnlInstanceID" />
+            <InputHidden ID="rdFilteredYAxisMax_rdPnlInstanceID" DefaultValue="" DataColumn="--DataColumnY--" DataColumnID="--DataColumnYID--"/>
+          </Division>
+          <InputSelectionStyle CursorStyle="url(rdTemplate/rdDashboard/rdCrossFilter.cur),auto" />
+        </InputSelection>
+
+      </ElementTemplate>
+		</Division>
+	</Body>
+
+    
+</Report>

@@ -1,0 +1,36 @@
+<AnimatedMapDataXML>
+  <MapSpec InternalID="CN.AH" ShortName="AH" LongName="Anhui" />
+  <MapSpec InternalID="CN.BJ" ShortName="BJ" LongName="Beijing" />
+  <MapSpec InternalID="CN.CQ" ShortName="CQ" LongName="Chongqing" />
+  <MapSpec InternalID="CN.FJ" ShortName="FJ" LongName="Fujian" />
+  <MapSpec InternalID="CN.GS" ShortName="GS" LongName="Gansu" />
+  <MapSpec InternalID="CN.GD" ShortName="GD" LongName="Guangdong" />
+  <MapSpec InternalID="CN.GX" ShortName="GX" LongName="Guangxi Zhuang" />
+  <MapSpec InternalID="CN.GZ" ShortName="GZ" LongName="Guizhou" />
+  <MapSpec InternalID="CN.HA" ShortName="HA" LongName="Hainan" />
+  <MapSpec InternalID="CN.HB" ShortName="HB" LongName="Hebei" />
+  <MapSpec InternalID="CN.HE" ShortName="HE" LongName="Henan" />
+  <MapSpec InternalID="CN.HU" ShortName="HU" LongName="Hubei" />
+  <MapSpec InternalID="CN.HL" ShortName="HL" LongName="Heilongjiang" />
+  <MapSpec InternalID="CN.HN" ShortName="HN" LongName="Hunan" />
+  <MapSpec InternalID="CN.JS" ShortName="JS" LongName="Jiangsu" />
+  <MapSpec InternalID="CN.JX" ShortName="JX" LongName="Jiangxi" />
+  <MapSpec InternalID="CN.JL" ShortName="JL" LongName="Jilin" />
+  <MapSpec InternalID="CN.LN" ShortName="LN" LongName="Liaoning" />
+  <MapSpec InternalID="CN.NM" ShortName="NM" LongName="Nei Mongol" />
+  <MapSpec InternalID="CN.NX" ShortName="NX" LongName="Ningxia Hui" />
+  <MapSpec InternalID="CN.QH" ShortName="QH" LongName="Qinghai" />
+  <MapSpec InternalID="CN.SA" ShortName="SA" LongName="Shaanxi" />
+  <MapSpec InternalID="CN.SD" ShortName="SD" LongName="Shandong" />
+  <MapSpec InternalID="CN.SH" ShortName="SH" LongName="Shanghai" />
+  <MapSpec InternalID="CN.SX" ShortName="SX" LongName="Shanxi" />
+  <MapSpec InternalID="CN.SC" ShortName="SC" LongName="Sichuan" />
+  <MapSpec InternalID="CN.TJ" ShortName="TJ" LongName="Tianjin" />
+  <MapSpec InternalID="CN.XJ" ShortName="XJ" LongName="Xinjiang Uygur" />
+  <MapSpec InternalID="CN.XZ" ShortName="XZ" LongName="Xizang" />
+  <MapSpec InternalID="CN.YN" ShortName="YN" LongName="Yunnan" />
+  <MapSpec InternalID="CN.ZJ" ShortName="ZJ" LongName="Zhejiang" />
+  <MapSpec InternalID="CN.MA" ShortName="MA" LongName="Macao" />
+  <MapSpec InternalID="CN.HK" ShortName="HK" LongName="HongKong" />
+  <MapSpec InternalID="CN.TA" ShortName="TA" LongName="Taiwan" />
+</AnimatedMapDataXML>

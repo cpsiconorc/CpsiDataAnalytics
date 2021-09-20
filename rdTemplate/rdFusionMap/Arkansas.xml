@@ -1,0 +1,77 @@
+<AnimatedMapDataXML>
+  <MapSpec InternalID="001" ShortName="AR" LongName="Arkansas" />
+  <MapSpec InternalID="003" ShortName="AS" LongName="Ashley" />
+  <MapSpec InternalID="005" ShortName="BA" LongName="Baxter" />
+  <MapSpec InternalID="007" ShortName="BE" LongName="Benton" />
+  <MapSpec InternalID="009" ShortName="BO" LongName="Boone" />
+  <MapSpec InternalID="011" ShortName="BR" LongName="Bradley" />
+  <MapSpec InternalID="013" ShortName="CA" LongName="Calhoun" />
+  <MapSpec InternalID="015" ShortName="CR" LongName="Carroll" />
+  <MapSpec InternalID="017" ShortName="CH" LongName="Chicot" />
+  <MapSpec InternalID="019" ShortName="CL" LongName="Clark" />
+  <MapSpec InternalID="021" ShortName="CY" LongName="Clay" />
+  <MapSpec InternalID="023" ShortName="CB" LongName="Cleburne" />
+  <MapSpec InternalID="025" ShortName="CV" LongName="Cleveland" />
+  <MapSpec InternalID="027" ShortName="CM" LongName="Columbia" />
+  <MapSpec InternalID="029" ShortName="CW" LongName="Conway" />
+  <MapSpec InternalID="031" ShortName="CI" LongName="Craighead" />
+  <MapSpec InternalID="033" ShortName="CF" LongName="Crawford" />
+  <MapSpec InternalID="035" ShortName="CT" LongName="Crittenden" />
+  <MapSpec InternalID="037" ShortName="CS" LongName="Cross" />
+  <MapSpec InternalID="039" ShortName="DA" LongName="Dallas" />
+  <MapSpec InternalID="041" ShortName="DE" LongName="Desha" />
+  <MapSpec InternalID="043" ShortName="DR" LongName="Drew" />
+  <MapSpec InternalID="045" ShortName="FA" LongName="Faulkner" />
+  <MapSpec InternalID="047" ShortName="FR" LongName="Franklin" />
+  <MapSpec InternalID="049" ShortName="FU" LongName="Fulton" />
+  <MapSpec InternalID="051" ShortName="GA" LongName="Garland" />
+  <MapSpec InternalID="053" ShortName="GR" LongName="Grant" />
+  <MapSpec InternalID="055" ShortName="GE" LongName="Greene" />
+  <MapSpec InternalID="057" ShortName="HE" LongName="Hempstead" />
+  <MapSpec InternalID="059" ShortName="HS" LongName="Hot Spring" />
+  <MapSpec InternalID="061" ShortName="HW" LongName="Howard" />
+  <MapSpec InternalID="063" ShortName="IN" LongName="Independence" />
+  <MapSpec InternalID="065" ShortName="IZ" LongName="Izard" />
+  <MapSpec InternalID="067" ShortName="JA" LongName="Jackson" />
+  <MapSpec InternalID="069" ShortName="JE" LongName="Jefferson" />
+  <MapSpec InternalID="071" ShortName="JO" LongName="Johnson" />
+  <MapSpec InternalID="073" ShortName="LA" LongName="Lafayette" />
+  <MapSpec InternalID="075" ShortName="LW" LongName="Lawrence" />
+  <MapSpec InternalID="077" ShortName="LE" LongName="Lee" />
+  <MapSpec InternalID="079" ShortName="LI" LongName="Lincoln" />
+  <MapSpec InternalID="081" ShortName="LR" LongName="Little River" />
+  <MapSpec InternalID="083" ShortName="LO" LongName="Logan" />
+  <MapSpec InternalID="085" ShortName="LK" LongName="Lonoke" />
+  <MapSpec InternalID="087" ShortName="MA" LongName="Madison" />
+  <MapSpec InternalID="089" ShortName="MR" LongName="Marion" />
+  <MapSpec InternalID="091" ShortName="MI" LongName="Miller" />
+  <MapSpec InternalID="093" ShortName="MS" LongName="Mississippi" />
+  <MapSpec InternalID="095" ShortName="MN" LongName="Monroe" />
+  <MapSpec InternalID="097" ShortName="MT" LongName="Montgomery" />
+  <MapSpec InternalID="099" ShortName="NE" LongName="Nevada" />
+  <MapSpec InternalID="101" ShortName="NW" LongName="Newton" />
+  <MapSpec InternalID="103" ShortName="OU" LongName="Ouachita" />
+  <MapSpec InternalID="105" ShortName="PE" LongName="Perry" />
+  <MapSpec InternalID="107" ShortName="PH" LongName="Phillips" />
+  <MapSpec InternalID="109" ShortName="PI" LongName="Pike" />
+  <MapSpec InternalID="111" ShortName="PO" LongName="Poinsett" />
+  <MapSpec InternalID="113" ShortName="PL" LongName="Polk" />
+  <MapSpec InternalID="115" ShortName="PP" LongName="Pope" />
+  <MapSpec InternalID="117" ShortName="PR" LongName="Prairie" />
+  <MapSpec InternalID="119" ShortName="PU" LongName="Pulaski" />
+  <MapSpec InternalID="121" ShortName="RA" LongName="Randolph" />
+  <MapSpec InternalID="123" ShortName="SF" LongName="St. Francis" />
+  <MapSpec InternalID="125" ShortName="SA" LongName="Saline" />
+  <MapSpec InternalID="127" ShortName="SC" LongName="Scott" />
+  <MapSpec InternalID="129" ShortName="SE" LongName="Searcy" />
+  <MapSpec InternalID="131" ShortName="SB" LongName="Sebastian" />
+  <MapSpec InternalID="133" ShortName="SV" LongName="Sevier" />
+  <MapSpec InternalID="135" ShortName="SH" LongName="Sharp" />
+  <MapSpec InternalID="137" ShortName="ST" LongName="Stone" />
+  <MapSpec InternalID="139" ShortName="UN" LongName="Union" />
+  <MapSpec InternalID="141" ShortName="VB" LongName="Van Buren" />
+  <MapSpec InternalID="143" ShortName="WA" LongName="Washington" />
+  <MapSpec InternalID="145" ShortName="WH" LongName="White" />
+  <MapSpec InternalID="147" ShortName="WO" LongName="Woodruff" />
+  <MapSpec InternalID="149" ShortName="YE" LongName="Yell" />
+</AnimatedMapDataXML>

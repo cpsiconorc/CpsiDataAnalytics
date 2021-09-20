@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Report>
+  <Body>
+    <Division ID="divPlaceholder" HtmlDiv="False" Class="rdZoomChart">
+      <Division HtmlDiv="False" ID="divInnerPlaceholder">
+        <Note Note="Chart should be here" />
+        <InputChart Type="DataRange">
+          <AreaDrawn>
+            <Action Type="RefreshElement" />
+          </AreaDrawn>
+          <AreaCleared>
+            <Action Type="RefreshElement" />
+          </AreaCleared>
+          <Chart Type="XY" XYChartType="Line" ChartHeight="60">
+            <DataLayer>
+              <CompareFilter IncludeCondition="&quot;@Request.[MinX]~&quot; &lt;&gt; &quot;&quot; AND &quot;@Request.[MaxX]~&quot; &lt;&gt; &quot;&quot; AND Len(&quot;@Request.@Request.[MinX]~~@Request.@Request.[MaxX]~~&quot;) &gt; 0 AND (&quot;@Request.@Request.[MinX]~~&quot; &lt;&gt; &quot;0&quot; OR &quot;@Request.@Request.[MaxX]~~&quot; &lt;&gt; &quot;0&quot;)" CompareType="&gt;=" DataType="[X-AxisDataType]" CompareValue="@Request.@Request.[MinX]~~" DataColumn="[X-AxisDataColumn]" ID="minX" />
+              <CompareFilter IncludeCondition="&quot;@Request.[MinX]~&quot; &lt;&gt; &quot;&quot; AND &quot;@Request.[MaxX]~&quot; &lt;&gt; &quot;&quot; AND Len(&quot;@Request.@Request.[MinX]~~@Request.@Request.[MaxX]~~&quot;) &gt; 0 AND (&quot;@Request.@Request.[MinX]~~&quot; &lt;&gt; &quot;0&quot; OR &quot;@Request.@Request.[MaxX]~~&quot; &lt;&gt; &quot;0&quot;)" CompareType="&lt;=" DataType="[X-AxisDataType]" CompareValue="@Request.@Request.[MaxX]~~" DataColumn="[X-AxisDataColumn]" ID="maxX" />
+              <CompareFilter IncludeCondition="&quot;@Request.[MinY]~&quot; &lt;&gt; &quot;&quot; AND &quot;@Request.[MaxY]~&quot; &lt;&gt; &quot;&quot; AND Len(&quot;@Request.@Request.[MinX]~~@Request.@Request.[MaxY]~~&quot;) &gt; 0 AND (&quot;@Request.@Request.[MinY]~~&quot; &lt;&gt; &quot;0&quot; OR &quot;@Request.@Request.[MaxY]~~&quot; &lt;&gt; &quot;0&quot;)" CompareType="&gt;=" DataType="[Y-AxisDataType]" CompareValue="@Request.@Request.[MinY]~~" DataColumn="[Y-AxisDataColumn]" ID="minY" />
+              <CompareFilter IncludeCondition="&quot;@Request.[MinY]~&quot; &lt;&gt; &quot;&quot; AND &quot;@Request.[MaxY]~&quot; &lt;&gt; &quot;&quot; AND Len(&quot;@Request.@Request.[MinX]~~@Request.@Request.[MaxY]~~&quot;) &gt; 0 AND (&quot;@Request.@Request.[MinY]~~&quot; &lt;&gt; &quot;0&quot; OR &quot;@Request.@Request.[MaxY]~~&quot; &lt;&gt; &quot;0&quot;)" CompareType="&lt;=" DataType="[Y-AxisDataType]" CompareValue="@Request.@Request.[MaxY]~~" DataColumn="[Y-AxisDataColumn]" ID="maxY" />
+            </DataLayer>
+          </Chart>
+        </InputChart>
+        <Division ShowModes="rdBrowser" ID="divButtonZoomOut" Condition="&quot;@Request.[MinX]~&quot; &lt;&gt; &quot;&quot; AND &quot;@Request.[MaxX]~&quot; &lt;&gt; &quot;&quot; AND Len(&quot;@Request.@Request.[MinX]~~@Request.@Request.[MaxX]~~&quot;) &gt; 0 AND (&quot;@Request.@Request.[MinX]~~&quot; &lt;&gt; &quot;0&quot; OR &quot;@Request.@Request.[MaxX]~~&quot; &lt;&gt; &quot;0&quot;)">
+          <Label ID="lblZoomOut" Caption="Show All">
+            <Action Type="RefreshElement">
+              <LinkParams />
+            </Action>
+          </Label>
+        </Division>
+        <InputHidden ID="rdZoomChartResizerHeight" DefaultValue="" />
+        <InputHidden ID="rdZoomChartResizerWidth" DefaultValue="" />
+      </Division>
+    </Division>
+  </Body>
+  <ideTestParams />
+</Report>

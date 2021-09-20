@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Report ID="ReportAuthorDev.Templates.VisualizationTemplate">
+  <Body>
+    <Division ID="rdElementID" HtmlDiv="True" rdReportAuthorElementType="Visualization" Class="rd-report-author-element">
+      <Division ID="divTitle_rdElementID" HtmlDiv="True">
+        <Label ID="lblVisualizationTitle_rdElementID" Class="ThemeHeader" />
+      </Division>
+      <Division ID="divContent_rdElementID" HtmlDiv="True" Class="rd-report-author-element-content rd-scrollable-x" />
+      </Division>
+  </Body>
+</Report>

@@ -1,0 +1,12 @@
+<AnimatedMapDataXML>
+  <MapSpec InternalID="ZM.CE" ShortName="CE" LongName="Central" />
+  <MapSpec InternalID="ZM.CO" ShortName="CO" LongName="Copperbelt" />
+  <MapSpec InternalID="ZM.ES" ShortName="EA" LongName="Eastern" />
+  <MapSpec InternalID="ZM.LP" ShortName="LP" LongName="Luapula" />
+  <MapSpec InternalID="ZM.LS" ShortName="LS" LongName="Lusaka" />
+  <MapSpec InternalID="ZM.MU" ShortName="MU" LongName="Muchinga" />
+  <MapSpec InternalID="ZM.NW" ShortName="NW" LongName="North-Western" />
+  <MapSpec InternalID="ZM.NR" ShortName="NR" LongName="Northern" />
+  <MapSpec InternalID="ZM.SO" ShortName="SO" LongName="Southern" />
+  <MapSpec InternalID="ZM.WE" ShortName="WE" LongName="Western" />
+</AnimatedMapDataXML>

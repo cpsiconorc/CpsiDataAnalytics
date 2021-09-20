@@ -1,0 +1,64 @@
+<AnimatedMapDataXML>
+  <MapSpec InternalID="001" ShortName="AL" LongName="Albany" />
+  <MapSpec InternalID="003" ShortName="AE" LongName="Allegany" />
+  <MapSpec InternalID="005" ShortName="BR" LongName="Bronx" />
+  <MapSpec InternalID="007" ShortName="BO" LongName="Broome" />
+  <MapSpec InternalID="009" ShortName="CA" LongName="Cattaraugus" />
+  <MapSpec InternalID="011" ShortName="CY" LongName="Cayuga" />
+  <MapSpec InternalID="013" ShortName="CH" LongName="Chautauqua" />
+  <MapSpec InternalID="015" ShortName="CE" LongName="Chemung" />
+  <MapSpec InternalID="017" ShortName="CN" LongName="Chenango" />
+  <MapSpec InternalID="019" ShortName="CL" LongName="Clinton" />
+  <MapSpec InternalID="021" ShortName="CO" LongName="Columbia" />
+  <MapSpec InternalID="023" ShortName="CT" LongName="Cortland" />
+  <MapSpec InternalID="025" ShortName="DE" LongName="Delaware" />
+  <MapSpec InternalID="027" ShortName="DU" LongName="Dutchess" />
+  <MapSpec InternalID="029" ShortName="ER" LongName="Erie" />
+  <MapSpec InternalID="031" ShortName="ES" LongName="Essex" />
+  <MapSpec InternalID="033" ShortName="FR" LongName="Franklin" />
+  <MapSpec InternalID="035" ShortName="FU" LongName="Fulton" />
+  <MapSpec InternalID="037" ShortName="GE" LongName="Genesee" />
+  <MapSpec InternalID="039" ShortName="GR" LongName="Greene" />
+  <MapSpec InternalID="041" ShortName="HA" LongName="Hamilton" />
+  <MapSpec InternalID="043" ShortName="HE" LongName="Herkimer" />
+  <MapSpec InternalID="045" ShortName="JE" LongName="Jefferson" />
+  <MapSpec InternalID="047" ShortName="KI" LongName="Kings" />
+  <MapSpec InternalID="049" ShortName="LE" LongName="Lewis" />
+  <MapSpec InternalID="051" ShortName="LI" LongName="Livingston" />
+  <MapSpec InternalID="053" ShortName="MA" LongName="Madison" />
+  <MapSpec InternalID="055" ShortName="MN" LongName="Monroe" />
+  <MapSpec InternalID="057" ShortName="MO" LongName="Montgomery" />
+  <MapSpec InternalID="059" ShortName="NA" LongName="Nassau" />
+  <MapSpec InternalID="061" ShortName="NY" LongName="New york" />
+  <MapSpec InternalID="063" ShortName="NI" LongName="Niagara" />
+  <MapSpec InternalID="065" ShortName="ON" LongName="Oneida" />
+  <MapSpec InternalID="067" ShortName="OO" LongName="Onondaga" />
+  <MapSpec InternalID="069" ShortName="OT" LongName="Ontario" />
+  <MapSpec InternalID="071" ShortName="OR" LongName="Orange" />
+  <MapSpec InternalID="073" ShortName="OL" LongName="Orleans" />
+  <MapSpec InternalID="075" ShortName="OS" LongName="Oswego" />
+  <MapSpec InternalID="077" ShortName="OG" LongName="Otsego" />
+  <MapSpec InternalID="079" ShortName="PU" LongName="Putnam" />
+  <MapSpec InternalID="081" ShortName="QU" LongName="Queens" />
+  <MapSpec InternalID="083" ShortName="RE" LongName="Rensselaer" />
+  <MapSpec InternalID="085" ShortName="RI" LongName="Richmond" />
+  <MapSpec InternalID="087" ShortName="RO" LongName="Rockland" />
+  <MapSpec InternalID="091" ShortName="SA" LongName="Saratoga" />
+  <MapSpec InternalID="093" ShortName="SC" LongName="Schenectady" />
+  <MapSpec InternalID="095" ShortName="SH" LongName="Schoharie" />
+  <MapSpec InternalID="097" ShortName="SU" LongName="Schuyler" />
+  <MapSpec InternalID="099" ShortName="SE" LongName="Seneca" />
+  <MapSpec InternalID="089" ShortName="SL" LongName="St.    Lawrence" />
+  <MapSpec InternalID="101" ShortName="ST" LongName="Steuben" />
+  <MapSpec InternalID="103" ShortName="SF" LongName="Suffolk" />
+  <MapSpec InternalID="105" ShortName="SV" LongName="Sullivan" />
+  <MapSpec InternalID="107" ShortName="TI" LongName="Tioga" />
+  <MapSpec InternalID="109" ShortName="TO" LongName="Tompkins" />
+  <MapSpec InternalID="111" ShortName="UL" LongName="Ulster" />
+  <MapSpec InternalID="113" ShortName="WA" LongName="Warren" />
+  <MapSpec InternalID="115" ShortName="WS" LongName="Washington" />
+  <MapSpec InternalID="117" ShortName="WY" LongName="Wayne" />
+  <MapSpec InternalID="119" ShortName="WE" LongName="Westchester" />
+  <MapSpec InternalID="121" ShortName="WO" LongName="Wyoming" />
+  <MapSpec InternalID="123" ShortName="YA" LongName="Yates s" />
+</AnimatedMapDataXML>

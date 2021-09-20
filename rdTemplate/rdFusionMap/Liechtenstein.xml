@@ -1,0 +1,13 @@
+<AnimatedMapDataXML>
+  <MapSpec InternalID="01" ShortName="BA" LongName="Balzers" />
+  <MapSpec InternalID="02" ShortName="ES" LongName="Eschen" />
+  <MapSpec InternalID="03" ShortName="GA" LongName="Gamprin" />
+  <MapSpec InternalID="04" ShortName="MA" LongName="Mauren" />
+  <MapSpec InternalID="05" ShortName="PL" LongName="Planken" />
+  <MapSpec InternalID="06" ShortName="RU" LongName="Ruggell" />
+  <MapSpec InternalID="07" ShortName="SN" LongName="Schaan" />
+  <MapSpec InternalID="08" ShortName="SB" LongName="Schellenberg" />
+  <MapSpec InternalID="09" ShortName="TN" LongName="Triesen" />
+  <MapSpec InternalID="10" ShortName="TB" LongName="Triesenberg" />
+  <MapSpec InternalID="11" ShortName="VA" LongName="Vaduz" />
+</AnimatedMapDataXML>

@@ -1,0 +1,10 @@
+<AnimatedMapDataXML>
+  <MapSpec InternalID="PK.JK" ShortName="JK" LongName="Azad Kashmir" />
+  <MapSpec InternalID="PK.BA" ShortName="BA" LongName="Balochistan" />
+  <MapSpec InternalID="PK.TA" ShortName="TA" LongName="Federally Administered Tribal Areas" />
+  <MapSpec InternalID="PK.IS" ShortName="IS" LongName="Islamabad" />
+  <MapSpec InternalID="PK.NW" ShortName="NW" LongName="North West Frontier" />
+  <MapSpec InternalID="PK.NA" ShortName="NA" LongName="Northern Areas" />
+  <MapSpec InternalID="PK.PB" ShortName="PB" LongName="Punjab" />
+  <MapSpec InternalID="PK.SD" ShortName="SD" LongName="Sindh" />
+</AnimatedMapDataXML>

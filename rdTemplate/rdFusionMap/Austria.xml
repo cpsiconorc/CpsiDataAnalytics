@@ -1,0 +1,11 @@
+<AnimatedMapDataXML>
+  <MapSpec InternalID="01" ShortName="BU" LongName="Burgenland" />
+  <MapSpec InternalID="02" ShortName="KA" LongName="Kärnten" />
+  <MapSpec InternalID="03" ShortName="NI" LongName="Niederösterreich" />
+  <MapSpec InternalID="04" ShortName="OB" LongName="Oberösterreich" />
+  <MapSpec InternalID="05" ShortName="SA" LongName="Salzburg" />
+  <MapSpec InternalID="06" ShortName="ST" LongName="Steiermark" />
+  <MapSpec InternalID="07" ShortName="TI" LongName="Tirol" />
+  <MapSpec InternalID="08" ShortName="VO" LongName="Vorarlberg" />
+  <MapSpec InternalID="09" ShortName="WI" LongName="Wien" />
+</AnimatedMapDataXML>

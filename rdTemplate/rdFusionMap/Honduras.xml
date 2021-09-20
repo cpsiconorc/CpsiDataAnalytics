@@ -1,0 +1,20 @@
+<AnimatedMapDataXML>
+  <MapSpec InternalID="01" ShortName="AT" LongName="Atlántida" />
+  <MapSpec InternalID="02" ShortName="CH" LongName="Choluteca" />
+  <MapSpec InternalID="03" ShortName="CL" LongName="Colón" />
+  <MapSpec InternalID="04" ShortName="CM" LongName="Comayagua" />
+  <MapSpec InternalID="05" ShortName="CP" LongName="Copán" />
+  <MapSpec InternalID="06" ShortName="CR" LongName="Cortés" />
+  <MapSpec InternalID="07" ShortName="EP" LongName="El Paraíso" />
+  <MapSpec InternalID="08" ShortName="FM" LongName="Francisco Morazán" />
+  <MapSpec InternalID="09" ShortName="GD" LongName="Gracias a Dios" />
+  <MapSpec InternalID="10" ShortName="IN" LongName="Intibucá" />
+  <MapSpec InternalID="11" ShortName="IB" LongName="Islas de la Bahía" />
+  <MapSpec InternalID="12" ShortName="LP" LongName="La Paz" />
+  <MapSpec InternalID="13" ShortName="LE" LongName="Lempira" />
+  <MapSpec InternalID="14" ShortName="OC" LongName="Ocotepeque" />
+  <MapSpec InternalID="15" ShortName="OL" LongName="Olancho" />
+  <MapSpec InternalID="16" ShortName="SB" LongName="Santa Bárbara" />
+  <MapSpec InternalID="17" ShortName="VA" LongName="Valle" />
+  <MapSpec InternalID="18" ShortName="YO" LongName="Yoro" />
+</AnimatedMapDataXML>

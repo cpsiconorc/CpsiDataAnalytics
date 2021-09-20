@@ -1,0 +1,33 @@
+<AnimatedMapDataXML>
+  <MapSpec InternalID="001" ShortName="AN" LongName="Andaman    and Nicobar     Islands" />
+  <MapSpec InternalID="002" ShortName="AP" LongName="Andhra    Pradesh" />
+  <MapSpec InternalID="003" ShortName="AR" LongName="Arunachal    Pradesh" />
+  <MapSpec InternalID="004" ShortName="AS" LongName="Assam" />
+  <MapSpec InternalID="005" ShortName="BI" LongName="Bihar" />
+  <MapSpec InternalID="007" ShortName="CA" LongName="Chhattisgarh" />
+  <MapSpec InternalID="010" ShortName="DE" LongName="Delhi" />
+  <MapSpec InternalID="011" ShortName="GO" LongName="Goa" />
+  <MapSpec InternalID="012" ShortName="GU" LongName="Gujarat" />
+  <MapSpec InternalID="013" ShortName="HA" LongName="Haryana" />
+  <MapSpec InternalID="014" ShortName="HP" LongName="Himachal    Pradesh" />
+  <MapSpec InternalID="015" ShortName="JK" LongName="Jammu and Kashmir" />
+  <MapSpec InternalID="016" ShortName="JH" LongName="Jharkhand" />
+  <MapSpec InternalID="017" ShortName="KA" LongName="Karnataka" />
+  <MapSpec InternalID="018" ShortName="KE" LongName="Kerala" />
+  <MapSpec InternalID="019" ShortName="LA" LongName="Lakshadweep" />
+  <MapSpec InternalID="020" ShortName="MP" LongName="Madhya    Pradesh" />
+  <MapSpec InternalID="021" ShortName="MA" LongName="Maharashtra" />
+  <MapSpec InternalID="022" ShortName="MN" LongName="Manipur" />
+  <MapSpec InternalID="023" ShortName="ME" LongName="Meghalaya" />
+  <MapSpec InternalID="024" ShortName="MI" LongName="Mizoram" />
+  <MapSpec InternalID="025" ShortName="NA" LongName="Nagaland" />
+  <MapSpec InternalID="026" ShortName="OR" LongName="Orissa" />
+  <MapSpec InternalID="028" ShortName="PU" LongName="Punjab" />
+  <MapSpec InternalID="029" ShortName="RA" LongName="Rajasthan" />
+  <MapSpec InternalID="030" ShortName="SI" LongName="Sikkim" />
+  <MapSpec InternalID="031" ShortName="TN" LongName="Tamil Nadu" />
+  <MapSpec InternalID="032" ShortName="TR" LongName="Tripura" />
+  <MapSpec InternalID="033" ShortName="UP" LongName="Uttar    Pradesh" />
+  <MapSpec InternalID="034" ShortName="UT" LongName="Uttaranchal" />
+  <MapSpec InternalID="035" ShortName="WB" LongName="West     Bengal" />
+</AnimatedMapDataXML>

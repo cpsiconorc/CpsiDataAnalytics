@@ -1,0 +1,7 @@
+<AnimatedMapDataXML>
+  <MapSpec InternalID="CA.NB.AC" ShortName="AC" LongName="Acadian Coastal" />
+  <MapSpec InternalID="CA.NB.AR" ShortName="AR" LongName="Appalachian Range" />
+  <MapSpec InternalID="CA.NB.FC" ShortName="FC" LongName="Fundy Coastal" />
+  <MapSpec InternalID="CA.NB.MR" ShortName="MR" LongName="Miramichi River" />
+  <MapSpec InternalID="CA.NB.RV" ShortName="RV" LongName="River Valley" />
+</AnimatedMapDataXML>

@@ -1,0 +1,52 @@
+/*-------------------- simple lists ---------------- */
+.rd-checkboxlist {
+	display:-moz-inline-stack;
+	display:inline-block;
+	zoom:1;
+	*display:inline;
+	overflow: auto;
+	padding-right: 20px;
+}
+.rd-checkboxlist ul{
+	border: 0 none;
+	font-size: 100%;
+	line-height: 1.3;
+	list-style: none outside none;
+	margin: 0;
+	outline: 0 none;
+	padding: 0;
+	text-decoration: none;
+	overflow:hidden;
+}
+/*.rd-checkboxlist-container{display:inline-block;
+overflow:auto;
+}*/
+.rd-checkboxlist ul li  span{ margin-left: 6px;
+ }
+.rd-checkboxlist ul li label { white-space: nowrap;
+ }
+.rd-checkboxlist-dropdown{ padding:2px 0 2px 4px;
+ margin:0px;
+ position:relative;
+ text-align:left;
+ border: 1px solid #000000;
+ color: #000000;
+ background-color: #FFFFFF;
+ width: 225px;
+ }
+.rd-checkboxlist-caption { }
+.rd-checkboxlist-icon { float:right;
+ height: 16px;
+ width: 16px;
+ background-image: url("icon-dropdown.png");
+ }
+.rd-checkboxlist-popup {display:block;
+overflow-y:auto;
+padding-right: 20px;
+overflow-x:hidden;
+z-index:10000;
+position:relative;
+ padding:3px;
+ border: 1px solid #000000;
+ background-color:#FFF;
+ } 

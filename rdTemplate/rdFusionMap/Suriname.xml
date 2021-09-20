@@ -1,0 +1,12 @@
+<AnimatedMapDataXML>
+  <MapSpec InternalID="10" ShortName="BR" LongName="Brokopondo" />
+  <MapSpec InternalID="11" ShortName="CM" LongName="Commewijne" />
+  <MapSpec InternalID="12" ShortName="CR" LongName="Coronie" />
+  <MapSpec InternalID="13" ShortName="MA" LongName="Marowijne" />
+  <MapSpec InternalID="14" ShortName="NI" LongName="Nickerie" />
+  <MapSpec InternalID="15" ShortName="PR" LongName="Para" />
+  <MapSpec InternalID="16" ShortName="PM" LongName="Paramaribo" />
+  <MapSpec InternalID="17" ShortName="SA" LongName="Saramacca" />
+  <MapSpec InternalID="18" ShortName="SI" LongName="Sipaliwini" />
+  <MapSpec InternalID="19" ShortName="WA" LongName="Wanica" />
+</AnimatedMapDataXML>

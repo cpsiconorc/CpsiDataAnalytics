@@ -1,0 +1,16 @@
+<AnimatedMapDataXML>
+  <MapSpec InternalID="NR.AI" ShortName="AI" LongName="Aiwo" />
+  <MapSpec InternalID="NR.AB" ShortName="AB" LongName="Anabar" />
+  <MapSpec InternalID="NR.AT" ShortName="AT" LongName="Anetan" />
+  <MapSpec InternalID="NR.AR" ShortName="AR" LongName="Anibare" />
+  <MapSpec InternalID="NR.BA" ShortName="BA" LongName="Baiti" />
+  <MapSpec InternalID="NR.BO" ShortName="BO" LongName="Boe" />
+  <MapSpec InternalID="NR.BU" ShortName="BU" LongName="Buada" />
+  <MapSpec InternalID="NR.DE" ShortName="DE" LongName="Denigomodu" />
+  <MapSpec InternalID="NR.EW" ShortName="EW" LongName="Ewa" />
+  <MapSpec InternalID="NR.IJ" ShortName="IJ" LongName="Ijuw" />
+  <MapSpec InternalID="NR.ME" ShortName="ME" LongName="Meneng" />
+  <MapSpec InternalID="NR.NI" ShortName="NI" LongName="Nibok" />
+  <MapSpec InternalID="NR.UA" ShortName="UA" LongName="Uaboe" />
+  <MapSpec InternalID="NR.YA" ShortName="YA" LongName="Yaren" />
+</AnimatedMapDataXML>

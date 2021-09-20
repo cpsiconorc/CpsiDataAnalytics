@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?> 
+<rdldoc>
+ <rdldoc_header rdldoc_ID="" doc_title="" timestamp="" version="" expiration="" freq_of_update="" num_line_items="" num_datapoints="" x_indexes="-3,-2,-1" first_li_withdata="0">
+ <data_source>
+  <contact_info role="" name="" company="" address="" city="" state="" zip="" country="" email="" form="" href="" comments="" /> 
+  </data_source>
+ <formatting_source>
+  <contact_info role="" name="" company="" address="" city="" state="" zip="" country="" email="" form="" href="" comments="" /> 
+  </formatting_source>
+ <rdldoc_source>
+  <contact_info role="" name="" company="" address="" city="" state="" zip="" country="" email="" form="" href="" comments="" /> 
+  </rdldoc_source>
+ <license_terms copyright_cite="" holder="" license_type="" warranty="" disclaimer="" terms="" date="" email="" state="" country="">
+  <contact_info role="" name="" company="" address="" city="" state="" zip="" country="" email="" form="" href="" comments="" /> 
+ <linkset form="" href="">
+  <link form="" href="" behavior="" content-role="" content-title="" role="" title="" show="" actuate="" /> 
+  </linkset>
+  </license_terms>
+ <linkset form="" href="">
+  <link form="" href="" behavior="" content-role="" content-title="" role="" title="" show="" actuate="" /> 
+  </linkset>
+ </rdldoc_header>
+  <line_item_set line_item_set_type="" time_period="">
+    <data_x x_title="Year" format="" x_notes="" x_desc="" x_prec="2" x_unit="" x_mag="0" x_mod="/" x_measure="" x_scale="" x_adjustment="" x_links="">,</data_x>
+    <li_class_set>
+      <li_class class_name="" parent_class="" form="" href="" description="" />
+    </li_class_set>
+    <linkset form="" href="">
+      <link form="" href="" behavior="" content-role="" content-title="" role="" title="" show="" actuate="" />
+    </linkset>
+    <line_item y_axis_title="" format="" li_title="" li_desc="" li_notes="" li_unit="" li_mag="0" li_mod="" li_measure="" li_scale="" li_adjustment="" relation="" li_prec="-3" li_ID="1" li_legend="" level="1">
+      <data_y>0,</data_y>
+    </line_item>
+  </line_item_set>
+</rdldoc>

@@ -1,0 +1,54 @@
+<AnimatedMapDataXML>
+  <MapSpec InternalID="001" ShortName="DZ" LongName="Algeria" />
+  <MapSpec InternalID="002" ShortName="AO" LongName="Angola" />
+  <MapSpec InternalID="003" ShortName="BJ" LongName="Benin" />
+  <MapSpec InternalID="004" ShortName="BW" LongName="Botswana" />
+  <MapSpec InternalID="005" ShortName="BF" LongName="Burkina Faso" />
+  <MapSpec InternalID="006" ShortName="BI" LongName="Burundi" />
+  <MapSpec InternalID="007" ShortName="CM" LongName="Cameroon" />
+  <MapSpec InternalID="008" ShortName="CV" LongName="Cape Verde" />
+  <MapSpec InternalID="009" ShortName="CR" LongName="Central African Republic" />
+  <MapSpec InternalID="010" ShortName="TD" LongName="Chad" />
+  <MapSpec InternalID="011" ShortName="KM" LongName="Comoros" />
+  <MapSpec InternalID="012" ShortName="CI" LongName="Cote d Ivoire" />
+  <MapSpec InternalID="013" ShortName="CD" LongName="Democratic Republic of the    Congo" />
+  <MapSpec InternalID="014" ShortName="DJ" LongName="Djibouti" />
+  <MapSpec InternalID="015" ShortName="EG" LongName="Egypt" />
+  <MapSpec InternalID="016" ShortName="GQ" LongName="Equatorial Guinea" />
+  <MapSpec InternalID="017" ShortName="ER" LongName="Eritrea" />
+  <MapSpec InternalID="018" ShortName="ET" LongName="Ethiopia" />
+  <MapSpec InternalID="019" ShortName="GA" LongName="Gabon" />
+  <MapSpec InternalID="020" ShortName="GH" LongName="Ghana" />
+  <MapSpec InternalID="021" ShortName="GN" LongName="Guinea" />
+  <MapSpec InternalID="022" ShortName="GW" LongName="Guinea-Bissau" />
+  <MapSpec InternalID="023" ShortName="KE" LongName="Kenya" />
+  <MapSpec InternalID="024" ShortName="LS" LongName="Lesotho" />
+  <MapSpec InternalID="025" ShortName="LI" LongName="Liberia" />
+  <MapSpec InternalID="026" ShortName="LR" LongName="Libya" />
+  <MapSpec InternalID="027" ShortName="MG" LongName="Madagascar" />
+  <MapSpec InternalID="028" ShortName="MW" LongName="Malawi" />
+  <MapSpec InternalID="029" ShortName="ML" LongName="Mali" />
+  <MapSpec InternalID="030" ShortName="MR" LongName="Mauritania" />
+  <MapSpec InternalID="032" ShortName="MA" LongName="Morocco" />
+  <MapSpec InternalID="033" ShortName="MZ" LongName="Mozambique" />
+  <MapSpec InternalID="034" ShortName="NA" LongName="Namibia" />
+  <MapSpec InternalID="035" ShortName="NE" LongName="Niger" />
+  <MapSpec InternalID="036" ShortName="NG" LongName="Nigeria" />
+  <MapSpec InternalID="038" ShortName="RW" LongName="Rwanda" />
+  <MapSpec InternalID="040" ShortName="ST" LongName="Sao Tome and Principe" />
+  <MapSpec InternalID="041" ShortName="SN" LongName="Senegal" />
+  <MapSpec InternalID="043" ShortName="SL" LongName="Sierra Leone" />
+  <MapSpec InternalID="044" ShortName="SO" LongName="Somalia" />
+  <MapSpec InternalID="045" ShortName="ZA" LongName="South Africa" />
+  <MapSpec InternalID="046" ShortName="SD" LongName="Sudan" />
+  <MapSpec InternalID="047" ShortName="SZ" LongName="Swaziland" />
+  <MapSpec InternalID="048" ShortName="TZ" LongName="Tanzania" />
+  <MapSpec InternalID="049" ShortName="TG" LongName="Togo" />
+  <MapSpec InternalID="051" ShortName="TN" LongName="Tunisia" />
+  <MapSpec InternalID="052" ShortName="UG" LongName="Uganda" />
+  <MapSpec InternalID="053" ShortName="WS" LongName="Western Sahara" />
+  <MapSpec InternalID="054" ShortName="ZM" LongName="Zambia" />
+  <MapSpec InternalID="055" ShortName="ZW" LongName="Zimbabwe" />
+  <MapSpec InternalID="056" ShortName="GM" LongName="Gambia" />
+  <MapSpec InternalID="057" ShortName="CG" LongName="Congo" />
+</AnimatedMapDataXML>

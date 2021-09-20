@@ -1,0 +1,94 @@
+<script src="rdYui/fixIe.js"></script>
+<script src="rdYui/yui-config.js" ></script>
+<script src="yui3/build/yui/yui.js" ></script>
+<script src="yui3/build/loader/loader.js" ></script>
+<script src="yui3/build/node-event-simulate/node-event-simulate.js" ></script>
+<script src="yui3/build/attribute-core/attribute-core.js" ></script>
+<script src="yui3/build/base-core/base-core.js" ></script>
+<script src="yui3/build/attribute-events/attribute-events.js" ></script>
+<script src="yui3/build/attribute-extras/attribute-extras.js" ></script>
+<script src="yui3/build/attribute-base/attribute-base.js" ></script>
+<script src="yui3/build/attribute-complex/attribute-complex.js" ></script>
+<script src="yui3/build/base-base/base-base.js" ></script>
+<script src="yui3/build/base-pluginhost/base-pluginhost.js" ></script>
+<script src="yui3/build/base-build/base-build.js" ></script>
+<script src="yui3/build/classnamemanager/classnamemanager.js" ></script>
+<script src="yui3/build/widget-base/widget-base.js" ></script>
+<script src="yui3/build/widget-htmlparser/widget-htmlparser.js" ></script>
+<script src="yui3/build/widget-skin/widget-skin.js" ></script>
+<script src="yui3/build/widget-uievents/widget-uievents.js" ></script>
+<script src="yui3/build/substitute/substitute.js" ></script>
+<script src="yui3/build/yui-throttle/yui-throttle.js" ></script>
+<script src="yui3/build/dd-ddm-base/dd-ddm-base.js" ></script>
+<script src="yui3/build/dd-drag/dd-drag.js" ></script>
+<script src="yui3/build/dd-ddm/dd-ddm.js" ></script>
+<script src="yui3/build/dd-ddm-drop/dd-ddm-drop.js" ></script>
+<script src="yui3/build/dd-drop/dd-drop.js" ></script>
+<script src="yui3/build/dd-drop-plugin/dd-drop-plugin.js" ></script>
+<script src="yui3/build/dd-delegate/dd-delegate.js" ></script>
+<script src="yui3/build/dd-plugin/dd-plugin.js" ></script>
+<script src="yui3/build/dd-scroll/dd-scroll.js" ></script>
+<script src="yui3/build/escape/escape.js" ></script>
+<script src="yui3/build/dd-proxy/dd-proxy.js" ></script>
+
+<script src="yui3/build/resize-base/resize-base.js" ></script>
+<script src="yui3/build/plugin/plugin.js" ></script>
+<script src="yui3/build/resize-proxy/resize-proxy.js" ></script>
+<script src="yui3/build/resize-constrain/resize-constrain.js" ></script>
+<script src="yui3/build/stylesheet/stylesheet.js" ></script>
+<script src="yui3/build/widget-position/widget-position.js" ></script>
+<script src="yui3/build/widget-position-constrain/widget-position-constrain.js" ></script>
+<script src="yui3/build/datatype-xml-parse/datatype-xml-parse.js" ></script>
+
+<script src="yui3/build/io-xdr/io-xdr.js" ></script>
+<script src="yui3/build/event-simulate/event-simulate.js" ></script>
+<script src="yui3/build/dd-constrain/dd-constrain.js" ></script>
+
+<script src="yui3/build/widget-autohide/widget-autohide.js" ></script>
+<script src="yui3/build/button-core/button-core.js" ></script>
+<script src="yui3/build/button-plugin/button-plugin.js" ></script>
+<script src="yui3/build/widget-stdmod/widget-stdmod.js" ></script>
+<script src="yui3/build/widget-buttons/widget-buttons.js" ></script>
+<script src="yui3/build/widget-modality/widget-modality.js" ></script>
+<script src="yui3/build/widget-position-align/widget-position-align.js" ></script>
+<script src="yui3/build/widget-stack/widget-stack.js" ></script>
+<script src="yui3/build/panel/panel.js" ></script>
+<script src="yui3/build/cookie/cookie.js" ></script>
+<script src="yui3/build/history-base/history-base.js" ></script>
+<script src="yui3/build/history-html5/history-html5.js" ></script>
+<script src="yui3/build/history-hash/history-hash.js" ></script>
+<script src="yui3/build/history-hash-ie/history-hash-ie.js" ></script>
+
+<script src="yui3/build/resize-plugin/resize-plugin.js" ></script>
+<script src="yui3/build/io-form/io-form.js" ></script>
+<script src="yui3/build/queue-promote/queue-promote.js" ></script>
+<script src="yui3/build/io-queue/io-queue.js" ></script>
+
+<script src="yui3/build/array-extras/array-extras.js" ></script>
+<script src="yui3/build/querystring-parse/querystring-parse.js" ></script>
+<script src="yui3/build/querystring-stringify/querystring-stringify.js" ></script>
+
+
+
+/************** yui 2 ***************************/
+<script src="yui3/2in3/yui2-menu/yui2-menu.js" ></script>
+<script src="yui3/2in3/yui2-yahoo/yui2-yahoo.js" ></script>
+<script src="yui3/2in3/yui2-dom/yui2-dom.js" ></script>
+<script src="yui3/2in3/yui2-event/yui2-event.js" ></script>
+<script src="yui3/2in3/yui2-containercore/yui2-containercore.js" ></script>
+<script src="yui3/2in3/yui2-tabview/yui2-tabview.js" ></script>
+<script src="yui3/2in3/yui2-element/yui2-element.js" ></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+

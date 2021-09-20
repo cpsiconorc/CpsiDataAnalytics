@@ -1,0 +1,26 @@
+<AnimatedMapDataXML>
+  <MapSpec InternalID="CE.AG" ShortName="AG" LongName="Antigua and Barbados" />
+  <MapSpec InternalID="CE.BS" ShortName="BS" LongName="Bahamas" />
+  <MapSpec InternalID="CE.BB" ShortName="BB" LongName="Barbados" />
+  <MapSpec InternalID="CE.BZ" ShortName="BZ" LongName="Belize" />
+  <MapSpec InternalID="CE.KY" ShortName="KY" LongName="Cayman Islands" />
+  <MapSpec InternalID="CE.CR" ShortName="CR" LongName="Costa Rica" />
+  <MapSpec InternalID="CE.CU" ShortName="CU" LongName="Cuba" />
+  <MapSpec InternalID="CE.DM" ShortName="DM" LongName="Dominica" />
+  <MapSpec InternalID="CE.DO" ShortName="DO" LongName="Dominican Republic" />
+  <MapSpec InternalID="CE.SV" ShortName="SV" LongName="El Salvador" />
+  <MapSpec InternalID="CE.GD" ShortName="GD" LongName="Grenada" />
+  <MapSpec InternalID="CE.GT" ShortName="GT" LongName="Guatemala" />
+  <MapSpec InternalID="CE.HT" ShortName="HT" LongName="Haiti" />
+  <MapSpec InternalID="CE.HN" ShortName="HN" LongName="Honduras" />
+  <MapSpec InternalID="CE.JM" ShortName="JM" LongName="Jamaica" />
+  <MapSpec InternalID="CE.NI" ShortName="NI" LongName="Nicaragua" />
+  <MapSpec InternalID="CE.PA" ShortName="PA" LongName="Panama" />
+  <MapSpec InternalID="CE.PR" ShortName="PR" LongName="Puerto Rico" />
+  <MapSpec InternalID="CE.KN" ShortName="KN" LongName="St.Kitts and Nevis" />
+  <MapSpec InternalID="CE.LC" ShortName="LC" LongName="St.Lucia" />
+  <MapSpec InternalID="CE.VC" ShortName="VC" LongName="St.Vincent and the Grenadlines" />
+  <MapSpec InternalID="CE.TT" ShortName="TT" LongName="Trinidad &amp; Tobago" />
+  <MapSpec InternalID="CE.VG" ShortName="VG" LongName="Virgin Islands,British" />
+  <MapSpec InternalID="CE.VI" ShortName="VI" LongName="Virgin Islands,U.S." />
+</AnimatedMapDataXML>

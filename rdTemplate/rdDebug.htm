@@ -1,0 +1,212 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+   <head>
+      <meta http-equiv="CACHE-CONTROL" content="NO-CACHE" />
+      <meta http-equiv="Expires" content="-1" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+      <title>rdDebug</title>
+      <style>
+	  BODY {color: darkslategray; background-color: white; margin-right: 10px; margin-left: 10px; font-size: 11px; font-family: verdana, arial, sans-serif;}
+.MoreInfo { BACKGROUND: Gray; color:White; }
+.ErrDiv { BACKGROUND: #f0f0f0; }
+.MajorTitle { font-size:9pt; font-weight:bold; }
+.bld { font-weight:bold; }
+.InfHeader { font-weight:bold; text-align: center; width: 100%; }
+.WrnHeader { font-weight:bold; text-align: center; width: 100%; }
+.ErrHeader { color:Maroon; font-size:12pt; font-weight:bold; width: 100%; }
+.ErrMessage { color:Maroon; font-size:9pt; width: 100%; }
+.BodyTable { border-collapse: collapse; width: 99%; }
+.DebugTable { border-collapse: collapse; height: 11px; width: auto; border: solid 1px #3f60af; }
+.DebugTable tr th { text-align: left; }
+.DebugTable tr td { border: solid 1px #bbbbbb; font-size: 11px; }
+.BodyTable tr td table .StepRow td { border-top: solid 1px #3f60af; background-color: #454545; }
+.HeaderRow th { background-color: #eaeff8; border-bottom: solid 1px #3f60af; }
+.LogiDarkGreen { color: #639e12; font-weight: normal; font-size: 18px; }
+.logiPurple { color: #3f60af; font-size: 18px; }
+.TimeRight { text-align: right; padding-right: 4px; }
+.SecondHeader { background-color: #3f60af; color: white; padding-left: 4px; font-weight: bold; }
+.title { font-size: 14px; font-weight:bold; padding-top: 8px;padding-bottom:8px; }
+.GroupHdr { background-color: #cc0033; color: white; padding-left: 4px; font-weight: bold; }
+.TopError { border: solid 1px #cc0033; }
+.TopError tr td { border-top: solid 1px #cc0033; padding-left: 4px; font-size: 11px; }
+.InnerError { border-left: solid 1px #cc0033; border-right: solid 1px #cc0033; border-bottom: solid 1px #cc0033; font-size: 11px; }
+.InnerError tr td { padding-left: 4px; font-size: 11px; }
+.InnerErrorMessage td { padding-left: 4px; color: #cc0033; font-size: 11px; }
+td.progress { width: 10%; }
+td.progress .text { position: relative; }
+td.progress span { position: absolute; top: 0px; right: 0px; }
+div.progressBar, div.previousElapsed { background-color: #d4e4a4; float: left; clear: right; } /* Clear right is for IE7 */
+div.previousElapsed { background-color: #efffbf; }
+/* a.generateProgressBars { color: #0000EE; } */
+td,th {
+	font-size:11px;
+	/*border: 1px solid black;*/
+	padding: 0;
+	white-space: pre;           /* CSS 2.0 */
+	white-space: pre-wrap;      /* CSS 2.1 */
+	white-space: pre-line;      /* CSS 3.0 */
+	white-space: -pre-wrap;     /* Opera 4-6 */
+	white-space: -o-pre-wrap;   /* Opera 7 */
+	white-space: -moz-pre-wrap; /* Mozilla */
+	white-space: -hp-pre-wrap;  /* HP Printers */
+	word-wrap: break-word;      /* IE 5+ */
+}
+th {
+border: 1px solid black;
+}
+.title{margin-top:8px; margin-bottom:8px;}
+th{padding: 3px;}
+td {padding: 2px;}
+h3 {text-align:left;}
+</style>
+<script>
+    function rdDebugExpand(sID) {
+        var eleMoreInfo = document.getElementById(sID);
+        eleMoreInfo.style.display = "";
+        eleMoreInfo.parentNode.removeChild(eleMoreInfo.previousSibling);
+    }
+
+    function rdDebugDownloadTrace() {
+        var sDebugUrl = document.body.getAttribute("rdDebugUrl");
+        sDebugGroupPrefix = sDebugUrl.substr(sDebugUrl.indexOf("/rdDownload") + 12);
+        sDebugGroupPrefix = sDebugGroupPrefix.replace("-rdDebug.htm", "");
+        var sUrl = sDebugUrl.substr(0, sDebugUrl.indexOf("/rdDownload")) + "./rdTemplate/rdDebugDownload.aspx?TracePrefix=" + sDebugGroupPrefix;
+        if (window.location.href.indexOf("rdDownload") != -1) {
+            //The URL is already in the rdDownload folder.
+            sUrl = "." + sUrl;  //Go up one folder.
+        }
+        window.location.href = sUrl;
+    }
+
+     /*
+      * This code serves multiple purposes
+      * 1) General Debug
+      * 2) General Debug in ETL
+      * 3) Exception Page for our exceptions
+      *
+      * In some cases ../rdTemplate is transformed into rdTemplate.  And often this breaks the URLs
+      */
+    function rdBuildProgressBars() {
+
+        //Set a total time attribute in each node.
+        var nEndTime = 0;
+        var nlTimes = document.querySelectorAll('table.DebugTable tr > td:nth-last-child(2)');
+        for (i = nlTimes.length - 1; i > -1; i--) {  //Read backwards.
+            var tdTime = nlTimes[i]
+            var sTime = tdTime.textContent;
+            var nTime = parseFloat(sTime);
+            if (!isNaN(nTime)) {
+                if (nTime == 0) {
+                    //At the beginning of a time group.  The next time is an end time.
+                    nEndTime = 0;
+                }
+                if (nEndTime == 0) {
+                    nEndTime = nTime;
+                }
+                //var nTotalPercent = Math.round((nTime / nEndTime) * 100)
+                tdTime.parentNode.setAttribute("EndTime", nEndTime);
+            }
+        }
+
+        var previousTimeUsage = 0;
+        var lastColumn = document.querySelectorAll('table.DebugTable tr > td:nth-last-child(2)');
+        for (var i = 0; i < lastColumn.length; i++) {
+            var tdNode = lastColumn[i];
+
+            // Iterate through each and modify CSS
+            var totalTime = parseFloat(tdNode.parentNode.getAttribute("EndTime"))
+            if (totalTime != 0) {
+
+                var timeText = tdNode.innerText;
+                var time = parseFloat(timeText);
+                if (!isNaN(time)) {
+
+                    var percent = Math.round((time / totalTime) * 100),
+                        previousPercent = Math.round((previousTimeUsage / totalTime) * 100),
+                        elapsedSincePrevious = percent - previousPercent;
+
+                    tdNode.className += " progress";
+                    var html = '<div class="previousElapsed" style="width:' + previousPercent + '%;">&nbsp;</div>'
+                        + '<div class="progressBar" style="width:' + elapsedSincePrevious + '%;">&nbsp;</div>'
+                        + '<div class="text"><span>' + timeText + '</span></div>';
+
+                    tdNode.innerHTML = html;
+
+                    // Update previous UsageTime
+                    previousTimeUsage = time;
+                }
+            } else {
+                previousTimeUsage = 0
+            }
+        }
+    }
+
+    document.addEventListener("DOMContentLoaded", function () {
+        rdBuildProgressBars();
+
+        if (window.location.protocol.indexOf("http") != 0) {
+            var anchors = document.getElementsByTagName("A");
+            for (var i = 0; i < anchors.length; i++) {
+                var a = anchors[i];
+
+                var url = a.href;
+
+                if (url.indexOf("rdDebugDownloadTrace") >= 0) {
+                    a.style.display = "none";
+                    continue;
+                }
+
+                if (url.indexOf("javascript:") == 0 || url.lastIndexOf(".xml") != url.length - 4)
+                    continue;
+
+                var idx = url.indexOf("/rdDebugData.htm?url=");
+                if (idx >= 0)
+                    url = url.substr(idx + 21);
+
+                idx = url.lastIndexOf("/rdDownload/");
+
+                if (idx >= 0)
+                    url = url.substr(idx + 12);
+
+                a.href = url;
+            }
+        }
+    });
+</script>
+   </head>
+   <body rdDebugUrl="-rdDebugUrl-">
+      <div><h3><span class="LogiDarkGreen">Logi</span> <span class="LogiPurple">Debugger Trace Report</span></h3></div>
+      <rdErrorMsgContent>
+         <rdErrorMessage />
+      </rdErrorMsgContent>
+
+      <rdDetailedReport>
+          <span id="DetailedReport" style="rdHideOrShowDetails" >
+              <table border="0" class="BodyTable">
+                  <tr><td></td></tr>
+                  <tr>
+                      <td>
+                          <table class="DebugTable" border="0" cellspacing="0" style="table-layout:fixed;width:100%;white-space:nowrap;">
+                              <tr class="HeaderRow">
+                                  <th style="width:17%">Event</th>
+                                  <th style="width:17%;">Event Detail</th>
+                                  <th style="width:46%;">Value</th>
+                                  <th style="width:06%;text-align:center;">Time</th>
+                                  <th style="width:14%;text-align:center;">Timestamp</th>
+                              </tr>
+                              <tr id="rdCurrentPosition" style="display: none;"></tr>
+                          </table>
+                      </td>
+                  </tr>
+                  <tr><td class="SmallNote">* Generating this debugger information increases the overall elapsed time.</td></tr>
+                  <tr><td>&#160;</td></tr>
+              </table>
+              <table border="0" class="BodyTable">
+                  <tr><td><rdErrorReport /></td></tr>
+              </table>
+              <br />
+              <a href="javascript:rdDebugDownloadTrace()">Download ZIPed Debugger Trace</a>
+          </span>
+      </rdDetailedReport>
+    </body>
+</html>

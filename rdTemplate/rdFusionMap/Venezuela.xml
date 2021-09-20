@@ -1,0 +1,27 @@
+<AnimatedMapDataXML>
+  <MapSpec InternalID="01" ShortName="Z" LongName="Amazonas" />
+  <MapSpec InternalID="02" ShortName="B" LongName="Anzoátegui" />
+  <MapSpec InternalID="03" ShortName="C" LongName="Apure" />
+  <MapSpec InternalID="04" ShortName="D" LongName="Aragua" />
+  <MapSpec InternalID="05" ShortName="E" LongName="Barinas" />
+  <MapSpec InternalID="06" ShortName="F" LongName="Bolívar" />
+  <MapSpec InternalID="07" ShortName="G" LongName="Carabobo" />
+  <MapSpec InternalID="08" ShortName="H" LongName="Cojedes" />
+  <MapSpec InternalID="09" ShortName="Y" LongName="Delta Amacuro" />
+  <MapSpec InternalID="24" ShortName="W" LongName="Dependencies Federal" />
+  <MapSpec InternalID="25" ShortName="A" LongName="Distrito Capital" />
+  <MapSpec InternalID="11" ShortName="I" LongName="Falcón" />
+  <MapSpec InternalID="12" ShortName="J" LongName="Guarico" />
+  <MapSpec InternalID="13" ShortName="K" LongName="Lara" />
+  <MapSpec InternalID="14" ShortName="L" LongName="Merida" />
+  <MapSpec InternalID="15" ShortName="M" LongName="Miranda" />
+  <MapSpec InternalID="16" ShortName="N" LongName="Monagas" />
+  <MapSpec InternalID="17" ShortName="O" LongName="Nueva Esparta" />
+  <MapSpec InternalID="18" ShortName="P" LongName="Portuguesa" />
+  <MapSpec InternalID="19" ShortName="R" LongName="Sucre" />
+  <MapSpec InternalID="20" ShortName="S" LongName="Tachira" />
+  <MapSpec InternalID="21" ShortName="T" LongName="Trujillo" />
+  <MapSpec InternalID="26" ShortName="X" LongName="Vargas" />
+  <MapSpec InternalID="22" ShortName="U" LongName="Yaracuy" />
+  <MapSpec InternalID="23" ShortName="V" LongName="Zulia" />
+</AnimatedMapDataXML>

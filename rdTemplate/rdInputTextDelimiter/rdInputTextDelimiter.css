@@ -1,0 +1,40 @@
+﻿div.rdInputTextDelimiterContainer {
+    display: inline-block;
+    text-wrap: none;
+    white-space: nowrap;
+    overflow: hidden;
+}
+div.rdInputTextPill {
+    display: inline-block;
+    padding: 1px 1px 1px 1px;
+    margin: 0px 0px 0px 0px;
+    background-color: #ddd;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: 0px solid transparent;
+}
+div.rdInputTextPill.rdInputTextPillSelected {
+    background-color: #aef;
+}
+    div.rdInputTextPill.rdInputTextPillSelected.rdInputTextPillSelectedFull {
+        border-color: #66c;
+        background-color: #66c;
+        color: #fff;
+    }
+        div.rdInputTextPill.rdInputTextPillSelected.rdInputTextPillSelectedFull::selection {
+            background-color: #66c;
+            color: #fff;
+        }
+div.rdInputTextPillEditor {
+    border: 0px none;
+    padding: 0px 0px 0px 0px;
+    margin: 0px 0px 0px 0px;
+    text-wrap: none;
+    white-space: nowrap;
+    display: inline-block;
+    min-width: 30px;
+    outline: 0px solid transparent;
+}
+span.rdInputTextPlaceholder {
+    color: gray;
+}

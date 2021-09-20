@@ -1,0 +1,13 @@
+<AnimatedMapDataXML>
+  <MapSpec InternalID="WS.AA" ShortName="AA" LongName="Aana" />
+  <MapSpec InternalID="WS.AL" ShortName="AL" LongName="Aiga-i-le-Tai" />
+  <MapSpec InternalID="WS.AT" ShortName="AT" LongName="Atua" />
+  <MapSpec InternalID="WS.FA" ShortName="FA" LongName="Faasaleleaga" />
+  <MapSpec InternalID="WS.GE" ShortName="GE" LongName="Gagaemauga" />
+  <MapSpec InternalID="WS.GI" ShortName="GI" LongName="Gagaifomauga" />
+  <MapSpec InternalID="WS.PA" ShortName="PA" LongName="Palauli" />
+  <MapSpec InternalID="WS.SA" ShortName="SA" LongName="Satupaitea" />
+  <MapSpec InternalID="WS.TU" ShortName="TU" LongName="Tuamasaga" />
+  <MapSpec InternalID="WS.VF" ShortName="VF" LongName="Vaao Fonoti" />
+  <MapSpec InternalID="WS.VS" ShortName="VS" LongName="Vaisigano" />
+</AnimatedMapDataXML>

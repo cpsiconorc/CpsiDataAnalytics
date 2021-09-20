@@ -1,0 +1,35 @@
+<AnimatedMapDataXML>
+  <MapSpec InternalID="01" ShortName="AC" LongName="Aceh" />
+  <MapSpec InternalID="02" ShortName="BA" LongName="Bali" />
+  <MapSpec InternalID="35" ShortName="BB" LongName="Bangka-Belitung" />
+  <MapSpec InternalID="33" ShortName="BT" LongName="Banten" />
+  <MapSpec InternalID="03" ShortName="BE" LongName="Bengkulu" />
+  <MapSpec InternalID="07" ShortName="JT" LongName="Central Java" />
+  <MapSpec InternalID="13" ShortName="KT" LongName="Central Kalimantan" />
+  <MapSpec InternalID="21" ShortName="ST" LongName="Central Sulawesi" />
+  <MapSpec InternalID="08" ShortName="JI" LongName="East Java" />
+  <MapSpec InternalID="14" ShortName="KI" LongName="East Kalimantan" />
+  <MapSpec InternalID="18" ShortName="NT" LongName="East Nusa Tenggara" />
+  <MapSpec InternalID="34" ShortName="GO" LongName="Gorontalo" />
+  <MapSpec InternalID="04" ShortName="JK" LongName="Jakarta" />
+  <MapSpec InternalID="05" ShortName="JA" LongName="Jambi" />
+  <MapSpec InternalID="15" ShortName="LA" LongName="Lampung" />
+  <MapSpec InternalID="28" ShortName="MA" LongName="Maluku" />
+  <MapSpec InternalID="29" ShortName="MU" LongName="North Maluku" />
+  <MapSpec InternalID="31" ShortName="SA" LongName="North Sulawesi" />
+  <MapSpec InternalID="26" ShortName="SU" LongName="North Sumatra" />
+  <MapSpec InternalID="36" ShortName="PA" LongName="Papua" />
+  <MapSpec InternalID="37" ShortName="RI" LongName="Riau" />
+  <MapSpec InternalID="40" ShortName="KR" LongName="Riau Islands" />
+  <MapSpec InternalID="22" ShortName="SG" LongName="South East Sulawesi" />
+  <MapSpec InternalID="12" ShortName="KS" LongName="South Kalimantan" />
+  <MapSpec InternalID="38" ShortName="SN" LongName="South Sulawesi" />
+  <MapSpec InternalID="32" ShortName="SL" LongName="South Sumatra" />
+  <MapSpec InternalID="39" ShortName="IB" LongName="West Irian Jaya" />
+  <MapSpec InternalID="30" ShortName="JR" LongName="West Java" />
+  <MapSpec InternalID="11" ShortName="KB" LongName="West Kalimantan" />
+  <MapSpec InternalID="17" ShortName="NB" LongName="West Nusa Tenggara" />
+  <MapSpec InternalID="41" ShortName="SR" LongName="West Sulawesi" />
+  <MapSpec InternalID="24" ShortName="SB" LongName="West Sumatra" />
+  <MapSpec InternalID="10" ShortName="YO" LongName="Yogyakarta" />
+</AnimatedMapDataXML>

@@ -1,0 +1,91 @@
+﻿<EmailReportTemplate>
+	<Action Type="ShowElement" ElementID="rdPopupEmail_rdActionID" ID="rdShowPopupEmail" />
+	<PopupPanel ID="rdPopupEmail_rdActionID" Caption="Email" Draggable="True" PopupModal="True">
+		<Rows>
+			<Row ID="rowFrom">
+				<Column>
+					<Label Caption="From " ID="lblFrom" />
+				</Column>
+				<Column ColSpan="2">
+					<InputEmail ID="rdFrom_rdActionID" SaveInLocalStorage="True" InputSize="50" Tooltip="Enter an email address.">
+						<Validation Type="Required" ErrorMsg="Missing the From email address." Class="ThemeErrorText" />
+						<Validation Type="Email" ErrorMsg="Invalid From email address." Class="ThemeErrorText" />
+					</InputEmail>
+					<LineBreak />
+				</Column>
+			</Row>
+			<Row ID="rowTo">
+				<Column>
+					<Label Caption="To " ID="lblTo" />
+				</Column>
+				<Column>
+					<InputEmail InputSize="50" ID="rdTo_rdActionID" MultipleAddresses="True" Tooltip="Enter email addresses.">
+						<Validation Type="Required" ErrorMsg="Missing a To email address." Class="ThemeErrorText" />
+						<Validation Type="Email" ErrorMsg="Invalid To email address." Class="ThemeErrorText" />
+					</InputEmail>
+				</Column>
+				<Column>
+					<Label ID="lblAddCc_rdActionID" Caption="Add Cc">
+						<Action Type="ShowElement" ID="actionAddCc" ElementID="lblAddCc_rdActionID, rowCc_rdActionID" />
+					</Label>
+					<LineBreak />
+					<Label ID="lblAddBcc_rdActionID" Caption="Add Bcc">
+						<Action Type="ShowElement" ID="actionAddBcc"  ElementID="lblAddBcc_rdActionID, rowBcc_rdActionID" />
+					</Label>
+				</Column>
+			</Row>
+			<Row ID="rowCc_rdActionID" ShowModes="None">
+				<Column>
+					<Label Caption="Cc " ID="lblCc" />
+				</Column>
+				<Column ColSpan="2">
+					<InputEmail InputSize="50" ID="rdCc_rdActionID" MultipleAddresses="True" Tooltip="Enter email addresses.">
+						<Validation Type="Email" ErrorMsg="Invalid Cc email address." Class="ThemeErrorText" />
+					</InputEmail>
+				</Column>
+			</Row>
+			<Row ID="rowBcc_rdActionID" ShowModes="None">
+				<Column>
+					<Label Caption="Bcc " ID="lblBcc" />
+				</Column>
+				<Column ColSpan="2">
+					<InputEmail InputSize="50" ID="rdBcc_rdActionID" MultipleAddresses="True" Tooltip="Enter email addresses.">
+						<Validation Type="Email" ErrorMsg="Invalid Bcc email address." Class="ThemeErrorText" />
+					</InputEmail>
+				</Column>
+			</Row>
+			<Row ID="rowSubject">
+				<Column>
+					<Label Caption="Subject " ID="lblSubject" />
+				</Column>
+				<Column ColSpan="2">
+					<InputText ID="rdSubject_rdActionID" InputSize="50" Tooltip="Enter the subject.">
+						<Validation Type="Required" ErrorMsg="Enter the Subject." Class="ThemeErrorText" />
+					</InputText>
+				</Column>
+			</Row>
+			<Row ID="rowMessage">
+				<Column>
+					<Label Caption="Message " ID="lblMessage" />
+				</Column>
+				<Column ColSpan="2">
+					<InputTextArea ID="rdBody_rdActionID" InputRows="4" InputColumns="60" Tooltip="Include a personal message." />
+				</Column>
+			</Row>
+			<Row ID="rowSend">
+				<Column />
+				<Column ColSpan="2">
+					<Division ID="divSend_rdActionID">
+						<Label Caption="Send Now " ID="lblSend_rdActionID" Class="ThemeLinkButton">
+							<Action Type="Javascript" Javascript="rdSendEmailReport('rdActionID','@Function.RowNumber~','rdEmailReport','rdEmailFormat','rdExtension')" ID="rdActionSendEmail" />
+						</Label>
+					</Division>
+					<Division ID="divWait_rdActionID" ShowModes="None">
+						<Image Caption="rdTemplate/rdWait.gif" />
+					</Division>
+				</Column>
+			</Row>
+		</Rows>
+	</PopupPanel>
+</EmailReportTemplate>
+

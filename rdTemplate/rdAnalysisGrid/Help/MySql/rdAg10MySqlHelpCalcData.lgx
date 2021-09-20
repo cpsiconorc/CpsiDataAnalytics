@@ -1,0 +1,59 @@
+﻿<DataLayer Type="Static">
+  <StaticDataRow Name="Date" Description="Returns the current date." Syntax="Curdate()" Notes=""/>
+  <StaticDataRow Name="DateAdd" Description="Adds or subtracts some interval of time from a date or time." Syntax="Date_Add(now(),interval)" Notes="Interval may be:
+SECOND, MINUTE, HOUR, DAY, WEEK, MONTH, QUARTER, YEAR. 
+A simple example would be DATE_ADD(date column, INTERVAL 2 QUARTER). 
+More help available at http://dev.mysql.com/doc/refman/5.1/en/date-and-time-functions.html#function_date-add. "/>
+  <StaticDataRow Name="DateDiff" Description="Computes the difference between two dates." Syntax="DateDiff(date1,date2)" Notes="Only dates considered"/>
+  <StaticDataRow Name="DatePart" Description="Returns part of a date." Syntax="Extract(YEAR FROM date)" Notes="Part is Year, Month, Day, Hour, Minute, and Second.
+A simple example would be Extract(YEAR FROM date column).
+More help available at http://dev.mysql.com/doc/refman/5.1/en/date-and-time-functions.html#function_extract. ) "/>
+  <StaticDataRow Name="DateSerial" Description="Combines date parts together to make a date." Syntax="STR_TO_DATE(CONCAT_WS('-', year, month, day), '%Y-%c-%e')" Notes=""/>
+  <StaticDataRow Name="DateValue" Description="Returns a date from a date string.  The function can convert dates from many different formats." Syntax="STR_TO_DATE(date, format)" Notes="
+A simple example would be STR_TO_DATE(date column, '%Y-%c-%e')
+More help available at http://dev.mysql.com/doc/refman/5.5/en/date-and-time-functions.html#function_str-to-date. "/>
+  <StaticDataRow Name="Day" Description="Returns the day of the month.  Possible return values are from 1-31." Syntax="Day(date)" Notes=""/>
+  <StaticDataRow Name="FormatCurrency" Description="Format a number value into currency." Syntax="Concat('$',Format(number,2))" Notes=""/>
+  <StaticDataRow Name="FormatDate" Description="Formats a date." Syntax=" Date_Format(Curdate(), '%Y-%m-%d')" Notes=""/>
+  <StaticDataRow Name="FormatDateTime" Description="Formats a date with time." Syntax=" Date_Format(Now(), '%Y-%m-%d %H.%i.%s')" Notes=""/>
+  <StaticDataRow Name="FormatNumber" Description="Formats a number." Syntax="Format(number,2)" Notes=""/>
+  <StaticDataRow Name="FormatPercent" Description="Formats a number as a percentage." Syntax="Concat(Round(number,2),'%')" Notes=""/>
+  <StaticDataRow Name="Hour" Description="Returns the hour of the day.  Possible return values are 0-23." Syntax="Extract(HOUR FROM date)" Notes=""/>
+  <StaticDataRow Name="Case" Description="Returns one value or another, depending on if the expression evaluates to True or False." Syntax="Case When Expression Then True Else False End" Notes="Expression is a formula that returns True or False.  
+For example, this would return &quot;Blue&quot;, because 1 does not equal 2.  
+Case When 1=2 Then &quot;Red&quot; Else &quot;Blue&quot; End"/>
+  <StaticDataRow Name="InString" Description="Returns the character location where one string is found within another string." Syntax="Instr(text,text_to_search)" />
+  <StaticDataRow Name="Int" Description="Returns the integer portion of a number, removing any decimal places." Syntax="Round(Floatvalue,0)" Notes=""/>
+  <StaticDataRow Name="IsDate" Description="Returns True if the text is a date." Syntax="If(Date(text) is null, false, true)" Notes=""/>
+  <StaticDataRow Name="IsNumeric" Description="Returns True if the text is a number." Syntax="REGEXP '^(-|\\+)?([0-9]+\\.[0-9]*|[0-9]*\\.[0-9]+|[0-9]+)$'" Notes="A simple example would be:
+data column REGEXP '^(-|\\+)?([0-9]+\\.[0-9]*|[0-9]*\\.[0-9]+|[0-9]+)$' "/>
+  <StaticDataRow Name="Lower" Description="Converts all characters to lower case." Syntax="Lower(text)" Notes=""/>
+  <StaticDataRow Name="Left" Description="Returns the &quot;length&quot; number of characters from the left side of the input text." Syntax="Left(text,length)" Notes=""/>
+  <StaticDataRow Name="Length" Description="Returns the number of characters in the text." Syntax="Length(text)" Notes=""/>
+  <StaticDataRow Name="LTrim" Description="Removes the space characters from the left side of the text." Syntax="LTrim(text)" Notes=""/>
+  <StaticDataRow Name="Mid" Description="Returns characters from the middle of the text." Syntax="Substring(text,start,length)" Notes="&quot;start&quot; is the first character to be returned.  The first character is at position 1.
+
+&quot;length&quot; is the number of characters to be returned."/>
+  <StaticDataRow Name="Minute" Description="Returns the minute of the hour.  Possible return values are 0-59." Syntax="Extract(MINUTE FROM date)" Notes=""/>
+  <StaticDataRow Name="Month" Description="Returns the month of the year.  Possible return values are 1-12." Syntax="Extract(MONTH FROM date)" Notes=""/>
+  <StaticDataRow Name="MonthName" Description="Returns the name of the month." Syntax="MonthName(date)" Notes=""/>
+  <StaticDataRow Name="Now" Description="Returns the current date and time." Syntax="Now()" Notes=""/>
+  <StaticDataRow Name="Power" Description="Exponentiation: Power( m, n ). Function returns m raised to the nth power." Syntax="Power(m,n)" Notes=""/>
+  <StaticDataRow Name="Replace" Description="Searches textSearch for textFind, replacing it with the textReplaceWith value." Syntax="Replace(string1,string_to_replace,[replacement_string])" Notes="Replace('abcdefghicde','cde','xxx') returns abxxxfghixxx" />
+  <StaticDataRow Name="Right" Description="Returns the &quot;length&quot; number of characters from the right side of the input text." Syntax="RIGHT(text,length)" Notes=""/>
+  <StaticDataRow Name="Rand" Description="Returns a random number between 0 and 1." Syntax="Rand([seed])" Notes="Seed is an integer expression (tinyint, smallint, or int) that gives the seed value. This parameter is Optional."/>
+  <StaticDataRow Name="Round" Description="Returns a number rounded to a specified number of decimal places." Syntax="Round(numeric_expression[, length])" Notes=""/>
+  <StaticDataRow Name="RTrim" Description="Removes any space characters from the right side of the text." Syntax="RTrim(text)" Notes=""/>
+  <StaticDataRow Name="Second" Description="Returns the second of the minute.  Possible values are 0-59." Syntax="Extract(SECOND FROM date)" Notes=""/>
+  <StaticDataRow Name="Sign" Description="Returns -1 if the number is negative.  Returns 1 if the number is positive.  Returns 0 if the number is 0." Syntax="Sign(number)" Notes=""/>
+  <StaticDataRow Name="Space" Description="Returns text consisting of the number of spaces." Syntax="Space(number)" Notes=""/>
+  <StaticDataRow Name="Square" Description="Returns the square root of a number." Syntax="Power(number,2)" Notes=""/>
+  <StaticDataRow Name="String" Description="Returns text consisting of the character duplicated the number of times." Syntax="Repeat(text, count)" Notes=""/>
+  <StaticDataRow Name="Reverse" Description="Returns the text with the characters in reverse order." Syntax="Reverse(text)" Notes=""/>
+  <StaticDataRow Name="TimeValue" Description="Returns a time value from a time string.  The function can convert dates from many different formats." Syntax="Time(text)" Notes=""/>
+  <StaticDataRow Name="Trim" Description="Removes space characters from both the left and rights sides of the text." Syntax="Trim(text)" Notes=""/>
+  <StaticDataRow Name="Upper" Description="Converts all characters to upper case." Syntax="Upper(text)" Notes=""/>
+  <StaticDataRow Name="Weekday" Description="Returns the number of the day of the week.  Possible return values are 0-6." Syntax="WeekDay(date)" Notes="0 = Monday"/>
+  <StaticDataRow Name="WeekdayName" Description="Returns the name of the day corresponding to the weekday number." Syntax="Date_Format(date,'%W')" Notes=""/>
+  <StaticDataRow Name="Year" Description="Returns the number of the year of the specified date." Syntax="Year(date)" Notes=""/>
+</DataLayer>

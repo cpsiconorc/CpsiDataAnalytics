@@ -1,0 +1,69 @@
+<AnimatedMapDataXML>
+  <MapSpec InternalID="001" ShortName="AL" LongName="Alachua" />
+  <MapSpec InternalID="003" ShortName="BA" LongName="Baker" />
+  <MapSpec InternalID="005" ShortName="BY" LongName="Bay" />
+  <MapSpec InternalID="007" ShortName="BF" LongName="Bradford" />
+  <MapSpec InternalID="009" ShortName="BV" LongName="Brevard" />
+  <MapSpec InternalID="011" ShortName="BW" LongName="Broward" />
+  <MapSpec InternalID="013" ShortName="CA" LongName="Calhoun" />
+  <MapSpec InternalID="015" ShortName="CH" LongName="Charlotte" />
+  <MapSpec InternalID="017" ShortName="CI" LongName="Citrus" />
+  <MapSpec InternalID="019" ShortName="CL" LongName="Clay" />
+  <MapSpec InternalID="021" ShortName="CO" LongName="Collier" />
+  <MapSpec InternalID="023" ShortName="CU" LongName="Columbia" />
+  <MapSpec InternalID="086" ShortName="DA" LongName="Miami-Dade" />
+  <MapSpec InternalID="027" ShortName="DE" LongName="Desoto" />
+  <MapSpec InternalID="029" ShortName="DI" LongName="Dixie" />
+  <MapSpec InternalID="031" ShortName="DU" LongName="Duval" />
+  <MapSpec InternalID="033" ShortName="ES" LongName="Escambia" />
+  <MapSpec InternalID="035" ShortName="FL" LongName="Flagler" />
+  <MapSpec InternalID="037" ShortName="FR" LongName="Franklin" />
+  <MapSpec InternalID="039" ShortName="GA" LongName="Gadsden" />
+  <MapSpec InternalID="041" ShortName="GI" LongName="Gilchrist" />
+  <MapSpec InternalID="043" ShortName="GL" LongName="Glades" />
+  <MapSpec InternalID="045" ShortName="GU" LongName="Gulf" />
+  <MapSpec InternalID="047" ShortName="HT" LongName="Hamilton" />
+  <MapSpec InternalID="049" ShortName="HA" LongName="Hardee" />
+  <MapSpec InternalID="051" ShortName="HE" LongName="Hendry" />
+  <MapSpec InternalID="053" ShortName="HN" LongName="Hernando" />
+  <MapSpec InternalID="055" ShortName="HL" LongName="Highlands" />
+  <MapSpec InternalID="057" ShortName="HB" LongName="Hillsborough" />
+  <MapSpec InternalID="059" ShortName="HM" LongName="Holmes" />
+  <MapSpec InternalID="061" ShortName="IR" LongName="Indian     river" />
+  <MapSpec InternalID="063" ShortName="JS" LongName="Jackson" />
+  <MapSpec InternalID="065" ShortName="JE" LongName="Jefferson" />
+  <MapSpec InternalID="067" ShortName="LY" LongName="Lafayette" />
+  <MapSpec InternalID="069" ShortName="LA" LongName="Lake" />
+  <MapSpec InternalID="071" ShortName="LE" LongName="Lee" />
+  <MapSpec InternalID="073" ShortName="LO" LongName="Leon" />
+  <MapSpec InternalID="075" ShortName="LV" LongName="Levy" />
+  <MapSpec InternalID="077" ShortName="LI" LongName="Liberty" />
+  <MapSpec InternalID="079" ShortName="MS" LongName="Madison" />
+  <MapSpec InternalID="081" ShortName="MN" LongName="Manatee" />
+  <MapSpec InternalID="083" ShortName="MR" LongName="Marion" />
+  <MapSpec InternalID="085" ShortName="MA" LongName="Martin" />
+  <MapSpec InternalID="087" ShortName="MO" LongName="Monroe" />
+  <MapSpec InternalID="089" ShortName="NA" LongName="Nassau" />
+  <MapSpec InternalID="091" ShortName="OL" LongName="Okaloosa" />
+  <MapSpec InternalID="093" ShortName="OK" LongName="Okeechobee" />
+  <MapSpec InternalID="095" ShortName="OR" LongName="Orange" />
+  <MapSpec InternalID="097" ShortName="OS" LongName="Osceola" />
+  <MapSpec InternalID="099" ShortName="PB" LongName="Palm beach" />
+  <MapSpec InternalID="101" ShortName="PA" LongName="Pasco" />
+  <MapSpec InternalID="103" ShortName="PL" LongName="Pinellas" />
+  <MapSpec InternalID="105" ShortName="PO" LongName="Polk" />
+  <MapSpec InternalID="107" ShortName="PN" LongName="Putnam" />
+  <MapSpec InternalID="113" ShortName="SR" LongName="Santa rosa" />
+  <MapSpec InternalID="115" ShortName="SS" LongName="Sarasota" />
+  <MapSpec InternalID="117" ShortName="SO" LongName="Seminole" />
+  <MapSpec InternalID="109" ShortName="SJ" LongName="St. Johns" />
+  <MapSpec InternalID="111" ShortName="SL" LongName="St. Lucie" />
+  <MapSpec InternalID="119" ShortName="ST" LongName="Sumter" />
+  <MapSpec InternalID="121" ShortName="SN" LongName="Suwannee" />
+  <MapSpec InternalID="123" ShortName="TA" LongName="Taylor" />
+  <MapSpec InternalID="125" ShortName="UN" LongName="Union" />
+  <MapSpec InternalID="127" ShortName="VO" LongName="Volusia" />
+  <MapSpec InternalID="129" ShortName="WK" LongName="Wakulla" />
+  <MapSpec InternalID="131" ShortName="WT" LongName="Walton" />
+  <MapSpec InternalID="133" ShortName="WG" LongName="Washington" />
+</AnimatedMapDataXML>

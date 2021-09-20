@@ -1,0 +1,137 @@
+<AnimatedMapDataXML>
+  <MapSpec InternalID="001" ShortName="AC" LongName="Accomack" />
+  <MapSpec InternalID="003" ShortName="AL" LongName="Albemarle" />
+  <MapSpec InternalID="005" ShortName="AE" LongName="Alleghany" />
+  <MapSpec InternalID="007" ShortName="AM" LongName="Amelia" />
+  <MapSpec InternalID="009" ShortName="AH" LongName="Amherst" />
+  <MapSpec InternalID="011" ShortName="AP" LongName="Appomattox" />
+  <MapSpec InternalID="013" ShortName="AR" LongName="Arlington" />
+  <MapSpec InternalID="015" ShortName="AU" LongName="Augusta" />
+  <MapSpec InternalID="017" ShortName="BA" LongName="Bath" />
+  <MapSpec InternalID="019" ShortName="BE" LongName="Bedford" />
+  <MapSpec InternalID="021" ShortName="BL" LongName="Bland" />
+  <MapSpec InternalID="023" ShortName="BO" LongName="Botetourt" />
+  <MapSpec InternalID="025" ShortName="BR" LongName="Brunswick" />
+  <MapSpec InternalID="027" ShortName="BU" LongName="Buchanan" />
+  <MapSpec InternalID="029" ShortName="BC" LongName="Buckingham" />
+  <MapSpec InternalID="031" ShortName="CA" LongName="Campbell" />
+  <MapSpec InternalID="033" ShortName="CR" LongName="Caroline" />
+  <MapSpec InternalID="035" ShortName="CL" LongName="Carroll" />
+  <MapSpec InternalID="036" ShortName="CC" LongName="Charles City" />
+  <MapSpec InternalID="037" ShortName="CH" LongName="Charlotte" />
+  <MapSpec InternalID="041" ShortName="CS" LongName="Chesterfield" />
+  <MapSpec InternalID="043" ShortName="CK" LongName="Clarke" />
+  <MapSpec InternalID="045" ShortName="CG" LongName="Craig" />
+  <MapSpec InternalID="047" ShortName="CU" LongName="Culpeper" />
+  <MapSpec InternalID="049" ShortName="CM" LongName="Cumberland" />
+  <MapSpec InternalID="051" ShortName="DI" LongName="Dickenson" />
+  <MapSpec InternalID="053" ShortName="DN" LongName="Dinwiddie" />
+  <MapSpec InternalID="057" ShortName="ES" LongName="Essex" />
+  <MapSpec InternalID="059" ShortName="FI" LongName="Fairfax" />
+  <MapSpec InternalID="061" ShortName="FU" LongName="Fauquier" />
+  <MapSpec InternalID="063" ShortName="FL" LongName="Floyd" />
+  <MapSpec InternalID="065" ShortName="FV" LongName="Fluvanna" />
+  <MapSpec InternalID="067" ShortName="FK" LongName="Franklin" />
+  <MapSpec InternalID="069" ShortName="FD" LongName="Frederick" />
+  <MapSpec InternalID="071" ShortName="GI" LongName="Giles" />
+  <MapSpec InternalID="073" ShortName="GL" LongName="Gloucester" />
+  <MapSpec InternalID="075" ShortName="GO" LongName="Goochland" />
+  <MapSpec InternalID="077" ShortName="GR" LongName="Grayson" />
+  <MapSpec InternalID="079" ShortName="GE" LongName="Greene" />
+  <MapSpec InternalID="081" ShortName="GV" LongName="Greensville" />
+  <MapSpec InternalID="083" ShortName="HL" LongName="Halifax" />
+  <MapSpec InternalID="085" ShortName="HN" LongName="Hanover" />
+  <MapSpec InternalID="087" ShortName="HC" LongName="Henrico" />
+  <MapSpec InternalID="089" ShortName="HY" LongName="Henry" />
+  <MapSpec InternalID="091" ShortName="HI" LongName="Highland" />
+  <MapSpec InternalID="093" ShortName="IW" LongName="Isle of Wight" />
+  <MapSpec InternalID="095" ShortName="JC" LongName="James City" />
+  <MapSpec InternalID="097" ShortName="KQ" LongName="King and Queen" />
+  <MapSpec InternalID="099" ShortName="KG" LongName="King George" />
+  <MapSpec InternalID="101" ShortName="KW" LongName="King William" />
+  <MapSpec InternalID="103" ShortName="LA" LongName="Lancaster" />
+  <MapSpec InternalID="105" ShortName="LE" LongName="Lee" />
+  <MapSpec InternalID="107" ShortName="LO" LongName="Loudoun" />
+  <MapSpec InternalID="109" ShortName="LU" LongName="Louisa" />
+  <MapSpec InternalID="111" ShortName="LN" LongName="Lunenburg" />
+  <MapSpec InternalID="113" ShortName="MA" LongName="Madison" />
+  <MapSpec InternalID="115" ShortName="MT" LongName="Mathews" />
+  <MapSpec InternalID="117" ShortName="ME" LongName="Mecklenburg" />
+  <MapSpec InternalID="119" ShortName="MI" LongName="Middlesex" />
+  <MapSpec InternalID="121" ShortName="MO" LongName="Montgomery" />
+  <MapSpec InternalID="125" ShortName="NE" LongName="Nelson" />
+  <MapSpec InternalID="127" ShortName="NK" LongName="New Kent" />
+  <MapSpec InternalID="131" ShortName="NT" LongName="Northampton" />
+  <MapSpec InternalID="133" ShortName="NH" LongName="Northumberland" />
+  <MapSpec InternalID="135" ShortName="NW" LongName="Nottoway" />
+  <MapSpec InternalID="137" ShortName="OR" LongName="Orange" />
+  <MapSpec InternalID="139" ShortName="PA" LongName="Page" />
+  <MapSpec InternalID="141" ShortName="PT" LongName="Patrick" />
+  <MapSpec InternalID="143" ShortName="PI" LongName="Pittsylvania" />
+  <MapSpec InternalID="145" ShortName="PO" LongName="Powhatan" />
+  <MapSpec InternalID="147" ShortName="PE" LongName="Prince Edward" />
+  <MapSpec InternalID="149" ShortName="PG" LongName="Prince George" />
+  <MapSpec InternalID="153" ShortName="PW" LongName="Prince William" />
+  <MapSpec InternalID="155" ShortName="PU" LongName="Pulaski" />
+  <MapSpec InternalID="157" ShortName="RP" LongName="Rappahannock" />
+  <MapSpec InternalID="159" ShortName="RC" LongName="Richmond" />
+  <MapSpec InternalID="161" ShortName="RN" LongName="Roanoke" />
+  <MapSpec InternalID="163" ShortName="RK" LongName="Rockbridge" />
+  <MapSpec InternalID="165" ShortName="RG" LongName="Rockingham" />
+  <MapSpec InternalID="167" ShortName="RU" LongName="Russell" />
+  <MapSpec InternalID="169" ShortName="SC" LongName="Scott" />
+  <MapSpec InternalID="171" ShortName="SH" LongName="Shenandoah" />
+  <MapSpec InternalID="173" ShortName="SM" LongName="Smyth" />
+  <MapSpec InternalID="175" ShortName="SU" LongName="Southampton" />
+  <MapSpec InternalID="177" ShortName="SP" LongName="Spotsylvania" />
+  <MapSpec InternalID="179" ShortName="ST" LongName="Stafford" />
+  <MapSpec InternalID="181" ShortName="SR" LongName="Surry" />
+  <MapSpec InternalID="183" ShortName="SS" LongName="Sussex" />
+  <MapSpec InternalID="185" ShortName="TA" LongName="Tazewell" />
+  <MapSpec InternalID="187" ShortName="WA" LongName="Warren" />
+  <MapSpec InternalID="191" ShortName="WS" LongName="Washington" />
+  <MapSpec InternalID="193" ShortName="WE" LongName="Westmoreland" />
+  <MapSpec InternalID="195" ShortName="WI" LongName="Wise" />
+  <MapSpec InternalID="197" ShortName="WY" LongName="Wythe" />
+  <MapSpec InternalID="199" ShortName="YO" LongName="York" />
+  <MapSpec InternalID="510" ShortName="AX" LongName="Alexandria (City)" />
+  <MapSpec InternalID="515" ShortName="BF" LongName="Bedford (City)" />
+  <MapSpec InternalID="520" ShortName="BS" LongName="Bristol (City)" />
+  <MapSpec InternalID="530" ShortName="BV" LongName="Buena Vista (City)" />
+  <MapSpec InternalID="540" ShortName="CV" LongName="Charlottesville (City)" />
+  <MapSpec InternalID="550" ShortName="CP" LongName="Chesapeake (City)" />
+  <MapSpec InternalID="560" ShortName="CF" LongName="Clifton Forge (City)" />
+  <MapSpec InternalID="570" ShortName="CO" LongName="Colonial Heights (City)" />
+  <MapSpec InternalID="580" ShortName="CI" LongName="Covington (City)" />
+  <MapSpec InternalID="590" ShortName="DA" LongName="Danville (City)" />
+  <MapSpec InternalID="595" ShortName="EM" LongName="Emporia (City)" />
+  <MapSpec InternalID="600" ShortName="FA" LongName="Fairfax (City)" />
+  <MapSpec InternalID="610" ShortName="FC" LongName="Falls Church (City)" />
+  <MapSpec InternalID="620" ShortName="FR" LongName="Franklin (City)" />
+  <MapSpec InternalID="630" ShortName="FE" LongName="Fredericksburg (City)" />
+  <MapSpec InternalID="640" ShortName="GA" LongName="Galax (City)" />
+  <MapSpec InternalID="650" ShortName="HA" LongName="Hampton (City)" />
+  <MapSpec InternalID="660" ShortName="HR" LongName="Harrisonburg (City)" />
+  <MapSpec InternalID="670" ShortName="HO" LongName="Hopewell (City)" />
+  <MapSpec InternalID="678" ShortName="LX" LongName="Lexington (City)" />
+  <MapSpec InternalID="680" ShortName="LY" LongName="Lynchburg (City)" />
+  <MapSpec InternalID="683" ShortName="MN" LongName="Manassas (City)" />
+  <MapSpec InternalID="685" ShortName="MP" LongName="Manassas Park (City)" />
+  <MapSpec InternalID="690" ShortName="MV" LongName="Martinsville (City)" />
+  <MapSpec InternalID="700" ShortName="NN" LongName="Newport News (City)" />
+  <MapSpec InternalID="710" ShortName="NO" LongName="Norfolk (City)" />
+  <MapSpec InternalID="720" ShortName="NR" LongName="Norton (City)" />
+  <MapSpec InternalID="730" ShortName="PB" LongName="Petersburg (City)" />
+  <MapSpec InternalID="735" ShortName="PQ" LongName="Poquoson (City)" />
+  <MapSpec InternalID="740" ShortName="PM" LongName="Portsmouth (City)" />
+  <MapSpec InternalID="750" ShortName="RA" LongName="Radford (City)" />
+  <MapSpec InternalID="760" ShortName="RI" LongName="Richmond (City)" />
+  <MapSpec InternalID="770" ShortName="RO" LongName="Roanoke (City)" />
+  <MapSpec InternalID="775" ShortName="SA" LongName="Salem (City)" />
+  <MapSpec InternalID="790" ShortName="SN" LongName="Staunton (City)" />
+  <MapSpec InternalID="800" ShortName="SF" LongName="Suffolk (City)" />
+  <MapSpec InternalID="810" ShortName="VB" LongName="Virginia Beach (City)" />
+  <MapSpec InternalID="820" ShortName="WB" LongName="Waynesboro (City)" />
+  <MapSpec InternalID="830" ShortName="WL" LongName="Williamsburg (City)" />
+  <MapSpec InternalID="840" ShortName="WT" LongName="Winchester (City)" />
+</AnimatedMapDataXML>

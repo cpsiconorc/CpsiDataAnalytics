@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Root SavedBy="LOGIXML\clifton" SavedAt="11/3/2017 7:18:27 PM" EngineVersion="12.1.132-T">
+  <Action Type="ShowElement" ElementID="" ID="showSharing" />
+  <PopupPanel ID="popupSharing" PopupModal="True" Caption="" Draggable="True" rdNoElementShowHistory="True" PopupPanelLocation="Center" Class="ThemeAlignLeft" CloseButtonClass="ThemeHidden" CloseButtonCaption="">
+    <IncludeFrame ID="frameShareFolder" FrameBorder="False" Scrolling="False" Width="550" WidthScale="px">
+      <Target Type="IncludeFrameReport" Report="rdDownloadLink" />
+      <LinkParams rdBookmarkCollection="" rdFolderID="" rdBookmarkID="" rdPopupID="" rdSharingCollectionColumn="" rdSharingCollectionDisplayColumn="" rdGroupIdentifierColumn="" />
+    </IncludeFrame>
+    <LineBreak LineCount="2" />
+    <Division HtmlDiv="True" Width="100" WidthScale="%" Class="ThemeAlignRight">
+      <Label ID="lblHidePopupPanel" Caption="Close" Class="ThemeLinkButton ThemeAlignBottomRight">
+        <Action Type="RefreshElement" ElementID="" ID="actClosePopup" FeedbackHideElementID="popupSharing">
+          <LinkParams rdDontUndoFeedback="True" />
+          <WaitPage Caption="Waiting" />
+        </Action>
+      </Label>
+    </Division>
+    <LineBreak />
+  </PopupPanel>
+</Root>

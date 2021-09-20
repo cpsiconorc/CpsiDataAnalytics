@@ -1,0 +1,25 @@
+<AnimatedMapDataXML>
+  <MapSpec InternalID="03" ShortName="AR" LongName="Árnessýsla" />
+  <MapSpec InternalID="04" ShortName="AB" LongName="Austur-Barðastrandarsýsla" />
+  <MapSpec InternalID="05" ShortName="AH" LongName="Austur-Húnavatnssýsla" />
+  <MapSpec InternalID="06" ShortName="AS" LongName="Austur-Skaftafellssýsla" />
+  <MapSpec InternalID="07" ShortName="BO" LongName="Borgarfjarðarsýsla" />
+  <MapSpec InternalID="08" ShortName="DA" LongName="Dalasýsla" />
+  <MapSpec InternalID="09" ShortName="EY" LongName="Eyjafjarðarsýsla" />
+  <MapSpec InternalID="10" ShortName="GU" LongName="Gullbringusýsla" />
+  <MapSpec InternalID="15" ShortName="KJ" LongName="Kjósarsýsla" />
+  <MapSpec InternalID="17" ShortName="MY" LongName="Mýrasýsla" />
+  <MapSpec InternalID="19" ShortName="NI" LongName="Norður-Ísafjarðarsýsla" />
+  <MapSpec InternalID="20" ShortName="NM" LongName="Norður-Múlasýsla" />
+  <MapSpec InternalID="21" ShortName="NO" LongName="Norður-Þingeyjarsýsla" />
+  <MapSpec InternalID="23" ShortName="RA" LongName="Rangárvallasýsla" />
+  <MapSpec InternalID="28" ShortName="SK" LongName="Skagafjarðarsýsla" />
+  <MapSpec InternalID="29" ShortName="SH" LongName="Snæfellsnes-og    Hnappadalssýsla" />
+  <MapSpec InternalID="30" ShortName="ST" LongName="Strandasýsla" />
+  <MapSpec InternalID="31" ShortName="SM" LongName="Suður-Múlasýsla" />
+  <MapSpec InternalID="32" ShortName="SU" LongName="Suður-Þingeyjarsýsla" />
+  <MapSpec InternalID="34" ShortName="VB" LongName="Vestur-Barðastrandarsýsla" />
+  <MapSpec InternalID="35" ShortName="VH" LongName="Vestur-Húnavatnssýsla" />
+  <MapSpec InternalID="36" ShortName="VI" LongName="Vestur-Ísafjarðarsýsla" />
+  <MapSpec InternalID="37" ShortName="VS" LongName="Vestur-Skaftafellssýsla" />
+</AnimatedMapDataXML>

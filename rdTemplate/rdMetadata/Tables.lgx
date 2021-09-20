@@ -1,0 +1,1001 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Report
+	ID="rdTemplate.MetadataBuilder.Tables"
+	SecurityReportRightID="@Constant.MetadataAdminSecurityRightIDs~"
+	>
+	<DefinitionModifierFile
+		DefinitionModifierFile="@Constant.rdMetadataDmfPath~@Request.rdReport~.xml"
+		ID="CustomDefinitionModifierFile"
+	/>
+	<StyleSheet
+		StyleSheet="rdTemplate/rdMetadata/rdMetadata.css"
+	/>
+	<StyleSheet
+		StyleSheet="@Session.rdMetadataStyleSheet~"
+	/>
+	<SetSessionVariables
+		ID="SetUndoRedoSessionVars"
+		>
+		<SessionParams
+			rdMdUndoRedoKey="Tables&amp;MetadataID=@Request.MetadataID~"
+		/>
+	</SetSessionVariables>
+	<IncludeScriptFile
+		IncludedScriptFile="rdTemplate/rdMetadata/rdUiService.js"
+	/>
+	<LocalData>
+		<DataLayer
+			EnableSettings="True"
+			ID="dlMetadataElement"
+			Type="XMLFile"
+			XMLFile="@Function.AppPhysicalPath~/_Definitions/_Settings.lgx"
+			XPath="Setting/Connections/Connection[@ID=&apos;@Request.ConnectionID~&apos;]/Metadata[@ID=&apos;@Request.MetadataID~&apos;]"
+			>
+			<SwitchColumn
+				DataColumn="MetadataUrl"
+				DataType="Text"
+				ID="ReadOnly"
+				>
+				<SwitchIf
+					NewValue="False"
+				/>
+				<SwitchElse
+					NewValue="True"
+				/>
+			</SwitchColumn>
+			<SwitchColumn
+				DataColumn="MetadataUrl"
+				ID="MetadataUrl"
+				>
+				<SwitchIf
+					NewValue="@Function.AppPhysicalPath~/_Metadata/@Request.MetadataID~.lgx"
+				/>
+				<SwitchElse
+					NewValue="@Data.MetadataUrl~"
+				/>
+			</SwitchColumn>
+		</DataLayer>
+	</LocalData>
+	<Body>
+		<IncludeScript
+			ID="scriptBackButtonRefresh"
+			IncludedScript="rdMetadataCheckBackButtonRefresh(&quot;Tables&quot;);
+
+"
+			>
+			<Note
+				Note="This is for refreshing after changes in other pages."
+			/>
+		</IncludeScript>
+		<Division
+			ID="rdKillPageCache"
+			>
+			<Note
+				Note="This is for refreshing after AnalysisFitler changes. When returning to the page with the Back button, the URL will be changed, and the page refreshed. (FORM variables are not reposted, but that&apos;s OK for this."
+			/>
+		</Division>
+		<PopupPanel
+			Caption="This is the title"
+			HideCloseX="True"
+			ID="pupAjaxResponse"
+			PopupModal="True"
+			PopupPanelLocation="Center"
+			>
+			<Label
+				Caption="This label holds the message to display"
+				ID="lblAjaxMessage"
+			/>
+			<LineBreak
+				LineCount="2"
+			/>
+			<Button
+				Caption="OK"
+				ID="btnOkRefresh"
+				>
+				<Action
+					ID="actPupAjaxResponse"
+					Javascript="rdMetadataRefresh();return false;"
+					Type="Javascript"
+				/>
+			</Button>
+		</PopupPanel>
+		<PopupPanel
+			Caption="This is the title"
+			HideCloseX="True"
+			ID="pupLocalResponse"
+			PopupModal="True"
+			PopupPanelLocation="Center"
+			>
+			<Label
+				Caption="This label holds the message to display"
+				ID="lblLocalMessage"
+			/>
+			<LineBreak
+				LineCount="2"
+			/>
+			<Button
+				Caption="OK"
+				ID="lblOkShowResponse"
+				>
+				<Action
+					Display="Hide"
+					ElementID="pupLocalResponse"
+					Type="ShowElement"
+				/>
+			</Button>
+		</PopupPanel>
+		<Label
+			Caption="Metadata Definition Editor"
+			Class="ThemeHeaderLarger"
+			ID="lblTitle"
+		/>
+		<LineBreak
+			LineCount="2"
+		/>
+		<Label
+			Caption="Edit the properties of tables.
+
+Tables and views in the data source may be used directly, based on their table name. Custom Tables table may be created with SQL SELECT queries.
+
+Tables contain columns. The column properties can be viewed and updated.
+
+Tables may be joined together. These join relations may also be edited."
+			Format="Preserve Line Feeds"
+			ID="lblInstruct"
+		/>
+		<LineBreak
+			LineCount="2"
+		/>
+		<Rows>
+			<Row>
+				<Column>
+					<Label
+						Caption="Metadata ID"
+						Class="ThemeHeader"
+						ID="lblMetadataID"
+					/>
+				</Column>
+				<Column>
+					<Division
+						Condition="&apos;@Local.ReadOnly~&apos; == &apos;True&apos;"
+						ID="divMetadataIDReadOnly"
+						>
+						<Label
+							Caption="@Request.MetadataID~"
+						/>
+					</Division>
+					<Division
+						Condition="&apos;@Local.ReadOnly~&apos; == &apos;False&apos;"
+						ID="divMetadataID"
+						>
+						<InputText
+							DefaultValue="@Request.MetadataID~"
+							ID="MetadataID"
+							>
+							<Validation
+								ErrorMsg="Metadata ID cannot be blank."
+								Type="Required"
+							/>
+							<Validation
+								ErrorMsg="Metadata ID cannot have special characters."
+								JavascriptFunction="rdMetadataValidateID(document.getElementById(&apos;MetadataID&apos;))"
+								Type="Javascript"
+							/>
+							<EventHandler
+								DhtmlEvent="onchange"
+								>
+								<Action
+									ID="jsMetadataUpdate"
+								Javascript="rdMetadataSetBackButtonRefresh(&quot;Connections&quot;);
+
+var sCurrMetadataID = document.getElementById(&apos;hiddenMetadataID&apos;).value;
+document.getElementById(&apos;hiddenMetadataID&apos;).value = this.value;
+
+rdMetadataSetValue(this,&apos;MetadataSetValue&apos;,&apos;MetadataID=&apos; + sCurrMetadataID + &apos;&amp;ConnectionID=@Request!Url.ConnectionID~&amp;Attribute=ID&apos;, true);"
+									Type="Javascript"
+									Validate="True"
+								/>
+							</EventHandler>
+						</InputText>
+					</Division>
+				</Column>
+			</Row>
+			<Row>
+				<Column>
+					<Label
+						Caption="Name"
+						Class="ThemeHeader"
+						ID="lblName"
+					/>
+				</Column>
+				<Column>
+					<Division
+						Condition="&apos;@Local.ReadOnly~&apos; == &apos;True&apos;"
+						ID="divMetaNameReadOnly"
+						>
+						<Label
+							Caption="@Local.MetadataName~"
+						/>
+					</Division>
+					<Division
+						Condition="&apos;@Local.ReadOnly~&apos; == &apos;False&apos;"
+						ID="divMetaName"
+						>
+						<InputText
+							DefaultValue="@Local.MetadataName~"
+							ID="MetadataName"
+							InputSize="50"
+							>
+							<Validation
+								ErrorMsg="Metadata Name cannot be blank."
+								Type="Required"
+							/>
+							<EventHandler
+								DhtmlEvent="onchange"
+								>
+								<Action
+									ID="jsMetadataUpdate"
+								Javascript="rdMetadataSetBackButtonRefresh(&quot;Connections&quot;);
+
+rdMetadataSetValue(this,&apos;MetadataSetValue&apos;,&apos;MetadataID=&apos; + document.getElementById(&apos;hiddenMetadataID&apos;).value + &apos;&amp;ConnectionID=@Request!Url.ConnectionID~&amp;Attribute=MetadataName&apos;, false);
+"
+									Type="Javascript"
+								/>
+							</EventHandler>
+						</InputText>
+					</Division>
+				</Column>
+			</Row>
+			<Row>
+				<Column>
+					<Label
+						Caption="Description"
+						Class="ThemeHeader"
+						ID="lblDescription"
+					/>
+				</Column>
+				<Column>
+					<Division
+						Condition="&apos;@Local.ReadOnly~&apos; == &apos;True&apos;"
+						ID="divMetaDescReadOnly"
+						>
+						<Label
+							Caption="@Local.MetadataDescription~"
+						/>
+					</Division>
+					<Division
+						Condition="&apos;@Local.ReadOnly~&apos; == &apos;False&apos;"
+						ID="divMetaDesc"
+						>
+						<InputTextArea
+							DefaultValue="@Local.MetadataDescription~"
+							ID="Description"
+							InputColumns="100"
+							InputRows="2"
+							>
+							<EventHandler
+								DhtmlEvent="onchange"
+								>
+								<Action
+									ID="jsMetadataUpdate"
+								Javascript="rdMetadataSetBackButtonRefresh(&quot;Connections&quot;);
+
+rdMetadataSetValue(this,&apos;MetadataSetValue&apos;,&apos;MetadataID=&apos; + document.getElementById(&apos;hiddenMetadataID&apos;).value + &apos;&amp;ConnectionID=@Request!Url.ConnectionID~&amp;Attribute=MetadataDescription&apos;, false);
+"
+									Type="Javascript"
+								/>
+							</EventHandler>
+						</InputTextArea>
+					</Division>
+				</Column>
+			</Row>
+			<Row>
+				<Column>
+					<Label
+						Caption="Security Right ID"
+						Class="ThemeHeader"
+						ID="lblSecurityRightID"
+					/>
+				</Column>
+				<Column>
+					<Division
+						Condition="&apos;@Local.ReadOnly~&apos; == &apos;True&apos;"
+						ID="divSecRightReadOnly"
+						>
+						<Label
+							Caption="@Local.SecurityRightID~"
+						/>
+					</Division>
+					<Division
+						Condition="&apos;@Local.ReadOnly~&apos; == &apos;False&apos;"
+						ID="divSecRight"
+						>
+						<InputText
+							DefaultValue="@Local.SecurityRightID~"
+							ID="SecurityRightID"
+							InputSize="50"
+							>
+							<EventHandler
+								DhtmlEvent="onchange"
+								>
+								<Action
+									ID="jsMetadataUpdate"
+								Javascript="rdMetadataSetBackButtonRefresh(&quot;Connections&quot;);
+rdMetadataSetValue(this,&apos;MetadataSetValue&apos;,&apos;MetadataID=&apos;+document.getElementById(&apos;hiddenMetadataID&apos;).value+&apos;&amp;ConnectionID=@Request!Url.ConnectionID~&amp;Attribute=SecurityRightID&apos;, false);"
+									Type="Javascript"
+								/>
+							</EventHandler>
+						</InputText>
+					</Division>
+				</Column>
+			</Row>
+		</Rows>
+		<LineBreak
+			LineCount="2"
+		/>
+		<Rows>
+			<Row>
+				<Column
+					Class="ThemeAlignTop"
+					>
+					<Division
+						Condition="&apos;@Local.ReadOnly~&apos; == &apos;True&apos;"
+						ID="ReadOnly"
+						>
+						<Label
+							Caption="Actions:"
+							Class="ThemeHeader"
+							ID="lblActions"
+						/>
+						<Spaces
+							Size="5"
+						/>
+						<Label
+							Caption="Done"
+							Class="ThemeLinkButton"
+							ID="lblDone"
+							>
+							<Action
+								Javascript="if(window.location.href.indexOf(&apos;rdForWizard=True&apos;) &gt; -1){ if(window.external){ try { return window.external.CloseWizardWindow(); } catch(err) {return true;} } } else { history.go(-1);return false; }"
+								Type="Javascript"
+							/>
+						</Label>
+					</Division>
+					<Division
+						Condition="&apos;@Local.ReadOnly~&apos; == &apos;False&apos;"
+						>
+						<Label
+							Caption="Actions:"
+							Class="ThemeHeader"
+							ID="lblActions"
+						/>
+						<Spaces
+							Size="5"
+						/>
+						<Label
+							Caption="Get Tables and Joins from Data Source"
+							Class="ThemeLinkButton"
+							ID="lblGetTables"
+							>
+							<Action
+								ConfirmMessage="Click OK to load or refresh the table list from the data source."
+								ID="jsMetadataUpdate"
+								Javascript="rdMetadataGetTablesFromSource(&apos;@Request.MetadataID~&apos;,&apos;@Request.ConnectionID~&apos;);return false;"
+								Type="Javascript"
+								Validate="True"
+							/>
+						</Label>
+						<Spaces
+							Size="5"
+						/>
+						<Label
+							Caption="Add a Custom Table with a SQL Query"
+							Class="ThemeLinkButton"
+							ID="lblAddCustomTable"
+							>
+							<Action
+								ConfirmMessage="Add a new Table?"
+								ID="jsNewTable"
+							Javascript="rdMetadataSetBackButtonRefresh(&quot;Tables&quot;);
+rdMetadataAddNewTable(&apos;@Request.MetadataID~&apos;,&apos;@Request.ConnectionID~&apos;);
+return false;"
+								Type="Javascript"
+							/>
+						</Label>
+						<Spaces
+							Size="5"
+						/>
+						<Label
+							Caption="Compact Metadata"
+							Class="ThemeLinkButton"
+							ID="lblCompact"
+							Tooltip="Compact the Metadata, removing tables which aren&apos;t visible."
+							>
+							<Action
+								ElementID="popupCompact"
+								ID="showCompact"
+								Type="ShowElement"
+							/>
+						</Label>
+						<Spaces
+							Size="5"
+						/>
+						<Label
+							Caption="Done"
+							Class="ThemeLinkButton"
+							ID="lblDone"
+							>
+							<Action
+								Javascript="if(window.location.href.indexOf(&apos;rdForWizard=True&apos;) &gt; -1){ if(window.external){ try { return window.external.CloseWizardWindow(); } catch(err) {return true;} } } else { history.go(-1);return false; }"
+								Type="Javascript"
+							/>
+						</Label>
+					</Division>
+				</Column>
+				<Column>
+					<IncludeSharedElement
+						Condition="&apos;@Local.ReadOnly~&apos; == &apos;False&apos;"
+						DefinitionFile="rdTemplate/rdMetadata/UndoRedo"
+						SharedElementID="UndoRedo"
+					/>
+				</Column>
+			</Row>
+		</Rows>
+		<LineBreak
+			LineCount="3"
+		/>
+		<Division>
+			<Action
+				ElementID="divFilter,lblFilterCaption"
+				ShowElementEffect="FadeIn"
+				Type="ShowElement"
+			/>
+			<Label
+				Caption="Filter Tables"
+				Class="ThemeLinkButtonSmall"
+				ID="lblFilterTables"
+			/>
+			<Spaces
+				Size="3"
+			/>
+			<Label
+				ID="lblFilterCaption"
+			/>
+			<LineBreak
+				LineCount="2"
+			/>
+		</Division>
+		<Division
+			HtmlDiv="True"
+			ID="divFilter"
+			ShowModes="None"
+			>
+			<AnalysisFilter
+				CaseSensitivity="Insensitive"
+				DisableSimple="True"
+				FilterCaptionElementID="lblFilterCaption"
+				FilterListLocation="Right"
+				ID="afTables"
+				RefreshElementIDs="dt,hiddenMetadataID,hiddenTableNames,hiddenHiddenCount,hiddenRowCount"
+				>
+				<WaitPage/>
+				<AnalysisFilterColumn
+					DataColumn="Table_Visible"
+					DataType="Boolean"
+					Header="Visible"
+					ID="colVisible"
+				/>
+				<AnalysisFilterColumn
+					DataColumn="Table_TableName"
+					DataType="Text"
+					Header="Name"
+					ID="colTableName"
+					PopupValuesForFilter="List"
+				/>
+				<AnalysisFilterColumn
+					DataColumn="Table_Schema"
+					DataType="Text"
+					Header="Table Schema"
+					ID="colSchema"
+					PopupValuesForFilter="List"
+				/>
+				<AnalysisFilterColumn
+					DataColumn="Table_FriendlyName"
+					DataType="Text"
+					Header="Friendly Name"
+					ID="colFriendlyName"
+				/>
+				<AnalysisFilterColumn
+					DataColumn="Table_SecurityRightID"
+					DataType="Text"
+					Header="Security Right IDs"
+					ID="colSecurityRightID"
+					PopupValuesForFilter="List"
+				/>
+				<AnalysisFilterColumn
+					DataColumn="Table_TableTypeText"
+					DataType="Text"
+					Header="Type"
+					ID="colTableTypeText"
+					PopupValuesForFilter="List"
+				/>
+				<AnalysisFilterColumn
+					DataColumn="Table_SqlSource"
+					DataType="Text"
+					Header="Custom Table SQL Source"
+					ID="colSqlSource"
+				/>
+			</AnalysisFilter>
+		</Division>
+		<DataTable
+			AjaxPaging="True"
+			Caption="Tables"
+			ID="dt"
+			RememberSort="True"
+			SortArrows="True"
+			>
+			<InteractivePaging
+				CaptionType="Image"
+				HideWhenOnePage="True"
+				Location="Top"
+				PageRowCount="100"
+				ShowPageNumber="True"
+			/>
+			<DataLayer
+				Type="XMLFile"
+				XMLFile="@Local.MetadataUrl~"
+				>
+				<Note
+					Note="TODO, secure access to this file, make it variable."
+				/>
+				<Flattener
+					BottomLevelElementName="Table"
+					DataRowElementNames="Table"
+					IgnoreDeepAttributes="True"
+					IgnoreTextElements="True"
+					PrependElementNames="True"
+				/>
+				<Remark>
+					<CalculatedColumn
+						Formula="&apos;@Data.Table_SqlSource~&apos;.replace(&apos;@&apos;,&apos;x&apos;)"
+						ID="Table_SqlSource"
+						>
+						<Note
+							Note="Can&apos;t prevent token resolution here. So @Session tokens will not appear in the list."
+						/>
+					</CalculatedColumn>
+				</Remark>
+				<SwitchColumn
+					DataColumn="Table_SqlSource"
+					ID="NoSqlSource"
+					>
+					<SwitchIf
+						ID="IfBlank"
+						NewValue="True"
+					/>
+					<SwitchElse
+						ID="IfNotBlank"
+						NewValue="False"
+					/>
+				</SwitchColumn>
+				<SwitchColumn
+					DataColumn="Table_HideTable"
+					ID="Table_HideTable"
+					>
+					<SwitchIf
+						CompareValue="True"
+						ID="True"
+						NewValue="True"
+					/>
+					<SwitchElse
+						ID="IfNotTrue"
+						NewValue="False"
+					/>
+				</SwitchColumn>
+				<SwitchColumn
+					DataColumn="Table_HideTable"
+					ID="Table_Visible"
+					>
+					<SwitchIf
+						CompareValue="True"
+						ID="True"
+						NewValue="False"
+					/>
+					<SwitchElse
+						ID="IfNotTrue"
+						NewValue="True"
+					/>
+				</SwitchColumn>
+				<CalculatedColumn
+					Formula="iif(&apos;@Data.NoSqlSource~&apos;!=&apos;True&apos;,&apos;Custom&apos;, iif(&apos;@Data.Table_TableType~&apos;==&apos;V&apos;,&apos;View&apos;,iif(&apos;@Data.Table_TableType~&apos;==&apos;U&apos;,&apos;Table&apos;,&apos;xx&apos;)))"
+					ID="Table_TableTypeText"
+				/>
+				<AnalysisFilterInsert
+					AnalysisFilterID="afTables"
+				/>
+				<CalculatedColumn
+					Formula="iif(&apos;@Data.Table_HideTable~&apos;==&apos;True&apos;,1,0)"
+					ID="Table_HiddenCount"
+				/>
+				<SortFilter
+					SortColumn="Table_Schema,Table_TableName"
+				/>
+				<SequenceColumn
+					ID="RowNumber"
+				/>
+				<AggregateColumn
+					AggregateColumn="Table_TableName"
+					AggregateFunction="Concat"
+					ConcatDuplicates="True"
+					ConcatSeparator="¿"
+					ID="aggrTableNames"
+					RootElementOnly="True"
+				/>
+				<AggregateColumn
+					AggregateColumn="RowNumber"
+					AggregateFunction="Count"
+					ID="RowCount"
+					RootElementOnly="True"
+				/>
+				<AggregateColumn
+					AggregateColumn="Table_HiddenCount"
+					AggregateFunction="Sum"
+					ID="HiddenCount"
+					RootElementOnly="True"
+				/>
+			</DataLayer>
+			<DataTableColumn
+				Class="ThemeAlignCenter"
+				Header="Visible"
+				ID="colHideTable"
+				>
+				<InputCheckbox
+					AjaxDontSubmit="True"
+					CheckedValue="False"
+					DefaultValue="@Data.Table_HideTable~"
+					ID="inputHideTable"
+					UncheckedValue="True"
+					>
+					<EventHandler
+						DhtmlEvent="onchange"
+						>
+						<Action
+							ID="jsMetadataUpdate"
+							Javascript="rdMetadataCheckOne(&apos;TableSetValue&apos;,&apos;HideTable&apos;,&apos;TableName=@Data!Url.Table_TableName~&apos;,this,true,&apos;hiddenHiddenCount&apos;)"
+							Type="Javascript"
+						/>
+					</EventHandler>
+					<ConditionalClass
+						Class="rdDisabled"
+						Condition="&apos;@Local.ReadOnly~&apos;==&apos;True&apos;"
+					/>
+				</InputCheckbox>
+				<DataColumnSort
+					DataColumn="Table_HideTable"
+				/>
+				<ExtraColumnHeader>
+					<InputCheckbox
+						AjaxDontSubmit="True"
+						CheckedValue="0"
+						Class="rdInputResetHideTable"
+						DefaultValue="@Data.HiddenCount~"
+						ID="inputResetHideTable"
+						Tooltip="Check/Uncheck All"
+						>
+						<EventHandler
+							DhtmlEvent="onchange"
+							>
+							<Action
+								ConfirmMessage="Apply visibility change to all columns?"
+								ID="jsMetadataUpdate"
+								Javascript="rdMetadataCheckAll(&apos;TableSetValue&apos;,&apos;HideTable&apos;,this,true,&apos;hiddenHiddenCount&apos;)"
+								OnCancel="rdMetadataCheckAllCanceled(this);"
+								Type="Javascript"
+							/>
+						</EventHandler>
+						<ConditionalClass
+							Class="rdDisabled"
+							Condition="&apos;@Local.ReadOnly~&apos;==&apos;True&apos;"
+						/>
+					</InputCheckbox>
+				</ExtraColumnHeader>
+			</DataTableColumn>
+			<DataTableColumn
+				Header="Name"
+				ID="colTableName"
+				>
+				<Rows
+					Width="100"
+					WidthScale="%"
+					>
+					<Row
+						Class="ThemeNoWrap"
+						>
+						<Column>
+							<Label
+								Caption="@Data.Table_TableName~"
+								ID="lblTableName"
+								Tooltip="Edit Columns"
+								>
+								<Action
+									ID="imgEditColumns"
+									Javascript="rdMetadataEditColumns(this,&apos;@Data!Js.Table_TableName~&apos;,&apos;@Data!Js.Table_TableTypeText~&apos;);return false;"
+									Type="Javascript"
+								/>
+							</Label>
+							<Spaces
+								Size="2"
+							/>
+						</Column>
+						<Column
+							Class="ThemeAlignRight"
+							>
+							<Image
+								Caption="rdTemplate/rdMetadata/EditColumns.png"
+								ID="imgEditColumns"
+								Tooltip="Edit Columns"
+								>
+								<Action
+									ID="imgEditColumns"
+									Javascript="rdMetadataEditColumns(this,&apos;@Data!Js.Table_TableName~&apos;,&apos;@Data!Js.Table_TableTypeText~&apos;);return false;"
+									Type="Javascript"
+								/>
+							</Image>
+							<Spaces
+								Size="2"
+							/>
+							<Image
+								Caption="rdTemplate/rdMetadata/EditJoins.png"
+								ID="imgEditJoins"
+								Tooltip="Edit Joins"
+								>
+								<Action
+									ID="imgEditJoins"
+									Javascript="rdMetadataEditJoins(this,&apos;@Data!Js.Table_TableName~&apos;);return false;"
+									Type="Javascript"
+								/>
+							</Image>
+							<Spaces
+								Size="2"
+							/>
+							<Division
+								Condition="&apos;@Local.ReadOnly~&apos; == &apos;False&apos; &amp;&amp; &apos;@Data.Table_TableTypeText~&apos;==&apos;Custom&apos;"
+								ID="divShowWhenCustom"
+								>
+								<Image
+									Caption="rdTemplate/rdDelete2.png"
+									Height="20"
+									ID="imgRemoveTable"
+									Tooltip="Remove..."
+									Width="20"
+									>
+									<Action
+										ConfirmMessage="Remove?"
+										ID="jsRemoveTable"
+										Javascript="rdMetadataTableRemove(this,&apos;@Data!Js.Table_TableName~&apos;);return false;"
+										Type="Javascript"
+									/>
+								</Image>
+							</Division>
+							<Division
+								Condition="&apos;@Local.ReadOnly~&apos; == &apos;False&apos; &amp;&amp; &apos;@Data.Table_TableTypeText~&apos;!=&apos;Custom&apos;"
+								ID="divHideWhenCustom"
+								>
+								<Image
+									Caption="rdTemplate/rd1x1Trans.gif"
+									Height="24"
+									ID="imgRemoveTable"
+									Tooltip="Remove..."
+									Width="24"
+								/>
+							</Division>
+						</Column>
+					</Row>
+				</Rows>
+				<DataColumnSort
+					DataColumn="Table_TableName"
+				/>
+			</DataTableColumn>
+			<DataTableColumn
+				Header="Friendly Name"
+				ID="colFriendlyName"
+				>
+				<Division
+					Condition="&apos;@Local.ReadOnly~&apos; == &apos;True&apos;"
+					ID="divFriendlyReadOnly"
+					>
+					<Label
+						Caption="@Data.Table_FriendlyName~"
+					/>
+				</Division>
+				<Division
+					Condition="&apos;@Local.ReadOnly~&apos; == &apos;False&apos;"
+					ID="divFriendly"
+					>
+					<InputText
+						AjaxDontSubmit="True"
+						DefaultValue="@Data.Table_FriendlyName~"
+						ID="inputFriendlyName"
+						InputSize="50"
+						>
+						<Validation
+							ErrorMsg="Friendly Name cannot be blank."
+							Type="Required"
+						/>
+						<EventHandler
+							DhtmlEvent="onchange"
+							>
+							<Action
+								ID="jsMetadataUpdate2"
+								Javascript="rdMetadataSetValue(this,&apos;TableSetValue&apos;,&apos;MetadataID=@Request!Url.MetadataID~&amp;TableName=@Data!Url.Table_TableName~&amp;Attribute=FriendlyName&apos;)"
+								Type="Javascript"
+								Validate="True"
+							/>
+						</EventHandler>
+					</InputText>
+				</Division>
+				<DataColumnSort
+					DataColumn="Table_FriendlyName"
+				/>
+			</DataTableColumn>
+			<DataTableColumn
+				Header="Security Right IDs"
+				ID="colSecurityRightID"
+				>
+				<Division
+					Condition="&apos;@Local.ReadOnly~&apos; == &apos;True&apos;"
+					ID="divSecRightReadOnly"
+					>
+					<Label
+						Caption="@Data.Table_SecurityRightID~"
+					/>
+				</Division>
+				<Division
+					Condition="&apos;@Local.ReadOnly~&apos; == &apos;False&apos;"
+					ID="divSecRight"
+					>
+					<InputText
+						AjaxDontSubmit="True"
+						DefaultValue="@Data.Table_SecurityRightID~"
+						ID="inputSecurityRightID"
+						InputSize="30"
+						>
+						<EventHandler
+							DhtmlEvent="onchange"
+							>
+							<Action
+								ID="jsMetadataUpdate"
+								Javascript="rdMetadataSetValue(this,&apos;TableSetValue&apos;,&apos;MetadataID=@Request!Url.MetadataID~&amp;TableName=@Data!Url.Table_TableName~&amp;Attribute=SecurityRightID&apos;)"
+								Type="Javascript"
+							/>
+						</EventHandler>
+					</InputText>
+				</Division>
+				<DataColumnSort
+					DataColumn="Table_SecurityRightID"
+				/>
+			</DataTableColumn>
+			<DataTableColumn
+				Class="ThemeAlignCenter"
+				Header="Type"
+				ID="colTableTypeText"
+				>
+				<Label
+					Caption="@Data.Table_TableTypeText~"
+					ID="lblTableTypeText"
+				/>
+				<DataColumnSort
+					DataColumn="Table_TableTypeText"
+				/>
+			</DataTableColumn>
+			<DataTableColumn
+				Header="Custom Table SQL Source"
+				ID="colSqlSource"
+				>
+				<Division
+					Condition="&quot;@Data.NoSqlSource~&quot; != &quot;True&quot;"
+					>
+					<Image
+						Caption="rdTemplate/rdMetadata/Edit.png"
+						ID="imgEditSqlSource"
+						Tooltip="Edit SQL Source"
+					/>
+					<Label
+						Caption="Edit SQL Source"
+						ID="lblSqlSource"
+					/>
+					<Action
+						Type="Link"
+						>
+						<Target
+							Link="rdPage.aspx?rdReport=rdTemplate/rdMetadata/TableEdit"
+							Type="Link"
+						/>
+						<LinkParams
+							ConnectionID="@Request.ConnectionID~"
+							MetadataID="@Request.MetadataID~"
+							TableName="@Data.Table_TableName~"
+						/>
+					</Action>
+				</Division>
+			</DataTableColumn>
+		</DataTable>
+		<PopupPanel
+			Caption="Compact Metadata"
+			Draggable="True"
+			ID="popupCompact"
+			PopupModal="True"
+			>
+			<Label
+				Caption="Compacting the Metadata makes it smaller and faster in cases when there are lots of tables and only a few are visible.
+
+Compacting removes all tables not set to &quot;Visible&quot;. (Removed from the metadata, not the database.)
+
+Removed tables may be re-added later with the action &quot;Get Tables and Joins from Data Source&quot; ."
+				Format="Preserve Line Feeds"
+				ID="lblInstructCompact"
+			/>
+			<LineBreak
+				LineCount="3"
+			/>
+			<Label
+				Caption="Compact Metadata Now"
+				Class="ThemeLinkButton"
+				ID="lblCompact"
+				>
+				<Action
+					Javascript="rdMetadataCompact();return false;"
+					Type="Javascript"
+				/>
+			</Label>
+		</PopupPanel>
+		<Division
+			ID="divWaitPanelContainer"
+			>
+			<Note
+				Note="This element is just to include the WaitPanel definition so it can be used by rdUiService.js"
+			/>
+			<Action
+				Type="Report"
+				>
+				<Target
+					Type="Report"
+					>
+					<WaitPage/>
+				</Target>
+			</Action>
+		</Division>
+		<InputHidden
+			DefaultValue="@Request.ConnectionID~"
+			ID="hiddenConnectionID"
+		/>
+		<InputHidden
+			DefaultValue="@Request.MetadataID~"
+			ID="hiddenMetadataID"
+			>
+			<Note
+				Note="This is the currently-saved ID"
+			/>
+		</InputHidden>
+		<InputHidden
+			DefaultValue="@Data.aggrTableNames~"
+			ID="hiddenTableNames"
+		/>
+		<InputHidden
+			DefaultValue="@Data.HiddenCount~"
+			ID="hiddenHiddenCount"
+		/>
+		<InputHidden
+			DefaultValue="@Data.RowCount~"
+			ID="hiddenRowCount"
+		/>
+		<InputHidden
+			DefaultValue="rdInsertDataCacheKeyHere"
+			ID="rdMetadataCache"
+		/>
+	</Body>
+	<ideTestParams
+		ConnectionID=""
+		MetadataID=""
+	/>
+</Report>

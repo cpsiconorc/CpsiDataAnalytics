@@ -1,0 +1,42 @@
+﻿<Report ID="rdPopup.rdDataMenuTreeTemplate">
+	<Body ID="bodyMain">
+		<Division ID="rdDataMenuTreeID" ShowModes="None">
+			<DataTable ID="rdMenuTable" CellSpacing="0" >
+				<DataTableColumn ID="rdMenuColumn_rdDataMenuTreeID">
+					<Rows CellSpacing="0">
+						<Row>
+							<Action Type="Link" ID="actLink_rdDataMenuTreeID">
+								<Target Type="Link" ID="tgt_rdDataMenuTreeID" Link="javascript:rdDataMenuTreeExpandCollapse('rdDataMenuTreeID',document.getElementById('rdExpando_rdDataMenuTreeID_Row@Function.RowNumber~'));" />
+							</Action>
+							<Column ID="rdIndent_rdDataMenuTreeID" Width="@Data.rdIndent~" WidthScale="px" />
+							<Column ID="rdImage">
+								<Image ID="rdExpando_rdDataMenuTreeID" Caption="rdTemplate/rdArrowBlank.gif">
+								</Image>
+								<Image ID="rdDmtImage" Caption="_SupportFiles/@Data.rdMenuImage~">
+									<Note Note="Height and Width come from attributes optionally set in the Menu element." />
+								</Image>
+								<Division ID="rdDmtHidden" ShowModes="None">
+									<Label ID="rdExpandoStatus_rdDataMenuTreeID" Caption="@Data.rdExpandoStatus_rdDataMenuTreeID~" />
+									<Label ID="rdExpandoItemID_rdDataMenuTreeID" Caption="@Data.SubMenuIDColumn~:@Data.Caption~" />
+								</Division>
+							</Column>
+							<Column>
+								<Division ID="rdDmtNoAction" Condition="Len(&quot;@Data.ActionIDColumn~&quot;) = 0">
+									<Label ID="rdDmtCaption" Caption="@Data.Caption~" />
+								</Division>
+								<Division ID="rdDmtAction">
+									<Label ID="rdDmtCaption" Caption="@Data.Caption~" />
+								</Division>
+							</Column>
+						</Row>
+					</Rows>
+				</DataTableColumn>
+			</DataTable>
+			<Division ShowModes="None">
+				<Image ID="rdBranchCollapsedImage_rdDataMenuTreeID" Caption="rdTemplate/rdArrowRight.png" />
+				<Image ID="rdBranchExpandedImage_rdDataMenuTreeID" Caption="rdTemplate/rdArrowDown.png" />
+			</Division>
+			<IncludeHtml Html="&lt;SCRIPT rdAjaxRunOnLoad=&quot;True&quot;&gt;rdDataMenuTreeInit('rdDataMenuTreeID')&lt;/SCRIPT&gt;" />
+		</Division>
+	</Body>
+</Report>

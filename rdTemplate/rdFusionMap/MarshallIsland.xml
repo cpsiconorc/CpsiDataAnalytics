@@ -1,0 +1,30 @@
+<AnimatedMapDataXML>
+  <MapSpec InternalID="MH.MH.AI" ShortName="AI" LongName="Ailinglapalap" />
+  <MapSpec InternalID="MH.MH.AR" ShortName="AR" LongName="Arno" />
+  <MapSpec InternalID="MH.MH.BR" ShortName="BR" LongName="Bikar" />
+  <MapSpec InternalID="MH.MH.BN" ShortName="BN" LongName="Bikini" />
+  <MapSpec InternalID="MH.MH.EE" ShortName="EE" LongName="Ebeya" />
+  <MapSpec InternalID="MH.MH.EB" ShortName="EB" LongName="Ebon" />
+  <MapSpec InternalID="MH.MH.EN" ShortName="EN" LongName="Enewetak" />
+  <MapSpec InternalID="MH.MH.ER" ShortName="ER" LongName="Erikub" />
+  <MapSpec InternalID="MH.MH.JL" ShortName="JL" LongName="Jaluit" />
+  <MapSpec InternalID="MH.MH.KN" ShortName="KN" LongName="Knox" />
+  <MapSpec InternalID="MH.MH.KO" ShortName="KO" LongName="Kosrae" />
+  <MapSpec InternalID="MH.MH.KW" ShortName="KW" LongName="Kwajalein" />
+  <MapSpec InternalID="MH.MH.LK" ShortName="LK" LongName="Likiep" />
+  <MapSpec InternalID="MH.MH.MJ" ShortName="MJ" LongName="Majuro" />
+  <MapSpec InternalID="MH.MH.ML" ShortName="ML" LongName="Maloelap" />
+  <MapSpec InternalID="MH.MH.ME" ShortName="ME" LongName="Mejit" />
+  <MapSpec InternalID="MH.MH.MI" ShortName="MI" LongName="Mili" />
+  <MapSpec InternalID="MH.MH.NK" ShortName="NK" LongName="Namorik" />
+  <MapSpec InternalID="MH.MH.NU" ShortName="NU" LongName="Namu" />
+  <MapSpec InternalID="MH.MH.RL" ShortName="RL" LongName="Rongelap" />
+  <MapSpec InternalID="MH.MH.RR" ShortName="RR" LongName="Rongrik" />
+  <MapSpec InternalID="MH.MH.TA" ShortName="TA" LongName="Taongi" />
+  <MapSpec InternalID="MH.MH.TO" ShortName="TO" LongName="Toke" />
+  <MapSpec InternalID="MH.MH.UJ" ShortName="UJ" LongName="Ujae" />
+  <MapSpec InternalID="MH.MH.UL" ShortName="UL" LongName="Ujelang" />
+  <MapSpec InternalID="MH.MH.UT" ShortName="UT" LongName="Utirik" />
+  <MapSpec InternalID="MH.MH.WH" ShortName="WH" LongName="Wotho" />
+  <MapSpec InternalID="MH.MH.WJ" ShortName="WJ" LongName="Wotje" />
+</AnimatedMapDataXML>

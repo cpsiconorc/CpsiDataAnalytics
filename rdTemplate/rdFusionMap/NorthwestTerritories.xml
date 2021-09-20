@@ -1,0 +1,10 @@
+<AnimatedMapDataXML>
+  <MapSpec InternalID="CA.NT.AC" ShortName="AC" LongName="Arctic Coast" />
+  <MapSpec InternalID="CA.NT.BL" ShortName="BL" LongName="BigLake Country" />
+  <MapSpec InternalID="CA.NT.DC" ShortName="DC" LongName="Diamond Capital" />
+  <MapSpec InternalID="CA.NT.GS" ShortName="GS" LongName="Great Slave Gateway" />
+  <MapSpec InternalID="CA.NT.MV" ShortName="MV" LongName="Mackenzie Valley" />
+  <MapSpec InternalID="CA.NT.NC" ShortName="NC" LongName="Nahanni Country" />
+  <MapSpec InternalID="CA.NT.WR" ShortName="WR" LongName="Waterfalls Valley" />
+  <MapSpec InternalID="CA.NT.WB" ShortName="WB" LongName="Wood Buffalo Country" />
+</AnimatedMapDataXML>

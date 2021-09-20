@@ -1,0 +1,466 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Report
+	ID="rdTemplate.MetadataBuilder.Connections"
+	SecurityReportRightID="@Constant.MetadataAdminSecurityRightIDs~"
+	>
+  <DefinitionModifierFile
+    DefinitionModifierFile="@Constant.rdMetadataDmfPath~@Request.rdReport~.xml"
+    ID="CustomDefinitionModifierFile"
+  />
+  <StyleSheet
+		StyleSheet="rdTemplate/rdMetadata/rdMetadata.css"
+	/>
+  <StyleSheet
+    StyleSheet="@Session.rdMetadataStyleSheet~"
+	/>
+  <IncludeScriptFile
+		IncludedScriptFile="rdTemplate/rdMetadata/rdUiService.js"
+	/>
+  <Body>
+    <IncludeScript
+			ID="scriptBackButtonRefresh"
+			IncludedScript="rdMetadataCheckBackButtonRefresh(&quot;Connections&quot;)
+"
+			>
+      <Note
+				Note="This is for refreshing after changes in other pages."
+			/>
+    </IncludeScript>
+    <Division
+			ID="rdKillPageCache"
+			>
+      <Note
+				Note="This is for refreshing after AnalysisFitler changes.  When returning to the page with the Back button, the URL will be changed, and the page refreshed.  (FORM variables are not reposted, but that&apos;s OK for this."
+			/>
+    </Division>
+    <Label
+			Caption="Data Source Connections"
+			Class="ThemeHeaderLarger"
+			ID="lblTitle"
+		/>
+    <LineBreak
+			LineCount="2"
+		/>
+    <Label
+			Caption="The Metadata Builder helps add data source connections and also build Metadata files.  Metadata files describe data sources&apos; tables and columns so that applications can make it easy for end users to select data for analysis."
+			Format="Preserve Line Feeds"
+			ID="lblInstruct1"
+		/>
+    <LineBreak
+			LineCount="2"
+		/>
+    <Label
+			Caption="To start"
+			Class="ThemeBold"
+			Format="Preserve Line Feeds"
+			ID="lblInstruct2"
+		/>
+    <Label
+			Caption=", add a new Data Source Connection, then add a new Metadata Definition."
+			Format="Preserve Line Feeds"
+			ID="lblInstruct3"
+		/>
+    <LineBreak
+			LineCount="2"
+		/>
+    <Division>
+      <Label
+				Caption="Actions:"
+				Class="ThemeHeader"
+				ID="lblActions"
+			/>
+      <Spaces
+				Size="5"
+			/>
+      <Remark>
+        <LineBreak
+					LineCount="2"
+				/>
+      </Remark>
+      <Label
+				Caption="Add a New Data Source Connection"
+				Class="ThemeLinkButton"
+				ID="lblNew"
+				>
+        <Action
+					ConfirmMessage="Add a new Connection?"
+					ID="scriptNewDataSource"
+					Javascript="rdMetadataSetBackButtonRefresh(&quot;Connections&quot;);
+rdMetadataAddNewConnection();
+return false;"
+					Type="Javascript"
+				/>
+      </Label>
+      <LineBreak
+				LineCount="2"
+			/>
+    </Division>
+    <DataTable
+			AjaxPaging="True"
+			Caption="Connections"
+			HideWhenZeroRows="True"
+			ID="dt"
+			RememberSort="True"
+			SortArrows="True"
+			>
+      <DataLayer
+				EnableSettings="True"
+				ID="dlConnections"
+				Type="XMLFile"
+				XMLFile="@Function.AppPhysicalPath~/_Definitions/_Settings.lgx"
+				>
+        <Note
+					Note="TODO, secure access to this file, make it variable."
+				/>
+        <Note
+					Note="TODO, ensure we have the full list of database that support Metadata."
+				/>
+        <Flattener
+					BottomLevelElementName="Connection"
+					DataRowElementNames="Connection"
+					PrependElementNames="True"
+					TopLevelXPath="Setting/Connections/Connection[not(ancestor::Remark)]"
+				/>
+        <CompareFilter
+					CompareType="InList"
+					CompareValue="SqlServer,Oracle,MySql,Vertical,Redshift,DataHub,PostgreSQL,Vertica,DB2,OpenEdge,JDBC,ADO"
+					DataColumn="Connection_Type"
+					ID="filterValidDatabaseTypes"
+				/>
+        <CompareFilter
+					CaseSensitive="True"
+					CompareType="&lt;&gt;"
+					CompareValue="ADO"
+					DataColumn="Connection_Type"
+					DataType="Text"
+					ID="NoADO"
+					IncludeCondition="&quot;@Session.InfoServerJava~&quot;=&quot;true&quot;"
+				/>
+        <Join
+					ID="joinMetadata"
+					JoinType="LeftOuterJoin"
+					>
+          <MatchCondition
+						LeftDataColumn="Connection_ID"
+						RightDataColumn="Connection_ID"
+					/>
+          <DataLayer
+						EnableSettings="True"
+						ID="dlConnections"
+						Type="XMLFile"
+						XMLFile="@Function.AppPhysicalPath~/_Definitions/_Settings.lgx"
+						>
+            <Flattener
+							BottomLevelElementName="Metadata"
+							DataRowElementNames="Metadata"
+							PrependElementNames="True"
+							TopLevelXPath="Setting/Connections/Connection"
+						/>
+            <CompareFilter
+							CompareType="&lt;&gt;"
+							CompareValue="Remark"
+							DataColumn="rdFlattenedElementParent"
+							ID="filterRemarkedMetadata"
+						/>
+          </DataLayer>
+        </Join>
+        <SwitchColumn DataColumn="Metadata_MetadataName" ID="Metadata_Caption">
+          <SwitchIf NewValue="@Data.Metadata_ID~" ID="ifNameIsBlankUseID" />
+          <SwitchElse NewValue="@Data.Metadata_MetadataName~" ID="elseUseName" />
+        </SwitchColumn>
+        <GroupFilter
+					GroupColumn="Connection_ID"
+					Hierarchical="True"
+					KeepGroupedRows="True"
+				/>
+        <CalculatedColumn
+					Formula="IIF(&apos;@Data.Connection_Type~&apos;==&apos;SqlServer&apos;, &apos;@Data.Connection_SqlServer~&apos;,
+IIF(&apos;@Data.Connection_Type~&apos;==&apos;Oracle&apos;, &apos;@Data.Connection_OracleServer~&apos;,
+IIF(&apos;@Data.Connection_Type~&apos;==&apos;MySql&apos;, &apos;@Data.Connection_MySqlServer~&apos;,
+IIF(&apos;@Data.Connection_Type~&apos;==&apos;PostgreSQL&apos;, &apos;@Data.Connection_PostgreSQLServer~&apos;,
+IIF(&apos;@Data.Connection_Type~&apos;==&apos;Redshift&apos;, &apos;@Data.Connection_RedshiftServer~&apos;,
+IIF(&apos;@Data.Connection_Type~&apos;==&apos;DataHub&apos;, &apos;@Data.Connection_DataHubServer~&apos;,
+IIF(&apos;@Data.Connection_Type~&apos;==&apos;Vertica&apos;, &apos;@Data.Connection_VerticaServer~&apos;,
+IIF(&apos;@Data.Connection_Type~&apos;==&apos;DB2&apos;, &apos;@Data.Connection_DB2Server~&apos;,
+IIF(&apos;@Data.Connection_Type~&apos;==&apos;ADO&apos;, &apos;&apos;,
+IIF(&apos;@Data.Connection_Type~&apos;==&apos;JDBC&apos;, &apos;&apos;,
+&apos;&apos;
+))))))))))"
+					ID="calcServer"
+					>
+          <Note
+						Note="Set server based on connection type."
+					/>
+        </CalculatedColumn>
+        <CalculatedColumn
+					Formula="IIF(&apos;@Data.Connection_Type~&apos;==&apos;SqlServer&apos;, &apos;@Data.Connection_SqlServerConnectionString~&apos;,
+IIF(&apos;@Data.Connection_Type~&apos;==&apos;Oracle&apos;, &apos;@Data.Connection_OracleConnectionString~&apos;,
+IIF(&apos;@Data.Connection_Type~&apos;==&apos;MySql&apos;, &apos;@Data.Connection_MySqlConnectionString~&apos;,
+IIF(&apos;@Data.Connection_Type~&apos;==&apos;PostgreSQL&apos;, &apos;@Data.Connection_PostgreSQLConnectionString~&apos;,
+IIF(&apos;@Data.Connection_Type~&apos;==&apos;Redshift&apos;, &apos;@Data.Connection_ConnectionString~&apos;,
+IIF(&apos;@Data.Connection_Type~&apos;==&apos;DataHub&apos;, &apos;@Data.Connection_DataHubConnectionString~&apos;,
+IIF(&apos;@Data.Connection_Type~&apos;==&apos;Vertica&apos;, &apos;@Data.Connection_VerticaConnectionString~&apos;,
+IIF(&apos;@Data.Connection_Type~&apos;==&apos;DB2&apos;, &apos;@Data.Connection_DB2ConnectionString~&apos;,
+IIF(&apos;@Data.Connection_Type~&apos;==&apos;ADO&apos;, &apos;@Data.Connection_AdoConnectionString~&apos;,
+IIF(&apos;@Data.Connection_Type~&apos;==&apos;JDBC&apos;, &apos;@Data.Connection_ConnectionString~&apos;,
+&apos;&apos;
+))))))))))"
+					ID="calcConnectionString"
+					>
+          <Note
+						Note="Set server based on connection type."
+					/>
+        </CalculatedColumn>
+        <CalculatedColumn
+					Formula="IIF(&apos;@Data.calcConnectionString~&apos;.length &lt; 30, &apos;@Data.calcConnectionString~&apos;, &apos;@Data.calcConnectionString~&apos;.substring(0,30) + &quot; ...&quot;)"
+					ID="calcConnectionString"
+					>
+          <Note
+						Note="When showing a connection string, keep it short."
+					/>
+        </CalculatedColumn>
+        <CalculatedColumn
+					Formula="IIF(&apos;@Data.calcConnectionString~&apos;==&apos;&apos;, &apos;@Data.calcServer~&apos;, &apos;@Data.calcConnectionString~&apos;)"
+					ID="calcServer"
+					>
+          <Note
+						Note="Set server when ConnectionString is present."
+					/>
+        </CalculatedColumn>
+        <CalculatedColumn
+					Formula="IIF(&apos;@Data.Connection_Type~&apos;==&apos;SqlServer&apos;, &apos;@Data.Connection_SqlServerDatabase~&apos;,
+IIF(&apos;@Data.Connection_Type~&apos;==&apos;Oracle&apos;, &apos;@Data.Connection_OracleDatabase~&apos;,
+IIF(&apos;@Data.Connection_Type~&apos;==&apos;MySql&apos;, &apos;@Data.Connection_MySqlDatabase~&apos;,
+IIF(&apos;@Data.Connection_Type~&apos;==&apos;PostgreSQL&apos;, &apos;@Data.Connection_PostgreSQLDatabase~&apos;,
+IIF(&apos;@Data.Connection_Type~&apos;==&apos;Redshift&apos;, &apos;@Data.Connection_RedshiftDatabase~&apos;,
+IIF(&apos;@Data.Connection_Type~&apos;==&apos;DataHub&apos;, &apos;@Data.Connection_DataHubDatabase~&apos;,
+IIF(&apos;@Data.Connection_Type~&apos;==&apos;Vertica&apos;, &apos;@Data.Connection_VerticaDatabase~&apos;,
+IIF(&apos;@Data.Connection_Type~&apos;==&apos;DB2&apos;, &apos;@Data.Connection_DB2Database~&apos;,
+IIF(&apos;@Data.Connection_Type~&apos;==&apos;ADO&apos;, &apos;&apos;,
+IIF(&apos;@Data.Connection_Type~&apos;==&apos;JDBC&apos;, &apos;&apos;,
+&apos;&apos;
+))))))))))"
+					ID="calcDatabase"
+				/>
+      </DataLayer>
+      <DataTableColumn
+				Class="ThemeAlignTop"
+				Header="Connection ID"
+				ID="colActions"
+				>
+        <DataColumnSort
+					DataColumn="Connection_ID"
+				/>
+        <Rows
+					Width="100"
+					WidthScale="%"
+					>
+          <Row>
+            <Column>
+              <Label
+								Caption="@Data.Connection_ID~"
+								ID="lblEdit"
+								Tooltip="Edit Connection"
+								>
+                <Action
+									Type="Link"
+									>
+                  <Target
+										Link="rdPage.aspx?rdReport=rdTemplate/rdMetadata/ConnectionEdit"
+										Type="Link"
+									/>
+                  <LinkParams
+										ConnectionID="@Data.Connection_ID~"
+									/>
+                </Action>
+              </Label>
+            </Column>
+            <Column
+							Class="ThemeAlignRight ThemeNoWrap"
+							>
+              <Remark>
+                <Image
+                  Caption="rdTemplate/rdMetadata/EditConnection.png"
+                  ID="imgEditConnection"
+                  Tooltip="Edit Connection"
+								>
+                  <Action
+                    Type="Link"
+									>
+                    <Target
+                      Link="rdPage.aspx?rdReport=rdTemplate/rdMetadata/ConnectionEdit"
+                      Type="Link"
+									/>
+                    <LinkParams
+                      ConnectionID="@Data.Connection_ID~"
+									/>
+                  </Action>
+                </Image>
+                <Spaces
+                  Size="2"
+							/>
+              </Remark>
+              <Image
+								Caption="rdTemplate/rdDelete2.png"
+                Height="20"
+								ID="imgRemoveConnection"
+								Tooltip="Remove..."
+                Width="20"
+								>
+                <Action
+									ConfirmMessage="Remove Connection?"
+									ID="jsRemoveConnection"
+									Javascript="rdMetadataConnectionRemove(this, &apos;ConnectionID=@Data!Url.Connection_ID~&apos;);return false;"
+									Type="Javascript"
+								/>
+              </Image>
+            </Column>
+          </Row>
+        </Rows>
+      </DataTableColumn>
+      <DataTableColumn
+				Class="ThemeAlignTop"
+				Header="Data Source Type"
+				>
+        <Label
+					Caption="@Data.Connection_Type~"
+				/>
+        <DataColumnSort
+					DataColumn="Connection_Type"
+				/>
+      </DataTableColumn>
+      <DataTableColumn
+				Class="ThemeAlignTop"
+				Header="Server"
+				>
+        <Label
+					Caption="@Data.calcServer~"
+				/>
+        <DataColumnSort
+					DataColumn="calcServer"
+				/>
+      </DataTableColumn>
+      <DataTableColumn
+				Class="ThemeAlignTop"
+				Header="Database"
+				>
+        <Label
+					Caption="@Data.calcDatabase~"
+				/>
+        <DataColumnSort
+					DataColumn="calcDatabase"
+				/>
+      </DataTableColumn>
+      <DataTableColumn
+				Header="Metadata Definitions"
+				ID="colMetadata"
+				>
+        <SubDataTable
+					Class="ThemeNone"
+					ID="subMetadata"
+					Width="100"
+					WidthScale="%"
+					>
+          <DataTableColumn
+						ID="colMetadataID"
+						>
+            <Label
+							Caption="@Data.Metadata_Caption~"
+							ID="lblMetadataID"
+							Tooltip="Edit Metadata Definition for @Data.Metadata_ID~"
+							>
+              <Action
+								Type="Report"
+								>
+                <Target
+									Report="rdTemplate/rdMetadata/Tables"
+									Type="Report"
+								/>
+                <LinkParams
+									ConnectionID="@Data.Connection_ID~"
+									MetadataID="@Data.Metadata_ID~"
+								/>
+              </Action>
+            </Label>
+          </DataTableColumn>
+          <DataTableColumn
+						Class="ThemeAlignRight  ThemeNoWrap"
+						ID="colMetadataEdit"
+						>
+            <Division
+							Condition="&apos;@Data.Metadata_ID~&apos; != &apos;&apos;"
+							ID="divEdit"
+							>
+              <Remark>
+                <Image
+                  Caption="rdTemplate/rdMetadata/EditMetadata.png"
+                  ID="imgEditMetadata"
+                  Tooltip="Edit Metadata definition"
+								>
+                  <Action
+                    Type="Report"
+									>
+                    <Target
+                      Report="rdTemplate/rdMetadata/Tables"
+                      Type="Report"
+									/>
+                    <LinkParams
+                      ConnectionID="@Data.Connection_ID~"
+                      MetadataID="@Data.Metadata_ID~"
+                      rdForWizard="@Request.rdForWizard~"
+									/>
+                  </Action>
+                </Image>
+                <Spaces
+                  Size="2"
+							/>
+              </Remark>
+              <Image
+								Caption="rdTemplate/rdDelete2.png"
+                Height="20"
+								ID="imgRemoveMetadata"
+								Tooltip="Remove..."
+                Width="20"
+								>
+                <Action
+									ConfirmMessage="Remove Metadata?"
+									ID="jsRemoveMetadata"
+									Javascript="rdMetadataMetadataRemove(&apos;@Data.Connection_ID~&apos;, &apos;@Data.Metadata_ID~&apos;);return false;"
+									Type="Javascript"
+								/>
+              </Image>
+            </Division>
+          </DataTableColumn>
+        </SubDataTable>
+        <Rows
+					Width="100"
+					WidthScale="%"
+					>
+          <Row Condition="&apos;@Data.Connection_ID~&apos; != &apos;@Session.goPredictGoConnectionID~&apos;">
+            <Column
+							Class="ThemeAlignLeft"
+							>
+              <LineBreak />
+              <Label
+								Caption=" Add New"
+								ID="lblNewMetadata"
+								>
+                <Action
+									ConfirmMessage="Click OK to create a new Metadata Definition."
+									ID="jsNewMetadataImage"
+									Javascript="rdMetadataSetBackButtonRefresh(&quot;Connections&quot;);
+rdMetadataAddNewMetadata(&apos;@Data.Connection_ID~&apos;);
+return false;"
+									Type="Javascript"
+								/>
+              </Label>
+            </Column>
+          </Row>
+        </Rows>
+      </DataTableColumn>
+    </DataTable>
+  </Body>
+  <ideTestParams
+		rdForWizard=""
+	/>
+</Report>

@@ -1,0 +1,13 @@
+<AnimatedMapDataXML>
+  <MapSpec InternalID="01" ShortName="AG" LongName="Aragatsotn" />
+  <MapSpec InternalID="02" ShortName="AR" LongName="Ararat" />
+  <MapSpec InternalID="03" ShortName="AV" LongName="Armavir" />
+  <MapSpec InternalID="04" ShortName="GR" LongName="Gegharkunik" />
+  <MapSpec InternalID="05" ShortName="KT" LongName="Kotayk" />
+  <MapSpec InternalID="06" ShortName="LO" LongName="Lori" />
+  <MapSpec InternalID="07" ShortName="SH" LongName="Shirak" />
+  <MapSpec InternalID="08" ShortName="SU" LongName="Syunik" />
+  <MapSpec InternalID="09" ShortName="TV" LongName="Tavush" />
+  <MapSpec InternalID="10" ShortName="VD" LongName="Vayots Dzor" />
+  <MapSpec InternalID="11" ShortName="ER" LongName="Yerevan" />
+</AnimatedMapDataXML>

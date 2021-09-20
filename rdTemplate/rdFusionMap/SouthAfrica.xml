@@ -1,0 +1,11 @@
+<AnimatedMapDataXML>
+  <MapSpec InternalID="05" ShortName="EC" LongName="Eastern Cape" />
+  <MapSpec InternalID="03" ShortName="FS" LongName="Free State" />
+  <MapSpec InternalID="06" ShortName="GT" LongName="Gauteng" />
+  <MapSpec InternalID="02" ShortName="NL" LongName="KwaZulu-Natal" />
+  <MapSpec InternalID="09" ShortName="LP" LongName="Limpopo" />
+  <MapSpec InternalID="07" ShortName="MP" LongName="Mpumalanga" />
+  <MapSpec InternalID="10" ShortName="NW" LongName="North West" />
+  <MapSpec InternalID="08" ShortName="NC" LongName="Northern Cape" />
+  <MapSpec InternalID="11" ShortName="WC" LongName="Western Cape" />
+</AnimatedMapDataXML>

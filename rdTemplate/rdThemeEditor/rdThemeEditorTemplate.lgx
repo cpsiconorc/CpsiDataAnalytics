@@ -1,0 +1,136 @@
+﻿<Report ID="teTemplate" >
+  <Body>
+    <Division HtmlDiv="True" ID="rdThemeEditor">
+      <ResponsiveRow CollisionBehavior="Overlap">
+        <ResponsiveColumn ColspanExtraSmallScreen="12" ColspanLargeScreen="12" ColspanMediumScreen="12" ColspanSmallScreen="12">
+          <Label ID="lblSave" Class="ThemeLinkButtonSmall ThemeMargin" Caption="Save">
+            <Action Type="Report">
+              <Target Type="Report" RequestForwarding="True" />
+              <LinkParams rdSaveThemeAs="" rdSaveTheme="True" rdMakeThisMyTheme="" />
+            </Action>
+          </Label>
+        </ResponsiveColumn>
+      </ResponsiveRow>
+      <LineBreak />
+      <ResponsiveRow>
+        <ResponsiveColumn ColspanExtraSmallScreen="4" ColspanLargeScreen="4" ColspanMediumScreen="4" ColspanSmallScreen="4">
+          <Division ID="divEditColumn">
+            <Rows ID="rowsEditGroups" Width="100" WidthScale="%" Layout="auto">
+              <RepeatElements ID="rptEditGroups">
+                <DataLayer Type="XMLFile" ID="dlThemeEditGroups" XMLFile="@Function.AppPhysicalPath~/rdTemplate/rdThemeEditor/rdThemeEdits.xml" XPath="//Edit">
+                  <GroupFilter GroupColumn="EditGroup" ID="gfEditGroup" KeepGroupedRows="False" DataType="Text" />
+                  <CompareFilter DataColumn="EditGroup" ID="cfEditGroup" CaseSensitive="False" CompareValue="Hidden" DataType="Text" CompareType="NotContains" />
+                  <SortFilter SortColumn="DisplayOrder" DataType="Number" />
+                </DataLayer>
+                <Row>
+                  <Column ColSpan="3" ID="colEditGroup" Class="rdThemeEditorAccordion">
+				            <ConditionalClass Class="rdThemeEditorAccordionSelected" Condition=" '@Request.rdEditGroup~' == '@Repeat.EditGroup~'" />
+                    <Division ID="divArrowRight" Class="rd100Width" Condition=" '@Request.rdEditGroup~' != '@Repeat.EditGroup~'" HtmlDiv="True">
+                      <Image Caption="rdTemplate/rdArrowRight.gif" ID="Arrow" />
+                      <Spaces Size="2" />
+                      <Label Caption="@Repeat.EditGroup~" Class="ThemeHeader">
+                      </Label>
+                      <Action Type="RefreshElement" ElementID="divEditColumn,ifPreview" ID="areEditColumn" RequestForwarding="True">
+                        <LinkParams rdSaveThemeAs="" rdMakeThisMyTheme="" rdChangeTheme="" rdSaveTheme="" rdNewTheme="" rdThemeEditorRefresh="True" rdEditGroup="@Repeat.EditGroup~" />
+                      </Action>
+                    </Division>
+                    <Division ID="divArrowDown" Class="rd100Width" Condition=" '@Request.rdEditGroup~' == '@Repeat.EditGroup~'" HtmlDiv="True">
+                      <Image Caption="rdTemplate/rdArrowDown.png" ID="Arrow" />
+                      <Spaces Size="2" />
+                      <Label Caption="@Repeat.EditGroup~" Class="ThemeHeader">
+                      </Label>
+                      <Action Type="RefreshElement" ElementID="divEditColumn,ifPreview" ID="areEditColumn" RequestForwarding="True">
+                        <LinkParams rdSaveThemeAs="" rdMakeThisMyTheme="" rdChangeTheme="" rdSaveTheme="" rdNewTheme="" rdThemeEditorRefresh="True" rdEditGroup="" />
+                      </Action>
+                    </Division>
+                  </Column>
+                </Row>
+                <RepeatElements ID="rptEditSubGroups">
+                  <DataLayer Type="XMLFile" ID="dlThemeEditSubGroups" XMLFile="@Function.AppPhysicalPath~/rdTemplate/rdThemeEditor/rdThemeEdits.xml" XPath="//Edit">
+                    <CompareFilter DataColumn="EditGroup" ID="cfEditGroup" CompareValue="@Repeat.EditGroup~" DataType="Text" CompareType="=" />
+                    <GroupFilter GroupColumn="EditSubGroup" ID="gfEditSubGroup" KeepGroupedRows="False" DataType="Text" />
+                    <CompareFilter DataColumn="EditGroup" ID="cfEditGroupRequestParam" CompareType="=" CompareValue="@Request.rdEditGroup~" DataType="Text"  />
+                    <SortFilter SortColumn="SubDisplayOrder" DataType="Number" ID="sSubDisplayOrderAsc" SortSequence="Ascending" />
+                  </DataLayer>
+                  <Row Width="100" WidthScale="%">
+                    <Column ColSpan="2" ID="colEditGroup">
+                      	<Spaces Size="2" />
+						            <Label Caption="@Repeat.EditSubGroup~" Class="ThemeBold" />
+                    </Column>
+                    <RepeatElements ID="rptEditInputs">
+                      <DataLayer Type="XMLFile" ID="dlThemeEditInputs" XMLFile="@Function.AppPhysicalPath~/rdTemplate/rdThemeEditor/rdThemeEdits.xml" XPath="//Edit">
+                        <CompareFilter DataColumn="EditSubGroup" ID="cfEditSubGroup" CompareValue="@Repeat.EditSubGroup~" DataType="Text" CompareType="=" />
+                        <CompareFilter DataColumn="EditGroup" ID="cfEditGroup" CompareValue="@Repeat.EditGroup~" DataType="Text" CompareType="=" />
+                      </DataLayer>
+                      <Row Width="100" WidthScale="%">
+                        <Column ID="colTitle" ColSpan="1" Width="50" WidthScale="%">
+						              <Spaces Size="2" />
+                          <Label Caption="@Repeat.EditName~" Class="ThemeNoWrap" />
+                        </Column>
+                        <Column ID="colInput" ColSpan="1" Width="50" WidthScale="%" Class="ThemeAlignLeft">
+                          <Division ID="div@Repeat.EditID~" Condition="'@Repeat.EditType~' == 'Color'" >
+                            <InputColorPicker ID="@Repeat.EditID~" InputSize="10" ChangeFlagElementID="rdThemeHasBeenModified">
+                              <EventHandler DhtmlEvent="onchange" ID="rdChangeTheme">
+                                <Action Type="RefreshElement" ElementID="ifPreview" RequestForwarding="True">
+                                  <LinkParams rdSaveThemeAs="" rdMakeThisMyTheme="" rdSaveTheme="" rdChangeTheme="True" rdNewTheme="False"/>
+                                </Action>
+                              </EventHandler>
+                            </InputColorPicker>
+                            <LineBreak />
+                          </Division>
+                          <Division ID="div@Repeat.EditID~" Condition="'@Repeat.EditType~' == 'Font'">
+                            <InputComboList ID="@Repeat.EditID~" ComboListColumn="FontName" ChangeFlagElementID="rdThemeHasBeenModified" InputSize="15">
+                              <DataLayer Type="Static" ID="dlFontAutoComplete">
+                                <StaticDataRow FontName="Arial" />
+                                <StaticDataRow FontName="Tahoma" />
+                                <StaticDataRow FontName="Verdana" />
+                                <StaticDataRow FontName="Trebuchet MS" />
+                                <StaticDataRow FontName="Segoe UI" />
+                                <StaticDataRow FontName="Times New Roman" />
+                                <StaticDataRow FontName="Courier New" />
+                              </DataLayer>
+                              <EventHandler DhtmlEvent="onchange" ID="rdChangeTheme">
+                                <Action Type="RefreshElement" ElementID="ifPreview" RequestForwarding="True">
+                                  <LinkParams rdSaveThemeAs="" rdMakeThisMyTheme="" rdSaveTheme="" rdChangeTheme="True" rdNewTheme="False" />
+                                </Action>
+                              </EventHandler>
+                            </InputComboList>
+                            <LineBreak />
+                          </Division>
+                          <Division ID="div@Repeat.EditID~" Condition="'@Repeat.EditType~' == 'None'">
+                            <LineBreak />
+                          </Division>
+                          <Division ID="div@Repeat.EditID~" Condition="'@Repeat.EditType~' == 'Text'">
+                            <InputText ID="@Repeat.EditID~" ChangeFlagElementID="rdThemeHasBeenModified">
+                              <EventHandler DhtmlEvent="onblur" ID="rdChangeTheme">
+                                <Action Type="RefreshElement" ElementID="ifPreview" RequestForwarding="True">
+                                  <LinkParams rdSaveThemeAs="" rdMakeThisMyTheme="" rdSaveTheme="" rdChangeTheme="True" rdNewTheme="False" />
+                                </Action>
+                              </EventHandler>
+                            </InputText>
+                            <LineBreak />
+                          </Division>
+                        </Column>
+                      </Row>
+                    </RepeatElements>
+                  </Row>
+                </RepeatElements>
+              </RepeatElements>
+            </Rows>
+            <InputHidden ID="rdEditGroup" DefaultValue="@Request.rdEditGroup~"/>
+          </Division>
+        </ResponsiveColumn>
+        <ResponsiveColumn ColspanLargeScreen="8" ColspanExtraSmallScreen="8" ColspanMediumScreen="8" ColspanSmallScreen="8" Class="rdPreviewBorder">
+          <Label ID="lblThemePreview" Caption="Theme Preview" Class="rdPreviewTitle ThemeAlignCenter ThemeHeaderSmall" />
+          <LineBreak />
+          <IncludeFrame ID="ifPreview" SubReportMode="IncludeFrame" Width="100" WidthScale="%" Scrolling="False" FrameBorder="0">
+            <Target Type="IncludeFrameReport" Report="rdTemplate/rdThemeEditor/rdThemeEditorPreviewTemplate.lgx" ID="trPreview" RequestForwarding="True" />
+            <LinkParams rdEditGroup="@Request.rdEditGroup~" />
+          </IncludeFrame>
+        </ResponsiveColumn>
+      </ResponsiveRow>
+      <InputHidden ID="rdReport" DefaultValue=""  />
+      <InputHidden ID="rdThemeHasBeenModified" DefaultValue=""/>
+    </Division>
+  </Body>
+</Report>

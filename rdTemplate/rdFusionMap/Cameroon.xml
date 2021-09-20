@@ -1,0 +1,12 @@
+<AnimatedMapDataXML>
+  <MapSpec InternalID="CM.AD" ShortName="AD" LongName="Adamaoua" />
+  <MapSpec InternalID="CM.CE" ShortName="CE" LongName="Centre" />
+  <MapSpec InternalID="CM.ES" ShortName="ES" LongName="Est" />
+  <MapSpec InternalID="CM.EN" ShortName="EN" LongName="Extreme Nord" />
+  <MapSpec InternalID="CM.LT" ShortName="LT" LongName="Littoral" />
+  <MapSpec InternalID="CM.NO" ShortName="NO" LongName="Nord" />
+  <MapSpec InternalID="CM.NW" ShortName="NW" LongName="Nord Ouest" />
+  <MapSpec InternalID="CM.OU" ShortName="OU" LongName="Ouest" />
+  <MapSpec InternalID="CM.SU" ShortName="SU" LongName="Sud" />
+  <MapSpec InternalID="CM.SW" ShortName="SW" LongName="Sud Ouest" />
+</AnimatedMapDataXML>

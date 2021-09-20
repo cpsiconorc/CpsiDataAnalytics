@@ -1,0 +1,139 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Report ID="rdBookmarkShareTemplate" rdBookmarkOrganizerVersion="0.0" Class="sharePopup">
+	<IncludeScriptFile IncludedScriptFile="rdTemplate/rdBookmarkOrganizer/rdBookmarkShareJavascriptFix.js" />
+  <StyleSheet StyleSheet="rdTemplate/rdBookmarkOrganizer/rdBookmarkOrganizer.css" />
+	<Body ID="bodyMain">
+		<InputHidden ID="rdCannotShareWithSelf" DefaultValue="You cannot share with yourself." />
+		<InputHidden ID="rdAlreadySharedWith" DefaultValue="Already shared with {UserName}." />
+		<InputHidden ID="rdUserDoesNotExist" DefaultValue="User {UserName} was not found with an existing collection of bookmarks." />
+		<Division ID="rdDivBookmarkShareTemplate">
+			<Rows Width="100" WidthScale="%">
+				<Row ID="rowNonSharingList">
+					<Column>
+						<Label ID="lblUserName" Caption="User Name to Add"/>
+						<InputText ID="InpUser" AutoComplete="True" Class="rdThemeInput" InputSize="55" DefaultValue="@Request.InpUser~">
+							<AutoComplete ColumnName="BookmarkUserName" ID="acText">
+								<DataLayer Type="Bookmarks" BookmarkCollection="@Request.rdBookmarkCollection~" ListSharedWithCollections="True" ID="dlAllSharedWiths" />
+							</AutoComplete>
+						</InputText>
+					</Column>
+					<Column ID="colTableAddUser" Class="ThemeAlignLeft" Width="50" WidthScale="%">
+						<Label Caption=" &amp;nbsp;" ID="lblAddUser" Class="iconAddUser" Format="HTML" Tooltip="Add User">
+              <Action Type="ShareBookmark" BookmarkCollection="@Request.rdBookmarkCollection~" BookmarkID="@Request.rdBookmarkID~" FolderID="@Request.rdFolderID~" SharedWith="InpUser" RefreshDTID="dtBookmarkOwner" ID="actShare" >
+                <WaitPage />
+              </Action>
+						</Label>
+					</Column>
+				</Row>
+				<Row ID="rowSharingList">
+					<Division ID="divShareUsersPopup">
+						<Division ID="divAddSysUsers">
+							<Rows Width="100" WidthScale="%">
+								<Row>
+									<Column>
+										<Label ID="lblFind" Caption="Find " Class="ThemeHeader" For="InpUser"/>
+										<InputText ID="InpUser" DefaultValue="@Request.InpUser~" Class="rdThemeInput" InputSize="15">
+											<EventHandler DhtmlEvent="onkeyup">
+												<Action Type="RefreshElement" ID="actFind" ElementID="dtUserList">
+													<LinkParams rdBookmarkCollection="@Request.rdBookmarkCollection~" rdFolderID="@Request.rdFolderID~" rdBookmarkID="@Request.rdBookmarkID~"/>
+												</Action>
+											</EventHandler>
+										</InputText>
+									</Column>
+									<Column Class="ThemeAlignRight">
+										<InputSelectList ID="lstShareType" IncludeBlank="True" InputRows="1" OptionValueColumn="ShareType" OptionCaptionColumn="ShareTypeCaption" IncludeBlankCaption="All" DefaultValue="@Request.inputCategory~" Tooltip="Show just people or groups">
+											<DataLayer Type="Static" ID="StaticDataLayer1">
+												<StaticDataRow ShareType="People" ShareTypeCaption="People" />
+												<StaticDataRow ShareType="Groups" ShareTypeCaption="Groups" />
+											</DataLayer>
+											<EventHandler DhtmlEvent="onchange">
+												<Action Type="RefreshElement" ID="actFind" ElementID="dtUserList">
+													<LinkParams rdBookmarkCollection="@Request.rdBookmarkCollection~" rdFolderID="@Request.rdFolderID~" rdBookmarkID="@Request.rdBookmarkID~"/>
+												</Action>
+											</EventHandler>
+										</InputSelectList>
+									</Column>
+								</Row>
+							</Rows>
+							<Division ID="divSysUsersListContainer">
+                <HR/>
+								<Rows Width="100" WidthScale="%">
+									<Row>
+										<Column>
+											<DataTable ID="dtUserList" Width="100" WidthScale="%" AjaxPaging="True" AltRowClass="noAlternate">
+												<Note Note="This is the data layer that is replaced with the child of the action.showbookmarksharing (if there is one)" />
+												<DataLayer Type="Static" ID="DummyDataLayer">
+													<CalculatedColumn Formula="IIF(&quot;@Data.rdSharingCollectionDisplayColumn~&quot; == &quot;&quot;,&quot;@Data.rdSharingCollectionColumn~&quot;,&quot;@Data.rdSharingCollectionDisplayColumn~&quot;)" ID="calDisplayName" IncludeCondition="(&quot;@Request.InpUser~&quot;.length &gt; 0) &amp;&amp; (&quot;@Request.rdSharingCollectionDisplayColumn~&quot; &lt;&gt; &quot;&quot;)"/>
+													<Remark>
+														<ConditionFilter Condition="(&quot;@Request.InpUser~&quot;.length &lt;&gt; 0) &amp;&amp;  (&quot;@Data.rdSharingCollectionColumn~&quot;.toLowerCase().indexOf(&quot;@Request.InpUser~&quot;) &lt;&gt; -1)" />
+													</Remark>
+													<CompareFilter DataColumn="rdSharingCollectionColumn" ID="compareIsFind" CompareType="Contains" DataType="Text" CaseSensitive="False" CompareValue="@Request.InpUser~" IncludeCondition="(&quot;@Request.InpUser~&quot;.length &gt; 0) &amp;&amp; (&quot;@Request.rdSharingCollectionDisplayColumn~&quot; == &quot;&quot;)" />
+													<CompareFilter DataColumn="calDisplayName" ID="compareIsFindByDisp" CompareType="Contains" DataType="Text" CaseSensitive="False" CompareValue="@Request.InpUser~" IncludeCondition="(&quot;@Request.InpUser~&quot;.length &gt; 0) &amp;&amp; (&quot;@Request.rdSharingCollectionDisplayColumn~&quot; &lt;&gt; &quot;&quot;)" />
+													<CompareFilter DataColumn="rdSharingCollectionColumn" ID="compareExcludeOwner" CaseSensitive="False" CompareType="&lt;&gt;" CompareValue="@Function.UserName~" DataType="Text" />
+													<CompareFilter DataColumn="rdGroupIdentifierColumn" ID="compareSharePeople" CompareType="LengthEquals" DataType="Text" CompareValue="0" IncludeCondition="&quot;@Request.lstShareType~&quot; == &quot;People&quot;" />
+													<CompareFilter DataColumn="rdGroupIdentifierColumn" ID="compareShareGroups" CompareType="LengthNotEqualTo" DataType="Text" CompareValue="0" IncludeCondition="&quot;@Request.lstShareType~&quot; == &quot;Groups&quot;" />
+												</DataLayer>
+
+												<DataTableColumn ID="colAddUser" Width="39" WidthScale="px">
+													<Label Caption=" &amp;nbsp;" ID="lblAddUser" Format="HTML" Class="" Tooltip="Share">
+														<ConditionalClass Class="iconAddUser" ID="iconAddUser" Condition="'@Data.rdGroupIdentifierColumn~' == ''" />
+														<ConditionalClass Class="iconAddGroup" ID="iconAddGroup" Condition="'@Data.rdGroupIdentifierColumn~' &lt;&gt; ''" />
+                            <Action Type="ShareBookmark" BookmarkCollection="@Request.rdBookmarkCollection~" FolderID="@Request.rdFolderID~" BookmarkID="@Request.rdBookmarkID~" SharedWith="@Data.rdSharingCollectionColumn~" SharedWithDisp="@Data.rdSharingCollectionDisplayColumn~" RefreshDTID="dtBookmarkOwner" ID="actShare" >
+                              <WaitPage />
+                            </Action>
+													</Label>
+												</DataTableColumn>
+												<InteractivePaging PageRowCount="4" ShowPageNumber="Numbered" Location="Bottom" HideShowPrevNextCaptions="True" HideWhenOnePage="True" CaptionType="Image" />
+											</DataTable>
+										</Column>
+									</Row>
+								</Rows>
+							</Division>
+						</Division>
+					</Division>
+				</Row>
+			</Rows>
+			<Division ID="divHaveAccess">
+				<Note Note="List of users who already have access" />
+				<Rows Width="100" WidthScale="%">
+					<Row>
+						<Column>
+							<Label ID="lblSharedWith" Caption="Shared With " Class="ThemeHeader" />
+              <HR/>
+						</Column>
+					</Row>
+					<Row ID="rowBookmarkSharedWith" Class="ThemeAlignTop">
+						<Column>
+							<DataTable ID="dtBookmarkSharedWith" Width="100" WidthScale="%" AjaxPaging="True" AltRowClass="noAlternate">
+								<DataLayer Type="Bookmarks" BookmarkCollection="@Request.rdBookmarkCollection~" ListSharedWithCollections="True" FilterByID="True" ID="dlAllSharedWiths" />
+								<DataTableColumn Width="45" WidthScale="%">
+									<Label Caption="@Data.BookmarkUserName~" ID="lblSharedUserName" />
+								</DataTableColumn>
+								<DataTableColumn Width="40" WidthScale="%" Condition="&quot;@Request.rdSharingCollectionDisplayColumn~&quot; &lt;&gt; &quot;&quot;">
+									<Label Caption="@Data.BookmarkUserDispName~" ID="lblSharedDispNames"/>
+								</DataTableColumn>
+								<DataTableColumn Width="15" WidthScale="%">
+									<Division ID="divCondition">
+										<Label ID="lblUnshare" Caption=" &amp;nbsp;" Format="HTML" Tooltip="Remove User">
+                      <Action Type="UnShareBookmark" BookmarkCollection="@Request.rdBookmarkCollection~" BookmarkID="@Request.rdBookmarkID~" FolderID="@Request.rdFolderID~" UnSharedWith="lblSharedUserName_Row@Function.RowNumber~" ID="Unsharebookmark" >
+                        <WaitPage />
+                      </Action>
+										</Label>
+									</Division>
+								</DataTableColumn>
+								<InteractivePaging PageRowCount="4" ShowPageNumber="Numbered" Location="Bottom" HideShowPrevNextCaptions="True" HideWhenOnePage="True" CaptionType="Image" />
+							</DataTable>
+						</Column>
+					</Row>
+				</Rows>
+				<LineBreak />
+			</Division>
+			<Division ID="DivBMarkShareHidden">
+				<InputHidden ID="rdBookmarkCollection" DefaultValue="@Request.rdBookmarkCollection~" />
+				<InputHidden ID="rdBookmarkID" DefaultValue="@Request.rdBookmarkID~" />
+				<InputHidden ID="rdFolderID" DefaultValue="@Request.rdFolderID~" />
+				<InputHidden ID="rdShareFailure" DefaultValue="False" />
+			</Division>
+		</Division>
+	</Body>
+</Report>

@@ -1,0 +1,15 @@
+<AnimatedMapDataXML>
+  <MapSpec InternalID="NA.CA" ShortName="CA" LongName="Caprivi" />
+  <MapSpec InternalID="NA.ER" ShortName="ER" LongName="Erongo" />
+  <MapSpec InternalID="NA.HA" ShortName="HA" LongName="Hardap" />
+  <MapSpec InternalID="NA.KA" ShortName="KA" LongName="Karas" />
+  <MapSpec InternalID="NA.KH" ShortName="KH" LongName="Khomas" />
+  <MapSpec InternalID="NA.KU" ShortName="KU" LongName="Kunene" />
+  <MapSpec InternalID="NA.OW" ShortName="OW" LongName="Ohangwena" />
+  <MapSpec InternalID="NA.OK" ShortName="OK" LongName="Okavango" />
+  <MapSpec InternalID="NA.OH" ShortName="OH" LongName="Omaheke" />
+  <MapSpec InternalID="NA.OS" ShortName="OS" LongName="Omusati" />
+  <MapSpec InternalID="NA.ON" ShortName="ON" LongName="Oshana" />
+  <MapSpec InternalID="NA.OT" ShortName="OT" LongName="Oshikoto" />
+  <MapSpec InternalID="NA.OD" ShortName="OD" LongName="Otjozondjupa" />
+</AnimatedMapDataXML>

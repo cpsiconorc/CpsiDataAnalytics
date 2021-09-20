@@ -1,0 +1,7 @@
+<AnimatedMapDataXML>
+  <MapSpec InternalID="01" ShortName="BE" LongName="Belgium" />
+  <MapSpec InternalID="02" ShortName="FR" LongName="France" />
+  <MapSpec InternalID="03" ShortName="LU" LongName="Luxembourg" />
+  <MapSpec InternalID="04" ShortName="MC" LongName="Monaco" />
+  <MapSpec InternalID="05" ShortName="NL" LongName="Netherlands" />
+</AnimatedMapDataXML>

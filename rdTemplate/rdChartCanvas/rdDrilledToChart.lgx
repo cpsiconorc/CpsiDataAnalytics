@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Report ID="ChartCanvas.rdDrilledToChartTemplate">
+
+  <PopupPanel Caption="Drill To:" ID="rd_pp_chartactions_rdElementID" PopupModal="True" PopupPanelLocation="Mouse" rdNoElementShowHistory="True">
+    <StyleSheet StyleSheet="rdTemplate/rdColumnColorStyle.css" />
+    <InputGrid GridWidth="100" WidthScale="%">
+      <InputSelectList Caption="Drill to Column:" DefaultValue="" GroupCaptionColumn="TableFriendlyName" ID="rdChartDrillToColumn_rdElementID" IncludeBlank="True" OptionCaptionColumn="ColumnName" OptionValueColumn="DataColumn">
+        <DataLayer ID="dlDrillToColumns_rdElementID" Type="Static">
+	    <GroupFilter
+							  DataType="Number"
+							  GroupColumn="TableSequence"
+							  Hierarchical="True"
+							  ID="grpTable"
+							  KeepGroupedRows="True"
+						  />
+        </DataLayer>
+      </InputSelectList>
+    </InputGrid>
+  </PopupPanel>
+  <DataLayer Type="Static" ID="dlGroupByDateOperators">
+    <StaticDataRow GroupByDateOperator="Year" GroupByDateOperatorValue="FirstDayOfYear" GroupByDateLabel="&#160;&#160;&#160;Year" Format="yyyy" />
+    <StaticDataRow GroupByDateOperator="FiscalYear" GroupByDateOperatorValue="FirstDayOfFiscalYear" GroupByDateLabel="&#160;&#160;&#160;Fiscal Year" Format="\FYfyy" />
+    <StaticDataRow GroupByDateOperator="Quarter" GroupByDateOperatorValue="FirstDayOfQuarter" GroupByDateLabel="&#160;&#160;&#160;Quarter" Format="yyyy Qqq" />
+    <StaticDataRow GroupByDateOperator="FiscalQuarter" GroupByDateOperatorValue="FirstDayOfFiscalQuarter" GroupByDateLabel="&#160;&#160;&#160;Fiscal Quarter" Format="\FYfyy Qfqq" />
+    <StaticDataRow GroupByDateOperator="Month" GroupByDateOperatorValue="FirstDayOfMonth" GroupByDateLabel="&#160;&#160;&#160;Month" Format="yyyy MMM" />
+  </DataLayer>
+</Report>

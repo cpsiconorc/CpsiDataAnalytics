@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<script type="text/javascript">
+		
+		var winURL = window.location.href;
+		var queryStringArray = winURL.split("?");
+		
+		var fileURL = "";
+		
+		if(queryStringArray[1].indexOf("url=") >= 0){
+	                fileURL = queryStringArray[1].split("=")[1];
+			var iEnd = fileURL.length -12;
+			if (! (fileURL.indexOf("../rdDownload") == 0 && fileURL.indexOf("-rdDebug.xml") == iEnd)) {
+				fileURL=" ";
+			}
+			if (fileURL.indexOf("javascript:") > -1) {
+				fileURL=" ";
+			}
+		}
+
+
+		if (fileURL.length > 2) {
+		var bBeenHere = false;
+		document.onreadystatechange = function() {
+
+			if(bBeenHere)
+				return;
+			bBeenHere = true;
+			var xhr = new XMLHttpRequest();
+			xhr.open('GET', fileURL, true);
+
+			document.getElementById('dataFileLink').href = fileURL;
+			xhr.onreadystatechange = function()
+			{
+			
+				if (xhr.readyState != 4)
+					return false;
+					
+				if (xhr.status == 404) {
+					window.location = fileURL;
+					return false;
+				}
+
+				if (xhr.status != 200) {
+					return false;
+				}
+
+
+				buildTables(xhr);
+
+			}
+			
+			
+			function buildTables(xhr){
+			
+				var xml = xhr.responseXML;
+
+				var body = document.getElementById('rdDebugBody');
+
+				var elements = [];
+				var attributesArray = [];
+				var tableCount = 0;
+				var rowCount = 0;
+				var bFormatted = true;
+				
+				if (xhr.responseXML.documentElement.nodeName != "rdData") {
+				    var div = document.createElement("div");
+				    var textNode = document.createTextNode("Data is not formatted for the tabular view.  ");
+				    var linkNode = document.createElement('a');
+				    var linkText = document.createTextNode("View raw xml.");
+				    linkNode.appendChild(linkText);
+				    linkNode.title = "View raw xml.";
+				    linkNode.href = fileURL;
+				    div.appendChild(textNode);
+				    div.appendChild(linkNode);
+				    body.appendChild(div);
+				    bFormatted = false;
+				}
+				
+				var rows = xhr.responseXML.documentElement.childNodes;
+
+				if(rows.length == 0){
+					var div = document.createElement("div");
+					var textNode = document.createTextNode("No data.");
+					div.appendChild(textNode);
+					body.appendChild(div);
+				}
+
+				var table;
+
+				if (bFormatted) {
+				    for (var i = 0; i < rows.length; i++) {
+
+				        var elementName = rows[i].nodeName;
+
+				        if (elementName != "#text") {
+
+				            //This is a hierarchical document and should be shown raw
+				            if (rows[i].childNodes.length > 0) {
+				                var div = document.createElement("div");
+				                var textNode = document.createTextNode("Data is not formatted for the tabular view.  ");
+				                var linkNode = document.createElement('a');
+				                var linkText = document.createTextNode("View raw xml.");
+				                linkNode.appendChild(linkText);
+				                linkNode.title = "View raw xml.";
+				                linkNode.href = fileURL;
+				                div.appendChild(textNode);
+				                div.appendChild(linkNode);
+				                body.appendChild(div);
+				                break;
+				            }
+
+				            /*create the first table*/
+				            if (!table) {
+				                rowCount = 0;
+
+				                elements[elements.length] = rows[i].nodeName;
+				                table = document.createElement("table");
+				                table.id = "table" + tableCount;
+				                table.className = "DebugTable";
+
+
+				                var div = document.createElement("div");
+				                var textNode = document.createTextNode(rows[i].nodeName);
+				                div.id = "title_table" + tableCount;
+				                div.className = "title";
+				                div.appendChild(textNode);
+
+				                body.appendChild(div);
+				                tableCount += 1;
+				            }
+				                /*we ran into a new element name, so we break it into a different table*/
+				            else if (elements[elements.length - 1] != rows[i].nodeName) {
+
+				                /*set title for the previous table (do it here so we have row count)*/
+				                var title = document.getElementById("title_table" + (tableCount - 1));
+				                if (rowCount > 1000)
+				                    title.innerHTML = title.innerHTML + "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Rows: 1000 of " + rowCount;
+				                else
+				                    title.innerHTML = title.innerHTML + "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Rows: " + rowCount;
+
+				                rowCount = 0;
+				                var tr = document.createElement("tr");
+
+				                for (var x = 0; x < attributesArray.length; x++) {
+				                    var th = document.createElement("th");
+				                    var textNode = document.createTextNode(attributesArray[x]);
+				                    th.appendChild(textNode);
+				                    tr.className = "HeaderRow";
+				                    tr.appendChild(th);
+				                }
+
+				                table.id = "table" + tableCount;
+
+				                table.insertBefore(tr, table.firstChild);
+
+				                attributesArray = [];
+				                elements[elements.length] = rows[i].nodeName;
+
+				                body.innerHTML = body.innerHTML + table.outerHTML;
+
+				                table = document.createElement("table");
+				                table.className = "DebugTable";
+
+				                var div = document.createElement("div");
+				                div.id = "title_table" + tableCount;
+				                div.className = "title";
+				                var textNode = document.createTextNode(rows[i].nodeName);
+				                div.appendChild(textNode);
+
+				                body.appendChild(div);
+				                tableCount += 1;
+				            }
+
+				            var user = rows[i].nodeName;
+
+				            /*add all the data*/
+				            if (rows[i].attributes.length > 0 && rowCount < 1000) {
+				                var tr = document.createElement("tr");
+				                rowCount += 1;
+				                var tdCount = 0;
+
+				                var attrToAdd = new Array();
+
+				                /*build hashtable of data*/
+				                for (var j = 0; j < rows[i].attributes.length; j++) {
+
+				                    var attrName = rows[i].attributes[j].nodeName;
+				                    var attrValue = rows[i].attributes[j].nodeValue;
+
+				                    attrToAdd[attrName] = attrValue;
+
+				                    var bInArray = false;
+
+				                    for (var n = 0; n < attributesArray.length; n++) {
+				                        if (attributesArray[n] == rows[i].attributes[j].nodeName)
+				                            bInArray = true;
+				                    }
+
+				                    if (!bInArray) {
+				                        attributesArray.push(attrName);
+				                    }
+				                }
+
+				                /*add data to html table in the right order*/
+				                for (var k = 0; k < attributesArray.length; k++) {
+
+				                    var td = document.createElement("td");
+
+				                    var attrName = attributesArray[k];
+				                    var attrValue = "";
+
+				                    for (var x in attrToAdd) {
+				                        if (x == attrName)
+				                            attrValue = attrToAdd[x];
+				                    }
+
+
+				                    var textNode = document.createTextNode(attrValue);
+
+
+				                    td.appendChild(textNode);
+				                    tr.appendChild(td);
+				                }
+
+				                table.appendChild(tr);
+				            }
+				            else if (rows[i].attributes.length > 0) {
+				                rowCount += 1;
+				            }
+				        }
+				    }
+				}
+
+				/*set title and th for the last table to be processed*/
+				if(table){
+					var title = document.getElementById("title_table" + (tableCount - 1));
+					if(title){
+						if(rowCount > 1000)
+							title.innerHTML = title.innerHTML + "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Rows: 1000 of " + rowCount;
+						else
+							title.innerHTML = title.innerHTML + "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Rows: " + rowCount;
+					}
+					
+					if(attributesArray.length == 0){
+						if(table.parentNode && typeof table.parentNode.removeChild === 'function')
+							table.parentNode.removeChild(table);
+					}
+						
+					var tr = document.createElement("tr");
+				
+					for( var x = 0; x < attributesArray.length; x++){
+						var th = document.createElement("th");
+						var textNode = document.createTextNode(attributesArray[x]);
+						th.appendChild(textNode);
+						tr.className = "HeaderRow";
+						tr.appendChild(th);
+					}
+				
+					table.insertBefore(tr,table.firstChild);
+					
+					body.innerHTML = body.innerHTML + table.outerHTML;
+				}						
+			}  
+			xhr.send();
+		}
+		}
+
+	</script>
+    <meta http-equiv="CACHE-CONTROL" content="NO-CACHE" />
+    <meta http-equiv="Expires" content="-1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>rdDebug</title>
+     <style>
+	  BODY {color: darkslategray; background-color: white; margin-right: 10px; margin-left: 10px; font-size: 11px; font-family: verdana, arial, sans-serif;}
+.MoreInfo { BACKGROUND: Gray; color:White; }
+.ErrDiv { BACKGROUND: #f0f0f0; }
+.MajorTitle { font-size:9pt; font-weight:bold; }
+.bld { font-weight:bold; }
+.InfHeader { font-weight:bold; text-align: center; width: 100%; }
+.WrnHeader { font-weight:bold; text-align: center; width: 100%; }
+.ErrHeader { color:Maroon; font-size:12pt; font-weight:bold; width: 100%; }
+.ErrMessage { color:Maroon; font-size:9pt; width: 100%; }
+.BodyTable { border-collapse: collapse; width: 99%; }
+.DebugTable { border-collapse: collapse; height: 11px; width: auto; border: solid 1px #3f60af; }
+.DebugTable tr th { text-align: left; }
+.DebugTable tr td { border: solid 1px #bbbbbb; font-size: 11px; }
+.BodyTable tr td table .StepRow td { border-top: solid 1px #3f60af; background-color: #454545; }
+.HeaderRow th { background-color: #eaeff8; border-bottom: solid 1px #3f60af; }
+.LogiDarkGreen { color: #639e12; font-weight: normal; font-size: 18px; }
+.logiPurple { color: #3f60af; font-size: 18px; }
+.TimeRight { text-align: right; padding-right: 4px; }
+.SecondHeader { background-color: #3f60af; color: white; padding-left: 4px; font-weight: bold; }
+.title { font-size: 14px; font-weight:bold; padding-top: 8px;padding-bottom:8px; }
+.GroupHdr { background-color: #cc0033; color: white; padding-left: 4px; font-weight: bold; }
+.TopError { border: solid 1px #cc0033; }
+.TopError tr td { border-top: solid 1px #cc0033; padding-left: 4px; font-size: 11px; }
+.InnerError { border-left: solid 1px #cc0033; border-right: solid 1px #cc0033; border-bottom: solid 1px #cc0033; font-size: 11px; }
+.InnerError tr td { padding-left: 4px; font-size: 11px; }
+.InnerErrorMessage td { padding-left: 4px; color: #cc0033; font-size: 11px; }
+td.progress { width: 10%; }
+td.progress .text { position: relative; }
+td.progress span { position: absolute; top: 0px; right: 0px; }
+div.progressBar, div.previousElapsed { background-color: #d4e4a4; float: left; clear: right; } /* Clear right is for IE7 */
+div.previousElapsed { background-color: #efffbf; }
+/* a.generateProgressBars { color: #0000EE; } */
+td,th {
+	font-size:11px;
+	/*border: 1px solid black;*/
+	padding: 0;
+	white-space: pre;           /* CSS 2.0 */
+	white-space: pre-wrap;      /* CSS 2.1 */
+	white-space: pre-line;      /* CSS 3.0 */
+	white-space: -pre-wrap;     /* Opera 4-6 */
+	white-space: -o-pre-wrap;   /* Opera 7 */
+	white-space: -moz-pre-wrap; /* Mozilla */
+	white-space: -hp-pre-wrap;  /* HP Printers */
+	word-wrap: break-word;      /* IE 5+ */
+}
+th {
+border: 1px solid black;
+}
+.title{margin-top:8px; margin-bottom:8px;}
+th{padding: 3px;}
+td {padding: 2px;}
+h3 {text-align:left;}
+</style>
+   </head>
+   <body id="rdDebugBody" rdDebugUrl="-rdDebugUrl-">
+<div><h3><span class="LogiDarkGreen">Logi</span> <span >Debugger Data View</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a id="dataFileLink" href="">View raw XML</a></h3></div>
+	</body>
+
+</html>

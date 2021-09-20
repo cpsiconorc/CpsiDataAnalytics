@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Report>
+  <Body>
+    <Division ID="divPlaceholder" Class="rdZoomChart">
+		<Division HtmlDiv="False" ID="divInnerPlaceholder">
+			  <Rows>
+				<Row>
+				  <Column ID="colRefresh">
+					<Division ID="divTopPlaceholder" />
+				  </Column>
+				</Row>
+				<Row>
+				  <Column>
+					<Division ID="divBottomPlaceholder" />
+				  </Column>
+				</Row>
+			  </Rows>
+			  <Note Note="Input chart template. It will be moved to some placeholder." />
+			  <InputChart Type="DataRange" FullSelectionOnRender="True" DisableSelectionClear="True" >
+				<Chart Type="XY" XYChartType="Line" ChartHeight="80" ChartHeightWithXAxisTitle="100" ChartSymbolSize="3" LineWidth="1">
+				  <DataLayer>
+					<CompareFilter ID="minX" IncludeCondition="Len(&quot;@Request.[MinX]~@Request.[MaxX]~&quot;) &gt; 0 AND (&quot;@Request.[MinX]~&quot; &lt;&gt; &quot;0&quot; OR &quot;@Request.[MaxX]~&quot; &lt;&gt; &quot;0&quot;)" CompareType="&gt;=" DataType="[X-AxisDataType]" CompareValue="@Request.[MinX]~" DataColumn="[X-AxisDataColumn]" />
+					<CompareFilter ID="maxX" IncludeCondition="Len(&quot;@Request.[MinX]~@Request.[MaxX]~&quot;) &gt; 0 AND (&quot;@Request.[MinX]~&quot; &lt;&gt; &quot;0&quot; OR &quot;@Request.[MaxX]~&quot; &lt;&gt; &quot;0&quot;)" CompareType="&lt;=" DataType="[X-AxisDataType]" CompareValue="@Request.[MaxX]~" DataColumn="[X-AxisDataColumn]" />
+				  </DataLayer>
+				</Chart>
+				<AreaDrawn>
+				  <Action Type="RefreshElement" />
+				</AreaDrawn>
+				<AreaCleared>
+				  <Action Type="RefreshElement" />
+				</AreaCleared>
+			  </InputChart>
+			  <InputHidden ID="rdZoomChartResizerHeight" DefaultValue="" />
+			  <InputHidden ID="rdZoomChartResizerWidth" DefaultValue="" />
+		 </Division>
+    </Division>
+  </Body>
+  <ideTestParams />
+</Report>

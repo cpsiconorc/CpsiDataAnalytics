@@ -1,0 +1,39 @@
+﻿<DataLayer Type="Static">
+  <StaticDataRow Name="APPROX_COUNT_DISTINCT" Description="Returns the approximate number of rows that contain distinct nonnull values." Syntax="APPROX_COUNT_DISTINCT ( expression )" Notes="Available starting with Oracle Database 12c Release 1 (12.1.0.2)" />
+  <StaticDataRow Name="AVG" Description="Returns the average value of a column." Syntax="AVG ( [ DISTINCT ] expression )" Notes="" />
+  <StaticDataRow Name="CORR" Description="Returns the correlated coefficent." Syntax="CORR ( expression_Y, expression_X )" Notes="" />
+  <StaticDataRow Name="COUNT" Description="Returns the number of items found in a group." Syntax="COUNT ( [ DISTINCT ] * | expression )" Notes="" />
+  <StaticDataRow Name="COVAR_POP" Description="Returns the population covariance." Syntax="COVAR_POP ( expression_Y, expression_X )" Notes="" />
+  <StaticDataRow Name="COVAR_SAMP" Description="Returns the sample covariance." Syntax="COVAR_SAMP ( expression_Y, expression_X )" Notes="" />
+  <StaticDataRow Name="MAX" Description="Returns the maximum value of a column." Syntax="MAX ( expression )" Notes="" />
+  <StaticDataRow Name="MEDIAN" Description="Returns the the middle value or an interpolated value that would be the middle value once the values are sorted." Syntax="MIN ( expression )" Notes="&quot;expression&quot; must be of numeric or date/datetime type. Nulls are ignored in the calculation." />
+  <StaticDataRow Name="MIN" Description="Returns the minimum value of a column." Syntax="MIN ( expression )" Notes="" />
+  <StaticDataRow Name="REGR_AVGX" Description="Returns the average of the independent variable." Syntax="REGR_AVGX ( expression_Y, expression_X )" Notes="SUM(X)/N" />
+  <StaticDataRow Name="REGR_AVGY" Description="Returns the average of the dependent variable." Syntax="REGR_AVGY ( expression_Y, expression_X )" Notes="SUM(Y)/N" />
+  <StaticDataRow Name="REGR_COUNT" Description="Returns the number of input rows in which both expressions are nonnull." Syntax="REGR_COUNT ( expression_Y, expression_X )" Notes="" />
+  <StaticDataRow Name="REGR_INTERCEPT" Description="Returns the y-intercept of the least-squares-fit linear equation determined by the (X, Y) pairs." Syntax="REGR_INTERCEPT ( expression_Y, expression_X )" Notes="" />
+  <StaticDataRow Name="REGR_R2" Description="Returns the square of the correlation coefficient." Syntax="REGR_R2 ( expression_Y, expression_X )" Notes="" />
+  <StaticDataRow Name="REGR_SLOPE" Description="Returns the slope of the least-squares-fit linear equation determined by the (X, Y) pairs." Syntax="REGR_SLOPE ( expression_Y, expression_X )" Notes="" />
+  <StaticDataRow Name="REGR_SXX" Description="Returns the &quot;sum of squares&quot; of the independent variable." Syntax="REGR_SXX ( expression_Y, expression_X )" Notes="SUM(X^2) - SUM(X)^2/N" />
+  <StaticDataRow Name="REGR_SXY" Description="Returns the &quot;sum of products&quot; of independent times dependent variable." Syntax="REGR_SXY ( expression_Y, expression_X )" Notes="SUM(X*Y) - SUM(X) * SUM(Y)/N" />
+  <StaticDataRow Name="REGR_SYY" Description="Returns the &quot;sum of squares&quot; of the dependent variable." Syntax="REGR_SYY ( expression_Y, expression_X )" Notes="SUM(Y^2) - SUM(Y)^2/N" />
+  <StaticDataRow Name="STATS_BINOMIAL_TEST" Description="" Syntax="STATS_BINOMIAL_TEST(expr1, expr2, p [, { 'TWO_SIDED_PROB' | 'EXACT_PROB' | 'ONE_SIDED_PROB_OR_MORE' | 'ONE_SIDED_PROB_OR_LESS' } ] )" Notes="" />
+  <StaticDataRow Name="STATS_CROSSTAB" Description="" Syntax="STATS_CROSSTAB(expr1, expr2 [, { 'CHISQ_OBS' | 'CHISQ_SIG' | 'CHISQ_DF' | 'PHI_COEFFICIENT' | 'CRAMERS_V' | 'CONT_COEFFICIENT' | 'COHENS_K' } ] )" Notes="" />
+  <StaticDataRow Name="STATS_F_TEST" Description="" Syntax="STATS_F_TEST(expr1, expr2 [, { { 'STATISTIC' | 'DF_NUM' | 'DF_DEN' | 'ONE_SIDED_SIG' } , expr3 | 'TWO_SIDED_SIG' } ] )" Notes="" />
+  <StaticDataRow Name="STATS_KS_TEST" Description="" Syntax="STATS_KS_TEST(expr1, expr2 [, { 'STATISTIC' | 'SIG' } ] )" Notes="" />
+  <StaticDataRow Name="STATS_MODE" Description="Returns the value that occurs with the greatest frequency." Syntax="STATS_MODE ( expression )" Notes="If more than one mode exists, then Oracle Database chooses one and returns only that one value." />
+  <StaticDataRow Name="STATS_MW_TEST" Description="" Syntax="STATS_MW_TEST(expr1, expr2 [, { 'STATISTIC' | 'U_STATISTIC' | 'ONE_SIDED_SIG' , expr3 | 'TWO_SIDED_SIG' } ] )" Notes="" />
+  <StaticDataRow Name="STATS_ONE_WAY_ANOVA" Description="" Syntax="STATS_ONE_WAY_ANOVA(expr1, expr2 [, { 'SUM_SQUARES_BETWEEN' | 'SUM_SQUARES_WITHIN' | 'DF_BETWEEN' | 'DF_WITHIN' | 'MEAN_SQUARES_BETWEEN' | 'MEAN_SQUARES_WITHIN' | 'F_RATIO' | 'SIG' } ] )" Notes="" />
+  <StaticDataRow Name="STATS_T_TEST_ONE" Description="" Syntax="STATS_T_TEST_ONE ( expr1 [, expr2 ] [, { { 'STATISTIC' | 'ONE_SIDED_SIG' } , expr3 | 'TWO_SIDED_SIG' | 'DF' } ] )" Notes="" />
+  <StaticDataRow Name="STATS_T_TEST_PAIRED" Description="" Syntax="STATS_T_TEST_PAIRED ( expr1, expr2 [, { { 'STATISTIC' | 'ONE_SIDED_SIG' } , expr3 | 'TWO_SIDED_SIG' | 'DF' } ] )" Notes="" />
+  <StaticDataRow Name="STATS_T_TEST_INDEP" Description="" Syntax="STATS_T_TEST_INDEP ( expr1, expr2 [, { { 'STATISTIC' | 'ONE_SIDED_SIG' } , expr3 | 'TWO_SIDED_SIG' | 'DF' } ] )" Notes="" />
+  <StaticDataRow Name="STATS_T_TEST_INDEPU" Description="" Syntax="STATS_T_TEST_INDEPU ( expr1, expr2 [, { { 'STATISTIC' | 'ONE_SIDED_SIG' } , expr3 | 'TWO_SIDED_SIG' | 'DF' } ] )" Notes="" />
+  <StaticDataRow Name="STATS_WSR_TEST" Description="" Syntax="STATS_WSR_TEST(expr1, expr2 [, { 'STATISTIC' | 'ONE_SIDED_SIG' | 'TWO_SIDED_SIG' } ] )" Notes="" />
+  <StaticDataRow Name="STDDEV" Description="Returns the sample standard deviation of a set of numeric values, equivalent to the square root of the sample variance of the values." Syntax="STDDEV ( [ DISTINCT ] expression )" Notes="STDDEV returns zero when it has only 1 row of input data, whereas STDDEV_SAMP returns null." />
+  <StaticDataRow Name="STDDEV_POP" Description="Returns the population standard deviation of a set of numeric values." Syntax="STDDEV_POP ( [ DISTINCT ] expression )" Notes="" />
+  <StaticDataRow Name="STDDEV_SAMP" Description="Returns the sample standard deviation of a set of numeric values, equivalent to the square root of the sample variance of the values." Syntax="STDDEV ( [ DISTINCT ] expression )" Notes="STDDEV_SAMP returns null when it has only 1 row of input data, whereas STDDEV returns zero." />
+  <StaticDataRow Name="SUM" Description="Returns the sum of all non-null values in an expression." Syntax="SUM ( [ DISTINCT ] expression )" Notes="" />
+  <StaticDataRow Name="VAR_POP" Description="Returns the population variance of a set of numeric values." Syntax="VAR_POP ( [ DISTINCT ] expression )" Notes="" />
+  <StaticDataRow Name="VAR_SAMP" Description="Returns the sample variance of a set of numeric values, equivalent to the squared sample standard deviation of the same set of values." Syntax="VAR_SAMP ( expression )" Notes="VAR_SAMP returns null when it has only 1 row of input data, whereas VARIANCE returns zero." />
+  <StaticDataRow Name="VARIANCE" Description="Returns the sample variance of a set of numeric values, equivalent to the squared sample standard deviation of the same set of values." Syntax="VARIANCE ( expression )" Notes="VARIANCE returns zero when it has only 1 row of input data, whereas VAR_SAMP returns null." />
+</DataLayer>

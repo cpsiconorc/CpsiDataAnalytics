@@ -1,0 +1,80 @@
+<AnimatedMapDataXML>
+  <MapSpec InternalID="01" ShortName="AR" LongName="Abşeron" />
+  <MapSpec InternalID="02" ShortName="AC" LongName="Ağcabədi" />
+  <MapSpec InternalID="03" ShortName="AM" LongName="Ağdam" />
+  <MapSpec InternalID="04" ShortName="AS" LongName="Ağdaş" />
+  <MapSpec InternalID="05" ShortName="AF" LongName="Ağstafa" />
+  <MapSpec InternalID="06" ShortName="AU" LongName="Ağsu" />
+  <MapSpec InternalID="07" ShortName="AB" LongName="Ali Bayramlı" />
+  <MapSpec InternalID="08" ShortName="AA" LongName="Astara" />
+  <MapSpec InternalID="09" ShortName="BA" LongName="Baki" />
+  <MapSpec InternalID="10" ShortName="BL" LongName="Balakan" />
+  <MapSpec InternalID="11" ShortName="BR" LongName="Barda" />
+  <MapSpec InternalID="12" ShortName="BQ" LongName="Beyləqan" />
+  <MapSpec InternalID="13" ShortName="BS" LongName="Biləsuvar" />
+  <MapSpec InternalID="14" ShortName="CB" LongName="Cəbrayıl" />
+  <MapSpec InternalID="15" ShortName="CL" LongName="Cəlilabad" />
+  <MapSpec InternalID="16" ShortName="DS" LongName="Daşkəsən" />
+  <MapSpec InternalID="17" ShortName="DV" LongName="Dəvəçi" />
+  <MapSpec InternalID="18" ShortName="FU" LongName="Füzuli" />
+  <MapSpec InternalID="19" ShortName="GD" LongName="Gədəbəy" />
+  <MapSpec InternalID="20" ShortName="GA" LongName="Gəncə" />
+  <MapSpec InternalID="21" ShortName="GR" LongName="Goranboy" />
+  <MapSpec InternalID="22" ShortName="GY" LongName="Göyçay" />
+  <MapSpec InternalID="23" ShortName="HA" LongName="Hacıqabul" />
+  <MapSpec InternalID="24" ShortName="IM" LongName="İmişli" />
+  <MapSpec InternalID="25" ShortName="IS" LongName="İsmayıllı" />
+  <MapSpec InternalID="26" ShortName="KA" LongName="Kəlbəcər" />
+  <MapSpec InternalID="27" ShortName="KU" LongName="Kürdəmir" />
+  <MapSpec InternalID="28" ShortName="LC" LongName="Laçın" />
+  <MapSpec InternalID="29" ShortName="LN" LongName="Lənkəran" />
+  <MapSpec InternalID="30" ShortName="LA" LongName="Lənkəran (City)" />
+  <MapSpec InternalID="31" ShortName="LE" LongName="Lerik" />
+  <MapSpec InternalID="32" ShortName="MA" LongName="Masallı" />
+  <MapSpec InternalID="33" ShortName="MI" LongName="Mingəçevir" />
+  <MapSpec InternalID="34" ShortName="NA" LongName="Naftalan city" />
+  <MapSpec InternalID="36" ShortName="NE" LongName="Neftçala" />
+  <MapSpec InternalID="37" ShortName="OG" LongName="Oğuz" />
+  <MapSpec InternalID="38" ShortName="QA" LongName="Qəbələ" />
+  <MapSpec InternalID="39" ShortName="QX" LongName="Qax" />
+  <MapSpec InternalID="40" ShortName="QZ" LongName="Qazax" />
+  <MapSpec InternalID="41" ShortName="QO" LongName="Qobustan" />
+  <MapSpec InternalID="42" ShortName="QB" LongName="Quba" />
+  <MapSpec InternalID="43" ShortName="QD" LongName="Qubadlı" />
+  <MapSpec InternalID="44" ShortName="QR" LongName="Qusar" />
+  <MapSpec InternalID="45" ShortName="ST" LongName="Saatlı" />
+  <MapSpec InternalID="46" ShortName="SB" LongName="Sabirabad" />
+  <MapSpec InternalID="47" ShortName="SK" LongName="Şəki" />
+  <MapSpec InternalID="48" ShortName="SA" LongName="Şəki (City)" />
+  <MapSpec InternalID="49" ShortName="SL" LongName="Salyan" />
+  <MapSpec InternalID="50" ShortName="SI" LongName="Şamaxı" />
+  <MapSpec InternalID="51" ShortName="SM" LongName="Şəmkir" />
+  <MapSpec InternalID="52" ShortName="SX" LongName="Samux" />
+  <MapSpec InternalID="53" ShortName="SY" LongName="Siyəzən" />
+  <MapSpec InternalID="54" ShortName="SQ" LongName="Sumqayıt" />
+  <MapSpec InternalID="55" ShortName="SU" LongName="Şuşa" />
+  <MapSpec InternalID="56" ShortName="SS" LongName="Şuşa (City)" />
+  <MapSpec InternalID="57" ShortName="TA" LongName="Tərtər" />
+  <MapSpec InternalID="58" ShortName="TO" LongName="Tovuz" />
+  <MapSpec InternalID="59" ShortName="UC" LongName="Ucar" />
+  <MapSpec InternalID="60" ShortName="XZ" LongName="Xaçmaz" />
+  <MapSpec InternalID="61" ShortName="XA" LongName="Xankəndi" />
+  <MapSpec InternalID="62" ShortName="XR" LongName="Xanlar" />
+  <MapSpec InternalID="63" ShortName="XI" LongName="Xızı" />
+  <MapSpec InternalID="64" ShortName="XC" LongName="Xocalı" />
+  <MapSpec InternalID="65" ShortName="XD" LongName="Xocavənd" />
+  <MapSpec InternalID="66" ShortName="YR" LongName="Yardımlı" />
+  <MapSpec InternalID="67" ShortName="YV" LongName="Yevlax" />
+  <MapSpec InternalID="68" ShortName="YE" LongName="Yevlax (City)" />
+  <MapSpec InternalID="69" ShortName="ZG" LongName="Zəngilan" />
+  <MapSpec InternalID="70" ShortName="ZQ" LongName="Zaqatala" />
+  <MapSpec InternalID="71" ShortName="ZR" LongName="Zərdab" />
+  <MapSpec InternalID="72" ShortName="BB" LongName="Babək" />
+  <MapSpec InternalID="73" ShortName="CF" LongName="Culfa" />
+  <MapSpec InternalID="74" ShortName="KN" LongName="Kəngərli" />
+  <MapSpec InternalID="35" ShortName="NX" LongName="Naxçıvan Şəhər" />
+  <MapSpec InternalID="75" ShortName="OR" LongName="Ordubad" />
+  <MapSpec InternalID="76" ShortName="SD" LongName="Sədərək" />
+  <MapSpec InternalID="77" ShortName="SH" LongName="Şahbuz" />
+  <MapSpec InternalID="78" ShortName="SR" LongName="Şərur" />
+</AnimatedMapDataXML>

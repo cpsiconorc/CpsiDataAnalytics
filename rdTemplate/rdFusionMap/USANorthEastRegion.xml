@@ -1,0 +1,20 @@
+<AnimatedMapDataXML>
+  <MapSpec InternalID="09" ShortName="CT" LongName="Connecticut" />
+  <MapSpec InternalID="10" ShortName="DE" LongName="Delaware" />
+  <MapSpec InternalID="11" ShortName="DC" LongName="District of Columbia" />
+  <MapSpec InternalID="18" ShortName="IN" LongName="Indiana" />
+  <MapSpec InternalID="21" ShortName="KY" LongName="Kentucky" />
+  <MapSpec InternalID="23" ShortName="ME" LongName="Maine" />
+  <MapSpec InternalID="24" ShortName="MD" LongName="Maryland" />
+  <MapSpec InternalID="25" ShortName="MA" LongName="Massachusetts" />
+  <MapSpec InternalID="26" ShortName="MI" LongName="Michigan" />
+  <MapSpec InternalID="33" ShortName="NH" LongName="New Hampshire" />
+  <MapSpec InternalID="34" ShortName="NJ" LongName="New Jersey" />
+  <MapSpec InternalID="36" ShortName="NY" LongName="New York" />
+  <MapSpec InternalID="42" ShortName="PA" LongName="Pennsylvania" />
+  <MapSpec InternalID="44" ShortName="RI" LongName="Rhode Island" />
+  <MapSpec InternalID="50" ShortName="VT" LongName="Vermont" />
+  <MapSpec InternalID="51" ShortName="VA" LongName="Virginia" />
+  <MapSpec InternalID="54" ShortName="WV" LongName="West Virginia" />
+  <MapSpec InternalID="39" ShortName="OH" LongName="Ohio" />
+</AnimatedMapDataXML>

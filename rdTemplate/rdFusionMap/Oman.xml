@@ -1,0 +1,10 @@
+<AnimatedMapDataXML>
+  <MapSpec InternalID="OM.DA" ShortName="DA" LongName="Ad Dakhiliyah" />
+  <MapSpec InternalID="OM.ZA" ShortName="ZA" LongName="Adh Dhahirah" />
+  <MapSpec InternalID="OM.BA" ShortName="BA" LongName="Al Batinah" />
+  <MapSpec InternalID="OM.WU" ShortName="WU" LongName="Al Wusta" />
+  <MapSpec InternalID="OM.SH" ShortName="SH" LongName="Ash Sharqiyah" />
+  <MapSpec InternalID="OM.JA" ShortName="JA" LongName="Dhofar" />
+  <MapSpec InternalID="OM.MU" ShortName="MU" LongName="Musandam" />
+  <MapSpec InternalID="OM.MA" ShortName="MA" LongName="Muscat" />
+</AnimatedMapDataXML>

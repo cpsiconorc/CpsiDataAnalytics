@@ -1,0 +1,496 @@
+.rdAg
+{
+	font-size: 11px;
+}
+.rdAg TABLE
+{
+	font-size: 11px;
+}
+
+ .rdAgToggleImage {
+	cursor:pointer;
+}
+
+.rdAg IMG 	{
+	border: 0;
+	margin-top: 0px;
+	margin-left: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	}
+
+.rdAg A:link
+{
+	text-decoration:none;
+}
+
+.rdAgCaptionRow
+{
+	background-image: url(rd666666.png);
+	font-size: 14px;
+	font-weight:bold;
+	color: #FFFFFF;
+	height:26px;
+}
+.rdAgCaptionRow TD {
+	background-color: #666666;
+}
+
+#lblTitle
+{
+	padding:5px;
+}
+
+.rdAgContentRow {
+	vertical-align: top;
+}
+
+.rdAgContentHeadingRow
+{
+	background-color:transparent;
+	width:100%;
+	padding:0;
+	margin-bottom:5px;
+	white-space: nowrap
+}
+
+.rdAgContentHeading
+{
+	font-weight: bold;
+	vertical-align:middle;
+	white-space: nowrap;
+	padding:0;
+}
+
+.rdAgSplitHeader {
+    white-space: normal !important;
+}
+
+.rdAgDataTable {
+    background-color: #CCCCCC;
+}
+
+TABLE.rdAgDataTable TD
+{
+		background-color: #F8F8F8;
+		padding: 2px;
+}
+TABLE.rdAgDataTable TH
+{
+		background-image: url(rdF7F7F7-ECECEC.png);
+		background-repeat:repeat-x;
+		background-color: #ECECEC;
+		border-width: 0px;
+	    padding: 2px;
+}
+
+TR.rdAgHeaderRow TH
+{
+		background-color: #C0C0C0;
+		background-image: none;
+	color: white;
+	font-weight: bold;
+}
+
+
+TR.rdAgGroup0HeaderRow TD {background-color: #D0D0D0;}
+TR.rdAgGroup1HeaderRow TD {background-color: #D8D8D8;}
+TR.rdAgGroup2HeaderRow TD {background-color: #E0E0E0;}
+TR.rdAgGroup3HeaderRow TD {background-color: #E8E8E8;}
+TR.rdAgGroup4HeaderRow TD {background-color: #F0F0F0;}
+
+.rdAgAlignRight
+{
+	text-align: right;
+}
+.rdAgAlignCenter
+{
+	text-align: center;
+}
+
+.rdAgSelectedTab
+{
+	background-image: url(../rdButtonIn.png);
+	background-color:#DDDDDD;
+	border-top: 1px solid #DDDDDD;
+	border-bottom: 1px solid #656565;
+	border-right: 1px solid #656565;
+	border-left: 1px solid #DDDDDD;
+	text-decoration: none;
+	margin-left: 0px;
+	cursor:pointer;
+}
+.rdAgSelectedTab span {
+	color: #FFFFFF;
+}
+.rdAgSelectedTabOn
+{
+	background-image: url(rdButtonInOn.png);
+}
+.rdAgUnselectedTab
+{
+	background-image: url(../rdButton.png);
+	border-top: 1px solid #DDDDDD;
+	border-bottom: 1px solid #777777;
+	border-right: 1px solid #777777;
+	border-left: 1px solid #DDDDDD;
+	text-decoration: none;
+	margin-left: 0px;
+	cursor:pointer;
+	text-align:center;
+}
+.rdAgUnselectedTab a {
+    color: black;
+}
+.rdAgUnselectedTabOn
+{
+	background-image: url(rdButtonOutOn.png);
+}
+.rdAgDisabledTab
+{
+	opacity: 0.3;
+	filter:alpha(opacity=30);
+	pointer-events: none;
+	cursor: default;
+}
+.rdAgDisabledTab:hover {
+	background: none;
+	background-image: none;
+	filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
+}
+
+.rdAgTabHeading, #colPagingContainer {
+	white-space: nowrap;
+}
+
+.rdAgPanel {
+	background-color: #F8F8F8;
+	vertical-align: top;
+	border: 1px solid #C1C1C1;
+}
+
+.rdAgCommand, .rdAgCommandIdle
+{
+	font-weight: normal;
+	color: #8C8C8D;
+	cursor: pointer;
+	text-decoration: none;
+	vertical-align: baseline;
+	white-space: nowrap;
+	font-size: 15px;
+	border-bottom: 3px solid gray;
+	border-top: none;
+	text-decoration: none;
+	padding-right: 3px;
+	padding-left: 3px;
+	padding-top: 2px;
+	padding-bottom: 2px;
+	line-height:24px;
+}
+
+.rdAgCommand A:link	{
+	text-decoration:none;
+	}
+.rdAgCommand A:visited	{
+	text-decoration:none;
+	}
+.rdAgCommand A:active	{
+	text-decoration:none;
+	}
+.rdAgCommand A:hover	{
+	text-decoration:none;
+}
+
+.rdAgCommandHighlight
+{
+	font-weight: normal;
+	color: #8C8C8D;
+	cursor: pointer;
+	text-decoration: none;
+	vertical-align: baseline;
+	white-space: nowrap;
+	font-size: 15px;
+	border-bottom: 3px solid black;
+	border-top: none;
+	text-decoration: none;
+	padding-right: 3px;
+	padding-left: 3px;
+	padding-top: 2px;
+	padding-bottom: 2px;
+	line-height:24px;
+}
+
+.rdAgCommandLeft 
+{
+	font-weight: normal;
+	color: #8C8C8D;
+	cursor: pointer;
+	text-decoration: none;
+	vertical-align: baseline;
+	white-space: nowrap;
+	font-size: 15px;
+	border-bottom: 3px solid gray;
+	border-top: none;
+	text-decoration: none;
+	padding-right: 3px;
+	padding-left: 3px;
+	padding-top: 2px;
+	padding-bottom: 2px;
+	line-height:24px;
+}
+.rdAgCommandRight
+{
+	font-weight: normal;
+	color: #8C8C8D !important;
+	cursor: pointer;
+	text-decoration: none;
+	vertical-align: baseline;
+	white-space: nowrap;
+	font-size: 15px;
+	border-bottom: 2px solid gray;
+	border-top: none;
+	text-decoration: none;
+	padding-right: 3px;
+	padding-left: 3px;
+	padding-top: 2px;
+	padding-bottom: 2px;
+	line-height:24px;
+}
+.rdAgCommandMiddle
+{
+	border-left:0;
+}
+
+select.rdAgCalcInsert, select.rdAgCustAggInsert
+{
+    max-width: 152px;
+}
+
+.rdAgPaging
+{
+}
+
+.rdAgPickDistinct
+{
+	margin: auto;
+}
+
+.rdAgHidden
+{
+	 display:none;
+}
+
+.rdAgError, .rdAgErrorBlock
+{
+	color: Maroon;
+	font-weight: bold;
+}
+span.rdAgError.rdAgErrorBlock {
+    display: block;
+    width: 510px;
+}
+
+.rdAgMessage
+{
+	color: #c1a843;
+}
+
+.rdAgImage
+{
+	border: 0px;
+	margin: 0px;
+}
+
+span.rdAgFormula {
+    display: block;
+    padding: 5px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-family: monospace;
+}
+
+.rdAgNoPadding
+{
+	padding:0;
+}
+
+a.rdAgPopupHelpIcon
+{
+    position: absolute;
+    right: 5px;
+    margin-top: -24px;
+}
+
+.rdCrosstabDropdownColumn {
+    white-space: nowrap;
+}
+
+.rdAddToDashboardHidden
+{
+	display:none;
+}
+.rdAgDropZone
+{
+	height:5px;
+}
+.rdAgDropZoneActive
+{
+		background-image: url(rdCCCCDD-EEEEFF-15.png);
+		border-color: #9999AA;
+		border-width: 1px;
+	height:5px;
+}
+.rdAgKPIColor1{
+	background-color:#A61C00 !important;
+	cursor:pointer;
+}
+.rdAgKPIColor2{
+	background-color:#CC0000 !important;
+	cursor:pointer;
+}
+.rdAgKPIColor3{
+	background-color:#E69138 !important;
+	cursor:pointer;
+}
+.rdAgKPIColor4{
+	background-color:#F1C232 !important;
+	cursor:pointer;
+}
+.rdAgKPIColor5{
+	background-color:#6AA84F !important;
+	cursor:pointer;
+}
+.rdAgKPIColor6{
+	background-color:#45818E !important;
+	cursor:pointer;
+}
+.rdAgKPIColor7{
+	background-color:#3C78D8 !important;
+	cursor:pointer;
+}
+.rdAgKPIColor8{
+	background-color:#674EA7 !important;
+	cursor:pointer;
+}
+.rdAgKPIColor9{
+	background-color:#A64D79 !important;
+	cursor:pointer;
+}
+#lblSuggestedMinMax.rdAgMessage
+{
+	text-decoration:underline;
+}
+
+/* QB dropdowns */
+.rdQueryColumn select {
+  border: 1px solid #ccc;
+}
+
+.rdAgAlignCenter {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+.rdAgAlignLeft {
+  text-align: left;
+}
+
+.rdAgAlignRight {
+  text-align: right;
+}
+
+/* Non-AG table headers */
+.rdDashboard table.rdAgDataTable th.rdAgQbColor1,
+.rdDashboard table.rdAgDataTable th.rdAgQbColor2,
+.rdDashboard table.rdAgDataTable th.rdAgQbColor3,
+.rdDashboard table.rdAgDataTable th.rdAgQbColor4,
+.rdDashboard table.rdAgDataTable th.rdAgQbColor5,
+.rdDashboard table.rdAgDataTable th.rdAgQbColor6,
+#rdReportAuthor table.rdAgDataTable th.rdAgQbColor1,
+#rdReportAuthor table.rdAgDataTable th.rdAgQbColor2,
+#rdReportAuthor table.rdAgDataTable th.rdAgQbColor3,
+#rdReportAuthor table.rdAgDataTable th.rdAgQbColor4,
+#rdReportAuthor table.rdAgDataTable th.rdAgQbColor5,
+#rdReportAuthor table.rdAgDataTable th.rdAgQbColor6 {
+  border-top: none;
+}
+
+.rdAgWrapper {
+	width: 100%;
+	min-width: 800px;
+}
+
+.rdAgWrapperSmall {
+	width: 100%;
+	min-width: 400px;
+}
+
+.rdAgControlsPosition {
+	padding-right:30px;
+}
+
+.ThemeNoWrap {
+	white-space: nowrap;
+}
+
+.ThemeAlignRight {
+	text-align: right;
+}
+
+.rdAgBackground {
+	background-color:#EEEEEE;
+	width:100%;
+	white-space: nowrap;
+}
+
+
+#lstFilter {
+    width: 90%;
+	color: gray;
+	background-color: transparent;
+	border-color: transparent;
+}
+#dtFilter {
+	background-color: transparent;
+	border-color: transparent;
+}	
+
+#divUndoEnabled,
+#divRedoEnabled {
+	cursor: pointer;
+}
+
+#colUndoRedo IMG {
+position:relative;
+top:5px;
+}
+
+#divUndo{
+margin-left:10px;
+}
+
+#divRedo{
+margin-left:5px;
+}
+
+.rdAgPopupOption a.yuimenuitemlabel.yuimenuitemlabel-selected span {
+    color: white;
+}
+
+#rdPopupPanelTitle_rdAgCustAggPopup .rdPopupPanelTitleCaption {
+    background-image: url(rdAgCalc.gif);
+    background-repeat: no-repeat;
+    padding-left: 30px;
+}
+
+.rdAgDataRetrievalPaused {
+    padding: 4px;
+    border-radius: 4px;
+    background-color: #F6B94D !important;
+}
+#lblResumeDataRetrieval {
+    padding: 3px 8px 5px;
+    border-radius: 5px;
+    background-color: #F6B94D !important;
+}

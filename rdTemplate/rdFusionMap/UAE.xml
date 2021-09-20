@@ -1,0 +1,9 @@
+<AnimatedMapDataXML>
+  <MapSpec InternalID="01" ShortName="AZ" LongName="Abu Dhabi" />
+  <MapSpec InternalID="02" ShortName="AJ" LongName="Ajman" />
+  <MapSpec InternalID="03" ShortName="DU" LongName="Dubai" />
+  <MapSpec InternalID="04" ShortName="FU" LongName="Fujairah" />
+  <MapSpec InternalID="05" ShortName="RK" LongName="Ras Al Khaimah" />
+  <MapSpec InternalID="06" ShortName="SH" LongName="Sharjah" />
+  <MapSpec InternalID="07" ShortName="UQ" LongName="Umm Al Quwain" />
+</AnimatedMapDataXML>

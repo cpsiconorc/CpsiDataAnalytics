@@ -1,0 +1,81 @@
+<AnimatedMapDataXML>
+  <MapSpec InternalID="PH.AB" ShortName="AB" LongName="Abra" />
+  <MapSpec InternalID="PH.AN" ShortName="AN" LongName="Agusan del Norte" />
+  <MapSpec InternalID="PH.AS" ShortName="AS" LongName="Agusan del Sur" />
+  <MapSpec InternalID="PH.AK" ShortName="AK" LongName="Aklan" />
+  <MapSpec InternalID="PH.AL" ShortName="AL" LongName="Albay" />
+  <MapSpec InternalID="PH.AQ" ShortName="AQ" LongName="Antique" />
+  <MapSpec InternalID="PH.AP" ShortName="AP" LongName="Apayao" />
+  <MapSpec InternalID="PH.AU" ShortName="AU" LongName="Aurora" />
+  <MapSpec InternalID="PH.BS" ShortName="BS" LongName="Basilan" />
+  <MapSpec InternalID="PH.BA" ShortName="BA" LongName="Bataan" />
+  <MapSpec InternalID="PH.BT" ShortName="BT" LongName="Batangas" />
+  <MapSpec InternalID="PH.BG" ShortName="BG" LongName="Benguet" />
+  <MapSpec InternalID="PH.BI" ShortName="BI" LongName="Biliran" />
+  <MapSpec InternalID="PH.BO" ShortName="BO" LongName="Bohol" />
+  <MapSpec InternalID="PH.BK" ShortName="BK" LongName="Bukidnon" />
+  <MapSpec InternalID="PH.BU" ShortName="BU" LongName="Bulacan" />
+  <MapSpec InternalID="PH.CG" ShortName="CG" LongName="Cagayan" />
+  <MapSpec InternalID="PH.CN" ShortName="CN" LongName="Camarines Norte" />
+  <MapSpec InternalID="PH.CS" ShortName="CS" LongName="Camarines Sur" />
+  <MapSpec InternalID="PH.CM" ShortName="CM" LongName="Camiguin" />
+  <MapSpec InternalID="PH.CP" ShortName="CP" LongName="Capiz" />
+  <MapSpec InternalID="PH.CT" ShortName="CT" LongName="Catanduanes" />
+  <MapSpec InternalID="PH.CV" ShortName="CV" LongName="Cavite" />
+  <MapSpec InternalID="PH.CB" ShortName="CB" LongName="Cebu" />
+  <MapSpec InternalID="PH.CL" ShortName="CL" LongName="Compostela Valley" />
+  <MapSpec InternalID="PH.NC" ShortName="NC" LongName="Cotabato" />
+  <MapSpec InternalID="PH.DV" ShortName="DV" LongName="Davao del Norte" />
+  <MapSpec InternalID="PH.DS" ShortName="DS" LongName="Davao del Sur" />
+  <MapSpec InternalID="PH.DO" ShortName="DO" LongName="Davao Oriental" />
+  <MapSpec InternalID="PH.ES" ShortName="ES" LongName="Eastern Samar" />
+  <MapSpec InternalID="PH.GU" ShortName="GU" LongName="Guimaras" />
+  <MapSpec InternalID="PH.IF" ShortName="IF" LongName="Ifugao" />
+  <MapSpec InternalID="PH.IN" ShortName="IN" LongName="Ilocos Norte" />
+  <MapSpec InternalID="PH.IS" ShortName="IS" LongName="Ilocos Sur" />
+  <MapSpec InternalID="PH.II" ShortName="II" LongName="Iloilo" />
+  <MapSpec InternalID="PH.IB" ShortName="IB" LongName="Isabela" />
+  <MapSpec InternalID="PH.KA" ShortName="KA" LongName="Kalinga" />
+  <MapSpec InternalID="PH.LU" ShortName="LU" LongName="La Union" />
+  <MapSpec InternalID="PH.LG" ShortName="LG" LongName="Laguna" />
+  <MapSpec InternalID="PH.LN" ShortName="LN" LongName="Lanao del Norte" />
+  <MapSpec InternalID="PH.LS" ShortName="LS" LongName="Lanao del Sur" />
+  <MapSpec InternalID="PH.LE" ShortName="LE" LongName="Leyte" />
+  <MapSpec InternalID="PH.MA" ShortName="MA" LongName="Maguindanao" />
+  <MapSpec InternalID="PH.MQ" ShortName="MQ" LongName="Marinduque" />
+  <MapSpec InternalID="PH.MB" ShortName="MB" LongName="Masbate" />
+  <MapSpec InternalID="PH.MD" ShortName="MD" LongName="Misamis Occidental" />
+  <MapSpec InternalID="PH.MN" ShortName="MN" LongName="Misamis Oriental" />
+  <MapSpec InternalID="PH.MT" ShortName="MT" LongName="Mountain Province" />
+  <MapSpec InternalID="PH.ND" ShortName="ND" LongName="Negros Occidental" />
+  <MapSpec InternalID="PH.NR" ShortName="NR" LongName="Negros Oriental" />
+  <MapSpec InternalID="PH.NS" ShortName="NS" LongName="Northern Samar" />
+  <MapSpec InternalID="PH.NE" ShortName="NE" LongName="Nueva Ecija" />
+  <MapSpec InternalID="PH.NV" ShortName="NV" LongName="Nueva Vizcaya" />
+  <MapSpec InternalID="PH.MC" ShortName="MC" LongName="Occidental Mindoro" />
+  <MapSpec InternalID="PH.MR" ShortName="MR" LongName="Oriental Mindoro" />
+  <MapSpec InternalID="PH.PL" ShortName="PL" LongName="Palawan" />
+  <MapSpec InternalID="PH.PM" ShortName="PM" LongName="Pampanga" />
+  <MapSpec InternalID="PH.PN" ShortName="PN" LongName="Pangasinan" />
+  <MapSpec InternalID="PH.QZ" ShortName="QZ" LongName="Quezon" />
+  <MapSpec InternalID="PH.QR" ShortName="QR" LongName="Quirino" />
+  <MapSpec InternalID="PH.RI" ShortName="RI" LongName="Rizal" />
+  <MapSpec InternalID="PH.RO" ShortName="RO" LongName="Romblon" />
+  <MapSpec InternalID="PH.SM" ShortName="SM" LongName="Samar" />
+  <MapSpec InternalID="PH.SG" ShortName="SG" LongName="Sarangani" />
+  <MapSpec InternalID="PH.SF" ShortName="SF" LongName="Shariff Kabunsuan" />
+  <MapSpec InternalID="PH.SQ" ShortName="SQ" LongName="Siquijor" />
+  <MapSpec InternalID="PH.SR" ShortName="SR" LongName="Sorsogon" />
+  <MapSpec InternalID="PH.SC" ShortName="SC" LongName="South Cotabato" />
+  <MapSpec InternalID="PH.SL" ShortName="SL" LongName="Southern Leyte" />
+  <MapSpec InternalID="PH.SK" ShortName="SK" LongName="Sultan Kudarat" />
+  <MapSpec InternalID="PH.SU" ShortName="SU" LongName="Sulu" />
+  <MapSpec InternalID="PH.ST" ShortName="ST" LongName="Surigao del Norte" />
+  <MapSpec InternalID="PH.SS" ShortName="SS" LongName="Surigao del Sur" />
+  <MapSpec InternalID="PH.TR" ShortName="TR" LongName="Tarlac" />
+  <MapSpec InternalID="PH.TT" ShortName="TT" LongName="Tawi-Tawi" />
+  <MapSpec InternalID="PH.ZM" ShortName="ZM" LongName="Zambales" />
+  <MapSpec InternalID="PH.ZN" ShortName="ZN" LongName="Zamboanga del Norte" />
+  <MapSpec InternalID="PH.ZS" ShortName="ZS" LongName="Zamboanga del Sur" />
+  <MapSpec InternalID="PH.ZY" ShortName="ZY" LongName="Zamboanga Sibugay" />
+</AnimatedMapDataXML>

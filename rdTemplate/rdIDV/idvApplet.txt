@@ -1,0 +1,164 @@
+<rdIDV ID='rdIdvID'>
+	<applet name='Full Featured Chartlet/Tablet' label='Advanced IDV' notes='(enables reports and multiple RDL files)' archive='fullfeatured.jar' code='com/enumer8/applet/FullFeaturedApplet.class' codebase='rdTemplate/rdIDV' height='600' width='750' id="rdAppletID" >
+		<param name='applet.enableView.Chart' value='true'/> <!-- Enable the Chart view -->
+		<param name='applet.enableView.Table' value='true'/> <!-- Enable the Table view -->
+		<param name='applet.enableView.Chart &amp; Table' value='true'/> <!-- Enable the Chart &amp; Table Combo view -->
+		<param name='cache_option' value='Plugin'/>
+		<param name='cache_archive' value='fullfeatured.jar'/>
+		<!-- Exporting properties -->
+		<param name='export.enableExcel' value='false'/> <!-- Allow the user to export as Excel -->
+		<param name='export.enableRDL' value='false'/> <!-- Allow the user to export data as RDL -->
+		<param name='export.enableDataDefault' value='false'/> <!-- Make future data formats available by default -->
+		<param name='export.enableJPEG' value='false'/> <!-- Allow the user to export as a JPEG image -->
+		<param name='export.enablePNG' value='false'/> <!-- Allow the user to export as a PNG image -->
+		<param name='export.enableImageDefault' value='false'/> <!-- Make future image formats available by default -->
+		<param name='export.showSource' value='false'/> <!-- Publisher Company appears as Source -->
+		<!-- Loading Files properties -->
+		<param name='rdlFileName.1' value='rdIdvRdlFilename'/> <!-- Load RDL file(s): -->
+		<param name='applet.selectFiles' value='1'/> <!-- Check the file(s) above that you would like to be displayed at startup.  At least one file must be checked. -->
+		<param name='applet.allowMultipleActive' value='true'/> <!-- Allow multiple files to be active -->
+		<param name='selectLineItems.1' value='0'/> <!-- Line items selected on start up: -->
+		<!-- Choice of Displays properties -->
+		<param name='applet.layout' value='Bottom'/> <!-- Select the IDV layout: -->
+		<param name='applet.startView' value='Chart'/> <!-- Data view to be selected at start up: -->
+		<param name='applet.showDataViewOnly' value='false'/> <!-- Show reports only (Hides columns and line items)  -->
+		<!-- Look and Feel properties -->
+		<param name='applet.startupMessage' value='Initializing ...'/> <!-- Startup message for IDV: -->
+		<param name='applet.font' value='SansSerif'/> <!-- Font for the entire IDV: -->
+		<param name='applet.fontSize' value='11'/> <!-- Font size for the entire IDV: -->
+		<param name='applet.fontColor' value='#000000'/> <!-- Font color for the entire IDV: -->
+		<param name='applet.bgColor' value='#FFFFFF'/> <!-- Background color for the entire IDV: -->
+		<param name='controls.bgColor' value='#CCCCFF'/> <!-- Background color for the IDV's control panels: -->
+		<param name='controls.borderColor' value='#AAAACC'/> <!-- Background color for the IDV control's borders: -->
+		<param name='controls.borderThickness' value='2'/> <!-- Thickness of control's borders in pixels: -->
+		<param name='controls.verticalInsets' value='0'/> <!-- Vertical padding between controls: -->
+		<param name='controls.horizontalInsets' value='0'/> <!-- Horizontal padding between controls: -->
+		<param name='menu.bgColor' value='#CCCCFF'/> <!-- Menu background color: -->
+		<param name='menu.font' value='SansSerif'/> <!-- Font for the menu: -->
+		<param name='menu.fontSize' value='11'/> <!-- Font size for the menu: -->
+		<param name='menu.fontColor' value='#000000'/> <!-- Font color for the menu: -->
+		<param name='applet.help' value='false'/> <!-- Show Help menu -->
+		<param name='applet.helpHTML' value='rdTemplate/rdIDV/appletHelp.html'/> <!-- Location of the help file: -->
+		<!-- Columns properties -->
+		<param name='columns.columnListSize' value='8'/> <!-- Number of columns displayed in Column list box: -->
+		<param name='columns.selectColumns' value='0'/> <!-- Columns selected at start up: -->
+		<!-- Chart properties -->
+		<param name='chart.availableChartTypes' value='Line,Clustered Bar,Stacked Bar,Stacked Area,Pie'/> <!-- Available chart types: -->
+		<param name='chart.barAlignment' value='Vertical'/> <!-- Chart bar alignment: -->
+		<param name='chart.showChartType' value='Clustered Bar'/> <!-- Chart type on startup: -->
+		<param name='chart.backgroundType' value='None'/> <!-- Chart background type: -->
+		<param name='chart.gradientDirection' value='Vertical'/> <!-- Gradient alignment: -->
+		<param name='chart.gradientStartColor' value='#FFFFFF'/> <!-- Starting gradient color: -->
+		<param name='chart.gradientEndColor' value='#FFFFFF'/> <!-- Ending gradient color: -->
+		<param name='chart.imageURL' value=''/> <!-- Background image: -->
+		<param name='chart.imageScale' value='false'/> <!-- Scale the background image -->
+		<param name='chart.imageAlignV' value='Middle'/> <!-- Vertical alignment for background image: -->
+		<param name='chart.imageAlignH' value='Center'/> <!-- Horizontal alignment for background image: -->
+		<param name='chart.bgColor' value='#CCCCFF'/> <!-- Panel color for chart: -->
+		<param name='chart.fgColor' value='#000000'/> <!-- Font color for chart: -->
+		<param name='chart.font' value='SansSerif'/> <!-- Font style for chart: -->
+		<param name='chart.fontSize' value='11'/> <!-- Font size for chart: -->
+		<param name='chart.axisFontSize' value='11'/> <!-- Font size for chart axes' labels: -->
+		<param name='chart.titleFontSize' value='11'/> <!-- Font size for chart title: -->
+		<param name='chart.legendFontSize' value='11'/> <!-- Font size for chart legend: -->
+		<param name='chart.legendLocation' value='East'/> <!-- Chart legend location: -->
+		<param name='chart.xAxisLabelRotation' value='270'/> <!-- Rotate horizontal axis label (clockwise): -->
+		<param name='chart.yAxisLabelRotation' value='270'/> <!-- Rotate vertical axis label (clockwise): -->
+		<param name='chart.showXTitle' value='true'/> <!-- Show horizontal axis title -->
+		<param name='chart.showYTitle' value='true'/> <!-- Show horizontal axis title -->
+		<param name='chart.showValues' value='true'/> <!-- Show data values -->
+		<param name='chart.valueLabelStyle' value='Floating'/> <!-- Display data values in chart: -->
+		<param name='chart.show3D' value='false'/> <!-- Show as 3D chart -->
+		<param name='chart.show3DControl' value='true'/> <!-- Show 3D menu item -->
+		<param name='chart.showGridLines' value='true'/> <!-- Show gridlines -->
+		<param name='chart.chartPlotColor' value='#003399,#00BB00,#EE8800,#E00000,#FF00FF,#5555FF,#008860,#994422,#FF4422,#AAAA00,#00DDDD,#990099,#993300,#009999,#0000FF,#33CCFF'/> <!-- Color of charted line items: -->
+		<param name='chart.scaling.automatic' value='true'/> <!-- Enable automatic scaling on start up -->
+		<param name='chart.scaling.minimum' value='0'/> <!-- Minimum scaling value: -->
+		<param name='chart.scaling.maximum' value='0'/> <!-- Maximum scaling value: -->
+		<param name='chart.showConnectionPoints' value='true'/> <!-- Show connecting points in line chart -->
+		<param name='chart.drawConnectedLines' value='false'/> <!-- Connect missing data values in line chart -->
+		<param name='chart.showXRangeAdjuster' value='true'/> <!-- Show horizontal axis size adjuster/scroll bar -->
+		<param name='chart.showYRangeAdjuster' value='true'/> <!-- Show vertical axis size adjuster/scroll bar -->
+		<!-- Grid properties -->
+		<param name='grid.titleFontSize' value='11'/> <!-- Font size for grid title: -->
+		<param name='grid.showRowNumbers' value='true'/> <!-- Show row numbers on start up -->
+		<param name='grid.dataFont' value='SansSerif'/> <!-- Font for cell data: -->
+		<param name='grid.dataFontSize' value='11'/> <!-- Font size for cell data: -->
+		<param name='grid.dataFontColor' value='#000000'/> <!-- Font color for cell data: -->
+		<param name='grid.linkFontColor' value='#000000'/> <!-- Font color for hyperlinked cell data: -->
+		<param name='grid.headerFontColor' value='#FFFFFF'/> <!-- Header font color: -->
+		<param name='grid.headerRowBGColor' value='#666699'/> <!-- Header background color: -->
+		<param name='grid.firstRowBGColor' value='#FFFFFF'/> <!-- Background color for odd rows: -->
+		<param name='grid.secondRowBGColor' value='#CCCCFF'/> <!-- Background color for even rows: -->
+		<param name='grid.firstCellText' value='Line Item'/> <!-- Data set header description: -->
+		<param name='grid.allowSorting' value='true'/> <!-- Enable sorting by columns -->
+		<param name='grid.gridLineColor' value='#FFFFFF'/> <!-- Gridline color: -->
+		<param name='grid.gridBgColor' value='#FFFFFF'/> <!-- Background color for grid: -->
+		<param name='grid.gridStyle' value='Ledger'/> <!-- Grid style color: -->
+		<param name='grid.showGridLines' value='Grid'/> <!-- Select border for gridlines: -->
+		<param name='grid.cellPadding' value='3'/> <!-- Padding between cells in grid in pixels: -->
+		<param name='grid.selectedColumnColor' value='#FFFF00'/> <!-- Selected column color: -->
+		<param name='grid.showUnitsColumn' value='true'/> <!-- Show units column -->
+		<!-- Tree properties -->
+		<param name='tree.bgColor' value='#CCCCFF'/> <!-- Background color for Tree control: -->
+		<param name='tree.fgColor' value='#FFFFFF'/> <!-- Foreground color for Tree control: -->
+		<param name='tree.font' value='SansSerif'/> <!-- Font style for Tree contol: -->
+		<param name='tree.fontSize' value='11'/> <!-- Font size for Tree control: -->
+		<param name='tree.fontColor' value='#000000'/> <!-- Font color for Tree control: -->
+		<param name='tree.labelFont' value='SansSerif'/> <!-- Font for Tree control's label: -->
+		<param name='tree.labelFontSize' value='11'/> <!-- Font size for Tree control's label: -->
+		<param name='tree.labelFontColor' value='#000000'/> <!-- Font color for Tree control's label: -->
+		<param name='tree.expandAll' value='false'/> <!-- Expand all tree nodes on start up -->
+		<param name='tree.showImages' value='false'/> <!-- Show node icons in tree -->
+		<param name='tree.showDocTitle' value='false'/> <!-- Show RDL document title in tree -->
+		<param name='tree.imageOpenFolder' value=''/> <!-- Image for the open folder icon in the tree: -->
+		<param name='tree.imageClosedFolder' value=''/> <!-- Image for the closed folder icon in the tree: -->
+		<param name='tree.imageLeafNode' value=''/> <!-- Image for the leaf node icon in the tree: -->
+		<!-- Ordering Options properties -->
+		<param name='view.selectViewTransformation' value='Original Ordering'/> <!-- Select the modification on start up: -->
+		<param name='view.showTransposeControl' value='true'/> <!-- Enable Transpose XY -->
+		<param name='view.showReverseColumnsControl' value='true'/> <!-- Enable Reverse Columns -->
+		<!-- Calculations properties -->
+		<param name='rxl.initialTransformation' value='originalData'/> <!-- The calculation to be selected at start up: -->
+		<param name='rxl.showTransformationControl' value='true'/> <!-- Show Calculate menu -->
+		<param name='rxl.loadMacro.statSummary' value='true'/> <!-- Enable Statistical Summary -->
+		<param name='rxl.loadMacro.average' value='true'/> <!-- Enable Average -->
+		<param name='rxl.loadMacro.colAverage' value='true'/> <!-- Enable Column Average -->
+		<param name='rxl.loadMacro.median' value='true'/> <!-- Enable Median -->
+		<param name='rxl.loadMacro.maximum' value='true'/> <!-- Enable Maximum -->
+		<param name='rxl.loadMacro.minimum' value='true'/> <!-- Enable Minimum -->
+		<param name='rxl.loadMacro.sortDsc' value='true'/> <!-- Enable Sort Descending -->
+		<param name='rxl.loadMacro.sortAsc' value='true'/> <!-- Enable Sort Ascending -->
+		<param name='rxl.loadMacro.inc%' value='true'/> <!-- Enable Incremental % Change -->
+		<param name='rxl.loadMacro.cum%' value='true'/> <!-- Enable Cumulative % Change -->
+		<param name='rxl.loadMacro.PercentOfMaximum' value='true'/> <!-- Enable Percent of Maximum -->
+		<param name='rxl.loadMacro.PercentOfMinimum' value='true'/> <!-- Enable Percent of Minimum -->
+		<param name='rxl.loadMacro.PercentDev' value='true'/> <!-- Enable Percent Deviation from Mean -->
+		<param name='rxl.loadMacro.PercentDevFromColMean' value='true'/> <!-- Enable Percent Deviation from Column Mean -->
+		<param name='rxl.loadMacro.AbsoluteDev' value='true'/> <!-- Enable Absolute Deviation from Mean -->
+		<param name='rxl.loadMacro.AbsoluteDevFromColMean' value='true'/> <!-- Enable Absolute Deviation from Column Mean -->
+		<param name='rxl.loadMacro.PercentOfTotal' value='true'/> <!-- Percent of Total -->
+		<param name='rxl.loadMacro.PercentOfColTotal' value='true'/> <!-- Enable Percent of Column Total -->
+		<param name='rxl.loadMacro.datapointsum' value='true'/> <!-- Enable Add Multiple Datasets -->
+		<param name='rxl.loadMacro.sum' value='true'/> <!-- Enable Sum -->
+		<param name='rxl.loadMacro.CumulativeSum' value='true'/> <!-- Enable Cumulative Sum -->
+		<param name='rxl.loadMacro.normalize' value='true'/> <!-- Enable Normalize -->
+		<param name='rxl.loadMacro.rank' value='true'/> <!-- Enable Rank -->
+		<param name='rxl.loadMacro.count' value='true'/> <!-- Enable Count -->
+		<param name='rxl.loadMacro.standardDev' value='true'/> <!-- Enable Standard Deviation -->
+		<param name='rxl.loadMacro.colStandardDev' value='true'/> <!-- Enable Column Standard Deviation -->
+		<!-- Insights properties -->
+		<param name='rxl.showFormulaControl' value='false'/> <!-- Enable Insight menu -->
+		<param name='rxl.thesaurus' value='None'/> <!-- Thesaurus file: -->
+		<param name='rxl.initialFormula' value='None'/> <!-- Insight to run at start-up: -->
+		<param name='rxl.formulaMenuLabel' value='Insight'/> <!-- Label for Insight Menu: -->
+		<!-- Reports properties -->
+		<param name='applet.reportLocation' value='Menu'/> <!-- Reports loaded in: -->
+		<param name='reports.bgColor' value='#FFFFFF'/> <!-- Background color for report control: -->
+		<param name='reports.font' value='SansSerif'/> <!-- Font for reports: -->
+		<param name='reports.fontSize' value='11'/> <!-- Font size for reports: -->
+		<param name='reports.fontColor' value='#000000'/> <!-- Font color for reports: -->
+		<param name='reports.linkHoverColor' value='#000000'/> <!-- Font color for report rollover: -->
+		<param name='reports.imageLinkIcon' value=''/> <!-- Image displayed to the left of the report: -->
+	</applet> 
+</rdIDV>

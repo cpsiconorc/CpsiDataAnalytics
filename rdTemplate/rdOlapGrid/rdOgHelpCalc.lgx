@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<Report ID="OlapGrid.rdOgHelpCalc">
+	<StyleSheet StyleSheet="rdTemplate/rdOlapGrid/rdOgStyle.css"/>
+	<StyleSheet StyleSheet="@Session.rdOgStyleSheet~"/>
+	<Body Class="rdOg">
+		<Rows ID="rowsAnalysisGrid" CellSpacing="4">
+			<Row ID="rowTitle" Class="rdOgCaptionRow">
+				<Column ID="colTitle">
+					<Label ID="lblTitle" Caption="Formula Help"/>
+				</Column>
+			</Row>
+			<Row ID="rowInstruct">
+				<Column ID="colInstruct">
+					<Label ID="lblInstruct" Caption="Formulas are expressions made up of columns, constants, functions, and operators.
+
+Measures are values that come from the data.  Their names are are enclosed in square brackets, like [ShippedDate].
+
+Constants are simply specific fixed values that you enter into a Formula.
+
+Functions return values, usually computations based on columns and constants.
+
+Operators do arithmetic and logical comparisons.
+
+Here are some examples:
+
+[Measures].[UnitPrice] * [Measures].[Quantity]
+Multiply two measures, UnitPrice and Quantity, to make an ExtendedPrice measure.
+
+[Measures].[UnitPrice] * .04
+Multiply a measure by a constant value to calculate the tax applied to the price." Format="Preserve Line Feeds"/>
+					<LineBreak LineCount="2"/>
+				</Column>
+			</Row>
+			<Row ID="rowFunctions" Class="rdOgCaptionRow">
+				<Column ID="colFunctions">
+					<Label ID="lblFunctions" Caption="VB Script Functions"/>
+				</Column>
+			</Row>
+			<Row ID="rowFunctionsDetail">
+				<Column ID="colFunctions">
+					<Label ID="lblFunctions" Caption="Functions accept some number of values and return a single value.
+
+Formulas are evaluated through VBScript." Format="Preserve Line Feeds"/>
+					<Spaces Size="2"/>
+					<Label ID="lblLink" Caption="Click here for additional information and some more advanced VBScript functions.">
+						<Action Type="Link" ID="actLink">
+							<Target Type="Link" Link="http://msdn2.microsoft.com/en-us/library/3ca8tfek.aspx" ID="tgtLink" FrameID="FunctionLink"/>
+						</Action>
+					</Label>
+					<LineBreak LineCount="2"/>
+					<DataTable ID="dtFunctions" CellSpacing="0" TableBorder="1">
+						<DataLayer Type="Static" ID="dlFunctions">
+							<StaticDataRow Name="Abs" Description="Returns the absolute value of a number." Syntax="Abs(number)" Notes="The absolute value of -5 is 5."/>
+							<StaticDataRow Name="Date" Description="Returns the current date." Syntax="Date()" Notes=""/>
+							<StaticDataRow Name="DateAdd" Description="Adds or subtracts some interval of time from a date or time." Syntax="DateAdd(interval, number, date)" Notes="Interval may be:
+yyyy=year
+q=quarter
+m=month
+y=day of year
+d=day
+w=weekday
+ww=week of year
+h=hour
+n=minute
+s=second"/>
+							<StaticDataRow Name="DateDiff" Description="Computes the difference between two dates." Syntax="DateDiff(interval, date1, date2)" Notes="Interval may be:
+yyyy=year
+q=quarter
+m=month
+y=day of year
+d=day
+w=weekday
+ww=week of year
+h=hour
+n=minute
+s=second"/>
+							<StaticDataRow Name="DatePart" Description="Returns part of a date." Syntax="DatePart(interval, date)" Notes="Interval may be:
+yyyy=year
+q=quarter
+m=month
+y=day of year
+d=day
+w=weekday
+ww=week of year
+h=hour
+n=minute
+s=second"/>
+							<StaticDataRow Name="DateSerial" Description="Combines date parts together to make a date." Syntax="DateSerial(year, month, day)" Notes=""/>
+							<StaticDataRow Name="DateValue" Description="Returns a date from a date string.  The function can convert dates from many different formats." Syntax="DateValue(text)" Notes="DateValue(&quot;April 2, 1962&quot;)"/>
+							<StaticDataRow Name="Day" Description="Returns the day of the month.  Possible return values are from 1-31." Syntax="Day(date)" Notes=""/>
+							<StaticDataRow Name="Exp" Description="Returns &quot;e&quot; raised to a power.  &quot;e&quot; is the base of natural logarithms, called the antilogarithm." Syntax="Exp(number)" Notes=""/>
+							<StaticDataRow Name="Hour" Description="Returns the hour of the day.  Possible return values are 0-23." Syntax="Hour(time)" Notes=""/>
+							<StaticDataRow Name="IIF" Description="Returns one value or another, depending on if the expression evaluates to True or False." Syntax="IIF(expression,true-value,false-value)" Notes="Expression is a formula that returns True or False.  
+For example, this would return &quot;Blue&quot;, because 1 does not equal 2.  
+IIF(1=2,&quot;Red&quot;,&quot;Blue&quot;)"/>
+							<StaticDataRow Name="InStr" Description="Returns the character location where one string is found within another string." Syntax="InStr([start, ]string1, string2[, compare])" Notes="The first characters is at position 1.  Instr() returns 0 when the string is not found.  
+
+Set compare to 1 for case-insenstive searches."/>
+							<StaticDataRow Name="InStrRev" Description="Returns the character location where one string is found within another string.  The search is started from the end of the string rather than the beginning." Syntax="InStrRev(string1, string2[, start[, compare]])" Notes=""/>
+							<StaticDataRow Name="Int" Description="Returns the integer portion of a number, removing any decimal places." Syntax="Int(number)" Notes=""/>
+							<StaticDataRow Name="IsDate" Description="Returns True if the text is a date." Syntax="IsDate(text)" Notes=""/>
+							<StaticDataRow Name="IsNumeric" Description="Returns True if the text is a number." Syntax="IsNumeric(text)" Notes=""/>
+							<StaticDataRow Name="LCase" Description="Converts all characters to lower case." Syntax="LCase(text)" Notes=""/>
+							<StaticDataRow Name="Left" Description="Returns the &quot;length&quot; number of characters from the left side of the input text." Syntax="Left(text, length)" Notes=""/>
+							<StaticDataRow Name="Len" Description="Returns the number of characters in the text." Syntax="Len(text)" Notes=""/>
+							<StaticDataRow Name="LTrim" Description="Removes the space characters from the left side of the text." Syntax="LTrim(text)" Notes=""/>
+							<StaticDataRow Name="Mid" Description="Returns characters from the middle of the text." Syntax="Mid(text, start[, length])" Notes="&quot;start&quot; is the first character to be returned.  The first character is at position 1.
+
+&quot;length&quot; is the number of characters to be returned."/>
+							<StaticDataRow Name="Minute" Description="Returns the minute of the hour.  Possible return values are 0-59." Syntax="Minute(time)" Notes=""/>
+							<StaticDataRow Name="Month" Description="Returns the month of the year.  Possible return values are 1-12." Syntax="Month(date)" Notes=""/>
+							<StaticDataRow Name="MonthName" Description="Returns the name of the month." Syntax="MonthName(month[, abbreviate])" Notes="Set &quot;abbreviate&quot; to True for an abbreviated month name."/>
+							<StaticDataRow Name="Now" Description="Returns the current date and time." Syntax="Now" Notes=""/>
+							<StaticDataRow Name="Replace" Description="Searches textSearch for textFind, replacing it with the textReplaceWith value." Syntax="Replace(textSearch, textFind, textReplaceWith[, start[, count[, compare]]])" Notes="&quot;start&quot; is the starting character position to be searched.
+
+&quot;count&quot; is the maximum number of replacements before stopping.
+
+Set &quot;compare&quot; to 1 to replace characters regardless of case.
+
+Replace(&quot;ABC&quot;, &quot;abc&quot;, &quot;123&quot;, 1, 1) produces &quot;123&quot;."/>
+							<StaticDataRow Name="Right" Description="Returns the &quot;length&quot; number of characters from the right side of the input text." Syntax="Right(text, length)" Notes=""/>
+							<StaticDataRow Name="Rnd" Description="Returns a random number between 0 and 1." Syntax="Rnd[(number)]" Notes=""/>
+							<StaticDataRow Name="Round" Description="Returns a number rounded to a specified number of decimal places." Syntax="Round(expression[, numdecimalplaces])" Notes=""/>
+							<StaticDataRow Name="RTrim" Description="Removes any space characters from the right side of the text." Syntax="RTrim(text)" Notes=""/>
+							<StaticDataRow Name="Second" Description="Returns the second of the minute.  Possible values are 0-59." Syntax="Second(time)" Notes=""/>
+							<StaticDataRow Name="Sgn" Description="Returns -1 if the number is negative.  Returns 1 if the number is positive.  Returns 0 if the number is 0." Syntax="Sgn(number)" Notes=""/>
+							<StaticDataRow Name="Space" Description="Returns text consisting of the number of spaces." Syntax="Space(number)" Notes=""/>
+							<StaticDataRow Name="Sqr" Description="Returns the square root of a number." Syntax="Sqr(number)" Notes=""/>
+							<StaticDataRow Name="String" Description="Returns text consisting of the character duplicated the number of times." Syntax="String(number, character)" Notes=""/>
+							<StaticDataRow Name="TimeValue" Description="Returns a time value from a time string.  The function can convert dates from many different formats." Syntax="TimeValue(time)" Notes=""/>
+							<StaticDataRow Name="Trim" Description="Removes space characters from both the left and rights sides of the text." Syntax="Trim(text)" Notes=""/>
+							<StaticDataRow Name="UCase" Description="Converts all characters to upper case." Syntax="UCase(text)" Notes=""/>
+							<StaticDataRow Name="Weekday" Description="Returns the number of the day of the week.  Possible return values are 1-7." Syntax="Weekday(date, [firstdayofweek])" Notes=""/>
+							<StaticDataRow Name="WeekdayName" Description="Returns the name of the day corresponding to the weekday number." Syntax="WeekdayName(numberWeekday, abbreviate, firstdayofweek)" Notes=""/>
+							<StaticDataRow Name="Year" Description="Returns the number of the year of the specified date." Syntax="Year(date)" Notes=""/>
+						</DataLayer>
+						<DataTableColumn ID="colName" Header="Function Name" Class="cell" Width="100">
+							<Label ID="lblName" Caption="@Data.Name~"/>
+							<Label ID="lblSpace" Caption="&amp;nbsp;" Format="HTML"/>
+						</DataTableColumn>
+						<DataTableColumn ID="colDescription" Header="Description" Class="cell" Width="300">
+							<Label ID="lblDescription" Caption="@Data.Description~" Format="Preserve Line Feeds"/>
+							<Label ID="lblSpace" Caption="&amp;nbsp;" Format="HTML"/>
+						</DataTableColumn>
+						<DataTableColumn ID="colSyntax" Header="Syntax" Class="cell" Width="300">
+							<Label ID="lblSyntax" Caption="@Data.Syntax~" Format="Preserve Line Feeds"/>
+							<Label ID="lblSpace" Caption="&amp;nbsp;" Format="HTML"/>
+						</DataTableColumn>
+						<DataTableColumn ID="colNotes" Header="Notes" Class="cell">
+							<Label ID="lblNotes" Caption="@Data.Notes~" Format="Preserve Line Feeds"/>
+							<Label ID="lblSpace" Caption="&amp;nbsp;" Format="HTML"/>
+						</DataTableColumn>
+					</DataTable>
+					<LineBreak LineCount="2"/>
+					<Label ID="lblFunctions" Caption="In the Syntax column, parameters in square brackets are optional."/>
+					<LineBreak LineCount="2"/>
+				</Column>
+			</Row>
+			<Row ID="rowOperators" Class="rdOgCaptionRow">
+				<Column ID="colOperators">
+					<Label ID="lblOperators" Caption="Operators"/>
+				</Column>
+			</Row>
+			<Row ID="rowOperatorsDetail">
+				<Column ID="colOperators">
+					<Label ID="lblIntro" Caption="Operators do arithmetic and logical comparisons.
+
+Formulas are evaluated through VBScript."/>
+					<Spaces Size="2"/>
+					<Label ID="lblLink" Caption="Click here for more information about VBScript operators.">
+						<Action Type="Link" ID="actLink">
+							<Target Type="Link" Link="http://msdn2.microsoft.com/en-us/library/1cbft50a.aspx" ID="tgtLink" FrameID="FunctionLink"/>
+						</Action>
+					</Label>
+					<LineBreak LineCount="2"/>
+					<DataTable ID="dtOperators" CellSpacing="0" TableBorder="1" IdeDisplayStatus="Collapsed">
+						<DataLayer Type="Static" ID="dlFunctions">
+							<StaticDataRow Operator="-" Description="Negation"/>
+							<StaticDataRow Description="Exponentiation" Operator="^"/>
+							<StaticDataRow Operator="*" Description="Multiplication"/>
+							<StaticDataRow Operator="/" Description="Division"/>
+							<StaticDataRow Operator="\" Description="Integer Division"/>
+							<StaticDataRow Operator="Mod" Description="Modulus (Remainder)"/>
+							<StaticDataRow Operator="+" Description="Addition and string concatenation"/>
+							<StaticDataRow Operator="-" Description="Subtraction"/>
+							<StaticDataRow Operator="=" Description="Equals"/>
+							<StaticDataRow Operator="&lt;&gt;" Description="Not Equals"/>
+							<StaticDataRow Operator="&lt;" Description="Less Than"/>
+							<StaticDataRow Operator="&gt;" Description="Greater Than"/>
+							<StaticDataRow Operator="&lt;=" Description="Less Than or Equal To"/>
+							<StaticDataRow Operator="&gt;=" Description="Greater Than or Equal To"/>
+							<StaticDataRow Operator="Not" Description="Logical Not"/>
+							<StaticDataRow Operator="And" Description="Logical And"/>
+							<StaticDataRow Operator="Or" Description="Logical Or"/>
+							<StaticDataRow Operator="( and )" Description="Parenthesis to manage precedence."/>
+						</DataLayer>
+						<DataTableColumn ID="colOperator" Header="Operator" Class="cell">
+							<Label ID="lblOperator" Caption="@Data.Operator~"/>
+							<Label ID="lblSpace" Caption="&amp;nbsp;" Format="HTML"/>
+						</DataTableColumn>
+						<DataTableColumn ID="colDescription" Header="Description" Class="cell">
+							<Label ID="lblDescription" Caption="@Data.Description~"/>
+							<Label ID="lblSpace" Caption="&amp;nbsp;" Format="HTML"/>
+						</DataTableColumn>
+					</DataTable>
+					<LineBreak LineCount="2"/>
+				</Column>
+			</Row>
+			<Row ID="rowOtherNotes" Class="rdOgCaptionRow">
+				<Column ID="colOtherNotes">
+					<Label ID="lblOtherNotes" Caption="Other Notes of Interest"/>
+				</Column>
+			</Row>
+			<Row ID="rowOtherNotes">
+				<Column ID="colOtherNotes">
+					<Label ID="lblInstruct" Caption="You may represent true and false values as True and False.
+" Format="Preserve Line Feeds"/>
+					<LineBreak LineCount="2"/>
+				</Column>
+			</Row>
+		</Rows>
+	</Body>
+</Report>

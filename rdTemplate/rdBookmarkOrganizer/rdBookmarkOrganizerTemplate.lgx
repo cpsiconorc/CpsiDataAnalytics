@@ -1,0 +1,335 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Report ID="BookmarkOrganizer.rdBookmarkOrganizerTemplate" rdBookmarkOrganizerVersion="0.0">
+  <Label Caption="My Items" ID="lblMyFolders" />
+  <Label Caption="Shared with Me" ID="lblSharedWithMe" />
+  <Body ID="bodyMain">
+    <Division HtmlDiv="True" ID="rdFoldersDiv">
+      <InputHidden ID="rdFolderName" DefaultValue="" />
+      <InputHidden ID="rdFolderID" DefaultValue="" />
+      
+      <InputHidden ID="rdSelectedFolderID" DefaultValue="@Session.rdSelectedFolderID~" />
+      <InputHidden ID="rdSelectedSharedFolderID" DefaultValue="@Session.rdSelectedSharedFolderID~" />
+      <InputHidden ID="rdSelectedSharedParentFolderID" DefaultValue="@Session.rdSelectedSharedParentFolderID~" />
+      
+      <InputHidden ID="rdExpandedCollapsedHistory_myFolder" DefaultValue="@Request.rdExpandedCollapsedHistory_myFolder~" />
+      <InputHidden ID="rdExpandedCollapsedHistory_sharedFolder" DefaultValue="@Request.rdExpandedCollapsedHistory_sharedFolder~" />
+      <InputHidden ID="rdSelectedFolderClassName" DefaultValue="" />
+      <InputHidden ID="rdParentFolderID" DefaultValue="" />
+      <InputHidden ID="rdBookmarkBatch" DefaultValue="" />
+      <InputHidden ID="rdBookmarkCollection" DefaultValue="" />
+      <InputHidden ID="rdBookmarkOrganizerID" DefaultValue="" />
+      <InputHidden ID="rdBookmarkOrganizerDataTableID" DefaultValue="" />
+      <InputHidden ID="rdBookmarkOrganizerReport" DefaultValue="" />
+      <Division ShowModes="None" ID="rdBOWaitPage">
+        <Label ID="rdWaitCfgBookOrg" Caption="" >
+          <Action Type="Report" >
+            <Target Type="Report" >
+              <WaitPage />
+            </Target>
+          </Action>
+        </Label>
+      </Division>      
+      <Division ID="MyFolders" HtmlDiv="True">
+        <DataTable ID="dtFolders" AjaxPaging="True" HideWhenZeroRows="True">
+            <DataLayer Type="Bookmarks" BookmarkCollection="" ID="Folders" Folders="True">
+                <CompareFilter DataColumn="SharedFolder" CompareType="=" CompareValue="" />
+                <SequenceColumn ID="FolderSequence"/>
+                <Join ID="rdCountJoinLinked" JoinType="LeftOuterJoin">
+                    <DataLayer Type="Linked" ID="rdOwnCountDataLayerLinked" LinkedDataLayerID="rdLinkDlBookmarkCount_Placeholder">
+                        <CompareFilter CompareType="&lt;&gt;" DataColumn="BookmarkID" DataType="Text" ID="compareIsBookmark" />
+                        <GroupFilter GroupColumn="FolderID" CalculationsIncludeNulls="True">
+                            <GroupAggregateColumn AggregateColumn="BookmarkID" AggregateFunction="Count" ID="cntBookmark" />
+                        </GroupFilter>
+                        <CalculatedColumn Formula="Trim('@Data.FolderID~')" ID="FolderID" />
+                    </DataLayer>
+                    <MatchCondition LeftDataColumn="ID"	RightDataColumn="FolderID" />
+                </Join>
+                <SortFilter SortColumn="FolderSequence" DataType="Number" />
+							  <CalculatedColumn	Formula="IIF(&quot;@Data.cntBookmark~&quot; == &quot;&quot;,&quot;0&quot;,&quot;@Data.cntBookmark~&quot;)" ID="cntBookmark"	/>
+                <ConditionFilter Condition="('@Data.Name~' &lt;&gt; 'My Visualizations') || ('@Data.HasChildren~' == 'True') || (&quot;@Data.cntBookmark~&quot; == &quot;&quot; || 0@Data.cntBookmark~ &gt; 0)" ID="showHideMyVisualizations" />
+            </DataLayer>
+          <DataTableColumn ID="colDepth" ShowModes="None">
+            <InputHidden ID="rdFolderExpanded" DefaultValue="False" />
+            <InputHidden ID="rdFolderDepth" DefaultValue="@Data.Depth~" />
+            <InputHidden ID="rdFolderID" DefaultValue="@Data.ID~" />
+          </DataTableColumn>
+          <DataTableColumn ID="colDragName">
+            <DroppableDivision HideGhost="True" TargetID="@Data.ID~" Ignore="@Data.IsShortcut~" DragGroup="@Data.DragGroup~">
+              <Division HtmlDiv="True" ID="dragDivisionWrapper" Condition="'@Data.ID~' &lt;&gt; '' and '@Data.ID~' &lt;&gt; 'sharedFolders'">
+                <DraggableDivision HtmlDiv="True" ID="drag_@Data.ID~" Ignore="@Data.ShortcutChild~" DragGroup="@Data.AllowedGroups~" PreventCloneNode="True">                
+                  <ProxyDivision MoveOnEnd="False" HideOnEnd="True" HideOnStart="False" />
+                  <LinkedParams action="LogiXML.BookmarkOrganizer.rdBookmarkOrganizer.rdAddFolderToFolder('@Data.ID~','rdTargetID');" />
+                  <Image Caption="../rdTemplate/rdArrowRight.gif" Condition="@Data.HasChildren~" AltText="Show/Hide Children" Tooltip="Expand" ID="rdToggleChildrenShow" >
+                    <Action Type="Javascript" ID="actToggleChildrenShow" Javascript="LogiXML.BookmarkOrganizer.rdBookmarkOrganizer.toggleNode(this, null, false);" />
+                  </Image>
+                  <Image Caption="../rdTemplate/rdArrowDown.gif" Condition="@Data.HasChildren~" AltText="Show/Hide Children" Tooltip="Collapse" ID="rdToggleChildrenHide" >
+                    <Action Type="Javascript" ID="actToggleChildrenHide" Javascript="LogiXML.BookmarkOrganizer.rdBookmarkOrganizer.toggleNode(this, null, false);" />
+                  </Image>
+                  <Image Caption="../rdTemplate/rdBlank.gif" Condition="!@Data.HasChildren~" AltText="" Tooltip="" ID="rdBlank" Width="12" Height="12" />
+                  <Spaces Size="2" />
+                  <Image Caption="../rdTemplate/rdBookmarkOrganizer/rdBookmarkFolder.png" Condition="'@Data.IsShortcut~' &lt;&gt; 'True'" ID="rdFolderImage" Tooltip="@Data.Name~" Width="16" Height="12" />
+                  <Image Caption="../rdTemplate/rdBookmarkOrganizer/rdBookmarkFolderShortcut.png" Condition="'@Data.IsShortcut~' == 'True'" ID="rdFolderShortcutImage" Tooltip="Shared by @Data.BookmarkUserName~" Width="16" Height="12" />
+                  <Spaces Size="4" />
+                  <Division Condition="'@Data.IsShortcut~' &lt;&gt; 'True' and '@Data.IsGlobalMenuFolder~' &lt;&gt; 'True'">
+                    <Label ID="" Caption="@Data.Name~" Tooltip="@Data.Name~">
+                      <Action Type="Javascript" ID="actSelectFolder" Javascript="LogiXML.BookmarkOrganizer.rdBookmarkOrganizer.selectFolder(this, '@Data.ID~', '@Data.SharedID~','@Data.SharedParentID~');" />
+                    </Label>
+                  </Division>
+                  <Division Condition="'@Data.IsShortcut~' &lt;&gt; 'True' and '@Data.IsGlobalMenuFolder~' = 'True'">
+                    <Label ID="" Caption="@Data.Name~" Tooltip="@Data.Name~">
+                      <Action Type="Javascript" ID="actSelectFolder" Javascript="LogiXML.BookmarkOrganizer.rdBookmarkOrganizer.selectFolder(this, '@Data.ID~', '@Data.SharedID~','@Data.SharedParentID~','@Data.SharedFolder~','@Data.BookmarkUserName~','@Data.BookmarkCollection~', '@Constant.goNotificationsEnabled~');" />
+                    </Label>
+                  </Division>
+                  <Division Condition="'@Data.IsShortcut~' == 'True'">
+                    <Label Caption="@Data.Name~" Tooltip="@Data.Name~, Shared by @Data.BookmarkUserName~">
+                      <Action Type="Javascript" ID="actSelectFolder" Javascript="LogiXML.BookmarkOrganizer.rdBookmarkOrganizer.selectFolder(this, '@Data.ID~', '@Data.SharedID~','@Data.SharedParentID~');" />
+                    </Label>
+                  </Division>
+                    <Division ID="ShowBookmarkCount_Own" Condition="&quot;@Data.cntBookmark~&quot; != &quot;&quot;">
+                        <Spaces Size="2"></Spaces>
+                        <Label Caption="(@Data.cntBookmark~)" Class="cntBookmarksZero">
+                            <ConditionalClass Class="cntBookmarks" Condition="@Data.cntBookmark~ &gt; 0"/>
+                            <ConditionalClass Class="cntBookmarksZero" Condition="@Data.cntBookmark~ == 0"/>
+                        </Label>
+                    </Division>
+                </DraggableDivision>
+              </Division>
+              <Division HtmlDiv="True" ID="dragDivisionWrapper" Condition="'@Data.ID~' == '' or '@Data.ID~' == 'sharedFolder'">
+                <ProxyDivision MoveOnEnd="False" HideOnEnd="True" HideOnStart="False" />
+                <LinkedParams action="LogiXML.BookmarkOrganizer.rdBookmarkOrganizer.rdAddFolderToFolder('@Data.ID~','rdTargetID');" />
+                <Image Caption="../rdTemplate/rdArrowRight.gif" Condition="@Data.HasChildren~" AltText="Show/Hide Children" Tooltip="Expand" ID="rdToggleChildrenShow" >
+                  <Action Type="Javascript" ID="actToggleChildrenShow" Javascript="LogiXML.BookmarkOrganizer.rdBookmarkOrganizer.toggleNode(this, null, false);" />
+                </Image>
+                <Image Caption="../rdTemplate/rdArrowDown.gif" Condition="@Data.HasChildren~" AltText="Show/Hide Children" Tooltip="Collapse" ID="rdToggleChildrenHide" >
+                  <Action Type="Javascript" ID="actToggleChildrenHide" Javascript="LogiXML.BookmarkOrganizer.rdBookmarkOrganizer.toggleNode(this, null, false);" />
+                </Image>
+                <Image Caption="../rdTemplate/rdBlank.gif" Condition="!@Data.HasChildren~" AltText="" Tooltip="" ID="rdBlank" Width="12" Height="12" />
+                <Spaces Size="2" />
+                <Image Caption="../rdTemplate/rdBookmarkOrganizer/rdBookmarkFolder.png" Condition="'@Data.IsShortcut~' &lt;&gt; 'True'" ID="rdFolderSharedImage" Tooltip="@Data.Name~" Width="16" Height="12" />
+                <Image Caption="../rdTemplate/rdBookmarkOrganizer/rdBookmarkFolderShortcut.png" Condition="'@Data.IsShortcut~' == 'True'" ID="rdFolderSharedShortcutImage" Tooltip="Shared by @Data.BookmarkUserName~" Width="16" Height="12" />
+                <Spaces Size="4" />
+                <Division Condition="'@Data.IsShortcut~' &lt;&gt; 'True' and '@Data.IsGlobalMenuFolder~' &lt;&gt; 'True'">
+                  <Label Caption="@Data.Name~" Tooltip="@Data.Name~">
+                    <Action Type="Javascript" ID="actSelectFolder" Javascript="LogiXML.BookmarkOrganizer.rdBookmarkOrganizer.selectFolder(this, '@Data.ID~');" />
+                  </Label>
+                </Division>
+                <Division Condition="'@Data.IsShortcut~' &lt;&gt; 'True' and '@Data.IsGlobalMenuFolder~' = 'True'">
+                  <Label Caption="@Data.Name~" Tooltip="@Data.Name~">
+                    <Action Type="Javascript" ID="actSelectFolder" Javascript="LogiXML.BookmarkOrganizer.rdBookmarkOrganizer.selectFolder(this, '@Data.ID~', '@Data.SharedID~','@Data.SharedParentID~','@Data.SharedFolder~','@Data.BookmarkUserName~','@Data.BookmarkCollection~', '@Constant.goNotificationsEnabled~');" />
+                  </Label>
+                </Division>
+                <Division Condition="'@Data.IsShortcut~' == 'True'">
+                  <Label Caption="@Data.Name~" Tooltip="@Data.Name~, Shared by @Data.BookmarkUserName~">
+                    <Action Type="Javascript" ID="actSelectFolder" Javascript="LogiXML.BookmarkOrganizer.rdBookmarkOrganizer.selectFolder(this, '@Data.ID~');" />
+                  </Label>
+                </Division>
+                <Division ID="ShowBookmarkCount_Own" Condition="&quot;@Data.cntBookmark~&quot; != &quot;&quot;">
+                 		<Spaces Size="2"></Spaces>
+                    <Label Caption="(@Data.cntBookmark~)" Class="cntBookmarks">
+                        <ConditionalClass Class="cntBookmarks" Condition="@Data.cntBookmark~ &gt; 0"/>
+                        <ConditionalClass Class="cntBookmarksZero" Condition="@Data.cntBookmark~ == 0"/>
+                    </Label>
+                  </Division>
+              </Division>
+            </DroppableDivision>
+          </DataTableColumn>
+          <DataTableColumn ID="colActions" Class="ThemeAlignRight">
+            <Division ID="divShowBookmarkSharing" Condition="'@Data.FolderOwner~' == '' &amp;&amp; (@Data.Depth~ &gt; 0 || 'globalMenu'.indexOf('@Data.ID~') &gt; -1) ">
+              <Image Caption="../rdTemplate/rdBookmarkOrganizer/rdBookmarkSharingOn.png" Condition="@Data.IsShared~ &amp;&amp; '@Data.ID~' != ''" Tooltip="Sharing" ID="imgFolderSharing" Height="24px" Width="24px">
+                <Action Type="ShowBookmarkSharing" ElementID="popupShareFolder" PopupCaption="Share Folder @Data.Name~" ID="showFolderSharing" BookmarkCollection="@Data.BookmarkCollection~" FolderID="@Data.ID~">
+                  <Note Note="This is where the SharingList is put." />
+                </Action>
+              </Image>
+              <Image Caption="../rdTemplate/rdBookmarkOrganizer/rdBookmarkSharingOff.png" Condition="!@Data.IsShared~ &amp;&amp; '@Data.ID~' != ''" Tooltip="Share" ID="imgFolderSharing" Height="24px" Width="24px">
+                <Action Type="ShowBookmarkSharing" ElementID="popupShareFolder" PopupCaption="Share Folder @Data.Name~" ID="showFolderSharing" BookmarkCollection="@Data.BookmarkCollection~" FolderID="@Data.ID~">
+                  <Note Note="This is where the SharingList is put." />
+                </Action>
+              </Image>
+            </Division>
+            <Division ID="divShowBookmarkSharing" Condition="'@Data.FolderOwner~' &lt;&gt; ''">
+              <Image Caption="../rdTemplate/rdBlank.gif" Condition="@Data.IsShortcut~" ID="imgFolderSharing" Height="24px" Width="24px" />
+            </Division>
+            <Division>
+              <Image Condition="'@Data.FolderOwner~' == '' &amp;&amp; '@Data.ID~' == ''" Caption="../rdTemplate/rdBookmarkOrganizer/rdSettingsCog.png" AltText="Folder Management" Tooltip="Actions" ID="rdFolderManagement" Width="24" Height="24">
+                <Action Type="Popup" ID="ppMenu" Class="rdThemePopupMenu">
+                  <PopupOption Caption="Add New Folder" ID="ppoAddFolder">
+                    <Action Type="Javascript" ID="actAddFolder" Javascript="LogiXML.BookmarkOrganizer.rdBookmarkOrganizer.rdAddNewFolderSetup('@Data.ID~'); ShowElement(this.id, 'ppAddFolder', 'Show');" />
+                  </PopupOption>
+                </Action>
+              </Image>
+              <Image Condition="'@Data.FolderOwner~' == '' &amp;&amp; '@Data.ID~' &lt;&gt; ''" Caption="../rdTemplate/rdBookmarkOrganizer/rdSettingsCog.png" AltText="Folder Management" Tooltip="Actions" ID="rdFolderManagement" Width="24" Height="24">
+                <Action Type="Popup" ID="ppMenu" Class="rdThemePopupMenu">
+                  <PopupOption Caption="Add New Folder" ID="ppoAddFolder">
+                    <Action Type="Javascript" ID="actAddFolder"  Javascript="LogiXML.BookmarkOrganizer.rdBookmarkOrganizer.rdAddNewFolderSetup('@Data.ID~'); ShowElement(this.id, 'ppAddFolder', 'Show');" />
+                  </PopupOption>
+                  <PopupOption Caption="Rename Folder" ID="ppoRenameFolder">
+                    <Action Type="Javascript" ID="actRenameFolder" Javascript="LogiXML.BookmarkOrganizer.rdBookmarkOrganizer.rdRenameFolderSetup('@Data.ID~','@Data.Name~'); ShowElement(this.id, 'ppRenameFolder', 'Show'); " />
+                  </PopupOption>
+                  <PopupOption Caption="Delete" ID="ppoRemoveFolder">
+                    <Action Type="Javascript" ID="actionRemoveFolder" ConfirmMessage="Delete Folder and all its contents?  Are you sure?" Javascript="LogiXML.BookmarkOrganizer.rdBookmarkOrganizer.rdRemoveFolder('@Data.ID~');" />
+                  </PopupOption>
+                </Action>
+              </Image>
+              <Image Condition="'@Data.ShortcutChild~' &lt;&gt; 'True' &amp;&amp; '@Data.FolderOwner~' &lt;&gt; ''" Caption="../rdTemplate/rdBookmarkOrganizer/rdSettingsCog.png" AltText="Folder Management" Tooltip="Actions" ID="rdFolderManagement" Width="24" Height="24">
+                <Action Type="Popup" ID="ppMenu" Class="rdThemePopupMenu">
+                  <PopupOption Caption="Rename Folder Shortcut" ID="ppoRenameFolderShortcut">
+                    <Action Type="Javascript" ID="actRenameFolderShortcut" Javascript="LogiXML.BookmarkOrganizer.rdBookmarkOrganizer.rdRenameFolderSetup('@Data.ID~','@Data.Name~'); ShowElement(this.id, 'ppRenameFolder', 'Show'); " />
+                  </PopupOption>
+                  <PopupOption Caption="Remove Folder Shortcut" ID="ppoRemoveFolderShortcut">
+                    <Action Type="Javascript" ID="actionRemoveFolderShortcut" ConfirmMessage="Delete Shortcut?  Are you sure?" Javascript="LogiXML.BookmarkOrganizer.rdBookmarkOrganizer.rdRemoveFolder('@Data.ID~');" />
+                  </PopupOption>
+                </Action>
+              </Image>
+            </Division>
+          </DataTableColumn>
+        </DataTable>
+      </Division>
+      <LineBreak LineCount="2" />
+      <Division ID="SharedFolders" HtmlDiv="True">
+        <DataTable ID="dtSharedFolders" AjaxPaging="True" HideWhenZeroRows="True">
+          <DataLayer Type="Bookmarks" BookmarkCollection="" ID="SharedFolders" Folders="True">
+            <CompareFilter DataColumn="SharedFolder" CompareType="&lt;&gt;" CompareValue="" />
+            <SequenceColumn ID="SharedFolderSequence"/>
+              <Join ID="rdCountJoinLinked" JoinType="LeftOuterJoin" IncludeCondition="False">
+                  <DataLayer Type="Linked" ID="rdSharedCountDataLayerLinked" LinkedDataLayerID="rdLinkDlBookmarkCount_Placeholder">
+                      <GroupFilter GroupColumn="FolderID" CalculationsIncludeNulls="True">
+                          <GroupAggregateColumn AggregateColumn="BookmarkID" AggregateFunction="Count" ID="cntBookmark" />
+                      </GroupFilter>
+                  </DataLayer>
+                  <MatchCondition LeftDataColumn="ID" RightDataColumn="FolderID" />
+              </Join>
+              <SortFilter SortColumn="SharedFolderSequence" DataType="Number" />
+							<CalculatedColumn	Formula="IIF(&quot;@Data.cntBookmark~&quot; == &quot;&quot;,&quot;0&quot;,&quot;@Data.cntBookmark~&quot;)" ID="cntBookmark"	/>
+          </DataLayer>
+          <DataTableColumn ID="colDepth" ShowModes="None">
+            <InputHidden ID="rdFolderExpanded" DefaultValue="False" />
+            <InputHidden ID="rdFolderDepth" DefaultValue="@Data.Depth~" />
+            <InputHidden ID="rdFolderID" DefaultValue="@Data.ID~" />
+          </DataTableColumn>
+          <DataTableColumn ID="colIcon">
+            <DraggableDivision HtmlDiv="True" ID="drag_@Data.ID~" DragGroup="@Data.AllowedGroups~" PreventCloneNode="True">
+              <ProxyDivision MoveOnEnd="False" HideOnEnd="True" HideOnStart="False" />
+              <LinkedParams action="LogiXML.BookmarkOrganizer.rdBookmarkOrganizer.rdCreateFolderShortcut('@Data.ID~','@Data.BookmarkUserName~','@Data.FolderOwner~','@Data.Name~','rdTargetID');" />
+              <Image Caption="../rdTemplate/rdArrowRight.gif" Condition="@Data.HasChildren~" AltText="Show/Hide Children" Tooltip="Expand" ID="rdToggleChildrenShow" >
+                <Action Type="Javascript" ID="actToggleNodeShow" Javascript="LogiXML.BookmarkOrganizer.rdBookmarkOrganizer.toggleNode(this, null, false);" />
+              </Image>
+              <Image Caption="../rdTemplate/rdArrowDown.gif" Condition="@Data.HasChildren~" AltText="Show/Hide Children" Tooltip="Collapse" ID="rdToggleChildrenHide">
+                <Action Type="Javascript" ID="actToggleNodeHide" Javascript="LogiXML.BookmarkOrganizer.rdBookmarkOrganizer.toggleNode(this, null, false);" />
+              </Image>
+              <Image Caption="../rdTemplate/rdBlank.gif" Condition="!@Data.HasChildren~" AltText="" Tooltip="" ID="rdBlank" Width="12" Height="12" />
+              <Spaces Size="2" />
+              <Image Caption="../rdTemplate/rdBookmarkOrganizer/rdBookmarkFolder.png" ID="rdSharedFolderImage" Tooltip="Shared by @Data.BookmarkUserName~" Width="16" Height="12" />
+              <Spaces Size="4" />
+              <Division Condition="'@Data.BookmarkUserName~' == ''">
+                <Label Caption="@Data.Name~" Tooltip="@Data.Name~">
+                  <Action Type="Javascript" ID="actSelectFolder" Javascript="LogiXML.BookmarkOrganizer.rdBookmarkOrganizer.selectFolder(this, '@Data.ID~', '@Data.SharedID~','@Data.SharedParentID~','@Data.SharedFolder~');" />
+                </Label>
+              </Division>
+              <Division Condition="'@Data.BookmarkUserName~' &lt;&gt; ''">
+                <Label Caption="@Data.Name~" Tooltip="@Data.Name~, Shared by @Data.BookmarkUserName~">
+                  <Action Type="Javascript" ID="actSelectFolder" Javascript="LogiXML.BookmarkOrganizer.rdBookmarkOrganizer.selectFolder(this, '@Data.ID~', '@Data.SharedID~','@Data.SharedParentID~','@Data.SharedFolder~','@Data.BookmarkUserName~','@Data.BookmarkCollection~', '@Constant.goNotificationsEnabled~');" />
+                </Label>
+              </Division>
+                <Division ID="ShowBookmarkCount_Shared" Condition="&quot;@Data.cntBookmark~&quot; != &quot;&quot;">
+                    <Spaces Size="2"></Spaces>
+                    <Label Caption="(@Data.cntBookmark~)" Class="cntBookmarks">
+                        <ConditionalClass Class="cntBookmarks" Condition="@Data.cntBookmark~ &gt; 0"/>
+                        <ConditionalClass Class="cntBookmarksZero" Condition="@Data.cntBookmark~ == 0"/>
+                    </Label>
+                </Division>
+            </DraggableDivision>
+          </DataTableColumn>
+          <DataTableColumn ID="colActions" Class="ThemeAlignRight">
+            <Division ID="divShowBookmarkSharing" >
+              <Image Caption="../rdTemplate/rdBlank.gif" ID="imgFolderSharing" Height="24px" Width="24px" />
+            </Division>
+            <Division>
+
+            </Division>
+          </DataTableColumn>
+        </DataTable>
+      </Division>
+      <Division ID="divRenameFolder">
+        <PopupPanel ID="ppRenameFolder" PopupModal="True" Draggable="True" PopupPanelLocation="Center" Caption="Rename Folder">
+          <Rows ID="rdRenameFolderTable" TableBorder="0" CellSpacing="2" Width="100" WidthScale="%">
+            <Row ID="rowRenameFolder">
+              <Column>
+                <Rows Width="100" WidthScale="%" ID="rowsRenameFolder">
+                  <Row>
+                    <Column>
+                      <Rows CellSpacing="10">
+                        <Row>
+                          <Column>
+                            <Label ID="lblRenameFolderSave" Caption="Rename this Folder:" For="txtRenameFolder" />
+                          </Column>
+                          <Column>
+                            <InputText ID="rdFolderRenameText" Value="Caption" InputSize="20">
+                              <Validation Type="Required" ErrorMsg="The Folder Name cannot be blank." />
+                            </InputText>
+                          </Column>
+                        </Row>
+                        <Row>
+                          <Column Width="100" WidthScale="%">
+                            <Division ID="rdRenameSaveID">
+                              <Label ID="lblSaveRename" Caption="Done" Class="ThemeLinkButton">
+                                <EventHandler DhtmlEvent="onclick">
+                                  <Action Type="Javascript" ID="actSaveRename" Javascript="LogiXML.BookmarkOrganizer.rdBookmarkOrganizer.rdRenameFolder();ShowElement(null, 'ppRenameFolder', 'Hide');" Validate="True" />
+                                </EventHandler>
+                              </Label>
+                            </Division>
+                          </Column>
+                        </Row>
+                      </Rows>
+                    </Column>
+                  </Row>
+                </Rows>
+              </Column>
+            </Row>
+          </Rows>
+        </PopupPanel>
+      </Division>
+      <Division ID="divAddFolder">
+        <PopupPanel ID="ppAddFolder" PopupModal="True" Draggable="True" PopupPanelLocation="Center" Caption="Add New Folder">
+          <Rows ID="rdAddFolder" TableBorder="0" CellSpacing="2" Width="100" WidthScale="%">
+            <Row ID="rowAddFolder">
+              <Column>
+                <Rows Width="100" WidthScale="%" ID="rowsAddFolder">
+                  <Row>
+                    <Column>
+                      <Rows CellSpacing="10">
+                        <Row>
+                          <Column>
+                            <Label ID="lblNameFolder" Caption="New Folder Name:" For="rdFolderNameID" />
+                          </Column>
+                          <Column>
+                            <InputText ID="rdFolderNameText" Value="Caption" InputSize="20">
+                              <Validation Type="Required" ErrorMsg="The Folder Name cannot be blank." />
+                            </InputText>
+                              <LineBreak LineCount="2" />
+                          </Column>
+                      </Row>
+                        <Row>
+                          <Column Width="100" WidthScale="%">
+                            <Division ID="rdRenameSaveID">
+                              <Label ID="lblSaveAddFolder" Caption="Done" Class="ThemeLinkButton">
+                                <EventHandler DhtmlEvent="onclick">
+                                  <Action Type="Javascript" ID="actSaveAddFolder" Javascript="LogiXML.BookmarkOrganizer.rdBookmarkOrganizer.rdAddFolder();ShowElement(null, 'ppAddFolder', 'Hide');" Validate="True" />
+                                </EventHandler>
+                              </Label>
+                            </Division>
+                          </Column>
+                        </Row>
+                      </Rows>
+                    </Column>
+                  </Row>
+                </Rows>
+              </Column>
+            </Row>
+          </Rows>
+        </PopupPanel>
+      </Division>
+    </Division>
+    <Note Note="The TemplateElement element prevents these templates from being processed.  Save's lots of time." />
+  </Body>
+  <ideTestParams rdSelectedFolderID="" rdExpandedCollapsedHistory_myFolder="" rdExpandedCollapsedHistory_sharedFolder="" />
+</Report>

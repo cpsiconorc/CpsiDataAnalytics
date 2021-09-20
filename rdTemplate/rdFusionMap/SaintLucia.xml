@@ -1,0 +1,13 @@
+<AnimatedMapDataXML>
+  <MapSpec InternalID="01" ShortName="AR" LongName="Anse-la-Raye" />
+  <MapSpec InternalID="03" ShortName="CA" LongName="Castries" />
+  <MapSpec InternalID="04" ShortName="CH" LongName="Choiseul" />
+  <MapSpec InternalID="02" ShortName="DA" LongName="Dauphin" />
+  <MapSpec InternalID="05" ShortName="DE" LongName="Dennery" />
+  <MapSpec InternalID="06" ShortName="GI" LongName="Gros Islet" />
+  <MapSpec InternalID="07" ShortName="LB" LongName="Laborie" />
+  <MapSpec InternalID="08" ShortName="MI" LongName="Micoud" />
+  <MapSpec InternalID="11" ShortName="PR" LongName="Praslin" />
+  <MapSpec InternalID="09" ShortName="SO" LongName="Soufrière" />
+  <MapSpec InternalID="10" ShortName="VF" LongName="Vieux Fort" />
+</AnimatedMapDataXML>

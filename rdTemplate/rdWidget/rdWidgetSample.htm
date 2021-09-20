@@ -1,0 +1,55 @@
+<HTML>
+    <head>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    </head>
+    <BODY>
+        <FORM>
+		
+            <SCRIPT src="rdPath/rdTemplate/rdWidget/rdWidget.js">
+            </SCRIPT>
+        
+            <DIV ID="myWidgetDiv" >Loading...</DIV>
+            <SCRIPT>
+                var myWidget= new rdLogiWidget;
+                myWidget.definition="rdWidgetDefinitionName";
+                myWidget.containerID="myWidgetDiv";
+                //rdRequestParams
+                myWidget.load();
+            </SCRIPT>
+
+        </FORM>
+
+        <DIV >
+            <br />
+            <br />
+            <strong>Sample Script:<br />
+                <br />
+            </strong>
+            &lt;FORM&gt;&nbsp; &lt;!-- The FORM element is required if there are INPUT
+            elements in the Widget --&gt;<br />
+            <br />&lt;!-- Include this once for each page. --&gt;<br />
+            &nbsp;
+            &lt;SCRIPT src="rdPath/rdTemplate/rdWidget/rdWidget.js"&gt; &lt;/SCRIPT&gt;<br />
+            <br />
+            &lt;!-- Include this for each widget on the page.&nbsp; --&gt;<br />
+            &nbsp;
+            &lt;DIV ID="myWidgetDiv" &gt;Loading...&lt;/DIV&gt;<br />
+            &nbsp;
+            &lt;SCRIPT&gt;<br />
+            &nbsp; &nbsp;
+            var myWidget= new rdLogiWidget;<br />
+            &nbsp; &nbsp;
+            myWidget.definition="rdWidgetDefinitionName";<br />
+            &nbsp; &nbsp;
+            myWidget.containerID="myWidgetDiv";<br />
+            &nbsp; &nbsp;
+            //rdRequestParams<br />
+            &nbsp; &nbsp;
+            myWidget.load();<br />
+            &nbsp; &lt;/SCRIPT&gt;
+            <br />
+            <br />
+            &lt;/FORM&gt;</DIV>
+
+    </BODY>
+</HTML>

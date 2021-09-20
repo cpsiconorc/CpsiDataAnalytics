@@ -1,0 +1,12 @@
+<AnimatedMapDataXML>
+  <MapSpec InternalID="01" ShortName="DK" LongName="Denmark" />
+  <MapSpec InternalID="02" ShortName="EE" LongName="Estonia" />
+  <MapSpec InternalID="03" ShortName="FI" LongName="Finland" />
+  <MapSpec InternalID="04" ShortName="IS" LongName="Iceland" />
+  <MapSpec InternalID="05" ShortName="IE" LongName="Ireland" />
+  <MapSpec InternalID="06" ShortName="LV" LongName="Latvia" />
+  <MapSpec InternalID="07" ShortName="LT" LongName="Lithuania" />
+  <MapSpec InternalID="08" ShortName="NO" LongName="Norway" />
+  <MapSpec InternalID="09" ShortName="UK" LongName="United Kingdom" />
+  <MapSpec InternalID="10" ShortName="SE" LongName="Sweden" />
+</AnimatedMapDataXML>

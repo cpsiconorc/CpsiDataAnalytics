@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Report ID="ReportAuthorDev.Templates.LinkTemplate">
+  <Body>
+    <Division ID="rdElementID" HtmlDiv="True" rdReportAuthorElementType="Link" Class="rd-report-author-element">
+      <Label Caption="" ID="label_rdElementID">
+        <Action Type="Link" ID="actionLink_rdElementID">
+          <Target Type="Link" Link="" ID="targetLink_rdElementID" />
+        </Action>
+      </Label>
+    </Division>
+  </Body>
+</Report>

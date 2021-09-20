@@ -1,0 +1,36 @@
+<Process ID="rdRcScheduleProc">
+	<Task ID="SaveScheduledTask">
+		<Procedure Type="RunDataLayerRows" ID="procGetFileExtension">
+			<DataLayer Type="Static" ID="dlGetExtension">
+				<StaticDataRow ReportFormat="PDF" rdFormat="PDF" Extension=".pdf" />
+				<StaticDataRow ReportFormat="CSV" rdFormat="CSV" Extension=".csv" />
+				<StaticDataRow ReportFormat="NativeExcel" rdFormat="NativeExcel" Extension=".xlsx" />
+				<StaticDataRow ReportFormat="HTML" rdFormat="Report" Extension="" />
+				<ConditionFilter ID="conditionGetExtension" Condition="&quot;@Data.ReportFormat~&quot;=&quot;@Request.ExportFormat~&quot;" />
+			</DataLayer>
+			<Procedure Type="SetSessionVars" ID="setDisabled">
+				<SessionParams IsScheduledTaskDisabled="=IIF(&quot;@Request.TaskDisabled~&quot; = &quot;&quot;, &quot;False&quot;, &quot;@Request.TaskDisabled~&quot;)" />
+			</Procedure>
+			<Procedure Type="If" Expression="&quot;@Request.TaskID~&quot; = &quot;&quot;" ID="ifNew">
+				<Procedure Type="SchedulerCreateTask" ID="CreateTask" SchedulerApplicationID="@Constant.SchedulerApplicationID~" SchedulerTaskName="@Request.rdSchedulerReportID~" ScheduleXml="@Session.rdRcScheduleXml~" SchedulerProcessUrl="@Session.rdSchedulerProcessUrl~" ConnectionID="@Session.rdRcScheduleConnID~" BookmarkID="@Request.rdBookmarkID~" BookmarkCollection="@Request.rdBookmarkCollection~" BookmarkUserName="@Request.rdBookmarkUserName~" SchedulerCustomColumn1="@Request.rdCustomColumn1~" SchedulerCustomColumn2="@Request.rdCustomColumn2~" SchedulerRunAs="@Function.UserName~" SchedulerSessionVariables="@Request.rdSchedulerSessionVariables~">
+					<Target Type="Process" Process="rdTemplate/rdEmail/rdEmailReportProc" TaskID="rdEmailReport">
+						<LinkParams rdFrom="@Request.EmailFrom~" rdTo="@Request.EmailTo~" rdCc="@Request.EmailCc~" rdBcc="@Request.EmailBcc~" rdSubject="@Request.EmailSubject~" rdBody="@Request.EmailBody~" rdIgnoreMissingResponse="True" rdFormat="@Data.rdFormat~" rdRcFormat="@Data.ReportFormat~" rdReportID="@Request.rdSchedulerReportID~" rdExportExtension="@Data.Extension~" rdBookmarkID="@Request.rdBookmarkID~" rdBookmarkCollection="@Request.rdBookmarkCollection~" rdBookmarkUserName="@Request.rdBookmarkUserName~" rdExportTableID="@Request.rdExportTableID~" rdLoadBookmark="True" PdfPageOrientation="@Request.PdfPageOrientation~"/>
+					</Target>
+				</Procedure>
+			</Procedure>
+			<Procedure Type="If" Expression="&quot;@Request.TaskID~&quot; &lt;&gt; &quot;&quot;" ID="ifEdit">
+				<Procedure Type="SchedulerUpdateTask" ID="UpdateTask" ConnectionID="@Session.rdRcScheduleConnID~" SchedulerApplicationID="@Constant.SchedulerApplicationID~" SchedulerTaskID="@Request.TaskID~" ScheduleXml="@Session.rdRcScheduleXml~" SchedulerProcessUrl="@Session.rdSchedulerProcessUrl~" BookmarkID="@Request.rdBookmarkID~" BookmarkCollection="@Request.rdBookmarkCollection~" BookmarkUserName="@Request.rdBookmarkUserName~" SchedulerTaskName="@Request.rdSchedulerReportID~" SchedulerCustomColumn1="@Request.rdCustomColumn1~" SchedulerCustomColumn2="@Request.rdCustomColumn2~" SchedulerRunAs="@Function.UserName~" SchedulerSessionVariables="@Request.rdSchedulerSessionVariables~">
+					<Target Type="Process" Process="rdTemplate/rdEmail/rdEmailReportProc" TaskID="rdEmailReport">
+						<LinkParams rdFrom="@Request.EmailFrom~" rdTo="@Request.EmailTo~" rdCc="@Request.EmailCc~" rdBcc="@Request.EmailBcc~" rdSubject="@Request.EmailSubject~" rdBody="@Request.EmailBody~" rdIgnoreMissingResponse="True" rdFormat="@Data.rdFormat~" rdRcFormat="@Data.ReportFormat~" rdReportID="@Request.rdSchedulerReportID~" rdExportExtension="@Data.Extension~" rdBookmarkID="@Request.rdBookmarkID~" rdBookmarkCollection="@Request.rdBookmarkCollection~" rdBookmarkUserName="@Request.rdBookmarkUserName~" rdExportTableID="@Request.rdExportTableID~" rdLoadBookmark="True" PdfPageOrientation="@Request.PdfPageOrientation~"/>
+					</Target>
+				</Procedure>
+			</Procedure>
+		</Procedure>
+	</Task>
+	<Task ID="RemoveScheduledTask">
+		<Procedure Type="SchedulerDeleteTask" ID="DeleteTask" SchedulerTaskID="@Request.TaskID~" ConnectionID="@Session.rdRcScheduleConnID~" BookmarkID="@Request.rdBookmarkID~" BookmarkCollection="@Request.rdBookmarkCollection~" BookmarkUserName="@Request.rdBookmarkUserName~" />
+	</Task>
+	<Task ID="RunNowScheduledTask">
+		<Procedure Type="SchedulerRunTask" ID="RunTask" SchedulerTaskID="@Request.TaskID~" ConnectionID="@Session.rdRcScheduleConnID~" />
+	</Task>
+</Process>

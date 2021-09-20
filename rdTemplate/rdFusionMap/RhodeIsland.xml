@@ -1,0 +1,7 @@
+<AnimatedMapDataXML>
+  <MapSpec InternalID="001" ShortName="BR" LongName="Bristol" />
+  <MapSpec InternalID="003" ShortName="KE" LongName="Kent" />
+  <MapSpec InternalID="005" ShortName="NP" LongName="Newport" />
+  <MapSpec InternalID="007" ShortName="PR" LongName="Providence" />
+  <MapSpec InternalID="009" ShortName="WA" LongName="Washington" />
+</AnimatedMapDataXML>

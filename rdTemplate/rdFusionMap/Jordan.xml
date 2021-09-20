@@ -1,0 +1,14 @@
+<AnimatedMapDataXML>
+  <MapSpec InternalID="JO.AJ" ShortName="AJ" LongName="Ajlun" />
+  <MapSpec InternalID="JO.AM" ShortName="AM" LongName="Amman" />
+  <MapSpec InternalID="JO.AQ" ShortName="AQ" LongName="Aqaba" />
+  <MapSpec InternalID="JO.BA" ShortName="BA" LongName="Balqa" />
+  <MapSpec InternalID="JO.IR" ShortName="IR" LongName="Irbid" />
+  <MapSpec InternalID="JO.JA" ShortName="JA" LongName="Jarash" />
+  <MapSpec InternalID="JO.KA" ShortName="KA" LongName="Karak" />
+  <MapSpec InternalID="JO.MN" ShortName="MN" LongName="Maan" />
+  <MapSpec InternalID="JO.MD" ShortName="MD" LongName="Madaba" />
+  <MapSpec InternalID="JO.MA" ShortName="MA" LongName="Mafraq" />
+  <MapSpec InternalID="JO.AT" ShortName="AT" LongName="Tafilah" />
+  <MapSpec InternalID="JO.AZ" ShortName="AZ" LongName="Zarqa" />
+</AnimatedMapDataXML>

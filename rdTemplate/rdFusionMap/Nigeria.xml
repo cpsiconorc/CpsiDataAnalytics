@@ -1,0 +1,39 @@
+<AnimatedMapDataXML>
+  <MapSpec InternalID="NG.AB" ShortName="AB" LongName="Abia" />
+  <MapSpec InternalID="NG.FC" ShortName="FC" LongName="Abuja" />
+  <MapSpec InternalID="NG.AD" ShortName="AD" LongName="Adamawa" />
+  <MapSpec InternalID="NG.AK" ShortName="AK" LongName="Akwa Ibom" />
+  <MapSpec InternalID="NG.AN" ShortName="AN" LongName="Anambra" />
+  <MapSpec InternalID="NG.BA" ShortName="BA" LongName="Bauchi" />
+  <MapSpec InternalID="NG.BY" ShortName="BY" LongName="Bayelsa" />
+  <MapSpec InternalID="NG.BE" ShortName="BE" LongName="Benue" />
+  <MapSpec InternalID="NG.BO" ShortName="BO" LongName="Borno" />
+  <MapSpec InternalID="NG.CR" ShortName="CR" LongName="Cross River" />
+  <MapSpec InternalID="NG.DE" ShortName="DE" LongName="Delta" />
+  <MapSpec InternalID="NG.EB" ShortName="EB" LongName="Ebonyi" />
+  <MapSpec InternalID="NG.ED" ShortName="ED" LongName="Edo" />
+  <MapSpec InternalID="NG.EK" ShortName="EK" LongName="Ekiti" />
+  <MapSpec InternalID="NG.EN" ShortName="EN" LongName="Enugu" />
+  <MapSpec InternalID="NG.GO" ShortName="GO" LongName="Gombe" />
+  <MapSpec InternalID="NG.IM" ShortName="IM" LongName="Imo" />
+  <MapSpec InternalID="NG.JI" ShortName="JI" LongName="Jigawa" />
+  <MapSpec InternalID="NG.KD" ShortName="KD" LongName="Kaduna" />
+  <MapSpec InternalID="NG.KN" ShortName="KN" LongName="Kano" />
+  <MapSpec InternalID="NG.KT" ShortName="KT" LongName="Katsina" />
+  <MapSpec InternalID="NG.KE" ShortName="KE" LongName="Kebbi" />
+  <MapSpec InternalID="NG.KO" ShortName="KO" LongName="Kogi" />
+  <MapSpec InternalID="NG.KW" ShortName="KW" LongName="Kwara" />
+  <MapSpec InternalID="NG.LA" ShortName="LA" LongName="Lagos" />
+  <MapSpec InternalID="NG.NA" ShortName="NA" LongName="Nassarawa" />
+  <MapSpec InternalID="NG.NI" ShortName="NI" LongName="Niger" />
+  <MapSpec InternalID="NG.OG" ShortName="OG" LongName="Ogun" />
+  <MapSpec InternalID="NG.ON" ShortName="ON" LongName="Ondo" />
+  <MapSpec InternalID="NG.OS" ShortName="OS" LongName="Osun" />
+  <MapSpec InternalID="NG.OY" ShortName="OY" LongName="Oyo" />
+  <MapSpec InternalID="NG.PL" ShortName="PL" LongName="Plateau" />
+  <MapSpec InternalID="NG.RI" ShortName="RI" LongName="Rivers" />
+  <MapSpec InternalID="NG.SO" ShortName="SO" LongName="Sokoto" />
+  <MapSpec InternalID="NG.TA" ShortName="TA" LongName="Taraba" />
+  <MapSpec InternalID="NG.YO" ShortName="YO" LongName="Yobe" />
+  <MapSpec InternalID="NG.ZA" ShortName="ZA" LongName="Zamfara" />
+</AnimatedMapDataXML>

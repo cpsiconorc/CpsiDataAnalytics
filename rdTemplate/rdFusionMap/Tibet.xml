@@ -1,0 +1,9 @@
+<AnimatedMapDataXML>
+  <MapSpec InternalID="TI.LP" ShortName="LP" LongName="Lhasa Prefecture" />
+  <MapSpec InternalID="TI.NG" ShortName="NG" LongName="Nagqu Prefecture" />
+  <MapSpec InternalID="TI.NA" ShortName="NA" LongName="Ngari Prefecture" />
+  <MapSpec InternalID="TI.NP" ShortName="NP" LongName="Nyinchi Prefecture" />
+  <MapSpec InternalID="TI.QP" ShortName="QP" LongName="Qamdo Prefecture" />
+  <MapSpec InternalID="TI.SP" ShortName="SP" LongName="Shannan Prefecture" />
+  <MapSpec InternalID="TI.XP" ShortName="XP" LongName="Xigazê Prefecture" />
+</AnimatedMapDataXML>

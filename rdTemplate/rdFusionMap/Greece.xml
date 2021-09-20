@@ -1,0 +1,15 @@
+<AnimatedMapDataXML>
+  <MapSpec InternalID="01" ShortName="AT" LongName="Attica" />
+  <MapSpec InternalID="02" ShortName="CG" LongName="Central Greece" />
+  <MapSpec InternalID="03" ShortName="CM" LongName="Central Macedonia" />
+  <MapSpec InternalID="04" ShortName="CR" LongName="Crete" />
+  <MapSpec InternalID="05" ShortName="EM" LongName="East Macedonia and Thrace" />
+  <MapSpec InternalID="06" ShortName="EP" LongName="Epirus" />
+  <MapSpec InternalID="07" ShortName="IO" LongName="Ionian Islands" />
+  <MapSpec InternalID="08" ShortName="NA" LongName="North Aegean" />
+  <MapSpec InternalID="09" ShortName="PE" LongName="Peloponnese" />
+  <MapSpec InternalID="10" ShortName="SA" LongName="South Aegean" />
+  <MapSpec InternalID="11" ShortName="TH" LongName="Thessaly" />
+  <MapSpec InternalID="12" ShortName="WG" LongName="West Greece" />
+  <MapSpec InternalID="13" ShortName="WM" LongName="West Macedonia" />
+</AnimatedMapDataXML>

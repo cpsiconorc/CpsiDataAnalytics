@@ -1,0 +1,16 @@
+<AnimatedMapDataXML>
+  <MapSpec InternalID="001" ShortName="AD" LongName="Addison" />
+  <MapSpec InternalID="003" ShortName="BE" LongName="Bennington" />
+  <MapSpec InternalID="005" ShortName="CA" LongName="Caledonia" />
+  <MapSpec InternalID="007" ShortName="CH" LongName="Chittenden" />
+  <MapSpec InternalID="009" ShortName="ES" LongName="Essex" />
+  <MapSpec InternalID="011" ShortName="FR" LongName="Franklin" />
+  <MapSpec InternalID="013" ShortName="GI" LongName="Grand Isle" />
+  <MapSpec InternalID="015" ShortName="LA" LongName="Lamoille" />
+  <MapSpec InternalID="017" ShortName="OR" LongName="Orange" />
+  <MapSpec InternalID="019" ShortName="OL" LongName="Orleans" />
+  <MapSpec InternalID="021" ShortName="RU" LongName="Rutland" />
+  <MapSpec InternalID="023" ShortName="WA" LongName="Washington" />
+  <MapSpec InternalID="025" ShortName="WI" LongName="Windham" />
+  <MapSpec InternalID="027" ShortName="WN" LongName="Windsor" />
+</AnimatedMapDataXML>

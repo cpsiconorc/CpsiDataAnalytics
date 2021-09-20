@@ -1,0 +1,14 @@
+<AnimatedMapDataXML>
+  <MapSpec InternalID="40" ShortName="BR" LongName="Berat" />
+  <MapSpec InternalID="41" ShortName="DI" LongName="Dibër" />
+  <MapSpec InternalID="42" ShortName="DR" LongName="Durrës" />
+  <MapSpec InternalID="43" ShortName="EL" LongName="Elbasan" />
+  <MapSpec InternalID="44" ShortName="FR" LongName="Fier" />
+  <MapSpec InternalID="45" ShortName="GJ" LongName="Gjirokastër" />
+  <MapSpec InternalID="46" ShortName="KO" LongName="Korçë" />
+  <MapSpec InternalID="47" ShortName="KU" LongName="Kukës" />
+  <MapSpec InternalID="48" ShortName="LE" LongName="Lezhë" />
+  <MapSpec InternalID="49" ShortName="SH" LongName="Shkodër" />
+  <MapSpec InternalID="50" ShortName="TR" LongName="Tiranë" />
+  <MapSpec InternalID="51" ShortName="VL" LongName="Vlorë" />
+</AnimatedMapDataXML>

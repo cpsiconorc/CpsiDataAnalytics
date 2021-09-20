@@ -1,0 +1,26 @@
+﻿.rdThemeDataTableCell.rdThemeDataTableCellMerged {
+    vertical-align: top;
+    padding: 0px;
+    overflow: visible;
+}
+
+.rdThemeDataTableCellMerged > div {
+    border: 0px none;
+    height: 4px;
+    margin-top: -2px;
+    white-space: nowrap;
+    overflow: hidden;
+    background-color: inherit;
+}
+
+.rdThemeDataTableCellMerged > div * {
+    display: none;
+}
+
+tr.rdAgGroup0HeaderRow + tr .rdThemeDataTableCell.rdThemeDataTableCellMerged,
+tr.rdAgGroup1HeaderRow + tr .rdThemeDataTableCell.rdThemeDataTableCellMerged,
+tr.rdAgGroup2HeaderRow + tr .rdThemeDataTableCell.rdThemeDataTableCellMerged,
+tr.rdAgGroup3HeaderRow + tr .rdThemeDataTableCell.rdThemeDataTableCellMerged,
+tr.rdAgGroup4HeaderRow + tr .rdThemeDataTableCell.rdThemeDataTableCellMerged {
+    overflow: hidden;
+}

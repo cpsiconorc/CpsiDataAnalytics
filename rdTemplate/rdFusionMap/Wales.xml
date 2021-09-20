@@ -1,0 +1,24 @@
+<AnimatedMapDataXML>
+  <MapSpec InternalID="01" ShortName="BG" LongName="Blaenau Gwent" />
+  <MapSpec InternalID="02" ShortName="BB" LongName="Bridgend" />
+  <MapSpec InternalID="03" ShortName="CP" LongName="Caerphilly" />
+  <MapSpec InternalID="04" ShortName="CA" LongName="Cardiff" />
+  <MapSpec InternalID="05" ShortName="CI" LongName="Carmarthenshire" />
+  <MapSpec InternalID="06" ShortName="CG" LongName="Ceredigion" />
+  <MapSpec InternalID="07" ShortName="CW" LongName="Conwy" />
+  <MapSpec InternalID="08" ShortName="DB" LongName="Denbighshire" />
+  <MapSpec InternalID="09" ShortName="FL" LongName="Flintshire" />
+  <MapSpec InternalID="10" ShortName="GD" LongName="Gwynedd" />
+  <MapSpec InternalID="11" ShortName="AY" LongName="Isle of Anglesey" />
+  <MapSpec InternalID="12" ShortName="MM" LongName="Monmouthshire" />
+  <MapSpec InternalID="13" ShortName="MT" LongName="Merthyr Tydfil" />
+  <MapSpec InternalID="14" ShortName="NP" LongName="Neath Port Talbot" />
+  <MapSpec InternalID="15" ShortName="NO" LongName="Newport" />
+  <MapSpec InternalID="16" ShortName="PE" LongName="Pembrokeshire" />
+  <MapSpec InternalID="17" ShortName="PO" LongName="Powys" />
+  <MapSpec InternalID="18" ShortName="RT" LongName="Rhondda Cynon" />
+  <MapSpec InternalID="19" ShortName="SW" LongName="Swansea" />
+  <MapSpec InternalID="20" ShortName="TF" LongName="Torfaen" />
+  <MapSpec InternalID="21" ShortName="VG" LongName="Vale of Glamorgan" />
+  <MapSpec InternalID="22" ShortName="WX" LongName="Wrexham" />
+</AnimatedMapDataXML>

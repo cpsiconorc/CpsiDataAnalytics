@@ -1,0 +1,33 @@
+<AnimatedMapDataXML>
+  <MapSpec InternalID="IR.AL" ShortName="AL" LongName="Alborz" />
+  <MapSpec InternalID="IR.AR" ShortName="AR" LongName="Ardebil" />
+  <MapSpec InternalID="IR.BS" ShortName="BS" LongName="Bushehr" />
+  <MapSpec InternalID="IR.CM" ShortName="CM" LongName="Chahar Mahall and Bakhtiari" />
+  <MapSpec InternalID="IR.EA" ShortName="EA" LongName="East Azarbaijan" />
+  <MapSpec InternalID="IR.ES" ShortName="ES" LongName="Esfahan" />
+  <MapSpec InternalID="IR.FA" ShortName="FA" LongName="Fars" />
+  <MapSpec InternalID="IR.GI" ShortName="GI" LongName="Gilan" />
+  <MapSpec InternalID="IR.GO" ShortName="GO" LongName="Golestan" />
+  <MapSpec InternalID="IR.HD" ShortName="HD" LongName="Hamadan" />
+  <MapSpec InternalID="IR.HG" ShortName="HG" LongName="Hormozgan" />
+  <MapSpec InternalID="IR.IL" ShortName="IL" LongName="Ilam" />
+  <MapSpec InternalID="IR.KE" ShortName="KE" LongName="Kerman" />
+  <MapSpec InternalID="IR.BK" ShortName="BK" LongName="Kermanshah" />
+  <MapSpec InternalID="IR.KZ" ShortName="KZ" LongName="Khuzestan" />
+  <MapSpec InternalID="IR.KB" ShortName="KB" LongName="Kohgiluyeh and Buyer Ahmed" />
+  <MapSpec InternalID="IR.KD" ShortName="KD" LongName="Kordestan" />
+  <MapSpec InternalID="IR.LO" ShortName="LO" LongName="Lorestan" />
+  <MapSpec InternalID="IR.MK" ShortName="MK" LongName="Markazi" />
+  <MapSpec InternalID="IR.MN" ShortName="MN" LongName="Mazandaran" />
+  <MapSpec InternalID="IR.KS" ShortName="KS" LongName="North Khorasan" />
+  <MapSpec InternalID="IR.QZ" ShortName="QZ" LongName="Qazvin" />
+  <MapSpec InternalID="IR.QM" ShortName="QM" LongName="Qom" />
+  <MapSpec InternalID="IR.KV" ShortName="KV" LongName="Razavi Khorasan" />
+  <MapSpec InternalID="IR.SM" ShortName="SM" LongName="Semnan" />
+  <MapSpec InternalID="IR.SB" ShortName="SB" LongName="Sistan and Baluchestan" />
+  <MapSpec InternalID="IR.KJ" ShortName="KJ" LongName="South Khorasan" />
+  <MapSpec InternalID="IR.TH" ShortName="TH" LongName="Tehran" />
+  <MapSpec InternalID="IR.WA" ShortName="WA" LongName="West Azarbaijan" />
+  <MapSpec InternalID="IR.YA" ShortName="YA" LongName="Yazd" />
+  <MapSpec InternalID="IR.ZA" ShortName="ZA" LongName="Zanjan" />
+</AnimatedMapDataXML>

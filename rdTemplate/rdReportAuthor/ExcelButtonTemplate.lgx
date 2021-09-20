@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Report ID="ReportAuthorDev.Templates.ExcelButtonTemplate">
+  <Body>
+    <Division ID="rdElementID" rdReportAuthorElementType="ExcelButton" HtmlDiv="True" ShowModes="rdBrowser" Class="rd-report-author-element">
+      <Image ID="img_rdElementID" Caption="../rdTemplate/rdReportAuthor/Excel.png" AltText="Print to Excel" />
+      <Label ID="label_rdElementID" Caption="Download as Excel">
+        <Action Type="Excel" ID="actionExcel_rdElementID">
+          <Target Type="Excel" ID="targetExcel_rdElementID" FrameID="Self" />
+          <LinkParams rdExportReportAuthorView="True" />
+        </Action>
+      </Label>
+    </Division>
+  </Body>
+</Report>

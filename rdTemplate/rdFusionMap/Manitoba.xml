@@ -1,0 +1,10 @@
+<AnimatedMapDataXML>
+  <MapSpec InternalID="CA.MB.CR" ShortName="CR" LongName="Central Region" />
+  <MapSpec InternalID="CA.MB.ER" ShortName="ER" LongName="Eastern Region" />
+  <MapSpec InternalID="CA.MB.IR" ShortName="IR" LongName="Interlake Region" />
+  <MapSpec InternalID="CA.MB.NR" ShortName="NR" LongName="Northern Region" />
+  <MapSpec InternalID="CA.MB.PR" ShortName="PR" LongName="Parkland Region" />
+  <MapSpec InternalID="CA.MB.PM" ShortName="PM" LongName="Pembina Region" />
+  <MapSpec InternalID="CA.MB.WR" ShortName="WR" LongName="Western Region" />
+  <MapSpec InternalID="CA.MB.WI" ShortName="WI" LongName="Winnipeq Region" />
+</AnimatedMapDataXML>

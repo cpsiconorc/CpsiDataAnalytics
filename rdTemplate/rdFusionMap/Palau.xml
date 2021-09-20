@@ -1,0 +1,18 @@
+<AnimatedMapDataXML>
+  <MapSpec InternalID="PW.AM" ShortName="AM" LongName="Aimeliik" />
+  <MapSpec InternalID="PW.AR" ShortName="AR" LongName="Airai" />
+  <MapSpec InternalID="PW.AN" ShortName="AN" LongName="Angaur" />
+  <MapSpec InternalID="PW.HA" ShortName="HA" LongName="Hatohobei" />
+  <MapSpec InternalID="PW.KA" ShortName="KA" LongName="Kayangel" />
+  <MapSpec InternalID="PW.KO" ShortName="KO" LongName="Koror" />
+  <MapSpec InternalID="PW.ME" ShortName="ME" LongName="Melekeok" />
+  <MapSpec InternalID="PW.ND" ShortName="ND" LongName="Ngaraard" />
+  <MapSpec InternalID="PW.NC" ShortName="NC" LongName="Ngarchelong" />
+  <MapSpec InternalID="PW.NM" ShortName="NM" LongName="Ngardmau" />
+  <MapSpec InternalID="PW.NP" ShortName="NP" LongName="Ngatpang" />
+  <MapSpec InternalID="PW.NS" ShortName="NS" LongName="Ngchesar" />
+  <MapSpec InternalID="PW.NL" ShortName="NL" LongName="Ngeremlengui" />
+  <MapSpec InternalID="PW.NW" ShortName="NW" LongName="Ngiwal" />
+  <MapSpec InternalID="PW.PE" ShortName="PE" LongName="Peleliu" />
+  <MapSpec InternalID="PW.SO" ShortName="SO" LongName="Sonsorol" />
+</AnimatedMapDataXML>

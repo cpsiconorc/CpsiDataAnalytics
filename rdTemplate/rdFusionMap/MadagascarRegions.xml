@@ -1,0 +1,24 @@
+<AnimatedMapDataXML>
+  <MapSpec InternalID="MG.TM.AO" ShortName="AO" LongName="Alaotra-Mangoro" />
+  <MapSpec InternalID="MG.FI.AM" ShortName="AM" LongName="Amoron’i Mania" />
+  <MapSpec InternalID="MG.AV.AG" ShortName="AG" LongName="Analamanga" />
+  <MapSpec InternalID="MG.TM.AN" ShortName="AN" LongName="Analanjirofo" />
+  <MapSpec InternalID="MG.TL.AD" ShortName="AD" LongName="Androy" />
+  <MapSpec InternalID="MG.TL.AY" ShortName="AY" LongName="Anosy" />
+  <MapSpec InternalID="MG.TL.AF" ShortName="AF" LongName="Atsimo Andrefana" />
+  <MapSpec InternalID="MG.FI.AA" ShortName="AA" LongName="Atsimo Atsinanana" />
+  <MapSpec InternalID="MG.TM.AI" ShortName="AI" LongName="Atsinanana" />
+  <MapSpec InternalID="MG.MA.BE" ShortName="BE" LongName="Betsiboka" />
+  <MapSpec InternalID="MG.MA.BO" ShortName="BO" LongName="Boeny" />
+  <MapSpec InternalID="MG.AV.BN" ShortName="BN" LongName="Bongolava" />
+  <MapSpec InternalID="MG.AS.DI" ShortName="DI" LongName="Diana" />
+  <MapSpec InternalID="MG.FI.HM" ShortName="HM" LongName="Haute Matsiatra" />
+  <MapSpec InternalID="MG.FI.HO" ShortName="HO" LongName="Ihorombe" />
+  <MapSpec InternalID="MG.AV.IT" ShortName="IT" LongName="Itasy" />
+  <MapSpec InternalID="MG.MA.ML" ShortName="ML" LongName="Melaky" />
+  <MapSpec InternalID="MG.TL.ME" ShortName="ME" LongName="Menabe" />
+  <MapSpec InternalID="MG.AS.SV" ShortName="SV" LongName="Sava" />
+  <MapSpec InternalID="MG.MA.SF" ShortName="SF" LongName="Sofia" />
+  <MapSpec InternalID="MG.AV.VA" ShortName="VA" LongName="Vakinankaratra" />
+  <MapSpec InternalID="MG.FI.VF" ShortName="VF" LongName="Vatovavy Fitovinany" />
+</AnimatedMapDataXML>

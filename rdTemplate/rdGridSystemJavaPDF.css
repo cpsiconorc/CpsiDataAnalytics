@@ -1,0 +1,93 @@
+.container-fluid {
+}
+
+.row {
+  
+}
+
+.col-xs-12-rd, .col-sm-12-rd, .col-md-12-rd, .col-lg-12-rd {
+    vertical-align: top;
+    width: 100%;
+  }
+.col-xs-11-rd, .col-sm-11-rd, .col-md-11-rd, .col-lg-11-rd {
+    vertical-align: top;
+    width: 91%;
+  }
+.col-xs-10-rd, .col-sm-10-rd, .col-md-10-rd, .col-lg-10-rd {
+    vertical-align: top;
+    width: 83%;
+  }
+.col-xs-9-rd, .col-sm-9-rd, .col-md-9-rd, .col-lg-9-rd {
+    vertical-align: top;
+    width: 75%;
+  }
+.col-xs-8-rd, .col-sm-8-rd, .col-md-8-rd, .col-lg-8-rd {
+    vertical-align: top;
+    width: 66%;
+  }
+.col-xs-7-rd, .col-sm-7-rd, .col-md-7-rd, .col-lg-7-rd {
+    vertical-align: top;
+    width: 58%;
+  }
+.col-xs-6-rd, .col-sm-6-rd, .col-md-6-rd, .col-lg-6-rd {
+    vertical-align: top;
+    width: 49%;
+  } 
+.col-xs-5-rd, .col-sm-5-rd, .col-md-5-rd, .col-lg-5-rd {
+    vertical-align: top;
+    width: 41%;
+  }
+.col-xs-4-rd, .col-sm-4-rd, .col-md-4-rd, .col-lg-4-rd {
+    vertical-align: top;
+    width: 32%;
+  }
+.col-xs-3-rd, .col-sm-3-rd, .col-md-3-rd, .col-lg-3-rd {
+    vertical-align: top;
+    width: 25%;
+  }
+.col-xs-2-rd, .col-sm-2-rd, .col-md-2-rd, .col-lg-2-rd {
+    vertical-align: top;
+    width: 16% ;
+  }
+.col-xs-1-rd, .col-sm-1-rd, .col-md-1-rd, .col-lg-1-rd {
+    width: 8%;
+    vertical-align: top;
+  }
+
+
+.visible-xs,
+.visible-sm,
+.visible-md
+{
+  display: none !important;
+}
+
+  .visible-lg {
+    display: block !important;
+  }
+  table.visible-lg {
+    display: table;
+  }
+  tr.visible-lg {
+    display: table-row !important;
+  }
+  th.visible-lg,
+  td.visible-lg {
+    display: table-cell !important;
+  }
+  .hidden-md {
+    display: none !important;
+  }
+ .hidden-sm {
+    display: none !important;
+  }
+
+
+.container:before, .container:after, .container-fluid:before, .container-fluid:after, .row:before, .row:after {
+    content: " ";
+    display: table;
+}
+.container:after, .container-fluid:after, .row:after {
+    clear: both;
+}
+

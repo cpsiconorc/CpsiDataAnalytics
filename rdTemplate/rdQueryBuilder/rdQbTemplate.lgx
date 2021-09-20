@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report ID="rdQbTemplate">
+	<Body>
+		<Division ID="rdQbID" Class="rdAg">
+			<Rows ID="rowsQbContainer" Width="100" WidthScale="%">
+				<Row ID="rowNoColumnsContainer" Class="rdQueryRow"/>
+				<Row ID="rowMetadata" Class="rdQueryRow">
+					<Column ID="colMetadata" Class="rdQueryColumn">
+						<Rows>
+							<Row>
+								<Column>
+									<Label ID="lblMetadataCaption" Caption="Select Source " For="rdMetadata" />
+									<LineBreak ID="lbMetadata"/>
+									<InputSelectList ID="rdMetadata" OptionCaptionColumn="MetadataName" OptionValueColumn="MetadataID" OptionTooltipColumn="MetadataDescription" IncludeBlank="True">
+										<DataLayer Type="Static" ID="dlMetadatas">
+											<SortFilter SortColumn="MetadataName" />
+										</DataLayer>
+										<EventHandler DhtmlEvent="onchange">
+											<Action Type="Report" ID="actUpdateQueryBuilder">
+												<Target Type="Report" ID="tgtUpdateQueryBuilder">
+													<WaitPage />
+												</Target>
+												<LinkParams rdQbCommand="UpdateQb" rdAgCommand="UpdateAgFromQb" rdAgCommandID="@Function.GUID~" rdQbControlNr="0" rdBookmarkCollection="@Request.rdBookmarkCollection~" rdBookmarkID="@Request.rdBookmarkID~"		rdBookmarkUserName="@Request.rdBookmarkUserName~" rdContentDivID="@Request.rdContentDivID~"		rdDashPanelId="@Request.rdDashPanelId~" rdEditThinkspace="@Request.rdEditThinkspace~"	rdResetThinkspace="True"/>
+											</Action>
+										</EventHandler>
+									</InputSelectList>
+								</Column>
+							</Row>
+						</Rows>
+					</Column>
+				</Row>
+				<Row ID="rowStartTable" Class="rdQueryRow">
+					<Column ID="colStartTable" Class="rdQueryColumn">
+						<Rows>
+							<Row>
+								<Column>
+									<Label ID="lblStartTableCaption" Caption="Select Data " For="rdStartTable" />
+									<LineBreak ID="lbStartTable" />
+									<InputSelectList ID="rdStartTable" OptionCaptionColumn="TableFriendlyName" OptionValueColumn="TableID" OptionTooltipColumn="ColumnFriendlyNames" IncludeBlank="True" IncludeBlankCaptionTemplate="No Data for this Source">
+										<DataLayer Type="Static" ID="dlTables">
+											<SortFilter SortColumn="TableFriendlyName" />
+										</DataLayer>
+										<EventHandler DhtmlEvent="onchange">
+											<Action Type="Report" ID="actUpdateQueryBuilder">
+												<Target Type="Report" ID="tgtUpdateQueryBuilder">
+													<WaitPage />
+												</Target>
+												<LinkParams rdQbCommand="UpdateQb" rdAgCommand="UpdateAgFromQb" rdAgCommandID="@Function.GUID~" rdQbControlNr="1" rdBookmarkCollection="@Request.rdBookmarkCollection~" rdBookmarkID="@Request.rdBookmarkID~"		rdBookmarkUserName="@Request.rdBookmarkUserName~" rdContentDivID="@Request.rdContentDivID~"		rdDashPanelId="@Request.rdDashPanelId~" rdEditThinkspace="@Request.rdEditThinkspace~"	rdResetThinkspace="True"/>
+											</Action>
+										</EventHandler>
+									</InputSelectList>
+								</Column>
+							</Row>
+						</Rows>
+					</Column>
+				</Row>
+
+				<Row ID="rowOk" ShowModes="None">
+					<Column>
+						<Label Caption="Apply Column Selection" BatchSelectionCaption="OK" ID="lblQbOk" Class="rdAgCommand">
+							<Action Type="Report" ID="actQbOk">
+								<Target Type="Report" ID="tgtQbOk">
+									<WaitPage />
+								</Target>
+								<LinkParams rdAgCommand="UpdateAgFromQb" rdQbCommand="UpdateQb" rdAgCommandID="@Function.GUID~" rdBookmarkCollection="@Request.rdBookmarkCollection~" rdBookmarkID="@Request.rdBookmarkID~"		rdBookmarkUserName="@Request.rdBookmarkUserName~" rdContentDivID="@Request.rdContentDivID~"		rdDashPanelId="@Request.rdDashPanelId~" rdEditThinkspace="@Request.rdEditThinkspace~"	rdResetThinkspace="True"/>
+							</Action>
+						</Label>
+					</Column>
+				</Row>
+				
+				<ElementTemplate ID="templateJoin">
+					<Row ID="rowJoin" Class="rdQueryRow">
+						<Column ID="colJoin" Class="rdQueryColumn">
+							<Rows>
+								<Row>
+									<Column>
+										<Label ID="lblJoinTableCaption" Caption="Select Data " />
+										<LineBreak ID="lbJoinTable"/>
+										<InputSelectList ID="rdJoin" OptionCaptionColumn="JoinFriendlyName" OptionValueColumn="JoinID" OptionTooltipColumn="ColumnFriendlyNames" IncludeBlank="True" >
+											<DataLayer Type="Static" ID="dlJoins">
+												<SortFilter SortColumn="JoinFriendlyName" />
+											</DataLayer>
+											<EventHandler DhtmlEvent="onchange">
+												<Action Type="Report" ID="actUpdateQueryBuilderJoin">
+													<Target Type="Report" ID="tgtUpdateQueryBuilderJoin">
+													</Target>
+													<LinkParams rdQbCommand="UpdateQb" rdAgCommand="UpdateAgFromQb" rdAgCommandID="@Function.GUID~" rdQbControlNr="rdVariable" rdBookmarkCollection="@Request.rdBookmarkCollection~" rdBookmarkID="@Request.rdBookmarkID~"		rdBookmarkUserName="@Request.rdBookmarkUserName~" rdContentDivID="@Request.rdContentDivID~"		rdDashPanelId="@Request.rdDashPanelId~" rdEditThinkspace="@Request.rdEditThinkspace~"	rdResetThinkspace="True"/>
+												</Action>
+											</EventHandler>
+										</InputSelectList>
+									</Column>
+								</Row>
+							</Rows>
+						</Column>
+					</Row>
+				</ElementTemplate>
+
+				<ElementTemplate ID="templateQbColumns">
+					<LineBreak/>
+					<InputCheckboxList ID="iclQbColumns" CheckboxListDropdown="False" MultiSelect="True" OptionCaptionColumn="ColumnFriendlyName" OptionValueColumn="ColumnName" ColumnCount="4" CheckAllCaption="(All)">
+            <InputTextDelimiter Delimiter="," EscapeCharacter="\" Qualifier="&quot;" />
+						<DataLayer Type="Static" ID="dlQbColumns" />
+					</InputCheckboxList>
+				</ElementTemplate>
+
+				
+			</Rows>
+
+
+
+
+		</Division>
+
+	</Body>
+
+
+</Report>

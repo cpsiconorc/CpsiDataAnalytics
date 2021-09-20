@@ -1,0 +1,8 @@
+﻿<DataLayer Type="Static">
+  <StaticDataRow Operator="-" Description="Negation"/>
+  <StaticDataRow Operator="*" Description="Multiplication"/>
+  <StaticDataRow Operator="/" Description="Division"/>
+  <StaticDataRow Operator="%" Description="Modulus: m%n."/>
+  <StaticDataRow Operator="+" Description="Addition and string concatenation"/>
+  <StaticDataRow Operator="-" Description="Subtraction"/>
+</DataLayer>

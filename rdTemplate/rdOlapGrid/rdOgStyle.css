@@ -1,0 +1,286 @@
+.rdOg
+{ 
+	font-size: 11px;
+}
+.rdOg TABLE
+{ 
+	font-size: 11px;
+}
+
+.rdOg IMG 	{
+	border: 0px;
+	margin-top: 0px;
+	margin-left: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	}
+
+.rdOg A:link	{	
+	text-decoration:none;
+	color:#555555;
+	}	
+.rdOg A:visited	{	
+	text-decoration:none;
+	color:#555555;
+	}	
+.rdOg A:active	{	
+	text-decoration:none;
+	color:#555555;
+	}	
+.rdOg A:hover	{
+	text-decoration:underline;
+	color:#555555;
+}
+
+.rdOgCaptionRow
+{
+    background-image: url(rd666666.png);
+    font-size: 14px; 
+    font-weight:bold;	
+	color: #FFFFFF;
+	height:26px;
+}
+.rdOgCaptionRow TD {
+	background-color: #666666;
+}
+
+#lblOgTitle, #lblOgDrillthroughTitle
+{
+	padding:5px;
+}
+
+#mclDimensions, #mclMeasures, #mclFilters
+{
+      line-height:21px;
+}
+
+.rdOgSelectedTab
+{
+    background-image: url(../rdButtonIn.png);
+	border-top: 1px solid #DDDDDD;
+	border-bottom: 1px solid #656565;
+	border-right: 1px solid #656565;
+	border-left: 1px solid #DDDDDD;
+	text-decoration: none;
+	margin-left: 0px;
+	cursor:pointer;
+}
+.rdOgSelectedTab span {
+	color: #FFFFFF;
+}
+.rdOgUnselectedTab
+{
+    background-image: url(../rdButton.png);
+	border-top: 1px solid #DDDDDD;
+	border-bottom: 1px solid #777777;
+	border-right: 1px solid #777777;
+	border-left: 1px solid #DDDDDD;
+	text-decoration: none;
+	margin-left: 0px;
+	cursor:pointer;
+}
+
+.rdOgTabHeading
+{
+	white-space: nowrap;
+}
+
+.rdOgControlPanels TABLE {
+	white-space: nowrap;
+}
+
+.rdOgContentRow {
+	vertical-align: top;
+}
+
+.rdOgPanel {
+    background-color: #F8F8F8;
+	vertical-align: top;
+	border: 1px solid #C1C1C1;
+}
+
+.rdOgContentHeadingRow
+{
+	background-color:#EEEEEE;
+	width:100%;
+	margin-bottom:5px;
+}
+.rdOgContentHeading
+{
+	font-weight: bold;
+	vertical-align:middle;
+	white-space: nowrap;
+	padding:0;
+}
+
+.rdOgSubContentHeading
+{
+	font-weight: bold;
+	white-space: nowrap;
+}
+
+.rdOgOlapTable
+{    	
+	border: 1px solid #C1C1C1;
+	background-color : #CCCCCC;
+}
+.rdOgOlapTable tr:hover td 
+{	
+	background-color:#f4f4f4;
+}
+.rdOgPositionCellXAxis
+{
+	background-color: #ECECEC;
+	border-right-style:solid;
+	border-right-width:2px;
+	border-right-color:#CCCCCC;
+	vertical-align: top;
+	font-weight: normal;
+	padding:3px;
+}
+.rdOgPositionCellYAxis
+{
+	background-color: #ECECEC;
+    background-image: url(rdF7F7F7-ECECEC.png);
+    background-repeat:repeat-x; 
+	vertical-align: top;
+	font-weight: normal;
+	padding:3px;
+}
+.rdOgPositionLabelYAxis
+{
+	white-space:nowrap;
+}
+
+.rdOgFilterTable
+{
+	background-color: transparent;
+	border-right-width:0px;
+}
+
+.rdOgPickedFilterCell
+{
+	vertical-align: top;
+}
+
+.rdOgDataCell
+{
+	background-color: white;
+	color:#555555;
+	text-align: right;
+	padding:4px;
+}
+.rdOgDataCellLeft
+{
+	text-align: left;
+}
+.rdOgMemberPropCell
+{
+	color: DarkOliveGreen;
+	text-align: left;
+	padding:4px;
+}
+
+.rdOgPopupItem
+{
+	font-weight:normal;
+}
+.rdOgPopupItemSelected
+{
+	font-weight:bold;
+}
+
+.rdOgBold
+{
+	font-weight: bold;
+}
+
+.rdOgCommand
+{
+	font-weight:normal;
+	color:#555555;
+	text-decoration: none;
+    background-image: url(../rdButton.png);
+    background-color: #DDDDDD;
+	border-top: 1px solid #DDDDDD;
+	border-bottom: 1px solid #777777;
+	border-right: 1px solid #777777;
+	border-left: 1px solid #DDDDDD;
+	margin-left: 3px;
+	padding-right: 3px;
+	padding-left: 3px;
+	padding-top: 2px;
+	padding-bottom: 2px;
+	line-height:24px;
+	white-space: nowrap;
+}
+
+.rdOgError
+{
+	color: DarkRed;
+	font-weight:bold;
+}
+
+.rdBackgroundLevel7 {
+	background-color: #C0C0C0;
+}
+.rdBackgroundLevel6 {
+	background-color: #C8C8C8;
+}
+.rdBackgroundLevel5 {
+	background-color: #D0D0D0;
+}
+.rdBackgroundLevel4 {
+	background-color: #D8D8D8;
+}
+.rdBackgroundLevel3 {
+	background-color: #E0E0E0;
+}
+.rdBackgroundLevel2 {
+	background-color: #E8E8E8;
+}
+.rdBackgroundLevel1 {
+	background-color: #F0F0F0;
+}
+.rdBackgroundLevel0 {
+	background-color: #F8F8F8;
+}
+
+.rdOgAlignRight
+{
+	text-align: right;
+}
+.rdHidden
+{
+	 display:none;
+}
+	
+
+/* for popup menus */
+.yuimenu
+{
+    background-color: #ffffff;
+}
+.yuimenuitemlabel,
+.yuimenubaritemlabel {
+    font-size: 100%;
+    text-decoration: none;
+}
+.yuimenubaritem-selected,
+.yuimenuitem-selected {
+    background-color: #0077ff;
+    color: #ffffff;
+    text-decoration: none;
+}
+.yuimenuitem-selected A:hover	{
+	text-decoration:none;
+}
+
+
+/*Olap Images*/
+#imgTableOG, #imgChartOG, #imgHeatmapOG{
+  vertical-align: text-bottom !important;
+}
+#imgDimensionOG, #imgMeasureOG, #imgCalculatedMeasureOG, #imgFilterOG{
+  vertical-align: baseline !important;
+}

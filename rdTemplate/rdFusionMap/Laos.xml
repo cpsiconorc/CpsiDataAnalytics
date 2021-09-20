@@ -1,0 +1,20 @@
+<AnimatedMapDataXML>
+  <MapSpec InternalID="LA.AT" ShortName="AT" LongName="Attapu" />
+  <MapSpec InternalID="LA.BK" ShortName="BK" LongName="Bokeo" />
+  <MapSpec InternalID="LA.BL" ShortName="BL" LongName="Bolikhamxai" />
+  <MapSpec InternalID="LA.CH" ShortName="CH" LongName="Champasak" />
+  <MapSpec InternalID="LA.HO" ShortName="HO" LongName="Houaphan" />
+  <MapSpec InternalID="LA.KH" ShortName="KH" LongName="Khammouan" />
+  <MapSpec InternalID="LA.LM" ShortName="LM" LongName="Louang Namtha" />
+  <MapSpec InternalID="LA.LP" ShortName="LP" LongName="Louangphabang" />
+  <MapSpec InternalID="LA.OU" ShortName="OU" LongName="Oudomxai" />
+  <MapSpec InternalID="LA.PH" ShortName="PH" LongName="Phongsali" />
+  <MapSpec InternalID="LA.SL" ShortName="SL" LongName="Salavan" />
+  <MapSpec InternalID="LA.SV" ShortName="SV" LongName="Savannakhet" />
+  <MapSpec InternalID="LA.VT" ShortName="VT" LongName="Vientiane Prefecture" />
+  <MapSpec InternalID="LA.VI" ShortName="VI" LongName="Vientiane Province" />
+  <MapSpec InternalID="LA.XA" ShortName="XA" LongName="Xaignabouli" />
+  <MapSpec InternalID="LA.XS" ShortName="XS" LongName="Xaisomboun" />
+  <MapSpec InternalID="LA.XE" ShortName="XE" LongName="Xekong" />
+  <MapSpec InternalID="LA.XI" ShortName="XI" LongName="Xiangkhoang" />
+</AnimatedMapDataXML>

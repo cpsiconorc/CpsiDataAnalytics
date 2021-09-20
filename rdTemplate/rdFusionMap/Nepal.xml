@@ -1,0 +1,16 @@
+<AnimatedMapDataXML>
+  <MapSpec InternalID="NP.BA" ShortName="BA" LongName="Bagmati" />
+  <MapSpec InternalID="NP.BH" ShortName="BH" LongName="Bheri" />
+  <MapSpec InternalID="NP.DH" ShortName="DH" LongName="Dhawalagiri" />
+  <MapSpec InternalID="NP.GA" ShortName="GA" LongName="Gandaki" />
+  <MapSpec InternalID="NP.JA" ShortName="JA" LongName="Janakpur" />
+  <MapSpec InternalID="NP.KA" ShortName="KA" LongName="Karnali" />
+  <MapSpec InternalID="NP.KO" ShortName="KO" LongName="Kosi" />
+  <MapSpec InternalID="NP.LU" ShortName="LU" LongName="Lumbini" />
+  <MapSpec InternalID="NP.MA" ShortName="MA" LongName="Mahakali" />
+  <MapSpec InternalID="NP.ME" ShortName="ME" LongName="Mechi" />
+  <MapSpec InternalID="NP.NA" ShortName="NA" LongName="Narayani" />
+  <MapSpec InternalID="NP.RA" ShortName="RA" LongName="Rapti" />
+  <MapSpec InternalID="NP.SA" ShortName="SA" LongName="Sagarmatha" />
+  <MapSpec InternalID="NP.SE" ShortName="SE" LongName="Seti" />
+</AnimatedMapDataXML>

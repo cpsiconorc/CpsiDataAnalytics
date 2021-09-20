@@ -1,0 +1,27 @@
+<AnimatedMapDataXML>
+  <MapSpec InternalID="01" ShortName="CG" LongName="Changhua" />
+  <MapSpec InternalID="02" ShortName="CH" LongName="Chiayi" />
+  <MapSpec InternalID="03" ShortName="CS" LongName="Chiayi (City)" />
+  <MapSpec InternalID="04" ShortName="HH" LongName="Hsinchu" />
+  <MapSpec InternalID="05" ShortName="HS" LongName="Hsinchu (City)" />
+  <MapSpec InternalID="06" ShortName="HL" LongName="Hualien" />
+  <MapSpec InternalID="07" ShortName="KH" LongName="Kaohsiung" />
+  <MapSpec InternalID="08" ShortName="KC" LongName="Kaohsiung (City)" />
+  <MapSpec InternalID="09" ShortName="CL" LongName="Keelung (City)" />
+  <MapSpec InternalID="10" ShortName="KM" LongName="Kinmen" />
+  <MapSpec InternalID="11" ShortName="LK" LongName="Lienchiang" />
+  <MapSpec InternalID="12" ShortName="ML" LongName="Miaoli" />
+  <MapSpec InternalID="13" ShortName="NT" LongName="Nantou" />
+  <MapSpec InternalID="14" ShortName="PH" LongName="Penghu" />
+  <MapSpec InternalID="15" ShortName="PT" LongName="Pingtung" />
+  <MapSpec InternalID="16" ShortName="TH" LongName="Taichung" />
+  <MapSpec InternalID="17" ShortName="TG" LongName="Taichung (City)" />
+  <MapSpec InternalID="18" ShortName="TA" LongName="Tainan" />
+  <MapSpec InternalID="19" ShortName="TN" LongName="Tainan (City)" />
+  <MapSpec InternalID="20" ShortName="TP" LongName="Taipei" />
+  <MapSpec InternalID="21" ShortName="TC" LongName="Taipei (City)" />
+  <MapSpec InternalID="22" ShortName="TT" LongName="Taitung" />
+  <MapSpec InternalID="23" ShortName="TY" LongName="Taoyuan" />
+  <MapSpec InternalID="24" ShortName="IL" LongName="Yilan" />
+  <MapSpec InternalID="25" ShortName="YL" LongName="Yunlin" />
+</AnimatedMapDataXML>

@@ -1,0 +1,28 @@
+﻿<DataLayer Type="Static">
+  <StaticDataRow Name="AVG" Description="Returns the average value of a column." Syntax="AVG ( [ DISTINCT ] expression )" Notes="" />
+  <StaticDataRow Name="BIT_AND" Description="Returns the bitwise AND of all bits in expression." Syntax="BIT_AND ( expression )" Notes="" />
+  <StaticDataRow Name="BIT_OR" Description="Returns the bitwise OR of all bits in expression." Syntax="BIT_OR ( expression )" Notes="" />
+  <StaticDataRow Name="BOOL_AND" Description="Returns TRUE if all values are TRUE." Syntax="BOOL_AND ( boolean_expression )" Notes="The Boolean equivalent of MIN. Equivalent to the aggregate function EVERY." />
+  <StaticDataRow Name="BOOL_OR" Description="Returns TRUE if at least one value is TRUE." Syntax="BOOL_OR ( boolean_expression )" Notes="The Boolean equivalent of MAX." />
+  <StaticDataRow Name="CORR" Description="Returns the correlated coefficent." Syntax="CORR ( [ DISTINCT ] expression_Y, expression_X )" Notes="" />
+  <StaticDataRow Name="COUNT" Description="Returns the number of items found in a group." Syntax="COUNT ( [ DISTINCT ] * | expression )" Notes="" />
+  <StaticDataRow Name="COVAR_POP" Description="Returns the population covariance." Syntax="COVAR_POP ( [ DISTINCT ] expression_Y, expression_X )" Notes="" />
+  <StaticDataRow Name="COVAR_SAMP" Description="Returns the sample covariance." Syntax="COVAR_SAMP ( [ DISTINCT ] expression_Y, expression_X )" Notes="" />
+  <StaticDataRow Name="MAX" Description="Returns the maximum value of a column." Syntax="MAX ( expression )" Notes="Accepts any data type except Boolean as input. The Boolean equivalent MAX is BOOL_OR." />
+  <StaticDataRow Name="MIN" Description="Returns the minimum value of a column." Syntax="MIN ( expression )" Notes="Accepts any data type except Boolean as input. The Boolean equivalent MIN is BOOL_AND." />
+  <StaticDataRow Name="REGR_AVGX" Description="Returns the average of the independent variable." Syntax="REGR_AVGX ( [ DISTINCT ] expression_Y, expression_X )" Notes="SUM(X)/N" />
+  <StaticDataRow Name="REGR_AVGY" Description="Returns the average of the dependent variable." Syntax="REGR_AVGY ( [ DISTINCT ] expression_Y, expression_X )" Notes="SUM(Y)/N" />
+  <StaticDataRow Name="REGR_COUNT" Description="Returns the number of input rows in which both expressions are nonnull." Syntax="REGR_COUNT ( [ DISTINCT ] expression_Y, expression_X )" Notes="" />
+  <StaticDataRow Name="REGR_INTERCEPT" Description="Returns the y-intercept of the least-squares-fit linear equation determined by the (X, Y) pairs." Syntax="REGR_INTERCEPT ( [ DISTINCT ] expression_Y, expression_X )" Notes="" />
+  <StaticDataRow Name="REGR_R2" Description="Returns the square of the correlation coefficient." Syntax="REGR_R2 ( [ DISTINCT ] expression_Y, expression_X )" Notes="" />
+  <StaticDataRow Name="REGR_SLOPE" Description="Returns the slope of the least-squares-fit linear equation determined by the (X, Y) pairs." Syntax="REGR_SLOPE ( [ DISTINCT ] expression_Y, expression_X )" Notes="" />
+  <StaticDataRow Name="REGR_SXX" Description="Returns the &quot;sum of squares&quot; of the independent variable." Syntax="REGR_SXX ( [ DISTINCT ] expression_Y, expression_X )" Notes="SUM(X^2) - SUM(X)^2/N" />
+  <StaticDataRow Name="REGR_SXY" Description="Returns the &quot;sum of products&quot; of independent times dependent variable." Syntax="REGR_SXY ( [ DISTINCT ] expression_Y, expression_X )" Notes="SUM(X*Y) - SUM(X) * SUM(Y)/N" />
+  <StaticDataRow Name="REGR_SYY" Description="Returns the &quot;sum of squares&quot; of the dependent variable." Syntax="REGR_SYY ( [ DISTINCT ] expression_Y, expression_X )" Notes="SUM(Y^2) - SUM(Y)^2/N" />
+  <StaticDataRow Name="STRING_AGG" Description="Concatenates values into a single string." Syntax="STRING_AGG ( [DISTINCT] expression , delimiter )" Notes="" />
+  <StaticDataRow Name="SUM" Description="Returns the sum of all non-null values in an expression." Syntax="SUM ( [ DISTINCT ] expression )" Notes="" />
+  <StaticDataRow Name="STDDEV" Description="Returns the sample standard deviation of a set of numeric values, equivalent to the square root of the sample variance of the values." Syntax="STDDEV ( [ DISTINCT ] expression )" Notes="STDDEV_SAMP and STDDEV are synonyms for the same function." />
+  <StaticDataRow Name="STDDEV_POP" Description="Returns the population standard deviation of a set of numeric values." Syntax="STDDEV_POP ( [ DISTINCT ] expression )" Notes="" />
+  <StaticDataRow Name="VAR_POP" Description="Returns the population variance of a set of numeric values." Syntax="VAR_POP ( [ DISTINCT ] expression )" Notes="" />
+  <StaticDataRow Name="VAR_SAMP" Description="Returns the sample variance of a set of numeric values, equivalent to the squared sample standard deviation of the same set of values." Syntax="VAR_SAMP ( [ DISTINCT ] expression )" Notes="VAR_SAMP and VARIANCE are synonyms for the same function." />
+</DataLayer>

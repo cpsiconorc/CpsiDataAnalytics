@@ -1,0 +1,9 @@
+<AnimatedMapDataXML>
+  <MapSpec InternalID="01" ShortName="BH" LongName="Belize" />
+  <MapSpec InternalID="02" ShortName="CS" LongName="Costa Rica" />
+  <MapSpec InternalID="03" ShortName="ES" LongName="El Salvador" />
+  <MapSpec InternalID="04" ShortName="GT" LongName="Guatemala" />
+  <MapSpec InternalID="05" ShortName="HO" LongName="Honduras" />
+  <MapSpec InternalID="06" ShortName="NU" LongName="Nicaragua" />
+  <MapSpec InternalID="07" ShortName="PM" LongName="Panama" />
+</AnimatedMapDataXML>

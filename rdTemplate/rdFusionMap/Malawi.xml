@@ -1,0 +1,29 @@
+<AnimatedMapDataXML>
+  <MapSpec InternalID="MW.BA" ShortName="BA" LongName="Balaka" />
+  <MapSpec InternalID="MW.BL" ShortName="BL" LongName="Blantyre" />
+  <MapSpec InternalID="MW.CK" ShortName="CK" LongName="Chikwawa" />
+  <MapSpec InternalID="MW.CR" ShortName="CR" LongName="Chiradzulu" />
+  <MapSpec InternalID="MW.CT" ShortName="CT" LongName="Chitipa" />
+  <MapSpec InternalID="MW.DE" ShortName="DE" LongName="Dedza" />
+  <MapSpec InternalID="MW.DO" ShortName="DO" LongName="Dowa" />
+  <MapSpec InternalID="MW.KR" ShortName="KR" LongName="Karonga" />
+  <MapSpec InternalID="MW.KS" ShortName="KS" LongName="Kasungu" />
+  <MapSpec InternalID="MW.LK" ShortName="LK" LongName="Likoma" />
+  <MapSpec InternalID="MW.LI" ShortName="LI" LongName="Lilongwe" />
+  <MapSpec InternalID="MW.MA" ShortName="MA" LongName="Machinga" />
+  <MapSpec InternalID="MW.MG" ShortName="MG" LongName="Mangochi" />
+  <MapSpec InternalID="MW.MC" ShortName="MC" LongName="Mchinji" />
+  <MapSpec InternalID="MW.MJ" ShortName="MJ" LongName="Mulanje" />
+  <MapSpec InternalID="MW.MW" ShortName="MW" LongName="Mwanza" />
+  <MapSpec InternalID="MW.MZ" ShortName="MZ" LongName="Mzimba" />
+  <MapSpec InternalID="MW.NA" ShortName="NA" LongName="Nkhata Bay" />
+  <MapSpec InternalID="MW.NK" ShortName="NK" LongName="Nkhotakota" />
+  <MapSpec InternalID="MW.NS" ShortName="NS" LongName="Nsanje" />
+  <MapSpec InternalID="MW.NU" ShortName="NU" LongName="Ntcheu" />
+  <MapSpec InternalID="MW.NI" ShortName="NI" LongName="Ntchisi" />
+  <MapSpec InternalID="MW.PH" ShortName="PH" LongName="Phalombe" />
+  <MapSpec InternalID="MW.RU" ShortName="RU" LongName="Rumphi" />
+  <MapSpec InternalID="MW.SA" ShortName="SA" LongName="Salima" />
+  <MapSpec InternalID="MW.TH" ShortName="TH" LongName="Thyolo" />
+  <MapSpec InternalID="MW.ZO" ShortName="ZO" LongName="Zomba" />
+</AnimatedMapDataXML>

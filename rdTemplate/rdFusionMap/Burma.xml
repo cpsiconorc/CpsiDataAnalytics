@@ -1,0 +1,16 @@
+<AnimatedMapDataXML>
+  <MapSpec InternalID="MM.AY" ShortName="AY" LongName="Ayeyarwady Division" />
+  <MapSpec InternalID="MM.BA" ShortName="BA" LongName="Bago Division" />
+  <MapSpec InternalID="MM.CH" ShortName="CH" LongName="Chin State" />
+  <MapSpec InternalID="MM.KC" ShortName="KC" LongName="Kachin State" />
+  <MapSpec InternalID="MM.KH" ShortName="KH" LongName="Kayah State" />
+  <MapSpec InternalID="MM.KN" ShortName="KN" LongName="Kayin State" />
+  <MapSpec InternalID="MM.MG" ShortName="MG" LongName="Magway Division" />
+  <MapSpec InternalID="MM.MD" ShortName="MD" LongName="Mandalay Division" />
+  <MapSpec InternalID="MM.MO" ShortName="MO" LongName="Mon State" />
+  <MapSpec InternalID="MM.RA" ShortName="RA" LongName="Rakhine State" />
+  <MapSpec InternalID="MM.SA" ShortName="SA" LongName="Sagaing Division" />
+  <MapSpec InternalID="MM.SH" ShortName="SH" LongName="Shan State" />
+  <MapSpec InternalID="MM.TN" ShortName="TN" LongName="Tanintharyi Division" />
+  <MapSpec InternalID="MM.YA" ShortName="YA" LongName="Yangon Division" />
+</AnimatedMapDataXML>

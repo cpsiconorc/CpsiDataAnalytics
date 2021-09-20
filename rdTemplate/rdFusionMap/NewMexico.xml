@@ -1,0 +1,35 @@
+<AnimatedMapDataXML>
+  <MapSpec InternalID="001" ShortName="BE" LongName="Bernalillo" />
+  <MapSpec InternalID="003" ShortName="CA" LongName="Catron" />
+  <MapSpec InternalID="005" ShortName="CH" LongName="Chaves" />
+  <MapSpec InternalID="006" ShortName="CI" LongName="Cibola" />
+  <MapSpec InternalID="007" ShortName="CO" LongName="Colfax" />
+  <MapSpec InternalID="009" ShortName="CU" LongName="Curry" />
+  <MapSpec InternalID="011" ShortName="DB" LongName="De Baca" />
+  <MapSpec InternalID="013" ShortName="DA" LongName="Doña Ana" />
+  <MapSpec InternalID="015" ShortName="ED" LongName="Eddy" />
+  <MapSpec InternalID="017" ShortName="GR" LongName="Grant" />
+  <MapSpec InternalID="019" ShortName="GU" LongName="Guadalupe" />
+  <MapSpec InternalID="021" ShortName="HA" LongName="Harding" />
+  <MapSpec InternalID="023" ShortName="HI" LongName="Hidalgo" />
+  <MapSpec InternalID="025" ShortName="LE" LongName="Lea" />
+  <MapSpec InternalID="027" ShortName="LI" LongName="Lincoln" />
+  <MapSpec InternalID="028" ShortName="LA" LongName="Los Alamos" />
+  <MapSpec InternalID="029" ShortName="LU" LongName="Luna" />
+  <MapSpec InternalID="031" ShortName="MK" LongName="McKinley" />
+  <MapSpec InternalID="033" ShortName="MO" LongName="Mora" />
+  <MapSpec InternalID="035" ShortName="OT" LongName="Otero" />
+  <MapSpec InternalID="037" ShortName="QU" LongName="Quay" />
+  <MapSpec InternalID="039" ShortName="RA" LongName="Rio Arriba" />
+  <MapSpec InternalID="041" ShortName="RS" LongName="Roosevelts" />
+  <MapSpec InternalID="043" ShortName="SA" LongName="Sandoval" />
+  <MapSpec InternalID="045" ShortName="SJ" LongName="San Juan" />
+  <MapSpec InternalID="047" ShortName="SM" LongName="San Miguel" />
+  <MapSpec InternalID="049" ShortName="SF" LongName="Santa Fe" />
+  <MapSpec InternalID="051" ShortName="SI" LongName="Sierra" />
+  <MapSpec InternalID="053" ShortName="SO" LongName="Socorro" />
+  <MapSpec InternalID="055" ShortName="TA" LongName="Taos" />
+  <MapSpec InternalID="057" ShortName="TR" LongName="Torrance" />
+  <MapSpec InternalID="059" ShortName="UN" LongName="Union" />
+  <MapSpec InternalID="061" ShortName="VA" LongName="Valencia" />
+</AnimatedMapDataXML>

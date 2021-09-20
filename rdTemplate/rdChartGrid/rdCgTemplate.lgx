@@ -1,0 +1,409 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report ID="ChartGrid.rdCgTemplate">
+  <Body>
+    <Rows ID="rowsChartGrid" CellSpacing="0" Class="rdCg">
+      <Row ID="rowCgTitle" >
+        <Column ID="colCgTitle" Class="rdCgNoPadding">
+          <Rows CellSpacing="0" Width="100" WidthScale="%" >
+            <Row Class="rdCgCaptionRow">
+              <Column>
+                <Label ID="lblCgTitle"/>
+              </Column>
+            </Row>
+            <Row CellSpacing="0" Class="rdCgRowSpacer" />
+          </Rows>
+        </Column>
+      </Row>
+
+      <Row ID="rowControlPanels" >
+        <Column ID="colMenu" Class="rdCgNoPadding" ColSpan="2">
+          <Rows CellSpacing="0">
+            <Row >
+
+              <Column ID="rowGridYAxis" ColumnSelectionPanel="True" Class="rdCgPanel">
+                <Rows Width="150" WidthScale="px">
+                  <Row>
+                    <Column Width="1" WidthScale="%">
+                      <Image Caption="rdTemplate/rdChartGrid/rdCgYAxis.gif" ID="imgYAxis" AltText="Set the values for the charts' Y-Axis." Tooltip="Set the values for the charts' Y-Axis."/>
+                    </Column>
+                    <Column >
+                      <Label Caption="Y-Axis" Class="rdCgContentHeading" ID="lblYAxis"/>
+                    </Column>
+                  </Row>
+                  <Row >
+                    <Column ColSpan="2" Class="rdCgPanelLine">
+                      <DataTable ID="dtGridYAxis" Width="100" WidthScale="%" >
+                        <DataLayer ID="dlGridYAxis_DataColumns" Type="Static"/>
+                        <DataTableColumn >
+                          <Division ID="divGridYAxisSet" Class="rdCgSelectedNot" Condition="&quot;@Data.rdCgSelected~&quot; &lt;&gt; &quot;True&quot;" HtmlDiv="True">
+                            <Label Caption="@Data.Caption~" ID="lblColumnCaption">
+                              <Action Type="Report" ID="actGridYAxisSet" Class="rdCgSelectedNot">
+                                <Target Type="Report" KeepScrollPosition="True" KeepShowElements="True"/>
+                                <LinkParams rdCgCommand="GridYAxisSet" rdCgCommandID="@Function.FUID~" rdCgColumnID="@Data.ColumnID~" />
+                              </Action>
+                            </Label>
+                          </Division>
+                          <Division ID="divGridYAxisUnset" Class="rdCgSelected" Condition="&quot;@Data.rdCgSelected~&quot; = &quot;True&quot;" HtmlDiv="True">
+                            <Label Caption="@Data.Caption~" ID="lblColumnCaption">
+                              <Action Type="Report" ID="actGridYAxisUnset" Class="rdCgSelected" >
+                                <Target Type="Report" KeepScrollPosition="True" KeepShowElements="True"/>
+                                <LinkParams rdCgCommand="GridYAxisUnset" rdCgCommandID="@Function.FUID~" rdCgColumnID="@Data.ColumnID~" />
+                              </Action>
+                            </Label>
+                          </Division>
+                        </DataTableColumn>
+                      </DataTable>
+                    </Column >
+                  </Row>
+                </Rows>
+              </Column>
+              <Column ID="rowGridYAxisSpacer" Width="6" WidthScale="px"/>
+
+              <Column ID="rowGridXAxis" ColumnSelectionPanel="True" Class="rdCgPanel">
+                <Rows Width="150" WidthScale="px">
+                  <Row>
+                    <Column Width="1" WidthScale="%">
+                      <Image Caption="rdTemplate/rdChartGrid/rdCgXAxis.gif" ID="imgXAxis"  AltText="Set the values for the charts' X-Axis." Tooltip="Set the values for the charts' X-Axis."/>
+                    </Column>
+                    <Column >
+                      <Label Caption="X-Axis" Class="rdCgContentHeading" ID="lblXAxis"/>
+                    </Column>
+                  </Row>
+                  <Row >
+                    <Column ColSpan="2" Class="rdCgPanelLine">
+                      <DataTable ID="dtGridXAxis" Width="100" WidthScale="%" >
+                        <DataLayer ID="dlGridXAxis_DataColumns" Type="Static"/>
+                        <DataTableColumn >
+                          <Division ID="divGridXAxisSet" Class="rdCgSelectedNot" Condition="&quot;@Data.rdCgSelected~&quot; &lt;&gt; &quot;True&quot;" HtmlDiv="True">
+                            <Label Caption="@Data.Caption~" ID="lblColumnCaption">
+                              <Action Type="Report" ID="actGridXAxisSet" Class="rdCgSelectedNot">
+                                <Target Type="Report" KeepScrollPosition="True" KeepShowElements="True"/>
+                                <LinkParams rdCgCommand="GridXAxisSet" rdCgCommandID="@Function.FUID~" rdCgColumnID="@Data.ColumnID~" />
+                              </Action>
+                            </Label>
+                          </Division>
+                          <Division ID="divGridXAxisUnset" Class="rdCgSelected" Condition="&quot;@Data.rdCgSelected~&quot; = &quot;True&quot;" HtmlDiv="True">
+                            <Label Caption="@Data.Caption~" ID="lblColumnCaption">
+                              <Action Type="Report" ID="actGridXAxisUnset" Class="rdCgSelected" >
+                                <Target Type="Report" KeepScrollPosition="True" KeepShowElements="True"/>
+                                <LinkParams rdCgCommand="GridXAxisUnset" rdCgCommandID="@Function.FUID~" rdCgColumnID="@Data.ColumnID~" />
+                              </Action>
+                            </Label>
+                          </Division>
+                        </DataTableColumn>
+                      </DataTable>
+                    </Column >
+                  </Row>
+                </Rows>
+              </Column>
+              <Column ID="rowGridXAxisSpacer" Width="6" WidthScale="px"/>
+
+              <Column ID="rowGridColumns" ColumnSelectionPanel="True" Class="rdCgPanel">
+                <Rows Width="150" WidthScale="px">
+                  <Row>
+                    <Column Width="1" WidthScale="%">
+                      <Image Caption="rdTemplate/rdChartGrid/rdCgCols.gif" ID="imgColumns" AltText="Set the values for the table's columns." Tooltip="Set the values for the table's columns."/>
+                    </Column>
+                    <Column >
+                      <Label Caption="Columns" Class="rdCgContentHeading" ID="lblColumns"/>
+                    </Column>
+                  </Row>
+                  <Row >
+                    <Column ColSpan="2" Class="rdCgPanelLine">
+                      <DataTable ID="dtGridColumns" Width="100" WidthScale="%" >
+                        <DataLayer ID="dlGridColumns_DataColumns" Type="Static"/>
+                        <DataTableColumn >
+                          <Division ID="divGridColumnsSet" Class="rdCgSelectedNot" Condition="&quot;@Data.rdCgSelected~&quot; &lt;&gt; &quot;True&quot;" HtmlDiv="True">
+                            <Label Caption="@Data.Caption~" ID="lblColumnCaption">
+                              <Action Type="Report" ID="actGridColumnsSet" Class="rdCgSelectedNot">
+                                <Target Type="Report" KeepScrollPosition="True" KeepShowElements="True"/>
+                                <LinkParams rdCgCommand="GridColumnsSet" rdCgCommandID="@Function.FUID~" rdCgColumnID="@Data.ColumnID~" />
+                              </Action>
+                            </Label>
+                          </Division>
+                          <Division ID="divGridColumnsUnset" Class="rdCgSelected" Condition="&quot;@Data.rdCgSelected~&quot; = &quot;True&quot;" HtmlDiv="True">
+                            <Label Caption="@Data.Caption~" ID="lblColumnCaption">
+                              <Action Type="Report" ID="actGridColumnsUnset" Class="rdCgSelected" >
+                                <Target Type="Report" KeepScrollPosition="True" KeepShowElements="True"/>
+                                <LinkParams rdCgCommand="GridColumnsUnset" rdCgCommandID="@Function.FUID~" rdCgColumnID="@Data.ColumnID~" />
+                              </Action>
+                            </Label>
+                          </Division>
+                        </DataTableColumn>
+                      </DataTable>
+                    </Column >
+                  </Row>
+                </Rows>
+              </Column>
+              <Column ID="rowGridColumnsSpacer" Width="6" WidthScale="px"/>
+
+              <Column ID="rowGridRows" ColumnSelectionPanel="True" Class="rdCgPanel">
+                <Rows Width="150" WidthScale="px">
+                  <Row>
+                    <Column Width="1" WidthScale="%">
+                      <Image Caption="rdTemplate/rdChartGrid/rdCgRows.gif" ID="imgRows" AltText="Set the values for the table's rows." Tooltip="Set the values for the table's rows." />
+                    </Column>
+                    <Column >
+                      <Label Caption="Rows" Class="rdCgContentHeading" ID="lblRows"/>
+                    </Column>
+                  </Row>
+                  <Row >
+                    <Column ColSpan="2" Class="rdCgPanelLine">
+                      <DataTable ID="dtGridRows" Width="100" WidthScale="%" >
+                        <DataLayer ID="dlGridRows_DataColumns" Type="Static"/>
+                        <DataTableColumn >
+                          <Division ID="divGridRowsSet" Class="rdCgSelectedNot" Condition="&quot;@Data.rdCgSelected~&quot; &lt;&gt; &quot;True&quot;" HtmlDiv="True">
+                            <Label Caption="@Data.Caption~" ID="lblColumnCaption">
+                              <Action Type="Report" ID="actGridRowsSet" Class="rdCgSelectedNot">
+                                <Target Type="Report" KeepScrollPosition="True" KeepShowElements="True"/>
+                                <LinkParams rdCgCommand="GridRowsSet" rdCgCommandID="@Function.FUID~" rdCgColumnID="@Data.ColumnID~" />
+                              </Action>
+                            </Label>
+                          </Division>
+                          <Division ID="divGridRowsUnset" Class="rdCgSelected" Condition="&quot;@Data.rdCgSelected~&quot; = &quot;True&quot;" HtmlDiv="True">
+                            <Label Caption="@Data.Caption~" ID="lblColumnCaption">
+                              <Action Type="Report" ID="actGridRowsUnset" Class="rdCgSelected" >
+                                <Target Type="Report" KeepScrollPosition="True" KeepShowElements="True"/>
+                                <LinkParams rdCgCommand="GridRowsUnset" rdCgCommandID="@Function.FUID~" rdCgColumnID="@Data.ColumnID~" />
+                              </Action>
+                            </Label>
+                          </Division>
+                        </DataTableColumn>
+                      </DataTable>
+                    </Column >
+                  </Row>
+                </Rows>
+              </Column>
+              <Column ID="rowGridRowsSpacer" Width="6" WidthScale="px"/>
+
+              <Column ID="rowGridFilter" ColumnSelectionPanel="True" Class="rdCgPanel">
+                <Rows Width="150" WidthScale="px">
+                  <Row>
+                    <Column Width="1" WidthScale="%">
+                      <Image Caption="rdTemplate/rdChartGrid/rdCgFilter.gif" ID="imgFilter"  AltText="Add filters to include or exclude values." Tooltip="Add filters to include or exclude values." />
+                    </Column>
+                    <Column >
+                      <Label Caption="Filter" Class="rdCgContentHeading" ID="lblFilter"/>
+                    </Column>
+                  </Row>
+                  <Row >
+                    <Column ColSpan="2" Class="rdCgPanelLine">
+                      <DataTable ID="dtGridFilter" Width="100" WidthScale="%" >
+                        <DataLayer ID="dlGridFilter_DataColumns" Type="Static"/>
+                        <DataTableColumn >
+                          <Division ID="divGridFilterSet" Class="rdCgSelectedNot" Condition="&quot;@Data.rdCgSelected~&quot; &lt;&gt; &quot;True&quot;" HtmlDiv="True">
+                            <Label Caption="@Data.Caption~" ID="lblColumnCaption">
+                              <Action Type="Report" ID="actAddFilter" Class="rdCgSelectedNot">
+                                <Target Type="Report" KeepScrollPosition="True" KeepShowElements="True"/>
+                                <LinkParams rdCgCommand="FilterShow" rdCgCommandID="@Function.FUID~" rdFilterColumnID="@Data.ColumnID~" rdShowFilterPopup="True"/>
+                              </Action>
+                            </Label>
+                          </Division>
+                          <Division ID="divGridFilterUnset" Class="rdCgSelected" Condition="&quot;@Data.rdCgSelected~&quot; = &quot;True&quot;" HtmlDiv="True">
+                            <Label Caption="@Data.Caption~" ID="lblColumnCaption">
+                              <Action Type="Report" ID="actAddFilter" Class="rdCgSelectedNot">
+                                <Target Type="Report" KeepScrollPosition="True" KeepShowElements="True"/>
+                                <LinkParams rdCgCommand="FilterShow" rdCgCommandID="@Function.FUID~" rdFilterColumnID="@Data.ColumnID~" rdShowFilterPopup="True"/>
+                              </Action>
+                            </Label>
+                          </Division>
+                        </DataTableColumn>
+                      </DataTable>
+                    </Column >
+                  </Row>
+                </Rows>
+              </Column>
+              <Column ID="rowGridFilterSpacer" Width="6" WidthScale="px"/>
+
+              <Column ID="rowGridView" Class="rdCgPanel" >
+                <Rows Width="150" WidthScale="px">
+                  <Row>
+                    <Column Width="1" WidthScale="%">
+                      <Image Caption="rdTemplate/rdChartGrid/rdCgViews.gif" ID="imgChart" AltText="Set chart options." Tooltip="Set chart options."/>
+                    </Column>
+                    <Column Class="rdAlignMiddle">
+                      <Label Caption="View" Class="rdCgContentHeading" ID="lblView"/>
+                    </Column>
+                  </Row>
+                  <Row>
+                    <Column ColSpan="2" Class="rdCgPanelLine">
+                      <Rows>
+                        <Row>
+                          <Column>
+                            
+                          </Column>
+                        </Row>
+                      </Rows>
+                      <Rows>
+                        <Row ID="rdShowAggregate" Condition="False">
+                          <Column>
+                            <Label ID="lblAggregate" Caption="Aggregate " For="rdAggregate"/>
+                          </Column>
+                          <Column>
+                            <InputSelectList ID="rdAggregate" DefaultValue="Sum" OptionValueColumn="Aggregate" IncludeBlank="False" OptionCaptionColumn="AggregateCaption">
+                              <DataLayer Type="Static" ID="dlAggregate">
+                                <StaticDataRow Aggregate="Sum" AggregateCaption="Sum" />
+                                <StaticDataRow Aggregate="Average" AggregateCaption="Average" />
+                                <StaticDataRow Aggregate="Count" AggregateCaption="Count" />
+                                <StaticDataRow Aggregate="Min" AggregateCaption="Minimum" />
+                                <StaticDataRow Aggregate="Max" AggregateCaption="Maximum" />
+                              </DataLayer>
+                              <EventHandler DhtmlEvent="onchange">
+                                <Action Type="Report" ID="actAggregateSet">
+                                  <Target Type="Report" KeepScrollPosition="True" KeepShowElements="True" />
+                                  <LinkParams rdCgCommand="AggregateSet" rdCgCommandID="@Function.FUID~" />
+                                </Action>
+                              </EventHandler>
+                            </InputSelectList>
+                          </Column>
+                        </Row>
+                        <Row ID="rdShowChartType" Condition="False">
+                          <Column>
+                            <Label ID="lblChartType" Caption="Chart Type " For="rdChartType"  />
+                          </Column>
+                          <Column>
+                           <InputSelectList ID="rdChartType" DefaultValue="Line" OptionValueColumn="ChartType" IncludeBlank="False" OptionCaptionColumn="ChartTypeCaption">
+                              <DataLayer Type="Static" ID="dlChartType">
+                                <StaticDataRow ChartType="Line" ChartTypeCaption="Line" />
+                                <StaticDataRow ChartType="Scatter" ChartTypeCaption="Scatter" />
+                                <StaticDataRow ChartType="Bubble" ChartTypeCaption="Bubble" />
+                              </DataLayer>
+                              <EventHandler DhtmlEvent="onchange">
+                                <Action Type="Report" ID="actChartTypeSet">
+                                  <Target Type="Report" KeepScrollPosition="True" KeepShowElements="True" />
+                                  <LinkParams rdCgCommand="ChartTypeSet" rdCgCommandID="@Function.FUID~" />
+                                </Action>
+                              </EventHandler>
+                            </InputSelectList>
+                          </Column>
+                        </Row>
+                        <Row ID="rdShowBubbleSize" Condition="False">
+                          <Column>
+                            <Label ID="lblBubbleSize" Caption="Bubble Size " For="rdBubbleSize"/>
+                          </Column>
+                          <Column>
+                            <InputSelectList ID="rdBubbleSize" DefaultValue="" OptionValueColumn="ColumnID" IncludeBlank="True" OptionCaptionColumn="Caption">
+                              <DataLayer Type="Static" ID="dlBubbleSize_DataColumns">
+                              </DataLayer>
+                              <EventHandler DhtmlEvent="onchange">
+                                <Action Type="Report" ID="actBubbleSizeSet">
+                                  <Target Type="Report" KeepScrollPosition="True" KeepShowElements="True" />
+                                  <LinkParams rdCgCommand="BubbleSizeSet" rdCgCommandID="@Function.FUID~" />
+                                </Action>
+                              </EventHandler>
+                            </InputSelectList>
+                          </Column>
+                        </Row>
+                        <Row ID="rdShowTrendLine" Condition="False">
+                          <Column>
+                            <Label ID="lblTrendLind" Caption="Trend Line " For="rdTrendLine"/>
+                          </Column>
+                          <Column>
+                            <InputCheckbox ID="rdTrendLine" DefaultValue="" CheckedValue="True">
+                              <EventHandler DhtmlEvent="onclick">
+                                <Action Type="Report" ID="actTrendLineSet">
+                                  <Target Type="Report" KeepScrollPosition="True" KeepShowElements="True" />
+                                  <LinkParams rdCgCommand="TrendLineSet" rdCgCommandID="@Function.FUID~" />
+                                </Action>
+                              </EventHandler>
+                            </InputCheckbox>
+                          </Column>
+                        </Row>
+                      </Rows>
+
+              </Column>
+                  </Row>
+                </Rows>
+              </Column>
+            </Row>
+            <Row CellSpacing="0" Class="rdCgRowSpacer" >
+              <Column></Column>
+            </Row>
+          </Rows>
+
+
+        </Column>
+      </Row>
+
+      <Row ID="rowTable" >
+        <Column Class="rdCgNoPadding">
+          <InputHidden ID="rdCgId" />
+          <ChartTrendLine Color="#C00000" LineWidth="1" />
+          <Rows ID="rdTrellisChartContainer" CellSpacing="0" Width="100" WidthScale="%">
+            <Row>
+              <Column Class="rdCgNoPadding">
+                <Rows Class="rdCgPanel" CellSpacing="2" Width="100" WidthScale="%">
+                  <Row>
+                    <Column Class="rdCgNoPadding" >
+                      <Rows Class="rdCgContentHeadingRow">
+                        <Row>
+                          <Column>
+                            <Image Caption="rdTemplate/rdChartGrid/rdCgTableHeading.gif" ID="imgTable" />
+                            <Spaces Size="1"/>
+                            <Label Caption="Charts" ID="lblChartHeading" Class="rdCgContentHeading"/>
+                          </Column>
+                        </Row>
+                      </Rows>
+                    </Column>
+                  </Row>
+                  <Row>
+                    <Column>
+                      <TrellisChart ID="tcChartGrid" Class="rdCgTable">
+                        <ZeroRowsMessage ID="lblZeroRowsMessage" Caption="There is no data." FontColor="DarkRed" />
+                      </TrellisChart>
+                    </Column>
+                  </Row>
+                </Rows>
+              </Column>
+            </Row>
+            <Row CellSpacing="0" Class="rdCgRowSpacer" />
+          </Rows>
+
+          <PopupPanel ID="rdChartGridPopupZoom" Caption="Chart Zoom" PopupModal="True" Draggable="True" PopupPanelLocation="Center">
+            <IncludeFrame ID="iframePopupZoom" xHeight="500" xWidth="400" FrameBorder="False">
+              <Target Type="IncludeFrameReport" Report="" ID="targetPopupZoom" />
+              <LinkParams rdCgCommand="PopupZoom" />
+            </IncludeFrame>
+          </PopupPanel>
+
+          <PopupPanel ID="popupFilter" Caption="Filter" PopupModal="True" Draggable="True" PopupPanelLocation="50,50" ShowOnPageLoad="@Request.rdShowFilterPopup~">
+            <Rows ID="rowsFilterDone" Width="100" WidthScale="%" Height="30" HeightScale="px">
+              <Row>
+                <Column >
+                  <Label Caption="Done" ID="lblFilterDone" Class="rdCgCommand">
+                    <Action Type="Report" ID="actFilterMember">
+                      <Target Type="Report" KeepScrollPosition="True" KeepShowElements="True"/>
+                      <LinkParams rdCgCommand="SetClickedFilters" rdCgCommandID="@Function.FUID~" rdFilterColumnID="@Request.rdFilterColumnID~"/>
+                    </Action>
+                  </Label>
+                </Column>
+              </Row>
+            </Rows>
+            <DataTable ID="dtFilter" Class="rdCgFilterTable" TableBorder="0" CellSpacing="1">
+              <DataLayer Type="EmptyDataLayer" ID="dlFilter" />
+              <DataTableColumn>
+                      <Spaces Size="@Data.rdIndent~" />
+                      <InputCheckbox ID="chkFilter" CheckedValue="True" DefaultValue="@Data.rdChecked~">
+                        <EventHandler DhtmlEvent="onclick" >
+                          <Action Type="Link" ID="actFilterMember">
+                            <Target Type="Link" Link="javascript:rdCgClickedFilterValue(&quot;@Function.RowNumber~&quot;)"/>
+                          </Action>
+                        </EventHandler>
+                      </InputCheckbox>
+                      <Label ID="lblFilterValue" Caption="@Data.rdValueFormatted~"/>
+              </DataTableColumn>
+            </DataTable>
+            
+            <IncludeHtml Html="&lt;SCRIPT&gt;rdInitFilterClicks()&lt;/SCRIPT&gt;" />
+
+          </PopupPanel>
+
+        </Column>
+      </Row>
+
+    </Rows>
+    
+  </Body>
+
+</Report>
+

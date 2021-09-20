@@ -1,0 +1,79 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Report
+	ID="rdTemplate.rdMigrationTemplate"
+	SecurityReportRightID="@Constant.BookmarksAdminSecurityRightIDs~"
+	>
+  <Body>
+    <BookmarkMigration/>
+    <Rows
+			Width="100"
+			WidthScale="%"
+			>
+      <Row>
+        <Column
+					Class="ThemeAlignCenter"
+					Width="100"
+					WidthScale="%"
+					>
+          <Division
+						ID="divForRefresh"
+						>
+            <Gauge
+							AlignmentHorizontal="Center"
+							AnimationDuration="0"
+							ArcInnerRadius="65%"
+							BackgroundColor="Transparent"
+							Caption="@Data.Caption~"
+							ChartHeight="200"
+							ID="rdMigrationGauge"
+							LabelFontBold="True"
+							LabelFontSize="24"
+							LabelFormat="mps9"
+							PlotBackgroundColor="Transparent"
+							TickLabelColor="Transparent"
+							TickLabelFormat="mp"
+							Type="Arc"
+							Value="@Data.CurrItemNumber~"
+							>
+              <RefreshSeriesTimer
+								RefreshInterval="1"
+							/>
+              <GaugeRange
+								Color="LimeGreen"
+								RangeEndValue="@Data.ItemsCount~"
+							/>
+              <DataLayer
+								Type="Static"
+								>
+                <StaticDataRow
+									Caption="Processing..."
+									CurrItemNumber="0"
+									ItemsCount="0"
+								/>
+              </DataLayer>
+            </Gauge>
+            <InputHidden
+							DefaultValue="True"
+							ID="rdForWizard"
+						/>
+          </Division>
+        </Column>
+      </Row>
+    </Rows>
+    <IncludeScript
+  IncludedScript="setInterval(function() {
+    var migrationGauge = document.getElementById(&apos;rdMigrationGauge&apos;);
+    if (migrationGauge &amp;&amp; migrationGauge.getAttribute(&quot;bookmark-migration-finished&quot;) &amp;&amp; migrationGauge.getAttribute(&quot;bookmark-migration-finished&quot;).toLowerCase() == &apos;true&apos;)
+        if (window.external) {
+            try {
+                return window.external.EnableNextButton();
+            } catch (err) {}
+        }
+}, 500);"
+		/>
+  </Body>
+  <StyleSheet
+		Theme="Signal"
+	/>
+  <ideTestParams/>
+</Report>

@@ -1,0 +1,36 @@
+<AnimatedMapDataXML>
+  <MapSpec InternalID="GN.BE" ShortName="BE" LongName="Beyla" />
+  <MapSpec InternalID="GN.BF" ShortName="BF" LongName="Boffa" />
+  <MapSpec InternalID="GN.BK" ShortName="BK" LongName="Boke" />
+  <MapSpec InternalID="GN.CK" ShortName="CK" LongName="Conakry" />
+  <MapSpec InternalID="GN.CO" ShortName="CO" LongName="Coyah" />
+  <MapSpec InternalID="GN.DB" ShortName="DB" LongName="Dabola" />
+  <MapSpec InternalID="GN.DL" ShortName="DL" LongName="Dalaba" />
+  <MapSpec InternalID="GN.DI" ShortName="DI" LongName="Dinguiraye" />
+  <MapSpec InternalID="GN.DU" ShortName="DU" LongName="Dubreka" />
+  <MapSpec InternalID="GN.FA" ShortName="FA" LongName="Faranah" />
+  <MapSpec InternalID="GN.FO" ShortName="FO" LongName="Forecariah" />
+  <MapSpec InternalID="GN.FR" ShortName="FR" LongName="Fria" />
+  <MapSpec InternalID="GN.GA" ShortName="GA" LongName="Gaoual" />
+  <MapSpec InternalID="GN.GU" ShortName="GU" LongName="Gueckedou" />
+  <MapSpec InternalID="GN.KA" ShortName="KA" LongName="Kankan" />
+  <MapSpec InternalID="GN.KE" ShortName="KE" LongName="Kerouane" />
+  <MapSpec InternalID="GN.KD" ShortName="KD" LongName="Kindia" />
+  <MapSpec InternalID="GN.KS" ShortName="KS" LongName="Kissidougou" />
+  <MapSpec InternalID="GN.KB" ShortName="KB" LongName="Koubia" />
+  <MapSpec InternalID="GN.KN" ShortName="KN" LongName="Koundara" />
+  <MapSpec InternalID="GN.KO" ShortName="KO" LongName="Kouroussa" />
+  <MapSpec InternalID="GN.LA" ShortName="LA" LongName="Labe" />
+  <MapSpec InternalID="GN.LE" ShortName="LE" LongName="Lelouma" />
+  <MapSpec InternalID="GN.LO" ShortName="LO" LongName="Lola" />
+  <MapSpec InternalID="GN.MC" ShortName="MC" LongName="Macenta" />
+  <MapSpec InternalID="GN.ML" ShortName="ML" LongName="Mali" />
+  <MapSpec InternalID="GN.MM" ShortName="MM" LongName="Mamou" />
+  <MapSpec InternalID="GN.MD" ShortName="MD" LongName="Mandiana" />
+  <MapSpec InternalID="GN.NZ" ShortName="NZ" LongName="Nzerekore" />
+  <MapSpec InternalID="GN.PI" ShortName="PI" LongName="Pita" />
+  <MapSpec InternalID="GN.SI" ShortName="SI" LongName="Siguiri" />
+  <MapSpec InternalID="GN.TE" ShortName="TE" LongName="Telimele" />
+  <MapSpec InternalID="GN.TO" ShortName="TO" LongName="Tougue" />
+  <MapSpec InternalID="GN.YO" ShortName="YO" LongName="Yomou" />
+</AnimatedMapDataXML>

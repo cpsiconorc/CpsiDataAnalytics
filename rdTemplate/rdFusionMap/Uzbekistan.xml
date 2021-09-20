@@ -1,0 +1,16 @@
+<AnimatedMapDataXML>
+  <MapSpec InternalID="UZ.AN" ShortName="AN" LongName="Andijon" />
+  <MapSpec InternalID="UZ.BU" ShortName="BU" LongName="Buxoro" />
+  <MapSpec InternalID="UZ.FA" ShortName="FA" LongName="Fargona" />
+  <MapSpec InternalID="UZ.JI" ShortName="JI" LongName="Jizzax" />
+  <MapSpec InternalID="UZ.QR" ShortName="QR" LongName="Karakalpakstan" />
+  <MapSpec InternalID="UZ.QA" ShortName="QA" LongName="Kashkadarya" />
+  <MapSpec InternalID="UZ.NG" ShortName="NG" LongName="Namangan" />
+  <MapSpec InternalID="UZ.NW" ShortName="NW" LongName="Navoi" />
+  <MapSpec InternalID="UZ.SA" ShortName="SA" LongName="Samarkand" />
+  <MapSpec InternalID="UZ.SI" ShortName="SI" LongName="Sirdaryo" />
+  <MapSpec InternalID="UZ.SU" ShortName="SU" LongName="Surxondaryo" />
+  <MapSpec InternalID="UZ.TA" ShortName="TA" LongName="Tashkent" />
+  <MapSpec InternalID="UZ.TK" ShortName="TK" LongName="Tashkent City" />
+  <MapSpec InternalID="UZ.KH" ShortName="KH" LongName="Xorazm" />
+</AnimatedMapDataXML>

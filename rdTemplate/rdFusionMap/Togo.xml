@@ -1,0 +1,7 @@
+<AnimatedMapDataXML>
+  <MapSpec InternalID="TG.CE" ShortName="CE" LongName="Centre" />
+  <MapSpec InternalID="TG.KA" ShortName="KA" LongName="Kara" />
+  <MapSpec InternalID="TG.MA" ShortName="MA" LongName="Maritime" />
+  <MapSpec InternalID="TG.PL" ShortName="PL" LongName="Plateaux" />
+  <MapSpec InternalID="TG.SA" ShortName="SA" LongName="Savanes" />
+</AnimatedMapDataXML>

@@ -1,0 +1,18 @@
+<AnimatedMapDataXML>
+  <MapSpec InternalID="001" ShortName="AR" LongName="Århus" />
+  <MapSpec InternalID="002" ShortName="BO" LongName="Bornholm" />
+  <MapSpec InternalID="003" ShortName="FR" LongName="Frederiksberg" />
+  <MapSpec InternalID="004" ShortName="FE" LongName="Frederiksborg" />
+  <MapSpec InternalID="005" ShortName="FY" LongName="Fyn" />
+  <MapSpec InternalID="006" ShortName="KO" LongName="Københavns Amt" />
+  <MapSpec InternalID="007" ShortName="KB" LongName="København" />
+  <MapSpec InternalID="008" ShortName="NO" LongName="Nordjylland" />
+  <MapSpec InternalID="009" ShortName="RI" LongName="Ribe" />
+  <MapSpec InternalID="010" ShortName="RN" LongName="Ringkjøbing" />
+  <MapSpec InternalID="011" ShortName="RO" LongName="Roskilde" />
+  <MapSpec InternalID="012" ShortName="SO" LongName="Sønderjylland" />
+  <MapSpec InternalID="013" ShortName="ST" LongName="Storstrøm" />
+  <MapSpec InternalID="014" ShortName="VE" LongName="Vejle" />
+  <MapSpec InternalID="015" ShortName="VS" LongName="Vestsjælland" />
+  <MapSpec InternalID="016" ShortName="VI" LongName="Viborg" />
+</AnimatedMapDataXML>

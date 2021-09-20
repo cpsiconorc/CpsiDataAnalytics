@@ -1,0 +1,17 @@
+<AnimatedMapDataXML>
+  <MapSpec InternalID="01" ShortName="HA" LongName="Harjumaa" />
+  <MapSpec InternalID="02" ShortName="HI" LongName="Hiiumaa" />
+  <MapSpec InternalID="03" ShortName="IV" LongName="Ida-Virumaa" />
+  <MapSpec InternalID="04" ShortName="JR" LongName="Järvamaa" />
+  <MapSpec InternalID="05" ShortName="JN" LongName="Jõgevamaa" />
+  <MapSpec InternalID="07" ShortName="LN" LongName="Läänemaa" />
+  <MapSpec InternalID="08" ShortName="LV" LongName="Lääne-Virumaa" />
+  <MapSpec InternalID="11" ShortName="PR" LongName="Pärnumaa" />
+  <MapSpec InternalID="12" ShortName="PL" LongName="Põlvamaa" />
+  <MapSpec InternalID="13" ShortName="RA" LongName="Raplamaa" />
+  <MapSpec InternalID="14" ShortName="SA" LongName="Saaremaa" />
+  <MapSpec InternalID="18" ShortName="TA" LongName="Tartumaa" />
+  <MapSpec InternalID="19" ShortName="VG" LongName="Valgamaa" />
+  <MapSpec InternalID="20" ShortName="VD" LongName="Viljandimaa" />
+  <MapSpec InternalID="21" ShortName="VR" LongName="Võrumaa" />
+</AnimatedMapDataXML>

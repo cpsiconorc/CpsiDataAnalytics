@@ -1,0 +1,50 @@
+<AnimatedMapDataXML>
+  <MapSpec InternalID="DZ.AR" ShortName="AR" LongName="Adrar" />
+  <MapSpec InternalID="DZ.AD" ShortName="AD" LongName="Ain Defla" />
+  <MapSpec InternalID="DZ.AT" ShortName="AT" LongName="Ain Temouchent" />
+  <MapSpec InternalID="DZ.AL" ShortName="AL" LongName="Alger" />
+  <MapSpec InternalID="DZ.AN" ShortName="AN" LongName="Annaba" />
+  <MapSpec InternalID="DZ.BT" ShortName="BT" LongName="Batna" />
+  <MapSpec InternalID="DZ.BC" ShortName="BC" LongName="Bechar" />
+  <MapSpec InternalID="DZ.BJ" ShortName="BJ" LongName="Bejaia" />
+  <MapSpec InternalID="DZ.BS" ShortName="BS" LongName="Biskra" />
+  <MapSpec InternalID="DZ.BL" ShortName="BL" LongName="Blida" />
+  <MapSpec InternalID="DZ.BB" ShortName="BB" LongName="Bordj Bou Arreridj" />
+  <MapSpec InternalID="DZ.BU" ShortName="BU" LongName="Bouira" />
+  <MapSpec InternalID="DZ.BM" ShortName="BM" LongName="Boumerdes" />
+  <MapSpec InternalID="DZ.CH" ShortName="CH" LongName="Chlef" />
+  <MapSpec InternalID="DZ.CO" ShortName="CO" LongName="Constantine" />
+  <MapSpec InternalID="DZ.DJ" ShortName="DJ" LongName="Djelfa" />
+  <MapSpec InternalID="DZ.EB" ShortName="EB" LongName="El Bayadh" />
+  <MapSpec InternalID="DZ.EO" ShortName="EO" LongName="El Oued" />
+  <MapSpec InternalID="DZ.ET" ShortName="ET" LongName="El Tarf" />
+  <MapSpec InternalID="DZ.GR" ShortName="GR" LongName="Ghardaia" />
+  <MapSpec InternalID="DZ.GL" ShortName="GL" LongName="Guelma" />
+  <MapSpec InternalID="DZ.IL" ShortName="IL" LongName="Illizi" />
+  <MapSpec InternalID="DZ.JJ" ShortName="JJ" LongName="Jijel" />
+  <MapSpec InternalID="DZ.KH" ShortName="KH" LongName="Khenchela" />
+  <MapSpec InternalID="DZ.LG" ShortName="LG" LongName="Laghouat" />
+  <MapSpec InternalID="DZ.MC" ShortName="MC" LongName="Mascara" />
+  <MapSpec InternalID="DZ.MD" ShortName="MD" LongName="Medea" />
+  <MapSpec InternalID="DZ.ML" ShortName="ML" LongName="Mila" />
+  <MapSpec InternalID="DZ.MG" ShortName="MG" LongName="Mostaganem" />
+  <MapSpec InternalID="DZ.MS" ShortName="MS" LongName="Msila" />
+  <MapSpec InternalID="DZ.NA" ShortName="NA" LongName="Naama" />
+  <MapSpec InternalID="DZ.OR" ShortName="OR" LongName="Oran" />
+  <MapSpec InternalID="DZ.OG" ShortName="OG" LongName="Ouargla" />
+  <MapSpec InternalID="DZ.OB" ShortName="OB" LongName="Oum el-Bouaghi" />
+  <MapSpec InternalID="DZ.RE" ShortName="RE" LongName="Relizane" />
+  <MapSpec InternalID="DZ.SD" ShortName="SD" LongName="Saida" />
+  <MapSpec InternalID="DZ.SF" ShortName="SF" LongName="Setif" />
+  <MapSpec InternalID="DZ.SB" ShortName="SB" LongName="Sidi Bel Abbes" />
+  <MapSpec InternalID="DZ.SK" ShortName="SK" LongName="Skikda" />
+  <MapSpec InternalID="DZ.SA" ShortName="SA" LongName="Souk Ahras" />
+  <MapSpec InternalID="DZ.TM" ShortName="TM" LongName="Tamanghasset" />
+  <MapSpec InternalID="DZ.TB" ShortName="TB" LongName="Tebessa" />
+  <MapSpec InternalID="DZ.TR" ShortName="TR" LongName="Tiaret" />
+  <MapSpec InternalID="DZ.TN" ShortName="TN" LongName="Tindouf" />
+  <MapSpec InternalID="DZ.TP" ShortName="TP" LongName="Tipaza" />
+  <MapSpec InternalID="DZ.TS" ShortName="TS" LongName="Tissemsilt" />
+  <MapSpec InternalID="DZ.TO" ShortName="TO" LongName="Tizi Ouzou" />
+  <MapSpec InternalID="DZ.TL" ShortName="TL" LongName="Tlemcen" />
+</AnimatedMapDataXML>

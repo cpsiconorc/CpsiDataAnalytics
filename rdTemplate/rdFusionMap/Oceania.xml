@@ -1,0 +1,17 @@
+<AnimatedMapDataXML>
+  <MapSpec InternalID="001" ShortName="AU" LongName="Australia" />
+  <MapSpec InternalID="002" ShortName="FJ" LongName="Fiji" />
+  <MapSpec InternalID="003" ShortName="KI" LongName="Kiribati" />
+  <MapSpec InternalID="004" ShortName="MH" LongName="Marshall      Islands" />
+  <MapSpec InternalID="005" ShortName="FM" LongName="Micronesia" />
+  <MapSpec InternalID="006" ShortName="NR" LongName="Nauru" />
+  <MapSpec InternalID="007" ShortName="NZ" LongName="New      Zealand" />
+  <MapSpec InternalID="008" ShortName="PW" LongName="Palau" />
+  <MapSpec InternalID="009" ShortName="PG" LongName="Papua New      Guinea" />
+  <MapSpec InternalID="010" ShortName="WS" LongName="Samoa" />
+  <MapSpec InternalID="011" ShortName="SB" LongName="Solomon      Islands" />
+  <MapSpec InternalID="012" ShortName="TO" LongName="Tonga" />
+  <MapSpec InternalID="013" ShortName="TV" LongName="Tuvalu" />
+  <MapSpec InternalID="014" ShortName="VU" LongName="Vanuatu" />
+  <MapSpec InternalID="015" ShortName="NC" LongName="New Caledonia" />
+</AnimatedMapDataXML>

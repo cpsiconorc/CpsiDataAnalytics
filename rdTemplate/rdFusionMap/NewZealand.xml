@@ -1,0 +1,18 @@
+<AnimatedMapDataXML>
+  <MapSpec InternalID="E7" ShortName="AUK" LongName="Auckland" />
+  <MapSpec InternalID="E8" ShortName="BOP" LongName="Bay of Plenty" />
+  <MapSpec InternalID="E9" ShortName="CAN" LongName="Canterbury" />
+  <MapSpec InternalID="F1" ShortName="GIS" LongName="Gisborne" />
+  <MapSpec InternalID="F2" ShortName="HKB" LongName="Hawke's Bay" />
+  <MapSpec InternalID="F3" ShortName="MWT" LongName="Manawatu-Wanganui" />
+  <MapSpec InternalID="F4" ShortName="MBH" LongName="Marlborough" />
+  <MapSpec InternalID="F5" ShortName="NSN" LongName="Nelson" />
+  <MapSpec InternalID="F6" ShortName="NTL" LongName="Northland" />
+  <MapSpec InternalID="F7" ShortName="OTA" LongName="Otago" />
+  <MapSpec InternalID="F8" ShortName="STL" LongName="Southland" />
+  <MapSpec InternalID="F9" ShortName="TKI" LongName="Taranaki" />
+  <MapSpec InternalID="F10" ShortName="TAS" LongName="Tasman" />
+  <MapSpec InternalID="G1" ShortName="WKO" LongName="Waikato" />
+  <MapSpec InternalID="G2" ShortName="WGN" LongName="Wellington" />
+  <MapSpec InternalID="G3" ShortName="WTC" LongName="West Coast" />
+</AnimatedMapDataXML>

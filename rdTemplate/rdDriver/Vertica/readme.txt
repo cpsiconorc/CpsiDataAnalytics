@@ -1,0 +1,3 @@
+This directory contains the Vertica 7.2.3/8.1.1 database client drivers.
+
+If you wish to use them they must be copied into the correct directory. In order to use Vertica with Info Studio then copy Vertica.Data.dll to C:\Program Files\LogiXML IES Dev\LogiStudio\bin.  When running Info Server DotNet Vertica.Data.dll should be copied to the application root/bin directory. If using Info Server Java then vertica-jdbc-x.x.x-0.jar needs to be copied to application root/WEB-INF/lib.  The Vertica drivers are not guaranteed to be backwards compatible with older versions of the Vertica database.  If running an older version of Vertica then go to https://my.vertica.com/download/vertica/client-drivers/ and download the appropriate version.

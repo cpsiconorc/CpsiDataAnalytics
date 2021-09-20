@@ -1,0 +1,8 @@
+<AnimatedMapDataXML>
+  <MapSpec InternalID="VU.ML" ShortName="ML" LongName="Malampa" />
+  <MapSpec InternalID="VU.PM" ShortName="PM" LongName="Penama" />
+  <MapSpec InternalID="VU.SN" ShortName="SN" LongName="Sanma" />
+  <MapSpec InternalID="VU.SE" ShortName="SE" LongName="Shefa" />
+  <MapSpec InternalID="VU.TF" ShortName="TF" LongName="Tafea" />
+  <MapSpec InternalID="VU.TR" ShortName="TR" LongName="Torba" />
+</AnimatedMapDataXML>

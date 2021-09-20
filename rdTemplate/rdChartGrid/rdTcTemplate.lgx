@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report ID="TrellisChart.rdTcTemplate">
+  <Body>
+    <Division ID="rdDivTrellis" HtmlDiv="True">
+      <DataTable ID="rdDtTrellis" CellSpacing="1" ColumnHeaderClass="rdCgPositionCellYAxis">
+        <DataLayer ID="rdDlTrellis" Type="XMLFile" XMLFile="" />
+        <DataTableColumn ID="rdRowTitleColumn" Class="rdCgPositionCellXAxis" >
+          <Label ID="rdRowTitle" Caption="@Data.rdRowTitle~" />
+        </DataTableColumn>
+        <DataTableColumn ID="rdChartColumn" Header="" WidthScale="px" Class="rdCgDataCell">
+          <Image Caption="@Data.rdChartFilename_0~" />
+        </DataTableColumn>
+      </DataTable>
+    </Division>
+
+    <ChartTemplates>
+      
+      <Chart ID="TrellisBar" Type="XY" XYChartType="Bar" BorderRight="3" ChartLabelColumn="rdChartXaxisValue" ChartDataColumn="rdChartYaxisValue" ChartHeight="150" ChartWidth="200" MaxLabelLength="20" Transparency="2" BarShape="Square" BarShading="BottomLight" ChartBackgroundColor="#D1D1D1" ChartBackgroundGradientColor="#FFFFFF" GridHorizontalColor="#C0C0C0" >
+        <DataLayer ID="rdTrellisCellChart" Type="XMLFile" XMLFile="" >
+          <GroupFilter GroupColumn="rdChartXaxisValue" DataType="Text" Hierarchical="False" KeepGroupedRows="False" SortSequence="Ascending">
+            <GroupAggregateColumn IgnoreMissingAttributes="True" AggregateColumn="rdChartYaxisValue" AggregateFunction="Sum" ID="rdChartYaxisValue" DataType="Number" />
+          </GroupFilter>
+        </DataLayer>
+        <FontLabel FontAngle="90" />
+        <DataScale Format="mp" />
+      </Chart>
+      
+      <Chart ID="TrellisLine" Type="XY" XYChartType="Line" BorderRight="3" ChartLabelColumn="rdChartXaxisValue" ChartDataColumn="rdChartYaxisValue" ChartHeight="150" ChartWidth="200" ChartBackgroundColor="#D1D1D1" ChartBackgroundGradientColor="#FFFFFF" GridHorizontalColor="#C0C0C0">
+        <DataLayer ID="rdTrellisCellChart" Type="XMLFile" XMLFile="" >
+          <SortFilter SortColumn="rdChartXaxisValue" />
+        </DataLayer>
+        <FontLabel FontAngle="90" />
+        <DataScale Format="mp" />
+        <LabelScale />
+      </Chart>
+
+      <Chart ID="TrellisScatter" Type="Scatter" XYChartType="Scatter" BorderRight="3" ChartXDataColumn="rdChartXaxisValue" ChartYDataColumn="rdChartYaxisValue" ChartHeight="150" ChartWidth="200" Transparency="7" ChartSymbolFillColor="#2B8BEF" ChartSymbol="SymbolSolidSphere" ShowDataValues="False" ChartBackgroundColor="#D1D1D1" ChartBackgroundGradientColor="#FFFFFF" GridHorizontalColor="#C0C0C0">
+        <DataLayer ID="rdTrellisCellChart" Type="XMLFile" XMLFile="" >
+          <SortFilter SortColumn="rdChartXaxisValue" />
+        </DataLayer>
+        <FontLabel FontAngle="90" />
+        <DataScale Format="mp" />
+        <LabelScale />
+      </Chart>
+
+      <Chart ID="TrellisPie" Type="Pie" NotSupported="True" ChartHeight="150" ChartWidth="150" ChartDataColumn="rdChartYaxisValue" ChartLabelColumn="rdChartXaxisValue" OuterBorderColor="#7A7A7A" RoundedBorder="4" YAxisTitle="Unit Price" ShowDataValues="False" Transparency="1" LabelShading="SoftLight" ChartTexture="RoundedEdge" LabelLayout="NoLabels" >
+        <DataLayer ID="rdTrellisCellChart" Type="XMLFile" XMLFile="" >
+          <GroupFilter GroupColumn="rdChartXaxisValue" DataType="Text" Hierarchical="False" KeepGroupedRows="False" SortSequence="Ascending">
+            <GroupAggregateColumn AggregateColumn="rdChartYaxisValue" AggregateFunction="Sum" ID="rdChartYaxisValue" DataType="Number" />
+          </GroupFilter>
+        </DataLayer>
+      </Chart>
+
+    </ChartTemplates>
+    
+  </Body>
+</Report>

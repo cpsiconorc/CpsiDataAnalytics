@@ -1,0 +1,8 @@
+<AnimatedMapDataXML>
+  <MapSpec InternalID="UK.CI" ShortName="CI" LongName="Channel Islands" />
+  <MapSpec InternalID="UK.EN" ShortName="EN" LongName="England" />
+  <MapSpec InternalID="UK.IM" ShortName="IM" LongName="Isle of Man" />
+  <MapSpec InternalID="UK.NI" ShortName="NI" LongName="North Ireland" />
+  <MapSpec InternalID="UK.SC" ShortName="SC" LongName="Scotland" />
+  <MapSpec InternalID="UK.WA" ShortName="WA" LongName="Wales" />
+</AnimatedMapDataXML>

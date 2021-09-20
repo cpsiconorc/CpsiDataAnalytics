@@ -1,0 +1,29 @@
+<AnimatedMapDataXML>
+  <MapSpec InternalID="01" ShortName="DK" LongName="Ad Daqahliyah" />
+  <MapSpec InternalID="02" ShortName="BA" LongName="Al Bahr al Ahmar" />
+  <MapSpec InternalID="03" ShortName="BH" LongName="Al Buhayrah" />
+  <MapSpec InternalID="04" ShortName="FY" LongName="Al Fayyum" />
+  <MapSpec InternalID="05" ShortName="GH" LongName="Al Gharbiyah" />
+  <MapSpec InternalID="06" ShortName="IK" LongName="Al Iskandariyah" />
+  <MapSpec InternalID="07" ShortName="IS" LongName="Al Isma'iliyah" />
+  <MapSpec InternalID="08" ShortName="JZ" LongName="Al Jizah" />
+  <MapSpec InternalID="09" ShortName="MF" LongName="Al Minufiyah" />
+  <MapSpec InternalID="10" ShortName="MN" LongName="Al Minya" />
+  <MapSpec InternalID="11" ShortName="QH" LongName="Al Qahirah" />
+  <MapSpec InternalID="12" ShortName="QL" LongName="Al Qalyubiyah" />
+  <MapSpec InternalID="25" ShortName="UQ" LongName="Al Uqsur" />
+  <MapSpec InternalID="13" ShortName="WJ" LongName="Al Wadi al Jadid" />
+  <MapSpec InternalID="14" ShortName="SQ" LongName="Ash Sharqiyah" />
+  <MapSpec InternalID="15" ShortName="SW" LongName="As Suways" />
+  <MapSpec InternalID="16" ShortName="AN" LongName="Aswan" />
+  <MapSpec InternalID="17" ShortName="AT" LongName="Asyut" />
+  <MapSpec InternalID="18" ShortName="BN" LongName="Bani Suwayf" />
+  <MapSpec InternalID="19" ShortName="BS" LongName="Bur Sa'id" />
+  <MapSpec InternalID="20" ShortName="DT" LongName="Dimyat" />
+  <MapSpec InternalID="26" ShortName="JS" LongName="Janub Sina'" />
+  <MapSpec InternalID="21" ShortName="KS" LongName="Kafr ash Shaykh" />
+  <MapSpec InternalID="22" ShortName="MT" LongName="Matruh" />
+  <MapSpec InternalID="23" ShortName="QN" LongName="Qina" />
+  <MapSpec InternalID="27" ShortName="SS" LongName="Shamal Sina'" />
+  <MapSpec InternalID="24" ShortName="SJ" LongName="Suhaj" />
+</AnimatedMapDataXML>

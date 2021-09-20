@@ -1,0 +1,36 @@
+<AnimatedMapDataXML>
+  <MapSpec InternalID="01" ShortName="BDS" LongName="Badakhshan" />
+  <MapSpec InternalID="02" ShortName="BDG" LongName="Badghis" />
+  <MapSpec InternalID="03" ShortName="BGL" LongName="Baghlan" />
+  <MapSpec InternalID="30" ShortName="BAL" LongName="Balkh" />
+  <MapSpec InternalID="05" ShortName="BAM" LongName="Bamyan" />
+  <MapSpec InternalID="41" ShortName="DAY" LongName="Daykundi" />
+  <MapSpec InternalID="06" ShortName="FRA" LongName="Farah" />
+  <MapSpec InternalID="07" ShortName="FYB" LongName="Faryab" />
+  <MapSpec InternalID="08" ShortName="GHA" LongName="Ghazni" />
+  <MapSpec InternalID="09" ShortName="GHO" LongName="Ghowr" />
+  <MapSpec InternalID="10" ShortName="HEL" LongName="Helmand" />
+  <MapSpec InternalID="11" ShortName="HER" LongName="Herat" />
+  <MapSpec InternalID="31" ShortName="JOW" LongName="Jowzjan" />
+  <MapSpec InternalID="13" ShortName="KAB" LongName="Kabul" />
+  <MapSpec InternalID="23" ShortName="KAN" LongName="Kandahar" />
+  <MapSpec InternalID="14" ShortName="KAP" LongName="Kapisa" />
+  <MapSpec InternalID="37" ShortName="KHO" LongName="Khost" />
+  <MapSpec InternalID="34" ShortName="KNR" LongName="Konar" />
+  <MapSpec InternalID="24" ShortName="KDZ" LongName="Kondoz" />
+  <MapSpec InternalID="35" ShortName="LAG" LongName="Laghman" />
+  <MapSpec InternalID="17" ShortName="LOW" LongName="Lowgar" />
+  <MapSpec InternalID="18" ShortName="NAN" LongName="Nangarhar" />
+  <MapSpec InternalID="19" ShortName="NIM" LongName="Nimruz" />
+  <MapSpec InternalID="38" ShortName="NUR" LongName="Nurestan" />
+  <MapSpec InternalID="39" ShortName="ORU" LongName="Oruzgan" />
+  <MapSpec InternalID="36" ShortName="PIA" LongName="Paktia" />
+  <MapSpec InternalID="29" ShortName="PKA" LongName="Paktika" />
+  <MapSpec InternalID="42" ShortName="PAN" LongName="Panjshir" />
+  <MapSpec InternalID="40" ShortName="PAR" LongName="Parvan" />
+  <MapSpec InternalID="32" ShortName="SAM" LongName="Samangan" />
+  <MapSpec InternalID="33" ShortName="SAR" LongName="Sar-e Pol" />
+  <MapSpec InternalID="26" ShortName="TAK" LongName="Takhar" />
+  <MapSpec InternalID="27" ShortName="WAR" LongName="Wardak" />
+  <MapSpec InternalID="28" ShortName="ZAB" LongName="Zabol" />
+</AnimatedMapDataXML>

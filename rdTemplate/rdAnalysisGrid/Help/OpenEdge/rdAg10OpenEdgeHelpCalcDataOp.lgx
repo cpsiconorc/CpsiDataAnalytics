@@ -1,0 +1,18 @@
+﻿<DataLayer Type="Static">
+  <StaticDataRow Operator="-" Description="Negation"/>
+  <StaticDataRow Operator="*" Description="Multiplication"/>
+  <StaticDataRow Operator="/" Description="Division"/>
+  <StaticDataRow Operator="+" Description="Addition and string concatenation"/>
+  <StaticDataRow Operator="-" Description="Subtraction"/>
+  <StaticDataRow Operator="=" Description="Equals"/>
+  <StaticDataRow Operator="&lt;&gt;" Description="Not Equals"/>
+  <StaticDataRow Operator="&lt;" Description="Less Than"/>
+  <StaticDataRow Operator="&gt;" Description="Greater Than"/>
+  <StaticDataRow Operator="&lt;=" Description="Less Than or Equal To"/>
+  <StaticDataRow Operator="&gt;=" Description="Greater Than or Equal To"/>
+  <StaticDataRow Operator="NOT" Description="Logical Not"/>
+  <StaticDataRow Operator="AND" Description="Logical And"/>
+  <StaticDataRow Operator="OR" Description="Logical Or"/>
+  <StaticDataRow Operator="( and )" Description="Parenthesis to manage precedence."/>
+  <StaticDataRow Operator="IS NULL" Description="For testing of null values."/>
+</DataLayer>

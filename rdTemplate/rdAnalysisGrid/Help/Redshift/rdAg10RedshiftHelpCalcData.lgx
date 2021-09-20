@@ -1,0 +1,78 @@
+﻿<DataLayer Type="Static">
+  <StaticDataRow Name="abs" Description="Returns the absolute value of a number." Syntax="abs(number)" Notes="The absolute value of -5 is 5."/>
+  <StaticDataRow Name="case" Description="Returns one value or another, depending on if the expression evaluates to True or False." Syntax="case variable when value then returnvalue else othervalue end" Notes="variable has a values that will be compared.
+value is something that may be matched in the variable.
+returnvalue is returned when the variable and value match.
+othervalue is returned when there are no matches.
+
+For example,  
+case [Color]
+  when &apos;pink&apos; then &apos;red&apos;
+  when &apos;amber&apos; then &apos;yellow&apos;
+  else &apos;gray&apos;
+  end" />
+  <StaticDataRow Name="current_date" Description="Returns the current date." Syntax="current_date" Notes=""/>
+  <StaticDataRow Name="current_timestamp" Description="Returns the current tune." Syntax="current_timestamp" Notes=""/>
+  <StaticDataRow Name="DateAdd" Description="PostgreSQL does not include a dateadd function.  Instead just use a standard operator and define the interval." Syntax="date + interval &apos;4 hours&apos;" Notes="Interval may be:
+year
+month
+day
+hour
+minute "/>
+  <StaticDataRow Name="DateDiff" Description="PostgreSQL does not include a datediff function.  Instead just use a standard operator and define the date part to work with." Syntax="date_part(&apos;day&apos;, date - date)" Notes="Interval may be:
+year
+month
+day
+hour
+minute "/>
+  <StaticDataRow Name="date_part" Description="Returns part of a date." Syntax="date_part(interval, date)" Notes="Interval may be:
+year
+month
+day
+hour
+minute "/>
+  <StaticDataRow Name="DateValue" Description="Returns a date from a date string.  The function can convert dates from different formats." Syntax="date &apos;2001-09-28&apos;" Notes="date_string is a string value which represents a date or date/time."/>
+  <StaticDataRow Name="Day" Description="Returns the day of the month.  Possible return values are from 1-31." Syntax="extract(day from date)" Notes=""/>
+  <StaticDataRow Name="FormatCurrency" Description="Format a number value into currency." Syntax="to_char(number,'L9G999G999D99')" Notes=""/>
+  <StaticDataRow Name="FormatDate" Description="Formats a date." Syntax="to_date(current_timestamp, 'YYYY-MM-DD')" Notes=""/>
+  <StaticDataRow Name="FormatDateTime" Description="Formats a date with time." Syntax="to_timestamp(current_timestamp, 'YYYY-MM-DD, HH12:MI:SS')" Notes=""/>
+  <StaticDataRow Name="FormatNumber" Description="Formats a number." Syntax="to_char(number,'999999D9999')" Notes=""/>
+  <StaticDataRow Name="FormatPercent" Description="Formats a number as a percentage." Syntax="to_char(number,'99D9') || '%'" Notes=""/>
+  <StaticDataRow Name="Hour" Description="Returns the hour of the day.  Possible return values are 0-23." Syntax="extract(hour from date)" Notes=""/>
+  <StaticDataRow Name="Case" Description="Returns one value or another, depending on if the expression evaluates to True or False." Syntax="case when Expression then True else False end" Notes="Expression is a formula that returns True or False.  
+For example, this would return &quot;Blue&quot;, because 1 does not equal 2.  
+case when 1=2 then &quot;Red&quot; else &quot;Blue&quot; end"/>
+  <StaticDataRow Name="InString" Description="Returns the character location where one string is found within another string." Syntax="position(stringToFind in stringToSearch)" Notes="
+Returns the index value if the string is found, else returns 0."/>
+  <StaticDataRow Name="Int" Description="Returns the integer portion of a number, removing any decimal places." Syntax="floor(floatvalue)" Notes="
+ex. floor(150.05) = 150.00
+	floor(150.99) = 150.00"/>
+  <StaticDataRow Name="Lower" Description="Converts all characters to lower case." Syntax="lower(text)" Notes=""/>
+  <StaticDataRow Name="Left" Description="Returns the &quot;length&quot; number of characters from the left side of the input text." Syntax="substring(character_expression,1,length)" Notes="PostgreSQL server version 9.1 and later includes a left function."/>
+  <StaticDataRow Name="Length" Description="Returns the number of characters in the text." Syntax="length(text)" Notes=""/>
+  <StaticDataRow Name="LTrim" Description="Removes the characters from the left side of the text." Syntax="ltrim(text)" Notes=""/>
+  <StaticDataRow Name="Mid" Description="Returns characters from the middle of the text." Syntax="substring(text [from start] [for length])" Notes="&quot;start&quot; is the first character to be returned.  The first character is at position 1.
+
+&quot;length&quot; is the number of characters to be returned."/>
+  <StaticDataRow Name="Minute" Description="Returns the minute of the hour.  Possible return values are 0-59." Syntax="extract(minute from date)" Notes=""/>
+  <StaticDataRow Name="Month" Description="Returns the month of the year.  Possible return values are 1-12." Syntax="extract(month from date)" Notes=""/>
+  <StaticDataRow Name="MonthName" Description="Returns the name of the month." Syntax="to_char(date,'Month')" Notes="'Month' returns mixed case name.  'MONTH' returns name in upper case. 'month' returns name in lower case."/>
+  <StaticDataRow Name="Power" Description="Exponentiation: Power( m, n ). Function returns m raised to the nth power." Syntax="Power(m,n)" Notes=""/>
+  <StaticDataRow Name="Replace" Description="Searches textSearch for textFind, replacing it with the textReplaceWith value." Syntax="replace(string1,string_to_replace,[replacement_string])" />
+  <StaticDataRow Name="Rand" Description="Returns a random number between 0 and 1." Syntax="random()" Notes="Seed is an integer expression (tinyint, smallint, or int) that gives the seed value. This parameter is Optional."/>
+  <StaticDataRow Name="Round" Description="Returns a number rounded to a specified number of decimal places." Syntax="round(number,length )" Notes="
+ex. round(33.4) = 33
+	round(150.755, 2) = 150.76"/>
+  <StaticDataRow Name="RTrim" Description="Removes any space characters from the right side of the text." Syntax="rtrim(text)" Notes=""/>
+  <StaticDataRow Name="Second" Description="Returns the second of the minute.  Possible values are 0-59." Syntax="extract(second from date)" Notes=""/>
+  <StaticDataRow Name="Sign" Description="Returns -1 if the number is negative.  Returns 1 if the number is positive.  Returns 0 if the number is 0." Syntax="sign(number)" Notes=""/>
+  <StaticDataRow Name="Space" Description="Returns text consisting of the number of spaces." Syntax="rpad(' ',number)" Notes=""/>
+  <StaticDataRow Name="Square" Description="Returns the square of a number." Syntax="power(number, 2)" Notes=""/>
+  <StaticDataRow Name="String" Description="Returns text consisting of the character duplicated the number of times." Syntax="rpad(text,count,text)" Notes=""/>
+  <StaticDataRow Name="TimeValue" Description="Returns a time value from a time string.  The function can convert dates from many different formats." Syntax="to_timestamp(text, text)" Notes="e.x. to_timestamp('05 Dec 2000', 'DD Mon YYYY')"/>
+  <StaticDataRow Name="Trim" Description="Removes space characters from both the left and rights sides of the text." Syntax="ltrim(rtrim(text))" Notes=""/>
+  <StaticDataRow Name="Upper" Description="Converts all characters to upper case." Syntax="upper(text)" Notes=""/>
+  <StaticDataRow Name="Weekday" Description="Returns the number of the day of the week.  Possible return values are 1-7." Syntax="extract(dow from date)" Notes=""/>
+  <StaticDataRow Name="WeekdayName" Description="Returns the name of the day." Syntax="to_char(date,'Day')" Notes="'Day' returns the name in mixed case. 'DAY' returns the name in all uppercase.  'day' returns the day in all lowercase."/>
+  <StaticDataRow Name="Year" Description="Returns the number of the year of the specified date." Syntax="extract(year from date)" Notes=""/>
+</DataLayer>

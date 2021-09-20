@@ -1,0 +1,21 @@
+<AnimatedMapDataXML>
+  <MapSpec InternalID="01" ShortName="AR" LongName="Artigas" />
+  <MapSpec InternalID="02" ShortName="CA" LongName="Canelones" />
+  <MapSpec InternalID="03" ShortName="CL" LongName="Cerro Largo" />
+  <MapSpec InternalID="04" ShortName="CO" LongName="Colonia" />
+  <MapSpec InternalID="05" ShortName="DU" LongName="Durazno" />
+  <MapSpec InternalID="06" ShortName="FS" LongName="Flores" />
+  <MapSpec InternalID="07" ShortName="FD" LongName="Florida" />
+  <MapSpec InternalID="08" ShortName="LA" LongName="Lavalleja" />
+  <MapSpec InternalID="09" ShortName="MA" LongName="Maldonado" />
+  <MapSpec InternalID="10" ShortName="MO" LongName="Montevideo" />
+  <MapSpec InternalID="11" ShortName="PA" LongName="Paysandú" />
+  <MapSpec InternalID="12" ShortName="RN" LongName="Rio Negro" />
+  <MapSpec InternalID="13" ShortName="RV" LongName="Rivera" />
+  <MapSpec InternalID="14" ShortName="RO" LongName="Rocha" />
+  <MapSpec InternalID="15" ShortName="SA" LongName="Salto" />
+  <MapSpec InternalID="16" ShortName="SJ" LongName="San Jose" />
+  <MapSpec InternalID="17" ShortName="SO" LongName="Soriano" />
+  <MapSpec InternalID="18" ShortName="TA" LongName="Tacuarembó" />
+  <MapSpec InternalID="19" ShortName="TT" LongName="Treinta y Tres" />
+</AnimatedMapDataXML>

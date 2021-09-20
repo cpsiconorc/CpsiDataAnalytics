@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report ID="rdAfPickDistinct" >
+  <StyleSheet Theme="Signal"/>
+  <Body >
+	  
+	<AnalysisFilterDistinctValues />
+		   
+    <DataTable ID="dtPickList" CellSpacing="1" Width="230" Layout="Fixed" >
+		<Note Note="For picking a single value.  Otherwise this gets removed." />
+		<DataLayer ID="rdAfPickDistinct">
+      <CompareFilter CompareType="&lt;&gt;" DataColumn="@Request.rdAfDataColumn~" DataType="Text" ID="comp1" />
+      <GroupFilter ID="rdAfPickDistinctGroup" GroupColumn="@Request.rdAfDataColumn~" KeepGroupedRows="False" DataType="Text" />
+      <FormattedColumn ID="@Request.rdAfDataColumn~" Format="@Request.rdAfColumnFormat~" DataColumn="@Request.rdAfDataColumn~" IncludeCondition="'@Request.rdAfColumnFormat~'!=''" />
+    </DataLayer>
+		<DataTableColumn>
+			<Label Caption="@Request.rdAfDataColumn~" ID="lblFilter" Format="@Request.rdAfColumnFormat~">
+			  <Action Type="Javascript" ID="actionUpdateFilterValue" Javascript="window.parent.rdAfSetPickedFilterValueByRow(&quot;@Request.rdAnalysisFilterID~&quot;,&quot;@Function.RowNumber~&quot;);window.parent.ShowElement(this.id,'popupPickDistinct_@Request.rdAnalysisFilterID~','Hide')"/>
+			</Label>
+      </DataTableColumn>
+    </DataTable>
+
+	<InputCheckboxList ID="lstFilter" CheckboxListDropdown="False" DefaultValue="@Request.rdAfValues~" OptionCaptionColumn="Caption" OptionValueColumn="Value" MultiSelect="True" CheckAllCaption="(All)">
+		<Note Note="For picking multiple values.  Otherwise this gets removed." />
+		<InputTextDelimiter Delimiter="," EscapeCharacter="\" Qualifier="&quot;" />
+		<DataLayer ID="rdAfPickDistinct" >
+			<CompareFilter CompareType="&lt;&gt;" DataColumn="@Request.rdAfDataColumn~" DataType="Text" ID="comp1"	/>
+			<GroupFilter ID="rdAfPickDistinctGroup" GroupColumn="@Request.rdAfDataColumn~" KeepGroupedRows="False" DataType="Text" />
+			<FormattedColumn ID="Value" Format="@Request.rdAfColumnFormat~" DataColumn="@Request.rdAfDataColumn~" IncludeCondition="'@Request.rdAfColumnFormat~'!=''&amp;&amp;'@Request.rdAfColumnDataType~'.indexOf('Date')==0" />
+			<CalculatedColumn ID="Value" Formula="&quot;@Data.@Request.rdAfDataColumn~~&quot;" IncludeCondition="'@Request.rdAfColumnFormat~'==''||'@Request.rdAfColumnDataType~'.indexOf('Date')!=0" />
+			<FormattedColumn ID="Caption" Format="@Request.rdAfColumnFormat~" DataColumn="@Request.rdAfDataColumn~" IncludeCondition="'@Request.rdAfColumnFormat~'!=''" />
+			<CalculatedColumn ID="Caption" Formula="'@Data!Js.@Request.rdAfDataColumn~~'" IncludeCondition="'@Request.rdAfColumnFormat~'==''" />
+			<CompareFilter DataColumn="Caption" CompareType="LengthGreaterThan" CompareValue="0" />
+		</DataLayer>
+		<EventHandler DhtmlEvent="onclick">
+			<Action Type="Javascript" Javascript="window.parent.rdAfSetPickedFilterValues(&quot;@Request.rdAnalysisFilterID~&quot;,rdGetSelectedValuesFromCheckboxList('lstFilter', true))" />
+		</EventHandler>
+	</InputCheckboxList>
+	  
+  </Body>
+</Report>

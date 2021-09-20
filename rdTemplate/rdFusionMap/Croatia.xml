@@ -1,0 +1,23 @@
+<AnimatedMapDataXML>
+  <MapSpec InternalID="01" ShortName="BB" LongName="Bjelovarsko-Bilogorska" />
+  <MapSpec InternalID="02" ShortName="SP" LongName="Brodsko-Posavska" />
+  <MapSpec InternalID="03" ShortName="DN" LongName="Dubrovačko-Neretvanska" />
+  <MapSpec InternalID="04" ShortName="IS" LongName="Istarska" />
+  <MapSpec InternalID="05" ShortName="KA" LongName="Karlovačka" />
+  <MapSpec InternalID="06" ShortName="KK" LongName="Koprivničko-Križevačka" />
+  <MapSpec InternalID="07" ShortName="KZ" LongName="Krapinsko-Zagorska" />
+  <MapSpec InternalID="08" ShortName="LS" LongName="Ličko-Senjska" />
+  <MapSpec InternalID="09" ShortName="ME" LongName="Međimurska" />
+  <MapSpec InternalID="10" ShortName="OB" LongName="Osječko-Baranjska" />
+  <MapSpec InternalID="11" ShortName="PS" LongName="Požeško-Slavonska" />
+  <MapSpec InternalID="12" ShortName="PG" LongName="Primorsko-Goranska" />
+  <MapSpec InternalID="13" ShortName="SB" LongName="Šibensko-Kninska" />
+  <MapSpec InternalID="14" ShortName="SM" LongName="Sisačko-Moslavačka" />
+  <MapSpec InternalID="15" ShortName="SD" LongName="Splitsko-Dalmatinska" />
+  <MapSpec InternalID="16" ShortName="VA" LongName="Varaždinska" />
+  <MapSpec InternalID="17" ShortName="VP" LongName="Virovitičko-Podravska" />
+  <MapSpec InternalID="18" ShortName="VS" LongName="Vukovarsko-Srijemska" />
+  <MapSpec InternalID="19" ShortName="ZD" LongName="Zadarska" />
+  <MapSpec InternalID="20" ShortName="ZG" LongName="Zagrebačka" />
+  <MapSpec InternalID="21" ShortName="GZ" LongName="Grad Zagreb" />
+</AnimatedMapDataXML>

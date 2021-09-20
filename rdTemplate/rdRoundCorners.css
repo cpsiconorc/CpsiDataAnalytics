@@ -1,0 +1,270 @@
+
+table, 
+div,
+input[type='text'],
+input[type='password'],
+textarea,
+select,
+.rd-checkboxlist-dropdown,
+.ThemeLinkButton,
+.ThemeLinkButtonSmall,
+.yui-nav A:link {	
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+}
+
+/* Datatables */
+
+.rdThemeDataTable th:first-child{
+    -moz-border-radius-topleft: 4px;    
+    -webkit-border-top-left-radius: 4px; 
+	border-top-left-radius: 4px;
+}
+.rdThemeDataTable th:last-child{
+    -moz-border-radius-topright: 4px;    
+    -webkit-border-top-right-radius: 4px;    
+	border-top-right-radius: 4px;
+}
+
+.rdThemeDataTable tr:last-child td:first-child{
+    -moz-border-radius-bottomleft: 4px;    
+    -webkit-border-bottom-left-radius: 4px;    
+	border-bottom-left-radius: 4px;
+}
+.rdThemeDataTable tr:last-child td:last-child{
+    -moz-border-radius-bottomright: 4px;    
+    -webkit-border-bottom-right-radius: 4px;
+	border-bottom-right-radius: 4px;
+}
+
+.rdThemeDataTableWithCaption  {
+	-webkit-border-top-left-radius: 0px;
+	-webkit-border-top-right-radius: 0px;
+	-moz-border-radius-topleft: 0px;
+	-moz-border-radius-topright: 0px;
+	border-top-left-radius: 0px;
+	border-top-right-radius: 0px;
+}
+
+.rdThemeDataTableWithCaption th:first-child{
+    -moz-border-radius-topleft: 0px;    
+    -webkit-border-top-left-radius: 0px;
+	border-top-left-radius: 0px;
+}
+.rdThemeDataTableWithCaption th:last-child{
+    -moz-border-radius-topright: 0px;    
+    -webkit-border-top-right-radius: 0px;
+	border-top-right-radius: 0px;
+}
+
+.rdThemeDataTableWithCaption Caption {
+	-webkit-border-top-left-radius: 4px;
+	-webkit-border-top-right-radius: 4px;
+	-webkit-border-bottom-left-radius: 0px;
+	-webkit-border-bottom-right-radius: 0px;
+	-moz-border-radius-topleft: 4px;
+	-moz-border-radius-topright: 4px;
+	-moz-border-radius-bottomleft: 0px;
+	-moz-border-radius-bottomright: 0px;
+	border-top-left-radius: 4px;
+	border-top-right-radius: 4px;
+	border-bottom-left-radius: 0px;
+	border-bottom-right-radius: 0px;
+}
+
+.rdThemeDataTableMainHeader {
+	-webkit-border-bottom-left-radius: 0px;
+	-webkit-border-bottom-right-radius: 0px;
+	-moz-border-radius-bottomleft: 0px;
+	-moz-border-radius-bottomright: 0px;
+	border-bottom-left-radius: 0px;
+	border-bottom-right-radius: 0px;
+}
+
+/* Analysis/OLAP Grid */
+[id=otOlapGrid] thead tr, [id=rdDtTrellis] thead tr {
+	background-color: transparent;
+}
+[id=otOlapGrid] thead tr:first-child th:first-child, [id=rdDtTrellis] thead tr:first-child th:first-child{ 
+	-moz-border-radius-topleft: 4px;    
+    -webkit-border-top-left-radius: 4px; 
+	border-top-left-radius: 4px;
+}
+[id=otOlapGrid] thead tr:first-child th:last-child, [id=rdDtTrellis] thead tr:first-child th:last-child{
+	-moz-border-radius-topright: 4px;    
+    -webkit-border-top-right-radius: 4px; 
+	border-top-right-radius: 4px;	
+}
+[id=otOlapGrid] tr:last-child td:first-child, [id=rdDtTrellis] tr:last-child td:first-child{
+	-moz-border-radius-bottomleft: 4px;    
+    -webkit-border-bottom-left-radius: 4px; 
+	border-bottom-left-radius: 4px;
+}
+[id=otOlapGrid] tr:last-child td:last-child, [id=rdDtTrellis] tr:last-child td:last-child{
+	-moz-border-radius-bottomright: 4px;    
+    -webkit-border-bottom-right-radius: 4px; 
+	border-bottom-right-radius: 4px;	
+}
+
+.rdOgContentHeading, .rdDgContentHeading, .rdCgContentHeading
+{
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px 4px 4px 4px;
+}
+
+.rdAgUnselectedTab, .rdOgUnselectedTab
+{
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px 4px 4px 4px;
+}
+
+.rdAgSelectedTab, .rdOgSelectedTab
+{
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px 4px 4px 4px;
+}
+
+.rdAgCommand, .rdOgCommand, .rdCgCommand 
+{
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px 4px 4px 4px;
+}
+
+.rdAgCaptionRow, .rdOgCaptionRow, .rdAcCaptionRow, .rdDgCaptionRow, .rdCgCaptionRow {	
+	background-image: none;	
+}
+
+.rdAgCaptionRow TD, .rdOgCaptionRow TD, .rdAcCaptionRow TD, .rdDgCaptionRow TD, .rdCgCaptionRow TD {	
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px 4px 4px 4px;
+}
+
+TD.rdDgPanel, TD.rdCgPanel  {
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px 4px 4px 4px;
+}
+
+.rdDgSelected, .rdCgSelected
+{
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px 4px 4px 4px;
+}
+
+/* Dashboard */
+
+.rdDashboardCommand
+{
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px 4px 4px 4px;
+}
+.rdDashboardDropZoneActive
+{
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px 4px 4px 4px;
+}
+
+/* Popup Panel */
+
+.rdPopupPanelCommand {
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px 4px 4px 4px;
+}
+
+/* Tabs */
+
+.yui-navset-top .yui-nav A:link{         
+    -webkit-border-bottom-left-radius: 0px;
+	-webkit-border-bottom-right-radius: 0px;
+	-moz-border-radius-bottomleft: 0px;
+	-moz-border-radius-bottomright: 0px;
+	border-bottom-left-radius: 0px;
+	border-bottom-right-radius: 0px;
+}
+
+.yui-navset-left .yui-nav A:link {         
+    -webkit-border-top-right-radius: 0px;
+	-webkit-border-bottom-right-radius: 0px;
+	-moz-border-radius-topright: 0px;
+	-moz-border-radius-bottomright: 0px;
+	border-top-right-radius: 0px;
+	border-bottom-right-radius: 0px;
+}
+
+.yui-navset-right .yui-nav A:link {         
+    -webkit-border-top-left-radius: 0px;
+	-webkit-border-bottom-left-radius: 0px;
+	-moz-border-radius-topleft: 0px;
+	-moz-border-radius-bottomleft: 0px;
+	border-top-left-radius: 0px;
+	border-bottom-left-radius: 0px;
+}
+
+.yui-navset-bottom .yui-nav A:link {         
+    -webkit-border-top-left-radius: 0px;
+	-webkit-border-top-right-radius: 0px;
+	-moz-border-radius-topleft: 0px;
+	-moz-border-radius-topright: 0px;
+	border-top-left-radius: 0px;
+	border-top-right-radius: 0px;
+}
+
+.yui-navset-top .yui-content {
+	-webkit-border-top-left-radius: 0px;
+	-moz-border-radius-topleft: 0px;
+	border-top-left-radius: 0px;
+}
+
+.yui-navset-left .yui-content {
+	-webkit-border-top-left-radius: 0px;
+	-moz-border-radius-topleft: 0px;
+	border-top-left-radius: 0px;
+}
+
+.yui-navset-right .yui-content {
+	-webkit-border-top-right-radius: 0px;
+	-moz-border-radius-topright: 0px;
+	border-top-right-radius: 0px;
+}
+
+.yui-navset-bottom .yui-content {
+	-webkit-border-bottom-left-radius: 0px;
+	-moz-border-radius-bottomleft: 0px;
+	border-bottom-left-radius: 0px;
+}
+
+/*Resizer*/
+.yui3-resize-handle-inner-l, 
+.yui3-resize-handle-inner-bl, 
+.yui3-resize-handle-inner-b, 
+.yui3-resize-handle-inner-br, 
+.yui3-resize-handle-inner-r { 
+	-webkit-border-radius: 0px;
+	-moz-border-radius: 0px;
+	border-radius: 0px 0px 0px 0px;
+}
+
+/*Paging*/
+.rdThemePagingCurrent,
+img.rdThemePaging,
+img:hover.rdThemePaging {
+	-webkit-border-radius: 4px;
+     -moz-border-radius: 4px;
+          border-radius: 4px;
+}
+
+.highcharts-container{
+	-webkit-border-radius: 0;
+	-moz-border-radius: 0;
+	border-radius: 0;
+}

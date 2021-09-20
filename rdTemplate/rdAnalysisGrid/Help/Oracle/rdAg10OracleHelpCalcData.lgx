@@ -1,0 +1,61 @@
+﻿<DataLayer Type="Static">
+  <StaticDataRow Name="Abs" Description="Returns the absolute value of a number." Syntax="Abs(number)" Notes="The absolute value of -5 is 5."/>
+  <StaticDataRow Name="Date" Description="Returns the current date." Syntax="sysdate" Notes="For example, to get the number days since a date: Round(sysdate - datecolumn)"/>
+  <StaticDataRow Name="DateAdd" Description="Adds or subtracts some interval of time from a date or time." Syntax="date + interval" Notes="
+Interval:
+Seconds - date + (number of days/86400)
+Minutes - date + (number of days/1440)
+Hours - date + (number of days/24)
+Days - date + number of days
+Months - ADD_MONTHS(date, number of months)
+Years - ADD_MONTHS(date, number of months * 12) "/>
+  <StaticDataRow Name="DateDiff" Description="Computes the difference between two dates." Syntax="date1-date2 " Notes="Number of days and/or fraction of a day." />
+
+  <StaticDataRow Name="DatePart" Description="Returns part of a date." Syntax="To_Number(To_Char(date,'dd')) " Notes="Part in quotes is YYYY, MM, DD, HH24, MI, SS.
+A simple example would be 'To_Number(To_Char(sysdate, 'YYYY'))'" />
+
+  <StaticDataRow Name="DateValue" Description="Returns a date from a date string.  The function can convert dates from many different formats." Syntax="To_Date(TextDate, format)" Notes=""/>
+  <StaticDataRow Name="Day" Description="Returns the day of the month.  Possible return values are from 1-31." Syntax="To_Number(To_Char(date,'dd'))" Notes=""/>
+  <StaticDataRow Name="FormatCurrency" Description="Format a number value into currency." Syntax="To_Char(NumericValue,'$9,999.00')" Notes="More Info: http://docs.oracle.com/cd/B19306_01/server.102/b14200/sql_elements004.htm#i34570" />
+  <StaticDataRow Name="FormatDate" Description="Formats a date." Syntax="To_Char(date,'MM/DD/YYYY')" Notes="More Info: http://docs.oracle.com/cd/B19306_01/server.102/b14200/sql_elements004.htm#i34570" />
+  <StaticDataRow Name="FormatDateTime" Description="Formats a date with time." Syntax="To_Char(date,'MM/DD/YYYY HH24:MI:SS')" Notes="More Info: http://docs.oracle.com/cd/B19306_01/server.102/b14200/sql_elements004.htm#i34570" />
+  <StaticDataRow Name="FormatNumber" Description="Formats a number." Syntax="To_Char(NumericValue,'9,999.00')" Notes="More Info: http://docs.oracle.com/cd/B19306_01/server.102/b14200/sql_elements004.htm#i34570"/>
+  <StaticDataRow Name="FormatPercent" Description="Formats a number as a percentage." Syntax="Concat(To_Char( NumericValue,'999G999G999G999G990D00'),'%')" Notes=""/>
+  <StaticDataRow Name="Hour" Description="Returns the hour of the day.  Possible return values are 0-23." Syntax="To_Number(To_Char(date,'HH'))" Notes=""/>
+  <StaticDataRow Name="Case" Description="Returns one value or another, depending on if the expression evaluates to True or False." Syntax="Case When Expression Then True Else False End" Notes="Expression is a formula that returns True or False.  
+For example, this would return &quot;Blue&quot;, because 1 does not equal 2.  
+Case When 1=2 Then &quot;Red&quot; Else &quot;Blue&quot; End"/>
+  <StaticDataRow Name="InString" Description="Returns the character location where one string is found within another string." Syntax="InStr(string1,string2[,start_position[,nth_appearance]])" />
+  <StaticDataRow Name="Int" Description="Returns the integer portion of a number, removing any decimal places." Syntax="Round(Floatvalue,0)" Notes=""/>
+  <StaticDataRow Name="Lower" Description="Converts all characters to lower case." Syntax="Lower(text)" Notes=""/>
+  <StaticDataRow Name="Left" Description="Returns the &quot;length&quot; number of characters from the left side of the input text." Syntax="Substr(Character_expression, 1, integer_expression)" Notes="A simple example would be:
+Substr(text, 1, 4)"/>
+  <StaticDataRow Name="Len" Description="Returns the number of characters in the text." Syntax="Length(text)" Notes=""/>
+  <StaticDataRow Name="LTrim" Description="Removes the space characters from the left side of the text." Syntax="LTrim(text)" Notes=""/>
+  <StaticDataRow Name="Mid" Description="Returns characters from the middle of the text." Syntax="Substr(text,start,length)" Notes="&quot;start&quot; is the first character to be returned.  The first character is at position 1.
+
+&quot;length&quot; is the number of characters to be returned."/>
+  <StaticDataRow Name="Minute" Description="Returns the minute of the hour.  Possible return values are 0-59." Syntax="To_Number(To_Char( date,'MI'))" Notes=""/>
+  <StaticDataRow Name="Month" Description="Returns the month of the year.  Possible return values are 1-12." Syntax="To_Number(To_Char(date,'MM'))" Notes=""/>
+  <StaticDataRow Name="MonthName" Description="Returns the name of the month." Syntax="To_Char( date,'Month')" Notes=""/>
+  <StaticDataRow Name="Now" Description="Returns the current date and time." Syntax="Sysdate" Notes=""/>
+  <StaticDataRow Name="Replace" Description="Searches textSearch for textFind, replacing it with the textReplaceWith value." Syntax="Replace(string1,string_to_replace,[replacement_string])" />
+
+  <StaticDataRow Name="Right" Description="Returns the &quot;length&quot; number of characters from the right side of the input text." Syntax="Substr(Character_expression,-4, integer_expression)" Notes="A simple example would be:
+Substr(text, -1, 4)"/>
+  <StaticDataRow Name="Rand" Description="Returns a random number between 0 and 1." Syntax="Round(DBMS_RANDOM.VALUE[(low,high)], Precision)" Notes="Parameters Low and High are optional."/>
+  <StaticDataRow Name="Round" Description="Returns a number rounded to a specified number of decimal places." Syntax="Round(numeric_expression,length)" Notes=""/>
+  <StaticDataRow Name="RTrim" Description="Removes any space characters from the right side of the text." Syntax="RTrim(text)" Notes=""/>
+  <StaticDataRow Name="Second" Description="Returns the second of the minute.  Possible values are 0-59." Syntax="To_Number(To_Char(date,'SS'))" Notes=""/>
+  <StaticDataRow Name="Sign" Description="Returns -1 if the number is negative.  Returns 1 if the number is positive.  Returns 0 if the number is 0." Syntax="Sign(number)" Notes=""/>
+  <StaticDataRow Name="Space" Description="Returns text consisting of the number of spaces." Syntax="Lpad(' ', integer_expression [,PadChar])" Notes=""/>
+  <StaticDataRow Name="Square" Description="Returns the square root of a number." Syntax="Power(NumberValue,2)" Notes=""/>
+  <StaticDataRow Name="String" Description="Returns text consisting of the character duplicated the number of times." Syntax="Rpad(CharacterValue,length,CharacterValue)" Notes="
+rpad('str',9,'str') returns strstrstr"/>
+  <StaticDataRow Name="TimeValue" Description="Returns a time value from a time string.  The function can convert dates from many different formats." Syntax="To_Char(date,'hh24:mi:ss')" Notes=""/>
+  <StaticDataRow Name="Trim" Description="Removes space characters from both the left and rights sides of the text." Syntax="Trim(text)" Notes=""/>
+  <StaticDataRow Name="Upper" Description="Converts all characters to upper case." Syntax="Upper(text)" Notes=""/>
+  <StaticDataRow Name="Weekday" Description="Returns the number of the day of the week.  Possible return values are 1-7." Syntax="To_Number(To_Char(date,'W'))" Notes=""/>
+  <StaticDataRow Name="WeekdayName" Description="Returns the name of the day corresponding to the weekday number." Syntax="To_Char(date,'DAY')" Notes=""/>
+  <StaticDataRow Name="Year" Description="Returns the number of the year of the specified date." Syntax="To_Number(To_Char(date,'YYYY'))" Notes=""/>
+</DataLayer>

@@ -1,0 +1,104 @@
+﻿<EmailDeliveryTemplate>
+	<Action Type="ShowElement" ElementID="popupEmail" />
+	<PopupPanel ID="rdPopupEmail_rdActionID" Caption="Email" Draggable="True" PopupModal="True">
+		<Rows>
+			<Row ID="rowFrom">
+				<Column>
+					<Label Caption="From " ID="lblFrom" />
+				</Column>
+				<Column ColSpan="2">
+					<InputText ID="rdFrom_rdActionID" InputSize="50" Tooltip="Enter email addresses.">
+						<Validation Type="Required" ErrorMsg="Enter the Subject." />
+					</InputText>
+				</Column>
+			</Row>
+			<Row ID="rowTo">
+				<Column>
+					<Label Caption="To " ID="lblTo" />
+				</Column>
+				<Column>
+					<InputTextArea InputColumns="50" InputRows="4" ID="rdTo_rdActionID" Tooltip="Enter email addresses.">
+						<Validation Type="Required" ErrorMsg="Enter the Subject." />
+					</InputTextArea>
+				</Column>
+				<Column Width="80" WidthScale="px">
+					<Label Caption="List" ID="lblList">
+						<Action Type="Report">
+							<Target Type="Report" />
+						</Action>
+					</Label>
+					<LineBreak LineCount="2" />
+					<Label ID="lblAddCc_rdActionID" Caption="Add Cc">
+						<Action Type="ShowElement" ElementID="lblAddCc_rdActionID, rowCc_rdActionID" />
+					</Label>
+					<LineBreak />
+					<Label ID="lblAddBcc_rdActionID" Caption="Add Bcc">
+						<Action Type="ShowElement" ElementID="lblAddBcc_rdActionID, rowBcc_rdActionID" />
+					</Label>
+				</Column>
+			</Row>
+			<Row ID="rowCc_rdActionID" ShowModes="None">
+				<Column>
+					<Label Caption="Cc " ID="lblCc" />
+				</Column>
+				<Column>
+					<InputTextArea InputColumns="50" InputRows="4" ID="rdCc_rdActionID" Tooltip="Enter email addresses." />
+				</Column>
+				<Column Width="80" WidthScale="px">
+					<Label Caption="List" ID="lblList">
+						<Action Type="Report">
+							<Target Type="Report" />
+						</Action>
+					</Label>
+				</Column>
+			</Row>
+			<Row ID="rowBcc_rdActionID" ShowModes="None">
+				<Column>
+					<Label Caption="Bcc " ID="lblBcc" />
+				</Column>
+				<Column>
+					<InputTextArea InputColumns="50" InputRows="4" ID="rdBcc_rdActionID" Tooltip="Enter email addresses." />
+				</Column>
+				<Column Width="80" WidthScale="px">
+					<Label Caption="List" ID="lblList">
+						<Action Type="Report">
+							<Target Type="Report" />
+						</Action>
+					</Label>
+				</Column>
+			</Row>
+			<Row ID="rowSubject">
+				<Column>
+					<Label Caption="Subject " ID="lblSubject" />
+				</Column>
+				<Column ColSpan="2">
+					<InputTextArea ID="rdSubject_rdActionID" InputRows="1" InputColumns="60" Tooltip="Enter the subject.">
+						<Validation Type="Required" ErrorMsg="Enter the Subject." />
+					</InputTextArea>
+				</Column>
+			</Row>
+			<Row ID="rowMessage">
+				<Column>
+					<Label Caption="Message " ID="lblSubject" />
+				</Column>
+				<Column ColSpan="2">
+					<InputTextArea ID="rdBody_rdActionID" InputRows="4" InputColumns="60" Tooltip="Include a personal message." />
+				</Column>
+			</Row>
+			<Row ID="rowSend">
+				<Column />
+				<Column ColSpan="2">
+					<Division ID="divSend_rdActionID">
+						<Label Caption="Send Now " ID="lblSend_rdActionID" Class="ThemeLinkButton">
+							<Action Type="Javascript" Javascript="javascript:rdSendEmailDelivery('rdActionID','@Function.RowNumber~','rdEmailReport','rdEmailFormat','rdExtension')" ID="rdActionSendEmail" />
+						</Label>
+					</Division>
+					<Division ID="divWait_rdActionID" ShowModes="None">
+						<Image Caption="rdTemplate/rdWait.gif" />
+					</Division>
+				</Column>
+			</Row>
+		</Rows>
+	</PopupPanel>
+</EmailDeliveryTemplate>
+

@@ -1,0 +1,18 @@
+<AnimatedMapDataXML>
+  <MapSpec InternalID="72" ShortName="DS" LongName="Dolnośląskie" />
+  <MapSpec InternalID="73" ShortName="KP" LongName="Kujawsko-Pomorskie" />
+  <MapSpec InternalID="74" ShortName="LD" LongName="Łódzkie" />
+  <MapSpec InternalID="75" ShortName="LU" LongName="Lubelskie" />
+  <MapSpec InternalID="76" ShortName="LB" LongName="Lubuskie" />
+  <MapSpec InternalID="77" ShortName="MA" LongName="Małopolskie" />
+  <MapSpec InternalID="78" ShortName="MZ" LongName="Mazowieckie" />
+  <MapSpec InternalID="79" ShortName="OP" LongName="Opolskie" />
+  <MapSpec InternalID="80" ShortName="PK" LongName="Podkarpackie" />
+  <MapSpec InternalID="81" ShortName="PD" LongName="Podlaskie" />
+  <MapSpec InternalID="82" ShortName="PM" LongName="Pomorskie" />
+  <MapSpec InternalID="83" ShortName="SL" LongName="Śląskie" />
+  <MapSpec InternalID="84" ShortName="SK" LongName="Świętokrzyskie" />
+  <MapSpec InternalID="85" ShortName="WN" LongName="Warmińsko-Mazurskie" />
+  <MapSpec InternalID="86" ShortName="WP" LongName="Wielkopolskie" />
+  <MapSpec InternalID="87" ShortName="ZP" LongName="Zachodniopomorskie" />
+</AnimatedMapDataXML>

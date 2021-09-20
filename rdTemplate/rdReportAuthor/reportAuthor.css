@@ -1,0 +1,696 @@
+div.container-fluid + div {
+    clear: both;
+}
+
+.rdDraggableProxyContainer {
+    position: absolute !important;
+    z-index: 10;
+}
+
+
+#rowsReportAuthorMainContainer {
+    border: 0px;
+    border-collapse: collapse;
+}
+
+.rdReportAuthorHeaderButton {
+    background-color: white;
+    border: 1px solid #d4d5d6;
+    display: inline-block;
+    height: 20px;
+    text-align: center;
+    width: 94px;
+}
+
+.rdReportAuthorHeaderActiveButton {
+    color: #ECEDEE;
+    background-color: #454D59;
+}
+
+#lblSwitchToDesignMode {
+    margin-left: 10px;
+    border-right: 0px;
+}
+
+.rdReportAuthorToolboxContainer {
+    background-color: #ECEDEE;
+}
+
+.rdReportAuthorToolboxItem {
+    border: 1px solid #D4D5D6;
+    background-color: white;
+    margin: 6px;
+    cursor: move;
+    box-shadow: 3px 3px 10px 5px #777;
+}
+
+.rdReportAuthorToolboxItemDraggableProxy {
+    -webkit-box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+}
+
+.rdReportAuthorAddPdfToolboxItem {
+    margin-left: 30px;
+    text-align: left;
+}
+
+.rd-droppable-container {
+    min-height: 16px;
+    padding-bottom: 20px;
+}
+
+.rdDropPlaceholder {
+    font-size: 20px;
+    text-align: center;
+    color: #B5B5B5;
+    overflow: hidden;
+}
+
+.rdDropGhost {
+    display: block;
+    position: relative;
+    background-color: #e2ce5d;
+    z-index: 0;
+    height: 10px;
+}
+
+.rdDragProxy {
+    z-index: 100;
+    overflow-y: hidden;
+}
+.rdDropStub {
+    text-align: center;
+    border: solid 1px #cccccc;
+}
+
+
+/*Report Author Template*/
+/*.rdAgPanel{
+    padding: 3px 0px;
+}*/
+.rdReportAuthor_Background{
+    height: 26px;
+}
+.rdReportAuthor_BackgroundMenu{
+    min-height: 22px;
+}
+.rdReportAuthor_HeaderMenu{
+  margin: 0px!important;
+  border-radius: 0;  
+}
+.rdReportAuthor_CommandHighlight {
+  background: #454D59;
+  border: none;
+  border-radius: 0;
+  color: #fff !important;
+  cursor: pointer;
+  text-decoration: none;
+  vertical-align: baseline;
+  white-space: nowrap;
+  font-size: 15px;
+}
+.rdReportAuthor_CommandLeft, .rdReportAuthor_CommandMiddle{
+    padding: 3px 12px;
+    margin: 0px;
+    border-radius: 0;
+}
+ .rdReportAuthor_Command {
+  color: #363B42 !important;
+  font-weight: normal;
+/*    text-shadow:1px 1px 0px #ffffff;*/
+  background-image: none;
+background: #ffffff; /* Old browsers */
+
+  border: none;
+/*  border-radius: 2px;*/
+  text-decoration: none;
+  cursor: pointer;
+  white-space: nowrap;
+  vertical-align: baseline;
+  font-size: 15px;
+/*  display:inline-block;
+  text-align:center;*/
+}
+
+
+/*ReportAuthor*/
+
+
+/*-----------------------------------dd-----------------------------------*/
+/*.yui3-dd-drop-active-valid {
+    border: 1px dashed #14460b;
+}
+*/
+
+.yui3-resize-proxy {
+    border-top: 0 !important;
+    border-right: 2px !important;
+    border-bottom: 0 !important;
+    border-left: 0 !important;
+    border-color: blue !important;
+    border-style: solid !important;
+    border-radius: 0 !important;
+}
+
+/*-----------------AnalysisGrid Specific--------------*/
+.rdAgAlignCenter {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+.rdAgAlignLeft {
+  text-align: left;
+}
+
+.rdAgAlignRight {
+  text-align: right;
+}
+
+/*-----------------------------------Color picker-----------------------------------*/
+.rdAgKPIColor1 {
+    background-color: #A61C00;
+    cursor: pointer;
+}
+
+.rdAgKPIColor2 {
+    background-color: #CC0000;
+    cursor: pointer;
+}
+
+.rdAgKPIColor3 {
+    background-color: #E69138;
+    cursor: pointer;
+}
+
+.rdAgKPIColor4 {
+    background-color: #F1C232;
+    cursor: pointer;
+}
+
+.rdAgKPIColor5 {
+    background-color: #6AA84F;
+    cursor: pointer;
+}
+
+.rdAgKPIColor6 {
+    background-color: #45818E;
+    cursor: pointer;
+}
+
+.rdAgKPIColor7 {
+    background-color: #3C78D8;
+    cursor: pointer;
+}
+
+.rdAgKPIColor8 {
+    background-color: #674EA7;
+    cursor: pointer;
+}
+
+.rdAgKPIColor9 {
+    background-color: #A64D79;
+    cursor: pointer;
+}
+
+.rdAgKPIColor10 {
+    background-color: #000000;
+    cursor: pointer;
+}
+
+.rdAgKPIColor11 {
+    background-color: #a8a8a8;
+    cursor: pointer;
+}
+
+.rdAgKPIColor12 {
+    background-color: #FFFFFF;
+    cursor: pointer;
+}
+
+.ControlHeaderItem {
+    display: inline-block;
+    margin-right: 16px;
+}
+
+.ImageButton {
+    display: inline-block;
+}
+
+    .ImageButton img {
+        display: block;
+        margin-top: auto;
+        margin-bottom: auto;
+    }
+/*-----------------Editor Template---------------*/
+
+.rd-editable {
+    position: relative;
+}
+ 
+.rd-editable:hover
+{
+ background: #FFFFE0;
+ cursor: text;
+}
+
+.inlineEditPencil {
+    display: none;
+    float: right;
+    position: absolute;
+    right: 6px;
+}
+
+.rd-editable:hover .inlineEditPencil {
+    display: block;
+}
+
+.rd-element-editor {
+    border: solid 1px #AFACAC;
+    margin: 2px;
+}
+
+.rd-element-editor:hover {
+    border-color: #4B4B4B;
+}
+
+.rd-element-editor-header {
+    background-color: #CCCCCC;
+}
+
+.rd-element-editor-droppable {
+    border: solid 1px #AADAD5;
+    margin: 2px;
+}
+
+    .rd-element-editor-droppable:hover {
+        border-color: #AADAD5;
+    }
+
+.column-with-droppable {
+    border-right: 1px solid #AFACAC;
+    vertical-align: top;
+    height: 100%;
+    position: relative;
+}
+
+.row-editor-table {
+    table-layout: fixed;
+}
+
+.column-with-resizer {
+    background-color: red;
+    width: 3px;
+}
+.column-resizer-outer-wrapper {
+    position:relative;
+    right: -4px;
+}
+.column-resizer-inner-wrapper {
+    position:relative;
+    right:0px;
+    height:0px !important;
+}
+.column-resizer-inner-wrapper .yui3-resize-handle-r {
+    height: 20px;
+}
+
+.column-resizer-handler {
+    width: 2px;
+    float: left;
+    background-color: blue;
+}
+
+.rd-element-editor-droppable td {
+    vertical-align: top;
+}
+
+.rd-element-editor-header-droppable {
+    background-color: #cccccc;
+    border-right: 1px solid #cccccc;
+}
+
+.rd-drag-block {
+    display: block;
+    height: 20px;
+}
+
+.rd-drag-handler {
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    display: block;
+    cursor: move;
+}
+
+    .rd-drag-handler.rd-row-drag-handler {
+        display: inline;
+    }
+
+.rd-header-buttons {
+    display: block;
+    margin-top: -18px;
+    padding-bottom: 2px;
+    float: right;
+    padding-right: 10px;
+}
+
+.rd-settings-popup #rdPopupPanelCaption, .rd-settings-popup .rd-popup-content {
+    padding-left: 16px;
+}
+
+.rd-settings-popup .rdPopupPanelControl, .rd-settings-popup .rd-popup-content {
+    padding-right: 10px;
+}
+
+    .rd-settings-popup .rd-popup-content td {
+        padding-top: 10px;
+    }
+
+        .rd-settings-popup .rd-popup-content td + td {
+            padding-left: 10px;
+        }
+
+.rd-settings-popup .rd-color-picker-popup td {
+    padding-top: 0;
+}
+
+    .rd-settings-popup .rd-color-picker-popup td + td {
+        padding-left: 0;
+    }
+
+.rd-colorpicker-image {
+    cursor: pointer;
+}
+
+.rd-settings-popup .rd-text-input {
+    border: solid 2px rgb(180,180,180);
+    -ms-border-radius: 0;
+    border-radius: 0;
+}
+
+
+.rd-report-author-element {
+    padding: 2px;
+}
+
+.rd-report-author-element-content {
+    width: 100%;
+}
+
+@media screen {
+.rd-scrollable-x {
+    overflow-x: auto;
+}
+}
+
+#divReportAuthorWorkContainer {
+    min-height: 500px;
+}
+
+/*-------------------------Theme----------------------*/
+.ThemeAlignCenter {
+    text-align: center;
+}
+
+.ThemeAlignRight {
+    text-align: right;
+}
+
+.rd-settings-popup .rdPopupPanel {
+    padding: 0px;
+}
+
+.ThemeMargin {
+    margin: 5px;
+}
+
+.ThemeAlignTop {
+    vertical-align: top;
+}
+
+/*----------------support classes-----------------*/
+.separator-horizontal {
+    margin-right: 4px;
+    margin-left: 4px;
+}
+
+.imagePreviewItem {
+    height: 100px;
+    overflow-x: auto;
+}
+
+    .imagePreviewItem li {
+        height: 30px;
+        width: 100%;
+    }
+
+    .imagePreviewItem ul {
+        width: 100%;
+        list-style: none;
+        padding-left: 0px;
+    }
+
+    .imagePreviewItem img {
+        float: right;
+        vertical-align: middle;
+    }
+
+    .imagePreviewItem span {
+        vertical-align: bottom;
+        float: left;
+    }
+
+.truncate {
+    max-width: 110px;
+    float: left;
+    overflow: hidden;
+    white-space: nowrap;
+    -moz-text-overflow: ellipsis;
+    text-overflow: ellipsis;
+}
+
+/*----------------------Toolbox---------------------*/
+.rd-toolbox-element {
+    margin-left: 15px;
+    margin-right: auto;
+    width: 150px;
+    vertical-align: middle;
+}
+
+.rd-toolbox-element-image {
+    overflow: hidden;
+    display: block;
+    float: left;
+    padding-top: 4px;
+    padding-bottom: 3px;
+}
+
+    .rd-toolbox-element-image.rd-image-row {
+        width: 60px;
+    }
+
+    .rd-toolbox-element-image.rd-image-element {
+        width: 45px;
+    }
+
+.rd-toolbox-element-text {
+    display: inline-block;
+    vertical-align: middle;
+    line-height: 16px;
+    padding-top: 6px;
+    text-align: left;
+}
+
+    .rd-toolbox-element-text.rd-text-row {
+        width: 80px;
+        margin-left: 0px;
+        margin-top: 6.5%;
+    }
+
+    .rd-toolbox-element-text.rd-text-element {
+        width: 80px;
+        margin-left: 10px;
+        margin-top: 3px;
+    }
+
+.clear-both {
+    clear: both;
+}
+
+.rd-toolbox-element-proxy {
+    background-color: white;
+    overflow: hidden;
+}
+
+#colReportAuthorToolbox {
+    color: #777;
+}
+
+.rd-toolbox-gallery-text {
+    height: 16px;
+    width: 100%;
+    font-size: 12px;
+}
+
+.rd-overflow-hidden {
+    overflow: hidden;
+}
+
+.rd-toolbox-gallery-image {
+    margin-bottom: 3px;
+}
+
+/*-----------------AddPanelGallery--------------*/
+.rd-add-panels-list {
+    height: 600px;
+    overflow: auto;
+}
+
+
+/*buttom menu*/
+.reportAuthorHeightMenu{
+   padding: 3px 0px!important;
+   min-height: 24px!important;
+}
+.rdAcCommandHighlight {
+padding-top: 3px;
+padding-bottom: 4px;
+}
+.rdAcCommand{
+padding-top: 1px;
+padding-bottom: 3px;
+text-decoration: none!important;
+
+}
+.rdAgPanel span a:hover{
+    text-decoration: none!important;
+}
+.imgMenuPositioncv{
+    margin-top: -15px;
+}
+.rd-image-rowxsmall{
+    width: 10px;
+    padding-top: 11%;
+}
+.rd-image-rowxsmall-AddSpace{
+    width: 10px;
+    padding-top: 7%;   
+}
+.rd-image-rowxsmall-newVisual{
+    width: 10px;
+    padding-top: 11%;
+    margin-left: 14px;   
+}
+.imgNewVisualwidth{
+    width: 125px;
+}
+.rd-image-rowxsmall-Newtext{
+    width: 10px;
+    padding-top: 7%;   
+}
+.backgroundButtons{
+    background-color: #F3F3F4;
+}
+
+.backgroundButtons td {
+    padding-left: 7px;
+}
+
+.backgroundButtons td span{
+    display: inline-block;
+    padding-top: 1px;
+}
+
+.rdPageHFHint {
+    font-size: 12px;
+    font-style: italic;
+    padding-left: 50px;
+}
+
+#divReportAuthorWorkContainer.rdDroppableContainer {
+    margin-top: 10px;
+}
+#divReportAuthorFooterContainer.rdDroppableContainer,
+#divReportAuthorHeaderContainer.rdDroppableContainer,
+#divReportAuthorWorkContainer.rdDroppableContainer {
+    border: 1px dashed #C0C0C0;
+	margin-right: 10px;
+}
+#divReportAuthorFooterContainer,
+#divReportAuthorHeaderContainer {
+    min-height: 32px;
+}
+    
+
+#divReportAuthorFooterContainer.yui3-dd-drop-active-invalid, 
+#divReportAuthorHeaderContainer.yui3-dd-drop-active-invalid,
+#divReportAuthorWorkContainer.yui3-dd-drop-active-invalid {
+    border: 1px dashed red;
+}
+
+#divReportAuthorFooterContainer.yui3-dd-drop-active-valid, 
+#divReportAuthorHeaderContainer.yui3-dd-drop-active-valid,
+#divReportAuthorWorkContainer.yui3-dd-drop-active-valid {
+    border: 1px dashed green;
+}
+
+.rd-toolbox-element-text.rd-text-element.rd-pdf-headerfooter-item {
+    width: auto;
+    margin-left: auto;
+    padding-bottom: 8px;
+}
+
+.rd-pdf-headerfooter-item input {
+    vertical-align: middle;
+}
+
+.rd-pdf-align-right {
+text-align: right;
+padding-right: 8px;
+}
+  
+ #yui_3_1_1433439973255_693 {
+ margin-left: 10px;
+ 
+ }
+ 
+ #rowReportAuthorHeader{
+ margin-left:-5px;
+ }
+  
+ #colReportAuthorHeader{
+ padding-left:8px;
+ }
+ 
+ #divUndoEnabled,
+#divRedoEnabled {
+	cursor: pointer;
+}
+
+#colUndoRedo IMG {
+position:relative;
+top:5px;
+}
+
+#divUndo{
+margin-left:10px;
+}
+
+#divRedo{
+margin-left:5px;
+}
+
+.viewPortDisplayMessage {
+    font-weight: bold;
+    font-size: 1.3em;
+    /*text-align: center;*/
+    display: block;
+    margin-top: .8em;
+}
+
+.rd-report-author-element > span:empty:before {
+    content: '\200b';
+}

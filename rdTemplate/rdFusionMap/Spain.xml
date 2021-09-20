@@ -1,0 +1,21 @@
+<AnimatedMapDataXML>
+  <MapSpec InternalID="001" ShortName="AN" LongName="Andalucia" />
+  <MapSpec InternalID="002" ShortName="AR" LongName="Aragon" />
+  <MapSpec InternalID="003" ShortName="AS" LongName="Asturias" />
+  <MapSpec InternalID="004" ShortName="BA" LongName="Baleares (Balearic Islands)" />
+  <MapSpec InternalID="005" ShortName="CE" LongName="Ceuta" />
+  <MapSpec InternalID="006" ShortName="CA" LongName="Canarias (Canary Islands)" />
+  <MapSpec InternalID="007" ShortName="CN" LongName="Cantabria" />
+  <MapSpec InternalID="008" ShortName="CL" LongName="Castilla-La Mancha" />
+  <MapSpec InternalID="009" ShortName="CY" LongName="Castilla y Leon" />
+  <MapSpec InternalID="010" ShortName="CT" LongName="Cataluna" />
+  <MapSpec InternalID="011" ShortName="CV" LongName="Communidad Valencian" />
+  <MapSpec InternalID="012" ShortName="EX" LongName="Extremadura" />
+  <MapSpec InternalID="013" ShortName="GA" LongName="Galicia" />
+  <MapSpec InternalID="014" ShortName="LA" LongName="La Rioja" />
+  <MapSpec InternalID="015" ShortName="MA" LongName="Madrid" />
+  <MapSpec InternalID="016" ShortName="ME" LongName="Melilla" />
+  <MapSpec InternalID="017" ShortName="MU" LongName="Murcia" />
+  <MapSpec InternalID="018" ShortName="NA" LongName="Navarra" />
+  <MapSpec InternalID="019" ShortName="PA" LongName="Pais Vasco (Basque Country)" />
+</AnimatedMapDataXML>

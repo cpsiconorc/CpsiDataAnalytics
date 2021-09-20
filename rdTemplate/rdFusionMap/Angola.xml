@@ -1,0 +1,20 @@
+<AnimatedMapDataXML>
+  <MapSpec InternalID="AO.BO" ShortName="BO" LongName="Bengo" />
+  <MapSpec InternalID="AO.BG" ShortName="BG" LongName="Benguela" />
+  <MapSpec InternalID="AO.BI" ShortName="BI" LongName="Bie" />
+  <MapSpec InternalID="AO.CB" ShortName="CB" LongName="Cabinda" />
+  <MapSpec InternalID="AO.CC" ShortName="CC" LongName="Cuando Cubango" />
+  <MapSpec InternalID="AO.CN" ShortName="CN" LongName="Cuanza Norte" />
+  <MapSpec InternalID="AO.CS" ShortName="CS" LongName="Cuanza Sul" />
+  <MapSpec InternalID="AO.CU" ShortName="CU" LongName="Cunene" />
+  <MapSpec InternalID="AO.HM" ShortName="HM" LongName="Huambo" />
+  <MapSpec InternalID="AO.HL" ShortName="HL" LongName="Huila" />
+  <MapSpec InternalID="AO.LU" ShortName="LU" LongName="Luanda" />
+  <MapSpec InternalID="AO.LN" ShortName="LN" LongName="Lunda Norte" />
+  <MapSpec InternalID="AO.LS" ShortName="LS" LongName="Lunda Sul" />
+  <MapSpec InternalID="AO.ML" ShortName="ML" LongName="Malanje" />
+  <MapSpec InternalID="AO.MX" ShortName="MX" LongName="Moxico" />
+  <MapSpec InternalID="AO.NA" ShortName="NA" LongName="Namibe" />
+  <MapSpec InternalID="AO.UI" ShortName="UI" LongName="Uige" />
+  <MapSpec InternalID="AO.ZA" ShortName="ZA" LongName="Zaire" />
+</AnimatedMapDataXML>

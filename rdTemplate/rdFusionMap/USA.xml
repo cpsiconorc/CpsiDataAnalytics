@@ -1,0 +1,53 @@
+<AnimatedMapDataXML>
+  <MapSpec InternalID="AL" ShortName="AL" LongName="Alabama" />
+  <MapSpec InternalID="AK" ShortName="AK" LongName="Alaska" />
+  <MapSpec InternalID="AZ" ShortName="AZ" LongName="Arizona" />
+  <MapSpec InternalID="AR" ShortName="AR" LongName="Arkansas" />
+  <MapSpec InternalID="CA" ShortName="CA" LongName="California" />
+  <MapSpec InternalID="CO" ShortName="CO" LongName="Colorado" />
+  <MapSpec InternalID="CT" ShortName="CT" LongName="Connecticut" />
+  <MapSpec InternalID="DC" ShortName="DC" LongName="District of Columbia" />
+  <MapSpec InternalID="DE" ShortName="DE" LongName="Delaware" />
+  <MapSpec InternalID="FL" ShortName="FL" LongName="Florida" />
+  <MapSpec InternalID="GA" ShortName="GA" LongName="Georgia" />
+  <MapSpec InternalID="HI" ShortName="HI" LongName="Hawaii" />
+  <MapSpec InternalID="ID" ShortName="ID" LongName="Idaho" />
+  <MapSpec InternalID="IL" ShortName="IL" LongName="Illinois" />
+  <MapSpec InternalID="IN" ShortName="IN" LongName="Indiana" />
+  <MapSpec InternalID="IA" ShortName="IA" LongName="Iowa" />
+  <MapSpec InternalID="KS" ShortName="KS" LongName="Kansas" />
+  <MapSpec InternalID="KY" ShortName="KY" LongName="Kentucky" />
+  <MapSpec InternalID="LA" ShortName="LA" LongName="Louisiana" />
+  <MapSpec InternalID="ME" ShortName="ME" LongName="Maine" />
+  <MapSpec InternalID="MD" ShortName="MD" LongName="Maryland" />
+  <MapSpec InternalID="MA" ShortName="MA" LongName="Massachusetts" />
+  <MapSpec InternalID="MI" ShortName="MI" LongName="Michigan" />
+  <MapSpec InternalID="MN" ShortName="MN" LongName="Minnesota" />
+  <MapSpec InternalID="MS" ShortName="MS" LongName="Mississippi" />
+  <MapSpec InternalID="MO" ShortName="MO" LongName="Missouri" />
+  <MapSpec InternalID="MT" ShortName="MT" LongName="Montana" />
+  <MapSpec InternalID="NE" ShortName="NE" LongName="Nebraska" />
+  <MapSpec InternalID="NV" ShortName="NV" LongName="Nevada" />
+  <MapSpec InternalID="NH" ShortName="NH" LongName="New Hampshire" />
+  <MapSpec InternalID="NJ" ShortName="NJ" LongName="New Jersey" />
+  <MapSpec InternalID="NM" ShortName="NM" LongName="New Mexico" />
+  <MapSpec InternalID="NY" ShortName="NY" LongName="New York" />
+  <MapSpec InternalID="NC" ShortName="NC" LongName="North Carolina" />
+  <MapSpec InternalID="ND" ShortName="ND" LongName="North Dakota" />
+  <MapSpec InternalID="OH" ShortName="OH" LongName="Ohio" />
+  <MapSpec InternalID="OK" ShortName="OK" LongName="Oklahoma" />
+  <MapSpec InternalID="OR" ShortName="OR" LongName="Oregon" />
+  <MapSpec InternalID="PA" ShortName="PA" LongName="Pennsylvania" />
+  <MapSpec InternalID="RI" ShortName="RI" LongName="Rhode Island" />
+  <MapSpec InternalID="SC" ShortName="SC" LongName="South Carolina" />
+  <MapSpec InternalID="SD" ShortName="SD" LongName="South Dakota" />
+  <MapSpec InternalID="TN" ShortName="TN" LongName="Tennessee" />
+  <MapSpec InternalID="TX" ShortName="TX" LongName="Texas" />
+  <MapSpec InternalID="UT" ShortName="UT" LongName="Utah" />
+  <MapSpec InternalID="VT" ShortName="VT" LongName="Vermont" />
+  <MapSpec InternalID="VA" ShortName="VA" LongName="Virginia" />
+  <MapSpec InternalID="WA" ShortName="WA" LongName="Washington" />
+  <MapSpec InternalID="WV" ShortName="WV" LongName="West Virginia" />
+  <MapSpec InternalID="WI" ShortName="WI" LongName="Wisconsin" />
+  <MapSpec InternalID="WY" ShortName="WY" LongName="Wyoming" />
+</AnimatedMapDataXML>

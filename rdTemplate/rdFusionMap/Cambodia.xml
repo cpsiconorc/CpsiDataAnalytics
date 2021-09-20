@@ -1,0 +1,26 @@
+<AnimatedMapDataXML>
+  <MapSpec InternalID="KH.OM" ShortName="OM" LongName="Banteay Meanchey" />
+  <MapSpec InternalID="KH.BA" ShortName="BA" LongName="Battambang" />
+  <MapSpec InternalID="KH.KM" ShortName="KM" LongName="Kampong Cham" />
+  <MapSpec InternalID="KH.KG" ShortName="KG" LongName="Kampong Chhnang" />
+  <MapSpec InternalID="KH.KS" ShortName="KS" LongName="Kampong Spe" />
+  <MapSpec InternalID="KH.KT" ShortName="KT" LongName="Kampong Thom" />
+  <MapSpec InternalID="KH.KP" ShortName="KP" LongName="Kampot" />
+  <MapSpec InternalID="KH.KN" ShortName="KN" LongName="Kandal" />
+  <MapSpec InternalID="KH.KB" ShortName="KB" LongName="Kep" />
+  <MapSpec InternalID="KH.KK" ShortName="KK" LongName="Koh Kong" />
+  <MapSpec InternalID="KH.KH" ShortName="KH" LongName="Kratie" />
+  <MapSpec InternalID="KH.MK" ShortName="MK" LongName="Mondulkiri" />
+  <MapSpec InternalID="KH.OC" ShortName="OC" LongName="Oddar Meancheay" />
+  <MapSpec InternalID="KH.PL" ShortName="PL" LongName="Pailin" />
+  <MapSpec InternalID="KH.PP" ShortName="PP" LongName="Phnom Penh" />
+  <MapSpec InternalID="KH.PH" ShortName="PH" LongName="Preah Vihear" />
+  <MapSpec InternalID="KH.PY" ShortName="PY" LongName="Prey Veng" />
+  <MapSpec InternalID="KH.PO" ShortName="PO" LongName="Pursat" />
+  <MapSpec InternalID="KH.RO" ShortName="RO" LongName="Ratanakiri" />
+  <MapSpec InternalID="KH.SI" ShortName="SI" LongName="Siem Reap" />
+  <MapSpec InternalID="KH.KA" ShortName="KA" LongName="Sihanoukville" />
+  <MapSpec InternalID="KH.ST" ShortName="ST" LongName="Stung Treng" />
+  <MapSpec InternalID="KH.SR" ShortName="SR" LongName="Svay Rieng" />
+  <MapSpec InternalID="KH.TA" ShortName="TA" LongName="Takeo" />
+</AnimatedMapDataXML>

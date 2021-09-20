@@ -1,0 +1,35 @@
+<AnimatedMapDataXML>
+  <MapSpec InternalID="01" ShortName="AI" LongName="Aizkraukle" />
+  <MapSpec InternalID="02" ShortName="AL" LongName="Alūksne" />
+  <MapSpec InternalID="03" ShortName="BL" LongName="Balvi" />
+  <MapSpec InternalID="04" ShortName="BU" LongName="Bauska" />
+  <MapSpec InternalID="05" ShortName="CE" LongName="Cēsis" />
+  <MapSpec InternalID="06" ShortName="DA" LongName="Daugavpils" />
+  <MapSpec InternalID="07" ShortName="DGV" LongName="Daugavpils (city)" />
+  <MapSpec InternalID="08" ShortName="DO" LongName="Dobele" />
+  <MapSpec InternalID="09" ShortName="GU" LongName="Gulbene" />
+  <MapSpec InternalID="10" ShortName="JK" LongName="Jēkabpils" />
+  <MapSpec InternalID="11" ShortName="JL" LongName="Jelgava" />
+  <MapSpec InternalID="12" ShortName="JEL" LongName="Jelgava (city)" />
+  <MapSpec InternalID="13" ShortName="JUR" LongName="Jūrmala (city)" />
+  <MapSpec InternalID="14" ShortName="KR" LongName="Krāslava" />
+  <MapSpec InternalID="15" ShortName="KU" LongName="Kuldīga" />
+  <MapSpec InternalID="16" ShortName="LE" LongName="Liepāja" />
+  <MapSpec InternalID="17" ShortName="LPX" LongName="Liepāja (city)" />
+  <MapSpec InternalID="18" ShortName="LM" LongName="Limbaži" />
+  <MapSpec InternalID="19" ShortName="LU" LongName="Ludza" />
+  <MapSpec InternalID="20" ShortName="MA" LongName="Madona" />
+  <MapSpec InternalID="21" ShortName="OG" LongName="Ogre" />
+  <MapSpec InternalID="22" ShortName="PR" LongName="Preiļi" />
+  <MapSpec InternalID="23" ShortName="RE" LongName="Rēzekne" />
+  <MapSpec InternalID="24" ShortName="REZ" LongName="Rēzekne (city)" />
+  <MapSpec InternalID="25" ShortName="RI" LongName="Rīga" />
+  <MapSpec InternalID="26" ShortName="RIX" LongName="Rīga (city)" />
+  <MapSpec InternalID="27" ShortName="SA" LongName="Saldus" />
+  <MapSpec InternalID="28" ShortName="TA" LongName="Talsi" />
+  <MapSpec InternalID="29" ShortName="TU" LongName="Tukums" />
+  <MapSpec InternalID="30" ShortName="VK" LongName="Valka" />
+  <MapSpec InternalID="31" ShortName="VM" LongName="Valmiera" />
+  <MapSpec InternalID="32" ShortName="VE" LongName="Ventspils" />
+  <MapSpec InternalID="33" ShortName="VEN" LongName="Ventspils (city)" />
+</AnimatedMapDataXML>

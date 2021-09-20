@@ -1,0 +1,26 @@
+﻿/* Studio Connector */
+div.studioElementSeekerHover {
+  background-color: #86B840;
+  opacity: 1;
+  position: fixed;
+  width: 0;
+  height: 0;
+  top: 0;
+  left: 0;
+  border: 0 none;
+  z-index: 10000;
+}
+
+html.elementSeekerCursor,
+body.elementSeekerCursor,
+body.elementSeekerCursor * {
+ 	cursor: url(rdElementSeeker.cur), default !important;
+}
+
+img.rdElementSeekerImage {
+  position:fixed;
+  bottom:0px;
+  right:30px;
+  border-style:none;
+  z-index: 10000;
+}

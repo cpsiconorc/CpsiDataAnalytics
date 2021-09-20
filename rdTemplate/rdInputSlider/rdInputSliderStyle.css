@@ -1,0 +1,13 @@
+.yui3-skin-sam .yui3-rdslider-x .yui3-slider-rail, .yui3-skin-sam .yui3-dualslider-x .yui3-slider-rail
+{
+    background-image: url(rail-x.png);
+    background-repeat: repeat-x;
+	height: 26px;    
+}
+
+.yui3-skin-sam .yui3-rdslider-y .yui3-slider-rail, .yui3-skin-sam .yui3-dualslider-y .yui3-slider-rail
+{
+    background-image: url(rail-y.png);
+    background-repeat: repeat-y;
+	width: 26px;    
+}

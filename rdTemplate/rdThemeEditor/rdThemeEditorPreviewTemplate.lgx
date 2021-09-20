@@ -1,0 +1,787 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Report ID="Preview">
+  <StyleSheet Theme="@Session.rdTemporaryTheme~"/>
+  <Body>
+    <Division HtmlDiv="True" ID="divPreview">
+      <ResponsiveRow CollisionBehavior="Overlap">
+        <ResponsiveColumn ColspanLargeScreen="12" ColspanExtraSmallScreen="12" ColspanMediumScreen="12" ColspanSmallScreen="12">
+          <LineBreak />
+          <Division ID="divColors" Condition="'@Request.rdEditGroup~' == ''  || '@Request.rdEditGroup~' == 'Colors'" >
+            <Label Caption="Colors" Class="ThemeHeaderLarge" ID="Colors" />
+            <HR />
+            <Rows Width="100" WidthScale="%">
+              <Row>
+                <Column>
+                  <Label Caption="Backgrounds &amp; Colors" Class="ThemeHeaderSmall" ID="SubTitle" />
+                  <LineBreak LineCount="2" />
+                </Column>
+              </Row>
+              <Row>
+                <Column Width="100" WidthScale="%">
+                  <Division>
+                    <Division ID="Background" Class="rdPreviewColorBox Body" HtmlDiv="True">
+                      <Label ID="lblPageBackground" Caption="Page Background" Class="ThemeBold" />
+                      <LineBreak />
+                      <Label ID="lblSampleText" Caption="Sample text paragraph..." />
+                      <LineBreak LineCount="2" />
+                    </Division>
+                  </Division>
+                  <LineBreak LineCount="1" />
+                </Column>
+              </Row>
+              <Row>
+                <Column Width="100" WidthScale="%">
+                  <Division>
+                    <Division ID="Modal" Class="rdPreviewColorBox rdPopupPanel" HtmlDiv="True">
+                      <Label ID="lblModalBackground" Caption="Modal Background" Class="ModalTitlePreview" />
+                      <LineBreak />
+                      <Label ID="lblSampleTextModalBackground" Caption="Sample text paragraph..."  Class="ModalPreviewFont"/>
+                      <LineBreak />
+                      <Label ID="lblClickViewModalBackground" Caption="(Click to view modal)" Class="ThemeBold">
+                        <Action Type="ShowElement" ElementID="panelModal" ID="actionShowPanel1" Display="Toggle" />
+                      </Label>
+                      <PopupPanel ID="panelModal" PopupPanelLocation="Mouse" Draggable="True" PopupModal="True" Width="60" WidthScale="%" Caption="Modal Sample" PopupLocation="Mouse">
+                        <Division>
+                          <HR />
+                          <Label Caption="&lt;b&gt;Bold Paragraph Text:&lt;/b&gt; &lt;u&gt;Underline text&lt;/u&gt; - &lt;i&gt;Italic&lt;/i&gt; - Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur...." ID="NormalText" Format="HTML" />
+                        </Division>
+                      </PopupPanel>
+                    </Division>
+                  </Division>
+                  <LineBreak LineCount="1" />
+                </Column>
+              </Row>
+              <Row>
+                <Column Width="100" WidthScale="%">
+                  <Division>
+                    <Division ID="Menu" Class="rdPreviewColorBox yuimenu rdPopupMenu rdPreviewMenu" HtmlDiv="True">
+                      <Label ID="lblMenuBackground" Caption="Menu Background" Class="ThemeBold" />
+                      <LineBreak />
+                      <Label ID="lblClickMenuBackground" Caption="(Click to test menu)" Class="ThemeBold">
+                        <Action Type="Popup" ID="actPopup1">
+                          <PopupOption Caption="Option 001" ID="opt14">
+                            <Action Type="ShowElement" ElementID="divPopup" ID="actShowElement" />
+                          </PopupOption>
+                          <PopupOption Caption="Option 002" ID="opt14">
+                            <Action Type="ShowElement" ElementID="divPopup" ID="actShowElement" />
+                          </PopupOption>
+                          <PopupOption Caption="More..." ID="opt14">
+                            <Action Type="Popup" ID="Child">
+                              <PopupOption ID="Childmenu" Caption="Option 003">
+                                <Action Type="ShowElement" ElementID="divPopup" ID="actShowElement" />
+                              </PopupOption>
+                            </Action>
+                          </PopupOption>
+                        </Action>
+                      </Label>
+                    </Division>
+                  </Division>
+                  <LineBreak LineCount="1" />
+                </Column>
+              </Row>
+              <Row>
+                <Column>
+                  <Label Caption="Containers" Class="ThemeHeaderSmall" ID="SubTitle" />
+                  <LineBreak LineCount="2" />
+                </Column>
+              </Row>
+              <Row>
+                <Column Width="100" WidthScale="%">
+                  <Division>
+                    <Division ID="ThemeContainerBordered" Class="rdPreviewColorBox ThemeContainerBordered" HtmlDiv="True">
+                      <Label ID="lblContainerBordered" Caption="Container Bordered (CB)" Class="ThemeBold" />
+                      <LineBreak />
+                      <Label ID="lblSampleContainerBordered" Caption="Sample text paragraph..." />
+                    </Division>
+                  </Division>
+                  <LineBreak LineCount="1" />
+                </Column>
+              </Row>
+              <Row>
+                <Column Width="100" WidthScale="%">
+                  <Division>
+                    <Division ID="ThemeContainerShaded" Class="rdPreviewColorBox ThemeContainerShaded" HtmlDiv="True">
+                      <Label ID="lblContainerShaded" Caption="Container Shaded (CS)" Class="ThemeBold" />
+                      <LineBreak />
+                      <Label ID="lblSampleContainerShaded" Caption="Sample text paragraph..." />
+                    </Division>
+                  </Division>
+                  <LineBreak LineCount="1" />
+                </Column>
+              </Row>
+              <Row>
+                <Column Width="100" WidthScale="%">
+                  <Division>
+                    <Division ID="ThemeContainerShadedAndBordered" Class="rdPreviewColorBox ThemeContainerShadedAndBordered" HtmlDiv="True">
+                      <Label ID="lblContainerShadedBordered" Caption="Container Shaded &amp; Bordered (CSB)" Class="ThemeBold" />
+                      <LineBreak />
+                      <Label ID="lblContainerShadedBorderedSample" Caption="Sample text paragraph..." />
+                      <Spaces Size="1" />
+                    </Division>
+                  </Division>
+                  <LineBreak LineCount="1" />
+                </Column>
+              </Row>
+              <Row>
+                <Column>
+                  <Label Caption="MasterReport" Class="ThemeHeaderSmall" ID="SubTitle" />
+                  <LineBreak LineCount="2" />
+                </Column>
+              </Row>
+            </Rows>
+            <Rows CellSpacing="0" Width="100" WidthScale="%">
+              <Row>
+                <Column Class="ThemeMasterReportTopFrame" ID="TopFrame" ColSpan="100">
+                  <Spaces Size="1" />
+                  <Image  ID="lblHamburger" Caption="rdTemplate/rdHamburger.png" Height="30" Tooltip="Close Side Bar">
+                    <Action Type="ShowElement" Display="Toggle" ElementID="LeftFrame" ID="Hide/ShowSidebarMenu" />
+                  </Image>
+                  <Spaces Size="1" />
+                  <Label ID="lblHeaderCaption" Caption="Header Caption" Class="ThemeHeaderLarge ThemeMasterReportTopFont" />
+                  <Spaces Size="5" />
+                  <MenuTree xxClass="ThemeLinkButtonSmall" ID="menuTree" LevelIndent="8" MenuMode="HorizontalPopup" xBranchCollapsedImage="" xBranchExpandedImage="back_talk.gif" xDisableRememberExpansion="True">
+                    <ConditionalClass  Condition="false" />
+                    <MenuBranch Caption="Header Menu" Expanded="True" ID="branchFirstReports" Tooltip="Group" Class="ThemeBold">
+                      <MenuLeaf Caption="Report 1"  ID="leafReport1" Tooltip="Report">
+                      </MenuLeaf>
+                      <MenuBranch Caption="Second Reports" xxClass="ThemeBold" Expanded="False" ID="branchSecondReports" Tooltip="Group">
+                        <MenuLeaf Caption="Report 11" ID="leafReport11" Tooltip="Report">
+                        </MenuLeaf>
+                        <MenuLeaf Caption="Report 12" ID="leafReport12" Tooltip="Report">
+                        </MenuLeaf>
+                      </MenuBranch>
+                    </MenuBranch>
+                  </MenuTree>
+                </Column>
+              </Row>
+              <Row>
+                <Column Class="ThemeMasterReportLeftFrame ThemeAlignTop" Width="150" WidthScale="px" ID="LeftFrame">
+                  <MenuTree Class="ThemeLinkButtonSmall" ID="menuTreeSideBar" LevelIndent="8" xBranchCollapsedImage="" xBranchExpandedImage="back_talk.gif" xDisableRememberExpansion="True">
+                    <ConditionalClass Class="ThemeBold" Condition="false" />
+                    <MenuBranch Caption="Side menu" Expanded="True" ID="branchFirstReports" SecurityRightID="" Tooltip="Group" Class="ThemeBold">
+                      <ConditionalClass Class="ThemeErrorText" Condition="False" />
+                      <MenuLeaf Caption="Report 1" Class="" ID="leafReport1" SecurityRightID="" Tooltip="Report">
+                      </MenuLeaf>
+                      <MenuLeaf Caption="Report 2" ID="leafReport2" SecurityRightID="" Tooltip="Report">
+                      </MenuLeaf>
+                    </MenuBranch>
+                  </MenuTree>
+                  <LineBreak LineCount="8" />
+                </Column>
+                <Column ID="ContentFrame" Class="ThemeAlignCenter">
+                  <LineBreak LineCount="1" />
+                  <Label ID="lblReportContent" Caption="Report Content" Class="ThemeHeaderLarge" />
+                  <LineBreak LineCount="2" />
+                </Column>
+              </Row>
+              <Row>
+                <Column ColSpan="100" ID="BottomFrame" Class="ThemeMasterReportFooterFrame ThemeAlignLeft">
+                  <ResponsiveRow ID="Footer">
+                    <ResponsiveColumn>
+                      <Spaces Size="3" />
+                      <Label ID="lblCopyright" Caption="Copyright © 2017 Logi Analytics" />
+                    </ResponsiveColumn>
+                  </ResponsiveRow>
+                </Column>
+              </Row>
+            </Rows>
+            <LineBreak />
+          </Division>
+          <Division ID="divTypography" Condition="'@Request.rdEditGroup~' == ''  || '@Request.rdEditGroup~' == 'Typography'">
+            <Label Caption="Typography" Class="ThemeHeaderLarge" ID="GroupName" />
+            <HR />
+            <Rows Width="100" WidthScale="%" ID="HeadingsText">
+              <Row>
+                <Column Width="50" WidthScale="%">
+                  <Label Caption="Titles &amp; Headings" Class="ThemeHeaderSmall" ID="SubTitle" />
+                  <LineBreak LineCount="1" />
+                </Column>
+                <Column Width="50" WidthScale="%">
+                  <Label Caption="Body Text" Class="ThemeHeaderSmall" ID="SubTitle" />
+                  <LineBreak LineCount="1" />
+                </Column>
+              </Row>
+              <Row Class="ThemeAlignTopLeft">
+                <Column Width="50" WidthScale="%">
+                  <Division Class="ThemeLargeText">
+                    <Label Caption="Heading 1" Class="ThemeHeaderLargest" ID="ThemeLargestHeader" />
+                    <LineBreak LineCount="2" />
+                  </Division>
+                  <Division Class="ThemeLargeText">
+                    <Label Caption="Heading 2" Class="ThemeHeaderLarger" ID="ThemeLargerHeader" />
+                    <LineBreak LineCount="2" />
+                  </Division>
+                  <Division Class="ThemeLargeText">
+                    <Label Caption="Heading 3" Class="ThemeHeaderLarge" ID="ThemeLargeHeader" />
+                    <LineBreak LineCount="2" />
+                  </Division>
+                  <Division>
+                    <Label Caption="Heading 4" ID="ThemeHeader" Class="ThemeHeader" />
+                    <LineBreak LineCount="2" />
+                  </Division>
+                  <Division>
+                    <Label Caption="Heading 5" Class="ThemeHeaderSmall" ID="ThemeSmallHeader" />
+                    <LineBreak LineCount="2" />
+                  </Division>
+                  <Division>
+                    <Label Caption="Heading 6" Class="ThemeHeaderSmaller" ID="ThemeSmallerHeader" />
+                    <LineBreak LineCount="2" />
+                  </Division>
+                  <Division>
+                    <Label Caption="Heading 7" Class="ThemeHeaderSmallest" ID="ThemeSmallestHeader" />
+                  </Division>
+                  <LineBreak LineCount="1" />
+                </Column>
+                <Column Width="50" WidthScale="%">
+                  <Label Caption="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur...." ID="NormalText" Format="HTML" />
+                  <LineBreak LineCount="2" />
+                  <Label Caption="Bold" ID="NormalText" Class="ThemeBold" />
+                  <Spaces Size="1" />
+                  <Label Caption="Underline" ID="NormalText" HtmlTag="U" />
+                  <Spaces Size="1" />
+                  <Label Caption="Italic" ID="NormalText" Class="ThemeItalic" />
+                  <LineBreak LineCount="2" />
+                  <Label Caption="Hyperlink Active" ID="NormalText">
+                    <Action Type="ShowElement" ID="actionShowPanel1" Display="Toggle" ElementID="test" />
+                  </Label>
+                  <LineBreak LineCount="1" />
+                  <Label Caption="Hyperlink Hover" ID="NormalText" Class="rdPreviewHyperlink" />
+                  <LineBreak LineCount="2" />
+                  <Rows>
+                    <Row>
+                      <Column>
+                        <Bullet />
+                      </Column>
+                      <Column>
+                        <Label Caption="Bullet 0001" ID="Bullets" />
+                      </Column>
+                    </Row>
+                    <Row>
+                      <Column>
+                        <Bullet />
+                      </Column>
+                      <Column>
+                        <Label Caption="Bullet 0002" ID="Bullets" />
+                      </Column>
+                    </Row>
+                  </Rows>
+                  <LineBreak LineCount="1" />
+                  <Label Caption="Text Negative" ID="NormalText" Class="ThemeTextNegative" />
+                  <Spaces Size="1" />
+                  <Label Caption="Text Positive" ID="NormalText" Class="ThemeTextPositive" />
+                  <LineBreak LineCount="2" />
+                  <Label Caption="Error Text" ID="NormalText" Class="ThemeErrorText" />
+                </Column>
+              </Row>
+            </Rows>
+            <LineBreak LineCount="1" />
+            <HR />
+            <Rows ID="Forms">
+              <Row>
+                <Column Width="50" WidthScale="%">
+                  <Label Caption="Input Form Elements" Class="ThemeHeaderSmall" ID="SubTitle" />
+                  <LineBreak LineCount="1" />
+                </Column>
+                <Column Width="50" WidthScale="%" />
+              </Row>
+              <Row Class="ThemeAlignTopLeft">
+                <Column Width="50" WidthScale="%">
+                  <InputGrid ID="inptGridThemeTest">
+                    <InputText ID="txt1" Caption="Caption" />
+                    <InputPassword ID="passThemeTest" Caption="Password" />
+                    <InputFileUpload ID="upldFile" Caption="Upload" />
+                    <InputDate ID="dateThemeTest" CalendarLinkType="Image" Caption="Date" />
+                    <InputTime ID="timeThemeTest" Caption="Time" ClockLinkType="Image" />
+                    <InputCheckbox ID="chkThemeTest" Caption="Checkbox" />
+                  </InputGrid>
+                </Column>
+                <Column Width="50" WidthScale="%">
+                  <InputGrid>
+                    <InputRadioButtons OptionCaptionColumn="Value" OptionValueColumn="Value" ID="radPreview" Caption="Radio" DefaultValue="Radio 01">
+                      <DataLayer Type="Static" ID="BarChart">
+                        <StaticDataRow Value="Radio 01" />
+                        <StaticDataRow Value="Radio 02" />
+                      </DataLayer>
+                    </InputRadioButtons>
+                    <InputSelectList OptionCaptionColumn="Value" OptionValueColumn="Value" ID="islPreview" Caption="Select One: ">
+                      <DataLayer Type="Static" ID="SelectList">
+                        <StaticDataRow Value="Option 001" />
+                        <StaticDataRow Value="Option 002" />
+                        <StaticDataRow Value="Option 003" />
+                      </DataLayer>
+                    </InputSelectList>
+                    <InputText ID="txtThemeTest" Caption="TextCaption" />
+                    <InputCheckboxList OptionCaptionColumn="Value" OptionValueColumn="Value" ID="InputList" CheckboxListDropdown="True" Caption="Input List">
+                      <DataLayer Type="Static">
+                        <StaticDataRow Value="Value 001" />
+                        <StaticDataRow Value="Value 002" />
+                        <StaticDataRow Value="Value 003" />
+                      </DataLayer>
+                    </InputCheckboxList>
+                    <InputTextArea ID="taThemeTest" Caption="Caption:" />
+                  </InputGrid>
+                </Column>
+              </Row>
+            </Rows>
+            <LineBreak LineCount="2" />
+          </Division>
+          <Division ID="divButtons" Condition="'@Request.rdEditGroup~' == ''  || '@Request.rdEditGroup~' == 'Buttons and Tabs'" >
+            <Label Caption="Buttons and Tabs" Class="ThemeHeaderLarge" ID="GroupName" />
+            <HR />
+            <Rows Width="100" WidthScale="%">
+              <Row Class="ThemeAlignTopLeft">
+                <Column ColSpan="2">
+                  <Label Caption="Normal Button" Class="ThemeHeaderSmall" ID="SubTitle" />
+                  <LineBreak LineCount="2" />
+                  <Label Caption="Button Normal" ID="LinkButton" Class="ThemeLinkButton" />
+                  <LineBreak LineCount="2" />
+                  <Label Caption="       Button Hover   " ID="LinkButtonOver" Class="ThemeLinkButton  rdPreviewHoverState" />
+                  <LineBreak LineCount="2" />
+                </Column>
+                <Column Class="ThemeAlignTopLeft">
+                  <Label Caption="Input Button" Class="ThemeHeaderSmall" ID="SubTitle" />
+                  <LineBreak LineCount="2" />
+                  <Label Caption="Input Normal" ID="SmallLinkButton" Class="ThemeLinkButtonSmall" />
+                  <LineBreak LineCount="2" />
+                  <Label Caption="Input Hover" ID="SmallLinkButton" Class="rdPreviewHoverState ThemeLinkButtonSmall " />
+                  <LineBreak LineCount="2" />
+                </Column>
+                <Column Class="ThemeAlignTopLeft">
+                  <Label Caption="Small Button" Class="ThemeHeaderSmall" ID="SubTitle" />
+                  <LineBreak LineCount="2" />
+                  <Label Caption="Small Normal" ID="SmallLinkButton" Class="ThemeLinkButtonSmall" />
+                  <LineBreak LineCount="2" />
+                  <Label Caption="Small Hover" ID="SmallLinkButton" Class="rdPreviewHoverState ThemeLinkButtonSmall " />
+                  <LineBreak LineCount="2" />
+                </Column>
+              </Row>
+              <Row Class="ThemeAlignTopLeft">
+                <Column ColSpan="3">
+                  <Label Caption="Tabs" Class="ThemeHeaderSmall" ID="SubTitle" />
+                  <LineBreak LineCount="2" />
+                  <Tabs ID="Tabs" Width="100" WidthScale="%">
+                    <TabPanel Caption="Tab Panel 01" ID="Tab1">
+                    <LineBreak LineCount="2" />
+                    </TabPanel>
+                    <TabPanel Caption="Tab Panel 02" ID="Tab2">
+                      <LineBreak LineCount="2" />
+                    </TabPanel>
+                  </Tabs>
+                  <LineBreak LineCount="2" />
+                </Column>
+              </Row>
+              <Row Class="ThemeAlignTopLeft">
+                <Column ColSpan="3">
+                  <Label Caption="Tab Containers (super-elements tabs only)" Class="ThemeHeaderSmall" ID="SubTitle" />
+                  <LineBreak LineCount="2" />
+                  <Rows TableBorder="0" Class="PreviewUnselected" Width="100" WidthScale="%">
+                    <Row>
+                      <Column Class="rdAgSelectedTab  rdAgTabHeading">
+                        <Label ID="lblPreviewSelected" Caption="Selected" />
+                      </Column>
+                      <Column Class="rdAgUnselectedTab rdAgTabHeading">
+                        <Label ID="lblPreviewUnselected" Caption="UnSelected" />
+                      </Column>
+                    </Row>
+                    <Row Class="PreviewMenuBG" Width="100" WidthScale="%">
+                      <Column ColSpan="4">
+                        <LineBreak LineCount="1" />
+                        <Spaces Size="5" />
+                        <Label ID="lblSelectedTabContent" Caption="Selected Tab Content" Class="ThemeHeaderSmall  PreviewSelectedFont" />
+                        <LineBreak LineCount="1" />
+                        <Spaces Size="5" />
+                        <InputText ID="txt1" Caption="Caption" CaptionClass="PreviewSelectedFont" />
+                        <LineBreak LineCount="2" />
+                      </Column>
+                    </Row>
+                  </Rows>
+                </Column>
+              </Row>
+            </Rows>
+            <LineBreak LineCount="1" />
+          </Division>
+          <Division ID="divCharts" Condition="'@Request.rdEditGroup~' == '' || '@Request.rdEditGroup~' == 'Charts'">
+            <Label Caption="Charts" Class="ThemeHeaderLarge" ID="GroupName" />
+            <HR />
+            <Label Caption="Charts Colors" Class="ThemeHeaderSmall" ID="SubTitle" />
+            <LineBreak LineCount="2" />
+            <ChartCanvas ChartHeight="250" ChartCaption="Bar Chart" ChartSubCaption="Series SubCaption" ID="BarChart">
+              <Series Type="Bar" ChartYDataColumn="ID" LegendLabel="Series A" ChartXDataColumn="none">
+                <DataLayer Type="Static" ID="BarChart">
+                  <StaticDataRow ID="1" Value="First" />
+                </DataLayer>
+                <Quicktip Description="Series A: 1" />
+              </Series>
+              <Series Type="Bar" ChartYDataColumn="ID" LegendLabel="Series B">
+                <DataLayer Type="Static" ID="BarChart">
+                  <StaticDataRow ID="2" Value="Second" />
+                </DataLayer>
+                <Quicktip Description="Series B: 2" />
+              </Series>
+              <Series Type="Bar" ChartYDataColumn="ID" LegendLabel="Series C">
+                <DataLayer Type="Static" ID="BarChart">
+                  <StaticDataRow ID="3" Value="Third" />
+                </DataLayer>
+                <Quicktip Description="Series C: 3" />
+              </Series>
+              <Series Type="Bar" ChartYDataColumn="ID" LegendLabel="Series D">
+                <DataLayer Type="Static" ID="BarChart">
+                  <StaticDataRow ID="4" Value="Forth" />
+                </DataLayer>
+                <Quicktip Description="Series D: 4" />
+              </Series>
+              <Series Type="Bar" ChartYDataColumn="ID" LegendLabel="Series E">
+                <DataLayer Type="Static" ID="BarChart">
+                  <StaticDataRow ID="5" Value="Fifth" />
+                </DataLayer>
+                <Quicktip Description="Series E: 5" />
+              </Series>
+              <Series Type="Bar" ChartYDataColumn="ID" LegendLabel="Series F">
+                <DataLayer Type="Static" ID="BarChart">
+                  <StaticDataRow ID="6" Value="Sixth" />
+                </DataLayer>
+                <Quicktip Description="Series F: 6" />
+              </Series>
+              <Series Type="Bar" ChartYDataColumn="ID" LegendLabel="Series G">
+                <DataLayer Type="Static" ID="BarChart">
+                  <StaticDataRow ID="7" Value="Seventh" />
+                </DataLayer>
+                <Quicktip Description="Series G: 7" />
+              </Series>
+              <Series Type="Bar" ChartYDataColumn="ID" LegendLabel="Series H">
+                <DataLayer Type="Static" ID="BarChart">
+                  <StaticDataRow ID="8" Value="Eighth" />
+                </DataLayer>
+                <Quicktip Description="Series H: 8" />
+              </Series>
+              <ChartCanvasLegend AlignmentHorizontal="Center" AlignmentVertical="Bottom" LegendOrientation="Horizontal" InsidePlotArea="False" />
+            </ChartCanvas>
+            <LineBreak LineCount="1" />
+            <Rows Width="100" WidthScale="%" >
+              <Row Class="ThemeAlignTopLeft">
+                <Column Width="50" WidthScale="%">
+                  <ChartCanvas ChartHeight="250" ChartCaption="Pie Chart" ChartSubCaption="Series SubCaption" ID="DonutChart">
+                    <Series Type="Pie" ChartYDataColumn="ID" ChartLabelColumn="Value">
+                      <DataLayer Type="Static" ID="BarChart">
+                        <StaticDataRow ID="1" Value="First" />
+                        <StaticDataRow ID="2" Value="Second" />
+                        <StaticDataRow ID="3" Value="Third" />
+                        <StaticDataRow ID="4" Value="Fourth" />
+                        <StaticDataRow ID="5" Value="Fifth" />
+                        <StaticDataRow ID="6" Value="Sixth" />
+                        <StaticDataRow ID="7" Value="Seventh" />
+                        <StaticDataRow ID="8" Value="Eighth" />
+                      </DataLayer>
+                    </Series>
+                  </ChartCanvas>
+                </Column>
+                <Column Width="50" WidthScale="%" >
+                  <ChartCanvas ChartHeight="250" ChartCaption="Line Chart" ChartSubCaption="Series SubCaption" ID="LineChart">
+                    <Series Type="Area" ChartYDataColumn="ID" Stacking="Normal">
+                      <DataLayer Type="Static" ID="StaticDataLayer1">
+                        <StaticDataRow ID="12" Value="First" />
+                        <StaticDataRow ID="2" Value="Second" />
+                        <StaticDataRow ID="32" Value="Third" />
+                        <StaticDataRow ID="24" Value="Fourth" />
+                        <StaticDataRow ID="25" Value="Fifth" />
+                      </DataLayer>
+                    </Series>
+                    <Series Type="Area" ChartYDataColumn="ID" Stacking="Normal">
+                      <DataLayer Type="Static" ID="StaticDataLayer1">
+                        <StaticDataRow ID="21" Value="First" />
+                        <StaticDataRow ID="2" Value="Second" />
+                        <StaticDataRow ID="33" Value="Third" />
+                        <StaticDataRow ID="24" Value="Fourth" />
+                        <StaticDataRow ID="25" Value="Fifth" />
+                      </DataLayer>
+                    </Series>
+                    <Series Type="Area" ChartYDataColumn="ID" Stacking="Normal">
+                      <DataLayer Type="Static" ID="StaticDataLayer1">
+                        <StaticDataRow ID="1" Value="First" />
+                        <StaticDataRow ID="2" Value="Second" />
+                        <StaticDataRow ID="3" Value="Third" />
+                        <StaticDataRow ID="4" Value="Fourth" />
+                        <StaticDataRow ID="5" Value="Fifth" />
+                      </DataLayer>
+                    </Series>
+                    <Series Type="Area" ChartYDataColumn="ID" Stacking="Normal">
+                      <DataLayer Type="Static" ID="StaticDataLayer1">
+                        <StaticDataRow ID="7" Value="First" />
+                        <StaticDataRow ID="2" Value="Second" />
+                        <StaticDataRow ID="8" Value="Third" />
+                        <StaticDataRow ID="4" Value="Fourth" />
+                        <StaticDataRow ID="5" Value="Fifth" />
+                      </DataLayer>
+                    </Series>
+                    <Series Type="Area" ChartYDataColumn="ID" Stacking="Normal">
+                      <DataLayer Type="Static" ID="StaticDataLayer1">
+                        <StaticDataRow ID="1" Value="First" />
+                        <StaticDataRow ID="9" Value="Second" />
+                        <StaticDataRow ID="3" Value="Third" />
+                        <StaticDataRow ID="12" Value="Fourth" />
+                        <StaticDataRow ID="5" Value="Fifth" />
+                      </DataLayer>
+                    </Series>
+                    <Series Type="Area" ChartYDataColumn="ID" Stacking="Normal">
+                      <DataLayer Type="Static" ID="StaticDataLayer1">
+                        <StaticDataRow ID="11" Value="First" />
+                        <StaticDataRow ID="2" Value="Second" />
+                        <StaticDataRow ID="32" Value="Third" />
+                        <StaticDataRow ID="12" Value="Fourth" />
+                        <StaticDataRow ID="5" Value="Fifth" />
+                      </DataLayer>
+                    </Series>
+                    <Series Type="Area" ChartYDataColumn="ID" Stacking="Normal">
+                      <DataLayer Type="Static" ID="StaticDataLayer1">
+                        <StaticDataRow ID="1" Value="First" />
+                        <StaticDataRow ID="9" Value="Second" />
+                        <StaticDataRow ID="3" Value="Third" />
+                        <StaticDataRow ID="12" Value="Fourth" />
+                        <StaticDataRow ID="5" Value="Fifth" />
+                      </DataLayer>
+                    </Series>
+                    <Series Type="Area" ChartYDataColumn="ID" Stacking="Normal">
+                      <DataLayer Type="Static" ID="StaticDataLayer1">
+                        <StaticDataRow ID="11" Value="First" />
+                        <StaticDataRow ID="2" Value="Second" />
+                        <StaticDataRow ID="32" Value="Third" />
+                        <StaticDataRow ID="12" Value="Fourth" />
+                        <StaticDataRow ID="5" Value="Fifth" />
+                      </DataLayer>
+                    </Series>
+                  </ChartCanvas>
+                </Column>
+              </Row>
+            </Rows>
+            <LineBreak LineCount="1" />
+            <ChartCanvas ChartHeight="250" ChartCaption="Heatmap Chart" ChartSubCaption="Series SubCaption" ID="Heatmap">
+              <Series Type="Heatmap" HeatmapColorDataColumn="ID" HeatmapLabelDataColumn="Value" HeatmapSizeDataColumn="Weight">
+                <DataLayer Type="Static" ID="StaticDataLayer1">
+                  <StaticDataRow ID="11" Value="First" Weight="20" />
+                  <StaticDataRow ID="33" Value="Second" Weight="200" />
+                  <StaticDataRow ID="13" Value="Third" Weight="2" />
+                  <StaticDataRow ID="14" Value="Fourth" Weight="300" />
+                  <StaticDataRow ID="3" Value="Fifth" Weight="50" />
+                  <StaticDataRow ID="5" Value="Sixth" Weight="40" />
+                  <StaticDataRow ID="7" Value="Seventh" Weight="500" />
+                </DataLayer>
+              </Series>
+            </ChartCanvas>
+            <LineBreak LineCount="1" />
+          </Division>
+          <Division ID="divGauges" Condition="'@Request.rdEditGroup~' == '' || '@Request.rdEditGroup~' == 'Gauges'" >
+            <Label Caption="Gauges" Class="ThemeHeaderLarge" ID="GroupName" />
+            <HR />
+            <Label Caption="Gauge Colors" Class="ThemeHeaderSmall" ID="SubTitle" />
+            <LineBreak LineCount="2" />
+            <Rows Width="100" WidthScale="%">
+              <Row Class="ThemeAlignTopLeft">
+                <Column Width="100" WidthScale="%">
+                  <Gauge Type="Arc" ID="gaugeArc" Value="60" ChartHeight="290" ArcInnerRadius="50%" Caption="Arc Gauge" />
+                </Column>
+              </Row>
+              <Row Class="ThemeAlignTopLeft">
+                <Column Width="100" WidthScale="%">
+                  <Gauge Type="BalloonBar" ID="gaugeBaloon" Value="60" ChartHeight="150" Caption="Balloon Gauge">
+                  </Gauge>
+                </Column>
+              </Row>
+              <Row Class="ThemeAlignTopLeft">
+                <Column Width="100" WidthScale="%">
+                  <Gauge Type="BulletBar" ID="GaugeBullet" Value="30" Caption="Bullet Gauge" MarkerValue="20">
+                  </Gauge>
+                </Column>
+              </Row>
+            </Rows>
+          </Division>
+          <Division ID="divTables" Condition="'@Request.rdEditGroup~' == ''  || '@Request.rdEditGroup~' == 'Tables'" >
+            <Label Caption="Tables" Class="ThemeHeaderLarge" ID="GroupName" />
+            <HR />
+            <Label Caption="Data Table" Class="ThemeHeaderSmall" ID="SubTitle" />
+            <LineBreak LineCount="2" />
+            <DataTable ID="DataTable" RememberSort="True" SortArrows="True" Class="" ColumnHeaderClass="" Width="100" WidthScale="%" Caption="Orders" >
+              <DataLayer Type="Static" ID="StandardDataTable">
+                <StaticDataRow ID="1" OrderDate="1/20/1996" ShipName="Toms Spezialitäten" ShipAddress="Luisenstr. 48" ShipCountry="Germany" ShipCity="Münster" />
+                <StaticDataRow ID="2" OrderDate="7/9/1996" ShipName="Wellington Importadora" ShipAddress="Rua do Mercado, 12" ShipCountry="Brazil" ShipCity="Resende" />
+                <StaticDataRow ID="3" OrderDate="7/16/1996" ShipName="Ottilies Käseladen" ShipAddress="Mehrheimerstr. 369" ShipCountry="Germany" ShipCity="Köln" />
+                <StaticDataRow ID="4" OrderDate="6/11/1996" ShipName="Frankenversand" ShipAddress="Berliner Platz 43" ShipCountry="Germany" ShipCity="Münster" />
+                <StaticDataRow ID="5" OrderDate="7/15/1996" ShipName="Wellington Importadora" ShipAddress="Hanari Carnes" ShipCountry="Brazil" ShipCity="Rio de Janeiro" />
+              </DataLayer>
+              <DataTableColumn ID="colOrderDate" Header="OrderDate">
+                <Label ID="lblOrderDate" Caption="@Data.OrderDate~" Format="Short Date" />
+                <DataColumnSort DataColumn="OrderDate" DataType="Date" />
+              </DataTableColumn>
+              <DataTableColumn ID="colShipName" Header="ShipName">
+                <Label ID="lblShipName" Caption="@Data.ShipName~" />
+                <DataColumnSort DataColumn="ShipName" />
+              </DataTableColumn>
+              <DataTableColumn ID="colShipAddress" Header="ShipAddress">
+                <Label ID="lblShipAddress" Caption="@Data.ShipAddress~" />
+                <DataColumnSort DataColumn="ShipAddress" />
+              </DataTableColumn>
+              <DataTableColumn ID="colShipCountry" Header="ShipCountry">
+                <Label ID="lblShipCountry" Caption="@Data.ShipCountry~" />
+                <DataColumnSort DataColumn="ShipCountry" />
+              </DataTableColumn>
+              <DataTableColumn ID="colShipCity" Header="ShipCity">
+                <Label ID="lblShipCity" Caption="@Data.ShipCity~" />
+                <DataColumnSort DataColumn="ShipCity" />
+              </DataTableColumn>
+            </DataTable>
+            <LineBreak LineCount="2" />
+            <Label Caption="Grouped Data Table" Class="ThemeHeaderSmall" ID="SubTitle" />
+            <LineBreak LineCount="2" />
+            <DataTable ID="GroupedDataTable" RememberSort="True" SortArrows="True" Caption="This is the Table Caption" Width="100" WidthScale="%">
+              <DataLayer Type="Static" ID="StandardDataTable">
+                <StaticDataRow ID="1" OrderDate="1/20/1996" ShipName="Toms Spezialitäten" ShipAddress="Luisenstr. 48" ShipCountry="Germany" ShipCity="Münster" />
+                <StaticDataRow ID="2" OrderDate="7/9/1996" ShipName="Wellington Importadora" ShipAddress="Rua do Mercado, 12" ShipCountry="Brazil" ShipCity="Resende" />
+                <StaticDataRow ID="3" OrderDate="7/16/1996" ShipName="Ottilies Käseladen" ShipAddress="Mehrheimerstr. 369" ShipCountry="Germany" ShipCity="Köln" />
+                <StaticDataRow ID="4" OrderDate="6/11/1996" ShipName="Frankenversand" ShipAddress="Berliner Platz 43" ShipCountry="Germany" ShipCity="Münster" />
+                <StaticDataRow ID="5" OrderDate="7/15/1996" ShipName="Wellington Importadora" ShipAddress="Hanari Carnes" ShipCountry="Brazil" ShipCity="Rio de Janeiro" />
+                <GroupFilter GroupColumn="ShipCountry" ID="grpCountry" KeepGroupedRows="True">
+                  <GroupAggregateColumn AggregateColumn="OrderDate" AggregateFunction="Count" ID="aggOrderDate" />
+                </GroupFilter>
+              </DataLayer>
+              <HeaderRow>
+                <Column>
+                  <Label ID="lblHeaderRow" Caption="Header Row" />
+                </Column>
+                <Column>
+                  <Label ID="lblHeaderRowCount" Caption="Count: @Data.aggOrderDate~" />
+                </Column>
+                <Column >
+                  <Label />
+                </Column>
+                <Column >
+                  <Label />
+                </Column>
+                <Column >
+                  <Label />
+                </Column>
+              </HeaderRow>
+              <DataTableColumn ID="colOrderDate" Header="OrderDate">
+                <Label ID="lblOrderDate" Caption="@Data.OrderDate~" Format="Short Date" />
+                <DataColumnSort DataColumn="OrderDate" DataType="Date" />
+                <DataColumnSummary DataColumn="OrderDate" Function="Count" ID="aggOrderDate" />
+              </DataTableColumn>
+              <Remark>
+                <DataTableColumn ID="colShippedDate" Header="ShippedDate" >
+                  <Label ID="lblShippedDate" Caption="@Data.ShippedDate~" Format="Short Date" />
+                  <DataColumnSort DataColumn="ShippedDate" DataType="Date" />
+                </DataTableColumn>
+              </Remark>
+              <DataTableColumn ID="colShipName" Header="ShipName">
+                <Label ID="lblShipName" Caption="@Data.ShipName~" />
+                <DataColumnSort DataColumn="ShipName" />
+              </DataTableColumn>
+              <DataTableColumn ID="colShipAddress" Header="ShipAddress">
+                <Label ID="lblShipAddress" Caption="@Data.ShipAddress~" />
+                <DataColumnSort DataColumn="ShipAddress" />
+              </DataTableColumn>
+              <DataTableColumn ID="colShipCountry" Header="ShipCountry">
+                <Label ID="lblShipCountry" Caption="@Data.ShipCountry~" />
+                <DataColumnSort DataColumn="ShipCountry" />
+              </DataTableColumn>
+              <DataTableColumn ID="colShipCity" Header="ShipCity">
+                <Label ID="lblShipCity" Caption="@Data.ShipCity~" />
+                <DataColumnSort DataColumn="ShipCity" />
+              </DataTableColumn>
+              <GroupHeaderRow GroupFilterID="grpCountry">
+                <Column>
+                  <Label ID="lblGroupHeaderRow" Caption="Group Header Row" />
+                </Column>
+                <Column>
+                  <Label ID="lblGroupHeaderRowCount" Caption="Count: @Data.aggOrderDate~" />
+                </Column>
+                <Column >
+                  <Label />
+                </Column>
+                <Column >
+                  <Label />
+                </Column>
+                <Column >
+                  <Label />
+                </Column>
+              </GroupHeaderRow>
+              <InteractivePaging PageRowCount="10" ShowPageNumber="Numbered" HideShowPrevNextCaptions="True" CaptionType="Text" NextPageCaption="&gt;" HideWhenOnePage="True" PreviousPageCaption="&lt;" LastPageCaption="&gt;&gt;" FirstPageCaption="&lt;&lt;" Location="Top" />
+            </DataTable>
+            <LineBreak LineCount="2" />
+            <Label Caption="Grouped Data Table Headers" Class="ThemeHeaderSmall" ID="SubTitle" />
+            <LineBreak LineCount="2" />
+            <DataTable ID="MultipleGrouping" RememberSort="True" SortArrows="True" Width="100" WidthScale="%">
+              <DataLayer Type="Static" ID="StandardDataTable">
+                <StaticDataRow ID="1" OrderDate="1/20/1996" ShipName="Toms Spezialitäten" ShipAddress="Luisenstr. 48" ShipCountry="Germany" ShipCity="Münster" />
+                <StaticDataRow ID="2" OrderDate="7/9/1996" ShipName="Wellington Importadora" ShipAddress="Rua do Mercado, 12" ShipCountry="Brazil" ShipCity="Resende" />
+                <StaticDataRow ID="3" OrderDate="7/16/1996" ShipName="Ottilies Käseladen" ShipAddress="Mehrheimerstr. 369" ShipCountry="Germany" ShipCity="Köln" />
+                <StaticDataRow ID="4" OrderDate="6/11/1996" ShipName="Frankenversand" ShipAddress="Berliner Platz 43" ShipCountry="Germany" ShipCity="Münster" />
+                <StaticDataRow ID="5" OrderDate="7/15/1996" ShipName="Wellington Importadora" ShipAddress="Hanari Carnes" ShipCountry="Brazil" ShipCity="Rio de Janeiro" />
+                <GroupFilter GroupColumn="ShipCountry" ID="grpCountry" KeepGroupedRows="" Hierarchical="True">
+                  <GroupFilter GroupColumn="ShipCity" ID="grpCity" KeepGroupedRows="" Hierarchical="True">
+                    <GroupFilter GroupColumn="ShipAddress" ID="grpAddress" Hierarchical="True">
+                      <GroupFilter GroupColumn="ShipName" ID="grpShipName" KeepGroupedRows="" Hierarchical="True">
+                        <GroupFilter GroupColumn="OrderDate" ID="grpOrderDate" Hierarchical="True" />
+                      </GroupFilter>
+                    </GroupFilter>
+                  </GroupFilter>
+                </GroupFilter>
+              </DataLayer>
+              <GroupHeaderRow GroupFilterID="grpCountry" ID="hdrCountry" Caption="@Data.ShipCountry~" />
+              <GroupHeaderRow GroupFilterID="grpCity" ID="hdrCity" Caption="@Data.ShipCity~" PrependBlankRows="" />
+              <GroupHeaderRow ID="hdrAddress" GroupFilterID="grpAddress" Caption="@Data.ShipAddress~" PrependBlankRows="" />
+              <GroupHeaderRow ID="hdrShipName" GroupFilterID="grpShipName" Caption="@Data.ShipName~" PrependBlankRows="" />
+              <GroupHeaderRow ID="hdrOrderDate" GroupFilterID="grpOrderDate" Caption="@Data.OrderDate~" PrependBlankRows="" />
+              <DataTableColumn ID="colOrderDate" Header="OrderDate">
+                <Label ID="lblOrderDate" Caption="@Data.OrderDate~" Format="Short Date" />
+                <DataColumnSort DataColumn="OrderDate" DataType="Date" />
+              </DataTableColumn>
+              <DataTableColumn ID="colShippedDate" Header="ShippedDate">
+                <Label ID="lblShippedDate" Caption="@Data.ShippedDate~" Format="Short Date" />
+                <DataColumnSort DataColumn="ShippedDate" DataType="Date" />
+              </DataTableColumn>
+              <DataTableColumn ID="colShipName" Header="ShipName">
+                <Label ID="lblShipName" Caption="@Data.ShipName~" />
+                <DataColumnSort DataColumn="ShipName" />
+              </DataTableColumn>
+              <DataTableColumn ID="colShipAddress" Header="ShipAddress">
+                <Label ID="lblShipAddress" Caption="@Data.ShipAddress~" />
+                <DataColumnSort DataColumn="ShipAddress" />
+              </DataTableColumn>
+              <DataTableColumn ID="colShipCountry" Header="ShipCountry">
+                <Label ID="lblShipCountry" Caption="@Data.ShipCountry~" />
+                <DataColumnSort DataColumn="ShipCountry" />
+              </DataTableColumn>
+              <DataTableColumn ID="colShipCity" Header="ShipCity">
+                <Label ID="lblShipCity" Caption="@Data.ShipCity~" />
+                <DataColumnSort DataColumn="ShipCity" />
+              </DataTableColumn>
+              <InteractivePaging PageRowCount="10" ShowPageNumber="Numbered" Location="Top" HideShowPrevNextCaptions="True" CaptionType="Text" NextPageCaption="&gt;" HideWhenOnePage="True" PreviousPageCaption="&lt;" LastPageCaption="&gt;&gt;" FirstPageCaption="&lt;&lt;" />
+            </DataTable>     
+            <LineBreak LineCount="2" />
+            <Label Caption="Crosstab Table" Class="ThemeHeaderSmall" ID="SubTitle" />
+            <LineBreak LineCount="2" />
+            <CrosstabTable ID="CrosstabTable1" AjaxPaging="False" DraggableColumns="True" ResizableColumns="True" AccessibleSummary="AnalysisGrid CrossTabTable" Caption="Column1 by Column2 on Sum of Column3" SortArrows="True" Width="100" WidthScale="%">
+              <CrosstabTableLabelColumn ID="colAxLabel" Header="Column2">
+                <Label ID="lblAxLabl" Caption="@Data.Column2_By_FirstDayOfYear~" Format="yyyy" />
+                <DataColumnSort DataColumn="Column2_By_FirstDayOfYear" DataType="Date" />
+              </CrosstabTableLabelColumn>
+              <CrosstabTableValueColumns ID="colAxValue" Header="@Data.rdCrosstabColumn~">
+                <Label ID="lblAxValue" Caption="=iif(@Data.rdCrosstabValCount~=0,&quot;&quot;,&quot;@Data.rdCrosstabValue~&quot;)" />
+                <CrosstabValueColumnSort DataType="Number" />
+              </CrosstabTableValueColumns>
+              <DataLayer Type="Static" ID="StaticDataLayer2">
+                <SortFilter SortColumn="Column1" DataType="Text" />
+                <TimePeriodColumn ID="Column2_By_FirstDayOfYear" DataColumn="Column2" TimePeriod="FirstDayOfYear" DateGroupByOperator="FirstDayOfYear" DataType="Date" Format="yyyy" />
+                <CrosstabFilter CrosstabColumn="Column1" CrosstabLabelColumn="Column2_By_FirstDayOfYear" CrosstabValueColumn="Column3" CrosstabValueFunction="SUM" />
+                <StaticDataRow Column1="Fred" Column2="12/1/2005" Column3="43" />
+                <StaticDataRow Column1="John" Column2="12/2/2006" Column3="31" />
+                <StaticDataRow Column1="John" Column2="12/3/2008" Column3="67" />
+                <StaticDataRow Column1="Jeff" Column2="12/3/2008" Column3="65" />
+              </DataLayer>
+            </CrosstabTable>
+          </Division>
+        </ResponsiveColumn>
+      </ResponsiveRow>
+    </Division>
+  </Body>
+  <ideTestParams rdEditGroup="" icPreviewAll="" />
+</Report>

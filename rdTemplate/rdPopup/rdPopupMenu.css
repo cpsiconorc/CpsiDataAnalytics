@@ -1,0 +1,31 @@
+.rdPopupMenu A:link	
+{
+    text-decoration: none;
+    color: #555555;
+}
+.rdPopupMenu A:visited	
+{
+    text-decoration: none;
+    color: #555555;
+}
+.rdPopupMenu
+{
+    background-color:white;
+}
+
+.yuimenubaritemlabel-selected, .yuimenuitemlabel-selected, .yuimenubaritem-selected, .yuimenuitem-selected
+{
+    background-color:#E0E0E0;
+}
+
+.yuimenuitemlabel {
+    font-size: 100%;
+    font-weight: normal;
+}
+hr.yuimenuitemlabel {
+    border-bottom: none;
+    border-left: none;
+    border-right: none;
+    border-color: darkgray;
+    margin-bottom: 0px
+}

@@ -1,0 +1,18 @@
+<AnimatedMapDataXML>
+  <MapSpec InternalID="001" ShortName="BA" LongName="Baden-Wuerttemberg" />
+  <MapSpec InternalID="002" ShortName="BY" LongName="Bayern" />
+  <MapSpec InternalID="003" ShortName="BE" LongName="Berlin" />
+  <MapSpec InternalID="004" ShortName="BR" LongName="Brandenburg" />
+  <MapSpec InternalID="005" ShortName="BM" LongName="Bremen" />
+  <MapSpec InternalID="006" ShortName="HA" LongName="Hamburg" />
+  <MapSpec InternalID="007" ShortName="HE" LongName="Hessen" />
+  <MapSpec InternalID="008" ShortName="ME" LongName="Mecklenburg-Vorpommern" />
+  <MapSpec InternalID="009" ShortName="NI" LongName="Niedersachsen" />
+  <MapSpec InternalID="010" ShortName="NO" LongName="Nordrhein-Westfalen" />
+  <MapSpec InternalID="011" ShortName="RH" LongName="Rheinland-Pfalz" />
+  <MapSpec InternalID="012" ShortName="SA" LongName="Saarland" />
+  <MapSpec InternalID="013" ShortName="SC" LongName="Sachsen" />
+  <MapSpec InternalID="014" ShortName="SH" LongName="Sachsen-Anhalt" />
+  <MapSpec InternalID="015" ShortName="SS" LongName="Schleswig-Holstein" />
+  <MapSpec InternalID="016" ShortName="TH" LongName="Thueringen" />
+</AnimatedMapDataXML>

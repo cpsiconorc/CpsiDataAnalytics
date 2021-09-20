@@ -1,0 +1,13 @@
+<AnimatedMapDataXML>
+  <MapSpec InternalID="01" ShortName="AN" LongName="Antwerpen" />
+  <MapSpec InternalID="02" ShortName="HA" LongName="Hainaut" />
+  <MapSpec InternalID="03" ShortName="LI" LongName="Liege" />
+  <MapSpec InternalID="04" ShortName="LM" LongName="Limburg" />
+  <MapSpec InternalID="05" ShortName="LU" LongName="Luxembourg" />
+  <MapSpec InternalID="06" ShortName="NA" LongName="Namur" />
+  <MapSpec InternalID="07" ShortName="OV" LongName="Oost-Vlaanderen" />
+  <MapSpec InternalID="08" ShortName="WV" LongName="West-Vlaanderen" />
+  <MapSpec InternalID="09" ShortName="BW" LongName="Brabant Wallon" />
+  <MapSpec InternalID="010" ShortName="BR" LongName="Brussels" />
+  <MapSpec InternalID="011" ShortName="VB" LongName="Vlaams-Brabant" />
+</AnimatedMapDataXML>

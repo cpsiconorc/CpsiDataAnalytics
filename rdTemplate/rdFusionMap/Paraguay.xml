@@ -1,0 +1,20 @@
+<AnimatedMapDataXML>
+  <MapSpec InternalID="23" ShortName="AG" LongName="Alto Paraguay" />
+  <MapSpec InternalID="01" ShortName="AA" LongName="Alto Paraná" />
+  <MapSpec InternalID="02" ShortName="AM" LongName="Amambay" />
+  <MapSpec InternalID="22" ShortName="AS" LongName="Asunción Capitol District" />
+  <MapSpec InternalID="24" ShortName="BQ" LongName="Boquerón" />
+  <MapSpec InternalID="04" ShortName="CG" LongName="Caaguazú" />
+  <MapSpec InternalID="05" ShortName="CZ" LongName="Caazapá" />
+  <MapSpec InternalID="19" ShortName="CY" LongName="Canindeyú" />
+  <MapSpec InternalID="06" ShortName="CE" LongName="Central" />
+  <MapSpec InternalID="07" ShortName="CN" LongName="Concepción" />
+  <MapSpec InternalID="08" ShortName="CR" LongName="Cordillera" />
+  <MapSpec InternalID="10" ShortName="GU" LongName="Guairá" />
+  <MapSpec InternalID="11" ShortName="IT" LongName="Itapúa" />
+  <MapSpec InternalID="12" ShortName="MI" LongName="Misiones" />
+  <MapSpec InternalID="13" ShortName="NE" LongName="Ñeembucú" />
+  <MapSpec InternalID="15" ShortName="PG" LongName="Paraguarí" />
+  <MapSpec InternalID="16" ShortName="PH" LongName="Presidente Hayes" />
+  <MapSpec InternalID="17" ShortName="SP" LongName="San Pedro" />
+</AnimatedMapDataXML>

@@ -1,0 +1,12 @@
+<AnimatedMapDataXML>
+  <MapSpec InternalID="001" ShortName="BE" LongName="Belknap" />
+  <MapSpec InternalID="003" ShortName="CA" LongName="Carroll" />
+  <MapSpec InternalID="005" ShortName="CH" LongName="Cheshire" />
+  <MapSpec InternalID="007" ShortName="CO" LongName="Coos" />
+  <MapSpec InternalID="009" ShortName="GR" LongName="Grafton" />
+  <MapSpec InternalID="011" ShortName="HB" LongName="Hillsborough" />
+  <MapSpec InternalID="013" ShortName="ME" LongName="Merrimack" />
+  <MapSpec InternalID="015" ShortName="RG" LongName="Rockingham" />
+  <MapSpec InternalID="017" ShortName="ST" LongName="Strafford" />
+  <MapSpec InternalID="019" ShortName="SU" LongName="Sullivan" />
+</AnimatedMapDataXML>

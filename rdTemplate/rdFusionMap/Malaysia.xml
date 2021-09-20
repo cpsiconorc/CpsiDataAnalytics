@@ -1,0 +1,18 @@
+<AnimatedMapDataXML>
+  <MapSpec InternalID="001" ShortName="JO" LongName="Johor" />
+  <MapSpec InternalID="002" ShortName="KE" LongName="Kedah" />
+  <MapSpec InternalID="003" ShortName="KL" LongName="Kelantan" />
+  <MapSpec InternalID="004" ShortName="ME" LongName="Melaka" />
+  <MapSpec InternalID="005" ShortName="NS" LongName="Negeri    Sembilan" />
+  <MapSpec InternalID="006" ShortName="PA" LongName="Pahang" />
+  <MapSpec InternalID="007" ShortName="PE" LongName="Perak" />
+  <MapSpec InternalID="008" ShortName="PR" LongName="Perlis" />
+  <MapSpec InternalID="009" ShortName="PP" LongName="Pulau    Pinang" />
+  <MapSpec InternalID="010" ShortName="SA" LongName="Sabah" />
+  <MapSpec InternalID="011" ShortName="SR" LongName="Sarawak" />
+  <MapSpec InternalID="012" ShortName="SL" LongName="Selangor" />
+  <MapSpec InternalID="013" ShortName="TE" LongName="Terengganu" />
+  <MapSpec InternalID="015" ShortName="KL" LongName="Kuala Lumpur" />
+  <MapSpec InternalID="016" ShortName="LA" LongName="Labuan" />
+  <MapSpec InternalID="017" ShortName="PU" LongName="Putrajaya." />
+</AnimatedMapDataXML>

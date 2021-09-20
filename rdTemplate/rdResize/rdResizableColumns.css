@@ -1,0 +1,4 @@
+﻿table.rdResizableColumns td, table.rdResizableColumns th{
+    overflow: hidden;
+    text-overflow: clip;
+}

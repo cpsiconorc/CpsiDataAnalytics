@@ -1,0 +1,24 @@
+<AnimatedMapDataXML>
+  <MapSpec InternalID="02" ShortName="A" LongName="Azuay" />
+  <MapSpec InternalID="03" ShortName="B" LongName="Bolívar" />
+  <MapSpec InternalID="04" ShortName="F" LongName="Cañar" />
+  <MapSpec InternalID="05" ShortName="C" LongName="Carchi" />
+  <MapSpec InternalID="06" ShortName="H" LongName="Chimborazo" />
+  <MapSpec InternalID="07" ShortName="X" LongName="Cotopaxi" />
+  <MapSpec InternalID="08" ShortName="O" LongName="El Oro" />
+  <MapSpec InternalID="09" ShortName="E" LongName="Esmeraldas" />
+  <MapSpec InternalID="01" ShortName="W" LongName="Galápagos" />
+  <MapSpec InternalID="10" ShortName="G" LongName="Guayas" />
+  <MapSpec InternalID="11" ShortName="I" LongName="Imbabura" />
+  <MapSpec InternalID="12" ShortName="L" LongName="Loja" />
+  <MapSpec InternalID="13" ShortName="R" LongName="Los Ríos" />
+  <MapSpec InternalID="14" ShortName="M" LongName="Manabí" />
+  <MapSpec InternalID="15" ShortName="S" LongName="Morona-Santiago" />
+  <MapSpec InternalID="23" ShortName="N" LongName="Napo" />
+  <MapSpec InternalID="24" ShortName="D" LongName="Orellana" />
+  <MapSpec InternalID="17" ShortName="Y" LongName="Pastaza" />
+  <MapSpec InternalID="18" ShortName="P" LongName="Pichincha" />
+  <MapSpec InternalID="22" ShortName="U" LongName="Sucumbíos" />
+  <MapSpec InternalID="19" ShortName="T" LongName="Tungurahua" />
+  <MapSpec InternalID="20" ShortName="Z" LongName="Zamora-Chinchipe" />
+</AnimatedMapDataXML>

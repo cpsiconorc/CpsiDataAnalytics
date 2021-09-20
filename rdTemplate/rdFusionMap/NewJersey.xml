@@ -1,0 +1,23 @@
+<AnimatedMapDataXML>
+  <MapSpec InternalID="001" ShortName="AT" LongName="Atlantic" />
+  <MapSpec InternalID="003" ShortName="BE" LongName="Bergen" />
+  <MapSpec InternalID="005" ShortName="BU" LongName="Burlington" />
+  <MapSpec InternalID="007" ShortName="CA" LongName="Camden" />
+  <MapSpec InternalID="009" ShortName="CM" LongName="Cape May" />
+  <MapSpec InternalID="011" ShortName="CU" LongName="Cumberland" />
+  <MapSpec InternalID="013" ShortName="ES" LongName="Essex" />
+  <MapSpec InternalID="015" ShortName="GL" LongName="Gloucester" />
+  <MapSpec InternalID="017" ShortName="HU" LongName="Hudson" />
+  <MapSpec InternalID="019" ShortName="HT" LongName="Hunterdon" />
+  <MapSpec InternalID="021" ShortName="ME" LongName="Mercer" />
+  <MapSpec InternalID="023" ShortName="MI" LongName="Middlesex" />
+  <MapSpec InternalID="025" ShortName="MO" LongName="Monmouth" />
+  <MapSpec InternalID="027" ShortName="MR" LongName="Morris" />
+  <MapSpec InternalID="029" ShortName="OC" LongName="Ocean" />
+  <MapSpec InternalID="031" ShortName="PA" LongName="Passaic" />
+  <MapSpec InternalID="033" ShortName="SA" LongName="Salem" />
+  <MapSpec InternalID="035" ShortName="SO" LongName="Somerset" />
+  <MapSpec InternalID="037" ShortName="SU" LongName="Sussex" />
+  <MapSpec InternalID="039" ShortName="UN" LongName="Union" />
+  <MapSpec InternalID="041" ShortName="WA" LongName="Warren" />
+</AnimatedMapDataXML>

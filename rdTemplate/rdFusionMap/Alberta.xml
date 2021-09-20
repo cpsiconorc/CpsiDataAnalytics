@@ -1,0 +1,8 @@
+<AnimatedMapDataXML>
+  <MapSpec InternalID="CA.AB.AC" ShortName="AC" LongName="Alberta Central" />
+  <MapSpec InternalID="CA.AB.AN" ShortName="AN" LongName="Alberta North" />
+  <MapSpec InternalID="CA.AB.AS" ShortName="AS" LongName="Alberta South" />
+  <MapSpec InternalID="CA.AB.CA" ShortName="CA" LongName="Calgary and Area" />
+  <MapSpec InternalID="CA.AB.CR" ShortName="CR" LongName="Canadian Rockies" />
+  <MapSpec InternalID="CA.AB.EA" ShortName="EA" LongName="Edmonton and Area" />
+</AnimatedMapDataXML>

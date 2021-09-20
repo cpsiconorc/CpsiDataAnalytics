@@ -1,0 +1,23 @@
+<AnimatedMapDataXML>
+  <MapSpec InternalID="001" ShortName="AB" LongName="Abruzzo" />
+  <MapSpec InternalID="002" ShortName="BA" LongName="Basilicata" />
+  <MapSpec InternalID="003" ShortName="CA" LongName="Calabria" />
+  <MapSpec InternalID="004" ShortName="CM" LongName="Campania" />
+  <MapSpec InternalID="005" ShortName="EM" LongName="Emilia-Romagna" />
+  <MapSpec InternalID="006" ShortName="FI" LongName="Friuli-Venezia Giulia" />
+  <MapSpec InternalID="007" ShortName="LA" LongName="Lazio" />
+  <MapSpec InternalID="008" ShortName="LI" LongName="Liguria" />
+  <MapSpec InternalID="009" ShortName="LO" LongName="Lombardia" />
+  <MapSpec InternalID="010" ShortName="MA" LongName="Marche" />
+  <MapSpec InternalID="011" ShortName="MO" LongName="Molise" />
+  <MapSpec InternalID="012" ShortName="PI" LongName="Piemonte" />
+  <MapSpec InternalID="013" ShortName="PU" LongName="Puglia" />
+  <MapSpec InternalID="014" ShortName="SA" LongName="Sardegna" />
+  <MapSpec InternalID="015" ShortName="SI" LongName="Sicilia" />
+  <MapSpec InternalID="016" ShortName="TO" LongName="Toscana" />
+  <MapSpec InternalID="017" ShortName="TR" LongName="Trentino-Alto    Adige" />
+  <MapSpec InternalID="018" ShortName="UM" LongName="Umbria" />
+  <MapSpec InternalID="019" ShortName="VA" LongName="Valle d'Aosta" />
+  <MapSpec InternalID="020" ShortName="VE" LongName="Veneto." />
+  <MapSpec InternalID="021" ShortName="SM" LongName="Sanmarino" />
+</AnimatedMapDataXML>

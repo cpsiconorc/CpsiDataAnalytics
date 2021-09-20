@@ -1,0 +1,12 @@
+<AnimatedMapDataXML>
+  <MapSpec InternalID="56" ShortName="AL" LongName="Alytus" />
+  <MapSpec InternalID="57" ShortName="KU" LongName="Kaunas" />
+  <MapSpec InternalID="58" ShortName="KL" LongName="Klaipėda" />
+  <MapSpec InternalID="59" ShortName="MR" LongName="Marijampolė" />
+  <MapSpec InternalID="60" ShortName="PN" LongName="Panevėžys" />
+  <MapSpec InternalID="61" ShortName="SA" LongName="Šiauliai" />
+  <MapSpec InternalID="62" ShortName="TA" LongName="Tauragė" />
+  <MapSpec InternalID="63" ShortName="TE" LongName="Telšiai" />
+  <MapSpec InternalID="64" ShortName="UT" LongName="Utena" />
+  <MapSpec InternalID="65" ShortName="VL" LongName="Vilnius" />
+</AnimatedMapDataXML>

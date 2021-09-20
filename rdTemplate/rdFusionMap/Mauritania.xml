@@ -1,0 +1,15 @@
+<AnimatedMapDataXML>
+  <MapSpec InternalID="MR.AD" ShortName="AD" LongName="Adrar" />
+  <MapSpec InternalID="MR.AS" ShortName="AS" LongName="Assaba" />
+  <MapSpec InternalID="MR.BR" ShortName="BR" LongName="Brakna" />
+  <MapSpec InternalID="MR.DN" ShortName="DN" LongName="Dakhlet Nouadhibou" />
+  <MapSpec InternalID="MR.GO" ShortName="GO" LongName="Gorgol" />
+  <MapSpec InternalID="MR.GD" ShortName="GD" LongName="Guidimaka" />
+  <MapSpec InternalID="MR.HC" ShortName="HC" LongName="Hodh Ech Chargui" />
+  <MapSpec InternalID="MR.HG" ShortName="HG" LongName="Hodh El Gharbi" />
+  <MapSpec InternalID="MR.IN" ShortName="IN" LongName="Inchiri" />
+  <MapSpec InternalID="MR.NO" ShortName="NO" LongName="Nouakchott" />
+  <MapSpec InternalID="MR.TG" ShortName="TG" LongName="Tagant" />
+  <MapSpec InternalID="MR.TZ" ShortName="TZ" LongName="Tiris Zemmour" />
+  <MapSpec InternalID="MR.TR" ShortName="TR" LongName="Trarza" />
+</AnimatedMapDataXML>

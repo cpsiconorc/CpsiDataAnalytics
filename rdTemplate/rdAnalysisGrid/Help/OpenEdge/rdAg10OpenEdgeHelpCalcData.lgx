@@ -1,0 +1,145 @@
+﻿<DataLayer Type="Static">
+  <StaticDataRow Name="Abs" Description="Returns the absolute value of a number." Syntax="ABS(number)" Notes="The absolute value of -5 is 5."/>
+  <StaticDataRow Name="AddMonths" Description="Adds to the date value specified by the date_expression, the given number of months specified
+by integer_expression, and returns the resultant date value." Syntax="ADD_MONTHS(date_expression, integer_expression)" Notes="Example: ADD_MONTHS([start_date], 6)"/>
+  <StaticDataRow Name="Case" Description="Returns one value or another, depending on if the expression evaluates to True or False." Syntax="CASE WHEN 1=2 THEN &apos;Red&apos; ELSE &apos;Blue&apos; END" />
+  <StaticDataRow Name="Ceiling" Description="Returns the smallest integer greater than or equal to expression." Syntax="CEILING(expression)" Notes="Example: CEILING(32.5)"/>
+  <StaticDataRow Name="Coalesce" Description="Specifies a series of expressions and returns the first expression whose value is not NULL. If all the expressions evaluate as null, COALESCE returns a NULL value." Syntax="COALESCE(expression1, expression2[...])" Notes="Example: COALESCE([end_date], [start_date])"/>
+  <StaticDataRow Name="CurDate" Description="Returns the current date." Syntax="CURDATE()
+Alternate: SYSDATE" Notes=""/>
+  <StaticDataRow Name="CurTime" Description="Returns the current time." Syntax="CURTIME()
+Alternate: SYSTIME" Notes=""/>
+  <StaticDataRow Name="DateValue" Description="Returns a date from a date or date/time value." Syntax="CAST(date_value AS DATE)" Notes="Example: CAST(&apos;2017-01-01 12:00:34&apos; AS DATE)"/>
+  <StaticDataRow Name="DayName" Description="Returns the name of day of the week." Syntax="DAYNAME(date)" Notes=""/>
+  <StaticDataRow Name="DayOfMonth" Description="Returns the day of the month.  Possible return values are from 1-31." Syntax="DAYOFMONTH(date)" Notes=""/>
+  <StaticDataRow Name="DayOfWeek" Description="Returns the day of the week.  Possible return values are from 1-7." Syntax="DAYOFWEEK(date)" Notes=""/>
+  <StaticDataRow Name="DayOfYear" Description="Returns the day of the year.  Possible return values are from 1-366." Syntax="DAYOFYEAR(date)" Notes=""/>
+  <StaticDataRow Name="Decode" Description="Compares the value of the first argument expression with each search_expression and, if a match is found, returns the corresponding match_expression. If no match is found, then the function returns the default_expression. If a default_expression is not specified and no match is found, then the function returns a NULL value." Syntax="DECODE(expression, search_expression, match_expression [ , search_expression, match_expression...][ , default_expression] )" Notes="Example: DECODE([deptno],
+10, &apos;ACCOUNTS&apos;,
+20, &apos;RESEARCH&apos;,
+30, &apos;SALES&apos;,
+40, &apos;SUPPORT&apos;,
+&apos;NOT ASSIGNED&apos;
+)"/>
+  <StaticDataRow Name="Element" Description="Extracts one or more elements from an array column and returns the string between the specified positions." Syntax="PRO_ELEMENT(array_expression, start_position, end_position)" Notes="Example: PRO_ELEMENT(&apos;aa;bb;cc&apos;, 2, 2)"/>
+  <StaticDataRow Name="Floor" Description="Returns the largest integer less than or equal to expression." Syntax="FLOOR(expression)" Notes="Example: FLOOR(32.5)"/>
+  <StaticDataRow Name="FormatCurrency" Description="Format a number value into currency." Syntax="TO_CHAR(NumericValue, &apos;L9G999D99&apos;)" Notes=""/>
+  <StaticDataRow Name="FormatDateTime" Description="Formats a date." Syntax="TO_CHAR(DateValue, date_format)" Notes="Example: TO_CHAR(NOW(), &apos;YYYY-MM-DD&apos;)
+							
+Supported date formats:
+A.M. = Meridian indicator in the native language—with periods.
+AM   = Meridian indicator in the native language—without periods.
+CC   = The century as a two-digit number—computed as one greater than the first two digits of the four-digit year. Considers 1900 to be in the 20th century, 2000 to be in the 21st century, and so on.
+D    = The day of the week as a one-digit number between 1 and 7.
+day  = The day of the week in the native language—all lowercase.
+Day  = The day of the week in the native language—first letter only in uppercase.
+DAY  = The day of the week in the native language—entire name in uppercase.
+DD   = The day of the month as a two-digit number between 01 and 31.
+DDD  = The day of the year as a three-digit number between 001 and 365.
+DY   = The day of the week as a three-character string in the native language.
+HH   = The hour of the day as a two-digit number between 01 and 12.
+HH12 = The hour of the day as a two-digit number between 01 and 12. Synonym of HH
+HH24 = The hour of the day as a two-digit number between 00 and 23.
+J    = The Julian day.
+MI   = The minute of the hour as a two-digit number between 0 and 59.
+MM   = The month as a two-digit number between 01 and 12.
+MON  = The first three characters of the name of the month in the native language.
+MONTH = The first nine characters of the name of the month in the native language, right-padded with blanks.
+P.M. = Meridian indicator in the native language—with periods.
+PM   = Meridian indicator in the native language—without periods.
+Q    = The quarter of the year as a single digit between 1 and 4.
+SCC  = The century as a two-digit number—computed as one greater than the first two digits of the four-digit year. BC dates are prefixed by &quot;-&quot;. Considers 1900 to be in the 20th century, 2000 to be in the 21st century, and so on.
+SS   = Seconds as a two-digit number between 00 and 59.
+SSSS = Seconds past midnight as a number between 0 and 86339.
+TH   = Ordinal suffix appended to a number—replaced by ST, ND, RD, or TH, depending on the last digit of the number.
+W    = The week of the month as a single digit between 1 and 5.
+WW   = The week of the year as a two-digit number between 01 and 52.
+Y    = The year as a single digit.
+YY   = The year as a two-digit number.
+YYYY = The year as a four-digit number."/>
+  <StaticDataRow Name="FormatNumber" Description="Formats a number." Syntax="TO_CHAR(NumericValue, number_format)" Notes="Example: TO_CHAR(455.2, &apos;9D9&apos;)
+							
+	Supported number formats:
+$ = Returns a value with a leading dollar sign.
+, = Returns a comma in the specified position (not a thousands separator).
+. = Returns a decimal in the specified position (not a fractional indicator).
+0 = Displays and positions a leading or trailing zero.
+9 = Sets the number of significant digits to be displayed. Displays the leading space if positive, leading minus if negative. Leading zeros are blank except for a zero value returning a zero for the integer part of the number.
+D = Returns NLS_NUMERIC_CHARACTER in the specified position. The default D character is (.).
+G = Returns NLS_NUMERIC_CHARACTER in the specified position. The default G character is (,).
+L = Return the local currency symbol NLS_CURRENCY in the specified position."/>
+  <StaticDataRow Name="FormatPercent" Description="Formats a number as a percentage." Syntax="TO_CHAR(NumberValue, &apos;9.99&apos;) +&apos;%&apos;" Notes=""/>
+  <StaticDataRow Name="Greatest" Description="Returns the greatest value among the values of the given expressions." Syntax="GREATEST(expression, expression...)" Notes="Example: GREATEST(ADD_MONTHS([start_date], 10), CURDATE())"/>
+  <StaticDataRow Name="Hour" Description="Returns the hour of the day.  Possible return values are 0-23." Syntax="HOUR(time)" Notes=""/>
+  <StaticDataRow Name="IfNull" Description="Returns value if expr is NULL. If expr is not NULL, IFNULL returns expr." Syntax="IFNULL(expr, value)" Notes="Example: IFNULL([C1], 9999)"/>
+  <StaticDataRow Name="InitCap" Description="Returns the result of the argument character expression after converting the first character to uppercase and the subsequent characters to lowercase." Syntax="INITCAP(char_expression)" Notes="Example: INITCAP([last_name])"/>
+  <StaticDataRow Name="InString" Description="Returns the character location where one string is found within another string." Syntax="INSTR(expressionToFind ,expressionToSearch [,start_location][, occurrence])" Notes="Returns the index value if the string is found, else returns 0."/>
+  <StaticDataRow Name="Integer" Description="Returns the integer portion of a number, removing any decimal places." Syntax="FLOOR(number)" Notes="Example: FLOOR(32.5)"/>
+  <StaticDataRow Name="LastDayOfMonth" Description="Returns the date corresponding to the last day of the month containing the argument date." Syntax="LAST_DAY(date_expression)" Notes="Example: LAST_DAY([order_date]) + 1"/>
+  <StaticDataRow Name="Left" Description="Returns the &quot;length&quot; number of characters from the left side of the input text." Syntax="LEFT(character_expression, integer_expression)" Notes=""/>
+  <StaticDataRow Name="Least" Description="Returns the lowest value among the values of the given expressions." Syntax="LEAST(expression, expression, ... )" Notes="Example: LEAST(ADD_MONTHS([start_date], 10), CURDATE())"/>
+  <StaticDataRow Name="Length" Description="Returns the number of characters in the text." Syntax="LENGTH(text)" Notes=""/>
+  <StaticDataRow Name="Lower" Description="Converts all characters to lower case." Syntax="LOWER(text)" Notes=""/>
+  <StaticDataRow Name="LTrim" Description="Removes the space characters from the left side of the text." Syntax="LTRIM(text)" Notes=""/>
+  <StaticDataRow Name="Minute" Description="Returns the minute of the hour.  Possible return values are 0-59." Syntax="MINUTE(time)" Notes=""/>
+  <StaticDataRow Name="Modulus" Description="Returns the remainder of expression1 divided by expression2." Syntax="MOD(expression1, expression2 )" Notes="Example: MOD(11, 4)"/>
+  <StaticDataRow Name="Month" Description="Returns the month of the year.  Possible return values are 1-12." Syntax="MONTH(date)" Notes=""/>
+  <StaticDataRow Name="MonthName" Description="Returns the name of the month." Syntax="MONTHNAME(date)" Notes=""/>
+  <StaticDataRow Name="MonthsBetween" Description="Computes the number of months between two date values corresponding to the first and second arguments." Syntax="MONTHS_BETWEEN(date_expression, date_expression )" Notes="Example: MONTHS_BETWEEN(CURDATE(), [order_date])"/>
+  <StaticDataRow Name="NextDay" Description="Returns the minimum date that is greater than the date corresponding to the first argument where the day of the week is the same as that specified by the second argument." Syntax="NEXT_DAY(date_expression, day_of_week)" Notes="Example: NEXT_DAY([order_date], &apos;MONDAY&apos;)"/>
+  <StaticDataRow Name="Now" Description="Returns the current date and time." Syntax="NOW()
+Alternate: SYSTIMESTAMP" Notes=""/>
+  <StaticDataRow Name="NullIf" Description="Returns a NULL value for expression1 if it is equal to expression2." Syntax="NULLIF(expression1, expression2 )" Notes="Example: NULLIF([address1], &apos; &apos;)"/>
+  <StaticDataRow Name="Power" Description="Exponentiation: Power( m, n ). Function returns m raised to the nth power." Syntax="Power(m,n)" Notes=""/>
+  <StaticDataRow Name="Prefix" Description="Returns the substring of a character string, starting from the position specified by start_pos and ending before the specified character." Syntax="PREFIX(char_expression, start_pos, char_expression)" Notes="Example: PREFIX([colstring], 1, &apos;.&apos;)"/>
+  <StaticDataRow Name="Quarter" Description="Returns the quarter of the year.  Possible values are 1-4." Syntax="QUARTER(date)" Notes=""/>
+  <StaticDataRow Name="Random" Description="Returns a random number between 0 and 1." Syntax="RAND([seed])" Notes="Seed is an integer expression (tinyint, smallint, or int) that gives the seed value. This parameter is Optional."/>
+  <StaticDataRow Name="Repeat" Description="Returns text consisting of the character duplicated the number of times." Syntax="REPEAT(text,count)" Notes=""/>
+  <StaticDataRow Name="Replace" Description="Searches textSearch for textFind, replacing it with the textReplaceWith value." Syntax="REPLACE(string1,string_to_replace,replacement_string)" />
+
+  <StaticDataRow Name="Right" Description="Returns the &quot;length&quot; number of characters from the right side of the input text." Syntax="RIGHT(str,len)" Notes=""/>
+  <StaticDataRow Name="Round" Description="Returns a number rounded to a specified number of decimal places." Syntax="ROUND(number,length )" Notes="Example: ROUND(150.75, 0) = 151
+	ROUND(150.75, 1) = 150.8"/>
+  <StaticDataRow Name="RTrim" Description="Removes any space characters from the right side of the text." Syntax="RTRIM(text)" Notes=""/>
+  <StaticDataRow Name="Second" Description="Returns the second of the minute.  Possible values are 0-59." Syntax="SECOND(time)" Notes=""/>
+  <StaticDataRow Name="Sign" Description="Returns -1 if the number is negative.  Returns 1 if the number is positive.  Returns 0 if the number is 0." Syntax="SIGN(number)" Notes=""/>
+  <StaticDataRow Name="Space" Description="Returns text consisting of the number of spaces." Syntax="SPACE(number)" Notes=""/>
+  <StaticDataRow Name="SquareRoot" Description="Returns the square root of a number." Syntax="SQRT(number)" Notes=""/>
+  <StaticDataRow Name="SubString" Description="Returns characters from the middle of the text." Syntax="SUBSTRING(text,start,length)" Notes="&quot;start&quot; is the first character to be returned.  The first character is at position 1.
+&quot;length&quot; is the number of characters to be returned.
+Example: SUBSTR(phone, 1, 3)"/>
+  <StaticDataRow Name="TimeStampAdd" Description="Adds or subtracts some interval of time from a date or time." Syntax="TIMESTAMPADD(interval, number, date)" Notes="Example: TIMESTAMPADD(SQL_TSI_QUARTER, 1, date)
+							
+							Interval must be one of the following unquoted values:
+SQL_TSI_YEAR
+SQL_TSI_QUARTER
+SQL_TSI_MONTH
+SQL_TSI_WEEK
+SQL_TSI_DAY
+SQL_TSI_HOUR
+SQL_TSI_MINUTE
+SQL_TSI_SECOND "/>
+  <StaticDataRow Name="TimeStampDiff" Description="Computes the difference between two dates." Syntax="TIMESTAMPDIFF(interval, date1, date2)" Notes="Example: TIMESTAMPDIFF(SQL_TSI_WEEK, date, NOW() )
+							
+							Interval must be one of the following unquoted values:
+SQL_TSI_YEAR
+SQL_TSI_QUARTER
+SQL_TSI_MONTH
+SQL_TSI_WEEK
+SQL_TSI_DAY
+SQL_TSI_HOUR
+SQL_TSI_MINUTE
+SQL_TSI_SECOND "/>
+  <StaticDataRow Name="TimeValue" Description="Returns time from a time or date/time value." Syntax="CAST(date_value AS TIME)" Notes="Example: CAST(NOW() AS TIME)"/>
+  <StaticDataRow Name="Suffix" Description="Returns the substring of a character string starting after the position specified by start_pos and the second char_expression, to the end of the string." Syntax="SUFFIX(char_expression, start_pos, char_expression)" Notes="Example: SUFFIX([C1], 6, &apos;.&apos;)"/>
+  <StaticDataRow Name="ToDate" Description="Converts the given date literal to a date value." Syntax="TO_DATE(date_literal)" Notes="Example: TO_DATE(&apos;12/31/2003&apos;)"/>
+  <StaticDataRow Name="ToNumber" Description="Converts the given character expression to a number value." Syntax="TO_NUMBER(char_expression)" Notes="Example: TO_NUMBER(SUBSTR([phone], 1, 3))"/>
+  <StaticDataRow Name="ToTime" Description="Converts the given time literal to a time value." Syntax="TO_TIME(time_literal)" Notes="Example: TO_TIME(&apos;12:00:00&apos;)"/>
+  <StaticDataRow Name="ToTimeStamp" Description="Converts the given timestamp literal to a timestamp value." Syntax="TO_TIMESTAMP(timestamp_literal)" Notes="Example: TO_TIMESTAMP(&apos;4/18/03 10:41:19&apos;)"/>
+  <StaticDataRow Name="Translate" Description="Translates each character in char_expression that is in from_set to the corresponding character in to_set." Syntax="TRANSLATE(char_expression, from_set, to_set)" Notes="Example: TRANSLATE(&apos;abcdef&apos;, &apos;acf&apos;, &apos;123&apos;)"/>
+  <StaticDataRow Name="Trim" Description="Removes space characters from both the left and rights sides of the text." Syntax="LTRIM(RTRIM(text))" Notes=""/>
+  <StaticDataRow Name="Upper" Description="Converts all characters to upper case." Syntax="UPPER(text)" Notes=""/>
+  <StaticDataRow Name="Week" Description="Returns the number of the week of the year. Possible values are 1-53." Syntax="WEEK(date)" Notes=""/>
+  <StaticDataRow Name="Year" Description="Returns the number of the year of the specified date." Syntax="YEAR(date)" Notes=""/>
+
+</DataLayer>

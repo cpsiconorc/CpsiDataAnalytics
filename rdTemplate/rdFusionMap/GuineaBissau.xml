@@ -1,0 +1,11 @@
+<AnimatedMapDataXML>
+  <MapSpec InternalID="GW.BA" ShortName="BA" LongName="Bafata" />
+  <MapSpec InternalID="GW.BM" ShortName="BM" LongName="Biombo" />
+  <MapSpec InternalID="GW.BS" ShortName="BS" LongName="Bissau" />
+  <MapSpec InternalID="GW.BL" ShortName="BL" LongName="Bolama" />
+  <MapSpec InternalID="GW.CA" ShortName="CA" LongName="Cacheu" />
+  <MapSpec InternalID="GW.GA" ShortName="GA" LongName="Gabu" />
+  <MapSpec InternalID="GW.OI" ShortName="OI" LongName="Oio" />
+  <MapSpec InternalID="GW.QU" ShortName="QU" LongName="Quinara" />
+  <MapSpec InternalID="GW.TO" ShortName="TO" LongName="Tombali" />
+</AnimatedMapDataXML>

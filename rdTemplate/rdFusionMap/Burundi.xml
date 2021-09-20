@@ -1,0 +1,19 @@
+<AnimatedMapDataXML>
+  <MapSpec InternalID="BI.BB" ShortName="BB" LongName="Bubanza" />
+  <MapSpec InternalID="BI.BM" ShortName="BM" LongName="Bujumbura Mairie" />
+  <MapSpec InternalID="BI.BU" ShortName="BU" LongName="Bujumbura Rural" />
+  <MapSpec InternalID="BI.BR" ShortName="BR" LongName="Bururi" />
+  <MapSpec InternalID="BI.CA" ShortName="CA" LongName="Cankuzo" />
+  <MapSpec InternalID="BI.CI" ShortName="CI" LongName="Cibitoke" />
+  <MapSpec InternalID="BI.GI" ShortName="GI" LongName="Gitega" />
+  <MapSpec InternalID="BI.KR" ShortName="KR" LongName="Karuzi" />
+  <MapSpec InternalID="BI.KY" ShortName="KY" LongName="Kayanza" />
+  <MapSpec InternalID="BI.KI" ShortName="KI" LongName="Kirundo" />
+  <MapSpec InternalID="BI.MA" ShortName="MA" LongName="Makamba" />
+  <MapSpec InternalID="BI.MV" ShortName="MV" LongName="Muramvya" />
+  <MapSpec InternalID="BI.MY" ShortName="MY" LongName="Muyinga" />
+  <MapSpec InternalID="BI.MW" ShortName="MW" LongName="Mwaro" />
+  <MapSpec InternalID="BI.NG" ShortName="NG" LongName="Ngozi" />
+  <MapSpec InternalID="BI.RT" ShortName="RT" LongName="Rutana" />
+  <MapSpec InternalID="BI.RY" ShortName="RY" LongName="Ruyigi" />
+</AnimatedMapDataXML>

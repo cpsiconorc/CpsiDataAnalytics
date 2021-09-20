@@ -1,0 +1,8 @@
+<AnimatedMapDataXML>
+  <MapSpec InternalID="MG.AV" ShortName="AV" LongName="Antananarivo" />
+  <MapSpec InternalID="MG.AS" ShortName="AS" LongName="Antsiranana" />
+  <MapSpec InternalID="MG.FI" ShortName="FI" LongName="Fianarantsoa" />
+  <MapSpec InternalID="MG.MA" ShortName="MA" LongName="Mahajanga" />
+  <MapSpec InternalID="MG.TM" ShortName="TM" LongName="Toamasina" />
+  <MapSpec InternalID="MG.TL" ShortName="TL" LongName="Toliara" />
+</AnimatedMapDataXML>

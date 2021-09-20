@@ -1,0 +1,34 @@
+<AnimatedMapDataXML>
+  <MapSpec InternalID="01" ShortName="AZ" LongName="Ázua" />
+  <MapSpec InternalID="02" ShortName="BR" LongName="Bahoruco" />
+  <MapSpec InternalID="03" ShortName="BH" LongName="Barahona" />
+  <MapSpec InternalID="04" ShortName="DA" LongName="Dajabón" />
+  <MapSpec InternalID="06" ShortName="DU" LongName="Duarte" />
+  <MapSpec InternalID="34" ShortName="NC" LongName="Distrito Nacional" />
+  <MapSpec InternalID="11" ShortName="EP" LongName="Elías Piña" />
+  <MapSpec InternalID="28" ShortName="SE" LongName="El Seibo" />
+  <MapSpec InternalID="08" ShortName="ES" LongName="Espaillat" />
+  <MapSpec InternalID="29" ShortName="HM" LongName="Hato Mayor" />
+  <MapSpec InternalID="09" ShortName="IN" LongName="Independencia" />
+  <MapSpec InternalID="10" ShortName="AL" LongName="La Altagracia" />
+  <MapSpec InternalID="12" ShortName="RO" LongName="La Romana" />
+  <MapSpec InternalID="30" ShortName="VE" LongName="La Vega" />
+  <MapSpec InternalID="14" ShortName="MT" LongName="María Trinidad Sánchez" />
+  <MapSpec InternalID="31" ShortName="MN" LongName="Monseñor Nouel" />
+  <MapSpec InternalID="15" ShortName="MC" LongName="Monte Cristi" />
+  <MapSpec InternalID="32" ShortName="MP" LongName="Monte Plata" />
+  <MapSpec InternalID="16" ShortName="PN" LongName="Pedernales" />
+  <MapSpec InternalID="35" ShortName="PV" LongName="Peravia" />
+  <MapSpec InternalID="18" ShortName="PP" LongName="Puerto Plata" />
+  <MapSpec InternalID="19" ShortName="SC" LongName="Salcedo" />
+  <MapSpec InternalID="20" ShortName="SM" LongName="Samaná" />
+  <MapSpec InternalID="21" ShortName="SZ" LongName="Sánchez Ramírez" />
+  <MapSpec InternalID="33" ShortName="CR" LongName="San Cristóbal" />
+  <MapSpec InternalID="36" ShortName="JO" LongName="San José de Ocoa" />
+  <MapSpec InternalID="23" ShortName="JU" LongName="San Juan" />
+  <MapSpec InternalID="24" ShortName="PM" LongName="San Pedro de Macorís" />
+  <MapSpec InternalID="25" ShortName="ST" LongName="Santiago" />
+  <MapSpec InternalID="26" ShortName="SR" LongName="Santiago Rodríguez" />
+  <MapSpec InternalID="37" ShortName="SD" LongName="Santo Domingo" />
+  <MapSpec InternalID="27" ShortName="VA" LongName="Valverde" />
+</AnimatedMapDataXML>

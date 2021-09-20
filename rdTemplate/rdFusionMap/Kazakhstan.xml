@@ -1,0 +1,19 @@
+<AnimatedMapDataXML>
+  <MapSpec InternalID="KZ.AA" ShortName="AA" LongName="Almaty" />
+  <MapSpec InternalID="KZ.AC" ShortName="AC" LongName="Almaty City" />
+  <MapSpec InternalID="KZ.AM" ShortName="AM" LongName="Aqmola" />
+  <MapSpec InternalID="KZ.AT" ShortName="AT" LongName="Aqtobe" />
+  <MapSpec InternalID="KZ.AS" ShortName="AS" LongName="Astana" />
+  <MapSpec InternalID="KZ.AR" ShortName="AR" LongName="Atyrau" />
+  <MapSpec InternalID="KZ.BY" ShortName="BY" LongName="Bayqonyr" />
+  <MapSpec InternalID="KZ.EK" ShortName="EK" LongName="East Kazakhstan" />
+  <MapSpec InternalID="KZ.MG" ShortName="MG" LongName="Mangghystau" />
+  <MapSpec InternalID="KZ.NK" ShortName="NK" LongName="North Kazakhstan" />
+  <MapSpec InternalID="KZ.PA" ShortName="PA" LongName="Pavlodar" />
+  <MapSpec InternalID="KZ.QG" ShortName="QG" LongName="Qaraghandy" />
+  <MapSpec InternalID="KZ.QS" ShortName="QS" LongName="Qostanay" />
+  <MapSpec InternalID="KZ.QO" ShortName="QO" LongName="Qyzylorda" />
+  <MapSpec InternalID="KZ.SK" ShortName="SK" LongName="South Kazakhstan" />
+  <MapSpec InternalID="KZ.WK" ShortName="WK" LongName="West Kazakhstan" />
+  <MapSpec InternalID="KZ.ZM" ShortName="ZM" LongName="Zhambyl" />
+</AnimatedMapDataXML>

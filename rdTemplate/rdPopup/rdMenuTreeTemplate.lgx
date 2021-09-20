@@ -1,0 +1,52 @@
+﻿<Report ID="rdPopup.rdMenuTreeTemplate">
+	<Body ID="bodyMain">
+		<Division ID="rdMenuTreeID" ShowModes="None">
+			<Rows ID="rdMenuTable" CellSpacing="0" >
+				<Row ID="rdMenuRow_rdDataMenuTreeID">
+					<Column ID="rdMenuColumn_rdDataMenuTreeID">
+						<Rows CellSpacing="0">
+							<Row>
+								<Action Type="Link" ID="actLink_rdDataMenuTreeID">
+									<Target Type="Link" ID="tgt_rdDataMenuTreeID" Link="javascript:rdDataMenuTreeExpandCollapse('rdDataMenuTreeID',document.getElementById('rdExpando_rdDataMenuTreeID_Row@Function.RowNumber~'));" />
+								</Action>
+								<Column ID="rdIndent_rdDataMenuTreeID" Width="" WidthScale="px" />
+								<Column ID="rdImage">
+									<Image ID="rdExpando_rdDataMenuTreeID" Caption="rdTemplate/rdArrowBlank.gif">
+									</Image>
+									<Division ID="rdDmtHidden" ShowModes="None">
+										<Label ID="rdExpandoStatus_rdDataMenuTreeID" Caption="+" />
+										<Label ID="rdExpandoItemID_rdDataMenuTreeID" Caption="Data.SubMenuIDColumn~:@Data.Caption~" />
+									</Division>
+								</Column>
+								<Column>
+									<Label ID="rdDmtCaption" Caption="" />
+								</Column>
+							</Row>
+						</Rows>
+					</Column>
+				</Row>
+			</Rows>
+			<InputHidden ID="rdDisableRememberExpansion_rdDataMenuTreeID" DefaultValue="False" />
+			<Division ShowModes="None">
+				<Image ID="rdBranchCollapsedImage_rdDataMenuTreeID" Caption="rdTemplate/rdArrowRight.png" />
+				<Image ID="rdBranchExpandedImage_rdDataMenuTreeID" Caption="rdTemplate/rdArrowDown.png" />
+			</Division>
+			<IncludeHtml Html="&lt;SCRIPT rdAjaxRunOnLoad=&quot;True&quot;&gt;rdDataMenuTreeInit('rdDataMenuTreeID')&lt;/SCRIPT&gt;" />
+		</Division>
+    <Division ID="rdMenuPopupTreeID">
+      <Rows ID="rdMenuTable" CellSpacing="0" >
+        <Row ID="rdMenuRow_rdDataMenuTreeID">
+          <Column ID="rdMenuColumn_rdDataMenuTreeID">
+            <Label ID="rdMenuColumn_rdMenuBranchCaption">
+              <Action ID="agColumnHeaderPopupMenu" Class="rdThemePopupMenu" Type="Popup" >
+                <PopupOption >
+                </PopupOption>
+              </Action>
+            </Label>
+          </Column>
+        </Row>
+      </Rows>
+      <HtmlStyle display="inline-block"/>
+    </Division>
+	</Body>
+</Report>

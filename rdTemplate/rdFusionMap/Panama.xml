@@ -1,0 +1,16 @@
+<AnimatedMapDataXML>
+  <MapSpec InternalID="PA.BC" ShortName="BC" LongName="Bocas del Toro" />
+  <MapSpec InternalID="PA.CH" ShortName="CH" LongName="Chiriqui" />
+  <MapSpec InternalID="PA.CC" ShortName="CC" LongName="Cocle" />
+  <MapSpec InternalID="PA.CL" ShortName="CL" LongName="Colon" />
+  <MapSpec InternalID="PA.DR" ShortName="DR" LongName="Darien" />
+  <MapSpec InternalID="PA.EM" ShortName="EM" LongName="Embera" />
+  <MapSpec InternalID="PA.HE" ShortName="HE" LongName="Herrera" />
+  <MapSpec InternalID="PA.KM" ShortName="KM" LongName="Kuna de Madungandi" />
+  <MapSpec InternalID="PA.KW" ShortName="KW" LongName="Kuna de Wargandi" />
+  <MapSpec InternalID="PA.SB" ShortName="SB" LongName="Kuna Yala" />
+  <MapSpec InternalID="PA.LS" ShortName="LS" LongName="Los Santos" />
+  <MapSpec InternalID="PA.NB" ShortName="NB" LongName="Ngobe Bugle" />
+  <MapSpec InternalID="PA.PN" ShortName="PN" LongName="Panama" />
+  <MapSpec InternalID="PA.VR" ShortName="VR" LongName="Veraguas" />
+</AnimatedMapDataXML>

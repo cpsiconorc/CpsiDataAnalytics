@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Report ID="ReportAuthorDev.Templates.PdfButtonTemplate">
+  <Body>
+    <Division ID="rdElementID" rdReportAuthorElementType="PdfButton" HtmlDiv="True" ShowModes="rdBrowser" Class="rd-report-author-element">
+      <Image ID="img_rdElementID" Caption="../rdTemplate/rdReportAuthor/PDF.png" AltText="Print to PDF" />
+      <Label ID="label_rdElementID" Caption="Download as PDF">
+        <Action Type="PDF" ID="actionPDF_rdElementID">
+          <Target Type="PDF" ID="targetPDF_rdElementID" FrameID="NewWindow" />
+          <LinkParams rdExportReportAuthorView="True" PdfPageSize="8.5X11" PdfPageOrientation="Portrait" />
+        </Action>
+      </Label>
+    </Division>
+  </Body>
+</Report>

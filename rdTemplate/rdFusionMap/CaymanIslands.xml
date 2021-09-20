@@ -1,0 +1,9 @@
+<AnimatedMapDataXML>
+  <MapSpec InternalID="KY.BT" ShortName="BT" LongName="Bodden Town" />
+  <MapSpec InternalID="KY.CB" ShortName="CB" LongName="Cayman Brac" />
+  <MapSpec InternalID="KY.EE" ShortName="EE" LongName="East End" />
+  <MapSpec InternalID="KY.GT" ShortName="GT" LongName="George Town" />
+  <MapSpec InternalID="KY.SO" ShortName="SO" LongName="Little Cayman" />
+  <MapSpec InternalID="KY.NS" ShortName="NS" LongName="North Side" />
+  <MapSpec InternalID="KY.WB" ShortName="WB" LongName="West Bay" />
+</AnimatedMapDataXML>

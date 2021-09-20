@@ -1,0 +1,16 @@
+<AnimatedMapDataXML>
+  <MapSpec InternalID="79" ShortName="JC" LongName="Jihočeský" />
+  <MapSpec InternalID="78" ShortName="JM" LongName="Jihomoravský" />
+  <MapSpec InternalID="81" ShortName="KA" LongName="Karlovarský" />
+  <MapSpec InternalID="82" ShortName="KR" LongName="Královéhradecký" />
+  <MapSpec InternalID="83" ShortName="LI" LongName="Liberecký" />
+  <MapSpec InternalID="85" ShortName="MO" LongName="Moravskoslezský" />
+  <MapSpec InternalID="84" ShortName="OL" LongName="Olomoucký" />
+  <MapSpec InternalID="86" ShortName="PA" LongName="Pardubický" />
+  <MapSpec InternalID="87" ShortName="PL" LongName="Plzeňský" />
+  <MapSpec InternalID="52" ShortName="PR" LongName="Praha" />
+  <MapSpec InternalID="88" ShortName="ST" LongName="Středočeský" />
+  <MapSpec InternalID="89" ShortName="US" LongName="Ústecký" />
+  <MapSpec InternalID="80" ShortName="VY" LongName="Vysočina" />
+  <MapSpec InternalID="90" ShortName="ZL" LongName="Zlínský" />
+</AnimatedMapDataXML>

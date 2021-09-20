@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Report ID="VerticaAghelp">
+	<StyleSheet StyleSheet="rdTemplate/rdAnalysisGrid/rdAg10Style.css" />
+	<Remark>
+		<StyleSheet StyleSheet="@Session.rdAgStyleSheet~" />
+	</Remark>
+	<Body Class="rdAg">
+		<Rows ID="rowsAnalysisGrid" CellSpacing="4">
+			<Row ID="rowTitle" Class="rdAgCaptionRow">
+				<Column ID="colTitle">
+					<Label ID="lblTitle" Caption="Aggregate Formula Help - Vertica" />
+				</Column>
+			</Row>
+			<Row ID="rowInstruct">
+				<Column ID="colInstruct">
+					<Label ID="lblInstruct" Caption="Aggregate formulas are expressions containing aggregate functions, which can also include data columns, constants, functions, and operators.
+
+Columns are values that come from the data.  Their names are are enclosed in square brackets, like [ShippedDate].  Depending on their data type, they may be used as text strings, numbers, and date/time values.
+
+Constants are simply specific fixed values that you enter into a Formula.
+
+Functions return values, usually computations based on columns and constants.
+
+Operators do arithmetic and logical comparisons. Logical comparisons must be used with Case statements.
+
+Here are some examples:
+
+SUM([UnitPrice] * [Quantity])
+Multiply two data columns, UnitPrice and Quantity, then SUM the result to make an ExtendedPrice aggregate.
+
+MIN([UnitPrice] * .04)
+Multiply a data column by a constant value to calculate the tax applied to the price, then apply MIN to get the aggregate.
+
+AVG(DISTINCT [UnitPrice])
+Get the average [UnitPrice] considering only one of each unique value." Format="Preserve Line Feeds" />
+					<LineBreak LineCount="2" />
+				</Column>
+			</Row>
+			<Row ID="rowFunctions" Class="rdAgCaptionRow">
+				<Column ID="colFunctions">
+					<Label ID="lblFunctions" Caption="Aggregate Functions" />
+				</Column>
+			</Row>
+			<Row>
+				<Column>
+					<Label ID="lblInstruct" Caption="For information:" Format="Preserve Line Feeds" />
+					<Label ID="lblInstruct" Caption=" https://www.vertica.com/docs/9.2.x/HTML/Content/Authoring/SQLReferenceManual/Functions/Aggregate/AggregateFunctions.htm" Format="Preserve Line Feeds">
+						<Action Type="Link" ID="actVerticaLink">
+							<Target Type="Link" ID="tgtVerticaLink" Link="https://www.vertica.com/docs/9.2.x/HTML/Content/Authoring/SQLReferenceManual/Functions/Aggregate/AggregateFunctions.htm" />
+						</Action>
+					</Label>
+					<LineBreak LineCount="2" />
+				</Column>
+			</Row>
+      <Row ID="rowCalcFunctions" Class="rdAgCaptionRow">
+        <Column ID="colCalcFunctions">
+          <Label ID="lblCalcFunctions" Caption="Functions" />
+        </Column>
+      </Row>
+      <Row>
+        <Column>
+          <Label ID="lblCalcInstruct" Caption="For information:" Format="Preserve Line Feeds" />
+          <Label ID="lblCalcInstruct" Caption=" https://www.vertica.com/docs/9.2.x/HTML/Content/Authoring/SQLReferenceManual/SQLReferenceManual.htm" Format="Preserve Line Feeds">
+            <Action Type="Link" ID="actCalcVerticaLink">
+              <Target Type="Link" ID="tgtCalcVerticaLink" Link="https://www.vertica.com/docs/9.2.x/HTML/Content/Authoring/SQLReferenceManual/SQLReferenceManual.htm" />
+            </Action>
+          </Label>
+          <LineBreak LineCount="2" />
+        </Column>
+      </Row>
+      <Row ID="rowOperators" Class="rdAgCaptionRow">
+				<Column ID="colOperators">
+					<Label ID="lblOperators" Caption="Operators" />
+				</Column>
+			</Row>
+			<Row ID="rowOperatorsDetail">
+				<Column ID="colOperators">
+					<Label ID="lblIntro" Caption="Operators do arithmetic and logical comparisons." />
+					<LineBreak LineCount="2" />
+					<DataTable ID="dtOperators" CellSpacing="0" TableBorder="1" IdeDisplayStatus="Collapsed">
+						<DataLayer Type="Static" ID="dlFunctions">
+							<StaticDataRow Operator="-" Description="Negation" />
+							<StaticDataRow Operator="*" Description="Multiplication" />
+							<StaticDataRow Operator="/" Description="Division" />
+							<StaticDataRow Operator="%" Description="Modulus: m%n." />
+							<StaticDataRow Operator="+" Description="Addition" />
+							<StaticDataRow Operator="-" Description="Subtraction" />
+						</DataLayer>
+						<DataTableColumn ID="colOperator" Header="Operator" Class="cell">
+							<Label ID="lblOperator" Caption="@Data.Operator~" />
+							<Label ID="lblSpace" Caption="&amp;nbsp;" Format="HTML" />
+						</DataTableColumn>
+						<DataTableColumn ID="colDescription" Header="Description" Class="cell">
+							<Label ID="lblDescription" Caption="@Data.Description~" />
+							<Label ID="lblSpace" Caption="&amp;nbsp;" Format="HTML" />
+						</DataTableColumn>
+					</DataTable>
+				</Column>
+			</Row>
+		</Rows>
+	</Body>
+	<ideTestParams rdAgStyleSheet="" />
+</Report>

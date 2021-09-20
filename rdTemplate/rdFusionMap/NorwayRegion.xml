@@ -1,0 +1,23 @@
+<AnimatedMapDataXML>
+  <MapSpec InternalID="01" ShortName="AK" LongName="Akershus" />
+  <MapSpec InternalID="02" ShortName="AA" LongName="Aust-Agder" />
+  <MapSpec InternalID="04" ShortName="BU" LongName="Buskerud" />
+  <MapSpec InternalID="05" ShortName="FI" LongName="Finnmark" />
+  <MapSpec InternalID="06" ShortName="HE" LongName="Hedmark" />
+  <MapSpec InternalID="07" ShortName="HO" LongName="Hordaland" />
+  <MapSpec InternalID="08" ShortName="MR" LongName="Møre og Romsdal" />
+  <MapSpec InternalID="09" ShortName="NO" LongName="Nordland" />
+  <MapSpec InternalID="10" ShortName="NT" LongName="Nord-Trøndelag" />
+  <MapSpec InternalID="11" ShortName="OP" LongName="Oppland" />
+  <MapSpec InternalID="12" ShortName="OS" LongName="Oslo" />
+  <MapSpec InternalID="13" ShortName="OT" LongName="Østfold" />
+  <MapSpec InternalID="14" ShortName="RO" LongName="Rogaland" />
+  <MapSpec InternalID="15" ShortName="SO" LongName="Sogn og Fjordane" />
+  <MapSpec InternalID="16" ShortName="ST" LongName="Sør-Trøndelag" />
+  <MapSpec InternalID="17" ShortName="TE" LongName="Telemark" />
+  <MapSpec InternalID="18" ShortName="TR" LongName="Troms" />
+  <MapSpec InternalID="19" ShortName="VA" LongName="Vest-Agder" />
+  <MapSpec InternalID="20" ShortName="VE" LongName="Vestfold" />
+  <MapSpec InternalID="21" ShortName="SV" LongName="Svalbard" />
+  <MapSpec InternalID="22" ShortName="JM" LongName="Jan Mayen" />
+</AnimatedMapDataXML>

@@ -1,0 +1,18 @@
+<AnimatedMapDataXML>
+  <MapSpec InternalID="001" ShortName="AN" LongName="Androscoggin" />
+  <MapSpec InternalID="003" ShortName="AR" LongName="Aroostook" />
+  <MapSpec InternalID="005" ShortName="CU" LongName="Cumberland" />
+  <MapSpec InternalID="007" ShortName="FR" LongName="Franklin" />
+  <MapSpec InternalID="009" ShortName="HA" LongName="Hancock" />
+  <MapSpec InternalID="011" ShortName="KE" LongName="Kennebec" />
+  <MapSpec InternalID="013" ShortName="KN" LongName="Knox" />
+  <MapSpec InternalID="015" ShortName="LI" LongName="Lincoln" />
+  <MapSpec InternalID="017" ShortName="OX" LongName="Oxford" />
+  <MapSpec InternalID="019" ShortName="PE" LongName="Penobscot" />
+  <MapSpec InternalID="021" ShortName="PI" LongName="Piscataquis" />
+  <MapSpec InternalID="023" ShortName="SA" LongName="Sagadahoc" />
+  <MapSpec InternalID="025" ShortName="SO" LongName="Somerset" />
+  <MapSpec InternalID="027" ShortName="WA" LongName="Waldo" />
+  <MapSpec InternalID="029" ShortName="WS" LongName="Washington" />
+  <MapSpec InternalID="031" ShortName="YO" LongName="York" />
+</AnimatedMapDataXML>

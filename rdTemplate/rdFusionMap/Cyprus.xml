@@ -1,0 +1,8 @@
+<AnimatedMapDataXML>
+  <MapSpec InternalID="01" ShortName="FA" LongName="Famagusta" />
+  <MapSpec InternalID="02" ShortName="KY" LongName="Kyrenia" />
+  <MapSpec InternalID="03" ShortName="LA" LongName="Larnaca" />
+  <MapSpec InternalID="05" ShortName="LI" LongName="Limassol" />
+  <MapSpec InternalID="04" ShortName="NI" LongName="Nicosia" />
+  <MapSpec InternalID="06" ShortName="PA" LongName="Paphos" />
+</AnimatedMapDataXML>

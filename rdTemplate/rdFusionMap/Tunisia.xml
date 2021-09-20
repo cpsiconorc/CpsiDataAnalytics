@@ -1,0 +1,26 @@
+<AnimatedMapDataXML>
+  <MapSpec InternalID="TN.AN" ShortName="AN" LongName="Ariana" />
+  <MapSpec InternalID="TN.BJ" ShortName="BJ" LongName="Beja" />
+  <MapSpec InternalID="TN.BA" ShortName="BA" LongName="Ben Arous" />
+  <MapSpec InternalID="TN.BZ" ShortName="BZ" LongName="Bizerte" />
+  <MapSpec InternalID="TN.GB" ShortName="GB" LongName="Gabes" />
+  <MapSpec InternalID="TN.GF" ShortName="GF" LongName="Gafsa" />
+  <MapSpec InternalID="TN.JE" ShortName="JE" LongName="Jendouba" />
+  <MapSpec InternalID="TN.KR" ShortName="KR" LongName="Kairouan" />
+  <MapSpec InternalID="TN.KS" ShortName="KS" LongName="Kasserine" />
+  <MapSpec InternalID="TN.KB" ShortName="KB" LongName="Kebili" />
+  <MapSpec InternalID="TN.KF" ShortName="KF" LongName="Kef" />
+  <MapSpec InternalID="TN.MH" ShortName="MH" LongName="Mahdia" />
+  <MapSpec InternalID="TN.MN" ShortName="MN" LongName="Manouba" />
+  <MapSpec InternalID="TN.ME" ShortName="ME" LongName="Medenine" />
+  <MapSpec InternalID="TN.MS" ShortName="MS" LongName="Monastir" />
+  <MapSpec InternalID="TN.NB" ShortName="NB" LongName="Nabeul" />
+  <MapSpec InternalID="TN.SF" ShortName="SF" LongName="Sfax" />
+  <MapSpec InternalID="TN.SZ" ShortName="SZ" LongName="Sidi Bou Zid" />
+  <MapSpec InternalID="TN.SL" ShortName="SL" LongName="Siliana" />
+  <MapSpec InternalID="TN.SS" ShortName="SS" LongName="Sousse" />
+  <MapSpec InternalID="TN.TA" ShortName="TA" LongName="Tataouine" />
+  <MapSpec InternalID="TN.TO" ShortName="TO" LongName="Tozeur" />
+  <MapSpec InternalID="TN.TU" ShortName="TU" LongName="Tunis" />
+  <MapSpec InternalID="TN.ZA" ShortName="ZA" LongName="Zaghouan" />
+</AnimatedMapDataXML>

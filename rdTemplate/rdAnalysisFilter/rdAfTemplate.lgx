@@ -1,0 +1,512 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report ID="AnalysisFilter.rdAfTemplate" rdAfVersion="12.2">
+	<Body>
+		<Division ID="divAf_rdAfID">
+
+		  <InputHidden ID="rdAfMode_rdAfID" DefaultValue="" />
+      <InputHidden ID="rdAfDataSourceSyntax_rdAfID" DefaultValue="" />
+      <Division ID="divAfControlContainer_rdAfID" ShowModes="None">
+        <Label ID="rdAfDataColumnTypes_rdAfID" />
+        <Label ID="rdAfDataColumnFormats_rdAfID" />
+        <Label ID="rdAfDataColumnDataColumns_rdAfID" />
+      </Division>
+      <Division ID="divAfDesignSave_rdAfID" ShowModes="None" >
+        <Action Type="Report" ID="actAfDesignSave_rdAfID" rdAfRefreshType="Full" >
+          <Target Type="Report" RequestForwarding="True" />
+          <LinkParams rdAfCommand="" rdAnalysisFilterID="rdAfID" rdAfFilterID="" rdAfRefresh="True" />
+          <WaitPage />
+        </Action>
+        <Action Type="RefreshElement" ID="actAfDesignSave_rdAfID" rdAfRefreshType="Ajax" ElementID="rdAfID,rdAfRefreshElementIDs" RequestForwarding="True"  >
+          <LinkParams rdAfCommand="" rdAnalysisFilterID="rdAfID" rdAfFilterID="" rdAfRefresh="True" />
+          <WaitPage />
+        </Action>
+      </Division>
+
+      <Rows>
+        <Row>
+          <Column Class="rdAgContentRow rdAg">
+            <Division ID="rdAfModeSwap_rdAfID" Class="" Tooltip="Analysis Filter Design View options.">
+              <Image ID="imgModeSimple_rdAfID" Caption="rdTemplate/rdEdit.png" >
+                <Action Type="Javascript" Javascript="rdAfSetMode('rdAfID','Simple')" />
+              </Image>
+              <Image ID="imgModeDesign_rdAfID" Caption="rdTemplate/rdEdit.png" >
+                <Action Type="Javascript" Javascript="rdAfSetMode('rdAfID','Design')" />
+              </Image>
+            </Division>
+          </Column>
+          <Column>
+            <Division ID="rdAfContent_rdAfID" Class="ThemeNoWrap">
+              <Note Note="Filter elements get inserted here." />
+            </Division>
+          </Column>
+        </Row>
+      </Rows>
+
+      <Division Class="rdAgHidden,rdDashboardHidden">
+        <Label ID="rdAfCaptionLine_rdAfID" Caption="" />        
+        <Label ID="rdAfCaptionList_rdAfID" Caption="" />
+        <Label ID="rdAfCaptionElementID_rdAfID" Caption="" />
+      </Division>
+      
+      <IncludeHtml Html="&lt;SCRIPT rdAjaxRunOnLoad=&quot;True&quot;&gt;if(typeof rdAfUpdateUi !== 'undefined'){rdAfUpdateUi(false,'rdAfID',true)}&lt;/SCRIPT&gt;" />
+      
+      <FilterTemplates>
+				<Division ID="rdAfSimpleMode_rdAfID" >
+					<Division ID="divSimpleList_rdAfID">
+						<DataTable ID="dtFilters_rdAfID" Class="rdNoClass">
+							<DataLayer Type="Static" ID="dlFilters_rdAfID" ForAnalysisFilter="True">
+								<AggregateColumn AggregateColumn="DataColumn" AggregateFunction="COUNT" ID="cntFilters_rdAfID" />
+								<SequenceColumn ID="seqFilters" />
+							</DataLayer>
+              <DataTableColumn ID="colFilterDisabled_rdAfID" Class="rdNoClass">
+                <InputCheckbox ID="rdAfFilterDisabled_rdAfID" DefaultValue="@Data.Disabled~" UncheckedValue="True">
+                  <EventHandler DhtmlEvent="onclick">
+                    <Action Type="Report" ID="actAfSimpleDisableAjax_rdAfID" rdAfRefreshType="Full" >
+                      <Target Type="Report" />
+                      <LinkParams rdAfCommand="ToggleDisable" rdAfToggleDisable="True" rdAnalysisFilterID="rdAfID" rdAfFilterID="@Data.FilterID~" rdAfFilterRowNr="@Function.RowNumber~" />
+                      <WaitPage />
+                    </Action>
+                    <Action Type="RefreshElement" ID="actAfSimpleDisableAjax_rdAfID" rdAfRefreshType="Ajax" ElementID="rdAfID,rdAfRefreshElementIDs" >
+                      <LinkParams rdAfCommand="ToggleDisable" rdAfToggleDisable="True" rdAnalysisFilterID="rdAfID" rdAfFilterID="@Data.FilterID~" rdAfFilterRowNr="@Function.RowNumber~" />
+                      <WaitPage />
+                    </Action>
+
+                  </EventHandler>
+                </InputCheckbox>
+              </DataTableColumn>
+              <DataTableColumn ID="colSimpleName_rdAfID" Class="rdNoClass">
+                <Action Type="Javascript" ID="actEditSimple_rdAfID" Javascript="rdAfEditSimple('rdAfID', '@Data.FilterID~', @Function.RowNumber~, &quot;@Data.ColumnID~&quot;, &quot;@Data.Operator~&quot;, &quot;@Data.Value~&quot;, &quot;@Data.DateType~&quot;, &quot;@Data.SlidingDateName~&quot;)" />
+                <Label  ID="lblFilterCaption_rdAfID" Caption="@Data.FilterCaptionLimited~" Tooltip="@Data.FilterCaption~" />
+                <Label  ID="lblFilterDataColumn_rdAfID" Caption="@Data.GlobalFilterColumnID~" Class="rdAgHidden" />
+                <Label  ID="lblFilterDashboardPanelID_rdAfID" Caption="@Data.rdGlobalFilterFromPanelID~" Class="rdAgHidden" />
+              </DataTableColumn>
+            </DataTable>
+            
+						<Division ID="divAfSimpleEditControls_rdAfID" ShowModes="None">
+							<Note Note="The element for editing values is copied to here from below. ID=rowFilterValue_rdAfID" />
+						</Division>
+
+					</Division>
+
+          <Label ID="lblAfSimpleNoFilters_rdAfID" Caption="(No filters)" />
+          
+					<LineBreak LineCount="1" />
+				</Division>
+				
+					
+					
+						
+				<Division ID="rdAfDesignMode_rdAfID" >
+          <Rows ID="rowsAfDesignMode_rdAfID">
+            <Row ID="rowFilterInputs_rdAfID" Class="rdAgContentRow">
+              <Column ID="colFilterInputs_rdAfID">
+					<Division ID="divFilterInputs_rdAfID">
+						<Rows ID="rowsFilterInputs_rdAfID">
+							<Row ID="rowFilterColumn_rdAfID">
+								<Column ID="colFilterColumn_rdAfID">
+									<Label ID="lblFilterColumn_rdAfID" Caption="Filter Column" For="rdAfFilterColumnID_rdAfID" />
+								</Column>
+								<Column ID="colFilterColumn">
+									<InputSelectList OptionValueColumn="ID" ID="rdAfFilterColumnID_rdAfID" IncludeBlank="True" OptionCaptionColumn="ColumnHeader" DefaultValue="@Request.rdAfFilterColumnID_rdAfID~">
+										<DataLayer Type="Static" ID="dlFilterColumns_rdAfID" />
+										<EventHandler DhtmlEvent="onchange">
+											<Action Type="Javascript" Javascript="rdAfUpdateUi(false, 'rdAfID')"  ID="actionChangeFilterColumn_rdAfID" />
+										</EventHandler>
+									</InputSelectList>
+								</Column>
+							</Row>
+							<Row ID="rowFilterOperator_rdAfID">
+								<Column ID="colFilterOperatorCell1_rdAfID">
+									<Label ID="lblFilterOperator_rdAfID" Caption="Comparison" For="rdAfFilterOperator_rdAfID" />
+								</Column>
+								<Column ID="colFilterOperatorCell2_rdAfID">
+									<InputSelectList OptionValueColumn="OperatorValue" ID="rdAfFilterOperator_rdAfID" OptionCaptionColumn="Operator" DefaultValue="@Request.rdAfFilterOperator_rdAfID~">
+										<DataLayer Type="Static" ID="dlFilterOperators">
+											<StaticDataRow Operator="=" OperatorValue="=" />
+											<StaticDataRow Operator="&lt;" OperatorValue="&lt;" />
+											<StaticDataRow Operator="&lt;=" OperatorValue="&lt;=" />
+											<StaticDataRow Operator="&gt;=" OperatorValue="&gt;=" />
+											<StaticDataRow Operator="&gt;" OperatorValue="&gt;" />
+											<StaticDataRow Operator="Not =" OperatorValue="&lt;&gt;" />
+											<StaticDataRow Operator="In List" OperatorValue="In List" />
+											<StaticDataRow Operator="Not In List" OperatorValue="Not In List" />
+											<StaticDataRow Operator="Starts With" OperatorValue="Starts With" />
+											<StaticDataRow Operator="Contains" OperatorValue="Contains" />
+											<StaticDataRow Operator="Not Starts With" OperatorValue="Not Starts With" />
+											<StaticDataRow Operator="Not Contains" OperatorValue="Not Contains" />
+                      <StaticDataRow Operator="Date Range" OperatorValue="Date Range" />
+                      <StaticDataRow Operator="Range" OperatorValue="Range" />
+                      <StaticDataRow Operator="Like" OperatorValue="Like" />
+                      <StaticDataRow Operator="Not Like" OperatorValue="Not Like" />
+                    </DataLayer>
+										<EventHandler DhtmlEvent="onchange">
+											<Action Type="Javascript" Javascript="rdAfUpdateUi(false, 'rdAfID')" ID="actionChangeFilterOptionColumn"/>
+										</EventHandler>
+									</InputSelectList>
+								</Column>
+							</Row>
+							<Row ID="rowFilterValue_rdAfID">
+								<Column ID="colFilterValue_rdAfID">
+									<Label ID="lblFilterValue_rdAfID" Caption="Value" For="colFilterValue2_rdAfID" />
+								</Column>
+								<Column ID="colFilterValue2_rdAfID">
+                  <Division ID="divAfPickColumnsContainer_rdAfID" ShowModes="None">
+                    <Label ID="rdAfPickDistinctColumns_rdAfID" />
+                    <Label ID="rdAfPickDateColumns_rdAfID" />
+                  </Division>
+                  <Division ID="divPickBoolean_rdAfID" ShowModes="None">
+                    <InputSelectList ID="rdAfFilterValueBoolean_rdAfID" DefaultValue="@Request.rdAfFilterValueBoolean_rdAfID~" OptionCaptionColumn="Caption" OptionValueColumn="Value">
+                      <DataLayer ID="dlrdAfFilterValueBoolean_rdAfID" Type="Static">
+                        <StaticDataRow Caption="False" Value="False" />
+                        <StaticDataRow Caption="True" Value="True" />
+                        <StaticDataRow Caption="Compare Column" Value="Compare Column" />
+                      </DataLayer>
+                      <EventHandler DhtmlEvent="onchange">
+                        <Action Type="Javascript" Javascript="rdAfUpdateUi(false, 'rdAfID')" ID="actionChangeFilterOptionBoolean"/>
+                      </EventHandler>
+                    </InputSelectList>
+                  </Division>
+                  <Division ID="divSlidingTimeStartDateFilterOperator_rdAfID" ShowModes="None">
+										<InputSelectList OptionValueColumn="Value" ID="rdAfSlidingTimeStartDateFilterOperator_rdAfID" OptionCaptionColumn="Text" DefaultValue="@Request.rdAfSlidingTimeStartDateFilterOperator_rdAfID~">
+											<DataLayer Type="Static" ID="dlrdAfSlidingTimeStartDateFilterOperator_rdAfID">
+												<StaticDataRow Text="Specific Date" Value="Specific Date" />
+												<StaticDataRow Text="Sliding Date" Value="Sliding Date" />
+												<StaticDataRow Text="Compare Column" Value="Compare Column" />
+											</DataLayer>
+											<EventHandler DhtmlEvent="onchange">
+												<Action Type="Javascript" Javascript="rdAfUpdateUi(false, 'rdAfID')" ID="actionSlidingTimeStartDateFilterOperator_rdAfID"/>
+											</EventHandler>
+										</InputSelectList>
+										<Division ID="divSlidingTimeStartDateFilterOperatorValues_rdAfID" ShowModes="None">
+											<Spaces Size="5" />
+											<InputSelectList OptionValueColumn="Value" ID="rdAfSlidingTimeStartDateFilterOperatorOptions_rdAfID" OptionCaptionColumn="Text" DefaultValue="@Request.rdAfSlidingTimeStartDateFilterOperatorOptions_rdAfID~">
+												<DataLayer Type="Static" ID="dlrdAfSlidingTimeStartDateFilterOperatorOptions_rdAfID">
+													<StaticDataRow Text="Today" Value="Today" />
+													<StaticDataRow Text="Yesterday" Value="Yesterday" />
+													<StaticDataRow Text="Tomorrow" Value="Tomorrow" />
+													<StaticDataRow Text="Last Week Start" Value="Last Week Start" />
+													<StaticDataRow Text="Last Week End" Value="Last Week End" />
+													<StaticDataRow Text="This Week Start" Value="This Week Start" />
+													<StaticDataRow Text="This Week End" Value="This Week End" />
+													<StaticDataRow Text="Next Week Start" Value="Next Week Start" />
+													<StaticDataRow Text="Next Week End" Value="Next Week End" />
+													<StaticDataRow Text="Last Month Start" Value="Last Month Start" />
+													<StaticDataRow Text="Last Month End" Value="Last Month End" />
+													<StaticDataRow Text="This Month Start" Value="This Month Start" />
+													<StaticDataRow Text="This Month End" Value="This Month End" />
+													<StaticDataRow Text="Next Month Start" Value="Next Month Start" />
+													<StaticDataRow Text="Next Month End" Value="Next Month End" />
+													<StaticDataRow Text="Last Quarter Start" Value="Last Quarter Start" />
+													<StaticDataRow Text="Last Quarter End" Value="Last Quarter End" />
+													<StaticDataRow Text="This Quarter Start" Value="This Quarter Start" />
+													<StaticDataRow Text="This Quarter End" Value="This Quarter End" />
+													<StaticDataRow Text="Next Quarter Start" Value="Next Quarter Start" />
+													<StaticDataRow Text="Next Quarter End" Value="Next Quarter End" />
+													<StaticDataRow Text="Last Year Start" Value="Last Year Start" />
+													<StaticDataRow Text="Last Year End" Value="Last Year End" />
+													<StaticDataRow Text="This Year Start" Value="This Year Start" />
+													<StaticDataRow Text="This Year End" Value="This Year End" />
+													<StaticDataRow Text="Next Year Start" Value="Next Year Start" />
+													<StaticDataRow Text="Next Year End" Value="Next Year End" />
+                          <StaticDataRow Text="7 Days Ago" Value="7 Days Ago" />
+                          <StaticDataRow Text="10 Days Ago" Value="10 Days Ago" />
+                          <StaticDataRow Text="30 Days Ago" Value="30 Days Ago" />
+													<StaticDataRow Text="60 Days Ago" Value="60 Days Ago" />
+													<StaticDataRow Text="90 Days Ago" Value="90 Days Ago" />
+													<StaticDataRow Text="180 Days Ago" Value="180 Days Ago" />
+													<StaticDataRow Text="365 Days Ago" Value="365 Days Ago" />
+                          <StaticDataRow Text="Current hour" Value="Current hour" />
+                          <StaticDataRow Text="Last hour" Value="Last hour" />
+													<StaticDataRow Text="Last Fiscal Year Start" Value="Last Fiscal Year Start" IsFiscal="True" />
+													<StaticDataRow Text="This Fiscal Year Start" Value="This Fiscal Year Start" IsFiscal="True" />
+													<StaticDataRow Text="Next Fiscal Year Start" Value="Next Fiscal Year Start" IsFiscal="True" />
+													<StaticDataRow Text="Last Fiscal Year End" Value="Last Fiscal Year End" IsFiscal="True" />
+													<StaticDataRow Text="This Fiscal Year End" Value="This Fiscal Year End" IsFiscal="True" />
+													<StaticDataRow Text="Next Fiscal Year End" Value="Next Fiscal Year End" IsFiscal="True" />
+													<StaticDataRow Text="Last Fiscal Quarter Start" Value="Last Fiscal Quarter Start" IsFiscal="True" />
+													<StaticDataRow Text="Last Fiscal Quarter End" Value="Last Fiscal Quarter End" IsFiscal="True" />
+													<StaticDataRow Text="This Fiscal Quarter Start" Value="This Fiscal Quarter Start" IsFiscal="True" />
+													<StaticDataRow Text="This Fiscal Quarter End" Value="This Fiscal Quarter End" IsFiscal="True"/>
+													<StaticDataRow Text="Next Fiscal Quarter Start" Value="Next Fiscal Quarter Start" IsFiscal="True" />
+													<StaticDataRow Text="Next Fiscal Quarter End" Value="Next Fiscal Quarter End" IsFiscal="True" />
+												</DataLayer>
+											</InputSelectList>
+										</Division>
+										<Division ID="divFilterStartDateCalendar_rdAfID" ShowModes="None">
+											<Spaces Size="5" />
+											<InputDate ID="rdAfFilterStartDate_rdAfID" DefaultValue="@Request.rdAfFilterStartDate_rdAfID~" Format="Short Date" InputDateReformat="yyyy-MM-dd" Tooltip="Start Date" CalendarLinkType="Image"/>
+											<Division ID="divFilterStartTime_rdAfID" >
+												<Spaces Size="5" />
+												<InputTime ID="rdAfFilterStartTime_rdAfID" DefaultValue="@Request.rdAfFilterStartTime_rdAfID~" Format="Short Time" InputTimeReformat="HH:mm:ss" InputSize="8" Tooltip="Start Time" />
+											</Division>
+										</Division>
+										<Division ID="divFilterStartDateColumn_rdAfID" ShowModes="None">
+											<Spaces Size="5" />
+											<InputText ID="rdAfFilterStartDateColumn_rdAfID" DefaultValue="@Request.rdAfFilterStartDateColumn_rdAfID~" Tooltip="Start Date Column" />
+											<Division ID="divPickCompareColumnPopUpButtonStartDate_rdAfID">
+												<Label Caption="[ ]" ID="lblPickCommpareColumnStartDate_rdAfID" Class="rdAgCommand" Tooltip="Compare with a data column.">
+													<Action Type="Javascript" Javascript="rdAfShowColumnStartPickList(this,'rdAfID');" ID="actionPickCompareColumnStartDate_rdAfID" />
+												</Label>
+											</Division>
+										</Division>
+									</Division>
+									<Division ID="divSlidingTimeEndDateFilterOperator_rdAfID" ShowModes="None">
+										<LineBreak />
+										<InputSelectList OptionValueColumn="Value" ID="rdAfSlidingTimeEndDateFilterOperator_rdAfID" OptionCaptionColumn="Text" DefaultValue="@Request.rdAfSlidingTimeEndDateFilterOperator_rdAfID~">
+											<DataLayer Type="Static" ID="dlrdAfrdAfSlidingTimeEndDateFilterOperator_rdAfID">
+												<StaticDataRow Text="Specific Date" Value="Specific Date" />
+												<StaticDataRow Text="Sliding Date" Value="Sliding Date" />
+												<StaticDataRow Text="Compare Column" Value="Compare Column" />
+											</DataLayer>
+											<EventHandler DhtmlEvent="onchange">
+												<Action Type="Javascript" Javascript="rdAfUpdateUi(false, 'rdAfID')" ID="actionrdAfSlidingTimeEndDateFilterOperator_rdAfID"/>
+											</EventHandler>
+										</InputSelectList>
+										<Division ID="divSlidingTimeEndDateFilterOperatorValues_rdAfID" ShowModes="None">
+											<Spaces Size="5" />
+											<InputSelectList OptionValueColumn="Value" ID="rdAfSlidingTimeEndDateFilterOperatorOptions_rdAfID" OptionCaptionColumn="Text" DefaultValue="@Request.rdAfSlidingTimeEndDateFilterOperatorOptions_rdAfID~">
+												<DataLayer Type="Static" ID="dlrdAfSlidingTimeEndDateFilterOperatorOptions_rdAfID">
+													<StaticDataRow Text="Today" Value="Today" />
+													<StaticDataRow Text="Yesterday" Value="Yesterday" />
+													<StaticDataRow Text="Tomorrow" Value="Tomorrow" />
+													<StaticDataRow Text="Last Week Start" Value="Last Week Start" />
+													<StaticDataRow Text="Last Week End" Value="Last Week End" />
+													<StaticDataRow Text="This Week Start" Value="This Week Start" />
+													<StaticDataRow Text="This Week End" Value="This Week End" />
+													<StaticDataRow Text="Next Week Start" Value="Next Week Start" />
+													<StaticDataRow Text="Next Week End" Value="Next Week End" />
+													<StaticDataRow Text="Last Month Start" Value="Last Month Start" />
+													<StaticDataRow Text="Last Month End" Value="Last Month End" />
+													<StaticDataRow Text="This Month Start" Value="This Month Start" />
+													<StaticDataRow Text="This Month End" Value="This Month End" />
+													<StaticDataRow Text="Next Month Start" Value="Next Month Start" />
+													<StaticDataRow Text="Next Month End" Value="Next Month End" />
+													<StaticDataRow Text="Last Quarter Start" Value="Last Quarter Start" />
+													<StaticDataRow Text="Last Quarter End" Value="Last Quarter End" />
+													<StaticDataRow Text="This Quarter Start" Value="This Quarter Start" />
+													<StaticDataRow Text="This Quarter End" Value="This Quarter End" />
+													<StaticDataRow Text="Next Quarter Start" Value="Next Quarter Start" />
+													<StaticDataRow Text="Next Quarter End" Value="Next Quarter End" />
+													<StaticDataRow Text="Last Year Start" Value="Last Year Start" />
+													<StaticDataRow Text="Last Year End" Value="Last Year End" />
+													<StaticDataRow Text="This Year Start" Value="This Year Start" />
+													<StaticDataRow Text="This Year End" Value="This Year End" />
+													<StaticDataRow Text="Next Year Start" Value="Next Year Start" />
+													<StaticDataRow Text="Next Year End" Value="Next Year End" />
+                          <StaticDataRow Text="7 Days Ago" Value="7 Days Ago" />
+                          <StaticDataRow Text="10 Days Ago" Value="10 Days Ago" />
+                          <StaticDataRow Text="30 Days Ago" Value="30 Days Ago" />
+													<StaticDataRow Text="60 Days Ago" Value="60 Days Ago" />
+													<StaticDataRow Text="90 Days Ago" Value="90 Days Ago" />
+													<StaticDataRow Text="180 Days Ago" Value="180 Days Ago" />
+													<StaticDataRow Text="365 Days Ago" Value="365 Days Ago" />
+                          <StaticDataRow Text="Current hour" Value="Current hour" />
+                          <StaticDataRow Text="Last hour" Value="Last hour" />
+													<StaticDataRow Text="Last Fiscal Year Start" Value="Last Fiscal Year Start" IsFiscal="True" />
+													<StaticDataRow Text="This Fiscal Year Start" Value="This Fiscal Year Start" IsFiscal="True" />
+													<StaticDataRow Text="Next Fiscal Year Start" Value="Next Fiscal Year Start" IsFiscal="True" />
+													<StaticDataRow Text="Last Fiscal Year End" Value="Last Fiscal Year End" IsFiscal="True" />
+													<StaticDataRow Text="This Fiscal Year End" Value="This Fiscal Year End" IsFiscal="True" />
+													<StaticDataRow Text="Next Fiscal Year End" Value="Next Fiscal Year End" IsFiscal="True" />
+													<StaticDataRow Text="Last Fiscal Quarter Start" Value="Last Fiscal Quarter Start" IsFiscal="True" />
+													<StaticDataRow Text="Last Fiscal Quarter End" Value="Last Fiscal Quarter End" IsFiscal="True" />
+													<StaticDataRow Text="This Fiscal Quarter Start" Value="This Fiscal Quarter Start" IsFiscal="True" />
+													<StaticDataRow Text="This Fiscal Quarter End" Value="This Fiscal Quarter End" IsFiscal="True" />
+													<StaticDataRow Text="Next Fiscal Quarter Start" Value="Next Fiscal Quarter Start" IsFiscal="True" />
+													<StaticDataRow Text="Next Fiscal Quarter End" Value="Next Fiscal Quarter End" IsFiscal="True" />
+												</DataLayer>
+											</InputSelectList>
+										</Division>
+										<Division ID="divFilterEndDateCalendar_rdAfID" ShowModes="None">
+											<Spaces Size="5" />
+											<InputDate ID="rdAfFilterEndDate_rdAfID" DefaultValue="@Request.rdAfFilterEndDate_rdAfID~" Format="Short Date" InputDateReformat="yyyy-MM-dd" Tooltip="End Date"/>
+											<Division ID="divFilterEndTime_rdAfID" >
+												<Spaces Size="5" />
+												<InputTime ID="rdAfFilterEndTime_rdAfID" DefaultValue="@Request.rdAfFilterEndTime_rdAfID~" Format="Short Time" InputTimeReformat="HH:mm:ss" InputSize="8" Tooltip="End Time" />
+											</Division>
+										</Division>
+										<Division ID="divFilterEndDateColumn_rdAfID" ShowModes="None">
+											<Spaces Size="5" />
+											<InputText ID="rdAfFilterEndDateColumn_rdAfID" DefaultValue="@Request.rdAfFilterEndDateColumn_rdAfID~" Tooltip="End Date Column" />
+											<Division ID="divPickCompareColumnPopUpButtonEndDate_rdAfID">
+												<Label Caption="[ ]" ID="lblPickCommpareColumnEndDate_rdAfID" Class="rdAgCommand" Tooltip="Compare with a data column.">
+													<Action Type="Javascript" Javascript="rdAfShowColumnEndPickList(this,'rdAfID');" ID="actionPickCompareColumnEndDate_rdAfID" />
+												</Label>
+											</Division>
+										</Division>
+									</Division>
+									<Division ID="divFilterValue_rdAfID">
+										<InputText ID="rdAfFilterValue_rdAfID" DefaultValue="@Request.rdAfFilterValue_rdAfID~" />
+                    <Division ID="divPickCompareColumnPopUpButton_rdAfID" ShowModes="None">
+                      <Label Caption="[ ]" ID="lblPickCommpareColumn_rdAfID" Class="rdAgCommand" Tooltip="Compare with a data column.">
+                        <Action Type="Javascript" Javascript="rdAfShowColumnPickList(this,'rdAfID');" ID="actionPickCompareColumn_rdAfID" />
+                      </Label>
+                    </Division>
+                  </Division>
+                  <Division ID="divFilterValueMax_rdAfID" ShowModes="None">
+                    <InputText ID="rdAfFilterValueMax_rdAfID" DefaultValue="@Request.rdAfFilterValueMax_rdAfID~" />
+                    <Division ID="divPickCompareColumnPopUpButtonMax_rdAfID" ShowModes="None">
+                      <Label Caption="[ ]" ID="lblPickCommpareColumnMax_rdAfID" Class="rdAgCommand" Tooltip="Compare with a data column.">
+                        <Action Type="Javascript" Javascript="rdAfShowColumnMaxPickList(this,'rdAfID');" ID="actionPickCompareColumnMax_rdAfID" />
+                      </Label>
+                    </Division>
+                  </Division>
+									<Division ID="divFilterValueDelimited_rdAfID" ShowModes="None">
+										<InputText ID="rdAfFilterValueDelimited_rdAfID" DefaultValue="@Request.rdAfFilterValueDelimited_rdAfID~">
+											<InputTextDelimiter Delimiter="," EscapeCharacter="\" Qualifier="&quot;" />
+										</InputText>
+									</Division>
+                  <Division ID="divPickDistinctPopUpButton_rdAfID" ShowModes="None">
+										<Label Caption="..." ID="lblPickDistinct_rdAfID" Class="rdAgCommand" Tooltip="Select a data value from a list.">
+                      <Action Type="Javascript" Javascript="rdSetPickDistinctUrl('rdAfID');ShowElement(this.id,'popupPickDistinct_rdAfID','','')" ID="actionPickDistinct_rdAfID" />
+                    </Label>
+									</Division>
+									<PopupPanel ID="popupPickDistinct_rdAfID" Draggable="True" PopupModal="True" Caption="Select a Value" rdNoElementShowHistory="True">
+                    <IncludeFrame ID="subPickDistinct_rdAfID" FrameBorder="False" xxxClass="rdAfPickDistinctFrame" Height="400" Width="255" Title="Distinct Values List" Condition="'@Request.rdRequestFromProcess~' == ''">
+											<Target Type="IncludeFrameReport" Report="rdAfPickDistinct" ID="targetPickDistinct_rdAfID" />
+										</IncludeFrame>
+									</PopupPanel>
+                  <Division ID="divSimpleOkCancel_rdAfID" ShowModes="None" >
+                    <Spaces Size="2" />
+                    <Label Caption="OK" ID="lblSimpleOk_rdAfID" Class="rdAgCommand">
+                      <Action Type="Javascript" Javascript="rdAfUpdateUi(true,'rdAfID','SimpleReplace','rdFromSimpleFilterID');" />
+                    </Label>
+                    <Label Caption="Cancel" ID="lblSimpleOk_rdAfID">
+                      <Action Type="Javascript" Javascript="rdAfCancelEditSimple('rdAfID');" />
+                    </Label>
+                  </Division>
+								</Column>
+							</Row>
+							<Row ID="rowAddFilter_rdAfID">
+								<Column />
+								<Column>
+									<Label Caption="Add" ID="lblFilterAdd_rdAfID" Class="rdAgCommand">
+										<Action Type="Javascript" Javascript="rdAfUpdateUi(true,'rdAfID','FilterAdd');" />
+									</Label>
+									<Label Caption="" ID="lblSimpleFilterID_rdAfID" Class="rdAgHidden,rdDashboardHidden"/>
+									<Division ID="divFilterError-BlankColumn_rdAfID" Condition="@Session.afFilterError-BlankColumn~">
+										<Spaces Size="3" />
+										<Label ID="lblFilterError-BlankColumn_rdAfID" Class="rdAgError" Caption="Select a Filter Column." />
+									</Division>
+									<Division ID="divFilterError-ActiveSql_rdAfID" Condition="&quot;@Request.rdAfCommand~&quot;.indexOf(&quot;Filter&quot;)==0">
+										<Division ID="divFilterError-ActiveSql_rdAfID" Condition="@Session.rdActiveSqlError~">
+											<Spaces Size="3" />
+											<Label ID="lblActiveSqlErrorFilter_rdAfID" Caption="There is an error in the filter." Class="rdAgError" />
+										</Division>
+									</Division>
+								</Column>
+							</Row>
+						</Rows>
+            <PopupPanel ID="popupPickCompareColumn_rdAfID" Draggable="True" KeepOtherPopups="True" PopupModal="True" Caption="Select a Column" rdNoElementShowHistory="True">
+              <DataTable ID="dtPickCompareColumn_rdAfID" CellSpacing="1" Width="230" Layout="Fixed" >
+                <DataLayer ID="rdAfPickCompareColumn_rdAfID" Type="Static">
+                </DataLayer>
+                <DataTableColumn>
+                  <InputHidden ID="rdAfFilterCompareColumnID_rdAfID" DefaultValue="@Data.ID~" />
+                  <InputHidden ID="rdAfFilterCompareColumnBracketed_rdAfID" DefaultValue="@Data.BracketedColumnName~" />
+                  <InputHidden ID="rdAfFilterCompareColumnDataType_rdAfID" DefaultValue="@Data.DataType~" />
+                  <Label Caption="@Data.ColumnHeader~" ID="lblCompareColumn">
+                    <Action Type="Javascript" ID="actionUpdateFilterCompareColumn" Javascript="rdAfSetPickedFilterCompareColumn('rdAfID',this);ShowElement(this.id,'popupPickCompareColumn_rdAfID','Hide')"/>
+                  </Label>
+                </DataTableColumn>
+              </DataTable>
+            </PopupPanel>
+          </Division>
+              </Column>
+              <Column Width="40" WidthScale="px" />
+            </Row>
+            <Row ID="rowDesignList_rdAfID">
+              <Column ID="colDesignList_rdAfID">
+                <Division ID="divDesignList_rdAfID">
+                  <DataTable ID="dtFilters_rdAfID" Class="rdNoClass">
+                    <DataLayer Type="Static" ID="dlFilters_rdAfID" ForAnalysisFilter="True">
+                      <AggregateColumn AggregateColumn="DataColumn" AggregateFunction="COUNT" ID="cntFilters_rdAfID" />
+                      <SequenceColumn ID="seqFilters" />
+                    </DataLayer>
+                    <DataTableColumn ID="colFilterName_rdAfID" Class="rdNoClass">
+                      <Spaces Size="@Data.Indent~" />
+                      <Spaces Size="@Data.Indent~" />
+                      <Spaces Size="@Data.Indent~" />
+                      <Division ID="divBoolean_rdAfID" Condition="@Function.RowNumber~!=1" >
+                        <Label ID="lblBoolean_rdAfID" Class="rdAgCommand" Caption="@Data.Boolean~" Tooltip="Toggle and/or" >
+                          <Action Type="Javascript" Javascript="rdAfUpdateUi(true,'rdAfID','ToggleBoolean','@Data.FilterID~');" />
+                        </Label>
+                      </Division>
+                      <Spaces Size="1" />
+                      <Label Caption="@Data.LeftParens~" ID="lblLeftParens_rdAfID" Class="rdAgCaptionRow" />
+                      <Spaces Size="1" />
+                      <Label Caption="@Data.FilterCaptionLimited~" Tooltip="@Data.FilterCaption~" ID="lblFilterCaption_rdAfID">
+                        <Action ID="actShowFilter_rdAfID" Type="Javascript" Javascript="rdAfRestoreClickedFilter('rdAfID',&quot;@Data.ColumnID~&quot;, &quot;@Data.Operator~&quot;, &quot;@Data.FormattedValue~&quot;, &quot;@Data.DateType~&quot;, &quot;@Data.SlidingDateName~&quot;, &quot;@Data.Format~&quot;)" />
+                      </Label>
+                      <Label  ID="lblFilterDataColumn_rdAfID" Caption="@Data.GlobalFilterColumnID~" Class="rdAgHidden" />
+                      <Label  ID="lblFilterDashboardPanelID_rdAfID" Caption="@Data.rdGlobalFilterFromPanelID~" Class="rdAgHidden" />
+                      <Spaces Size="5" />
+                      <Label Caption="@Data.RightParens~" ID="lblRightParens_rdAfID" Class="rdAgCaptionRow" />
+                    </DataTableColumn>
+                    <DataTableColumn ID="colFilterReplace_rdAfID" Class="rdNoClass">
+                      <Label Caption="Replace" ID="lblFilterReplace_rdAfID" Class="rdAgCommand">
+                        <Action Type="Javascript" ID="lblReplace" ConfirmMessage="Replace?" Javascript="rdAfUpdateUi(true,'rdAfID','FilterReplace','@Data.FilterID~');" />
+                      </Label>
+                    </DataTableColumn>
+                    <DataTableColumn ID="colFilterRemove_rdAfID" Class="rdNoClass">
+                      <Image ID="lblFilterRemove_rdAfID" Caption="rdTemplate/rdDelete2.png" Tooltip="Remove.">
+                        <Action Type="Javascript" ID="lblRemove" ConfirmMessage="Remove?" Javascript="rdAfUpdateUi(true,'rdAfID','FilterRemove','@Data.FilterID~');" />
+                      </Image>
+                    </DataTableColumn>
+                    <DataTableColumn ID="colFilterMove_rdAfID" Class="rdNoClass">
+                      <Division ID="divFilterMove_rdAfID" Condition="@Data.cntFilters_rdAfID~ &gt; 1 and @Data.seqFilters~ &lt;&gt; 1">
+                        <Rows TableBorder="0" CellSpacing="0" ID="rowsFilterMove_rdAfID">
+                          <Row ID="rowFilterMove_rdAfID">
+                            <Column ID="colFilterMoveCell_rdAfID">
+                              <Image Caption="rdTemplate/rdAnalysisFilter/rdUp.gif" ID="imgFilterMoveUp_rdAfID" AltText="Move up." Tooltip="Move up.">
+                                <Action Type="Javascript" Javascript="rdAfUpdateUi(true,'rdAfID','FilterMoveUp','@Data.FilterID~');" />
+                              </Image>
+                              <LineBreak />
+                              <Image Caption="rdTemplate/rdAnalysisFilter/rdDown.gif" ID="imgFilterMoveDown_rdAfID" AltText="Move down." Tooltip="Move down.">
+                                <Action Type="Javascript" Javascript="rdAfUpdateUi(true,'rdAfID','FilterMoveDown','@Data.FilterID~');" />
+                              </Image>
+                            </Column>
+                            <Column ID="colFilterMoveCell2_rdAfID1">
+                              <Image Caption="rdTemplate/rdAnalysisFilter/rdRemovePar.gif" ID="imgFilterMoveLeft_rdAfID" AltText="Remove parentheses." Tooltip="Remove parentheses.">
+                                <Action Type="Javascript" Javascript="rdAfUpdateUi(true,'rdAfID','FilterMoveLeft','@Data.FilterID~');" />
+                              </Image>
+                            </Column>
+                            <Column ID="colFilterMoveCell3_rdAfID">
+                              <Image Caption="rdTemplate/rdAnalysisFilter/rdAddPar.gif" ID="imgFilterMoveRight_rdAfID" AltText="Add parentheses." Tooltip="Add parentheses.">
+                                <Action Type="Javascript" Javascript="rdAfUpdateUi(true,'rdAfID','FilterMoveRight','@Data.FilterID~');" />
+                              </Image>
+                            </Column>
+                          </Row>
+                        </Rows>
+                      </Division>
+                    </DataTableColumn>
+                  </DataTable>
+                  <Rows Width="100" WidthScale="%">
+                    <Row>
+                      <Column Condition="0@Data.cntFilters_rdAfID~ &gt; 1" Class="ThemeAlignRight">
+                        <Label Caption="Remove All..." ID="lblFilterRemoveAll_rdAfID">
+                          <Action Type="Javascript" ConfirmMessage="Remove All?" ID="actFilterRemoveAll_rdAfID" Javascript="rdAfUpdateUi(true,'rdAfID','FilterRemoveAll');" />
+                        </Label>
+                      </Column>
+                    </Row>
+                  </Rows>
+                </Division>
+              </Column>
+            </Row>
+          </Rows>
+				</Division>
+
+			</FilterTemplates>
+      <IncludeScript IncludedScript="Y.on('domready', function () {if(typeof rdAfUpdateUi !== 'undefined'){rdAfUpdateCaptionElement('rdAfID','true');}});" />
+		</Division>
+
+    <ElementTemplate>
+      <Row ID="MissingDataMessage">
+        <Column>
+          <Label  ID="rdMissingDataMessage" Caption="One or more columns or tables are no longer available. {0}" Class="ThemeErrorText" />
+        </Column>
+      </Row>
+    </ElementTemplate>
+
+	</Body>
+</Report>

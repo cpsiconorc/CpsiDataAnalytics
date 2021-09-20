@@ -1,0 +1,15 @@
+<AnimatedMapDataXML>
+  <MapSpec InternalID="01" ShortName="AB" LongName="Alberta" />
+  <MapSpec InternalID="02" ShortName="BC" LongName="British Columbia" />
+  <MapSpec InternalID="03" ShortName="MB" LongName="Manitoba" />
+  <MapSpec InternalID="04" ShortName="NB" LongName="New Brunswick" />
+  <MapSpec InternalID="05" ShortName="NL" LongName="Newfoundland and Labrador" />
+  <MapSpec InternalID="13" ShortName="NT" LongName="Northwest Territories" />
+  <MapSpec InternalID="07" ShortName="NS" LongName="Nova Scotia" />
+  <MapSpec InternalID="14" ShortName="NU" LongName="Nunavut" />
+  <MapSpec InternalID="08" ShortName="ON" LongName="Ontario" />
+  <MapSpec InternalID="09" ShortName="PE" LongName="Prince Edward Island" />
+  <MapSpec InternalID="10" ShortName="QC" LongName="Quebec" />
+  <MapSpec InternalID="11" ShortName="SK" LongName="Saskatchewan" />
+  <MapSpec InternalID="12" ShortName="YT" LongName="Yukon Territory" />
+</AnimatedMapDataXML>

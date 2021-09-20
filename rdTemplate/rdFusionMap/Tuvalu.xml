@@ -1,0 +1,11 @@
+<AnimatedMapDataXML>
+  <MapSpec InternalID="TV.FN" ShortName="FN" LongName="Funafuti" />
+  <MapSpec InternalID="TV.NG" ShortName="NG" LongName="Nanumanga" />
+  <MapSpec InternalID="TV.NA" ShortName="NA" LongName="Nanumea" />
+  <MapSpec InternalID="TV.NI" ShortName="NI" LongName="Niulakita" />
+  <MapSpec InternalID="TV.NT" ShortName="NT" LongName="Niutao" />
+  <MapSpec InternalID="TV.NU" ShortName="NU" LongName="Nui" />
+  <MapSpec InternalID="TV.NF" ShortName="NF" LongName="Nukufetau" />
+  <MapSpec InternalID="TV.NL" ShortName="NL" LongName="Nukulaelae" />
+  <MapSpec InternalID="TV.VI" ShortName="VI" LongName="Vaitupu" />
+</AnimatedMapDataXML>

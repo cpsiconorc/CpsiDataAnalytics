@@ -1,0 +1,14 @@
+﻿<Process ID="rdSchedulerErrorEmailProcess">
+	<DefinitionModifierFile ID="rdErrorEmailDMF" DefinitionModifierFile="rdSchedulerEmail_DMF.xml" IgnoreIfNotFound="True" />
+	<Task ID="rdErrorEmailTask">
+		<Procedure
+			EmailBody="Error message: "
+			EmailSubject="Failed to schedule task"
+			FromEmailAddress=""
+			ID="procErrorMail"
+			ToEmailAddress=""
+			Type="SendMail"
+		/>
+	</Task>
+	<ideTestParams rdTaskID="" />
+</Process>

@@ -1,0 +1,8 @@
+<AnimatedMapDataXML>
+  <MapSpec InternalID="LE.NA" ShortName="NA" LongName="An Nabatiyah" />
+  <MapSpec InternalID="LE.BA" ShortName="BA" LongName="Beirut" />
+  <MapSpec InternalID="LE.BI" ShortName="BI" LongName="Beqaa" />
+  <MapSpec InternalID="LE.JL" ShortName="JL" LongName="Mount Lebanon" />
+  <MapSpec InternalID="LE.AS" ShortName="AS" LongName="North Lebanon" />
+  <MapSpec InternalID="LE.JA" ShortName="JA" LongName="South Lebanon" />
+</AnimatedMapDataXML>

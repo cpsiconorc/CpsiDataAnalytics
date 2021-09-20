@@ -1,0 +1,81 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Report
+	ID="rdTemplate.rdMetadata.UndoRedo"
+	>
+	<SharedElement
+		ID="UndoRedo"
+		>
+		<Division
+			ID="divUndoRedo"
+      Class="ThemeNoWrap"
+			>
+			<Division
+				ID="divUndo"
+				>
+				<Division
+					ID="divUndoEnabled"
+					ShowModes="None"
+					>
+					<Image
+						AltText="Undo."
+						Caption="rdTemplate/rdUndo.png"
+						ID="imgUndoEnabled"
+						Tooltip="Undo. Ctrl+Z"
+						>
+						<Action
+							ID="jsMetadataUpdate"
+							Javascript="rdUndo();"
+							Type="Javascript"
+						/>
+					</Image>
+				</Division>
+				<Division
+					ID="divUndoDisabled"
+					ShowModes="None"
+					>
+					<Image
+						AltText="Undo."
+						Caption="rdTemplate/rdUndoDisable.png"
+						ID="imgUndoDisabled"
+						Tooltip="Undo. Ctrl+Z"
+					/>
+				</Division>
+			</Division>
+			<Division
+				ID="divRedo"
+				>
+				<Division
+					ID="divRedoEnabled"
+					ShowModes="None"
+					>
+					<Image
+						AltText="Redo"
+						Caption="rdTemplate/rdRedo.png"
+						ID="imgRedoEnabled"
+						Tooltip="Redo. Ctrl+Y"
+						>
+						<Action
+							ID="jsMetadataUpdate"
+							Javascript="rdRedo();"
+							Type="Javascript"
+						/>
+					</Image>
+				</Division>
+				<Division
+					ID="divRedoDisabled"
+					ShowModes="None"
+					>
+					<Image
+						AltText="Redo."
+						Caption="rdTemplate/rdRedoDisable.png"
+						ID="imgRedoDisabled"
+						Tooltip="Redo. Ctrl+Y"
+					/>
+				</Division>
+			</Division>
+		</Division>
+		<IncludeScript
+			IncludedScript="rdMetadataShowUndoRedo();"
+		/>
+	</SharedElement>
+</Report>

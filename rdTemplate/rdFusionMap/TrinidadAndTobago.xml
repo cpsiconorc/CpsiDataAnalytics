@@ -1,0 +1,11 @@
+<AnimatedMapDataXML>
+  <MapSpec InternalID="TT.CA" ShortName="CA" LongName="Caroni" />
+  <MapSpec InternalID="TT.MA" ShortName="MA" LongName="Mayaro" />
+  <MapSpec InternalID="TT.NA" ShortName="NA" LongName="Nariva" />
+  <MapSpec InternalID="TT.SA" ShortName="SA" LongName="Saint Andrew" />
+  <MapSpec InternalID="TT.SD" ShortName="SD" LongName="Saint David" />
+  <MapSpec InternalID="TT.SG" ShortName="SG" LongName="Saint George" />
+  <MapSpec InternalID="TT.SP" ShortName="SP" LongName="Saint Patrick" />
+  <MapSpec InternalID="TT.TO" ShortName="TO" LongName="Tobago" />
+  <MapSpec InternalID="TT.VI" ShortName="VI" LongName="Victoria" />
+</AnimatedMapDataXML>

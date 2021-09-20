@@ -1,0 +1,12 @@
+<AnimatedMapDataXML>
+  <MapSpec InternalID="SD.BG" ShortName="BG" LongName="Central Equatoria" />
+  <MapSpec InternalID="SD.EE" ShortName="EE" LongName="Eastern Equatoria" />
+  <MapSpec InternalID="SD.JG" ShortName="JG" LongName="Jonglei" />
+  <MapSpec InternalID="SD.EB" ShortName="EB" LongName="Lakes" />
+  <MapSpec InternalID="SD.NB" ShortName="NB" LongName="Northern Bahr Al Ghazal" />
+  <MapSpec InternalID="SD.WH" ShortName="WH" LongName="Unity" />
+  <MapSpec InternalID="SD.UN" ShortName="UN" LongName="Upper Nile" />
+  <MapSpec InternalID="SD.WR" ShortName="WR" LongName="Warap" />
+  <MapSpec InternalID="SD.WB" ShortName="WB" LongName="Western Bahr Al Ghazal" />
+  <MapSpec InternalID="SD.WE" ShortName="WE" LongName="Western Equatoria" />
+</AnimatedMapDataXML>

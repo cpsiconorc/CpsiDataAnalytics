@@ -1,0 +1,21 @@
+<AnimatedMapDataXML>
+  <MapSpec InternalID="FJ.WE.BA" ShortName="BA" LongName="Ba" />
+  <MapSpec InternalID="FJ.NO.BU" ShortName="BU" LongName="Bua" />
+  <MapSpec InternalID="FJ.NO.CK" ShortName="CK" LongName="Cakaudrova" />
+  <MapSpec InternalID="FJ.EA.KD" ShortName="KD" LongName="Kadavu" />
+  <MapSpec InternalID="FJ.EA.LU" ShortName="LU" LongName="Lau" />
+  <MapSpec InternalID="FJ.WE.LT" ShortName="LT" LongName="Lautoka" />
+  <MapSpec InternalID="FJ.EA.LM" ShortName="LM" LongName="Lomaiviti" />
+  <MapSpec InternalID="FJ.NO.MC" ShortName="MC" LongName="Macuata" />
+  <MapSpec InternalID="FJ.WE.NN" ShortName="NN" LongName="Nadroga-Navosa" />
+  <MapSpec InternalID="FJ.CE.NT" ShortName="NT" LongName="Naitasiri" />
+  <MapSpec InternalID="FJ.CE.NM" ShortName="NM" LongName="Namosi" />
+  <MapSpec InternalID="FJ.WE.ND" ShortName="ND" LongName="Nandi" />
+  <MapSpec InternalID="FJ.WE.RA" ShortName="RA" LongName="Ra" />
+  <MapSpec InternalID="FJ.CE.RW" ShortName="RW" LongName="Rewa" />
+  <MapSpec InternalID="FJ.CE.SR" ShortName="SR" LongName="Serua" />
+  <MapSpec InternalID="FJ.CE.TL" ShortName="TL" LongName="Tailevu" />
+  <MapSpec InternalID="FJ.TH.EA" ShortName="EA" LongName="Tholo East" />
+  <MapSpec InternalID="FJ.TH.NO" ShortName="NO" LongName="Tholo North" />
+  <MapSpec InternalID="FJ.TH.WE" ShortName="WE" LongName="Tholo west" />
+</AnimatedMapDataXML>

@@ -1,0 +1,49 @@
+BODY {		
+	font-size: 14px;
+	margin: 2px;	
+}
+
+.rdDashboard, .rdDashboard TABLE,
+.rdAc, .rdAc TABLE, 
+.rdDataCalendar, .rdDataCalendar TABLE, .rdDataCalendarFont, .rdDataCalendarDayLabel,
+.rdTimePicker, .rdTimePicker TABLE,
+.rdPopupPanelTitleCaption
+{
+	font-size: 100%;		
+}
+
+ .rdAcCommand,  .rdAcCommandHighlight { font-size: 120%; }
+
+.rdDashboardColumn {	padding: 2px; }
+
+.rdAc, .rdAc TABLE { width: 100%; }
+
+.rdDashboardCommand, .rdDataCalendarPagingLabel { font-size: 120%;}
+
+.rdPopupPanelCommand, .rdPopupMenu  { font-size: 180%; }
+
+.rdDataCalendarDay, .rdDataCalendarDayLabelHighlight
+{	
+	padding: 13px 13px 13px 13px;
+}
+.rdTimePickerCell, .rdTimePickerAMPMCell, .rdTimePickerLabelHighlight
+{
+	padding: 7px 7px 7px 7px;
+}
+.rdDashboardPanel .rdDataCalendarDay, .rdDashboardPanel .rdDataCalendarDayLabelHighlight
+{           
+    padding: 8px 8px 8px 8px;
+}
+ .rdDataCalendarPopUp  .rdDataCalendarDay, .rdDataCalendarPopUp  .rdDataCalendarDayLabelHighlight
+{
+    padding: 13px 13px 13px 13px;
+}
+
+.ThemeLinkButton {
+	font-size: 120%;
+	line-height: 40px;	
+}
+
+.ThemeLinkButtonSmall {
+	line-height: 34px;	
+}

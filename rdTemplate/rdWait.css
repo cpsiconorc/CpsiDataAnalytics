@@ -1,0 +1,17 @@
+
+.rdWaitMainTable {
+	background-color: #F6F6F6;
+}
+.rdWaitContainerBorder {
+	background-color: #6E6E6E;
+}
+.rdWaitContainer {
+	background-color: #FFFFFF;
+}
+#rdWaitMsg  {
+	font: 9pt Verdana, Helvetica, sans serif;
+	color: #000000;
+	vertical-align: absmiddle;
+	margin-left: 5px;
+	margin-right: 15px;
+}

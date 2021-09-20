@@ -1,0 +1,20 @@
+<AnimatedMapDataXML>
+  <MapSpec InternalID="02" ShortName="AV" LongName="Aveiro" />
+  <MapSpec InternalID="03" ShortName="BE" LongName="Beja" />
+  <MapSpec InternalID="04" ShortName="BR" LongName="Braga" />
+  <MapSpec InternalID="05" ShortName="BA" LongName="Bragança" />
+  <MapSpec InternalID="06" ShortName="CB" LongName="Castelo Branco" />
+  <MapSpec InternalID="07" ShortName="CO" LongName="Coimbra" />
+  <MapSpec InternalID="08" ShortName="EV" LongName="Évora" />
+  <MapSpec InternalID="09" ShortName="FA" LongName="Faro" />
+  <MapSpec InternalID="11" ShortName="GU" LongName="Guarda" />
+  <MapSpec InternalID="13" ShortName="LE" LongName="Leiria" />
+  <MapSpec InternalID="14" ShortName="LI" LongName="Lisboa" />
+  <MapSpec InternalID="16" ShortName="PA" LongName="Portalegre" />
+  <MapSpec InternalID="17" ShortName="PO" LongName="Porto" />
+  <MapSpec InternalID="18" ShortName="SA" LongName="Santarém" />
+  <MapSpec InternalID="19" ShortName="SE" LongName="Setúbal" />
+  <MapSpec InternalID="20" ShortName="VC" LongName="Viana do Castelo" />
+  <MapSpec InternalID="21" ShortName="VR" LongName="Vila Real" />
+  <MapSpec InternalID="22" ShortName="VI" LongName="Viseu" />
+</AnimatedMapDataXML>

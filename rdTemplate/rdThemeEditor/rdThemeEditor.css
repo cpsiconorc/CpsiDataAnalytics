@@ -1,0 +1,18 @@
+.rdPreviewColorBox {
+    height: 70px;
+    border: solid 1px lightgray;
+	padding: 6px !important;
+	}
+	
+.rdPreviewDisable {
+	opacity: .2;
+	cursor: not-allowed;
+}
+
+.rd100Width {
+    width: 100%;
+}
+
+#divPreview {
+    padding: 5px;
+}

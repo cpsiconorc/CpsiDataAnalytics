@@ -1,0 +1,9 @@
+<AnimatedMapDataXML>
+  <MapSpec InternalID="04" ShortName="AZ" LongName="Arizona" />
+  <MapSpec InternalID="06" ShortName="CA" LongName="California" />
+  <MapSpec InternalID="08" ShortName="CO" LongName="Colorado" />
+  <MapSpec InternalID="15" ShortName="HI" LongName="Hawaii" />
+  <MapSpec InternalID="35" ShortName="NM" LongName="NewMexico" />
+  <MapSpec InternalID="32" ShortName="NV" LongName="Nevada" />
+  <MapSpec InternalID="49" ShortName="UT" LongName="Utah" />
+</AnimatedMapDataXML>

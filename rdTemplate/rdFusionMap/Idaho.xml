@@ -1,0 +1,46 @@
+<AnimatedMapDataXML>
+  <MapSpec InternalID="001" ShortName="AD" LongName="Ada" />
+  <MapSpec InternalID="003" ShortName="AA" LongName="Adams" />
+  <MapSpec InternalID="005" ShortName="BA" LongName="Bannock" />
+  <MapSpec InternalID="007" ShortName="BE" LongName="Bear Lake" />
+  <MapSpec InternalID="009" ShortName="BN" LongName="Benewah" />
+  <MapSpec InternalID="011" ShortName="BI" LongName="Bingham" />
+  <MapSpec InternalID="013" ShortName="BL" LongName="Blaine" />
+  <MapSpec InternalID="015" ShortName="BO" LongName="Boise" />
+  <MapSpec InternalID="017" ShortName="BR" LongName="Bonner" />
+  <MapSpec InternalID="019" ShortName="BV" LongName="Bonneville" />
+  <MapSpec InternalID="021" ShortName="BU" LongName="Boundary" />
+  <MapSpec InternalID="023" ShortName="BT" LongName="Butte" />
+  <MapSpec InternalID="025" ShortName="CA" LongName="Camas" />
+  <MapSpec InternalID="027" ShortName="CN" LongName="Canyon" />
+  <MapSpec InternalID="029" ShortName="CR" LongName="Caribou" />
+  <MapSpec InternalID="031" ShortName="CS" LongName="Cassia" />
+  <MapSpec InternalID="033" ShortName="CL" LongName="Clark" />
+  <MapSpec InternalID="035" ShortName="CW" LongName="Clearwater" />
+  <MapSpec InternalID="037" ShortName="CU" LongName="Custer" />
+  <MapSpec InternalID="039" ShortName="EL" LongName="Elmore" />
+  <MapSpec InternalID="041" ShortName="FR" LongName="Franklin" />
+  <MapSpec InternalID="043" ShortName="FE" LongName="Fremont" />
+  <MapSpec InternalID="045" ShortName="GE" LongName="Gem" />
+  <MapSpec InternalID="047" ShortName="GO" LongName="Gooding" />
+  <MapSpec InternalID="049" ShortName="ID" LongName="Idaho" />
+  <MapSpec InternalID="051" ShortName="JE" LongName="Jefferson" />
+  <MapSpec InternalID="053" ShortName="JR" LongName="Jerome" />
+  <MapSpec InternalID="055" ShortName="KO" LongName="Kootenai" />
+  <MapSpec InternalID="057" ShortName="LA" LongName="Latah" />
+  <MapSpec InternalID="059" ShortName="LE" LongName="Lemhi" />
+  <MapSpec InternalID="061" ShortName="LW" LongName="Lewis" />
+  <MapSpec InternalID="063" ShortName="LI" LongName="Lincoln" />
+  <MapSpec InternalID="065" ShortName="MA" LongName="Madison" />
+  <MapSpec InternalID="067" ShortName="MI" LongName="Minidoka" />
+  <MapSpec InternalID="069" ShortName="NP" LongName="Nez perce" />
+  <MapSpec InternalID="071" ShortName="ON" LongName="Oneida" />
+  <MapSpec InternalID="073" ShortName="OW" LongName="Owyhee" />
+  <MapSpec InternalID="075" ShortName="PA" LongName="Payette" />
+  <MapSpec InternalID="077" ShortName="PO" LongName="Power" />
+  <MapSpec InternalID="079" ShortName="SH" LongName="Shoshone" />
+  <MapSpec InternalID="081" ShortName="TE" LongName="Teton" />
+  <MapSpec InternalID="083" ShortName="TF" LongName="Twin falls" />
+  <MapSpec InternalID="085" ShortName="VA" LongName="Valley" />
+  <MapSpec InternalID="087" ShortName="WA" LongName="Washington" />
+</AnimatedMapDataXML>

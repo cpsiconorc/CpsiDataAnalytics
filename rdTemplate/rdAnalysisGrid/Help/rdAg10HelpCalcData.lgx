@@ -1,0 +1,91 @@
+﻿<DataLayer Type="Static">
+<StaticDataRow Name="Abs" Description="Returns the absolute value of a number." Syntax="Abs(number)" Notes="The absolute value of -5 is 5."/>
+<StaticDataRow Name="Date" Description="Returns the current date." Syntax="Date()" Notes=""/>
+<StaticDataRow Name="DateAdd" Description="Adds or subtracts some interval of time from a date or time." Syntax="DateAdd(interval, number, date)" Notes="Interval must be one of the following quoted values:
+&quot;yyyy&quot;=year
+&quot;q&quot;=quarter
+&quot;m&quot;=month
+&quot;y&quot;=day of year
+&quot;d&quot;=day
+&quot;w&quot;=weekday
+&quot;ww&quot;=week of year
+&quot;h&quot;=hour
+&quot;n&quot;=minute
+&quot;s&quot;=second"/>
+<StaticDataRow Name="DateDiff" Description="Computes the difference between two dates." Syntax="DateDiff(interval, date1, date2)" Notes="Interval must be one of the following quoted values:
+&quot;yyyy&quot;=year
+&quot;q&quot;=quarter
+&quot;m&quot;=month
+&quot;y&quot;=day of year
+&quot;d&quot;=day
+&quot;w&quot;=weekday
+&quot;ww&quot;=week of year
+&quot;h&quot;=hour
+&quot;n&quot;=minute
+&quot;s&quot;=second"/>
+<StaticDataRow Name="DatePart" Description="Returns part of a date." Syntax="DatePart(interval, date)" Notes="Interval must be one of the following quoted values:
+&quot;yyyy&quot;=year
+&quot;q&quot;=quarter
+&quot;m&quot;=month
+&quot;y&quot;=day of year
+&quot;d&quot;=day
+&quot;w&quot;=weekday
+&quot;ww&quot;=week of year
+&quot;h&quot;=hour
+&quot;n&quot;=minute
+&quot;s&quot;=second"/>
+<StaticDataRow Name="DateSerial" Description="Combines date parts together to make a date." Syntax="DateSerial(year, month, day)" Notes=""/>
+<StaticDataRow Name="DateValue" Description="Returns a date from a date string.  The function can convert dates from many different formats." Syntax="DateValue(text)" Notes="DateValue(&quot;April 2, 1962&quot;)"/>
+<StaticDataRow Name="Day" Description="Returns the day of the month.  Possible return values are from 1-31." Syntax="Day(date)" Notes=""/>
+<StaticDataRow Name="Exp" Description="Returns &quot;e&quot; raised to a power.  &quot;e&quot; is the base of natural logarithms, called the antilogarithm." Syntax="Exp(number)" Notes=""/>
+<StaticDataRow Name="FormatCurrency" Description="Format a number value into currency." Syntax="FormatCurrency(number [,NumDigitsAfterDecimal [,IncludeLeadingDigit [,UseParensForNegativeNumbers [,GroupDigits]]]])" Notes=""/>
+<StaticDataRow Name="FormatDateTime" Description="Formats a date." Syntax="FormatDateTime(date[, NamedFormat])" Notes="&quot;NamedFormat&quot; may be vbGeneralDate, vbLongDate, vbShortDate, vbLongTime, or vbLongTime"/>
+<StaticDataRow Name="FormatNumber" Description="Formats a number." Syntax="FormatNumber(number [,NumDigitsAfterDecimal [,IncludeLeadingDigit [,UseParensForNegativeNumbers [,GroupDigits]]]])" Notes=""/>
+<StaticDataRow Name="FormatPercent" Description="Formats a number as a percentage." Syntax="FormatPercent(number [,NumDigitsAfterDecimal [,IncludeLeadingDigit [,UseParensForNegativeNumbers [,GroupDigits]]]])" Notes=""/>
+<StaticDataRow Name="Hour" Description="Returns the hour of the day.  Possible return values are 0-23." Syntax="Hour(time)" Notes=""/>
+<StaticDataRow Name="IIF" Description="Returns one value or another, depending on if the expression evaluates to True or False." Syntax="IIF(expression,true-value,false-value)" Notes="Expression is a formula that returns True or False.  
+For example, this would return &quot;Blue&quot;, because 1 does not equal 2.  
+IIF(1=2,&quot;Red&quot;,&quot;Blue&quot;)"/>
+<StaticDataRow Name="InStr" Description="Returns the character location where one string is found within another string." Syntax="InStr([start, ]string1, string2[, compare])" Notes="Instr() returns 0 when the string is not found.  The optional start parameter specifies where to begin searching within the string. The first character is at position 1.   The returned position number is for the entire string. If the optional compare parameter is used then the start parameter is required as well.   
+
+Set compare to 1 for case-insenstive searches."/>
+<StaticDataRow Name="InStrRev" Description="Returns the character location where one string is found within another string.  The search is started from the end of the string rather than the beginning." Syntax="InStrRev(string1, string2[, start[, compare]])" Notes=""/>
+<StaticDataRow Name="Int" Description="Returns the integer portion of a number, removing any decimal places." Syntax="Int(number)" Notes=""/>
+<StaticDataRow Name="IsDate" Description="Returns True if the text is a date." Syntax="IsDate(text)" Notes=""/>
+<StaticDataRow Name="IsNumeric" Description="Returns True if the text is a number." Syntax="IsNumeric(text)" Notes=""/>
+<StaticDataRow Name="LCase" Description="Converts all characters to lower case." Syntax="LCase(text)" Notes=""/>
+<StaticDataRow Name="Left" Description="Returns the &quot;length&quot; number of characters from the left side of the input text." Syntax="Left(text, length)" Notes=""/>
+<StaticDataRow Name="Len" Description="Returns the number of characters in the text." Syntax="Len(text)" Notes=""/>
+<StaticDataRow Name="LTrim" Description="Removes the space characters from the left side of the text." Syntax="LTrim(text)" Notes=""/>
+<StaticDataRow Name="Mid" Description="Returns characters from the middle of the text." Syntax="Mid(text, start[, length])" Notes="&quot;start&quot; is the first character to be returned.  The first character is at position 1.
+
+&quot;length&quot; is the number of characters to be returned."/>
+<StaticDataRow Name="Minute" Description="Returns the minute of the hour.  Possible return values are 0-59." Syntax="Minute(time)" Notes=""/>
+<StaticDataRow Name="Month" Description="Returns the month of the year.  Possible return values are 1-12." Syntax="Month(date)" Notes=""/>
+<StaticDataRow Name="MonthName" Description="Returns the name of the month." Syntax="MonthName(month[, abbreviate])" Notes="Set &quot;abbreviate&quot; to True for an abbreviated month name."/>
+<StaticDataRow Name="Now" Description="Returns the current date and time." Syntax="Now()" Notes=""/>
+<StaticDataRow Name="Power" Description="Exponentiation: Power( m, n ). Function returns m raised to the nth power." Syntax="Power(m,n)" Notes=""/>
+<StaticDataRow Name="Replace" Description="Searches textSearch for textFind, replacing it with the textReplaceWith value." Syntax="Replace(textSearch, textFind, textReplaceWith[, start[, count[, compare]]])" Notes="&quot;start&quot; is the starting character position to be searched.
+
+&quot;count&quot; is the maximum number of replacements before stopping.
+
+Set &quot;compare&quot; to 1 to replace characters regardless of case.
+
+Replace(&quot;ABC&quot;, &quot;abc&quot;, &quot;123&quot;, 1, 1, 1) produces &quot;123&quot;."/>
+<StaticDataRow Name="Right" Description="Returns the &quot;length&quot; number of characters from the right side of the input text." Syntax="Right(text, length)" Notes=""/>
+<StaticDataRow Name="Rnd" Description="Returns a random number between 0 and 1." Syntax="Rnd[(number)]" Notes=""/>
+<StaticDataRow Name="Round" Description="Returns a number rounded to a specified number of decimal places." Syntax="Round(expression[, numdecimalplaces])" Notes=""/>
+<StaticDataRow Name="RTrim" Description="Removes any space characters from the right side of the text." Syntax="RTrim(text)" Notes=""/>
+<StaticDataRow Name="Second" Description="Returns the second of the minute.  Possible values are 0-59." Syntax="Second(time)" Notes=""/>
+<StaticDataRow Name="Sgn" Description="Returns -1 if the number is negative.  Returns 1 if the number is positive.  Returns 0 if the number is 0." Syntax="Sgn(number)" Notes=""/>
+<StaticDataRow Name="Space" Description="Returns text consisting of the number of spaces." Syntax="Space(number)" Notes=""/>
+<StaticDataRow Name="Sqr" Description="Returns the square root of a number." Syntax="Sqr(number)" Notes=""/>
+<StaticDataRow Name="String" Description="Returns text consisting of the character duplicated the number of times." Syntax="String(number, character)" Notes=""/>
+<StaticDataRow Name="StrReverse" Description="Returns the text with the characters in reverse order." Syntax="StrReverse(text)" Notes=""/>
+<StaticDataRow Name="TimeValue" Description="Returns a time value from a time string.  The function can convert dates from many different formats." Syntax="TimeValue(time)" Notes=""/>
+<StaticDataRow Name="Trim" Description="Removes space characters from both the left and rights sides of the text." Syntax="Trim(text)" Notes=""/>
+<StaticDataRow Name="UCase" Description="Converts all characters to upper case." Syntax="UCase(text)" Notes=""/>
+<StaticDataRow Name="Weekday" Description="Returns the number of the day of the week.  Possible return values are 1-7." Syntax="Weekday(date, [firstdayofweek])" Notes=""/>
+<StaticDataRow Name="WeekdayName" Description="Returns the name of the day corresponding to the weekday number." Syntax="WeekdayName(numberWeekday, abbreviate, firstdayofweek)" Notes=""/>
+<StaticDataRow Name="Year" Description="Returns the number of the year of the specified date." Syntax="Year(date)" Notes=""/>
+</DataLayer>

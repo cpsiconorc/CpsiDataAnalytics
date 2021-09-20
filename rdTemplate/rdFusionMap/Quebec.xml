@@ -1,0 +1,19 @@
+<AnimatedMapDataXML>
+  <MapSpec InternalID="08" ShortName="AT" LongName="Abitibi-Témiscamingue" />
+  <MapSpec InternalID="01" ShortName="BS" LongName="Bas-Saint-Laurent" />
+  <MapSpec InternalID="03" ShortName="CN" LongName="Capitale-Nationale" />
+  <MapSpec InternalID="17" ShortName="CQ" LongName="Centre-du-Québec" />
+  <MapSpec InternalID="12" ShortName="CA" LongName="Chaudière-Appalaches" />
+  <MapSpec InternalID="09" ShortName="CO" LongName="Côte-Nord" />
+  <MapSpec InternalID="05" ShortName="ES" LongName="Estrie" />
+  <MapSpec InternalID="11" ShortName="GA" LongName="Gaspésie-Îles-de-la-Madeleine" />
+  <MapSpec InternalID="14" ShortName="LA" LongName="Lanaudière" />
+  <MapSpec InternalID="15" ShortName="LU" LongName="Laurentides" />
+  <MapSpec InternalID="13" ShortName="LV" LongName="Laval" />
+  <MapSpec InternalID="04" ShortName="MA" LongName="Mauricie" />
+  <MapSpec InternalID="16" ShortName="MO" LongName="Montérégie" />
+  <MapSpec InternalID="06" ShortName="MN" LongName="Montréal" />
+  <MapSpec InternalID="10" ShortName="NO" LongName="Nord-du-Québec" />
+  <MapSpec InternalID="07" ShortName="OU" LongName="Outaouais" />
+  <MapSpec InternalID="02" ShortName="SL" LongName="Saguenay-Lac-Saint-Jean" />
+</AnimatedMapDataXML>

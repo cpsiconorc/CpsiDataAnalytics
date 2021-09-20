@@ -1,0 +1,7 @@
+<AnimatedMapDataXML>
+  <MapSpec InternalID="DK.HS" ShortName="HS" LongName="Hovenstaden" />
+  <MapSpec InternalID="DK.MJ" ShortName="MJ" LongName="Midtjylland" />
+  <MapSpec InternalID="DK.ND" ShortName="ND" LongName="Nordjylland" />
+  <MapSpec InternalID="DK.SL" ShortName="SL" LongName="Sjælland" />
+  <MapSpec InternalID="DK.SD" ShortName="SD" LongName="Syddanmark" />
+</AnimatedMapDataXML>

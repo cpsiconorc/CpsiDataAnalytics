@@ -1,0 +1,10 @@
+<AnimatedMapDataXML>
+  <MapSpec InternalID="ACT" ShortName="ACT" LongName="Australian Capital Territory" />
+  <MapSpec InternalID="NT" ShortName="NT" LongName="Northern Territory" />
+  <MapSpec InternalID="NSW" ShortName="NSW" LongName="New South Wales" />
+  <MapSpec InternalID="QLD" ShortName="QLD" LongName="Queensland" />
+  <MapSpec InternalID="SA" ShortName="SA" LongName="South Australia" />
+  <MapSpec InternalID="TAS" ShortName="TAS" LongName="Tasmania" />
+  <MapSpec InternalID="VIC" ShortName="VIC" LongName="Victoria" />
+  <MapSpec InternalID="WA" ShortName="WA" LongName="Western Australia" />
+</AnimatedMapDataXML>

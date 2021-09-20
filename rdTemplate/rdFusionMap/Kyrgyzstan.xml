@@ -1,0 +1,10 @@
+<AnimatedMapDataXML>
+  <MapSpec InternalID="KG.BA" ShortName="BA" LongName="Batken" />
+  <MapSpec InternalID="KG.GB" ShortName="GB" LongName="Bishkek" />
+  <MapSpec InternalID="KG.CU" ShortName="CU" LongName="Chuy" />
+  <MapSpec InternalID="KG.DA" ShortName="DA" LongName="Jalal Abad" />
+  <MapSpec InternalID="KG.NA" ShortName="NA" LongName="Naryn" />
+  <MapSpec InternalID="KG.OS" ShortName="OS" LongName="Osh" />
+  <MapSpec InternalID="KG.TL" ShortName="TL" LongName="Talas" />
+  <MapSpec InternalID="KG.YK" ShortName="YK" LongName="Ysyk Kol" />
+</AnimatedMapDataXML>

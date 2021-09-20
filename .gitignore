@@ -1,0 +1,7 @@
+*.lic
+*.lgp
+TeamDevelopment/
+_rdLivePreview*.lgx
+rdDataCache/
+rdDownload/
+rdErrorLog/

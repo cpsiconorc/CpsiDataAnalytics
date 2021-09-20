@@ -1,0 +1,16 @@
+<AnimatedMapDataXML>
+  <MapSpec InternalID="SY.HA" ShortName="HA" LongName="Al Hasakah" />
+  <MapSpec InternalID="SY.HL" ShortName="HL" LongName="Aleppo" />
+  <MapSpec InternalID="SY.RA" ShortName="RA" LongName="Ar Raqqah" />
+  <MapSpec InternalID="SY.SU" ShortName="SU" LongName="As Suwayda" />
+  <MapSpec InternalID="SY.DI" ShortName="DI" LongName="Damascus" />
+  <MapSpec InternalID="SY.DR" ShortName="DR" LongName="Dara" />
+  <MapSpec InternalID="SY.DY" ShortName="DY" LongName="Dayr az Zawr" />
+  <MapSpec InternalID="SY.HM" ShortName="HM" LongName="Hama" />
+  <MapSpec InternalID="SY.HI" ShortName="HI" LongName="Homs" />
+  <MapSpec InternalID="SY.ID" ShortName="ID" LongName="Idlib" />
+  <MapSpec InternalID="SY.LA" ShortName="LA" LongName="Latakia" />
+  <MapSpec InternalID="SY.QU" ShortName="QU" LongName="Quneitra" />
+  <MapSpec InternalID="SY.RD" ShortName="RD" LongName="Rif Dimashq" />
+  <MapSpec InternalID="SY.TA" ShortName="TA" LongName="Tartus" />
+</AnimatedMapDataXML>

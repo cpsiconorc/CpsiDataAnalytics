@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Report ID="ReportAuthorDev.Templates.ImageTemplate">
+  <Body>
+    <Division ID="rdElementID" HtmlDiv="True" rdReportAuthorElementType="Image" Class="rd-report-author-element rd-report-author-element-content rd-scrollable-x">
+      <Image ID="image_rdElementID" Caption="" PreventOnEmptyException="True" />
+    </Division>
+  </Body>
+</Report>

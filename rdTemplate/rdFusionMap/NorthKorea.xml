@@ -1,0 +1,15 @@
+<AnimatedMapDataXML>
+  <MapSpec InternalID="01" ShortName="CHA" LongName="Chagang-do" />
+  <MapSpec InternalID="17" ShortName="HAB" LongName="Hamgyŏng-bukto" />
+  <MapSpec InternalID="03" ShortName="HAN" LongName="Hamgyŏng-namdo" />
+  <MapSpec InternalID="07" ShortName="HWB" LongName="Hwanghae-bukto" />
+  <MapSpec InternalID="06" ShortName="HWN" LongName="Hwanghae-namdo" />
+  <MapSpec InternalID="08" ShortName="KAE" LongName="Kaesŏng" />
+  <MapSpec InternalID="09" ShortName="KAN" LongName="Kangwŏn-do" />
+  <MapSpec InternalID="18" ShortName="NAJ" LongName="Rasŏn" />
+  <MapSpec InternalID="14" ShortName="NAM" LongName="Nampo" />
+  <MapSpec InternalID="11" ShortName="PYB" LongName="P'yŏngan-bukto" />
+  <MapSpec InternalID="15" ShortName="PYN" LongName="P'yŏngan-namdo" />
+  <MapSpec InternalID="12" ShortName="PYO" LongName="P'yŏngyang" />
+  <MapSpec InternalID="13" ShortName="YAN" LongName="Yanggang-do" />
+</AnimatedMapDataXML>

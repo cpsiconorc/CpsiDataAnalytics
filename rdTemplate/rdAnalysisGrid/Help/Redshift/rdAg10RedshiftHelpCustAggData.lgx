@@ -1,0 +1,15 @@
+﻿<DataLayer Type="Static">
+  <StaticDataRow Name="AVG" Description="Returns the average value of a column." Syntax="AVG ( [ DISTINCT ] expression )" Notes="" />
+  <StaticDataRow Name="BOOL_AND" Description="Returns TRUE if all values are TRUE." Syntax="BOOL_AND ( boolean_expression )" Notes="The Boolean equivalent of MIN." />
+  <StaticDataRow Name="BOOL_OR" Description="Returns TRUE if at least one value is TRUE." Syntax="BOOL_OR ( boolean_expression )" Notes="The Boolean equivalent of MAX." />
+  <StaticDataRow Name="COUNT" Description="Returns the number of items found in a group." Syntax="[ APPROXIMATE ] COUNT ( [ DISTINCT ] * | expression )" Notes="The COUNT function has three variations. COUNT ( * ) counts all the rows whether they include nulls or not. COUNT ( expression ) computes the number of rows with non-NULL values in a specific column or expression. COUNT ( DISTINCT expression ) computes the number of distinct non-NULL values in a column or expression. APPROXIMATE can only be used with COUNT ( DISTINCT )." />
+  <StaticDataRow Name="LISTAGG" Description="Concatenates values into a single string." Syntax="LISTAGG ( [DISTINCT] expression [, 'delimiter' ] )" Notes="NULL values and empty strings are ignored.
+The delimiter is NULL if not specified." />
+  <StaticDataRow Name="MAX" Description="Returns the maximum value of a column." Syntax="MAX ( expression )" Notes="Accepts any data type except Boolean as input. The Boolean equivalent MAX is BOOL_OR." />
+  <StaticDataRow Name="MIN" Description="Returns the minimum value of a column." Syntax="MIN ( expression )" Notes="Accepts any data type except Boolean as input. The Boolean equivalent MIN is BOOL_AND." />
+  <StaticDataRow Name="STDDEV" Description="Returns the sample standard deviation of a set of numeric values, equivalent to the square root of the sample variance of the values." Syntax="STDDEV ( [ DISTINCT ] expression )" Notes="STDDEV_SAMP and STDDEV are synonyms for the same function. The return type is always a double precision number." />
+  <StaticDataRow Name="STDDEV_POP" Description="Returns the population standard deviation of a set of numeric values." Syntax="STDDEV_POP ( [ DISTINCT ] expression )" Notes="The return type is always a double precision number." />
+  <StaticDataRow Name="SUM" Description="Returns the sum of all non-null values in an expression." Syntax="SUM ( [ DISTINCT ] expression )" Notes="" />
+  <StaticDataRow Name="VAR_POP" Description="Returns the population variance of a set of numeric values." Syntax="VAR_POP ( [ DISTINCT ] expression )" Notes="" />
+  <StaticDataRow Name="VAR_SAMP" Description="Returns the sample variance of a set of numeric values, equivalent to the squared sample standard deviation of the same set of values." Syntax="VAR_SAMP ( [ DISTINCT ] expression )" Notes="VAR_SAMP and VARIANCE are synonyms for the same function." />
+</DataLayer>

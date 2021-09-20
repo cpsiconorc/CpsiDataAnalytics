@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Report ID="rdSessionTimeoutWarningPopup">
+	<PopupPanel ID="pnlSessionTimeoutControl" PopupModal="True" PopupPanelLocation="Center" HideCloseX="True">
+		<Division HtmlDiv="True" Class="ThemeAlignCenter">
+			<Label Caption="Your session will automatically end soon." ID="lblEndingSoon" Class="ThemeHeaderLarge" />
+			<LineBreak LineCount="2"/>
+			<Label Caption="Continue the Session" ID="lblContinueSession" Class="ThemeLinkButton">
+				<Action Type="Javascript" Javascript="ShowElement(null, 'pnlSessionTimeoutControl','Hide'); LogiXML.sessionTimeout.ping();" ID="actContinueSession" />
+			</Label>
+			<LineBreak LineCount="2"/>
+		</Division>
+	</PopupPanel>
+</Report>

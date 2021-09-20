@@ -1,0 +1,45 @@
+<TemplateModifier>
+	<InsertAfterElement ID="rowsChartLists">
+		<NewElement>
+			<Rows ID="rowsAnalysisChartHidden" ShowModes="None" ></Rows>
+		</NewElement>
+	</InsertAfterElement>
+
+	<AppendChildElement ID="rowsAnalysisChartHidden" >
+		<CutElement ID="rowChartXColumn_rdAcID" />
+	</AppendChildElement>
+	<AppendChildElement ID="rowsAnalysisChartHidden" >
+		<CutElement ID="rowChartYAggr_rdAcID" />
+	</AppendChildElement>
+	<AppendChildElement ID="rowsAnalysisChartHidden" >
+		<CutElement ID="rowChartExtraAggr_rdAcID" />
+	</AppendChildElement>
+	<AppendChildElement ID="rowsAnalysisChartHidden" >
+		<CutElement ID="rowChartForecast_rdAcID" />
+	</AppendChildElement>
+
+	<PrependChildElement ID="rowsChartLists">
+	<NewElement>
+		<Row ID="rowContainer" Class="rdAcAlignCenter">
+			<Column ID="colLeft">
+				<Rows ID="rowChartYColumnContainer" Class="rdAcDispayInline"></Rows>
+			</Column>
+			<Column ID="colRidht">
+				<Rows ID="rowChartExtraDataColumnContainer" Class="rdAcDispayInline"></Rows>
+			</Column>
+		</Row>
+	</NewElement>
+	</PrependChildElement>
+
+	<AppendChildElement ID="rowChartYColumnContainer">
+		<CutElement ID="rowChartYColumn_rdAcID" />
+	</AppendChildElement>
+	<AppendChildElement ID="rowChartExtraDataColumnContainer">
+		<CutElement ID="rowChartExtraDataColumn_rdAcID" />
+	</AppendChildElement>
+	<SetAttribute ID="rowsChartLists" Width="100" WidthScale="%" />
+	<SetAttribute ID="lblChartColorColumn_rdAcID" Caption="Cell Color " />
+	<SetAttribute ID="lblChartSizeColumn_rdAcID" Caption="Cell Size "  />
+	
+	<SetAttribute XPath="//InputSelectList[@ID='rdAcChartExtraAggrList_rdAcID']" Caption="Color Column Aggregation "  />
+</TemplateModifier>

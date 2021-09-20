@@ -1,0 +1,12 @@
+<AnimatedMapDataXML>
+  <MapSpec InternalID="QA.DA" ShortName="DA" LongName="Ad Dawhah" />
+  <MapSpec InternalID="QA.GH" ShortName="GH" LongName="Al Ghuwariyah" />
+  <MapSpec InternalID="QA.JU" ShortName="JU" LongName="Al Jumaliyah" />
+  <MapSpec InternalID="QA.KH" ShortName="KH" LongName="Al Khawr" />
+  <MapSpec InternalID="QA.WA" ShortName="WA" LongName="Al Wakrah" />
+  <MapSpec InternalID="QA.RA" ShortName="RA" LongName="Ar Rayyan" />
+  <MapSpec InternalID="QA.JB" ShortName="JB" LongName="Jariyan Al Batnah" />
+  <MapSpec InternalID="QA.MS" ShortName="MS" LongName="Madinat Ach Shamal" />
+  <MapSpec InternalID="QA.ME" ShortName="ME" LongName="Mesaieed" />
+  <MapSpec InternalID="QA.US" ShortName="US" LongName="Umm Salal" />
+</AnimatedMapDataXML>

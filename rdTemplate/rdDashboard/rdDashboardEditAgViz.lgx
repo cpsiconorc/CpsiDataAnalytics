@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report ID="rdDashboardEditViz" Class="rdAgBackground" >
+  <StyleSheet StyleSheet="rdTemplate/rdDashboard/rdDashboard2.css"/>
+  <DefinitionModifierFile DefinitionModifierFile="@Session.rdEditAgVizTemplateModifierFile~" />
+  <Body>
+    
+    <DashboardEditAgViz />
+    
+    <Division Class="rdDoneAlignRight">
+      <LineBreak />
+      <Label ID="lblSave" Caption="Save" Class="ThemeLinkButton" >
+        <Action Type="Javascript" ID="actSaveEditedAgViz" Javascript="window.parent.rdSaveEditedAgViz('--ReportID--','--VizType--','--PanelID--','--InstanceID--','--BookmarkID--');"></Action>
+      </Label>
+      <InputHidden ID="rdDefInDataCache" DefaultValue="True" />
+    </Division>
+
+    <AnalysisGrid ID="rdDashboardEditViz" HideAgChart="True" HideAgCrosstab="True" AnalysisFilterDisableSimple="True" >
+      <ActiveQueryBuilder ID="aqb" Class="" TemplateModifierFile="" ActiveSqlBufferSize="500" cMetadataIDs="" HideColumnSelection="False" rdIdeIdx="6" BatchSelection="False" />
+      <CrosstabComparison />
+      <CustomDashboardPanels
+  BookmarkCollectionFolderName="My Visualizations"
+  DisableOriginalReportBookmark="True"
+  GalleryBookmarkCollection=""
+					/>
+    </AnalysisGrid>
+
+    <IncludeHtml Html="&lt;SCRIPT&gt;rdShowEditAgVizControls()&lt;/SCRIPT&gt;" />
+  </Body>
+  <IncludeScriptFile IncludedScriptFile="rdTemplate/rdDashboard/rdDashboardEditAgViz.js" />
+</Report>

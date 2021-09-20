@@ -1,0 +1,6 @@
+<AnimatedMapDataXML>
+  <MapSpec InternalID="001" ShortName="EN" LongName="England" />
+  <MapSpec InternalID="002" ShortName="SC" LongName="Scotland" />
+  <MapSpec InternalID="003" ShortName="NI" LongName="North Ireland" />
+  <MapSpec InternalID="004" ShortName="WA" LongName="Wales" />
+</AnimatedMapDataXML>

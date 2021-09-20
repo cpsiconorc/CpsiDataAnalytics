@@ -1,0 +1,66 @@
+<AnimatedMapDataXML>
+  <MapSpec InternalID="001" ShortName="AC" LongName="Acadia" />
+  <MapSpec InternalID="003" ShortName="AL" LongName="Allen" />
+  <MapSpec InternalID="005" ShortName="AS" LongName="Ascension" />
+  <MapSpec InternalID="007" ShortName="AU" LongName="Assumption" />
+  <MapSpec InternalID="009" ShortName="AV" LongName="Avoyelles" />
+  <MapSpec InternalID="011" ShortName="BE" LongName="Beauregard" />
+  <MapSpec InternalID="013" ShortName="BI" LongName="Bienville" />
+  <MapSpec InternalID="015" ShortName="BO" LongName="Bossier" />
+  <MapSpec InternalID="017" ShortName="CA" LongName="Caddo" />
+  <MapSpec InternalID="019" ShortName="CL" LongName="Calcasieu" />
+  <MapSpec InternalID="021" ShortName="CD" LongName="Caldwell" />
+  <MapSpec InternalID="023" ShortName="CM" LongName="Cameron" />
+  <MapSpec InternalID="025" ShortName="CT" LongName="Catahoula" />
+  <MapSpec InternalID="027" ShortName="CB" LongName="Claiborne" />
+  <MapSpec InternalID="029" ShortName="CO" LongName="Concordia" />
+  <MapSpec InternalID="031" ShortName="DS" LongName="De Soto" />
+  <MapSpec InternalID="033" ShortName="EB" LongName="East Baton Rouge" />
+  <MapSpec InternalID="035" ShortName="EC" LongName="East Carroll" />
+  <MapSpec InternalID="037" ShortName="EF" LongName="East    Feliciana" />
+  <MapSpec InternalID="039" ShortName="EV" LongName="Evangeline" />
+  <MapSpec InternalID="041" ShortName="FR" LongName="Franklin" />
+  <MapSpec InternalID="043" ShortName="GR" LongName="Grant" />
+  <MapSpec InternalID="045" ShortName="IB" LongName="Iberia" />
+  <MapSpec InternalID="047" ShortName="IE" LongName="Iberville" />
+  <MapSpec InternalID="049" ShortName="JA" LongName="Jackson" />
+  <MapSpec InternalID="051" ShortName="JE" LongName="Jefferson" />
+  <MapSpec InternalID="053" ShortName="JD" LongName="Jefferson Davis" />
+  <MapSpec InternalID="055" ShortName="LA" LongName="Lafayette" />
+  <MapSpec InternalID="057" ShortName="LF" LongName="Lafourche" />
+  <MapSpec InternalID="059" ShortName="LS" LongName="La Salle" />
+  <MapSpec InternalID="061" ShortName="LI" LongName="Lincoln" />
+  <MapSpec InternalID="063" ShortName="LV" LongName="Livingston" />
+  <MapSpec InternalID="065" ShortName="MA" LongName="Madison" />
+  <MapSpec InternalID="067" ShortName="MO" LongName="Morehouse" />
+  <MapSpec InternalID="069" ShortName="NA" LongName="Natchitoches" />
+  <MapSpec InternalID="071" ShortName="OR" LongName="Orleans" />
+  <MapSpec InternalID="073" ShortName="OU" LongName="Ouachita" />
+  <MapSpec InternalID="075" ShortName="PL" LongName="Plaquemines" />
+  <MapSpec InternalID="077" ShortName="PC" LongName="Pointe Coupee" />
+  <MapSpec InternalID="079" ShortName="RA" LongName="Rapides" />
+  <MapSpec InternalID="081" ShortName="RE" LongName="Red River" />
+  <MapSpec InternalID="083" ShortName="RI" LongName="Richland" />
+  <MapSpec InternalID="085" ShortName="SA" LongName="Sabine" />
+  <MapSpec InternalID="087" ShortName="SB" LongName="St. Bernard" />
+  <MapSpec InternalID="089" ShortName="SC" LongName="St. Charles" />
+  <MapSpec InternalID="091" ShortName="SH" LongName="St. Helena" />
+  <MapSpec InternalID="093" ShortName="SJ" LongName="St. James" />
+  <MapSpec InternalID="095" ShortName="ST" LongName="St. John the Baptist" />
+  <MapSpec InternalID="097" ShortName="SL" LongName="St. Landry" />
+  <MapSpec InternalID="099" ShortName="SM" LongName="St. Martin" />
+  <MapSpec InternalID="101" ShortName="SR" LongName="St. Mary" />
+  <MapSpec InternalID="103" ShortName="SY" LongName="St. Tammany" />
+  <MapSpec InternalID="105" ShortName="TA" LongName="Tangipahoa" />
+  <MapSpec InternalID="107" ShortName="TE" LongName="Tensas" />
+  <MapSpec InternalID="109" ShortName="TR" LongName="Terrebonne" />
+  <MapSpec InternalID="111" ShortName="UN" LongName="Union" />
+  <MapSpec InternalID="113" ShortName="VE" LongName="Vermilion" />
+  <MapSpec InternalID="115" ShortName="VN" LongName="Vernon" />
+  <MapSpec InternalID="117" ShortName="WA" LongName="Washington" />
+  <MapSpec InternalID="119" ShortName="WE" LongName="Webster" />
+  <MapSpec InternalID="121" ShortName="WB" LongName="West Baton Rouge" />
+  <MapSpec InternalID="123" ShortName="WC" LongName="West Carroll" />
+  <MapSpec InternalID="125" ShortName="WF" LongName="West Feliciana" />
+  <MapSpec InternalID="127" ShortName="WI" LongName="Winn" />
+</AnimatedMapDataXML>

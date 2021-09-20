@@ -1,0 +1,66 @@
+<AnimatedMapDataXML>
+  <MapSpec InternalID="001" ShortName="AD" LongName="Adams" />
+  <MapSpec InternalID="003" ShortName="AL" LongName="Alamosa" />
+  <MapSpec InternalID="005" ShortName="AR" LongName="Arapahoe" />
+  <MapSpec InternalID="007" ShortName="AC" LongName="Archuleta" />
+  <MapSpec InternalID="009" ShortName="BA" LongName="Baca" />
+  <MapSpec InternalID="011" ShortName="BE" LongName="Bent" />
+  <MapSpec InternalID="013" ShortName="BO" LongName="Boulder" />
+  <MapSpec InternalID="014" ShortName="BR" LongName="Broomfield" />
+  <MapSpec InternalID="015" ShortName="CH" LongName="Chaffee" />
+  <MapSpec InternalID="017" ShortName="CE" LongName="Cheyenne" />
+  <MapSpec InternalID="019" ShortName="CL" LongName="Clear Creek" />
+  <MapSpec InternalID="021" ShortName="CO" LongName="Conejos" />
+  <MapSpec InternalID="023" ShortName="CS" LongName="Costilla" />
+  <MapSpec InternalID="025" ShortName="CR" LongName="Crowley" />
+  <MapSpec InternalID="027" ShortName="CU" LongName="Custer" />
+  <MapSpec InternalID="029" ShortName="DE" LongName="Delta" />
+  <MapSpec InternalID="031" ShortName="DN" LongName="Denver" />
+  <MapSpec InternalID="033" ShortName="DO" LongName="Dolores" />
+  <MapSpec InternalID="035" ShortName="DU" LongName="Douglas" />
+  <MapSpec InternalID="037" ShortName="EA" LongName="Eagle" />
+  <MapSpec InternalID="039" ShortName="EP" LongName="Elbert" />
+  <MapSpec InternalID="041" ShortName="EL" LongName="El Paso" />
+  <MapSpec InternalID="043" ShortName="FR" LongName="Fremont" />
+  <MapSpec InternalID="045" ShortName="GA" LongName="Garfield" />
+  <MapSpec InternalID="047" ShortName="GI" LongName="Gilpin" />
+  <MapSpec InternalID="049" ShortName="GR" LongName="Grand" />
+  <MapSpec InternalID="051" ShortName="GU" LongName="Gunnison" />
+  <MapSpec InternalID="053" ShortName="HI" LongName="Hinsdale" />
+  <MapSpec InternalID="055" ShortName="HU" LongName="Huerfano" />
+  <MapSpec InternalID="057" ShortName="JA" LongName="Jackson" />
+  <MapSpec InternalID="059" ShortName="JE" LongName="Jefferson" />
+  <MapSpec InternalID="061" ShortName="KI" LongName="Kiowa" />
+  <MapSpec InternalID="063" ShortName="KC" LongName="Kit Carson" />
+  <MapSpec InternalID="065" ShortName="LA" LongName="Lake" />
+  <MapSpec InternalID="067" ShortName="LP" LongName="La Plata" />
+  <MapSpec InternalID="069" ShortName="LR" LongName="Larimer" />
+  <MapSpec InternalID="071" ShortName="LS" LongName="Las Animas" />
+  <MapSpec InternalID="073" ShortName="LI" LongName="Lincoln" />
+  <MapSpec InternalID="075" ShortName="LO" LongName="Logan" />
+  <MapSpec InternalID="077" ShortName="ME" LongName="Mesa" />
+  <MapSpec InternalID="079" ShortName="MI" LongName="Mineral" />
+  <MapSpec InternalID="081" ShortName="MO" LongName="Moffat" />
+  <MapSpec InternalID="083" ShortName="MN" LongName="Montezuma" />
+  <MapSpec InternalID="085" ShortName="MT" LongName="Montrose" />
+  <MapSpec InternalID="087" ShortName="MG" LongName="Morgan" />
+  <MapSpec InternalID="089" ShortName="OT" LongName="Otero" />
+  <MapSpec InternalID="091" ShortName="OU" LongName="Ouray" />
+  <MapSpec InternalID="093" ShortName="PA" LongName="Park" />
+  <MapSpec InternalID="095" ShortName="PH" LongName="Phillips" />
+  <MapSpec InternalID="097" ShortName="PI" LongName="Pitkin" />
+  <MapSpec InternalID="099" ShortName="PR" LongName="Prowers" />
+  <MapSpec InternalID="101" ShortName="PU" LongName="Pueblo" />
+  <MapSpec InternalID="103" ShortName="RB" LongName="Rio Blanco" />
+  <MapSpec InternalID="105" ShortName="RG" LongName="Rio Grande" />
+  <MapSpec InternalID="107" ShortName="RO" LongName="Routt" />
+  <MapSpec InternalID="109" ShortName="SA" LongName="Saguache" />
+  <MapSpec InternalID="111" ShortName="SJ" LongName="San Juan" />
+  <MapSpec InternalID="113" ShortName="SM" LongName="San Miguel" />
+  <MapSpec InternalID="115" ShortName="SE" LongName="Sedgwick" />
+  <MapSpec InternalID="117" ShortName="SU" LongName="Summit" />
+  <MapSpec InternalID="119" ShortName="TE" LongName="Teller" />
+  <MapSpec InternalID="121" ShortName="WA" LongName="Washington" />
+  <MapSpec InternalID="123" ShortName="WI" LongName="Weld" />
+  <MapSpec InternalID="125" ShortName="YU" LongName="Yuma" />
+</AnimatedMapDataXML>

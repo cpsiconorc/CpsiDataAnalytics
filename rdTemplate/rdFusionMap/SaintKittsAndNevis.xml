@@ -1,0 +1,16 @@
+<AnimatedMapDataXML>
+  <MapSpec InternalID="01" ShortName="CC" LongName="Christ    Church Nichola Town" />
+  <MapSpec InternalID="02" ShortName="AS" LongName="Saint Anne Sandy Point" />
+  <MapSpec InternalID="03" ShortName="GB" LongName="Saint George Basseterre" />
+  <MapSpec InternalID="04" ShortName="GG" LongName="Saint George Gingerland" />
+  <MapSpec InternalID="05" ShortName="JW" LongName="Saint James Windward" />
+  <MapSpec InternalID="06" ShortName="JC" LongName="Saint John Capesterre" />
+  <MapSpec InternalID="07" ShortName="JF" LongName="Saint John Figtree" />
+  <MapSpec InternalID="08" ShortName="MC" LongName="Saint Mary Cayon" />
+  <MapSpec InternalID="09" ShortName="PP" LongName="Saint Paul Capesterre" />
+  <MapSpec InternalID="10" ShortName="PL" LongName="Saint Paul Charlestown" />
+  <MapSpec InternalID="11" ShortName="PB" LongName="Saint Peter Basseterre" />
+  <MapSpec InternalID="12" ShortName="TL" LongName="Saint Thomas Lowland" />
+  <MapSpec InternalID="13" ShortName="TM" LongName="Saint Thomas Middle Island" />
+  <MapSpec InternalID="15" ShortName="TP" LongName="Trinity Palmetto Point" />
+</AnimatedMapDataXML>

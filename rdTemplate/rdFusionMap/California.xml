@@ -1,0 +1,60 @@
+<AnimatedMapDataXML>
+  <MapSpec InternalID="001" ShortName="AL" LongName="Alameda" />
+  <MapSpec InternalID="003" ShortName="AP" LongName="Alpine" />
+  <MapSpec InternalID="005" ShortName="AM" LongName="Amador" />
+  <MapSpec InternalID="007" ShortName="BU" LongName="Butte" />
+  <MapSpec InternalID="009" ShortName="CA" LongName="Calaveras" />
+  <MapSpec InternalID="011" ShortName="CO" LongName="Colusa" />
+  <MapSpec InternalID="013" ShortName="CN" LongName="Contra    costa" />
+  <MapSpec InternalID="015" ShortName="DE" LongName="Del norte" />
+  <MapSpec InternalID="017" ShortName="EL" LongName="El dorado" />
+  <MapSpec InternalID="019" ShortName="FR" LongName="Fresno" />
+  <MapSpec InternalID="021" ShortName="GL" LongName="Glenn" />
+  <MapSpec InternalID="023" ShortName="HU" LongName="Humboldt" />
+  <MapSpec InternalID="025" ShortName="IM" LongName="Imperial" />
+  <MapSpec InternalID="027" ShortName="IN" LongName="Inyo" />
+  <MapSpec InternalID="029" ShortName="KE" LongName="Kern" />
+  <MapSpec InternalID="031" ShortName="KI" LongName="Kings" />
+  <MapSpec InternalID="033" ShortName="LA" LongName="Lake" />
+  <MapSpec InternalID="035" ShortName="LS" LongName="Lassen" />
+  <MapSpec InternalID="037" ShortName="LO" LongName="Los Angeles" />
+  <MapSpec InternalID="039" ShortName="MA" LongName="Madera" />
+  <MapSpec InternalID="041" ShortName="MR" LongName="Marin" />
+  <MapSpec InternalID="043" ShortName="MI" LongName="Mariposa" />
+  <MapSpec InternalID="045" ShortName="ME" LongName="Mendocino" />
+  <MapSpec InternalID="047" ShortName="MC" LongName="Merced" />
+  <MapSpec InternalID="049" ShortName="MO" LongName="Modoc" />
+  <MapSpec InternalID="051" ShortName="MN" LongName="Mono" />
+  <MapSpec InternalID="053" ShortName="MT" LongName="Monterey" />
+  <MapSpec InternalID="055" ShortName="NA" LongName="Napa" />
+  <MapSpec InternalID="057" ShortName="NE" LongName="Nevada" />
+  <MapSpec InternalID="059" ShortName="OR" LongName="Orange" />
+  <MapSpec InternalID="061" ShortName="PL" LongName="Placer" />
+  <MapSpec InternalID="063" ShortName="PU" LongName="Plumas" />
+  <MapSpec InternalID="065" ShortName="RI" LongName="Riverside" />
+  <MapSpec InternalID="067" ShortName="SA" LongName="Sacramento" />
+  <MapSpec InternalID="069" ShortName="SN" LongName="San Benito" />
+  <MapSpec InternalID="071" ShortName="SB" LongName="San Bernardino" />
+  <MapSpec InternalID="073" ShortName="SD" LongName="San Diego" />
+  <MapSpec InternalID="075" ShortName="SF" LongName="San Francisco" />
+  <MapSpec InternalID="077" ShortName="SJ" LongName="San     Joaquin" />
+  <MapSpec InternalID="079" ShortName="SP" LongName="San Luis Obispo" />
+  <MapSpec InternalID="081" ShortName="SE" LongName="San Mateo" />
+  <MapSpec InternalID="083" ShortName="SR" LongName="Santa Barbara" />
+  <MapSpec InternalID="085" ShortName="ST" LongName="Santa Clara" />
+  <MapSpec InternalID="087" ShortName="SC" LongName="Santa Cruz" />
+  <MapSpec InternalID="089" ShortName="SH" LongName="Shasta" />
+  <MapSpec InternalID="091" ShortName="SI" LongName="Sierra" />
+  <MapSpec InternalID="093" ShortName="SY" LongName="Siskiyou" />
+  <MapSpec InternalID="095" ShortName="SO" LongName="Solano" />
+  <MapSpec InternalID="097" ShortName="SM" LongName="Sonoma" />
+  <MapSpec InternalID="099" ShortName="SL" LongName="Stanislaus" />
+  <MapSpec InternalID="101" ShortName="SU" LongName="Sutter" />
+  <MapSpec InternalID="103" ShortName="TE" LongName="Tehama" />
+  <MapSpec InternalID="105" ShortName="TR" LongName="Trinity" />
+  <MapSpec InternalID="107" ShortName="TU" LongName="Tulare" />
+  <MapSpec InternalID="109" ShortName="TO" LongName="Tuolumne" />
+  <MapSpec InternalID="111" ShortName="VE" LongName="Ventura" />
+  <MapSpec InternalID="113" ShortName="YO" LongName="Yolo" />
+  <MapSpec InternalID="115" ShortName="YU" LongName="Yuba" />
+</AnimatedMapDataXML>

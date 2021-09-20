@@ -1,0 +1,23 @@
+<AnimatedMapDataXML>
+  <MapSpec InternalID="01" ShortName="AN" LongName="Andrijevica" />
+  <MapSpec InternalID="02" ShortName="BA" LongName="Bar" />
+  <MapSpec InternalID="03" ShortName="BE" LongName="Berane" />
+  <MapSpec InternalID="04" ShortName="BP" LongName="Bijelo Polje" />
+  <MapSpec InternalID="05" ShortName="BU" LongName="Budva" />
+  <MapSpec InternalID="06" ShortName="CE" LongName="Cetinje" />
+  <MapSpec InternalID="07" ShortName="DA" LongName="Danilovgrad" />
+  <MapSpec InternalID="08" ShortName="HN" LongName="Herceg Novi" />
+  <MapSpec InternalID="09" ShortName="KL" LongName="Kolašin" />
+  <MapSpec InternalID="10" ShortName="KT" LongName="Kotor" />
+  <MapSpec InternalID="11" ShortName="MK" LongName="Mojkovac" />
+  <MapSpec InternalID="12" ShortName="NK" LongName="Nikšić" />
+  <MapSpec InternalID="13" ShortName="PV" LongName="Plav" />
+  <MapSpec InternalID="14" ShortName="PL" LongName="Plužine" />
+  <MapSpec InternalID="15" ShortName="PU" LongName="Pljevlja" />
+  <MapSpec InternalID="16" ShortName="PG" LongName="Podgorica" />
+  <MapSpec InternalID="17" ShortName="RO" LongName="Rožaje" />
+  <MapSpec InternalID="18" ShortName="SA" LongName="Šavnik" />
+  <MapSpec InternalID="19" ShortName="TI" LongName="Tivat" />
+  <MapSpec InternalID="20" ShortName="UL" LongName="Ulcinj" />
+  <MapSpec InternalID="21" ShortName="ZA" LongName="Žabljak" />
+</AnimatedMapDataXML>

@@ -1,0 +1,25 @@
+<AnimatedMapDataXML>
+  <MapSpec InternalID="001" ShortName="AL" LongName="Albany" />
+  <MapSpec InternalID="003" ShortName="BH" LongName="Big Horn" />
+  <MapSpec InternalID="005" ShortName="CM" LongName="Campbell" />
+  <MapSpec InternalID="007" ShortName="CA" LongName="Carbon" />
+  <MapSpec InternalID="009" ShortName="CO" LongName="Converse" />
+  <MapSpec InternalID="011" ShortName="CR" LongName="Crook" />
+  <MapSpec InternalID="013" ShortName="FR" LongName="Fremont" />
+  <MapSpec InternalID="015" ShortName="GO" LongName="Goshen" />
+  <MapSpec InternalID="017" ShortName="HS" LongName="Hot Springs" />
+  <MapSpec InternalID="019" ShortName="JO" LongName="Johnson" />
+  <MapSpec InternalID="021" ShortName="LA" LongName="Laramie" />
+  <MapSpec InternalID="023" ShortName="LI" LongName="Lincoln" />
+  <MapSpec InternalID="025" ShortName="NA" LongName="Natrona" />
+  <MapSpec InternalID="027" ShortName="NI" LongName="Niobrara" />
+  <MapSpec InternalID="029" ShortName="PA" LongName="Park" />
+  <MapSpec InternalID="031" ShortName="PL" LongName="Platte" />
+  <MapSpec InternalID="033" ShortName="SH" LongName="Sheridan" />
+  <MapSpec InternalID="035" ShortName="SU" LongName="Sublette" />
+  <MapSpec InternalID="037" ShortName="SW" LongName="Sweetwater" />
+  <MapSpec InternalID="039" ShortName="TE" LongName="Teton" />
+  <MapSpec InternalID="041" ShortName="UI" LongName="Uinta" />
+  <MapSpec InternalID="043" ShortName="WA" LongName="Washakie" />
+  <MapSpec InternalID="045" ShortName="WE" LongName="Weston" />
+</AnimatedMapDataXML>

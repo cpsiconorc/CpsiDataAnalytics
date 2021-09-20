@@ -1,0 +1,33 @@
+<AnimatedMapDataXML>
+  <MapSpec InternalID="001" ShortName="AG" LongName="Aguascalientes" />
+  <MapSpec InternalID="002" ShortName="BA" LongName="Baja California" />
+  <MapSpec InternalID="003" ShortName="BC" LongName="Baja California Sur" />
+  <MapSpec InternalID="004" ShortName="CA" LongName="Campeche" />
+  <MapSpec InternalID="005" ShortName="CH" LongName="Chiapas" />
+  <MapSpec InternalID="006" ShortName="CI" LongName="Chihuahua" />
+  <MapSpec InternalID="007" ShortName="CO" LongName="Coahuila    de Zaragoza" />
+  <MapSpec InternalID="008" ShortName="CL" LongName="Colima" />
+  <MapSpec InternalID="009" ShortName="DU" LongName="Durango" />
+  <MapSpec InternalID="010" ShortName="GU" LongName="Guanajuato" />
+  <MapSpec InternalID="011" ShortName="GE" LongName="Guerrero" />
+  <MapSpec InternalID="012" ShortName="HI" LongName="Hidalgo" />
+  <MapSpec InternalID="013" ShortName="JA" LongName="Jalisco" />
+  <MapSpec InternalID="014" ShortName="ME" LongName="Mexico" />
+  <MapSpec InternalID="015" ShortName="MI" LongName="Michoacan    de Ocampo" />
+  <MapSpec InternalID="016" ShortName="MO" LongName="Morelos" />
+  <MapSpec InternalID="017" ShortName="NA" LongName="Nayarit" />
+  <MapSpec InternalID="018" ShortName="NU" LongName="Nuevo Leon" />
+  <MapSpec InternalID="019" ShortName="OA" LongName="Oaxaca" />
+  <MapSpec InternalID="020" ShortName="PU" LongName="Puebla" />
+  <MapSpec InternalID="021" ShortName="QU" LongName="Queretaro    de Arteaga" />
+  <MapSpec InternalID="022" ShortName="QR" LongName="Quintana    Roo" />
+  <MapSpec InternalID="023" ShortName="SA" LongName="San Luis Potosi" />
+  <MapSpec InternalID="024" ShortName="SI" LongName="Sinaloa" />
+  <MapSpec InternalID="025" ShortName="SO" LongName="Sonora" />
+  <MapSpec InternalID="026" ShortName="TA" LongName="Tabasco" />
+  <MapSpec InternalID="027" ShortName="TM" LongName="Tamaulipas" />
+  <MapSpec InternalID="028" ShortName="TL" LongName="Tlaxcala" />
+  <MapSpec InternalID="029" ShortName="VE" LongName="Veracruz-Llave" />
+  <MapSpec InternalID="030" ShortName="YU" LongName="Yucatan" />
+  <MapSpec InternalID="031" ShortName="ZA" LongName="Zacatecas" />
+</AnimatedMapDataXML>

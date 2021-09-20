@@ -1,0 +1,27 @@
+<AnimatedMapDataXML>
+  <MapSpec InternalID="01" ShortName="CK" LongName="Cherkasy" />
+  <MapSpec InternalID="02" ShortName="CH" LongName="Chernihiv" />
+  <MapSpec InternalID="03" ShortName="CV" LongName="Chernivtsi" />
+  <MapSpec InternalID="11" ShortName="KR" LongName="Crimea" />
+  <MapSpec InternalID="04" ShortName="DP" LongName="Dnipropetrovsk" />
+  <MapSpec InternalID="05" ShortName="DT" LongName="Donetsk" />
+  <MapSpec InternalID="06" ShortName="IF" LongName="Ivano-Frankivsk" />
+  <MapSpec InternalID="07" ShortName="KK" LongName="Kharkiv" />
+  <MapSpec InternalID="08" ShortName="KS" LongName="Kherson" />
+  <MapSpec InternalID="09" ShortName="KM" LongName="Khmelnytskyi" />
+  <MapSpec InternalID="10" ShortName="KH" LongName="Kirovohrad" />
+  <MapSpec InternalID="13" ShortName="KV" LongName="Kiev Oblast" />
+  <MapSpec InternalID="14" ShortName="LH" LongName="Luhansk" />
+  <MapSpec InternalID="15" ShortName="LV" LongName="Lviv" />
+  <MapSpec InternalID="16" ShortName="MY" LongName="Mykolaiv" />
+  <MapSpec InternalID="17" ShortName="OD" LongName="Odessa" />
+  <MapSpec InternalID="18" ShortName="PL" LongName="Poltava" />
+  <MapSpec InternalID="19" ShortName="RV" LongName="Rivne" />
+  <MapSpec InternalID="21" ShortName="SM" LongName="Sumy" />
+  <MapSpec InternalID="22" ShortName="TP" LongName="Ternopil" />
+  <MapSpec InternalID="23" ShortName="VI" LongName="Vinnytsia" />
+  <MapSpec InternalID="24" ShortName="VO" LongName="Volyn" />
+  <MapSpec InternalID="25" ShortName="ZK" LongName="Zakarpattia" />
+  <MapSpec InternalID="26" ShortName="ZP" LongName="Zaporizhia" />
+  <MapSpec InternalID="27" ShortName="ZTs" LongName="Zhytomyr" />
+</AnimatedMapDataXML>

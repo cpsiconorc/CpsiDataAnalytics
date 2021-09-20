@@ -1,0 +1,56 @@
+<AnimatedMapDataXML>
+  <MapSpec InternalID="EU.AF" ShortName="AF" LongName="Aland (Finland)" />
+  <MapSpec InternalID="EU.AL" ShortName="AL" LongName="Albania" />
+  <MapSpec InternalID="EU.AD" ShortName="AD" LongName="Andorra" />
+  <MapSpec InternalID="EU.AT" ShortName="AT" LongName="Austria" />
+  <MapSpec InternalID="EU.BY" ShortName="BY" LongName="Belarus" />
+  <MapSpec InternalID="EU.BE" ShortName="BE" LongName="Belgium" />
+  <MapSpec InternalID="EU.BA" ShortName="BA" LongName="Bosnia and Herzegovina" />
+  <MapSpec InternalID="EU.BG" ShortName="BG" LongName="Bulgaria" />
+  <MapSpec InternalID="EU.HY" ShortName="HY" LongName="Croatia" />
+  <MapSpec InternalID="EU.CY" ShortName="CY" LongName="Cyprus" />
+  <MapSpec InternalID="EU.CZ" ShortName="CZ" LongName="Czech Republic" />
+  <MapSpec InternalID="EU.DK" ShortName="DK" LongName="Denmark" />
+  <MapSpec InternalID="EU.EE" ShortName="EE" LongName="Estonia" />
+  <MapSpec InternalID="EU.FD" ShortName="FD" LongName="Faroe Islands(Den)" />
+  <MapSpec InternalID="EU.FI" ShortName="FI" LongName="Finland" />
+  <MapSpec InternalID="EU.FR" ShortName="FR" LongName="France" />
+  <MapSpec InternalID="EU.DE" ShortName="DE" LongName="Germany" />
+  <MapSpec InternalID="EU.GI" ShortName="GI" LongName="Gibraltar (UK)" />
+  <MapSpec InternalID="EU.GR" ShortName="GR" LongName="Greece" />
+  <MapSpec InternalID="EU.GU" ShortName="GU" LongName="Guersey" />
+  <MapSpec InternalID="EU.HU" ShortName="HU" LongName="Hungary" />
+  <MapSpec InternalID="EU.IS" ShortName="IS" LongName="Iceland" />
+  <MapSpec InternalID="EU.IE" ShortName="IE" LongName="Ireland" />
+  <MapSpec InternalID="EU.IM" ShortName="IM" LongName="Isles of Man" />
+  <MapSpec InternalID="EU.IT" ShortName="IT" LongName="Italy" />
+  <MapSpec InternalID="EU.JE" ShortName="JE" LongName="Jersey" />
+  <MapSpec InternalID="EU.KO" ShortName="KO" LongName="Kosovo" />
+  <MapSpec InternalID="EU.LV" ShortName="LV" LongName="Latvia" />
+  <MapSpec InternalID="EU.LI" ShortName="LI" LongName="Liechtenstein" />
+  <MapSpec InternalID="EU.LT" ShortName="LT" LongName="Lithuania" />
+  <MapSpec InternalID="EU.LU" ShortName="LU" LongName="Luxembourg" />
+  <MapSpec InternalID="EU.MK" ShortName="MK" LongName="Macedonia" />
+  <MapSpec InternalID="EU.MT" ShortName="MT" LongName="Malta" />
+  <MapSpec InternalID="EU.MD" ShortName="MD" LongName="Moldova" />
+  <MapSpec InternalID="EU.MC" ShortName="MC" LongName="Monaco" />
+  <MapSpec InternalID="EU.MO" ShortName="MO" LongName="Montenegro" />
+  <MapSpec InternalID="EU.NL" ShortName="NL" LongName="Netherlands" />
+  <MapSpec InternalID="EU.NO" ShortName="NO" LongName="Norway" />
+  <MapSpec InternalID="EU.PL" ShortName="PL" LongName="Poland" />
+  <MapSpec InternalID="EU.PT" ShortName="PT" LongName="Portugal" />
+  <MapSpec InternalID="EU.RD" ShortName="RD" LongName="Rhodes (Gr)" />
+  <MapSpec InternalID="EU.RO" ShortName="RO" LongName="Romania" />
+  <MapSpec InternalID="EU.RU" ShortName="RU" LongName="Russia" />
+  <MapSpec InternalID="EU.SM" ShortName="SM" LongName="San Marino" />
+  <MapSpec InternalID="EU.CS" ShortName="CS" LongName="Serbia" />
+  <MapSpec InternalID="EU.SK" ShortName="SK" LongName="Slovakia" />
+  <MapSpec InternalID="EU.SL" ShortName="SL" LongName="Slovenia" />
+  <MapSpec InternalID="EU.ES" ShortName="ES" LongName="Spain" />
+  <MapSpec InternalID="EU.SE" ShortName="SE" LongName="Sweden" />
+  <MapSpec InternalID="EU.CH" ShortName="CH" LongName="Switzerland" />
+  <MapSpec InternalID="EU.TK" ShortName="TK" LongName="Turkey" />
+  <MapSpec InternalID="EU.UA" ShortName="UA" LongName="Ukraine" />
+  <MapSpec InternalID="EU.UK" ShortName="UK" LongName="United Kingdom" />
+  <MapSpec InternalID="EU.VA" ShortName="VA" LongName="Vatican City" />
+</AnimatedMapDataXML>

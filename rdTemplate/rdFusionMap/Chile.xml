@@ -1,0 +1,15 @@
+<AnimatedMapDataXML>
+  <MapSpec InternalID="02" ShortName="AI" LongName="Aisén    del General Carlos Ibañez" />
+  <MapSpec InternalID="03" ShortName="AN" LongName="Antofagasta" />
+  <MapSpec InternalID="04" ShortName="AR" LongName="Araucanía" />
+  <MapSpec InternalID="05" ShortName="AT" LongName="Atacama" />
+  <MapSpec InternalID="06" ShortName="BI" LongName="Bío-Bío" />
+  <MapSpec InternalID="07" ShortName="CO" LongName="Coquimbo" />
+  <MapSpec InternalID="08" ShortName="LI" LongName="O'Higgins" />
+  <MapSpec InternalID="09" ShortName="LL" LongName="Los Lagos" />
+  <MapSpec InternalID="10" ShortName="MA" LongName="Magallanes y la Antártica    Chilena" />
+  <MapSpec InternalID="11" ShortName="ML" LongName="Maule" />
+  <MapSpec InternalID="12" ShortName="RM" LongName="Santiago Metropolitan Region" />
+  <MapSpec InternalID="13" ShortName="TA" LongName="Tarapacá" />
+  <MapSpec InternalID="01" ShortName="VS" LongName="Valparaíso" />
+</AnimatedMapDataXML>

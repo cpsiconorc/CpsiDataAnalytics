@@ -1,0 +1,138 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SharedElement
+	ID="SQLSourceTestParameters"
+	>
+  <DefinitionModifierFile
+    DefinitionModifierFile="@Constant.rdMetadataDmfPath~@Request.rdReport~.xml"
+    ID="CustomDefinitionModifierFile"
+  />
+	<Label
+		Caption="Optional Session Variables in SQL Queries"
+		Class="ThemeHeader"
+		ID="lblTitle"
+	/>
+	<LineBreak/>
+	<Label
+		Caption="Session tokens may be included in the SQL Query&apos;s WHERE clause and will be resolved at runtime.
+For example: “SELECT * FROM Orders WHERE EmployeeID = &apos;@"
+		Format="Preserve Line Feeds"
+		ID="lblInstruct3"
+	/>
+	<Label
+		Caption="Session.EmployeeID~&apos; &quot;.
+"
+		Format="Preserve Line Feeds"
+		ID="lblInstruct31"
+	/>
+	<LineBreak/>
+	<Label
+		Caption="Working Values for @Session Tokens"
+		Class="ThemeHeaderSmaller"
+		ID="lblValues"
+	/>
+	<Spaces
+		Size="3"
+	/>
+	<Label
+		Caption="When @Session tokens are included in the SQL Query, supply working values to be used when testing the query and getting the columns.  Add names and values for each @Session token. The tokens then get replaced by the working values."
+		Format="Preserve Line Feeds"
+		ID="lblInstruct4"
+	/>
+	<LineBreak/>
+	<Division
+		ID="divTestParams"
+		>
+		<DataTable
+			ID="dtTestParameters"
+			>
+			<DataLayer
+				Type="XMLFile"
+				XMLFile="@Shared.MetadataUrl~"
+				>
+				<XslTransform
+					XSLFile="@Function.AppPhysicalPath~\rdTemplate\rdMetadata\TestParametersTransform.xslt"
+					>
+					<XslArgumentParams
+						TableName="@Request.TableName~"
+					/>
+				</XslTransform>
+			</DataLayer>
+			<DataTableColumn
+				Class="ThemeAlignCenter"
+				Header="Remove"
+				ID="colRemove"
+				>
+				<Image
+					Caption="rdTemplate/rdDelete2.png"
+          Height="20"
+					ID="btnDelete"
+          Width="20"
+					>
+					<Action
+						ID="actDelete"
+						Javascript="rdMetadataRemoveTestParams(this);return false;"
+						Type="Javascript"
+					/>
+				</Image>
+			</DataTableColumn>
+			<DataTableColumn
+				Header="Session Variable Name"
+				ID="colName"
+				>
+				<InputText
+					DefaultValue="@Data.name~"
+					ID="txtTestParamName"
+					InputSize="50"
+					>
+					<EventHandler
+						DhtmlEvent="onchange"
+						>
+						<Action
+							ID="changeParamName"
+							Javascript="rdMetadataSaveTestParameters()"
+							Type="Javascript"
+						/>
+					</EventHandler>
+				</InputText>
+			</DataTableColumn>
+			<DataTableColumn
+				Header="Working Value"
+				ID="colValue"
+				>
+				<InputText
+					DefaultValue="@Data.value~"
+					ID="txtTestParamValue"
+					InputSize="50"
+					>
+					<EventHandler
+						DhtmlEvent="onchange"
+						>
+						<Action
+							ID="changeParamValue"
+							Javascript="rdMetadataSaveTestParameters()"
+							Type="Javascript"
+						/>
+					</EventHandler>
+				</InputText>
+			</DataTableColumn>
+		</DataTable>
+		<Division
+			ID="divAddParams"
+			>
+			<Label
+				Caption="Add another @Session Token Working Value"
+				ID="lblAddToken"
+				>
+				<Action
+					ID="actAddParams"
+					Javascript="rdMetadataAddTestParams(&apos;dtTestParameters&apos;);return false;"
+					Type="Javascript"
+				/>
+			</Label>
+		</Division>
+	</Division>
+	<ideTestParams
+		MetadataID=""
+		TableName=""
+	/>
+</SharedElement>

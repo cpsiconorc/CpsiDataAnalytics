@@ -1,0 +1,15 @@
+<AnimatedMapDataXML>
+  <MapSpec InternalID="SA.BA" ShortName="BA" LongName="Al Bahah" />
+  <MapSpec InternalID="SA.HS" ShortName="HS" LongName="Al Hudud Ash Shamaliyah" />
+  <MapSpec InternalID="SA.JF" ShortName="JF" LongName="Al Jawf" />
+  <MapSpec InternalID="SA.MD" ShortName="MD" LongName="Al Madinah" />
+  <MapSpec InternalID="SA.QS" ShortName="QS" LongName="Al Qasim" />
+  <MapSpec InternalID="SA.RI" ShortName="RI" LongName="Ar Riyad" />
+  <MapSpec InternalID="SA.SH" ShortName="SH" LongName="Ash Sharqiyah" />
+  <MapSpec InternalID="SA.AS" ShortName="AS" LongName="Asir" />
+  <MapSpec InternalID="SA.HA" ShortName="HA" LongName="Hail" />
+  <MapSpec InternalID="SA.JZ" ShortName="JZ" LongName="Jizan" />
+  <MapSpec InternalID="SA.MK" ShortName="MK" LongName="Makkah" />
+  <MapSpec InternalID="SA.NJ" ShortName="NJ" LongName="Najran" />
+  <MapSpec InternalID="SA.TB" ShortName="TB" LongName="Tabuk" />
+</AnimatedMapDataXML>

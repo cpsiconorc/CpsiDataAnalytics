@@ -1,0 +1,98 @@
+<AnimatedMapDataXML>
+  <MapSpec InternalID="FR.AI" ShortName="AI" LongName="Ain" />
+  <MapSpec InternalID="FR.AS" ShortName="AS" LongName="Aisne" />
+  <MapSpec InternalID="FR.AL" ShortName="AL" LongName="Allier" />
+  <MapSpec InternalID="FR.AP" ShortName="AP" LongName="Alpes de Haute Provence" />
+  <MapSpec InternalID="FR.AM" ShortName="AM" LongName="Alpes Maritimes" />
+  <MapSpec InternalID="FR.AH" ShortName="AH" LongName="Ardeche" />
+  <MapSpec InternalID="FR.AN" ShortName="AN" LongName="Ardennes" />
+  <MapSpec InternalID="FR.AG" ShortName="AG" LongName="Ariege" />
+  <MapSpec InternalID="FR.AB" ShortName="AB" LongName="Aube" />
+  <MapSpec InternalID="FR.AD" ShortName="AD" LongName="Aude" />
+  <MapSpec InternalID="FR.AV" ShortName="AV" LongName="Aveyron" />
+  <MapSpec InternalID="FR.BR" ShortName="BR" LongName="Bas Rhin" />
+  <MapSpec InternalID="FR.BD" ShortName="BD" LongName="Bouches du Rhone" />
+  <MapSpec InternalID="FR.CV" ShortName="CV" LongName="Calvados" />
+  <MapSpec InternalID="FR.CL" ShortName="CL" LongName="Cantal" />
+  <MapSpec InternalID="FR.CT" ShortName="CT" LongName="Charente" />
+  <MapSpec InternalID="FR.CM" ShortName="CM" LongName="Charente Maritime" />
+  <MapSpec InternalID="FR.CH" ShortName="CH" LongName="Cher" />
+  <MapSpec InternalID="FR.CZ" ShortName="CZ" LongName="Correze" />
+  <MapSpec InternalID="FR.CS" ShortName="CS" LongName="Corse du Sud" />
+  <MapSpec InternalID="FR.CO" ShortName="CO" LongName="Cote d’Or" />
+  <MapSpec InternalID="FR.CA" ShortName="CA" LongName="Cotes d’Armor" />
+  <MapSpec InternalID="FR.CR" ShortName="CR" LongName="Creuse" />
+  <MapSpec InternalID="FR.DS" ShortName="DS" LongName="Deux Sevres" />
+  <MapSpec InternalID="FR.DD" ShortName="DD" LongName="Dordogne" />
+  <MapSpec InternalID="FR.DB" ShortName="DB" LongName="Doubs" />
+  <MapSpec InternalID="FR.DM" ShortName="DM" LongName="Drome" />
+  <MapSpec InternalID="FR.ES" ShortName="ES" LongName="Essonne" />
+  <MapSpec InternalID="FR.EU" ShortName="EU" LongName="Eure" />
+  <MapSpec InternalID="FR.EL" ShortName="EL" LongName="Eure et Loir" />
+  <MapSpec InternalID="FR.FI" ShortName="FI" LongName="Finistere" />
+  <MapSpec InternalID="FR.GA" ShortName="GA" LongName="Gard" />
+  <MapSpec InternalID="FR.GE" ShortName="GE" LongName="Gers" />
+  <MapSpec InternalID="FR.GI" ShortName="GI" LongName="Gironde" />
+  <MapSpec InternalID="FR.HR" ShortName="HR" LongName="Haut Rhin" />
+  <MapSpec InternalID="FR.HC" ShortName="HC" LongName="Haute Corse" />
+  <MapSpec InternalID="FR.HG" ShortName="HG" LongName="Haute Garonne" />
+  <MapSpec InternalID="FR.HL" ShortName="HL" LongName="Haute Loire" />
+  <MapSpec InternalID="FR.HM" ShortName="HM" LongName="Haute Marne" />
+  <MapSpec InternalID="FR.HN" ShortName="HN" LongName="Haute Saone" />
+  <MapSpec InternalID="FR.HS" ShortName="HS" LongName="Haute Savoie" />
+  <MapSpec InternalID="FR.HV" ShortName="HV" LongName="Haute Vienne" />
+  <MapSpec InternalID="FR.HA" ShortName="HA" LongName="Hautes Alpes" />
+  <MapSpec InternalID="FR.HP" ShortName="HP" LongName="Hautes Pyrenees" />
+  <MapSpec InternalID="FR.HD" ShortName="HD" LongName="Hauts-de-Seine" />
+  <MapSpec InternalID="FR.HE" ShortName="HE" LongName="Herault" />
+  <MapSpec InternalID="FR.IV" ShortName="IV" LongName="Ille et Vilaine" />
+  <MapSpec InternalID="FR.IN" ShortName="IN" LongName="Indre" />
+  <MapSpec InternalID="FR.IL" ShortName="IL" LongName="Indre et Loire" />
+  <MapSpec InternalID="FR.IS" ShortName="IS" LongName="Isere" />
+  <MapSpec InternalID="FR.JU" ShortName="JU" LongName="Jura" />
+  <MapSpec InternalID="FR.LD" ShortName="LD" LongName="Landes" />
+  <MapSpec InternalID="FR.LC" ShortName="LC" LongName="Loir et Cher" />
+  <MapSpec InternalID="FR.LR" ShortName="LR" LongName="Loire" />
+  <MapSpec InternalID="FR.LA" ShortName="LA" LongName="Loire Atlantique" />
+  <MapSpec InternalID="FR.LT" ShortName="LT" LongName="Loiret" />
+  <MapSpec InternalID="FR.LO" ShortName="LO" LongName="Lot" />
+  <MapSpec InternalID="FR.LG" ShortName="LG" LongName="Lot et Garonne" />
+  <MapSpec InternalID="FR.LZ" ShortName="LZ" LongName="Lozere" />
+  <MapSpec InternalID="FR.ML" ShortName="ML" LongName="Maine et Loire" />
+  <MapSpec InternalID="FR.MH" ShortName="MH" LongName="Manche" />
+  <MapSpec InternalID="FR.MR" ShortName="MR" LongName="Marne" />
+  <MapSpec InternalID="FR.MY" ShortName="MY" LongName="Mayenne" />
+  <MapSpec InternalID="FR.MM" ShortName="MM" LongName="Meurthe et Moselle" />
+  <MapSpec InternalID="FR.MS" ShortName="MS" LongName="Meuse" />
+  <MapSpec InternalID="FR.MB" ShortName="MB" LongName="Morbihan" />
+  <MapSpec InternalID="FR.MO" ShortName="MO" LongName="Moselle" />
+  <MapSpec InternalID="FR.NI" ShortName="NI" LongName="Nievre" />
+  <MapSpec InternalID="FR.NO" ShortName="NO" LongName="Nord" />
+  <MapSpec InternalID="FR.OI" ShortName="OI" LongName="Oise" />
+  <MapSpec InternalID="FR.OR" ShortName="OR" LongName="Orne" />
+  <MapSpec InternalID="FR.PC" ShortName="PC" LongName="Pas de Calais" />
+  <MapSpec InternalID="FR.PD" ShortName="PD" LongName="Puy de Dome" />
+  <MapSpec InternalID="FR.PA" ShortName="PA" LongName="Pyrenees Atlantiques" />
+  <MapSpec InternalID="FR.PO" ShortName="PO" LongName="Pyrenees Orientales" />
+  <MapSpec InternalID="FR.RH" ShortName="RH" LongName="Rhone" />
+  <MapSpec InternalID="FR.SL" ShortName="SL" LongName="Saone et Loire" />
+  <MapSpec InternalID="FR.ST" ShortName="ST" LongName="Sarthe" />
+  <MapSpec InternalID="FR.SV" ShortName="SV" LongName="Savoie" />
+  <MapSpec InternalID="FR.SE" ShortName="SE" LongName="Seine et Marne" />
+  <MapSpec InternalID="FR.SM" ShortName="SM" LongName="Seine Maritime" />
+  <MapSpec InternalID="FR.SS" ShortName="SS" LongName="Seine-Saint-Denis" />
+  <MapSpec InternalID="FR.SO" ShortName="SO" LongName="Somme" />
+  <MapSpec InternalID="FR.TA" ShortName="TA" LongName="Tarn" />
+  <MapSpec InternalID="FR.TG" ShortName="TG" LongName="Tarn et Garonne" />
+  <MapSpec InternalID="FR.TB" ShortName="TB" LongName="Territoire de Belfort" />
+  <MapSpec InternalID="FR.VO" ShortName="VO" LongName="Val d’Oise" />
+  <MapSpec InternalID="FR.VM" ShortName="VM" LongName="Val-de-Marne" />
+  <MapSpec InternalID="FR.VR" ShortName="VR" LongName="Var" />
+  <MapSpec InternalID="FR.VC" ShortName="VC" LongName="Vaucluse" />
+  <MapSpec InternalID="FR.VD" ShortName="VD" LongName="Vendee" />
+  <MapSpec InternalID="FR.VN" ShortName="VN" LongName="Vienne" />
+  <MapSpec InternalID="FR.VP" ShortName="VP" LongName="Ville de Paris" />
+  <MapSpec InternalID="FR.VG" ShortName="VG" LongName="Vosges" />
+  <MapSpec InternalID="FR.YO" ShortName="YO" LongName="Yonne" />
+  <MapSpec InternalID="FR.YV" ShortName="YV" LongName="Yvelines" />
+</AnimatedMapDataXML>

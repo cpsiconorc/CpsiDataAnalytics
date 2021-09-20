@@ -1,0 +1,467 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Report
+	ID="rdTemplate.rdMetadata.TableEdit"
+	SecurityReportRightID="@Constant.MetadataAdminSecurityRightIDs~"
+	>
+	<DefinitionModifierFile
+		DefinitionModifierFile="@Constant.rdMetadataDmfPath~@Request.rdReport~.xml"
+		ID="CustomDefinitionModifierFile"
+	/>
+	<StyleSheet
+		StyleSheet="rdTemplate/rdMetadata/rdMetadata.css"
+	/>
+	<StyleSheet
+		StyleSheet="@Session.rdMetadataStyleSheet~"
+	/>
+	<SetSessionVariables
+		ID="SetUndoRedoSessionVars"
+		>
+		<SessionParams
+			rdMdUndoRedoKey="TableEdit&amp;ConnectionID=@Request.ConnectionID~&amp;MetadataID=@Request.MetadataID~&amp;TableName=@Request.TableName~"
+		/>
+	</SetSessionVariables>
+	<IncludeScriptFile
+		IncludedScriptFile="rdTemplate/rdMetadata/rdUiService.js"
+	/>
+	<LocalData>
+		<DataLayer
+			EnableSettings="True"
+			ID="dlMetadataElement"
+			Type="XMLFile"
+			XMLFile="@Function.AppPhysicalPath~/_Definitions/_Settings.lgx"
+			XPath="Setting/Connections/Connection[@ID=&apos;@Request.ConnectionID~&apos;]/Metadata[@ID=&apos;@Request.MetadataID~&apos;]"
+			>
+			<SwitchColumn
+				DataColumn="MetadataUrl"
+				DataType="Text"
+				ID="ReadOnly"
+				>
+				<SwitchIf
+					NewValue="False"
+				/>
+				<SwitchElse
+					NewValue="True"
+				/>
+			</SwitchColumn>
+			<SwitchColumn
+				DataColumn="MetadataUrl"
+				ID="MetadataUrl"
+				>
+				<SwitchIf
+					NewValue="@Function.AppPhysicalPath~/_Metadata/@Request.MetadataID~.lgx"
+				/>
+				<SwitchElse
+					NewValue="@Data.MetadataUrl~"
+				/>
+			</SwitchColumn>
+		</DataLayer>
+	</LocalData>
+	<LocalData>
+		<DataLayer
+			Type="XMLFile"
+			XMLFile="@Local.MetadataUrl~"
+			>
+			<Flattener
+				DataRowElementNames="Table"
+			/>
+			<CompareFilter
+				CompareType="="
+				CompareValue="@Request.TableName~"
+				DataColumn="TableName"
+				ID="GetTable"
+			/>
+			<CalculatedColumn
+				Formula="&apos;@Data.SqlSource~&apos;.replace(/@/g,&apos;--at--&apos;)"
+				ID="rdMetadataSqlSource"
+				>
+				<Note
+					Note="Info server has special code to not resolve tokens for CalculatedColumn with ID=rdMetadataSqlSource."
+				/>
+			</CalculatedColumn>
+		</DataLayer>
+	</LocalData>
+	<Body>
+		<PopupPanel
+			Caption="This is the title"
+			HideCloseX="True"
+			ID="pupAjaxResponse"
+			PopupModal="True"
+			PopupPanelLocation="Center"
+			>
+			<Label
+				Caption="This label holds the message to display"
+				ID="lblAjaxMessage"
+			/>
+			<LineBreak
+				LineCount="2"
+			/>
+			<Button
+				Caption="OK"
+				ID="lblAjaxOk"
+				>
+				<Action
+					ID="actPupAjaxResponse"
+					Javascript="rdMetadataRefresh()"
+					Type="Javascript"
+				/>
+			</Button>
+		</PopupPanel>
+		<PopupPanel
+			Caption="This is the title"
+			HideCloseX="True"
+			ID="pupLocalResponse"
+			PopupModal="True"
+			PopupPanelLocation="Center"
+			>
+			<Label
+				Caption="This label holds the message to display"
+				ID="lblLocalMessage"
+			/>
+			<LineBreak
+				LineCount="2"
+			/>
+			<Button
+				Caption="OK"
+				ID="lblLocalOk"
+				>
+				<Action
+					Display="Hide"
+					ElementID="pupLocalResponse"
+					Type="ShowElement"
+				/>
+			</Button>
+		</PopupPanel>
+		<Label
+			Caption="Custom Table SQL Query Editor"
+			Class="ThemeHeaderLarger"
+			ID="lblTitle"
+		/>
+		<LineBreak
+			LineCount="2"
+		/>
+		<Label
+			Caption="A custom table, similar to a View, can be defined with a SQL query.
+"
+			Format="Preserve Line Feeds"
+			ID="lblInstruct1"
+		/>
+		<Label
+			Caption="Limitations - If the SQL query contains JOINs, columns must be specifically named, no wildcards (*) allowed. Cannot include an ORDER BY clause.
+
+"
+			Format="Preserve Line Feeds"
+			ID="lblInstruct2"
+		/>
+		<Division
+			Condition="&apos;@Local.ReadOnly~&apos; == &apos;True&apos;"
+			ID="divInputGridReadOnly"
+			>
+			<Rows>
+				<Row>
+					<Column>
+						<Label
+							Caption="Table Name"
+							Class="ThemeHeader ThemeNoWrap"
+						/>
+					</Column>
+					<Column>
+						<Label
+							Caption="@Request.TableName~"
+						/>
+					</Column>
+				</Row>
+				<Row>
+					<Column>
+						<Label
+							Caption="SQL Query"
+							Class="ThemeHeader ThemeNoWrap"
+						/>
+					</Column>
+					<Column>
+						<Label
+							Caption="@Local.rdMetadataSqlSource~"
+							Format="Preserve Line Feeds"
+						/>
+					</Column>
+				</Row>
+			</Rows>
+		</Division>
+		<Division
+			Condition="&apos;@Local.ReadOnly~&apos; == &apos;False&apos;"
+			ID="divInputGrid"
+			>
+			<InputGrid
+				Class="ThemeAlignTop"
+				>
+				<InputText
+					Caption="Table Name"
+					CaptionClass="ThemeHeader ThemeNoWrap"
+					DefaultValue="@Request.TableName~"
+					ID="inputTableName"
+					>
+					<Validation
+						ErrorMsg="Table Name cannot be blank."
+						Type="Required"
+					/>
+					<Validation
+						ErrorMsg="Table Name cannot have special characters."
+						JavascriptFunction="rdMetadataValidateID(document.getElementById(&apos;inputTableName&apos;))"
+						Type="Javascript"
+					/>
+					<EventHandler
+						DhtmlEvent="onchange"
+						>
+						<Action
+							ID="jsMetadataUpdate"
+							Javascript="rdMetadataSetTableName(this)"
+							Type="Javascript"
+							Validate="True"
+						/>
+					</EventHandler>
+				</InputText>
+				<InputTextArea
+					Caption="SQL Query"
+					CaptionClass="ThemeHeader ThemeAlignTop ThemeNoWrap"
+					DefaultValue="@Local.rdMetadataSqlSource~"
+					ID="inputSqlSource"
+					InputColumns="150"
+					InputRows="20"
+					>
+					<Validation
+						ErrorMsg="SQL Query cannot be blank."
+						Type="Required"
+					/>
+					<EventHandler
+						DhtmlEvent="onchange"
+						>
+						<Action
+							ID="jsMetadataUpdate"
+							Javascript="rdMetadataSetBackButtonRefresh(&quot;Tables&quot;);
+
+rdMetadataSetValue(this,&apos;TableSetValue&apos;,&apos;MetadataID=@Request!Url.MetadataID~&amp;TableName=&apos; + document.getElementById(&apos;hiddenTableName&apos;).value + &apos;&amp;Attribute=SqlSource&apos;, false)"
+							Type="Javascript"
+							Validate="True"
+						/>
+					</EventHandler>
+				</InputTextArea>
+			</InputGrid>
+		</Division>
+		<InputHidden
+			DefaultValue="@Request.TableName~"
+			ID="hiddenTableName"
+			>
+			<Note
+				Note="This is the currently-saved TableName."
+			/>
+		</InputHidden>
+		<LineBreak
+			LineCount="1"
+		/>
+		<IncludeSharedElement
+			DefinitionFile="rdTemplate/rdMetadata/TestParameters.lgx"
+			ID="includeSharedSQLSourceTestParameters"
+			SharedElementID="SQLSourceTestParameters"
+			>
+			<SharedElementParams
+				MetadataUrl="@Local.MetadataUrl~"
+			/>
+		</IncludeSharedElement>
+		<LineBreak
+			LineCount="2"
+		/>
+		<Rows>
+			<Row>
+				<Column
+					Class="ThemeAlignTop"
+					>
+					<Division
+						Condition="&apos;@Local.ReadOnly~&apos; == &apos;True&apos;"
+						ID="divActionsReadOnly"
+						>
+						<Label
+							Caption="Actions:"
+							Class="ThemeHeader"
+							ID="lblActions"
+						/>
+						<Spaces
+							Size="5"
+						/>
+						<Label
+							Caption="Test SQL Query"
+							Class="ThemeLinkButton"
+							ID="lblTest"
+							>
+							<Action
+								ID="actTest"
+								Javascript="rdMetadataTestCustomSql();return false;"
+								Type="Javascript"
+								>
+								<WaitPage/>
+							</Action>
+						</Label>
+						<Spaces/>
+						<Label
+							Caption="Done"
+							Class="ThemeLinkButton"
+							ID="lblDone"
+							>
+							<Action
+								Javascript="if(window.location.href.indexOf(&apos;rdForWizard=True&apos;) &gt; -1){ if(window.external){ try { return window.external.CloseWizardWindow(); } catch(err) {return true;} } } else { history.go(-1);return false; }"
+								Type="Javascript"
+							/>
+						</Label>
+					</Division>
+					<Division
+						Condition="&apos;@Local.ReadOnly~&apos; == &apos;False&apos;"
+						ID="divActions"
+						>
+						<Label
+							Caption="Actions:"
+							Class="ThemeHeader"
+							ID="lblActions"
+						/>
+						<Spaces
+							Size="5"
+						/>
+						<Label
+							Caption="Test SQL Query"
+							Class="ThemeLinkButton"
+							ID="lblTest"
+							>
+							<Action
+								ID="actTest"
+								Javascript="rdMetadataTestCustomSql();return false;"
+								Type="Javascript"
+								>
+								<WaitPage/>
+							</Action>
+						</Label>
+						<Spaces/>
+						<Label
+							Caption="Get Columns from the Data Source"
+							Class="ThemeLinkButton"
+							ID="lblGetColumns"
+							>
+							<Action
+								ConfirmMessage="Click OK to load or refresh the columns for this Custom Table."
+								ID="jsMetadataUpdate"
+								Javascript="rdMetadataGetColumnsFromSource(&apos;pupLocalResponse&apos;,true);return false;"
+								Type="Javascript"
+								Validate="True"
+							/>
+						</Label>
+						<Spaces/>
+						<Label
+							Caption="Done"
+							Class="ThemeLinkButton"
+							ID="lblDone"
+							>
+							<Action
+								Javascript="if(window.location.href.indexOf(&apos;rdForWizard=True&apos;) &gt; -1){ if(window.external){ try { return window.external.CloseWizardWindow(); } catch(err) {return true;} } } else { history.go(-1);return false; }"
+								Type="Javascript"
+							/>
+						</Label>
+					</Division>
+				</Column>
+				<Column>
+					<IncludeSharedElement
+						Condition="&apos;@Local.ReadOnly~&apos; == &apos;False&apos;"
+						DefinitionFile="rdTemplate/rdMetadata/UndoRedo"
+						SharedElementID="UndoRedo"
+					/>
+				</Column>
+			</Row>
+		</Rows>
+		<LineBreak
+			LineCount="2"
+		/>
+		<Division
+			ID="divTest"
+			>
+			<Division
+				Condition="&apos;@Request.rdTesting~&apos;==&apos;True&apos;"
+				ID="divTestTable"
+				>
+				<HR/>
+				<Label
+					Caption="Test Results"
+					Class="ThemeHeader"
+					ID="lblResults"
+				/>
+				<DataTable
+					HideWhenZeroRows="False"
+					ID="dtTest"
+					>
+					<AutoColumns/>
+					<DataLayer
+						ActiveSqlBufferSize="100"
+						ConnectionID="@Request.ConnectionID~"
+						FirstRow="1"
+						ID="dlTest"
+						MaxRows="100"
+						RowCount="100"
+						Source="@Request.inputSqlSource~"
+						SqlInjectionGuard="False"
+						Type="ActiveSQL"
+						>
+						<IfDataError>
+							<DataLayer
+								Type="Static"
+							/>
+						</IfDataError>
+					</DataLayer>
+				</DataTable>
+				<LineBreak/>
+				<Division
+					Condition="&apos;@Function.ErrorDataLayerID~&apos; != &apos;&apos;"
+					ID="divError"
+					>
+					<Label
+						Caption="@Function.ErrorDataLayerMessage~"
+						Class="ThemeErrorText"
+					/>
+				</Division>
+				<Division
+					Condition="&apos;@Function.ErrorDataLayerID~&apos; == &apos;&apos;"
+					ID="div1000Rows"
+					>
+					<Label
+						Caption="* Up to 100 rows listed."
+						Class="ThemeTextSmallest"
+						ID="lblTestInstruct"
+					/>
+				</Division>
+			</Division>
+		</Division>
+		<InputHidden
+			DefaultValue="@Request.ConnectionID~"
+			ID="hiddenConnectionID"
+		/>
+		<InputHidden
+			DefaultValue="@Request.MetadataID~"
+			ID="hiddenMetadataID"
+		/>
+		<InputHidden
+			DefaultValue="@Request.DataCacheKey~"
+			ID="hiddenDataCacheKey"
+		/>
+		<InputHidden
+			DefaultValue="rdInsertDataCacheKeyHere"
+			ID="rdMetadataCache"
+		/>
+		<IncludeScript
+			ID="scriptFixTokenStrings"
+			IncludedScript="var rdMetadataSqlSource = document.getElementById(&quot;inputSqlSource&quot;).value;
+rdMetadataSqlSource = rdMetadataSqlSource.replace(/--at--/g,&quot;@&quot;);
+document.getElementById(&quot;inputSqlSource&quot;).value = rdMetadataSqlSource;"
+		/>
+	</Body>
+	<ideTestParams
+		ConnectionID=""
+		DataCacheKey=""
+		inputSqlSource=""
+		MetadataID=""
+		rdTesting=""
+		TableName=""
+	/>
+</Report>

@@ -1,0 +1,6 @@
+<AnimatedMapDataXML>
+  <MapSpec InternalID="US.DC.NE" ShortName="NE" LongName="North East" />
+  <MapSpec InternalID="US.DC.NW" ShortName="NW" LongName="North West" />
+  <MapSpec InternalID="US.DC.SE" ShortName="SE" LongName="South East" />
+  <MapSpec InternalID="US.DC.SW" ShortName="SW" LongName="South West" />
+</AnimatedMapDataXML>

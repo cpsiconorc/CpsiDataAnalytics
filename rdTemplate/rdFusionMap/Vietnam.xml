@@ -1,0 +1,66 @@
+<AnimatedMapDataXML>
+  <MapSpec InternalID="VN.AG" ShortName="AG" LongName="An Giang" />
+  <MapSpec InternalID="VN.BK" ShortName="BK" LongName="Bac Can" />
+  <MapSpec InternalID="VN.BG" ShortName="BG" LongName="Bac Giang" />
+  <MapSpec InternalID="VN.BL" ShortName="BL" LongName="Bac Lieu" />
+  <MapSpec InternalID="VN.BN" ShortName="BN" LongName="Bac Ninh" />
+  <MapSpec InternalID="VN.BV" ShortName="BV" LongName="BaRia-VungTau" />
+  <MapSpec InternalID="VN.BR" ShortName="BR" LongName="Ben Tre" />
+  <MapSpec InternalID="VN.BD" ShortName="BD" LongName="Binh Dinh" />
+  <MapSpec InternalID="VN.BI" ShortName="BI" LongName="Binh Duong" />
+  <MapSpec InternalID="VN.BP" ShortName="BP" LongName="Binh Phuoc" />
+  <MapSpec InternalID="VN.BU" ShortName="BU" LongName="Binh Thuan" />
+  <MapSpec InternalID="VN.CM" ShortName="CM" LongName="Ca Mau" />
+  <MapSpec InternalID="VN.CN" ShortName="CN" LongName="Can Tho" />
+  <MapSpec InternalID="VN.CB" ShortName="CB" LongName="Cao Bang" />
+  <MapSpec InternalID="VN.DA" ShortName="DA" LongName="Da Nang" />
+  <MapSpec InternalID="VN.DC" ShortName="DC" LongName="Dac Lac" />
+  <MapSpec InternalID="VN.DO" ShortName="DO" LongName="Dac Nong" />
+  <MapSpec InternalID="VN.DB" ShortName="DB" LongName="Dien Bien" />
+  <MapSpec InternalID="VN.DN" ShortName="DN" LongName="Dong Nai" />
+  <MapSpec InternalID="VN.DT" ShortName="DT" LongName="Dong Thap" />
+  <MapSpec InternalID="VN.GL" ShortName="GL" LongName="Gia Lai" />
+  <MapSpec InternalID="VN.HG" ShortName="HG" LongName="Ha Giang" />
+  <MapSpec InternalID="VN.HM" ShortName="HM" LongName="Ha Nam" />
+  <MapSpec InternalID="VN.HA" ShortName="HA" LongName="Ha Tay" />
+  <MapSpec InternalID="VN.HT" ShortName="HT" LongName="Ha Tinh" />
+  <MapSpec InternalID="VN.HD" ShortName="HD" LongName="Hai Duong" />
+  <MapSpec InternalID="VN.HP" ShortName="HP" LongName="Haiphong" />
+  <MapSpec InternalID="VN.HN" ShortName="HN" LongName="Hanoi" />
+  <MapSpec InternalID="VN.HU" ShortName="HU" LongName="Hau Giang" />
+  <MapSpec InternalID="VN.HC" ShortName="HC" LongName="Ho Chi Minh" />
+  <MapSpec InternalID="VN.HO" ShortName="HO" LongName="Hoa Binh" />
+  <MapSpec InternalID="VN.HY" ShortName="HY" LongName="Hung Yen" />
+  <MapSpec InternalID="VN.KH" ShortName="KH" LongName="Khanh Hoa" />
+  <MapSpec InternalID="VN.KG" ShortName="KG" LongName="Kien Giang" />
+  <MapSpec InternalID="VN.KT" ShortName="KT" LongName="Kon Tum" />
+  <MapSpec InternalID="VN.LI" ShortName="LI" LongName="Lai Chau" />
+  <MapSpec InternalID="VN.LD" ShortName="LD" LongName="Lam Dong" />
+  <MapSpec InternalID="VN.LS" ShortName="LS" LongName="Lang Son" />
+  <MapSpec InternalID="VN.LO" ShortName="LO" LongName="Lao Cai" />
+  <MapSpec InternalID="VN.LA" ShortName="LA" LongName="Long An" />
+  <MapSpec InternalID="VN.ND" ShortName="ND" LongName="Nam Dinh" />
+  <MapSpec InternalID="VN.NA" ShortName="NA" LongName="Nghe An" />
+  <MapSpec InternalID="VN.NB" ShortName="NB" LongName="Ninh Binh" />
+  <MapSpec InternalID="VN.NT" ShortName="NT" LongName="Ninh Thuan" />
+  <MapSpec InternalID="VN.PT" ShortName="PT" LongName="Phu Tho" />
+  <MapSpec InternalID="VN.PY" ShortName="PY" LongName="Phu Yen" />
+  <MapSpec InternalID="VN.QB" ShortName="QB" LongName="Quang Binh" />
+  <MapSpec InternalID="VN.QM" ShortName="QM" LongName="Quang Nam" />
+  <MapSpec InternalID="VN.QG" ShortName="QG" LongName="Quang Ngai" />
+  <MapSpec InternalID="VN.QN" ShortName="QN" LongName="Quang Ninh" />
+  <MapSpec InternalID="VN.QT" ShortName="QT" LongName="Quang Tri" />
+  <MapSpec InternalID="VN.ST" ShortName="ST" LongName="Soc Trang" />
+  <MapSpec InternalID="VN.SL" ShortName="SL" LongName="Son La" />
+  <MapSpec InternalID="VN.TN" ShortName="TN" LongName="Tay Ninh" />
+  <MapSpec InternalID="VN.TB" ShortName="TB" LongName="Thai Binh" />
+  <MapSpec InternalID="VN.TY" ShortName="TY" LongName="Thai Nguyen" />
+  <MapSpec InternalID="VN.TH" ShortName="TH" LongName="Thanh Hoa" />
+  <MapSpec InternalID="VN.TT" ShortName="TT" LongName="Thua Thien Hue" />
+  <MapSpec InternalID="VN.TG" ShortName="TG" LongName="Tien Giang" />
+  <MapSpec InternalID="VN.TV" ShortName="TV" LongName="Tra Vinh" />
+  <MapSpec InternalID="VN.TQ" ShortName="TQ" LongName="Tuyen Quang" />
+  <MapSpec InternalID="VN.VL" ShortName="VL" LongName="Vinh Long" />
+  <MapSpec InternalID="VN.VC" ShortName="VC" LongName="Vinh Phuc" />
+  <MapSpec InternalID="VN.YB" ShortName="YB" LongName="Yen Bai" />
+</AnimatedMapDataXML>

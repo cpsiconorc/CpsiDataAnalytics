@@ -1,0 +1,456 @@
+.rdDashboard, .rdDashboard table
+{
+	font-size: 11px;
+}
+.rdDashboard a:link,
+.rdDashboard a:visited,
+.rdDashboard a:active,
+.rdDashboard a:hover
+{
+	text-decoration:none;
+}
+
+.rdDashboardTabsMenu a:link,
+.rdDashboardPanelsMenu a:link
+{
+	text-decoration:none;
+	/*color: black;*/
+}
+
+.rdDashboard img {
+	border-style:none;
+}
+.rdDashboardFilterContainer {
+    padding-top: 20px;
+}
+.rdDashboardFilterCaption img {
+    position: relative;
+    top: 3px;
+}
+.rdDashboardGlobalFilterContainer td{
+    padding: 5px;
+}
+
+.rdDashboardPanelContainer
+{
+	background-repeat:repeat-x;
+	background-color: #ECECEC;
+	vertical-align: top;
+}
+
+
+.dashboardPanelContainer {
+    z-index: 2;
+}
+
+.rdDashboardColumn
+{
+	vertical-align:top;
+	padding-left:2px;
+	padding-right:2px;
+	padding-bottom:0px;
+}
+.rdDashboardPanel
+{
+	border-style:solid;
+	border-color: #ccc;
+	border-width:1px;
+	background-color:white;
+	font-weight:normal;
+	overflow: hidden;  /*REPDEV-20815*/
+}
+
+.rdDashboardPanel
+{
+    border-color: RGBA(180,180,180,0);
+    border-width: 3px;
+    border-style: solid;
+}
+
+.rdDashboardCaptionGlobalFiltered
+{
+    border-bottom-color: gray;
+    border-bottom-width: 2px;
+    border-bottom-style: solid;
+}
+.rdDashboardPanelGlobalFiltered
+{
+    border-color: gray;
+    border-width: 3px;
+    border-style: solid;
+}
+
+.freeformPanelContainer .rdDashboardPanel {
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	z-index: 1;
+}
+
+.panelBody {
+	overflow: hidden;
+}
+
+td.rdDashboardTitle
+{
+	background-color: #f1f1f1;
+}
+.rdDashboardTitleCaption
+{
+	font-weight:bolder;
+}
+
+td.rdDashboardControl
+{
+	text-align:right;
+}
+
+.rdDashboardListAdded
+{
+	color:Gray;
+}
+
+.rdDashboardParams,
+td.rdDashboardParams
+{
+	background-color: #ececec;
+}
+
+td.rdDashboardParamsSave
+{
+	vertical-align:bottom;
+	text-align:right;
+	background-color: #ececec;
+	padding-right: 3px;
+	padding-left: 3px;
+}
+
+.rdDashboardMenu
+{
+	padding:0;
+}
+
+.rdDashboardCommand
+{
+	font-weight: normal;
+	color: #555;
+	text-decoration: none;
+	background-color: #f1f1f1;
+	border: 1px solid #bebebe;
+	margin-left: 3px;
+	padding: 2px 3px;
+	line-height: 24px;
+	white-space: nowrap;
+}
+.rdDashboardCommand a
+{
+	color:#555555;
+}
+
+.rdDashboardDropZone
+{
+	height:5px;
+}
+.rdDashboardDropZoneActive
+{
+	background-color: #dcdcdc;
+	height:5px;
+}
+
+.rdDashboardTabs
+{
+	font-weight:normal;
+}
+
+.rdDashboardDropTabActive
+{
+	font-size:larger;
+	font-weight:bolder;
+}
+
+td.rdDashboardPanelDescription, td.rdDashboardFilterAlignement, td.rdDashboardFilterPanel {
+	vertical-align:top;
+}
+td.rdDashboardFilterCaption, td.rdDashboardGlobalFilterCaption
+{
+	font-size: 100%;
+    opacity: .7;
+    padding-left: 8px;
+    padding-top: 5px;
+}
+
+td.rdDashboardPanelImageColumn
+{
+	width:200px;
+}
+#rdSpacer {
+    height: 5px;
+}
+.rdDashboardHidden
+{
+	display:none;
+}
+
+/* Tabs */
+.yui-nav a {
+	color: #555555;
+}
+
+.yui-nav a:link
+{
+	text-decoration: none;
+	background-image: url(rdTabBg.png);
+}
+
+.yui-nav a:hover {
+	background-image: url(rdTabBgOn.png);
+}
+
+.yui-navset .yui-nav .selected a {
+	background-image: url(rdTabBgOn.png);
+}
+
+.yui-navset .yui-nav li {
+	border-top: 0px solid #8EC4DC;
+	border-right: 0px solid #8EC4DC;
+	background-color: transparent;
+    padding-left: 10px !important;
+}
+
+/* Hide tab background for the "new tab" tab */
+.yui-nav li a.hide-tab,
+.yui-nav li a:hover.hide-tab {
+	background-color: transparent !important;
+	border: 0px solid transparent !important;
+	background-image: none !important;
+}
+.yui-nav .hide-tab em {
+	padding: '0px 0px 1px 1px';
+}
+
+
+.rdAgKPIColor1{
+	background-color:#A61C00 !important;
+	cursor:pointer;
+}
+.rdAgKPIColor2{
+	background-color:#CC0000 !important;
+	cursor:pointer;
+}
+.rdAgKPIColor3{
+	background-color:#E69138 !important;
+	cursor:pointer;
+}
+.rdAgKPIColor4{
+	background-color:#F1C232 !important;
+	cursor:pointer;
+}
+.rdAgKPIColor5{
+	background-color:#6AA84F !important;
+	cursor:pointer;
+}
+.rdAgKPIColor6{
+	background-color:#45818E !important;
+	cursor:pointer;
+}
+.rdAgKPIColor7{
+	background-color:#3C78D8 !important;
+	cursor:pointer;
+}
+.rdAgKPIColor8{
+	background-color:#674EA7 !important;
+	cursor:pointer;
+}
+.rdAgKPIColor9{
+	background-color:#A64D79 !important;
+	cursor:pointer;
+}
+
+.rdPointerCursor
+{
+	cursor: pointer;
+}
+
+.rdGlobalFilterColumnIDsClass
+{
+    display: none;
+}
+
+#rdTabs .yui3-dd-drop.selected a {
+	font-weight: bold;
+	cursor: move;
+	padding-right: 16px;
+}
+
+#rdSettingsCog{
+    z-index : 9000;
+}
+
+#rdSettingsCog a.rdThemePopupMenu,
+#rdDashboardControl a.rdThemePopupMenu {
+	background-color: inherit;
+}
+
+#PopupPanelContent {
+	margin: 10px;
+}
+
+.rdDashboardParams {
+	padding: 10px;
+}
+
+#PopupPanelContent td.rdDashboardControl {
+	padding-top: 10px;
+}
+
+.highcharts-tooltip table.rdquicktip-table {
+	background-color: inherit;
+}
+
+.rdPopupMenu .yuimenuitemlabel {
+	font-size: 100%;
+}
+
+/* Icons */
+
+/*img#rdTabSettingsCog,
+img#rdAddNewTabCog,
+#rdDashboardControl img {
+	height: 16px;
+	width: 16px;
+}*/
+
+/* Visual Gallery */
+
+.rdNewAnalysisText {
+	font-size: 1.25em;
+}
+.rdPopupContent a span.rdNewAnalysisLink {
+	color: #0000ee;
+}
+.rdPopupContent a:hover span.rdNewAnalysisLink {
+	color: #3366ff;
+}
+
+.rdAddPanelFind {
+	background-color: #ECECEC;
+	font-size: 1.5em;
+}
+.rdAddPanelFind span{
+	margin-left: 5px;
+}
+
+#divUndoEnabled,
+#divRedoEnabled {
+	cursor: pointer;
+}
+
+#colUndoRedo IMG {
+position:relative;
+}
+
+span:hover.rdDashboardCommand, span:hover.rdPopupPanelCommand {
+  cursor: pointer;
+}
+
+#divUndo{
+margin-left:10px;
+}
+
+#divRedo{
+margin-left:5px;
+}
+  
+.yui3-dd-shim, .panelTitle, .rdDashboardTitle, .rdDashboardControl, .rdDashboardTab{
+touch-action: none !important;
+-ms-touch-action: none !important;
+}
+
+.panelInnerTable{
+	table-layout:fixed;
+}
+
+/*----------------AG-generated Visualization Editing----------------*/
+
+.rdEditAgVizFrame {
+    min-width:500px;
+    max-width:1000px;
+}
+
+.rdDoneAlignRight
+{
+	float: right;
+}
+
+/*-----------------AnalysisGrid Specific--------------*/
+.rdAgAlignCenter {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+.rdAgAlignLeft {
+  text-align: left;
+}
+
+.rdAgAlignRight {
+  text-align: right;
+}
+
+/*-------- REPDEV-24519 Develop a new breadcrumb menu for SSRM Dashboard Drill To ------*/
+.rdDrillFilterRow {
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.rdDrillFilterClearButton {
+    font-size: 150%;
+    color: #363B42;
+    font-weight: bold;
+    padding: 0 3px;
+    cursor: pointer;
+    display: inline-block;
+}
+
+.rdDrillFilterCaption {
+    font-size: 100%;
+    opacity: .7;
+    padding: 0px;
+}
+
+.rdDrillFilterContent {
+}
+
+.rdDrillFilterContent ul {
+    list-style: none;
+    display: inline-block;
+}
+
+.rdDrillFilterContent ul li {
+    list-style: none;
+    display: inline-block;
+    font-weight: bold;
+}
+
+.rdDrillFilterContent ul li.rdChartDrillMenuTip a {
+    cursor: pointer;
+    color: #25e5ef
+}
+
+.rdDrillFilterContent ul li a {
+    padding: 2px 5px;
+}
+
+.rdDrillFilterContent ul li a.active {
+    cursor: pointer;
+    color: #25e5ef
+}
+
+.rdDrillFilterMenu li a {
+	cursor: pointer;
+}
+
+.rdDrillFilterMenu li.yuimenuitem-disabled label {
+    font-weight: bold;
+    color: #b9b9b9 !important;
+}

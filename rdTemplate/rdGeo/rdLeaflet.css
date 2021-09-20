@@ -1,0 +1,6 @@
+﻿div.rdLeafletPopup div.leaflet-popup-content-wrapper div.leaflet-popup-scrolled {
+  padding-right: 16px;
+}
+.leaflet-control.leaflet-control-layers.leaflet-control-layers-expanded {
+  overflow: auto;
+}

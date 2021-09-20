@@ -1,0 +1,12 @@
+<AnimatedMapDataXML>
+  <MapSpec InternalID="01" ShortName="BO" LongName="Bosanskopodrinjski" />
+  <MapSpec InternalID="02" ShortName="HN" LongName="Hercegovačko-neretvanski" />
+  <MapSpec InternalID="03" ShortName="KS" LongName="Kanton Sarajevo" />
+  <MapSpec InternalID="04" ShortName="SR" LongName="Srednjebosanski" />
+  <MapSpec InternalID="05" ShortName="TU" LongName="Tuzlanski" />
+  <MapSpec InternalID="06" ShortName="US" LongName="Unsko-sanski" />
+  <MapSpec InternalID="07" ShortName="ZA" LongName="Zapadnobosanska Županija" />
+  <MapSpec InternalID="08" ShortName="ZD" LongName="Zeničko-Dobojski" />
+  <MapSpec InternalID="09" ShortName="ZP" LongName="Županija Posavska" />
+  <MapSpec InternalID="10" ShortName="ZZ" LongName="Županija Zapadnohercegovačka" />
+</AnimatedMapDataXML>

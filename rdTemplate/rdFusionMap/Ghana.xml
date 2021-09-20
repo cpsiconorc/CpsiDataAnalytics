@@ -1,0 +1,12 @@
+<AnimatedMapDataXML>
+  <MapSpec InternalID="GH.AH" ShortName="AH" LongName="Ashanti" />
+  <MapSpec InternalID="GH.BA" ShortName="BA" LongName="Brong-Ahafo" />
+  <MapSpec InternalID="GH.CP" ShortName="CP" LongName="Central" />
+  <MapSpec InternalID="GH.EP" ShortName="EP" LongName="Eastern" />
+  <MapSpec InternalID="GH.AA" ShortName="AA" LongName="Greater Accra" />
+  <MapSpec InternalID="GH.NP" ShortName="NP" LongName="Northern" />
+  <MapSpec InternalID="GH.UE" ShortName="UE" LongName="Upper East" />
+  <MapSpec InternalID="GH.UW" ShortName="UW" LongName="Upper West" />
+  <MapSpec InternalID="GH.TV" ShortName="TV" LongName="Volta" />
+  <MapSpec InternalID="GH.WP" ShortName="WP" LongName="Western" />
+</AnimatedMapDataXML>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<chart caption="Stock Price Monitor" subCaption="Google" dataStreamURL="AnimatedUpdate1.txt" refreshInterval="5" numberPrefix="$" setAdaptiveYMin="1" xAxisName="Time" showRealTimeValue="1" labelDisplay="Rotate" slantLabels="1">
+  <categories/>
+  <dataset seriesName="Google" showValues="0"/> 
+</chart>
+

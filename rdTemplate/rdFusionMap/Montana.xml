@@ -1,0 +1,26 @@
+<AnimatedMapDataXML>
+  <MapSpec InternalID="001" ShortName="BE" LongName="Beaverhead" />
+  <MapSpec InternalID="003" ShortName="BH" LongName="Big Horn" />
+  <MapSpec InternalID="005" ShortName="BL" LongName="Blaine" />
+  <MapSpec InternalID="007" ShortName="BR" LongName="Broadwater" />
+  <MapSpec InternalID="009" ShortName="CA" LongName="Carbon" />
+  <MapSpec InternalID="011" ShortName="CR" LongName="Carter" />
+  <MapSpec InternalID="013" ShortName="CS" LongName="Cascade" />
+  <MapSpec InternalID="015" ShortName="CH" LongName="Chouteau" />
+  <MapSpec InternalID="017" ShortName="CU" LongName="Custer" />
+  <MapSpec InternalID="019" ShortName="DA" LongName="Daniels" />
+  <MapSpec InternalID="021" ShortName="DW" LongName="Dawson" />
+  <MapSpec InternalID="023" ShortName="DL" LongName="Deer Lodge" />
+  <MapSpec InternalID="025" ShortName="FA" LongName="Fallon" />
+  <MapSpec InternalID="027" ShortName="FE" LongName="Fergus" />
+  <MapSpec InternalID="029" ShortName="FL" LongName="Flathead" />
+  <MapSpec InternalID="031" ShortName="GA" LongName="Gallatin" />
+  <MapSpec InternalID="033" ShortName="GR" LongName="Garfield" />
+  <MapSpec InternalID="035" ShortName="GC" LongName="Glacier" />
+  <MapSpec InternalID="037" ShortName="GV" LongName="Golden Valley" />
+  <MapSpec InternalID="039" ShortName="GN" LongName="Granite" />
+  <MapSpec InternalID="041" ShortName="HI" LongName="Hill" />
+  <MapSpec InternalID="043" ShortName="JE" LongName="Jefferson" />
+  <MapSpec InternalID="045" ShortName="JB" LongName="Judith Basin" />
+  <MapSpec InternalID="051" ShortName="LB" LongName="Liberty" />
+</AnimatedMapDataXML>

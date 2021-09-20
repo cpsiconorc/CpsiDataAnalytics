@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration status="debug">
+  <Appenders>
+   
+    <File name="FileA" fileName="./logs/rdLog4j.log">
+      <PatternLayout>
+        <Pattern>%d %p %c{1.} [%t] %m %ex%n</Pattern>
+      </PatternLayout>
+    </File>
+    
+  </Appenders>
+
+    <Loggers>
+    <Root level="debug">
+      <AppenderRef ref="FileA"/>
+    </Root>
+  </Loggers>
+</Configuration>

@@ -1,0 +1,154 @@
+<div id="chartdiv" style="text-align:center"></div>
+
+    <SCRIPT type="text/javascript" rdAjaxRunOnLoad="True">
+        function rdLoadAnimatedChart() {
+            if (!window.FusionCharts) {
+                YUI().use('rd-animated-charts', 'rd-animated-charts-hc', 'rd-animated-charts-hc-charts', 'rd-animated-charts-hc-widgets', function (Y) {
+                    //For IE 8 or IE 7, we do not support Javascript charts, only flash charts are available
+                    if (navigator.userAgent.indexOf('MSIE 8.0') > 0 || navigator.userAgent.indexOf('MSIE 7.0') > 0) {
+                        FusionCharts.setCurrentRenderer('flash');
+                    }
+                    else {
+                        FusionCharts.setCurrentRenderer('javascript');
+                    }
+                    if (typeof FusionCharts == 'undefined') {
+                        //Wait for the script to load. Especially for Widgets in Mozilla.
+                        setTimeout('rdLoadAnimatedChart()', 500);
+                    } else {
+                        //Wait for DOM to be ready
+                        //Y.on('domready', function (e) {
+
+                        //Get chart and destroy it if it already exists to avoid errors
+                        var chartReference = FusionCharts("myChartId");
+                        if (Y.Lang.isValue(chartReference)) {
+
+                            FusionCharts("myChartId").dispose();
+                        }
+
+                        //Set the width and height of the containing DIV
+                        if (Y.Lang.isNull(Y.one('#chartdiv'))) {    //#21355.
+                            return
+                        }
+                        document.getElementById("chartdiv").style.w_idth = "width" + "px";
+                        document.getElementById("chartdiv").style.h_eight = "height" + "px";
+
+                        //If there is a resizer, it must be initialized before we create the chart obejct
+                        var eleAttrs = document.getElementById("rdResizerAttrs_" + "myChartId");
+                        if (Y.Lang.isValue(eleAttrs)) {
+                            rdInitAnimatedChartResizer("chartType", "myChartId", "Data.xml", "myChartId", null, "fla__sh", "width", "height");
+                        }
+                        else {  //no resizer
+
+                            //Build the chart object
+                            var rdAnimatedChart = new FusionCharts({
+                                swfUrl: "rdTemplate/rdAnimatedChart/chartType.swf",
+                                renderAt: "chartdiv",
+                                //have to add an underscore so names dont get replaced on server
+                                w_idth: "width",
+                                h_eight: "height",
+                                id: "myChartId"
+                            });
+
+                            //Provide the data
+                            rdAnimatedChart.setDataURL("Data.xml");
+
+                            //Render the chart
+                            rdAnimatedChart.render();
+                        }
+                        var eleFreeformLayout = document.getElementById('rdFreeformLayout');
+                        if (typeof eleFreeformLayout != null) { //#21215.
+                            if (typeof LogiXML.Dashboard.FreeForm !== 'undefined') {
+                                LogiXML.Dashboard.FreeForm.rdResizeDashboardContainer();
+                            }
+                        }
+                        //});
+                    }
+                });
+            } else {
+                //For IE 8 or IE 7, we do not support Javascript charts, only flash charts are available
+                if (navigator.userAgent.indexOf('MSIE 8.0') > 0 || navigator.userAgent.indexOf('MSIE 7.0') > 0) {
+                    FusionCharts.setCurrentRenderer('flash');
+                }
+                else {
+                    FusionCharts.setCurrentRenderer('javascript');
+                }
+                if (typeof FusionCharts == 'undefined') {
+                    //Wait for the script to load. Especially for Widgets in Mozilla.
+                    setTimeout('rdLoadAnimatedChart()', 500);
+                } else {
+                    //Wait for DOM to be ready
+                    //Y.on('domready', function (e) {
+
+                    //Get chart and destroy it if it already exists to avoid errors
+                    var chartReference = FusionCharts("myChartId");
+                    if (Y.Lang.isValue(chartReference)) {
+
+                        FusionCharts("myChartId").dispose();
+                    }
+
+                    //Set the width and height of the containing DIV
+                    if (Y.Lang.isNull(Y.one('#chartdiv'))) {    //#21355.
+                        return
+                    }
+                    document.getElementById("chartdiv").style.w_idth = "width" + "px";
+                    document.getElementById("chartdiv").style.h_eight = "height" + "px";
+
+                    //If there is a resizer, it must be initialized before we create the chart obejct
+                    var eleAttrs = document.getElementById("rdResizerAttrs_" + "myChartId");
+                    if (Y.Lang.isValue(eleAttrs)) {
+                        rdInitAnimatedChartResizer("chartType", "myChartId", "Data.xml", "myChartId", null, "fla__sh", "width", "height");
+                    }
+                    else {  //no resizer
+
+                        //Build the chart object
+                        var rdAnimatedChart = new FusionCharts({
+                            swfUrl: "rdTemplate/rdAnimatedChart/chartType.swf",
+                            renderAt: "chartdiv",
+                            //have to add an underscore so names dont get replaced on server
+                            w_idth: "width",
+                            h_eight: "height",
+                            id: "myChartId"
+                        });
+
+                        //Provide the data
+                        rdAnimatedChart.setDataURL("Data.xml");
+
+                        //Render the chart
+                        rdAnimatedChart.render();
+                    }
+                    var eleFreeformLayout = document.getElementById('rdFreeformLayout');
+                    if (typeof eleFreeformLayout != null) { //#21215.
+                        if (typeof LogiXML.Dashboard.FreeForm !== 'undefined') {
+                            LogiXML.Dashboard.FreeForm.rdResizeDashboardContainer();
+                        }
+                    }
+                    //});
+                }
+            }
+            }
+            rdLoadAnimatedChart();
+            function FC_Resized(idIn) {
+                //Make chart visible once the resize is finished (prevents viewing the chart in a frame that doesn't fit it)
+                if (document.getElementById(idIn)) {
+                    if (document.getElementById("rdAnimatedChart" + idIn)) {
+                        document.getElementById("rdAnimatedChart" + idIn).style.opacity = "1.0";
+                        document.getElementById("rdAnimatedChart" + idIn).style.visibility = "visible";
+                    }
+                    document.getElementById(idIn).style.visibility = 'visible';
+                    document.getElementById(idIn).style.opacity = "1.0";
+                }
+            }
+            function FC_Rendered(idIn) {
+                //Make chart visible once the resize is finished (prevents viewing the chart in a frame that doesn't fit it)
+                if (document.getElementById(idIn)) {
+                    if (document.getElementById("rdAnimatedChart" + idIn)) {
+                        document.getElementById("rdAnimatedChart" + idIn).style.opacity = "1.0";
+                        document.getElementById("rdAnimatedChart" + idIn).style.visibility = "visible";
+                    }
+                    document.getElementById(idIn).style.visibility = 'visible';
+                    document.getElementById(idIn).style.opacity = "1.0";
+                }
+            }
+
+        
+    </SCRIPT>

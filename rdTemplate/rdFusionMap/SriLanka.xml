@@ -1,0 +1,27 @@
+<AnimatedMapDataXML>
+  <MapSpec InternalID="LK.AP" ShortName="AP" LongName="Ampara" />
+  <MapSpec InternalID="LK.AD" ShortName="AD" LongName="Anuradhapura" />
+  <MapSpec InternalID="LK.BD" ShortName="BD" LongName="Badulla" />
+  <MapSpec InternalID="LK.BC" ShortName="BC" LongName="Batticaloa" />
+  <MapSpec InternalID="LK.CO" ShortName="CO" LongName="Colombo" />
+  <MapSpec InternalID="LK.GL" ShortName="GL" LongName="Galle" />
+  <MapSpec InternalID="LK.GQ" ShortName="GQ" LongName="Gampaha" />
+  <MapSpec InternalID="LK.HB" ShortName="HB" LongName="Hambantota" />
+  <MapSpec InternalID="LK.JA" ShortName="JA" LongName="Jaffna" />
+  <MapSpec InternalID="LK.KT" ShortName="KT" LongName="Kalutara" />
+  <MapSpec InternalID="LK.KY" ShortName="KY" LongName="Kandy" />
+  <MapSpec InternalID="LK.KE" ShortName="KE" LongName="Kegalle" />
+  <MapSpec InternalID="LK.KL" ShortName="KL" LongName="Kilinochchi" />
+  <MapSpec InternalID="LK.KG" ShortName="KG" LongName="Kurunegala" />
+  <MapSpec InternalID="LK.MB" ShortName="MB" LongName="Mannar" />
+  <MapSpec InternalID="LK.MT" ShortName="MT" LongName="Matale" />
+  <MapSpec InternalID="LK.MH" ShortName="MH" LongName="Matara" />
+  <MapSpec InternalID="LK.MJ" ShortName="MJ" LongName="Moneragala" />
+  <MapSpec InternalID="LK.MP" ShortName="MP" LongName="Mullailivu" />
+  <MapSpec InternalID="LK.NW" ShortName="NW" LongName="Nuwara Eliya" />
+  <MapSpec InternalID="LK.PR" ShortName="PR" LongName="Polonnaruwa" />
+  <MapSpec InternalID="LK.PX" ShortName="PX" LongName="Puttalam" />
+  <MapSpec InternalID="LK.RN" ShortName="RN" LongName="Ratnapura" />
+  <MapSpec InternalID="LK.TC" ShortName="TC" LongName="Trincomalee" />
+  <MapSpec InternalID="LK.VA" ShortName="VA" LongName="Vavuniya" />
+</AnimatedMapDataXML>

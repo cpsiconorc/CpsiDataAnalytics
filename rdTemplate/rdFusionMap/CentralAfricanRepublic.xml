@@ -1,0 +1,19 @@
+<AnimatedMapDataXML>
+  <MapSpec InternalID="CF.BB" ShortName="BB" LongName="Bamingui Bangoran" />
+  <MapSpec InternalID="CF.BG" ShortName="BG" LongName="Bangui" />
+  <MapSpec InternalID="CF.BK" ShortName="BK" LongName="Basse Kotto" />
+  <MapSpec InternalID="CF.HM" ShortName="HM" LongName="Haut Mbomou" />
+  <MapSpec InternalID="CF.HK" ShortName="HK" LongName="Haute Kotto" />
+  <MapSpec InternalID="CF.KG" ShortName="KG" LongName="Kemo" />
+  <MapSpec InternalID="CF.LB" ShortName="LB" LongName="Lobaye" />
+  <MapSpec InternalID="CF.HS" ShortName="HS" LongName="Mambere-Kadei" />
+  <MapSpec InternalID="CF.MB" ShortName="MB" LongName="Mbomou" />
+  <MapSpec InternalID="CF.KB" ShortName="KB" LongName="Nana Grebizi" />
+  <MapSpec InternalID="CF.NM" ShortName="NM" LongName="Nana Mambere" />
+  <MapSpec InternalID="CF.MP" ShortName="MP" LongName="Ombella M’poko" />
+  <MapSpec InternalID="CF.UK" ShortName="UK" LongName="Ouaka" />
+  <MapSpec InternalID="CF.AC" ShortName="AC" LongName="Ouham" />
+  <MapSpec InternalID="CF.OP" ShortName="OP" LongName="Ouham Pende" />
+  <MapSpec InternalID="CF.SE" ShortName="SE" LongName="Sangha Mbaere" />
+  <MapSpec InternalID="CF.VK" ShortName="VK" LongName="Vakaga" />
+</AnimatedMapDataXML>

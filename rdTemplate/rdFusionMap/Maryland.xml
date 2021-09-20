@@ -1,0 +1,26 @@
+<AnimatedMapDataXML>
+  <MapSpec InternalID="001" ShortName="AL" LongName="Allegany" />
+  <MapSpec InternalID="003" ShortName="AN" LongName="Anne Arundel" />
+  <MapSpec InternalID="005" ShortName="BA" LongName="Baltimore City" />
+  <MapSpec InternalID="007" ShortName="BL" LongName="Baltimore" />
+  <MapSpec InternalID="009" ShortName="CA" LongName="Calvert" />
+  <MapSpec InternalID="011" ShortName="CR" LongName="Caroline" />
+  <MapSpec InternalID="013" ShortName="CO" LongName="Carroll" />
+  <MapSpec InternalID="015" ShortName="CE" LongName="Cecil" />
+  <MapSpec InternalID="017" ShortName="CH" LongName="Charles" />
+  <MapSpec InternalID="019" ShortName="DO" LongName="Dorchester" />
+  <MapSpec InternalID="021" ShortName="FR" LongName="Frederick" />
+  <MapSpec InternalID="023" ShortName="GA" LongName="Garrett" />
+  <MapSpec InternalID="025" ShortName="HA" LongName="Harford" />
+  <MapSpec InternalID="027" ShortName="HO" LongName="Howard" />
+  <MapSpec InternalID="029" ShortName="KE" LongName="Kent" />
+  <MapSpec InternalID="031" ShortName="MO" LongName="Montgomery" />
+  <MapSpec InternalID="033" ShortName="PG" LongName="Prince George's" />
+  <MapSpec InternalID="035" ShortName="QA" LongName="Queen Anne's" />
+  <MapSpec InternalID="037" ShortName="SM" LongName="St. Mary's" />
+  <MapSpec InternalID="039" ShortName="SO" LongName="Somerset" />
+  <MapSpec InternalID="041" ShortName="TA" LongName="Talbot" />
+  <MapSpec InternalID="043" ShortName="WA" LongName="Washington" />
+  <MapSpec InternalID="045" ShortName="WI" LongName="Wicomico" />
+  <MapSpec InternalID="047" ShortName="WO" LongName="Worchester" />
+</AnimatedMapDataXML>

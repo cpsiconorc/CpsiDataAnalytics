@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report ID="ChartGrid.rdCgTemplatePopupZoom" >
+  <Body>
+    <Rows Class="rdCg" Width="100" WidthScale="%">
+      <Row>
+        <Column>
+          <Rows ID="rowsTitles" CellSpacing="4" Class="rdCg">
+            <Row ID="rowRowTitle">
+              <Column>
+                <Label Caption="Row:" ID="lblRow"/>
+              </Column>
+              <Column>
+                <Label Caption="" Class="rdCgContentHeading" ID="lblRowTitle"/>
+              </Column>
+            </Row>
+            <Row ID="rowColumnTitle">
+              <Column>
+                <Label Caption="Column:" ID="lblColumn"/>
+              </Column>
+              <Column>
+                <Label Caption="" Class="rdCgContentHeading" ID="lblColumnTitle"/>
+              </Column>
+            </Row>
+          </Rows>
+        </Column>
+        <Column Class="rdCgAlignRight">
+          <Label ID="lblDrillthrough" Caption="Drillthrough" Class="rdCgCommand">
+            <Action Type="Report" ID="actionDrillthrough">
+              <Target Type="Report" FrameID="rdDrillthrough"/>
+              <LinkParams rdCgCommand="Drillthrough" rdCgCommandID="@Function.FUID~" />
+            </Action>
+          </Label>
+        </Column>
+      </Row>
+    </Rows>
+    <Chart ID="chartPopupZoom" ChartWidth="800" ChartHeight="400" />
+	</Body>
+	<StyleSheet StyleSheet="rdTemplate/rdChartGrid/rdCgStyle.css"/>
+</Report>

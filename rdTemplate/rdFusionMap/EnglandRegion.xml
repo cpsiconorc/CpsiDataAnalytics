@@ -1,0 +1,11 @@
+<AnimatedMapDataXML>
+  <MapSpec InternalID="01" ShortName="NE" LongName="North East" />
+  <MapSpec InternalID="02" ShortName="NW" LongName="North West" />
+  <MapSpec InternalID="03" ShortName="YH" LongName="Yorkshire and the Humber" />
+  <MapSpec InternalID="04" ShortName="EM" LongName="East Midlands" />
+  <MapSpec InternalID="05" ShortName="WM" LongName="West Midlands" />
+  <MapSpec InternalID="06" ShortName="EA" LongName="East" />
+  <MapSpec InternalID="07" ShortName="LO" LongName="London" />
+  <MapSpec InternalID="08" ShortName="SE" LongName="South East" />
+  <MapSpec InternalID="09" ShortName="SW" LongName="South West" />
+</AnimatedMapDataXML>

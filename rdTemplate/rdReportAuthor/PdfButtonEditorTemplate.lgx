@@ -1,0 +1,239 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Report ID="ReportAuthorDev.Templates.PdfButtonEditorTemplate"> 
+  <ReportHeader />
+  <Body>
+    <DraggableDivision HtmlDiv="True" ID="PdfButtonEditorTemplate" rdReportAuthorEditorFor="Image" Class="rd-element-editor" DragHandlerElementID="imgDragHandler_rdElementID">
+      <ProxyDivision MoveOnEnd="True" HideOnEnd="True" HideOnStart="True" />
+      <LinkedParams action="Y.LogiXML.ReportAuthor.updateDeleteLink('rdElementID','rdNewParentID');rdAjaxRequestWithFormVars('rdAjaxCommand=RefreshElement&amp;rdRefreshElementID=rdReportAuthorID,rdReturnElementID&amp;rdReportAuthorAction=move&amp;rdReportAuthorElementID=rdElementID&amp;rdReportAuthorParentID=rdNewParentID&amp;rdReportAuthorSiblingElementID=rdSiblingID&amp;rdReportAuthorRefreshElementID=rdReturnElementID&amp;rdReport=rdCurrentReport&amp;rdReportAuthorSilentUpdate=True','false','',null,null,null,['','',''])" />
+      <Division HtmlDiv="True">
+        <Division HtmlDiv="True" ID="editorHeaderRow_rdElementID" IdeDisplayStatus="Collapsed">
+          <Division HtmlDiv="True" Class="ThemeAlignRight rd-element-editor-header" IdeDisplayStatus="Collapsed">
+            <Division Class="rd-drag-block">
+              <Division ID="divDragHandlerBox_rdElementID">
+                <Image ID="imgDragHandler_rdElementID" Caption="../rdTemplate/rdReportAuthor/drag-handler-light.png" Class="rd-drag-handler" />
+              </Division>
+            </Division>
+            <Division Class="rd-header-buttons">
+              <Image ID="imgSettings_rdElementID" Caption="../rdTemplate/rdReportAuthor/rdSettingsCog.png">
+                <Action Type="Javascript" Javascript="setEditActionCause('True');ShowElement(this.id,'PdfSettingsPopup_rdElementID','','')" ID="actShowPdfSettingsPopup_rdElementID" />
+              </Image>
+              <Division Class="separator-horizontal" />
+              <Image ID="imgDelete_rdElementID" Caption="../rdTemplate/rdReportAuthor/close.png">
+                <Action Type="RefreshElement" ElementID="rdReportAuthorID, rdParentID" ID="actDeleteElement_rdElementID" ConfirmMessage="Remove? Are you sure?">
+                  <LinkParams rdReportAuthorAction="delete" rdReportAuthorElementID="rdElementID" rdElementType="PdfButton" rdReportAuthorRefreshElementID="rdParentID" />
+                  <WaitPage />
+                </Action>
+              </Image>
+            </Division>
+          </Division>
+        </Division>
+        <Division HtmlDiv="True">
+          <Division HtmlDiv="True" ID="divEditorContainer_rdElementID" />
+        </Division>
+      </Division>
+      <PopupPanel ID="PdfSettingsPopup_rdElementID" PopupModal="True" Caption="Settings" PopupPanelLocation="Center" Width="400" WidthScale="px" ShowOnPageLoad="False" Class="rd-settings-popup">
+        <Division HtmlDiv="True" Class="rd-popup-content">
+          <Rows Width="100" WidthScale="%">
+            <Row>
+              <Column>
+                <InputText InputRows="3" InputColumns="70" ID="txtPdfText_rdElementID" InputSize="60" Class="rdThemeInput" ChangeFlagElementID="isChanged_rdElementID" />
+              </Column>
+            </Row>
+            <Row>
+              <Column>
+                <Rows>
+                  <Row IdeDisplayStatus="Collapsed">
+                    <Column>
+                      <Label ID="lblFontSize" Caption="Font Size:" />
+                    </Column>
+                    <Column>
+                      <InputSelectList ID="slctLabelFontSize_rdElementID" OptionCaptionColumn="Caption" OptionValueColumn="Value" DefaultValue="14px" Class="rdThemeInput" ChangeFlagElementID="isChanged_rdElementID">
+                        <DataLayer Type="Static">
+                          <StaticDataRow Caption="" Value="" />
+                          <StaticDataRow Caption="10px" Value="10px" />
+                          <StaticDataRow Caption="14px" Value="14px" />
+                          <StaticDataRow Caption="20px" Value="20px" />
+                          <StaticDataRow Caption="30px" Value="30px" />
+                          <StaticDataRow Caption="40px" Value="40px" />
+                          <StaticDataRow Caption="50px" Value="50px" />
+                        </DataLayer>
+                      </InputSelectList>
+                    </Column>
+                  </Row>
+                  <Row IdeDisplayStatus="Collapsed">
+                    <Column>
+                      <Label ID="lblFontColor" Caption="Font Color:" />
+                    </Column>
+                    <Column>
+                      <InputColorPicker ID="slctLabelFontColor_rdElementID">
+                        <EventHandler DhtmlEvent="onchange">
+                          <Action Type="Javascript" Javascript="NavigateLink2('javascript:rdChangeFlag(\'isChanged_rdElementID\',\'isChanged_rdElementID\')','','false','','',null);" />
+                        </EventHandler>
+                      </InputColorPicker>
+                    </Column>
+                  </Row>
+                  <Row>
+                    <Column>
+                      <Label ID="lblPageSize" Caption="Page Size:" />
+                    </Column>
+                    <Column>
+                      <InputSelectList ID="slctPdfPageSize_rdElementID" OptionCaptionColumn="Caption" OptionValueColumn="Value" DefaultValue="Legal" Class="rdThemeInput" ChangeFlagElementID="isChanged_rdElementID">
+                        <DataLayer Type="Static" IdeDisplayStatus="Collapsed">
+                          <StaticDataRow Caption="Letter (8.5 x 11)" Value="8.5X11" />
+                          <StaticDataRow Caption="Tabloid (11 x 17)" Value="11X17" />
+                          <StaticDataRow Caption="Legal (8.5 x 14)" Value="8.5X14" />
+                          <StaticDataRow Caption="Statement (5.5 x 8.5)" Value="5.5X8.5" />
+                          <StaticDataRow Caption="Executive (7.25 x 10.5)" Value="7.25X10.5" />
+                          <StaticDataRow Caption="Folio (8.5 x 13)" Value="8.5X13" />
+                          <StaticDataRow Caption="A3 (11.69 x 16.54)" Value="11.69X16.54" />
+                          <StaticDataRow Caption="A4 (8.27 x 11.69)" Value="8.27X11.69" />
+                          <StaticDataRow Caption="A5 (5.83 x 8.27)" Value="5.83X8.27" />
+                          <StaticDataRow Caption="B4 (9.84 x 13.90)" Value="9.84X13.90" />
+                          <StaticDataRow Caption="B5 (6.93 x 9.84)" Value="6.93X9.84" />
+                        </DataLayer>
+                      </InputSelectList>
+                    </Column>
+                  </Row>
+                  <Row>
+                    <Column>
+                      <Label ID="lblOrientation" Caption="Orientation:" />
+                    </Column>
+                    <Column>
+                      <InputSelectList ID="slctPdfPageOrientation_rdElementID" OptionCaptionColumn="Caption" OptionValueColumn="Value" DefaultValue="Vertical" Class="rdThemeInput" ChangeFlagElementID="isChanged_rdElementID">
+                        <DataLayer Type="Static">
+                          <StaticDataRow Caption="Landscape" Value="Landscape" />
+                          <StaticDataRow Caption="Portrait" Value="Portrait" />
+                        </DataLayer>
+                      </InputSelectList>
+                    </Column>
+                  </Row>
+                  <Row Condition="'@Session.JAVAINFO~' != ''">
+                    <Column>
+                      <Label ID="lblJavaAutofit" Caption="=iif('@Session.JAVAINFO~'!='',' AutoFit:', '')" />
+                    </Column>
+                    <Column>
+                      <InputSelectList ID="slctPdfPageJavaAutoFit_rdElementID" OptionCaptionColumn="Caption" OptionValueColumn="Value" DefaultValue="True" Class="rdThemeInput" ChangeFlagElementID="isChanged_rdElementID">
+                        <DataLayer Type="Static">
+                          <StaticDataRow Caption="True" Value="True" />
+                          <StaticDataRow Caption="False" Value="False" />
+                        </DataLayer>
+                      </InputSelectList>
+                    </Column>
+                  </Row>
+                </Rows>
+              </Column>
+            </Row>
+            <Row>
+              <Column>
+                <FieldsetBox ID="fsBorderSetttings" Caption="Border Settings" CaptionClass="ThemeTextNormal">
+                  <Rows>
+                    <Row IdeDisplayStatus="Collapsed">
+                      <Column>
+                        <Label ID="lblThickness" Caption="Thickness:" />
+                      </Column>
+                      <Column>
+                        <InputSelectList ID="slctBorderThickness_rdElementID" OptionCaptionColumn="Caption" OptionValueColumn="Value" Class="rdThemeInput" ChangeFlagElementID="isChanged_rdElementID">
+                          <DataLayer Type="Static">
+                            <StaticDataRow Caption="1px" Value="1px" />
+                            <StaticDataRow Caption="2px" Value="2px" />
+                            <StaticDataRow Caption="3px" Value="3px" />
+                          </DataLayer>
+                        </InputSelectList>
+                      </Column>
+                    </Row>
+                    <Row IdeDisplayStatus="Collapsed">
+                      <Column>
+                        <Label ID="lblColor" Caption="Color:" />
+                      </Column>
+                      <Column>
+                        <InputColorPicker ID="slctBorderColor_rdElementID">
+                          <EventHandler DhtmlEvent="onchange">
+                            <Action Type="Javascript" Javascript="NavigateLink2('javascript:rdChangeFlag(\'isChanged_rdElementID\',\'isChanged_rdElementID\')','','false','','',null);" />
+                          </EventHandler>
+                        </InputColorPicker>
+                      </Column>
+                    </Row>
+                  </Rows>
+                  <Division ID="divBorderSettings_rdElementID" IdeDisplayStatus="Collapsed">
+                    <Division ID="divBorderNoneFalse_rdElementID" Class="ThemeMargin">
+                      <Image Caption="../rdTemplate/rdReportAuthor/border-none.png" ID="imgBorderNoneFalse_rdElementID">
+                        <Action Type="Javascript" Javascript="ShowElement(this.id,'divBorderNoneFalse_rdElementID,divBorderLeftTrue_rdElementID,divBorderTopTrue_rdElementID,divBorderRightTrue_rdElementID,divBorderBottomTrue_rdElementID,divBorderAllTrue_rdElementID','Hide','');&#xD;&#xA;ShowElement(this.id,'divBorderNoneTrue_rdElementID,divBorderLeftFalse_rdElementID,divBorderTopFalse_rdElementID,divBorderRightFalse_rdElementID,divBorderBottomFalse_rdElementID,divBorderAllFalse_rdElementID','Show','');&#xD;&#xA;document.getElementById('txtBorderAll_rdElementID').setAttribute('value', 'False');&#xD;&#xA;document.getElementById('txtBorderLeft_rdElementID').setAttribute('value', '');&#xD;&#xA;document.getElementById('txtBorderTop_rdElementID').setAttribute('value', '');&#xD;&#xA;document.getElementById('txtBorderRight_rdElementID').setAttribute('value', '');&#xD;&#xA;document.getElementById('txtBorderBottom_rdElementID').setAttribute('value', '');&#xD;&#xA;NavigateLink2('javascript:rdChangeFlag(\'isChanged_rdElementID\',\'isChanged_rdElementID\')','','false','','',null);" />
+                      </Image>
+                    </Division>
+                    <Division ID="divBorderNoneTrue_rdElementID" ShowModes="None" Class="ThemeMargin">
+                      <Image ID="imgBorderNoneTrue_rdElementID" Caption="../rdTemplate/rdReportAuthor/border-none-active.png" />
+                    </Division>
+                    <Division ID="divBorderLeftFalse_rdElementID" Class="ThemeMargin">
+                      <Image Caption="../rdTemplate/rdReportAuthor/border-left.png" ID="imgBorderLeftFalse_rdElementID">
+                        <Action Type="Javascript" Javascript="ShowElement(this.id,'divBorderLeftFalse_rdElementID,divBorderNoneTrue_rdElementID,divBorderAllTrue_rdElementID','Hide','');&#xD;&#xA;ShowElement(this.id,'divBorderLeftTrue_rdElementID,divBorderNoneFalse_rdElementID,divBorderAllFalse_rdElementID','Show','');&#xD;&#xA;document.getElementById('txtBorderLeft_rdElementID').setAttribute('value', 'True');&#xD;&#xA;document.getElementById('txtBorderAll_rdElementID').setAttribute('value', '');NavigateLink2('javascript:rdChangeFlag(\'isChanged_rdElementID\',\'isChanged_rdElementID\')','','false','','',null);" />
+                      </Image>
+                    </Division>
+                    <Division ID="divBorderLeftTrue_rdElementID" ShowModes="None" Class="ThemeMargin">
+                      <Image ID="imgBorderLeftTrue_rdElementID" Caption="../rdTemplate/rdReportAuthor/border-left-active.png">
+                        <Action Type="Javascript" Javascript="ShowElement(this.id,'divBorderLeftTrue_rdElementID,divBorderNoneTrue_rdElementID,divBorderAllTrue_rdElementID','Hide','');&#xD;&#xA;ShowElement(this.id,'divBorderLeftFalse_rdElementID,divBorderNoneFalse_rdElementID,divBorderAllFalse_rdElementID','Show','');&#xD;&#xA;document.getElementById('txtBorderLeft_rdElementID').setAttribute('value', '');&#xD;&#xA;document.getElementById('txtBorderAll_rdElementID').setAttribute('value', '');NavigateLink2('javascript:rdChangeFlag(\'isChanged_rdElementID\',\'isChanged_rdElementID\')','','false','','',null);" />
+                      </Image>
+                    </Division>
+                    <Division ID="divBorderTopFalse_rdElementID" Class="ThemeMargin">
+                      <Image Caption="../rdTemplate/rdReportAuthor/border-top.png" ID="imgBorderTopFalse_rdElementID">
+                        <Action Type="Javascript" Javascript="ShowElement(this.id,'divBorderTopFalse_rdElementID,divBorderNoneTrue_rdElementID,divBorderAllTrue_rdElementID','Hide','');&#xD;&#xA;ShowElement(this.id,'divBorderTopTrue_rdElementID,divBorderNoneFalse_rdElementID,divBorderAllFalse_rdElementID','Show','');&#xD;&#xA;document.getElementById('txtBorderTop_rdElementID').setAttribute('value', 'True');&#xD;&#xA;document.getElementById('txtBorderAll_rdElementID').setAttribute('value', '');NavigateLink2('javascript:rdChangeFlag(\'isChanged_rdElementID\',\'isChanged_rdElementID\')','','false','','',null);" />
+                      </Image>
+                    </Division>
+                    <Division ID="divBorderTopTrue_rdElementID" ShowModes="None" Class="ThemeMargin">
+                      <Image ID="imgBorderTopTrue_rdElementID" Caption="../rdTemplate/rdReportAuthor/border-top-active.png">
+                        <Action Type="Javascript" Javascript="ShowElement(this.id,'divBorderTopTrue_rdElementID,divBorderNoneTrue_rdElementID,divBorderAllTrue_rdElementID','Hide','');&#xD;&#xA;ShowElement(this.id,'divBorderTopFalse_rdElementID,divBorderNoneFalse_rdElementID,divBorderAllFalse_rdElementID','Show','');&#xD;&#xA;document.getElementById('txtBorderTop_rdElementID').setAttribute('value', '');&#xD;&#xA;document.getElementById('txtBorderAll_rdElementID').setAttribute('value', '');NavigateLink2('javascript:rdChangeFlag(\'isChanged_rdElementID\',\'isChanged_rdElementID\')','','false','','',null);" />
+                      </Image>
+                    </Division>
+                    <Division ID="divBorderRightFalse_rdElementID" Class="ThemeMargin">
+                      <Image Caption="../rdTemplate/rdReportAuthor/border-right.png" ID="imgBorderRightFalse_rdElementID">
+                        <Action Type="Javascript" Javascript="ShowElement(this.id,'divBorderRightFalse_rdElementID,divBorderNoneTrue_rdElementID,divBorderAllTrue_rdElementID','Hide','');&#xD;&#xA;ShowElement(this.id,'divBorderRightTrue_rdElementID,divBorderNoneFalse_rdElementID,divBorderAllFalse_rdElementID','Show','');&#xD;&#xA;document.getElementById('txtBorderRight_rdElementID').setAttribute('value', 'True');&#xD;&#xA;document.getElementById('txtBorderAll_rdElementID').setAttribute('value', '');NavigateLink2('javascript:rdChangeFlag(\'isChanged_rdElementID\',\'isChanged_rdElementID\')','','false','','',null);" />
+                      </Image>
+                    </Division>
+                    <Division ID="divBorderRightTrue_rdElementID" ShowModes="None" Class="ThemeMargin">
+                      <Image ID="imgBorderRightTrue_rdElementID" Caption="../rdTemplate/rdReportAuthor/border-right-active.png">
+                        <Action Type="Javascript" Javascript="ShowElement(this.id,'divBorderRightTrue_rdElementID,divBorderNoneTrue_rdElementID,divBorderAllTrue_rdElementID','Hide','');&#xD;&#xA;ShowElement(this.id,'divBorderRightFalse_rdElementID,divBorderNoneFalse_rdElementID,divBorderAllFalse_rdElementID','Show','');&#xD;&#xA;document.getElementById('txtBorderRight_rdElementID').setAttribute('value', '');&#xD;&#xA;document.getElementById('txtBorderAll_rdElementID').setAttribute('value', '');NavigateLink2('javascript:rdChangeFlag(\'isChanged_rdElementID\',\'isChanged_rdElementID\')','','false','','',null);" />
+                      </Image>
+                    </Division>
+                    <Division ID="divBorderBottomFalse_rdElementID" Class="ThemeMargin">
+                      <Image Caption="../rdTemplate/rdReportAuthor/border-bottom.png" ID="imgBorderBottomFalse_rdElementID">
+                        <Action Type="Javascript" Javascript="ShowElement(this.id,'divBorderBottomFalse_rdElementID,divBorderNoneTrue_rdElementID,divBorderAllTrue_rdElementID','Hide','');&#xD;&#xA;ShowElement(this.id,'divBorderBottomTrue_rdElementID,divBorderNoneFalse_rdElementID,divBorderAllFalse_rdElementID','Show','');&#xD;&#xA;document.getElementById('txtBorderBottom_rdElementID').setAttribute('value', 'True');&#xD;&#xA;document.getElementById('txtBorderAll_rdElementID').setAttribute('value', '');NavigateLink2('javascript:rdChangeFlag(\'isChanged_rdElementID\',\'isChanged_rdElementID\')','','false','','',null);" />
+                      </Image>
+                    </Division>
+                    <Division ID="divBorderBottomTrue_rdElementID" ShowModes="None" Class="ThemeMargin">
+                      <Image ID="imgBorderBottomTrue_rdElementID" Caption="../rdTemplate/rdReportAuthor/border-bottom-active.png">
+                        <Action Type="Javascript" Javascript="ShowElement(this.id,'divBorderBottomTrue_rdElementID,divBorderNoneTrue_rdElementID,divBorderAllTrue_rdElementID','Hide','');&#xD;&#xA;ShowElement(this.id,'divBorderBottomFalse_rdElementID,divBorderNoneFalse_rdElementID,divBorderAllFalse_rdElementID','Show','');&#xD;&#xA;document.getElementById('txtBorderBottom_rdElementID').setAttribute('value', '');&#xD;&#xA;document.getElementById('txtBorderAll_rdElementID').setAttribute('value', '');NavigateLink2('javascript:rdChangeFlag(\'isChanged_rdElementID\',\'isChanged_rdElementID\')','','false','','',null);" />
+                      </Image>
+                    </Division>
+                    <Division ID="divBorderAllFalse_rdElementID" Class="ThemeMargin">
+                      <Image Caption="../rdTemplate/rdReportAuthor/border-all.png" ID="imgBorderAllFalse_rdElementID">
+                        <Action Type="Javascript" Javascript="ShowElement(this.id,'divBorderAllFalse_rdElementID,divBorderLeftTrue_rdElementID,divBorderTopTrue_rdElementID,divBorderRightTrue_rdElementID,divBorderBottomTrue_rdElementID,divBorderNoneTrue_rdElementID','Hide','');&#xD;&#xA;ShowElement(this.id,'divBorderAllTrue_rdElementID,divBorderLeftFalse_rdElementID,divBorderTopFalse_rdElementID,divBorderRightFalse_rdElementID,divBorderBottomFalse_rdElementID,divBorderNoneFalse_rdElementID','Show','');&#xD;&#xA;document.getElementById('txtBorderAll_rdElementID').setAttribute('value', 'True');&#xD;&#xA;document.getElementById('txtBorderLeft_rdElementID').setAttribute('value', '');&#xD;&#xA;document.getElementById('txtBorderTop_rdElementID').setAttribute('value', '');&#xD;&#xA;document.getElementById('txtBorderRight_rdElementID').setAttribute('value', '');&#xD;&#xA;document.getElementById('txtBorderBottom_rdElementID').setAttribute('value', '');&#xD;&#xA;NavigateLink2('javascript:rdChangeFlag(\'isChanged_rdElementID\',\'isChanged_rdElementID\')','','false','','',null);" />
+                      </Image>
+                    </Division>
+                    <Division ID="divBorderAllTrue_rdElementID" ShowModes="None" Class="ThemeMargin">
+                      <Image ID="imgBorderAllTrue_rdElementID" Caption="../rdTemplate/rdReportAuthor/border-all-active.png" />
+                    </Division>
+                    <InputHidden ID="txtBorderAll_rdElementID" />
+                    <InputHidden ID="txtBorderLeft_rdElementID" />
+                    <InputHidden ID="txtBorderTop_rdElementID" />
+                    <InputHidden ID="txtBorderRight_rdElementID" />
+                    <InputHidden ID="txtBorderBottom_rdElementID" />
+                  </Division>
+                </FieldsetBox>
+              </Column>
+            </Row>
+            <Row>
+              <Column Class="ThemeAlignRight">
+                <Button ID="btnSavePdfSettings_rdElementID" Caption="Set" Class="ThemeMargin ThemeLinkButton">
+                  <Action Type="Javascript" Javascript="ShowElement(this.id,'PdfSettingsPopup_rdElementID','Hide','');&#xD;&#xA;if(document.getElementById('isChanged_rdElementID').value == &quot;True&quot;)&#xD;&#xA;{&#xD;&#xA;	rdAjaxRequestWithFormVars('rdAjaxCommand=RefreshElement&amp;rdRefreshElementID=rdReportAuthorID,EditorFor_rdElementID&amp;rdReportAuthorAction=setSettings&amp;rdReportAuthorElementID=rdElementID&amp;rdReport=rdCurrentReport','false','',true,null,null,['','',''])&#xD;&#xA;}" />
+                </Button>
+              </Column>
+            </Row>
+          </Rows>
+        </Division>
+        <InputHidden ID="isChanged_rdElementID" />
+        <InputHidden ID="rdRaPdfCaption" DefaultValue="Download as PDF" />
+      </PopupPanel>
+    </DraggableDivision>
+  </Body>
+  <ReportFooter />
+  <ideTestParams />
+</Report>

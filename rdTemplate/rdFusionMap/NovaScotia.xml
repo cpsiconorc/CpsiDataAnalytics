@@ -1,0 +1,9 @@
+<AnimatedMapDataXML>
+  <MapSpec InternalID="CA.NS.CB" ShortName="CB" LongName="Cape Breton" />
+  <MapSpec InternalID="CA.NS.ET" ShortName="ET" LongName="Evangeline Trail" />
+  <MapSpec InternalID="CA.NS.GT" ShortName="GT" LongName="Glooscap Trail" />
+  <MapSpec InternalID="CA.NS.HD" ShortName="HD" LongName="Halifax Dartmouth" />
+  <MapSpec InternalID="CA.NS.LR" ShortName="LR" LongName="Lighthouse Route" />
+  <MapSpec InternalID="CA.NS.MD" ShortName="MD" LongName="Marine Drive" />
+  <MapSpec InternalID="CA.NS.ST" ShortName="ST" LongName="Sunrise Trail" />
+</AnimatedMapDataXML>

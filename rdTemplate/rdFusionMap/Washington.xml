@@ -1,0 +1,41 @@
+<AnimatedMapDataXML>
+  <MapSpec InternalID="001" ShortName="AD" LongName="Adams" />
+  <MapSpec InternalID="003" ShortName="AS" LongName="Asotin" />
+  <MapSpec InternalID="005" ShortName="BE" LongName="Benton" />
+  <MapSpec InternalID="007" ShortName="CH" LongName="Chelan" />
+  <MapSpec InternalID="009" ShortName="CM" LongName="Clallam" />
+  <MapSpec InternalID="011" ShortName="CA" LongName="Clark" />
+  <MapSpec InternalID="013" ShortName="CL" LongName="Columbia" />
+  <MapSpec InternalID="015" ShortName="CO" LongName="Cowlitz" />
+  <MapSpec InternalID="017" ShortName="DO" LongName="Douglas" />
+  <MapSpec InternalID="019" ShortName="FE" LongName="Ferry" />
+  <MapSpec InternalID="021" ShortName="FR" LongName="Franklin" />
+  <MapSpec InternalID="023" ShortName="GF" LongName="Garfield" />
+  <MapSpec InternalID="025" ShortName="GA" LongName="Grant" />
+  <MapSpec InternalID="027" ShortName="GR" LongName="Grays     Harbor" />
+  <MapSpec InternalID="029" ShortName="IS" LongName="Island" />
+  <MapSpec InternalID="031" ShortName="JE" LongName="Jefferson" />
+  <MapSpec InternalID="033" ShortName="KG" LongName="King" />
+  <MapSpec InternalID="035" ShortName="KT" LongName="Kitsap" />
+  <MapSpec InternalID="037" ShortName="KI" LongName="Kittitas" />
+  <MapSpec InternalID="039" ShortName="KL" LongName="Klickitat" />
+  <MapSpec InternalID="041" ShortName="LE" LongName="Lewis" />
+  <MapSpec InternalID="043" ShortName="LI" LongName="Lincoln" />
+  <MapSpec InternalID="045" ShortName="MA" LongName="Mason" />
+  <MapSpec InternalID="047" ShortName="OK" LongName="Okanogan" />
+  <MapSpec InternalID="049" ShortName="PA" LongName="Pacific" />
+  <MapSpec InternalID="051" ShortName="PE" LongName="Pend     Oreille" />
+  <MapSpec InternalID="053" ShortName="PI" LongName="Pierce" />
+  <MapSpec InternalID="055" ShortName="SJ" LongName="San Juan" />
+  <MapSpec InternalID="057" ShortName="SA" LongName="Skagit" />
+  <MapSpec InternalID="059" ShortName="SK" LongName="Skamania" />
+  <MapSpec InternalID="061" ShortName="SN" LongName="Snohomish" />
+  <MapSpec InternalID="063" ShortName="SP" LongName="Spokane" />
+  <MapSpec InternalID="065" ShortName="ST" LongName="Stevens" />
+  <MapSpec InternalID="067" ShortName="TH" LongName="Thurston" />
+  <MapSpec InternalID="069" ShortName="WK" LongName="Wahkiakum" />
+  <MapSpec InternalID="071" ShortName="WL" LongName="Walla walla" />
+  <MapSpec InternalID="073" ShortName="WA" LongName="Whatcom" />
+  <MapSpec InternalID="075" ShortName="WH" LongName="Whitman" />
+  <MapSpec InternalID="077" ShortName="YA" LongName="Yakima" />
+</AnimatedMapDataXML>

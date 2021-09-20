@@ -1,0 +1,22 @@
+<AnimatedMapDataXML>
+  <MapSpec InternalID="01" ShortName="AF" LongName="Afghanistan" />
+  <MapSpec InternalID="02" ShortName="BA" LongName="Bahrain" />
+  <MapSpec InternalID="03" ShortName="IN" LongName="Iran" />
+  <MapSpec InternalID="04" ShortName="IZ" LongName="Iraq" />
+  <MapSpec InternalID="05" ShortName="IS" LongName="Israel" />
+  <MapSpec InternalID="06" ShortName="JO" LongName="Jordan" />
+  <MapSpec InternalID="07" ShortName="KU" LongName="Kuwait" />
+  <MapSpec InternalID="08" ShortName="KG" LongName="Kyrgyzstan" />
+  <MapSpec InternalID="09" ShortName="LE" LongName="Lebanon" />
+  <MapSpec InternalID="10" ShortName="MU" LongName="Oman" />
+  <MapSpec InternalID="11" ShortName="PK" LongName="Pakistan" />
+  <MapSpec InternalID="12" ShortName="QA" LongName="Qatar" />
+  <MapSpec InternalID="13" ShortName="SA" LongName="SaudiArabia" />
+  <MapSpec InternalID="14" ShortName="SY" LongName="Syria" />
+  <MapSpec InternalID="15" ShortName="TI" LongName="Tajikistan" />
+  <MapSpec InternalID="16" ShortName="TU" LongName="Turkey" />
+  <MapSpec InternalID="17" ShortName="TX" LongName="Turkmenistan" />
+  <MapSpec InternalID="18" ShortName="AE" LongName="UnitedArabEmirates" />
+  <MapSpec InternalID="19" ShortName="UZ" LongName="Uzbekistan" />
+  <MapSpec InternalID="20" ShortName="YM" LongName="Yemen" />
+</AnimatedMapDataXML>

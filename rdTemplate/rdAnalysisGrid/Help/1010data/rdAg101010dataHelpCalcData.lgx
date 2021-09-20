@@ -1,0 +1,36 @@
+﻿<DataLayer Type="Static">
+  <StaticDataRow Name="Abs" Description="Returns the absolute value of a number." Syntax="Abs(number)" Notes="The absolute value of -5 is 5." />
+  <StaticDataRow Name="ColUnion" Description="Returns a string consisting of the union of values from a given set of columns concatenated together using the specified separator, sorted in ascending order." Syntax="ColUnion('column1 column2 column3',delimiter)" Notes="Numeric values are automatically converted to text." />
+  <StaticDataRow Name="Day" Description="Returns the day of the month.  Possible return values are from 1-31." Syntax="Day(date1)" Notes="" />
+  <StaticDataRow Name="DayOfWk" Description="Returns the integer value corresponding to the day of the week of a date-related value. Possible return values are 0-6." Syntax="DayOfWk(date)" Notes="0 = Monday" />
+  <StaticDataRow Name="Days" Description="Returns the number of days between two date-related values." Syntax="Days(date1,date2)" Notes="" />
+  <StaticDataRow Name="Firstdate" Description="Returns the date of the first day of the period specified by a date-related value." Syntax="Firstdate(date)" Notes="A value in the form month, quarter or year" />
+  <StaticDataRow Name="Hour" Description="Returns the hour of the day.  Possible return values are 0-23." Syntax="Hour(date)" Notes="" />
+  <StaticDataRow Name="Int" Description="Returns the largest integer less than or equal to the given value, expressed as an integer number." Notes="" Syntax="Int(floatValue)" />
+  <StaticDataRow Name="Julian" Description="Compute the number of days until the Julian epoch date of 2035" Syntax="Julian(date)" Notes="Only dates considered  See the following for more information https://www2.1010data.com/documentationcenter/prod/1010dataReferenceManual/index_frames.html" />
+  <StaticDataRow Name="Lastdate" Description="Returns the date of the last day of the period specified by a date-related value." Syntax="Lastdate(date)" Notes="A value in the form month, quarter or year" />
+  <StaticDataRow Name="LowerCase" Description="Converts all characters to lower case." Syntax="LowerCase(text)" Notes="" />
+  <StaticDataRow Name="Left" Description="Returns the &quot;length&quot; number of characters from the left side of the input text." Syntax="Left(text,length)" Notes="" />
+  <StaticDataRow Name="Max" Description="Max returns the maximum value of column" Syntax="Max(val1)" Notes="Returns an integer or decimal number" />
+  <StaticDataRow Name="Min" Description="Min returns the minimum value of column" Syntax="Min(val1)" Notes="Returns an integer or decimal number" />
+  <StaticDataRow Name="Minute" Description="Returns the minute of the hour.  Possible return values are 0-59." Syntax="Minute(date)" Notes="" />
+  <StaticDataRow Name="Month" Description="Returns month portion of a date" Syntax="Month(date)" Notes="" />
+  <StaticDataRow Name="Power" Description="Exponentiation: Power( m, n ). Function returns m raised to the nth power." Syntax="Power(m,n)" Notes=""/>
+  <StaticDataRow Name="Periods" Description="Returns the number of days, months, quarters, or years between two date-related values, depending on the types of those values." Syntax="Periods(date1,date2)" Notes="A date, month, quarter, year or datetime can be specified" />
+  <StaticDataRow Name="Quarter" Description="Returns the quarter corresponding to a date-related value." Syntax="Quarter(date)" Notes="" />
+  <StaticDataRow Name="Real" Description="Returns the given value expressed as a decimal number." Syntax="Real(value)" Notes="" />
+  <StaticDataRow Name="Repstr" Description="Returns the given string with substrings replaced based on a given list of string pairs." Syntax="Repstr(column,'value1 value2')" Notes="The values to be replaced have to be enclosed in single quotes. If a string literal is used then two single quotes have to enclose the string on both sides(i.e. '''oldval'' ''newval''')." />
+  <StaticDataRow Name="Right" Description="Returns the &quot;length&quot; number of characters from the right side of the input text." Syntax="RIGHT(text,length)" Notes="" />
+  <StaticDataRow Name="Round" Description="Round X to nearest multiple of Y" Syntax="Round(numeric_expression, multiple)" Notes="X=149.456, Y=.01, Result=149.46    149.456, Y=5,   Result=150" />
+  <StaticDataRow Name="sDayofWk" Description="Returns the abbreviated name of the day corresponding to the weekday number." Syntax="sDayOfWk(date)" Notes="" />
+  <StaticDataRow Name="Second" Description="Returns the seconds portion of a time-related value." Syntax="Second(time)" Notes="Possible values are 0-59" />
+  <StaticDataRow Name="Shift" Description="Adds or subtracts the number of days from a date or datetime" Syntax="Shift(date,number of days)" Notes="More help available at https://www2.1010data.com/documentationcenter/prod/1010dataReferenceManual/index_frames.html" />
+  <StaticDataRow Name="Splice" Description="Returns a string consisting of the list of given values concatenated together using the specified separator." Syntax="Splice('value1 value2',delimiter)" Notes="The values to be concatenated have to be enclosed in single quotes. If no delimeter is desired then supply an empty string with two single quotes" />
+  <StaticDataRow Name="Sqrt" Description="Returns the square root of a number." Syntax="Sqrt(number)" Notes="" />
+  <StaticDataRow Name="StrReverse" Description="Returns the characters, or the elements delimited by a particular value, of a given string in reverse." Syntax="StrReverse(text, delimiter)" Notes="value 'apple,banana,cherimoya  delimiter ',' strreverse(value, delimiter)  'cherimoya,banana,apple'" />
+  <StaticDataRow Name="StrSplitPos" Description="Returns the position of a certain element delimited by a particular value within a given string." Syntax="strsplitpos(text,text_to_search,instance)" Notes="To get the first instance specify -1 in the instance field." />
+  <StaticDataRow Name="StrTrim" Description="Returns the given string with certain characters trimmed from either or both ends." Syntax="StrTrim(X;Y;C;D)" Notes="A simple example to remove leading and trailing spaces would be strtrim(text,' ',0,0)" />
+  <StaticDataRow Name="UpperCase" Description="Converts all characters to upper case." Syntax="UpperCase(text)" Notes="" />
+  <StaticDataRow Name="Width" Description="Returns the string length of the input value." Syntax="Width(text)" Notes="" />
+  <StaticDataRow Name="Year" Description="Return the year portion of a date" Syntax="Year(date)" Notes="" />
+</DataLayer>

@@ -1,0 +1,20 @@
+<AnimatedMapDataXML>
+  <MapSpec InternalID="01" ShortName="AN" LongName="Al-Anbar" />
+  <MapSpec InternalID="02" ShortName="BA" LongName="Al-Basrah" />
+  <MapSpec InternalID="03" ShortName="MU" LongName="Al-Muthannā" />
+  <MapSpec InternalID="04" ShortName="QA" LongName="Al-Qādisiyyah" />
+  <MapSpec InternalID="17" ShortName="NA" LongName="An-Najaf" />
+  <MapSpec InternalID="11" ShortName="AR" LongName="Arbīl" />
+  <MapSpec InternalID="05" ShortName="SU" LongName="As-Sulaymāniyyah" />
+  <MapSpec InternalID="13" ShortName="TS" LongName="At-Ta'mim" />
+  <MapSpec InternalID="06" ShortName="BB" LongName="Bābil" />
+  <MapSpec InternalID="07" ShortName="BG" LongName="Baghdād" />
+  <MapSpec InternalID="08" ShortName="DA" LongName="Dahūk" />
+  <MapSpec InternalID="09" ShortName="DQ" LongName="Dhī Qār" />
+  <MapSpec InternalID="10" ShortName="DI" LongName="Diyālā" />
+  <MapSpec InternalID="12" ShortName="KA" LongName="Karbala" />
+  <MapSpec InternalID="14" ShortName="MA" LongName="Maysān" />
+  <MapSpec InternalID="15" ShortName="NI" LongName="Nīnawā" />
+  <MapSpec InternalID="18" ShortName="SD" LongName="Salāh ad-Dīn" />
+  <MapSpec InternalID="16" ShortName="WA" LongName="Wāsit" />
+</AnimatedMapDataXML>

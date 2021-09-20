@@ -1,0 +1,16 @@
+<AnimatedMapDataXML>
+  <MapSpec InternalID="01" ShortName="AH" LongName="Ahuachapán" />
+  <MapSpec InternalID="02" ShortName="CA" LongName="Cabañas" />
+  <MapSpec InternalID="03" ShortName="CH" LongName="Chalatenango" />
+  <MapSpec InternalID="04" ShortName="CU" LongName="Cuscatlán" />
+  <MapSpec InternalID="05" ShortName="LI" LongName="La Libertad" />
+  <MapSpec InternalID="06" ShortName="PA" LongName="La Paz" />
+  <MapSpec InternalID="07" ShortName="UN" LongName="La Unión" />
+  <MapSpec InternalID="08" ShortName="MO" LongName="Morazán" />
+  <MapSpec InternalID="09" ShortName="SM" LongName="San Miguel" />
+  <MapSpec InternalID="10" ShortName="SS" LongName="San Salvador" />
+  <MapSpec InternalID="11" ShortName="SA" LongName="Santa Ana" />
+  <MapSpec InternalID="12" ShortName="SV" LongName="San Vicente" />
+  <MapSpec InternalID="13" ShortName="SO" LongName="Sonsonate" />
+  <MapSpec InternalID="14" ShortName="US" LongName="Usulután" />
+</AnimatedMapDataXML>

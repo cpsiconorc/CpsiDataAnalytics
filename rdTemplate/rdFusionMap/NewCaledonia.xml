@@ -1,0 +1,35 @@
+<AnimatedMapDataXML>
+  <MapSpec InternalID="NC.SU.BP" ShortName="BP" LongName="Boulouparis" />
+  <MapSpec InternalID="NC.SU.BR" ShortName="BR" LongName="Bourail" />
+  <MapSpec InternalID="NC.NO.BE" ShortName="BE" LongName="Bélep" />
+  <MapSpec InternalID="NC.NO.CA" ShortName="CA" LongName="Canala" />
+  <MapSpec InternalID="NC.SU.DU" ShortName="DU" LongName="Dumbéa" />
+  <MapSpec InternalID="NC.SU.FA" ShortName="FA" LongName="Farino" />
+  <MapSpec InternalID="NC.NO.HI" ShortName="HI" LongName="Hienghène" />
+  <MapSpec InternalID="NC.NO.HO" ShortName="HO" LongName="Houaïlou" />
+  <MapSpec InternalID="NC.NO.KG" ShortName="KG" LongName="Kaala-Gomen" />
+  <MapSpec InternalID="NC.NO.KN" ShortName="KN" LongName="Koné" />
+  <MapSpec InternalID="NC.NO.KA" ShortName="KA" LongName="Kouaoua" />
+  <MapSpec InternalID="NC.NO.KM" ShortName="KM" LongName="Koumac" />
+  <MapSpec InternalID="NC.SU.IP" ShortName="IP" LongName="L’Île-des-Pins" />
+  <MapSpec InternalID="NC.SU.LF" ShortName="LF" LongName="La Foa" />
+  <MapSpec InternalID="NC.IL.LI" ShortName="LI" LongName="Lifou" />
+  <MapSpec InternalID="NC.IL.MA" ShortName="MA" LongName="Maré" />
+  <MapSpec InternalID="NC.SU.MO" ShortName="MO" LongName="Moindou" />
+  <MapSpec InternalID="NC.SU.MD" ShortName="MD" LongName="Mont-Dore" />
+  <MapSpec InternalID="NC.SU.NO" ShortName="NO" LongName="Nouméa" />
+  <MapSpec InternalID="NC.IL.OV" ShortName="OV" LongName="Ouvéa" />
+  <MapSpec InternalID="NC.NO.OG" ShortName="OG" LongName="Ouégoa" />
+  <MapSpec InternalID="NC.SU.PA" ShortName="PA" LongName="Païta" />
+  <MapSpec InternalID="NC.NO.PD" ShortName="PD" LongName="Poindimié" />
+  <MapSpec InternalID="NC.NO.PH" ShortName="PH" LongName="Ponérihouen" />
+  <MapSpec InternalID="NC.NO.PT" ShortName="PT" LongName="Pouembout" />
+  <MapSpec InternalID="NC.NO.PM" ShortName="PM" LongName="Poum" />
+  <MapSpec InternalID="NC.NO.PB" ShortName="PB" LongName="Pouébo" />
+  <MapSpec InternalID="NC.NO.PY" ShortName="PY" LongName="Poya" />
+  <MapSpec InternalID="NC.SU.SA" ShortName="SA" LongName="Sarraméa" />
+  <MapSpec InternalID="NC.SU.TH" ShortName="TH" LongName="Thio" />
+  <MapSpec InternalID="NC.NO.TO" ShortName="TO" LongName="Touho" />
+  <MapSpec InternalID="NC.NO.VO" ShortName="VO" LongName="Voh" />
+  <MapSpec InternalID="NC.SU.YA" ShortName="YA" LongName="Yaté" />
+</AnimatedMapDataXML>

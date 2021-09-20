@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report ID="rdDashboardEditViz" Class="rdAgBackground" >
+  <Body>
+    <AnalysisChart ID="rdMetadataUpdateAcViz" />
+  </Body>
+</Report>

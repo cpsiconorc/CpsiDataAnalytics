@@ -1,0 +1,7 @@
+<AnimatedMapDataXML>
+  <MapSpec InternalID="001" ShortName="HA" LongName="Hawaii" />
+  <MapSpec InternalID="003" ShortName="HO" LongName="Honolulu" />
+  <MapSpec InternalID="005" ShortName="KA" LongName="Kalawao" />
+  <MapSpec InternalID="007" ShortName="KU" LongName="Kauai" />
+  <MapSpec InternalID="009" ShortName="MA" LongName="Maui" />
+</AnimatedMapDataXML>

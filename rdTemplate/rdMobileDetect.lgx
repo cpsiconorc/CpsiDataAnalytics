@@ -1,0 +1,14 @@
+<Report ID="rdMobileDetect">
+  <DefaultRequestParams rdRedirectReport="MissingParameter-rdRedirectReport" />
+  <Body>
+    <Division ShowModes="None">
+      <Button ID="rdButtonRedirect">
+        <Action Type="Report">
+          <Target Type="Report" Report="rdRequestedReport" />
+          <LinkParams rdRequestForwarding="Cache" rdBookmarkID="@Request.rdBookmarkID~" />
+        </Action>
+      </Button>
+    </Division>
+    <IncludeScriptFile IncludedScriptFile="rdTemplate/rdMobileDetect.js" />
+  </Body>
+</Report>

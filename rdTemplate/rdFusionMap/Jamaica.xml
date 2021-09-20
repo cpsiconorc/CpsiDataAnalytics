@@ -1,0 +1,16 @@
+<AnimatedMapDataXML>
+  <MapSpec InternalID="01" ShortName="CL" LongName="Clarendon" />
+  <MapSpec InternalID="02" ShortName="HA" LongName="Hanover" />
+  <MapSpec InternalID="17" ShortName="KI" LongName="Kingston" />
+  <MapSpec InternalID="04" ShortName="MA" LongName="Manchester" />
+  <MapSpec InternalID="07" ShortName="PO" LongName="Portland" />
+  <MapSpec InternalID="08" ShortName="SD" LongName="Saint Andrew" />
+  <MapSpec InternalID="09" ShortName="SN" LongName="Saint Ann" />
+  <MapSpec InternalID="10" ShortName="SC" LongName="Saint Catherine" />
+  <MapSpec InternalID="11" ShortName="SE" LongName="Saint Elizabeth" />
+  <MapSpec InternalID="12" ShortName="SJ" LongName="Saint James" />
+  <MapSpec InternalID="13" ShortName="SM" LongName="Saint Mary" />
+  <MapSpec InternalID="14" ShortName="ST" LongName="Saint Thomas" />
+  <MapSpec InternalID="15" ShortName="TR" LongName="Trelawny" />
+  <MapSpec InternalID="16" ShortName="WE" LongName="Westmoreland" />
+</AnimatedMapDataXML>

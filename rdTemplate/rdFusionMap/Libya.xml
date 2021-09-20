@@ -1,0 +1,34 @@
+<AnimatedMapDataXML>
+  <MapSpec InternalID="LY.AJ" ShortName="AJ" LongName="Ajdabiya" />
+  <MapSpec InternalID="LY.BU" ShortName="BU" LongName="Al Butnan" />
+  <MapSpec InternalID="LY.HZ" ShortName="HZ" LongName="Al Hizam al Akhdar" />
+  <MapSpec InternalID="LY.JA" ShortName="JA" LongName="Al Jabal al Akhdar" />
+  <MapSpec InternalID="LY.JI" ShortName="JI" LongName="Al Jfara" />
+  <MapSpec InternalID="LY.JU" ShortName="JU" LongName="Al Jufrah" />
+  <MapSpec InternalID="LY.KF" ShortName="KF" LongName="Al Kufrah" />
+  <MapSpec InternalID="LY.MB" ShortName="MB" LongName="Al Margab" />
+  <MapSpec InternalID="LY.MJ" ShortName="MJ" LongName="Al Marj" />
+  <MapSpec InternalID="LY.QB" ShortName="QB" LongName="Al Qubbah" />
+  <MapSpec InternalID="LY.WA" ShortName="WA" LongName="Al Wahah" />
+  <MapSpec InternalID="LY.NQ" ShortName="NQ" LongName="An Nuqat Al Khams" />
+  <MapSpec InternalID="LY.SH" ShortName="SH" LongName="Ash Shati" />
+  <MapSpec InternalID="LY.ZA" ShortName="ZA" LongName="Az Zawiyah" />
+  <MapSpec InternalID="LY.BW" ShortName="BW" LongName="Bani Walid" />
+  <MapSpec InternalID="LY.BA" ShortName="BA" LongName="Benghazi" />
+  <MapSpec InternalID="LY.DR" ShortName="DR" LongName="Darnah" />
+  <MapSpec InternalID="LY.GD" ShortName="GD" LongName="Ghadamis" />
+  <MapSpec InternalID="LY.GR" ShortName="GR" LongName="Gharyan" />
+  <MapSpec InternalID="LY.GT" ShortName="GT" LongName="Ghat" />
+  <MapSpec InternalID="LY.MI" ShortName="MI" LongName="Misratah" />
+  <MapSpec InternalID="LY.MZ" ShortName="MZ" LongName="Mizdah" />
+  <MapSpec InternalID="LY.MQ" ShortName="MQ" LongName="Murzuq" />
+  <MapSpec InternalID="LY.NL" ShortName="NL" LongName="Nalut" />
+  <MapSpec InternalID="LY.SB" ShortName="SB" LongName="Sabha" />
+  <MapSpec InternalID="LY.SS" ShortName="SS" LongName="Sabratah Surman" />
+  <MapSpec InternalID="LY.SR" ShortName="SR" LongName="Surt" />
+  <MapSpec InternalID="LY.TN" ShortName="TN" LongName="Tajura Wa an Nawahi Al Arba" />
+  <MapSpec InternalID="LY.TB" ShortName="TB" LongName="Tarabulus" />
+  <MapSpec InternalID="LY.TM" ShortName="TM" LongName="Tarhunah Masallatah" />
+  <MapSpec InternalID="LY.WD" ShortName="WD" LongName="Wadi Al Hayat" />
+  <MapSpec InternalID="LY.YJ" ShortName="YJ" LongName="Yafran-Jadu" />
+</AnimatedMapDataXML>

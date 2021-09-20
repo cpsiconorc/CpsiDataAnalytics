@@ -1,0 +1,24 @@
+<AnimatedMapDataXML>
+  <MapSpec InternalID="002" ShortName="AL" LongName="Alsace" />
+  <MapSpec InternalID="003" ShortName="AQ" LongName="Aquitaine" />
+  <MapSpec InternalID="004" ShortName="AU" LongName="Auvergne" />
+  <MapSpec InternalID="005" ShortName="BR" LongName="Bretagne" />
+  <MapSpec InternalID="006" ShortName="BU" LongName="Bourgogne" />
+  <MapSpec InternalID="007" ShortName="CE" LongName="Centre" />
+  <MapSpec InternalID="008" ShortName="CH" LongName="Champagne-Ardenne" />
+  <MapSpec InternalID="009" ShortName="CO" LongName="Corse" />
+  <MapSpec InternalID="010" ShortName="FR" LongName="Franche-Comté" />
+  <MapSpec InternalID="011" ShortName="LL" LongName="Ile-de-France" />
+  <MapSpec InternalID="012" ShortName="LA" LongName="Languedoc-Roussillon" />
+  <MapSpec InternalID="013" ShortName="LI" LongName="Limousin" />
+  <MapSpec InternalID="014" ShortName="LO" LongName="Lorraine" />
+  <MapSpec InternalID="015" ShortName="MI" LongName="Midi-Pyrénées" />
+  <MapSpec InternalID="016" ShortName="NO" LongName="Nord-Pas-de-Calais" />
+  <MapSpec InternalID="017" ShortName="NR" LongName="Basse-Normandie" />
+  <MapSpec InternalID="018" ShortName="PD" LongName="Pays de    la Loire" />
+  <MapSpec InternalID="019" ShortName="PI" LongName="Picardie" />
+  <MapSpec InternalID="020" ShortName="PC" LongName="Poitou-Charentes" />
+  <MapSpec InternalID="021" ShortName="PR" LongName="Provence-Alpes-Côte    D'Azur" />
+  <MapSpec InternalID="022" ShortName="RH" LongName="Rhône-Alpes" />
+  <MapSpec InternalID="023" ShortName="HN" LongName="Haute-Normandie" />
+</AnimatedMapDataXML>

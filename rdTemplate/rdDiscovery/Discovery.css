@@ -1,0 +1,30 @@
+﻿.hideViz{
+    display: none;
+}
+
+/*hide save state button form now until it get implemented
+.thinkspace-save button[id^=thinkSpaceSave] {
+    display: none;
+}*/
+
+#rdClassicSaveStateButton tr.rdPopupContent td {
+    padding: 10px;
+}
+
+#rdClassicSaveStateButton #rdPopupContent
+#saveDiscoveryName {
+    margin-bottom: 15px;
+}
+
+
+#rdTsActionBookmark {
+    display: none;
+}
+
+#thinkspacewait {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    margin-left: -64px;
+    margin-top: -64px;
+}

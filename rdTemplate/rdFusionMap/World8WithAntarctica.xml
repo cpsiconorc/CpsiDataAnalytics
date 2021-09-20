@@ -1,0 +1,11 @@
+<AnimatedMapDataXML>
+  <MapSpec InternalID="3" ShortName="AF" LongName="Africa" />
+  <MapSpec InternalID="9" ShortName="AT" LongName="Antarctica" />
+  <MapSpec InternalID="1" ShortName="AS" LongName="Asia" />
+  <MapSpec InternalID="6" ShortName="CA" LongName="Central America" />
+  <MapSpec InternalID="2" ShortName="EU" LongName="Europe" />
+  <MapSpec InternalID="8" ShortName="ME" LongName="Middle East" />
+  <MapSpec InternalID="4" ShortName="NA" LongName="North America" />
+  <MapSpec InternalID="7" ShortName="OC" LongName="Oceania" />
+  <MapSpec InternalID="5" ShortName="SA" LongName="South America" />
+</AnimatedMapDataXML>

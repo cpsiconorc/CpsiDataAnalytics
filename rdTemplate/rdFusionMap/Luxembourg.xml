@@ -1,0 +1,14 @@
+<AnimatedMapDataXML>
+  <MapSpec InternalID="02" ShortName="CA" LongName="Capellen" />
+  <MapSpec InternalID="06" ShortName="CL" LongName="Clervaux" />
+  <MapSpec InternalID="07" ShortName="DI" LongName="Diekirch" />
+  <MapSpec InternalID="11" ShortName="EC" LongName="Echternach" />
+  <MapSpec InternalID="03" ShortName="ES" LongName="Esch-sur-Alzette" />
+  <MapSpec InternalID="12" ShortName="GR" LongName="Grevenmacher" />
+  <MapSpec InternalID="04" ShortName="LU" LongName="Luxembourg" />
+  <MapSpec InternalID="05" ShortName="ME" LongName="Mersch" />
+  <MapSpec InternalID="08" ShortName="RE" LongName="Redange" />
+  <MapSpec InternalID="13" ShortName="RM" LongName="Remich" />
+  <MapSpec InternalID="10" ShortName="VI" LongName="Vianden" />
+  <MapSpec InternalID="09" ShortName="WI" LongName="Wiltz" />
+</AnimatedMapDataXML>

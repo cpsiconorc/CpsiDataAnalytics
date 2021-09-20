@@ -1,0 +1,44 @@
+<AnimatedMapDataXML>
+  <MapSpec InternalID="01" ShortName="AB" LongName="Alba" />
+  <MapSpec InternalID="02" ShortName="AR" LongName="Arad" />
+  <MapSpec InternalID="03" ShortName="AG" LongName="Argeş" />
+  <MapSpec InternalID="04" ShortName="BC" LongName="Bacău" />
+  <MapSpec InternalID="05" ShortName="BH" LongName="Bihor" />
+  <MapSpec InternalID="06" ShortName="BN" LongName="Bistriţa-Năsăud" />
+  <MapSpec InternalID="07" ShortName="BT" LongName="Botoşani" />
+  <MapSpec InternalID="08" ShortName="BR" LongName="Brăila" />
+  <MapSpec InternalID="09" ShortName="BV" LongName="Braşov" />
+  <MapSpec InternalID="10" ShortName="BI" LongName="Bucharest" />
+  <MapSpec InternalID="11" ShortName="BZ" LongName="Buzău" />
+  <MapSpec InternalID="12" ShortName="CS" LongName="Caraş-Severin" />
+  <MapSpec InternalID="13" ShortName="CJ" LongName="Cluj" />
+  <MapSpec InternalID="14" ShortName="CT" LongName="Constanţa" />
+  <MapSpec InternalID="15" ShortName="CV" LongName="Covasna" />
+  <MapSpec InternalID="16" ShortName="DB" LongName="Dâmboviţa" />
+  <MapSpec InternalID="17" ShortName="DJ" LongName="Dolj" />
+  <MapSpec InternalID="18" ShortName="GL" LongName="Galaţi" />
+  <MapSpec InternalID="19" ShortName="GJ" LongName="Gorj" />
+  <MapSpec InternalID="20" ShortName="HR" LongName="Harghita" />
+  <MapSpec InternalID="21" ShortName="HD" LongName="Hunedoara" />
+  <MapSpec InternalID="22" ShortName="IL" LongName="Ialomiţa" />
+  <MapSpec InternalID="23" ShortName="IS" LongName="Iaşi" />
+  <MapSpec InternalID="25" ShortName="MM" LongName="Maramureş" />
+  <MapSpec InternalID="26" ShortName="MH" LongName="Mehedinţi" />
+  <MapSpec InternalID="27" ShortName="MS" LongName="Mureş" />
+  <MapSpec InternalID="28" ShortName="NT" LongName="Neamţ" />
+  <MapSpec InternalID="29" ShortName="OT" LongName="Olt" />
+  <MapSpec InternalID="30" ShortName="PH" LongName="Prahova" />
+  <MapSpec InternalID="31" ShortName="SJ" LongName="Sălaj" />
+  <MapSpec InternalID="32" ShortName="SM" LongName="Satu Mare" />
+  <MapSpec InternalID="33" ShortName="SB" LongName="Sibiu" />
+  <MapSpec InternalID="34" ShortName="SV" LongName="Suceava" />
+  <MapSpec InternalID="35" ShortName="TR" LongName="Teleorman" />
+  <MapSpec InternalID="36" ShortName="TM" LongName="Timiş" />
+  <MapSpec InternalID="37" ShortName="TL" LongName="Tulcea" />
+  <MapSpec InternalID="38" ShortName="VS" LongName="Vaslui" />
+  <MapSpec InternalID="39" ShortName="VL" LongName="Vâlcea" />
+  <MapSpec InternalID="40" ShortName="VN" LongName="Vrancea" />
+  <MapSpec InternalID="41" ShortName="CL" LongName="Călăraşi" />
+  <MapSpec InternalID="42" ShortName="GR" LongName="Giurgiu" />
+  <MapSpec InternalID="43" ShortName="IF" LongName="Ilfov" />
+</AnimatedMapDataXML>

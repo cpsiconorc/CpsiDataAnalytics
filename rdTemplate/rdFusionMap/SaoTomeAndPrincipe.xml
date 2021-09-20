@@ -1,0 +1,9 @@
+<AnimatedMapDataXML>
+  <MapSpec InternalID="ST.AG" ShortName="AG" LongName="Agua Grande" />
+  <MapSpec InternalID="ST.CG" ShortName="CG" LongName="Cantagalo" />
+  <MapSpec InternalID="ST.CU" ShortName="CU" LongName="Caue" />
+  <MapSpec InternalID="ST.LE" ShortName="LE" LongName="Lemba" />
+  <MapSpec InternalID="ST.LO" ShortName="LO" LongName="Lobata" />
+  <MapSpec InternalID="ST.MZ" ShortName="MZ" LongName="Me Zoxi" />
+  <MapSpec InternalID="ST.PA" ShortName="PA" LongName="Pague" />
+</AnimatedMapDataXML>

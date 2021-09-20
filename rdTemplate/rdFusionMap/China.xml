@@ -1,0 +1,29 @@
+<AnimatedMapDataXML>
+  <MapSpec InternalID="01" ShortName="AH" LongName="Anhui" />
+  <MapSpec InternalID="07" ShortName="FJ" LongName="Fujian" />
+  <MapSpec InternalID="15" ShortName="GS" LongName="Gansu" />
+  <MapSpec InternalID="30" ShortName="GD" LongName="Guangdong" />
+  <MapSpec InternalID="18" ShortName="GZ" LongName="Guizhou" />
+  <MapSpec InternalID="31" ShortName="HA" LongName="Hainan" />
+  <MapSpec InternalID="10" ShortName="HB" LongName="Hebei" />
+  <MapSpec InternalID="08" ShortName="HL" LongName="Heilongjiang" />
+  <MapSpec InternalID="09" ShortName="HE" LongName="Henan" />
+  <MapSpec InternalID="12" ShortName="HU" LongName="Hubei" />
+  <MapSpec InternalID="11" ShortName="HN" LongName="Hunan" />
+  <MapSpec InternalID="04" ShortName="JS" LongName="Jiangsu" />
+  <MapSpec InternalID="03" ShortName="JX" LongName="Jiangxi" />
+  <MapSpec InternalID="05" ShortName="JL" LongName="Jilin" />
+  <MapSpec InternalID="19" ShortName="LN" LongName="Liaoning" />
+  <MapSpec InternalID="06" ShortName="QH" LongName="Qinghai" />
+  <MapSpec InternalID="26" ShortName="SA" LongName="Shaanxi" />
+  <MapSpec InternalID="25" ShortName="SD" LongName="Shandong" />
+  <MapSpec InternalID="24" ShortName="SX" LongName="Shanxi" />
+  <MapSpec InternalID="32" ShortName="SC" LongName="Sichuan" />
+  <MapSpec InternalID="29" ShortName="YN" LongName="Yunnan" />
+  <MapSpec InternalID="02" ShortName="ZJ" LongName="Zhejiang" />
+  <MapSpec InternalID="36" ShortName="TB" LongName="Tibet" />
+  <MapSpec InternalID="20" ShortName="NM" LongName="Nei Mongol" />
+  <MapSpec InternalID="13" ShortName="XJ" LongName="Xinjiang" />
+  <MapSpec InternalID="16" ShortName="GX" LongName="Guangxi" />
+  <MapSpec InternalID="21" ShortName="NX" LongName="Ningxia Hui" />
+</AnimatedMapDataXML>

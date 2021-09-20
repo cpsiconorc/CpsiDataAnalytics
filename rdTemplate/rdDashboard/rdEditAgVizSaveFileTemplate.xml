@@ -1,0 +1,41 @@
+﻿<AnalysisGrid>
+  <Note Note="This is an AG SaveFile." />
+  <Note Note="It's the starting point for restoring an AnalysisGrid to match an AG-built table in a Dashboard. Values and data rows get added in rdDashboardEditAgViz.vb." />
+
+  <InputRadioButtons ID="rdAgPaging" DefaultValue="ShowPaging" />
+  <InputText ID="rdAgRowsPerPage" DefaultValue="20" />
+
+  <DataTable ID="dtOrders">
+    <DataLayer ID="dlOrders" Type="Static"/>
+  </DataTable>
+  <xxxxxxxxxxxxInputSelectList ID="rdAgOrderColumn">
+    <xxxxxxxxxxxxDataLayer ID="dlOrderColumns" Type="Static"/>
+  </xxxxxxxxxxxxInputSelectList>
+  <DataTable ID="dtGroups" >
+    <DataLayer ID="dlGroups" Type="Static"/>
+  </DataTable>
+  <xxxxxxxxxxxxInputSelectList ID="rdAgGroupColumn">
+    <xxxxxxxxxxxxDataLayer ID="dlGroupColumns" Type="Static"/>
+  </xxxxxxxxxxxxInputSelectList>
+  <DataTable ID="dtAggrs" >
+    <DataLayer ID="dlAggrs" Type="Static"/>
+  </DataTable>
+  <xxxxxxxxxxxxInputSelectList ID="rdAgAggrColumn">
+    <xxxxxxxxxxxxDataLayer ID="dlAggrColumns" Type="Static" />
+  </xxxxxxxxxxxxInputSelectList>
+  <DataTable ID="dtCustAggs">
+    <DataLayer ID="dlCustAggs" Type="Static" />
+  </DataTable>
+
+  <InputCheckbox ID="rdAgHideFunctionNamesCheckbox"/>
+  <InputSelectList ID="rdAgAggrRowPosition"/>
+
+  <DataTable ID="dtCalcColumns" >
+    <DataLayer ID="dlCalcColumns" Type="Static">
+    </DataLayer>
+  </DataTable>
+  
+  <SavedQueryBuilder />
+  
+
+</AnalysisGrid>

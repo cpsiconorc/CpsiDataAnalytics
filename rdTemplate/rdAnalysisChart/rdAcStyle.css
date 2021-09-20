@@ -1,0 +1,151 @@
+.rdAc
+{ 
+	font-size: 11px;
+	white-space: nowrap;
+}
+.rdAc TABLE
+{ 
+	font-size: 11px;
+	white-space: nowrap;
+}
+
+.rdAc IMG 	{
+	border: 0;
+	}
+
+.rdAc A:link	{	
+	text-decoration:none;
+	}	
+
+.rdAcCaptionRow
+{
+    background-image: url(rd666666.png);
+    font-size: 14px; 
+    font-weight:bold;	
+	color: #FFFFFF;
+	height:26px;
+}
+
+.rdAcContentRow {
+    background-color: #F8F8F8;
+	vertical-align: top;
+	border: 1px solid #C1C1C1;
+}
+
+.rdAcAlignRight
+{
+	float: right;
+}
+
+.rdAcCommand
+{
+	font-weight:normal;
+	color:#555555;
+	text-decoration: none;
+    background-image: url(../rdButton.png);
+    background-color: #EAEAEA;
+	border-top: 1px solid #DDDDDD;
+	border-bottom: 1px solid #777777;
+	border-right: 1px solid #777777;
+	border-left: 1px solid #DDDDDD;
+	padding-right: 3px;
+	padding-left: 3px;
+	padding-top: 2px;
+	padding-bottom: 2px;
+	line-height:24px;
+}
+
+.rdAcCommandIdle {
+	font-weight: normal;
+	color: #8C8C8D;
+	cursor: pointer;
+	text-decoration: none;
+	vertical-align: baseline;
+	font-size: 15px;
+	border-bottom: 3px solid gray;
+	border-top: none;
+	text-decoration: none;
+	padding-right: 3px;
+	padding-left: 3px;
+	padding-top: 2px;
+	padding-bottom: 2px;
+	line-height:24px;
+}
+
+.rdAcCommandHighlight
+{
+	font-weight: normal;
+	color: #8C8C8D;
+	cursor: pointer;
+	text-decoration: none;
+	vertical-align: baseline;
+	font-size: 15px;
+	border-bottom: 3px solid black;
+	border-top: none;
+	text-decoration: none;
+	padding-right: 3px;
+	padding-left: 3px;
+	padding-top: 2px;
+	padding-bottom: 2px;
+	line-height:24px;
+}
+
+.rdAcCommandLeft 
+{
+	font-weight: normal;
+	color: #8C8C8D;
+	cursor: pointer;
+	text-decoration: none;
+	vertical-align: baseline;
+	font-size: 15px;
+	border-bottom: 3px solid gray;
+	border-top: none;
+	text-decoration: none;
+	padding-right: 3px;
+	padding-left: 3px;
+	padding-top: 2px;
+	padding-bottom: 2px;
+	line-height:24px;
+}
+.rdAcCommandRight
+{
+	font-weight: normal;
+	color: #8C8C8D;
+	cursor: pointer;
+	text-decoration: none;
+	vertical-align: baseline;
+	font-size: 15px;
+	border-bottom: 3px solid gray;
+	border-top: none;
+	text-decoration: none;
+	padding-right: 3px;
+	padding-left: 3px;
+	padding-top: 2px;
+	padding-bottom: 2px;
+	line-height:24px;
+}
+.rdAcCommandMiddle
+{
+	border-left:0;
+}
+
+.rdAcHidden
+{
+	 display:none;
+}
+
+.rdAcEdit {
+  margin-right: -10px;
+  padding-right: 40px;
+  padding-bottom: 5px;
+  padding-top: 5px;
+  margin-bottom: -10px;
+  padding-left: 5px;
+  background-image: url(rdAcEditCog.png);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+
+
+

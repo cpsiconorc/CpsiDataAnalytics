@@ -1,0 +1,12 @@
+<AnimatedMapDataXML>
+  <MapSpec InternalID="LS.BE" ShortName="BE" LongName="Berea" />
+  <MapSpec InternalID="LS.BB" ShortName="BB" LongName="Butha-Buthe" />
+  <MapSpec InternalID="LS.LE" ShortName="LE" LongName="Leribe" />
+  <MapSpec InternalID="LS.MS" ShortName="MS" LongName="Maseru" />
+  <MapSpec InternalID="LS.MF" ShortName="MF" LongName="Mefeteng" />
+  <MapSpec InternalID="LS.MH" ShortName="MH" LongName="Mohale’s Hoek" />
+  <MapSpec InternalID="LS.MK" ShortName="MK" LongName="Mokhotlong" />
+  <MapSpec InternalID="LS.QN" ShortName="QN" LongName="Qacha’s Nek" />
+  <MapSpec InternalID="LS.QT" ShortName="QT" LongName="Quthing" />
+  <MapSpec InternalID="LS.TT" ShortName="TT" LongName="Thaba-Tseka" />
+</AnimatedMapDataXML>

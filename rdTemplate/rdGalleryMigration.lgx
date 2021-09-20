@@ -1,0 +1,336 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Report
+	Caption="Gallery Migration"
+	ID="InfoGo.rdGalleryMigration"
+	SecurityReportRightID="@Constant.BookmarksAdminSecurityRightIDs~"
+	>
+  <Body>
+    <GalleryMigration/>
+    <Division
+			ID="divHeader"
+			>
+      <Label
+				Caption="Gallery to Bookmarks Migration Utility"
+				Class="ThemeHeaderLarger"
+			/>
+      <LineBreak
+				LineCount="2"
+			/>
+      <Label
+				Caption="Introduction"
+				Class="ThemeHeader"
+			/>
+      <LineBreak
+				LineCount="2"
+			/>
+      <Label
+				Caption="Visualizations are tables and charts created during analysis and available for Dashboards and Reports."
+			/>
+      <LineBreak
+				LineCount="1"
+			/>
+      <Label
+				Caption="The Logi Self Service application &quot;InfoGo&quot; version 12.7 employs a new method presenting and managing user-authored visualizations."
+			/>
+      <LineBreak
+				LineCount="1"
+			/>
+      <Label
+				Caption="This utility migrates SSRM/InfoGo gallery visualizations from pre-version 12.7 gallery storage into bookmark collections."
+			/>
+      <LineBreak
+				LineCount="1"
+			/>
+      <Label
+				Caption="When completed, visualizations appear in the application&apos;s home page in folder &quot;My Visualizations&quot;. From there, they are easily viewed, edited and shared."
+			/>
+      <LineBreak
+				LineCount="2"
+			/>
+      <Label
+				Caption="Instructions"
+				Class="ThemeHeader"
+			/>
+      <LineBreak
+				LineCount="2"
+			/>
+      <Label
+				Caption="Before running, please ensure there are backups of the bookmark collections. Note that bookmark collections may be stored in either the file system or a database depending on application configuration."
+			/>
+      <LineBreak
+				LineCount="1"
+			/>
+      <Label
+				Caption="Once completed, a table will detail the migration process results."
+			/>
+      <Label
+				Caption="All migrated old gallery files are preserved, but renamed with &quot;.migrated&quot; at the end of file name. These files may be discarded."
+			/>
+    </Division>
+    <LineBreak
+			LineCount="2"
+		/>
+    <Division
+			ID="mainContent"
+			>
+      <Rows>
+        <Row>
+          <Column>
+            <Label
+							Caption="Search Path for Galleries"
+							Class="ThemeAlignTop"
+						/>
+          </Column>
+          <Column>
+            <InputText
+							DefaultValue="@Request.rdGalleryPathMask~"
+							ID="rdGalleryPathMask"
+							InputSize="100"
+						/>
+          </Column>
+          <Column/>
+        </Row>
+        <Row>
+          <Column/>
+          <Column>
+            <Label
+							Caption="Typically, use * in place of the user name so that all galleries get processed."
+						/>
+          </Column>
+        </Row>
+        <Row>
+          <Column>
+            <LineBreak
+							LineCount="1"
+						/>
+          </Column>
+        </Row>
+        <Row>
+          <Column>
+            <Label
+							Caption="Bookmark Collection Name"
+							Class="ThemeAlignTop"
+						/>
+          </Column>
+          <Column>
+            <InputText
+							DefaultValue="@Request.rdBookmarkCollectionName~"
+							ID="rdBookmarkCollectionName"
+							InputSize="30"
+						/>
+          </Column>
+          <Column/>
+        </Row>
+        <Row>
+          <Column/>
+          <Column>
+            <Label
+							Caption="An * here is replaced by the results of the * from the Search Path, the parsed user name."
+						/>
+          </Column>
+        </Row>
+        <Row>
+          <Column>
+            <LineBreak
+							LineCount="1"
+						/>
+          </Column>
+        </Row>
+        
+          <Row>
+            <Column>
+              <Label
+								Caption="Target Folder Name"
+								Class="ThemeAlignTop"
+							/>
+            </Column>
+            <Column>
+              <Label
+               Caption="My Visualizations "
+						  />
+              <InputText
+								DefaultValue="@Request.rdTargetFolderName~"
+								ID="rdTargetFolderName"
+								InputSize="30"
+							/>
+            </Column>
+            <Column/>
+          </Row>
+
+
+          <Row>
+            <Column/>
+            <Column>
+              <Label
+								Caption="Optionally, the name of a sub-folder to be created under the home page&apos;s &quot;My Visualizations&quot;' folder."
+							/>
+              <LineBreak 
+                LineCount="1"
+						  />
+              <Label Caption="If specified, gallery visualizations will go into this sub-folder. When blank, visualizations appear in the root &quot;My Visualizations&quot; folder."
+							/>
+            </Column>
+          </Row>
+
+        <Remark>
+          <Row>
+            <Column/>
+            <Column>
+              <Label
+								Caption="Rename succesfully migrated files to prevent migrating them again."
+							/>
+            </Column>
+          </Row>
+        </Remark>
+        <Remark>
+          <Row>
+            <Column>
+              <Label
+								Caption="Rename Migrated Files"
+								Class="ThemeAlignTop"
+							/>
+            </Column>
+            <Column>
+              <InputCheckbox
+								CheckedValue="True"
+								DefaultValue="True"
+								ID="rdRenameMigratedFiles"
+							/>
+            </Column>
+          </Row>
+        </Remark>
+        <Row>
+          <Column/>
+          <Column>
+            <LineBreak
+							LineCount="2"
+						/>
+            <Label
+							Caption="Migrate Now"
+							Class="ThemeLinkButton"
+							>
+              <Action
+								ConfirmMessage="Migrate now?"
+								ID="myself"
+								Type="Report"
+								>
+                <LinkParams
+									rdDataCache="None"
+									rdSubmitMigration="True"
+								/>
+                <Target
+									Type="Report"
+									>
+                  <WaitPage
+										Caption="Migrating..."
+									/>
+                </Target>
+              </Action>
+            </Label>
+          </Column>
+        </Row>
+      </Rows>
+      <HorizontalLine/>
+    </Division>
+    <Division
+			Condition="&quot;@Request.rdSubmitMigration~&quot; = &quot;True&quot;"
+			ID="divResults"
+			>
+      <Division
+				Condition="&quot;@Session.rdMigrationSuccessful~&quot; = &quot;True&quot;"
+				>
+        <LineBreak
+					LineCount="2"
+				/>
+        <Label
+					Caption="Migration Successful"
+					Class="ThemeTextPositive ThemeTextLarger"
+				/>
+        <LineBreak
+					LineCount="2"
+				/>
+      </Division>
+      <DataTable
+				ID="dtResults"
+				>
+        <DataLayer
+					ID="resultsDl"
+					Type="XMLFile"
+					XMLFile="@Session.rdLogDatalayer~"
+				/>
+        <DataTableColumn
+					Header="Migrated File Name"
+					>
+          <Label
+						Caption="@Data.FileName~"
+					/>
+        </DataTableColumn>
+        <DataTableColumn
+					Header="Target Bookmark Collection"
+					>
+          <Label
+						Caption="@Data.TargetBookmarkCollection~"
+					/>
+        </DataTableColumn>
+        <DataTableColumn
+					Header="Target folder"
+					>
+          <Label
+						Caption="@Data.TargetFolder~"
+					/>
+        </DataTableColumn>
+        <DataTableColumn
+					Header="Parsed User Name"
+					>
+          <Label
+						Caption="@Data.LocatedUserName~"
+					/>
+        </DataTableColumn>
+        <DataTableColumn
+					Header="Visualizations Migrated"
+					>
+          <Label
+						Caption="@Data.Count~"
+					/>
+          <DataColumnSummary
+						DataColumn="Count"
+						DataType="Number"
+						Function="Sum"
+						ID="sumAllCnt"
+					/>
+        </DataTableColumn>
+        <DataTableColumn
+					Header="Result"
+					>
+          <Division
+						Condition="&quot;@Data.Success~&quot; = &quot;True&quot;"
+						ID="divSuccess"
+						>
+            <Image
+							Caption="InfoGo.iconScheduleRunning.png"
+						/>
+          </Division>
+          <Division
+						Condition="&quot;@Data.Success~&quot; &lt;&gt; &quot;True&quot;"
+						ID="divFail"
+						>
+            <Image
+							Caption="InfoGo.iconScheduleFail.png"
+						/>
+          </Division>
+        </DataTableColumn>
+        <SummaryRow
+					Caption="Total"
+				/>
+      </DataTable>
+    </Division>
+  </Body>
+  <DefaultRequestParams
+		rdTargetFolderName=""
+	/>
+  <ideTestParams
+		rdBookmarkCollectionName=""
+		rdGalleryPathMask=""
+		rdSubmitMigration=""
+	/>
+</Report>

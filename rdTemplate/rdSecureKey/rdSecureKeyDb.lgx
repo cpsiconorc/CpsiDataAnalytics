@@ -1,0 +1,144 @@
+﻿<SecureKeyDbDefinitions>
+
+  <Create ID="Create" >
+    <DataLayer ConnectionID="" Source="" Type="SQL" />
+  </Create>
+
+  <Insert ID="Insert" SqlSyntax="SqlServer">
+    <DataLayer Type="SQL" ConnectionID="" Source="/* Add new SecureKey value */&#xD;&#xA;INSERT INTO rdSecureKey (SECURE_KEY, XML, EXPIRATION_TIME) VALUES (@SecureKey, @Xml, DATEADD(minute, 5, GETDATE()))">
+      <SqlParameters>
+        <SqlParameter SqlParamType="dt-129" Value="" ID="SecureKey" />
+        <SqlParameter SqlParamType="dt-200" Value="" ID="Xml" />
+      </SqlParameters>
+    </DataLayer>
+  </Insert>
+  <Insert ID="Insert" SqlSyntax="Oracle">
+    <DataLayer Type="SQL" ConnectionID="" Source="/* Add new SecureKey value */&#xD;&#xA;INSERT INTO rdSecureKey (SECURE_KEY, XML, EXPIRATION_TIME) VALUES (:SecureKey, :Xml, SYSDATE + INTERVAL '5' MINUTE)">
+      <SqlParameters>
+        <SqlParameter SqlParamType="dt-129" Value="" ID="SecureKey" />
+        <SqlParameter SqlParamType="dt-200" Value="" ID="Xml" />
+      </SqlParameters>
+    </DataLayer>
+  </Insert>
+  <Insert ID="Insert" SqlSyntax="MySql">
+    <DataLayer Type="SQL" ConnectionID="" Source="/* Add new SecureKey value */&#xD;&#xA;INSERT INTO rdSecureKey (SECURE_KEY, XML, EXPIRATION_TIME) VALUES (?SecureKey, ?Xml, SYSDATE() + INTERVAL 5 MINUTE)">
+      <SqlParameters>
+        <SqlParameter SqlParamType="dt-129" Value="" ID="SecureKey" />
+        <SqlParameter SqlParamType="dt-200" Value="" ID="Xml" />
+      </SqlParameters>
+    </DataLayer>
+  </Insert>  
+  <Insert ID="Insert" SqlSyntax="MySqlJava">
+    <DataLayer Type="SQL" ConnectionID="" Source="/* Add new SecureKey value */&#xD;&#xA;INSERT INTO rdSecureKey (SECURE_KEY, XML, EXPIRATION_TIME) VALUES (?, ?, SYSDATE() + INTERVAL 5 MINUTE)">
+      <SqlParameters>
+        <SqlParameter SqlParamType="dt-129" Value="" ID="SecureKey" />
+        <SqlParameter SqlParamType="dt-200" Value="" ID="Xml" />
+      </SqlParameters>
+    </DataLayer>
+  </Insert> 
+  <Insert ID="Insert" SqlSyntax="MySqlCDataJava">
+    <DataLayer Type="SQL" ConnectionID="" Source="/* Add new SecureKey value */&#xD;&#xA;INSERT INTO rdSecureKey (SECURE_KEY, XML, EXPIRATION_TIME) VALUES (@SecureKey, @Xml, SYSDATE() + INTERVAL 5 MINUTE)">
+      <SqlParameters>
+        <SqlParameter SqlParamType="dt-129" Value="" ID="SecureKey" />
+        <SqlParameter SqlParamType="dt-200" Value="" ID="Xml" />
+      </SqlParameters>
+    </DataLayer>
+  </Insert> 
+  <Insert ID="Insert" SqlSyntax="PostgreSQL">
+    <DataLayer Type="SQL" ConnectionID="" Source="/* Add new SecureKey value */&#xD;&#xA;INSERT INTO rdSecureKey (SECURE_KEY, XML, EXPIRATION_TIME) VALUES (:SecureKey,:Xml, LOCALTIMESTAMP + INTERVAL '5 MINUTE')">
+      <SqlParameters>
+        <SqlParameter SqlParamType="dt-129" Value="" ID="SecureKey" />
+        <SqlParameter SqlParamType="dt-200" Value="" ID="Xml" />
+      </SqlParameters>
+    </DataLayer>
+  </Insert>
+  <Insert ID="Insert" SqlSyntax="PostgreSQLJava">
+    <DataLayer Type="SQL" ConnectionID="" Source="/* Add new SecureKey value */&#xD;&#xA;INSERT INTO rdSecureKey (SECURE_KEY, XML, EXPIRATION_TIME) VALUES (?,?, LOCALTIMESTAMP + INTERVAL '5 MINUTE')">
+      <SqlParameters>
+        <SqlParameter SqlParamType="dt-129" Value="" ID="SecureKey" />
+        <SqlParameter SqlParamType="dt-200" Value="" ID="Xml" />
+      </SqlParameters>
+    </DataLayer>
+  </Insert>
+  
+  <Get ID="Get" SqlSyntax="SqlServer">
+    <DataLayer ConnectionID="" Source="/* Remove expired values */&#xD;&#xA;DELETE FROM rdSecureKey WHERE EXPIRATION_TIME &lt;= GETDATE();&#xD;&#xA;/* Validate the SecureKey value */&#xD;&#xA;SELECT XML FROM rdSecureKey WHERE SECURE_KEY=@SecureKey AND EXPIRATION_TIME &gt; GETDATE();&#xD;&#xA;/* Remove this key value. */&#xD;&#xA;DELETE FROM rdSecureKey WHERE SECURE_KEY=@SecureKey;&#xD;&#xA;&#xD;&#xA;" Type="SQL">
+      <SqlParameters>
+        <SqlParameter ID="SecureKey" SqlParamType="dt-129" Value="" />
+      </SqlParameters>
+    </DataLayer>
+  </Get>
+  <Get ID="Get" SqlSyntax="Oracle">
+    <DataLayer ConnectionID="" Source="SELECT XML FROM rdSecureKey WHERE SECURE_KEY=:SecureKey AND EXPIRATION_TIME &gt; SYSDATE" Type="SQL">
+      <SqlParameters>
+        <SqlParameter ID="SecureKey" SqlParamType="dt-129" Value="" />
+      </SqlParameters>
+    </DataLayer>
+    <DataLayer ConnectionID="" Source="BEGIN&#xD;&#xA;	DELETE FROM rdSecureKey WHERE EXPIRATION_TIME &lt;= SYSDATE;&#xD;&#xA;	DELETE FROM rdSecureKey WHERE SECURE_KEY=:SecureKey;&#xD;&#xA;END;&#xD;&#xA;" Type="SQL">
+      <SqlParameters>
+        <SqlParameter ID="SecureKey" SqlParamType="dt-129" Value="" />
+      </SqlParameters>
+    </DataLayer>
+  </Get>
+  <Get ID="Get" SqlSyntax="MySql">
+    <DataLayer ConnectionID="" Source="/* Remove expired values */&#xD;&#xA;DELETE FROM rdSecureKey WHERE EXPIRATION_TIME &lt;= SYSDATE();&#xD;&#xA;/* Validate the SecureKey value */&#xD;&#xA;SELECT XML FROM rdSecureKey WHERE SECURE_KEY=?SecureKey AND EXPIRATION_TIME &gt; SYSDATE();&#xD;&#xA;/* Remove this key value. */&#xD;&#xA;DELETE FROM rdSecureKey WHERE SECURE_KEY=?SecureKey;&#xD;&#xA;&#xD;&#xA;" Type="SQL">
+      <SqlParameters>
+        <SqlParameter ID="SecureKey" SqlParamType="dt-129" Value="" />
+      </SqlParameters>
+    </DataLayer>
+  </Get>
+  <Get ID="Get" SqlSyntax="MySqlCData">
+    <DataLayer ConnectionID="" Source="/* Remove expired values */&#xD;&#xA;DELETE FROM rdSecureKey WHERE EXPIRATION_TIME &lt;= SYSDATE();&#xD;&#xA;" Type="SQL">
+    </DataLayer>
+    <DataLayer ConnectionID="" Source="/* Validate the SecureKey value */&#xD;&#xA;SELECT XML FROM rdSecureKey WHERE SECURE_KEY=@SecureKey AND EXPIRATION_TIME &gt; SYSDATE();&#xD;&#xA;" Type="SQL">
+      <SqlParameters>
+        <SqlParameter ID="SecureKey" SqlParamType="dt-129" Value="" />
+		<SqlParameter ID="Xml" SqlParamType="dt-200" Value="" />
+      </SqlParameters>
+    </DataLayer>
+    <DataLayer ConnectionID="" Source="/* Remove this key value. */&#xD;&#xA;DELETE FROM rdSecureKey WHERE SECURE_KEY=@SecureKey;&#xD;&#xA;&#xD;&#xA;" Type="SQL">
+      <SqlParameters>
+        <SqlParameter ID="SecureKey" SqlParamType="dt-129" Value="" />
+      </SqlParameters>
+    </DataLayer>
+  </Get>
+  <Get ID="Get" SqlSyntax="MySqlJava">
+    <DataLayer ConnectionID="" Source="/* Remove expired values */&#xD;&#xA;DELETE FROM rdSecureKey WHERE EXPIRATION_TIME &lt;= SYSDATE();&#xD;&#xA;/* Validate the SecureKey value */&#xD;&#xA;SELECT XML FROM rdSecureKey WHERE SECURE_KEY=? AND EXPIRATION_TIME &gt; SYSDATE();&#xD;&#xA;/* Remove this key value. */&#xD;&#xA;DELETE FROM rdSecureKey WHERE SECURE_KEY=?;&#xD;&#xA;&#xD;&#xA;" Type="SQL">
+      <SqlParameters>
+        <SqlParameter ID="SecureKey" SqlParamType="dt-129" Value="" />
+		<SqlParameter ID="Xml" SqlParamType="dt-200" Value="" />
+      </SqlParameters>
+    </DataLayer>
+  </Get>
+  <Get ID="Get" SqlSyntax="MySqlCDataJava">
+    <DataLayer ConnectionID="" Source="/* Remove expired values */&#xD;&#xA;DELETE FROM rdSecureKey WHERE EXPIRATION_TIME &lt;= SYSDATE();&#xD;&#xA;" Type="SQL">
+    </DataLayer>
+    <DataLayer ConnectionID="" Source="/* Validate the SecureKey value */&#xD;&#xA;SELECT XML FROM rdSecureKey WHERE SECURE_KEY=@SecureKey AND EXPIRATION_TIME &gt; SYSDATE();&#xD;&#xA;" Type="SQL">
+      <SqlParameters>
+        <SqlParameter ID="SecureKey" SqlParamType="dt-129" Value="" />
+		<SqlParameter ID="Xml" SqlParamType="dt-200" Value="" />
+      </SqlParameters>
+    </DataLayer>
+    <DataLayer ConnectionID="" Source="/* Remove this key value. */&#xD;&#xA;DELETE FROM rdSecureKey WHERE SECURE_KEY=@SecureKey;&#xD;&#xA;&#xD;&#xA;" Type="SQL">
+      <SqlParameters>
+        <SqlParameter ID="SecureKey" SqlParamType="dt-129" Value="" />
+      </SqlParameters>
+    </DataLayer>
+  </Get>
+  <Get ID="Get" SqlSyntax="PostgreSQL">
+    <DataLayer ConnectionID="" Source="/* Remove expired values */&#xD;&#xA;DELETE FROM rdSecureKey WHERE EXPIRATION_TIME &lt;= LOCALTIMESTAMP;&#xD;&#xA;/* Validate the SecureKey value */&#xD;&#xA;SELECT XML FROM rdSecureKey WHERE SECURE_KEY=:SecureKey AND EXPIRATION_TIME &gt; LOCALTIMESTAMP;&#xD;&#xA;/* Remove this key value. */&#xD;&#xA;DELETE FROM rdSecureKey WHERE SECURE_KEY=:SecureKey;&#xD;&#xA;&#xD;&#xA;" Type="SQL">
+      <SqlParameters>
+        <SqlParameter ID="SecureKey" SqlParamType="dt-129" Value="" />
+      </SqlParameters>
+    </DataLayer>
+  </Get>
+  <Get ID="Get" SqlSyntax="PostgreSQLJava">
+    <DataLayer ConnectionID="" Source="/* Remove expired values */&#xD;&#xA;DELETE FROM rdSecureKey WHERE EXPIRATION_TIME &lt;= LOCALTIMESTAMP;&#xD;&#xA;/* Validate the SecureKey value */&#xD;&#xA;SELECT XML FROM rdSecureKey WHERE SECURE_KEY=? AND EXPIRATION_TIME &gt; LOCALTIMESTAMP;&#xD;&#xA;/* Remove this key value. */&#xD;&#xA;DELETE FROM rdSecureKey WHERE SECURE_KEY=?;&#xD;&#xA;&#xD;&#xA;" Type="SQL">
+      <SqlParameters>
+        <SqlParameter ID="SecureKey" SqlParamType="dt-129" Value="" />
+		<SqlParameter ID="Xml" SqlParamType="dt-200" Value="" />
+      </SqlParameters>
+    </DataLayer>
+  </Get>
+
+</SecureKeyDbDefinitions>

@@ -1,0 +1,49 @@
+<Division ID="rdDiv_rdReportCenterID">
+	<DataMenuTree ID="rdReportCenterID" RememberView="True" LevelIndent="8" CaptionColumn="Caption" ActionIDColumn="rdAction" SubMenuIDColumn="rdMenu" TargetSubMenuIDColumn="rdTargetMenu" ClassColumn="rdRowClass">
+    <DataLayer Type="DefinitionList" ID="rdDataLayer_rdReportCenterID" DefinitionListFolder="_Reports">
+      <ReportCenterFilter ID="rdReportCenterFilter" BookmarkCollection="rdBookmarkCollection" />
+    </DataLayer>
+    <DataMenuColumn Class="rdNoWrap">
+      <Spaces Size="3" />
+      <Division Condition="@Data.rdEditBookmark~">
+        <Image ID="rdGear" Caption="rdTemplate/rdEdit.png" AltText="Rename or remove Bookmark" Tooltip="Rename or remove Bookmark">
+          <Action Type="Popup" ID="popupBookmark">
+            <PopupOption Caption="Rename..." ID="optBookmarkRename">
+              <Action Type="EditBookmark" BookmarkCollection="rdBookmarkCollection" BookmarkID="@Data.BookmarkID~" ID="bmRename" BookmarkDescriptionMessage="Bookmark Description" BookmarkDescription="@Data.Caption~" UpdateElementID="rdDmtCaption_Row@Function.RowNumber~" />
+            </PopupOption>
+            <PopupOption Caption="Remove..." ID="optBookmarkRemove">
+              <Action Type="RemoveBookmark" BookmarkCollection="rdBookmarkCollection" BookmarkID="@Data.BookmarkID~" ConfirmMessage="Remove?  Are you sure?" RemoveElementID="rdMenuColumn_rdReportCenterID_Row@Function.RowNumber~" ReportCenterID="rdReportCenterID"  ID="bmRemove" />
+            </PopupOption>
+          </Action>
+        </Image>
+      </Division>
+	</DataMenuColumn>
+	<DataMenuColumn Class="rdNoWrap">
+      <Division Condition="@Data.rdEditSchedule~">
+        <Image ID="rdClock" Caption="=IIF(Len(&quot;@Data.rdScheduleID~&quot;)=0,&quot;rdTemplate/rdReportCenter/rdSchedule.png&quot;,&quot;rdTemplate/rdReportCenter/rdScheduleOn.png&quot;)" Tooltip="@Data.rdScheduleDescription~">
+          <Remark>
+            <Action Type="Report" ID="rdActionSchedule">
+              <Target Type="Report" />
+              <LinkParams rdRcCommand="Schedule" rdBookmarkID="@Data.BookmarkID~" rdBookmarkCollection="@Data.BookmarkCollection~" rdSchedulerReportID="@Data.rdReport~" rdSchedulerTaskID="@Data.rdScheduleID~" rdExportTableID="@Data.ReportCenterExportTableID~" rdAllowedExportFormats="@Data.ReportCenterAllowedExportFormats~" />
+            </Action>
+          </Remark>
+          <Action Type="ShowElement" ElementID="popupSchedule" ID="showSchedule" />
+        </Image>
+        <PopupPanel ID="popupSchedule" PopupModal="True" Caption="Schedule" Draggable="True" rdNoElementShowHistory="True">
+          <IncludeFrame ID="frameSchedule" FrameBorder="False" Scrolling="False">
+            <Target Type="IncludeFrameReport" />
+            <LinkParams rdRcCommand="Schedule" rdBookmarkID="@Data.BookmarkID~" rdBookmarkCollection="@Data.BookmarkCollection~" rdRcReportID="rdRcReportID" rdSchedulerReportID="@Data.rdReport~" rdSchedulerTaskID="@Data.rdScheduleID~" rdExportTableID="@Data.ReportCenterExportTableID~" rdAllowedExportFormats="@Data.ReportCenterAllowedExportFormats~" rdReportCenterID="" rdPopupID="popupSchedule_Row@Function.RowNumber~"/>
+          </IncludeFrame>
+        </PopupPanel>
+      </Division>
+      <Spaces Size="1" />
+    </DataMenuColumn>
+    <Action Type="Report" ID="rdActionReport">
+      <Target Type="Report" Report="@Data.rdReport~" FrameID="@Data.ReportCenterTargetFrameID~" />
+		<LinkParams rdNewBookmark="True" rdAgReset="True" rdOgReset="True" rdDgReset="True" />
+    </Action>
+    <Action Type="RunBookmark" Report="@Data.rdReport~" BookmarkCollection="rdBookmarkCollection" BookmarkID="@Data.BookmarkID~" ID="rdActionBookmark" >
+      <Target Type="RunBookmark" FrameID="@Data.ReportCenterTargetFrameID~" />
+    </Action>
+  </DataMenuTree>
+</Division>

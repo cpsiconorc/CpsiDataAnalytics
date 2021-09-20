@@ -1,0 +1,13 @@
+﻿.logi-widget logi-error-overlay, 
+overlay.logi-widget .overlay-dialog-container, 
+overlay.logi-widget .overlay-bg, 
+.logi-visualization-container .logi-warning-icon {
+    display: none;
+}
+
+
+.viz-main-holder logi-analysis-table.logi-widget td {
+    padding-right: 0;
+    padding-left: 3px;
+    text-align: left;
+}

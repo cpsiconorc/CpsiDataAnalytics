@@ -1,0 +1,25 @@
+.yui3-widget-mask {
+    background-color: black;
+    zoom: 1;
+    left: 0px;
+    top: 0px;
+    position: absolute;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    z-index: 9300;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(opacity=10)";
+    filter: alpha(opacity=20);
+    opacity: 0.5;
+    min-width: 100%;
+    min-height: 100%;
+    background-size: cover;
+}
+
+.yui3-panel-content {
+    -webkit-box-shadow: 0 0 5px #333;
+    -moz-box-shadow: 0 0 5px #333;
+    box-shadow: 0 0 5px #333;    
+    color: #000000 !important;
+    font-size: 18px;
+    padding: 10px;
+}

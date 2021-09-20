@@ -1,0 +1,8 @@
+<AnimatedMapDataXML>
+  <MapSpec InternalID="GM.BJ" ShortName="BJ" LongName="Banjul" />
+  <MapSpec InternalID="GM.MC" ShortName="MC" LongName="Central River" />
+  <MapSpec InternalID="GM.LR" ShortName="LR" LongName="Lower River" />
+  <MapSpec InternalID="GM.NB" ShortName="NB" LongName="North Bank" />
+  <MapSpec InternalID="GM.UR" ShortName="UR" LongName="Upper River" />
+  <MapSpec InternalID="GM.WE" ShortName="WE" LongName="Western" />
+</AnimatedMapDataXML>

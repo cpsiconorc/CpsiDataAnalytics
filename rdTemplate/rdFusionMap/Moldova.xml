@@ -1,0 +1,13 @@
+<AnimatedMapDataXML>
+  <MapSpec InternalID="46" ShortName="BA" LongName="Bălţi" />
+  <MapSpec InternalID="47" ShortName="CA" LongName="Cahul" />
+  <MapSpec InternalID="48" ShortName="CU" LongName="Chişinău" />
+  <MapSpec InternalID="50" ShortName="ED" LongName="Edineţ" />
+  <MapSpec InternalID="51" ShortName="GA" LongName="Găgăuzia" />
+  <MapSpec InternalID="52" ShortName="LA" LongName="Lăpuşna" />
+  <MapSpec InternalID="53" ShortName="OR" LongName="Orhei" />
+  <MapSpec InternalID="54" ShortName="SO" LongName="Soroca" />
+  <MapSpec InternalID="49" ShortName="SN" LongName="Stânga Nistrului" />
+  <MapSpec InternalID="55" ShortName="TI" LongName="Tighina" />
+  <MapSpec InternalID="56" ShortName="UN" LongName="Ungheni" />
+</AnimatedMapDataXML>

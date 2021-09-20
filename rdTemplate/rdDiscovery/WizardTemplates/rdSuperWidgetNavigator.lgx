@@ -1,0 +1,45 @@
+﻿<Report ID="rdSuperWidgetNavigator">
+  <Body>
+    <InputText ID="searchsw" Placeholder="Search SuperWidgets..." />
+    <Label Caption="Search" Class="ThemeLinkButtonSmall">
+      <Action ElementID="AvailableSuperWidgets" ID="refreshChart" Type="RefreshElement">
+        <WaitPage Caption="Searching..." />
+      </Action>
+    </Label>
+    <DataTable ID="AvailableSuperWidgets" SortArrows="True">
+      <DataTableColumn Header="SuperWidget Name" Width="180" WidthScale="px">
+        <Label Caption="@Data.payload/headerConfig/title~" />
+      </DataTableColumn>
+      <DataTableColumn Header="Type">
+        <Label Caption="@Data.payload/type~" />
+      </DataTableColumn>
+      <DataTableColumn Header="Created">
+        <Label Caption="@Data.created~" Format="General Date" />
+      </DataTableColumn>
+      <DataTableColumn Header="GUID">
+        <Label Caption="@Data.id~" />
+        <DataColumnSort DataColumn="@Data.id~" DataType="Text" />
+      </DataTableColumn>
+      <DataTableColumn Header="Actions">
+        <Division>
+          <Button Caption="Edit" ID="btnEdit">
+              <Action ID="openWizard" Javascript="window.external.LaunchUrlExternally('@Function.ApplicationPath~/rdTemplate/rdDiscovery/WizardTemplates/RedirectToNgpWizard.aspx?rdLasConnection=@Request.rdLasConnection~&amp;rdWizardType=SuperWidget&amp;rdValueParam=@Data.id~');" Type="Javascript" />
+          </Button>
+          <Division Condition="&quot;@Request.rdSelectedSwConfigID~&quot; != &quot;@Data.id~&quot;" ID="setDvdDiv">
+            <Button Caption="Select" ID="btnSetDvd">
+              <Action ID="setDvdId" Javascript="window.external.PassSwConfigId('@Data.id~');" Type="Javascript" />
+            </Button>
+          </Division>
+          <Division Condition="&quot;@Request.rdSelectedSwConfigID~&quot; == &quot;@Data.id~&quot;" ID="selectedDiv">
+            <Label Caption="Selected" />
+          </Division>
+        </Division>
+      </DataTableColumn>
+      <DataLayer ConnectionID="@Request.rdLasConnection~" HttpMethod="GET" ID="dlNGP" JsonFile="/api/platform/system.configs?$select=%22payload/headerConfig/title,payload/type,created,id%22" Type="JsonFile">
+        <Flattener DataRowElementNames="AvailableSuperWidgets" ID="flattensytemobjects" />
+        <ContainFilter CaseSensitive="False" ContainType="Contains" DataColumn="payload/name" IncludeCondition="'@Request.search~' != ''" SearchString="@Request.search~" />
+      </DataLayer>
+    </DataTable>
+  </Body>
+  <ideTestParams rdSelectedSwConfigID="" search="" rdLasConnection="" />
+</Report>

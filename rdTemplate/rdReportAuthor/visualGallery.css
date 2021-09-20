@@ -1,0 +1,91 @@
+﻿.ThemeLinkButton:hover,
+.ThemeLinkButtonSmall:hover,
+/*.ThemeLinkButton:hover span,
+.ThemeLinkButtonSmall:hover span,*/
+span:hover.rdAgCommand,
+span:hover.rdAcCommand,
+span:hover.rdOgCommand,
+span:hover.rdCgCommand,
+span:hover.rdDashboardCommand,
+#rowChangeTab span:hover.rdDashboardCommand,
+/*span:hover.rdPopupPanelCommand,*/
+.rdAgUnselectedTab:hover,
+.rdOgUnselectedTab:hover {
+    /*color: #fff;*/
+    text-decoration: none;
+}
+
+/*.ThemeLinkButton,
+.ThemeLinkButtonSmall,*/
+.rdAgCommand,
+.rdOgCommand,
+.rdAcCommand,
+span.rdCgCommand,
+.rdDashboardCommand {
+    color: #fff;
+    font-weight: normal;
+    /*    text-shadow:1px 1px 0px #ffffff;*/
+    background-image: none;
+    background-color: #363b42;
+    border: none;
+    border-radius: 2px;
+    text-decoration: none!important;
+    cursor: pointer;
+    white-space: nowrap;
+    vertical-align: baseline;
+}
+
+.rdAgCommand, .rdOgCommand, .rdAcCommand, span.rdCgCommand, .rdDashboardCommand {
+    /*font-size: 15px;*/
+    margin-left: 0;
+    padding: 3px 12px;
+    vertical-align: baseline;
+}
+
+/* Add Panels + Visual Gallery */
+
+.rdDashboardPanelDescription {
+    padding: 0 12px 24px 12px;
+}
+
+    .rdDashboardPanelDescription .rdDashboardPanelImage,
+    .rdDashboardPanelDescription .rdDashboardTitleCaption,
+    .rdDashboardPanelDescription .rdDashboardText {
+        margin-bottom: 12px;
+    }
+
+.rdNewAnalysisText {
+    font-size: 15px;
+}
+
+#PopupPanelContent {
+    margin: 0 !important;
+}
+
+    #PopupPanelContent td.rdDashboardControl {
+        padding: 12px;
+       
+    }
+
+    #PopupPanelContent a {
+        text-align: right;
+    }
+
+.rdPopupPanel .rdDashboardPanel {
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    -ms-box-shadow: none;
+    box-shadow: none;
+}
+
+
+.ppAddToDashboardPanel {
+    font-size: 12px;
+}
+
+/* PopupMenu */
+
+.rdPopupMenu .yuimenuitemlabel {
+    font-size: 100%;
+    font-weight: normal;
+}

@@ -1,0 +1,80 @@
+<AnimatedMapDataXML>
+  <MapSpec InternalID="01" ShortName="AJ" LongName="Adjuntas" />
+  <MapSpec InternalID="03" ShortName="AD" LongName="Aguada" />
+  <MapSpec InternalID="05" ShortName="AL" LongName="Aguadilla" />
+  <MapSpec InternalID="07" ShortName="AB" LongName="Aguas Buenas" />
+  <MapSpec InternalID="09" ShortName="AI" LongName="Aibonito" />
+  <MapSpec InternalID="11" ShortName="AN" LongName="Añasco" />
+  <MapSpec InternalID="13" ShortName="AC" LongName="Arecibo" />
+  <MapSpec InternalID="15" ShortName="AR" LongName="Arroyo" />
+  <MapSpec InternalID="17" ShortName="BC" LongName="Barceloneta" />
+  <MapSpec InternalID="19" ShortName="BQ" LongName="Barranquitas" />
+  <MapSpec InternalID="21" ShortName="BY" LongName="Bayamón" />
+  <MapSpec InternalID="23" ShortName="CR" LongName="Cabo Rojo" />
+  <MapSpec InternalID="25" ShortName="CG" LongName="Caguas" />
+  <MapSpec InternalID="27" ShortName="CA" LongName="Camuy" />
+  <MapSpec InternalID="29" ShortName="CV" LongName="Canóvanas" />
+  <MapSpec InternalID="31" ShortName="CN" LongName="Carolina" />
+  <MapSpec InternalID="33" ShortName="CT" LongName="Cataño" />
+  <MapSpec InternalID="35" ShortName="CY" LongName="Cayey" />
+  <MapSpec InternalID="37" ShortName="CB" LongName="Ceiba" />
+  <MapSpec InternalID="39" ShortName="CL" LongName="Ciales" />
+  <MapSpec InternalID="41" ShortName="CD" LongName="Cidra" />
+  <MapSpec InternalID="43" ShortName="CO" LongName="Coamo" />
+  <MapSpec InternalID="45" ShortName="CM" LongName="Comerío" />
+  <MapSpec InternalID="47" ShortName="CZ" LongName="Corozal" />
+  <MapSpec InternalID="49" ShortName="CU" LongName="Culebra" />
+  <MapSpec InternalID="51" ShortName="DO" LongName="Dorado" />
+  <MapSpec InternalID="53" ShortName="FJ" LongName="Fajardo" />
+  <MapSpec InternalID="54" ShortName="FL" LongName="Florida" />
+  <MapSpec InternalID="55" ShortName="GC" LongName="Guánica" />
+  <MapSpec InternalID="57" ShortName="GM" LongName="Guayama" />
+  <MapSpec InternalID="59" ShortName="GL" LongName="Guayanilla" />
+  <MapSpec InternalID="61" ShortName="GB" LongName="Guaynabo" />
+  <MapSpec InternalID="63" ShortName="GR" LongName="Gurabo" />
+  <MapSpec InternalID="65" ShortName="HA" LongName="Hatillo" />
+  <MapSpec InternalID="67" ShortName="HO" LongName="Hormigueros" />
+  <MapSpec InternalID="69" ShortName="HU" LongName="Humacao" />
+  <MapSpec InternalID="71" ShortName="IS" LongName="Isabela" />
+  <MapSpec InternalID="73" ShortName="JY" LongName="Jayuya" />
+  <MapSpec InternalID="75" ShortName="JD" LongName="Juana Díaz" />
+  <MapSpec InternalID="77" ShortName="JC" LongName="Juncos" />
+  <MapSpec InternalID="79" ShortName="LJ" LongName="Lajas" />
+  <MapSpec InternalID="81" ShortName="LR" LongName="Lares" />
+  <MapSpec InternalID="83" ShortName="LM" LongName="Las Marías" />
+  <MapSpec InternalID="85" ShortName="LP" LongName="Las Piedras" />
+  <MapSpec InternalID="87" ShortName="LZ" LongName="Loíza" />
+  <MapSpec InternalID="89" ShortName="LQ" LongName="Luquillo" />
+  <MapSpec InternalID="91" ShortName="MT" LongName="Manatí" />
+  <MapSpec InternalID="93" ShortName="MR" LongName="Maricao" />
+  <MapSpec InternalID="95" ShortName="MB" LongName="Maunabo" />
+  <MapSpec InternalID="97" ShortName="MG" LongName="Mayagüez" />
+  <MapSpec InternalID="99" ShortName="MC" LongName="Moca" />
+  <MapSpec InternalID="101" ShortName="MV" LongName="Morovis" />
+  <MapSpec InternalID="103" ShortName="NG" LongName="Nagüabo" />
+  <MapSpec InternalID="105" ShortName="NR" LongName="Naranjito" />
+  <MapSpec InternalID="107" ShortName="OR" LongName="Orocovis" />
+  <MapSpec InternalID="109" ShortName="PT" LongName="Patillas" />
+  <MapSpec InternalID="111" ShortName="PN" LongName="Peñuelas" />
+  <MapSpec InternalID="113" ShortName="PO" LongName="Ponce" />
+  <MapSpec InternalID="115" ShortName="QB" LongName="Quebradillas" />
+  <MapSpec InternalID="117" ShortName="RC" LongName="Rincón" />
+  <MapSpec InternalID="119" ShortName="RG" LongName="Río Grande" />
+  <MapSpec InternalID="121" ShortName="SB" LongName="Sabana Grande" />
+  <MapSpec InternalID="123" ShortName="SA" LongName="Salinas" />
+  <MapSpec InternalID="125" ShortName="SG" LongName="San Germán" />
+  <MapSpec InternalID="127" ShortName="SJ" LongName="San Juan (capital)" />
+  <MapSpec InternalID="129" ShortName="SL" LongName="San Lorenzo" />
+  <MapSpec InternalID="131" ShortName="SS" LongName="San Sebastián" />
+  <MapSpec InternalID="133" ShortName="SI" LongName="Santa Isabel" />
+  <MapSpec InternalID="135" ShortName="TA" LongName="Toa Alta" />
+  <MapSpec InternalID="137" ShortName="TB" LongName="Toa Baja" />
+  <MapSpec InternalID="139" ShortName="TJ" LongName="Trujillo Alto" />
+  <MapSpec InternalID="141" ShortName="UT" LongName="Utuado" />
+  <MapSpec InternalID="143" ShortName="VA" LongName="Vega Alta" />
+  <MapSpec InternalID="145" ShortName="VB" LongName="Vega Baja" />
+  <MapSpec InternalID="147" ShortName="VQ" LongName="Vieques" />
+  <MapSpec InternalID="149" ShortName="VL" LongName="Villalba" />
+  <MapSpec InternalID="151" ShortName="YB" LongName="Yabucoa" />
+  <MapSpec InternalID="153" ShortName="YU" LongName="Yauco" />
+</AnimatedMapDataXML>

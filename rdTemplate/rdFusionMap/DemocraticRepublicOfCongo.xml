@@ -1,0 +1,13 @@
+<AnimatedMapDataXML>
+  <MapSpec InternalID="CD.BN" ShortName="BN" LongName="Bandundu" />
+  <MapSpec InternalID="CD.BC" ShortName="BC" LongName="Bas Congo" />
+  <MapSpec InternalID="CD.EQ" ShortName="EQ" LongName="Equateur" />
+  <MapSpec InternalID="CD.KC" ShortName="KC" LongName="Kasai Occidental" />
+  <MapSpec InternalID="CD.KR" ShortName="KR" LongName="Kasai Oriental" />
+  <MapSpec InternalID="CD.KT" ShortName="KT" LongName="Katanga" />
+  <MapSpec InternalID="CD.KN" ShortName="KN" LongName="Kinshasa City" />
+  <MapSpec InternalID="CD.MN" ShortName="MN" LongName="Maniema" />
+  <MapSpec InternalID="CD.NK" ShortName="NK" LongName="Nord Kivu" />
+  <MapSpec InternalID="CD.HC" ShortName="HC" LongName="Orientale" />
+  <MapSpec InternalID="CD.SK" ShortName="SK" LongName="Sud Kivu" />
+</AnimatedMapDataXML>

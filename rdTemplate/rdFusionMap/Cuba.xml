@@ -1,0 +1,17 @@
+<AnimatedMapDataXML>
+  <MapSpec InternalID="05" ShortName="CM" LongName="Camagüey" />
+  <MapSpec InternalID="07" ShortName="CA" LongName="Ciego de Ávila" />
+  <MapSpec InternalID="08" ShortName="CF" LongName="Cienfuegos" />
+  <MapSpec InternalID="02" ShortName="CH" LongName="Ciudad de La Habana" />
+  <MapSpec InternalID="09" ShortName="GR" LongName="Granma" />
+  <MapSpec InternalID="10" ShortName="GU" LongName="Guantánamo" />
+  <MapSpec InternalID="12" ShortName="HO" LongName="Holguín" />
+  <MapSpec InternalID="04" ShortName="IJ" LongName="Isla de la Juventud" />
+  <MapSpec InternalID="11" ShortName="LH" LongName="La Habana" />
+  <MapSpec InternalID="13" ShortName="LT" LongName="Las Tunas" />
+  <MapSpec InternalID="03" ShortName="MA" LongName="Matanzas" />
+  <MapSpec InternalID="01" ShortName="PR" LongName="Pinar del Río" />
+  <MapSpec InternalID="14" ShortName="SS" LongName="Sancti Spíritus" />
+  <MapSpec InternalID="15" ShortName="SC" LongName="Santiago de Cuba" />
+  <MapSpec InternalID="16" ShortName="VC" LongName="Villa Clara" />
+</AnimatedMapDataXML>

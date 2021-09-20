@@ -1,0 +1,31 @@
+<AnimatedMapDataXML>
+  <MapSpec InternalID="001" ShortName="BV" LongName="Beaver" />
+  <MapSpec InternalID="003" ShortName="BE" LongName="Box Elder" />
+  <MapSpec InternalID="005" ShortName="CA" LongName="Cache" />
+  <MapSpec InternalID="007" ShortName="CR" LongName="Carbon" />
+  <MapSpec InternalID="009" ShortName="DA" LongName="Daggett" />
+  <MapSpec InternalID="011" ShortName="DV" LongName="Davis" />
+  <MapSpec InternalID="013" ShortName="DU" LongName="Duchesne" />
+  <MapSpec InternalID="015" ShortName="EM" LongName="Emery" />
+  <MapSpec InternalID="017" ShortName="GA" LongName="Garfield" />
+  <MapSpec InternalID="019" ShortName="GR" LongName="Grand" />
+  <MapSpec InternalID="021" ShortName="IR" LongName="Iron" />
+  <MapSpec InternalID="023" ShortName="JU" LongName="Juab" />
+  <MapSpec InternalID="025" ShortName="KA" LongName="Kane" />
+  <MapSpec InternalID="027" ShortName="MI" LongName="Millard" />
+  <MapSpec InternalID="029" ShortName="MO" LongName="Morgan" />
+  <MapSpec InternalID="031" ShortName="PI" LongName="Piute" />
+  <MapSpec InternalID="033" ShortName="RI" LongName="Rich" />
+  <MapSpec InternalID="035" ShortName="SL" LongName="Salt Lake" />
+  <MapSpec InternalID="037" ShortName="SJ" LongName="San Juan" />
+  <MapSpec InternalID="039" ShortName="SA" LongName="Sanpete" />
+  <MapSpec InternalID="041" ShortName="SE" LongName="Sevier" />
+  <MapSpec InternalID="043" ShortName="SU" LongName="Summit" />
+  <MapSpec InternalID="045" ShortName="TO" LongName="Tooele" />
+  <MapSpec InternalID="047" ShortName="UI" LongName="Uintah" />
+  <MapSpec InternalID="049" ShortName="UT" LongName="Utah" />
+  <MapSpec InternalID="051" ShortName="WA" LongName="Wasatch" />
+  <MapSpec InternalID="053" ShortName="WS" LongName="Washington" />
+  <MapSpec InternalID="055" ShortName="WY" LongName="Wayne" />
+  <MapSpec InternalID="057" ShortName="WE" LongName="Weber" />
+</AnimatedMapDataXML>

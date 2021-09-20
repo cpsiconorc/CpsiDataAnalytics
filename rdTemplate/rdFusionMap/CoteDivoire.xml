@@ -1,0 +1,21 @@
+<AnimatedMapDataXML>
+  <MapSpec InternalID="CI.AG" ShortName="AG" LongName="Agneby" />
+  <MapSpec InternalID="CI.BF" ShortName="BF" LongName="Bafing" />
+  <MapSpec InternalID="CI.BS" ShortName="BS" LongName="Bas Sassandra" />
+  <MapSpec InternalID="CI.DE" ShortName="DE" LongName="Denguele" />
+  <MapSpec InternalID="CI.DH" ShortName="DH" LongName="Dix Huit Montagnes" />
+  <MapSpec InternalID="CI.FR" ShortName="FR" LongName="Fromager" />
+  <MapSpec InternalID="CI.HT" ShortName="HT" LongName="Haut Sassandra" />
+  <MapSpec InternalID="CI.LC" ShortName="LC" LongName="Lacs" />
+  <MapSpec InternalID="CI.LG" ShortName="LG" LongName="Lagunes" />
+  <MapSpec InternalID="CI.MR" ShortName="MR" LongName="Marahoue" />
+  <MapSpec InternalID="CI.MV" ShortName="MV" LongName="Moyen Cavally" />
+  <MapSpec InternalID="CI.MC" ShortName="MC" LongName="Moyen Comoe" />
+  <MapSpec InternalID="CI.NC" ShortName="NC" LongName="N’zi Comoe" />
+  <MapSpec InternalID="CI.SV" ShortName="SV" LongName="Savanes" />
+  <MapSpec InternalID="CI.SB" ShortName="SB" LongName="Sud Bandama" />
+  <MapSpec InternalID="CI.SC" ShortName="SC" LongName="Sud Comoe" />
+  <MapSpec InternalID="CI.VB" ShortName="VB" LongName="Vallee du Bandama" />
+  <MapSpec InternalID="CI.WR" ShortName="WR" LongName="Worodougou" />
+  <MapSpec InternalID="CI.ZA" ShortName="ZA" LongName="Zanzan" />
+</AnimatedMapDataXML>

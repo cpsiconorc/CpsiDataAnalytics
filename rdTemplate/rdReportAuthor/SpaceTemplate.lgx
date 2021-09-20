@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Report ID="ReportAuthorDev.Templates.SpaceTemplate">
+  <Body>
+    <Division ID="rdElementID" HtmlDiv="True" rdReportAuthorElementType="Space">
+        <LineBreak ID="space_rdElementID" LineCount="1" />
+    </Division>
+  </Body>
+</Report>

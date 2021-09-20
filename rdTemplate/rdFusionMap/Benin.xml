@@ -1,0 +1,14 @@
+<AnimatedMapDataXML>
+  <MapSpec InternalID="BJ.AL" ShortName="AL" LongName="Alibori" />
+  <MapSpec InternalID="BJ.AK" ShortName="AK" LongName="Atacora" />
+  <MapSpec InternalID="BJ.AQ" ShortName="AQ" LongName="Atlantique" />
+  <MapSpec InternalID="BJ.BO" ShortName="BO" LongName="Borgou" />
+  <MapSpec InternalID="BJ.CL" ShortName="CL" LongName="Collines" />
+  <MapSpec InternalID="BJ.CF" ShortName="CF" LongName="Couffo" />
+  <MapSpec InternalID="BJ.DO" ShortName="DO" LongName="Donga" />
+  <MapSpec InternalID="BJ.LI" ShortName="LI" LongName="Littoral" />
+  <MapSpec InternalID="BJ.MO" ShortName="MO" LongName="Mono" />
+  <MapSpec InternalID="BJ.OU" ShortName="OU" LongName="Oueme" />
+  <MapSpec InternalID="BJ.PL" ShortName="PL" LongName="Plateau" />
+  <MapSpec InternalID="BJ.ZO" ShortName="ZO" LongName="Zou" />
+</AnimatedMapDataXML>

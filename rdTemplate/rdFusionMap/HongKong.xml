@@ -1,0 +1,20 @@
+<AnimatedMapDataXML>
+  <MapSpec InternalID="HK.CW" ShortName="CW" LongName="Central and Western" />
+  <MapSpec InternalID="HK.EA" ShortName="EA" LongName="Eastern" />
+  <MapSpec InternalID="HK.IS" ShortName="IS" LongName="Islands" />
+  <MapSpec InternalID="HK.KC" ShortName="KC" LongName="Kowloon City" />
+  <MapSpec InternalID="HK.KI" ShortName="KI" LongName="Kwai Tsing" />
+  <MapSpec InternalID="HK.KU" ShortName="KU" LongName="Kwun Tong" />
+  <MapSpec InternalID="HK.NO" ShortName="NO" LongName="North" />
+  <MapSpec InternalID="HK.SK" ShortName="SK" LongName="Sai Kung" />
+  <MapSpec InternalID="HK.ST" ShortName="ST" LongName="Sha Tin" />
+  <MapSpec InternalID="HK.SS" ShortName="SS" LongName="Sham Shui Po" />
+  <MapSpec InternalID="HK.SO" ShortName="SO" LongName="Southern" />
+  <MapSpec InternalID="HK.TP" ShortName="TP" LongName="Tai Po" />
+  <MapSpec InternalID="HK.TW" ShortName="TW" LongName="Tsuen Wan" />
+  <MapSpec InternalID="HK.TM" ShortName="TM" LongName="Tuen Mun" />
+  <MapSpec InternalID="HK.WC" ShortName="WC" LongName="Wan Chai" />
+  <MapSpec InternalID="HK.WT" ShortName="WT" LongName="Wong Tai Sin" />
+  <MapSpec InternalID="HK.YT" ShortName="YT" LongName="Yan Tsim Mong" />
+  <MapSpec InternalID="HK.YL" ShortName="YL" LongName="Yuen Long" />
+</AnimatedMapDataXML>

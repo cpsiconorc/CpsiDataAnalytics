@@ -1,0 +1,5 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<DraggableDivision HtmlDiv="True" ID="drag" Ignore="@Data.ShortcutChild~" DragGroup="@Data.AllowedGroups~" PreventCloneNode="True">
+  <ProxyDivision MoveOnEnd="False" HideOnEnd="True" HideOnStart="False" />
+  <LinkedParams action="LogiXML.BookmarkOrganizer.rdBookmarkOrganizer.rdDragBookmarkToFolder('rdBookmarkID','rdBookmarkUserName','rdBookmarkDescription','rdTargetID');" />
+</DraggableDivision>

@@ -1,0 +1,85 @@
+<AnimatedMapDataXML>
+  <MapSpec InternalID="001" ShortName="AL" LongName="Alcona" />
+  <MapSpec InternalID="003" ShortName="AG" LongName="Alger" />
+  <MapSpec InternalID="005" ShortName="AE" LongName="Allegan" />
+  <MapSpec InternalID="007" ShortName="AP" LongName="Alpena" />
+  <MapSpec InternalID="009" ShortName="AN" LongName="Antrim" />
+  <MapSpec InternalID="011" ShortName="AR" LongName="Arenac" />
+  <MapSpec InternalID="013" ShortName="BA" LongName="Baraga" />
+  <MapSpec InternalID="015" ShortName="BR" LongName="Barry" />
+  <MapSpec InternalID="017" ShortName="BY" LongName="Bay" />
+  <MapSpec InternalID="019" ShortName="BE" LongName="Benzie" />
+  <MapSpec InternalID="021" ShortName="BI" LongName="Berrien" />
+  <MapSpec InternalID="023" ShortName="BN" LongName="Branch" />
+  <MapSpec InternalID="025" ShortName="CA" LongName="Calhoun" />
+  <MapSpec InternalID="027" ShortName="CS" LongName="Cass" />
+  <MapSpec InternalID="029" ShortName="CH" LongName="Charlevoix" />
+  <MapSpec InternalID="031" ShortName="CE" LongName="Cheboygan" />
+  <MapSpec InternalID="033" ShortName="CI" LongName="Chippewa" />
+  <MapSpec InternalID="035" ShortName="CL" LongName="Clare" />
+  <MapSpec InternalID="037" ShortName="CN" LongName="Clinton" />
+  <MapSpec InternalID="039" ShortName="CR" LongName="Crawford" />
+  <MapSpec InternalID="041" ShortName="DE" LongName="Delta" />
+  <MapSpec InternalID="043" ShortName="DI" LongName="Dickinson" />
+  <MapSpec InternalID="045" ShortName="EA" LongName="Eaton" />
+  <MapSpec InternalID="047" ShortName="EM" LongName="Emmet" />
+  <MapSpec InternalID="049" ShortName="GE" LongName="Genesee" />
+  <MapSpec InternalID="051" ShortName="GL" LongName="Gladwin" />
+  <MapSpec InternalID="053" ShortName="GO" LongName="Gogebic" />
+  <MapSpec InternalID="055" ShortName="GT" LongName="Grand Traverse" />
+  <MapSpec InternalID="057" ShortName="GA" LongName="Gratiot" />
+  <MapSpec InternalID="059" ShortName="HI" LongName="Hillsdale" />
+  <MapSpec InternalID="061" ShortName="HO" LongName="Houghton" />
+  <MapSpec InternalID="063" ShortName="HU" LongName="Huron" />
+  <MapSpec InternalID="065" ShortName="IN" LongName="Ingham" />
+  <MapSpec InternalID="067" ShortName="IO" LongName="Ionia" />
+  <MapSpec InternalID="069" ShortName="IS" LongName="Iosco" />
+  <MapSpec InternalID="071" ShortName="IR" LongName="Iron" />
+  <MapSpec InternalID="073" ShortName="IA" LongName="Isabella" />
+  <MapSpec InternalID="075" ShortName="JA" LongName="Jackson" />
+  <MapSpec InternalID="077" ShortName="KM" LongName="Kalamazoo" />
+  <MapSpec InternalID="079" ShortName="KA" LongName="Kalkaska" />
+  <MapSpec InternalID="081" ShortName="KN" LongName="Kent" />
+  <MapSpec InternalID="083" ShortName="KE" LongName="Keweenaw" />
+  <MapSpec InternalID="085" ShortName="LK" LongName="Lake" />
+  <MapSpec InternalID="087" ShortName="LP" LongName="Lapeer" />
+  <MapSpec InternalID="089" ShortName="LL" LongName="Leelanau" />
+  <MapSpec InternalID="091" ShortName="LE" LongName="Lenawee" />
+  <MapSpec InternalID="093" ShortName="LI" LongName="Livingston" />
+  <MapSpec InternalID="095" ShortName="LU" LongName="Luce" />
+  <MapSpec InternalID="097" ShortName="MK" LongName="Mackinac" />
+  <MapSpec InternalID="099" ShortName="MB" LongName="Macomb" />
+  <MapSpec InternalID="101" ShortName="MS" LongName="Manistee" />
+  <MapSpec InternalID="103" ShortName="MQ" LongName="Marquette" />
+  <MapSpec InternalID="105" ShortName="MA" LongName="Mason" />
+  <MapSpec InternalID="107" ShortName="MC" LongName="Mecosta" />
+  <MapSpec InternalID="109" ShortName="MM" LongName="Menominee" />
+  <MapSpec InternalID="111" ShortName="MD" LongName="Midland" />
+  <MapSpec InternalID="113" ShortName="MI" LongName="Missaukee" />
+  <MapSpec InternalID="115" ShortName="MR" LongName="Monroe" />
+  <MapSpec InternalID="117" ShortName="MN" LongName="Montcalm" />
+  <MapSpec InternalID="119" ShortName="MO" LongName="Montmorency" />
+  <MapSpec InternalID="121" ShortName="MU" LongName="Muskegon" />
+  <MapSpec InternalID="123" ShortName="NE" LongName="Newaygo" />
+  <MapSpec InternalID="125" ShortName="OK" LongName="Oakland" />
+  <MapSpec InternalID="127" ShortName="OA" LongName="Oceana" />
+  <MapSpec InternalID="129" ShortName="OG" LongName="Ogemaw" />
+  <MapSpec InternalID="131" ShortName="ON" LongName="Ontonagon" />
+  <MapSpec InternalID="133" ShortName="OE" LongName="Osceola" />
+  <MapSpec InternalID="135" ShortName="OC" LongName="Oscoda" />
+  <MapSpec InternalID="137" ShortName="OS" LongName="Otsego" />
+  <MapSpec InternalID="139" ShortName="OT" LongName="Ottawa" />
+  <MapSpec InternalID="141" ShortName="PR" LongName="Presque Isle" />
+  <MapSpec InternalID="143" ShortName="RO" LongName="Roscommon" />
+  <MapSpec InternalID="145" ShortName="SA" LongName="Saginaw" />
+  <MapSpec InternalID="147" ShortName="SC" LongName="St. Clair" />
+  <MapSpec InternalID="149" ShortName="SJ" LongName="St. Joseph" />
+  <MapSpec InternalID="151" ShortName="SN" LongName="Sanilac" />
+  <MapSpec InternalID="153" ShortName="SH" LongName="Schoolcraft" />
+  <MapSpec InternalID="155" ShortName="SW" LongName="Shiawassee" />
+  <MapSpec InternalID="157" ShortName="TU" LongName="Tuscola" />
+  <MapSpec InternalID="159" ShortName="VB" LongName="Van Buren" />
+  <MapSpec InternalID="161" ShortName="WA" LongName="Washtenaw" />
+  <MapSpec InternalID="163" ShortName="WY" LongName="Wayne" />
+  <MapSpec InternalID="165" ShortName="WE" LongName="Wexford" />
+</AnimatedMapDataXML>

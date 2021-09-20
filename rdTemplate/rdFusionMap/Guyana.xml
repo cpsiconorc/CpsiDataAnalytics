@@ -1,0 +1,12 @@
+<AnimatedMapDataXML>
+  <MapSpec InternalID="GY.BA" ShortName="BA" LongName="Barima-Waini" />
+  <MapSpec InternalID="GY.CU" ShortName="CU" LongName="Cuyuni-Mazaruni" />
+  <MapSpec InternalID="GY.DE" ShortName="DE" LongName="Demerara-Mahaica" />
+  <MapSpec InternalID="GY.EB" ShortName="EB" LongName="East Berbice-Corentyne" />
+  <MapSpec InternalID="GY.ES" ShortName="ES" LongName="Essequibo Islands-West Demerara" />
+  <MapSpec InternalID="GY.MA" ShortName="MA" LongName="Mahaica-Berbice" />
+  <MapSpec InternalID="GY.PM" ShortName="PM" LongName="Pomeroon-Supenaam" />
+  <MapSpec InternalID="GY.PT" ShortName="PT" LongName="Potaro-Siparuni" />
+  <MapSpec InternalID="GY.UD" ShortName="UD" LongName="Upper Demerara-Berbice" />
+  <MapSpec InternalID="GY.UT" ShortName="UT" LongName="Upper Takutu-Upper Essequibo" />
+</AnimatedMapDataXML>

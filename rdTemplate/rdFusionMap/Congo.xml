@@ -1,0 +1,13 @@
+<AnimatedMapDataXML>
+  <MapSpec InternalID="CG.BO" ShortName="BO" LongName="Bouenza" />
+  <MapSpec InternalID="CG.BR" ShortName="BR" LongName="Brazzaville" />
+  <MapSpec InternalID="CG.CU" ShortName="CU" LongName="Cuvette" />
+  <MapSpec InternalID="CG.CO" ShortName="CO" LongName="Cuvette Ouest" />
+  <MapSpec InternalID="CG.KO" ShortName="KO" LongName="Kouilou" />
+  <MapSpec InternalID="CG.LE" ShortName="LE" LongName="Lekoumou" />
+  <MapSpec InternalID="CG.LI" ShortName="LI" LongName="Likouala" />
+  <MapSpec InternalID="CG.NI" ShortName="NI" LongName="Niari" />
+  <MapSpec InternalID="CG.PL" ShortName="PL" LongName="Plateaux" />
+  <MapSpec InternalID="CG.PO" ShortName="PO" LongName="Pool" />
+  <MapSpec InternalID="CG.SA" ShortName="SA" LongName="Sangha" />
+</AnimatedMapDataXML>

@@ -1,0 +1,16 @@
+<AnimatedMapDataXML>
+  <MapSpec InternalID="001" ShortName="AR" LongName="Argentina" />
+  <MapSpec InternalID="002" ShortName="BO" LongName="Bolivia" />
+  <MapSpec InternalID="003" ShortName="BR" LongName="Brazil" />
+  <MapSpec InternalID="004" ShortName="CL" LongName="Chile" />
+  <MapSpec InternalID="005" ShortName="CO" LongName="Colombia" />
+  <MapSpec InternalID="006" ShortName="EC" LongName="Ecuador" />
+  <MapSpec InternalID="007" ShortName="FK" LongName="Falkland    Islands" />
+  <MapSpec InternalID="008" ShortName="GF" LongName="French    Guiana" />
+  <MapSpec InternalID="009" ShortName="GY" LongName="Guyana" />
+  <MapSpec InternalID="010" ShortName="PY" LongName="Paraguay" />
+  <MapSpec InternalID="011" ShortName="PE" LongName="Peru" />
+  <MapSpec InternalID="012" ShortName="SR" LongName="Suriname" />
+  <MapSpec InternalID="013" ShortName="UY" LongName="Uruguay" />
+  <MapSpec InternalID="014" ShortName="VE" LongName="Venezuela" />
+</AnimatedMapDataXML>

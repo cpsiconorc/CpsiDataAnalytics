@@ -1,0 +1,75 @@
+<AnimatedMapDataXML>
+  <MapSpec InternalID="TH.AC" ShortName="AC" LongName="Amnat Charoen" />
+  <MapSpec InternalID="TH.AT" ShortName="AT" LongName="Ang Thong" />
+  <MapSpec InternalID="TH.BR" ShortName="BR" LongName="Buri Ram" />
+  <MapSpec InternalID="TH.CB" ShortName="CB" LongName="Chon Buri" />
+  <MapSpec InternalID="TH.CC" ShortName="CC" LongName="Chachoengsao" />
+  <MapSpec InternalID="TH.CM" ShortName="CM" LongName="Chiang Mai" />
+  <MapSpec InternalID="TH.CN" ShortName="CN" LongName="Chai Nat" />
+  <MapSpec InternalID="TH.CP" ShortName="CP" LongName="Chumphon" />
+  <MapSpec InternalID="TH.CR" ShortName="CR" LongName="Chiang Rai" />
+  <MapSpec InternalID="TH.CT" ShortName="CT" LongName="Chanthaburi" />
+  <MapSpec InternalID="TH.CY" ShortName="CY" LongName="Chaiyaphum" />
+  <MapSpec InternalID="TH.KL" ShortName="KL" LongName="Kalasin" />
+  <MapSpec InternalID="TH.KP" ShortName="KP" LongName="Kamphaeng Phet" />
+  <MapSpec InternalID="TH.KN" ShortName="KN" LongName="Kanchanaburi" />
+  <MapSpec InternalID="TH.KK" ShortName="KK" LongName="Khon Kaen" />
+  <MapSpec InternalID="TH.KR" ShortName="KR" LongName="Krabi" />
+  <MapSpec InternalID="TH.LG" ShortName="LG" LongName="Lampang" />
+  <MapSpec InternalID="TH.LN" ShortName="LN" LongName="Lamphun" />
+  <MapSpec InternalID="TH.LE" ShortName="LE" LongName="Loei" />
+  <MapSpec InternalID="TH.LB" ShortName="LB" LongName="Lop Buri" />
+  <MapSpec InternalID="TH.MH" ShortName="MH" LongName="Mae Hong Son" />
+  <MapSpec InternalID="TH.MS" ShortName="MS" LongName="Maha Sarakham" />
+  <MapSpec InternalID="TH.MD" ShortName="MD" LongName="Mukdahan" />
+  <MapSpec InternalID="TH.NN" ShortName="NN" LongName="Nakhon Nayok" />
+  <MapSpec InternalID="TH.NP" ShortName="NP" LongName="Nakhon Pathom" />
+  <MapSpec InternalID="TH.NF" ShortName="NF" LongName="Nakhon Phanom" />
+  <MapSpec InternalID="TH.NR" ShortName="NR" LongName="Nakhon Ratchasima" />
+  <MapSpec InternalID="TH.NS" ShortName="NS" LongName="Nakhon Sawan" />
+  <MapSpec InternalID="TH.NT" ShortName="NT" LongName="Nakhon Si Thammarat" />
+  <MapSpec InternalID="TH.NA" ShortName="NA" LongName="Nan" />
+  <MapSpec InternalID="TH.NW" ShortName="NW" LongName="Narathiwat" />
+  <MapSpec InternalID="TH.NB" ShortName="NB" LongName="Nong Bua Lam Phu" />
+  <MapSpec InternalID="TH.NK" ShortName="NK" LongName="Nong Khai" />
+  <MapSpec InternalID="TH.NO" ShortName="NO" LongName="Nonthaburi" />
+  <MapSpec InternalID="TH.PT" ShortName="PT" LongName="Pathum Thani" />
+  <MapSpec InternalID="TH.PI" ShortName="PI" LongName="Pattani" />
+  <MapSpec InternalID="TH.PG" ShortName="PG" LongName="Phangnga" />
+  <MapSpec InternalID="TH.PL" ShortName="PL" LongName="Phatthalung" />
+  <MapSpec InternalID="TH.PY" ShortName="PY" LongName="Phayao" />
+  <MapSpec InternalID="TH.PH" ShortName="PH" LongName="Phetchabun" />
+  <MapSpec InternalID="TH.PE" ShortName="PE" LongName="Phetchaburi" />
+  <MapSpec InternalID="TH.PC" ShortName="PC" LongName="Phichit" />
+  <MapSpec InternalID="TH.PS" ShortName="PS" LongName="Phitsanulok" />
+  <MapSpec InternalID="TH.PR" ShortName="PR" LongName="Phrae" />
+  <MapSpec InternalID="TH.PU" ShortName="PU" LongName="Phuket" />
+  <MapSpec InternalID="TH.PK" ShortName="PK" LongName="Prachuap Khiri Khan" />
+  <MapSpec InternalID="TH.RE" ShortName="RE" LongName="Roi Et" />
+  <MapSpec InternalID="TH.RN" ShortName="RN" LongName="Ranong" />
+  <MapSpec InternalID="TH.RT" ShortName="RT" LongName="Ratchaburi" />
+  <MapSpec InternalID="TH.RY" ShortName="RY" LongName="Rayong" />
+  <MapSpec InternalID="TH.SA" ShortName="SA" LongName="Satun" />
+  <MapSpec InternalID="TH.SB" ShortName="SB" LongName="Sing Buri" />
+  <MapSpec InternalID="TH.SG" ShortName="SG" LongName="Songkhla" />
+  <MapSpec InternalID="TH.SH" ShortName="SH" LongName="Suphan Buri" />
+  <MapSpec InternalID="TH.SI" ShortName="SI" LongName="Si Sa Ket" />
+  <MapSpec InternalID="TH.SK" ShortName="SK" LongName="Sa Kaeo" />
+  <MapSpec InternalID="TH.SM" ShortName="SM" LongName="Samut Songkhram" />
+  <MapSpec InternalID="TH.SN" ShortName="SN" LongName="Sakon Nakhon" />
+  <MapSpec InternalID="TH.SO" ShortName="SO" LongName="Sukhothai" />
+  <MapSpec InternalID="TH.SP" ShortName="SP" LongName="Samut Prakan" />
+  <MapSpec InternalID="TH.SR" ShortName="SR" LongName="Saraburi" />
+  <MapSpec InternalID="TH.SS" ShortName="SS" LongName="Samut Sakhon" />
+  <MapSpec InternalID="TH.ST" ShortName="ST" LongName="Surat Thani" />
+  <MapSpec InternalID="TH.SU" ShortName="SU" LongName="Surin" />
+  <MapSpec InternalID="TH.TG" ShortName="TG" LongName="Trang" />
+  <MapSpec InternalID="TH.TK" ShortName="TK" LongName="Tak" />
+  <MapSpec InternalID="TH.TT" ShortName="TT" LongName="Trat" />
+  <MapSpec InternalID="TH.UD" ShortName="UD" LongName="Uttaradit" />
+  <MapSpec InternalID="TH.UN" ShortName="UN" LongName="Udon Thani" />
+  <MapSpec InternalID="TH.UR" ShortName="UR" LongName="Ubon Ratchathani" />
+  <MapSpec InternalID="TH.UT" ShortName="UT" LongName="Uthai Thani" />
+  <MapSpec InternalID="TH.YL" ShortName="YL" LongName="Yala" />
+  <MapSpec InternalID="TH.YS" ShortName="YS" LongName="Yasothon" />
+</AnimatedMapDataXML>

@@ -1,0 +1,191 @@
+<Report ID="ReportCenter.rdRcScheduleTemplate">
+	<StyleSheet StyleSheet="rdTemplate/rdReportCenter/rdRcStyle.css" />
+	<LocalData>
+		<DataLayer Type="Scheduler" ID="dlScheduledTask" SchedulerTaskID="" ConnectionID="SchedulerLocal" />
+	</LocalData>
+	<Body>
+		<IncludeHtml Html="&lt;SCRIPT LANGUAGE=&quot;JAVASCRIPT&quot; src=&quot;rdTemplate/rdReportCenter/rdRcScript.js&quot;&gt;&lt;/SCRIPT&gt;" ID="includeReportCenterJs" />
+		<Rows ID="rowsSchedule" CellSpacing="4">
+			<Row ID="rowTable" Class="rdRcContentRow">
+				<Column ColSpan="2">
+					<Division ID="divHeader">
+						<Rows>
+							<Row ID="rowFrom">
+								<Column>
+									<Label Caption="From " ID="lblFrom" For="EmailFrom" />
+								</Column>
+								<Column ColSpan="2">
+									<InputEmail ID="EmailFrom" SaveInLocalStorage="True" InputSize="50" DefaultValue="@Local.rdFrom~" Tooltip="Enter an email address.">
+										<Validation Type="Required" ErrorMsg="Missing the From email address." Class="ThemeErrorText" />
+										<Validation Type="Email" ErrorMsg="Invalid From email address." Class="ThemeErrorText" />
+									</InputEmail>
+									<LineBreak />
+								</Column>
+							</Row>
+							<Row ID="rowTo">
+								<Column>
+									<Label Caption="To " ID="lblTo" For="EmailTo"/>
+								</Column>
+								<Column>
+                  <InputEmail InputSize="50" ID="EmailTo" SaveInLocalStorage="True" MultipleAddresses="True" DefaultValue="@Local.rdTo~" Tooltip="Enter email addresses, separating each with a &quot;;&quot;.">
+                    <Validation Type="Required" ErrorMsg="Missing a To email address." Class="ThemeErrorText" />
+                    <Validation Type="Email" ErrorMsg="Invalid To email address." Class="ThemeErrorText" />
+                    <AutoComplete ColumnName="" InputValueDelimiter=";" MultiSelect="True" />
+                  </InputEmail>
+                </Column>
+								<Column>
+									<Label ID="lblAddCc" Caption="Add Cc" Class="rdNoWrap">
+										<Action Type="ShowElement" ID="actionAddCc" ElementID="lblAddCc, rowCc" />
+									</Label>
+									<LineBreak />
+									<Label ID="lblAddBcc" Caption="Add Bcc" Class="rdNoWrap">
+										<Action Type="ShowElement" ID="actionAddBcc" ElementID="lblAddBcc, rowBcc" />
+									</Label>
+								</Column>
+							</Row>
+							<Row ID="rowCc" ShowModes="None">
+								<Column>
+									<Label Caption="Cc " ID="lblCc"  For="EmailCc" />
+								</Column>
+								<Column ColSpan="2">
+									<InputEmail InputSize="50" ID="EmailCc" MultipleAddresses="True" DefaultValue="@Local.rdCc~" Tooltip="Enter email addresses.">
+										<Validation Type="Email" ErrorMsg="Invalid Cc email address." Class="ThemeErrorText" />
+                    <AutoComplete ColumnName="" InputValueDelimiter=";" MultiSelect="True" />
+                  </InputEmail>
+								</Column>
+							</Row>
+							<Row ID="rowBcc" ShowModes="None">
+								<Column>
+									<Label Caption="Bcc " ID="lblBcc" For="EmailBcc" />
+								</Column>
+								<Column ColSpan="2">
+									<InputEmail InputSize="50" ID="EmailBcc" MultipleAddresses="True" DefaultValue="@Local.rdBcc~" Tooltip="Enter email addresses.">
+										<Validation Type="Email" ErrorMsg="Invalid Bcc email address." Class="ThemeErrorText" />
+                    <AutoComplete ColumnName="" InputValueDelimiter=";" MultiSelect="True" />
+                  </InputEmail>
+								</Column>
+							</Row>
+							<Row ID="rowSubject">
+								<Column>
+									<Label Caption="Subject " ID="lblSubject" For="EmailSubject"/>
+								</Column>
+								<Column ColSpan="2">
+									<InputText ID="EmailSubject" InputSize="50" Tooltip="Enter the subject." DefaultValue="@Local.rdSubject~">
+										<Validation Type="Required" ErrorMsg="Enter the Subject." Class="ThemeErrorText" />
+									</InputText>
+								</Column>
+							</Row>
+							<Row ID="rowExportFormat">
+								<Column>
+									<Label Caption="Format" ID="lblFormat" For="ExportFormat"/>
+								</Column>
+								<Column ColSpan="2">
+									<InputSelectList ID="ExportFormat" OptionValueColumn="Format" OptionCaptionColumn="Caption" DefaultValue="@Local.rdRcFormat~">
+										<DataLayer Type="Static" ID="dlExportFormat">
+											<StaticDataRow Format="PDF" Caption="PDF" />
+											<StaticDataRow Format="NativeExcel" Caption="Excel" />
+											<StaticDataRow Format="HTML" Caption="Web Mail" />
+										</DataLayer>
+										<EventHandler DhtmlEvent="onChange">
+											<Action Type="Javascript" Javascript="rdSelectExportFormat()" />
+										</EventHandler>
+									</InputSelectList>
+								</Column>
+							</Row>
+              <Row>
+                <Column>
+                  <Label  ID="lblOrientation" Caption="Orientation:" For="PdfPageOrientation"/>
+                </Column>
+                <Column>
+                  <InputSelectList ID="PdfPageOrientation" OptionCaptionColumn="Caption" OptionValueColumn="Value" DefaultValue="@Local.PdfPageOrientation~" Class="rdThemeInput">
+                    <DataLayer Type="Static">
+                      <StaticDataRow Caption="Portrait" Value="Portrait" />
+                      <StaticDataRow Caption="Landscape" Value="Landscape" />
+                    </DataLayer>
+                  </InputSelectList>
+                </Column>
+              </Row>
+							<Row ID="rowMessage">
+								<Column>
+									<Label Caption="Message " ID="lblMessage" For="EmailBody" />
+								</Column>
+								<Column ColSpan="2">
+									<InputTextArea ID="EmailBody" InputRows="4" InputColumns="60" Tooltip="Include a personal message." DefaultValue="@Local.rdBody~" />
+								</Column>
+							</Row>
+							<Row ID="rowSpacer">
+								<Column ColSpan="3">
+									<HR />
+								</Column>
+							</Row>
+							<Row ID="rowSchedule">
+								<Column ColSpan="3">
+									<Schedule ID="rdSchedule" ScheduleXml="@Local.ScheduleXml~" xxxxShowScheduleXml="" xxxxScheduleIntervals="Daily,Weekly,Monthly,MonthlyDayOfWeek" Format="yyyy-MM-dd" Layout="Fixed" Orientation="Horizontal" />
+									<InputHidden ID="rdSchedulerTaskID" DefaultValue="@Local.TaskID~" />
+									<InputHidden ID="rdSchedulerReportID" DefaultValue="(set in subRedirectToReportCenterSchedule()" />
+									<InputHidden ID="rdBookmarkID" DefaultValue="(set in subRedirectToReportCenterSchedule()" />
+									<InputHidden ID="rdBookmarkCollection" DefaultValue="(set in subRedirectToReportCenterSchedule()" />
+									<InputHidden ID="rdBookmarkUserName" DefaultValue="(set in subRedirectToReportCenterSchedule()" />
+									<InputHidden ID="rdExportTableID" DefaultValue="(set in subRedirectToReportCenterSchedule()" />
+									<InputHidden ID="rdCustomColumn1" DefaultValue="(set in subRedirectToReportCenterSchedule()" />
+									<InputHidden ID="rdCustomColumn2" DefaultValue="(set in subRedirectToReportCenterSchedule()" />
+									<InputHidden ID="rdSchedulerSessionVariables" DefaultValue="" />
+								</Column>
+							</Row>
+							<Row ID="rowLastRun" Condition="Len(&quot;@Local.TimeLastRun~&quot;)&gt;0">
+								<Column ColSpan="3">
+									<Label Caption="Last run on " ID="lblLastRun" />
+									<Label Caption="@Local.TimeLastRun~" Format="D" ID="lblLastRunDate" />
+									<Label Caption=" at " ID="lblLastRunAt" />
+									<Label Caption="@Local.TimeLastRun~" Format="T" ID="lblLastRunTime" />
+								</Column>
+							</Row>
+							<Row ID="rowSpacer">
+								<Column ColSpan="3">
+									<HR />
+								</Column>
+							</Row>
+							<Row ID="rowButtons">
+								<Column ColSpan="3">
+									<Division ID="divDone">
+										<Label Caption="Done" ID="lblDone" Class="ThemeLinkButton">
+											<Action Type="Javascript" Javascript="if(rdSaveSchedule('Refresh'))rdHideSchedulePanel()" ID="rdActionDoneEmail" />
+										</Label>
+									</Division>
+									<Division ID="divRunNow" Condition="&quot;@Local.TaskID~&quot; &lt;&gt; &quot;&quot;">
+										<Label Caption="Run Now..." ID="lblRunNow" Class="ThemeLinkButton" Tooltip="Schedule to run now.">
+											<Action Type="Javascript" Javascript="rdRunNowSaveFirst()" ID="rdActionRunNow" ConfirmMessage="Schedule to run now? Are you sure?" />
+										</Label>
+									</Division>
+									<Division ID="divRemove" Condition="&quot;@Local.TaskID~&quot; &lt;&gt; &quot;&quot;">
+										<Label Caption="Remove..." ID="lblRemove" Class="ThemeLinkButton" Tooltip="Remove the Schedule.">
+											<Action Type="Javascript" Javascript="rdRemoveSchedule();rdHideSchedulePanel()" ID="rdActionRemove" ConfirmMessage="Remove? Are you sure?" />
+										</Label>
+									</Division>
+									<Division ID="divWait" ShowModes="None">
+										<Image Caption="rdTemplate/rdWait.gif" />
+									</Division>
+									<Remark>
+										<Spaces Size="5" />
+									</Remark>
+									<Remark>
+										<Label Caption="Cancel" ID="lblCancel" Class="ThemeLinkButton">
+											<Action Type="Javascript" Javascript="rdCloseSchedule()" ID="actionCancel" />
+										</Label>
+									</Remark>
+								</Column>
+							</Row>
+						</Rows>
+					</Division>
+				</Column>
+			</Row>
+		</Rows>
+		<InputHidden ID="rdRcReportID" DefaultValue="@Request.rdRcReportID~" />
+		<InputHidden ID="rdReportCenterID" DefaultValue="@Request.rdReportCenterID~" />
+		<InputHidden ID="rdPopupID" DefaultValue="" />
+		<IncludeHtml Html="&lt;SCRIPT&gt;rdSelectExportFormat()&lt;/SCRIPT&gt;" />
+		<IncludeHtml Html="&lt;SCRIPT&gt;document.rdForm.EmailFrom.focus()&lt;/SCRIPT&gt;" />
+	</Body>
+	<StyleSheet StyleSheet="rdTemplate/rdOlapGrid/rdOgStyle.css" />
+	<ideTestParams rdReportCenterID="" />
+</Report>

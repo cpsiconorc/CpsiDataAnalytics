@@ -1,0 +1,23 @@
+/* This file contains overrides for the Theme.css specific to PDf exports.  The following changes are necessary to Java PDF to work properly. */
+p,
+.ThemeTextLargest ,
+.ThemeTextLarger ,
+.ThemeTextLarge ,
+.ThemeText ,
+.ThemeTextSmall ,
+.ThemeTextSmaller ,
+.ThemeTextSmallest {
+  font-family: 'Segoe UI', 'Avenir Next', 'Avenir', 'Helvetica Neue', Helvetica, 'Arial', 'sans-serif';
+	color: #363b42;
+	font-weight: normal;
+	min-height: 100%;
+    position: static;
+    min-height: auto;
+}
+h1, h2, h3, h4, h5, h6 {
+  text-align: center;
+  min-height: 0px;    
+  position: relative;
+}
+TR {page-break-inside: avoid;}
+/* Customer-specific changes should go below here. */

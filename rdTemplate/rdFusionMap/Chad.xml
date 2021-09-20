@@ -1,0 +1,20 @@
+<AnimatedMapDataXML>
+  <MapSpec InternalID="TD.BA" ShortName="BA" LongName="Batha" />
+  <MapSpec InternalID="TD.BT" ShortName="BT" LongName="Borkou-Ennedi-Tibesti" />
+  <MapSpec InternalID="TD.CG" ShortName="CG" LongName="Chari-Baguirmi" />
+  <MapSpec InternalID="TD.GR" ShortName="GR" LongName="Guera" />
+  <MapSpec InternalID="TD.HD" ShortName="HD" LongName="Hadjer-Lamis" />
+  <MapSpec InternalID="TD.KA" ShortName="KA" LongName="Kanem" />
+  <MapSpec InternalID="TD.LC" ShortName="LC" LongName="Lac" />
+  <MapSpec InternalID="TD.LO" ShortName="LO" LongName="Logone Occidental" />
+  <MapSpec InternalID="TD.LR" ShortName="LR" LongName="Logone Oriental" />
+  <MapSpec InternalID="TD.MA" ShortName="MA" LongName="Mandoul" />
+  <MapSpec InternalID="TD.ME" ShortName="ME" LongName="Mayo-Kebbi Est" />
+  <MapSpec InternalID="TD.MW" ShortName="MW" LongName="Mayo-Kebbi Ouest" />
+  <MapSpec InternalID="TD.MO" ShortName="MO" LongName="Moyen-Chari" />
+  <MapSpec InternalID="TD.OD" ShortName="OD" LongName="Ouaddaï" />
+  <MapSpec InternalID="TD.SA" ShortName="SA" LongName="Salamat" />
+  <MapSpec InternalID="TD.TA" ShortName="TA" LongName="Tandjile" />
+  <MapSpec InternalID="TD.NJ" ShortName="NJ" LongName="Ville De NDjamena" />
+  <MapSpec InternalID="TD.BI" ShortName="BI" LongName="Wadi Fira" />
+</AnimatedMapDataXML>

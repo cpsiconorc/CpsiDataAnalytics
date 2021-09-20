@@ -1,0 +1,461 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Report ID="rdScheduleTemplate" rdSchVersion="10.0">
+  <Body>
+    <Rows ID="rowsSchContainer_rdSchId" CellSpacing="0" Class="rdSchedule" Border="1">
+      <Row>
+        <Column Class="rdScheduleVAlign" Width="100" WidthScale="%">
+          <Rows Class="rdScheduleFloatLeft">
+            <Row ID="rowSchInterval_rdSchId" IdeDisplayStatus="Collapsed">
+              <Column>
+                <Label ID="lblSchInterval_rdSchId" Caption="Schedule" For="selSchInterval_rdSchId" />
+              </Column>
+              <Column Class="rdScheduleColumnGap" />
+              <Column IdeDisplayStatus="Collapsed">
+                <InputSelectList OptionCaptionColumn="Interval" OptionValueColumn="Interval" ID="selSchInterval_rdSchId" DefaultValue="">
+                  <DataLayer Type="Static" ID="dlSchInterval">
+                    <StaticDataRow Interval="Once" />
+                    <StaticDataRow Interval="Minutes" />
+                    <StaticDataRow Interval="Hourly" />
+                    <StaticDataRow Interval="Daily" />
+                    <StaticDataRow Interval="Weekly" />
+                    <StaticDataRow Interval="Monthly" />
+                  </DataLayer>
+                  <EventHandler DhtmlEvent="onchange">
+                    <Action Type="Link" ID="actSchIntervalChange_rdSchId">
+                      <Target Type="Link" Link="javascript:rdSchUpdateControls('rdSchId');" ID="lnkSchIntervalChange_rdSchId" />
+                    </Action>
+                  </EventHandler>
+                </InputSelectList>
+              </Column>
+            </Row>
+          </Rows>
+        </Column>
+      </Row>
+      <Row ID="rowSchRunEvery_rdSchId">
+        <Column>
+          <Division ID="cellSchRunEvery_rdSchId" HtmlDiv="True">
+            <Rows ID="rowsSchRunEvery_rdSchId" CellSpacing="0" IdeDisplayStatus="Collapsed">
+              <Row ID="rowSchMinutes_rdSchId" IdeDisplayStatus="Collapsed">
+                <Column ID="cellSchMinutes_rdSchId">
+                  <InputSelectList ID="selSchMinutes_rdSchId" OptionCaptionColumn="RunTime" OptionValueColumn="RunTime" DefaultValue="@Request.selSchMinutes_rdSchId~" Caption="Every ">
+                    <DataLayer Type="Linked" ID="dlSchMinutes_rdSchId" LinkedDataLayerID="dllSchRunTimePart" />
+                    <EventHandler DhtmlEvent="onchange">
+                      <Action Type="Link" ID="actSchMinutes_rdSchId">
+                        <Target Type="Link" ID="tgtSchMinutes_rdSchId" Link="javascript:rdSchSave('rdSchId','Minutes');" />
+                      </Action>
+                    </EventHandler>
+                  </InputSelectList>
+                  <Label ID="lblSchMinutes_rdSchId" Caption=" minute(s)" For="selSchMinutes_rdSchId"/>
+                </Column>
+              </Row>
+              <Row ID="rowSchHourly_rdSchId">
+                <Column ID="cellSchHourly_rdSchId">
+                  <InputSelectList ID="selSchHourly_rdSchId" OptionCaptionColumn="RunTime" OptionValueColumn="RunTime" DefaultValue="@Request.selSchHourly_rdSchId~" Caption="Every ">
+                    <DataLayer Type="Linked" ID="dlSchHourly_rdSchId" LinkedDataLayerID="dllSchRunTime" />
+                    <EventHandler DhtmlEvent="onchange">
+                      <Action Type="Link" ID="actSchHourly_rdSchId">
+                        <Target Type="Link" ID="tgtSchHourly_rdSchId" Link="javascript:rdSchSave('rdSchId','Hourly');" />
+                      </Action>
+                    </EventHandler>
+                  </InputSelectList>
+                  <Label ID="lblSchHourly_rdSchId" Caption=" hour(s)" For="selSchHourly_rdSchId" />
+                </Column>
+              </Row>
+              <Row ID="rowSchDays_rdSchId" IdeDisplayStatus="Collapsed">
+                <Column ID="cellSchDays_rdSchId">
+                  <InputText ID="txtSchDays_rdSchId" Caption="Every " DefaultValue="" Format="General Number" InputMaxLength="2" InputSize="2">
+                    <Validation Type="Numeric" ErrorMsg="Days must be a number." />
+                    <EventHandler DhtmlEvent="onblur">
+                      <Action Type="Link" ID="actSchDays_rdSchId">
+                        <Target Type="Link" ID="tgtSchDays_rdSchId" Link="javascript:rdSchSave('rdSchId','Days');" />
+                      </Action>
+                    </EventHandler>
+                  </InputText>
+                  <Label ID="lblSchDays_rdSchId" Caption=" day(s)" For="txtSchDays_rdSchId"/>
+                </Column>
+              </Row>
+              <Row ID="rowSchWeeks_rdSchId" IdeDisplayStatus="Collapsed">
+                <Column ID="cellSchWeeks_rdSchId">
+                  <InputText ID="txtSchWeeks_rdSchId" Caption="Every " DefaultValue="@Request.txtSchWeeks_rdSchId~" Format="General Number" InputMaxLength="2" InputSize="2">
+                    <Validation Type="Numeric" ErrorMsg="Weeks must be a number." />
+                    <EventHandler DhtmlEvent="onblur">
+                      <Action Type="Link" ID="actSchWeeks_rdSchId">
+                        <Target Type="Link" ID="tgtSchWeeks_rdSchId" Link="javascript:rdSchSave('rdSchId','Weeks');" />
+                      </Action>
+                    </EventHandler>
+                  </InputText>
+                  <Label ID="lblSchWeeks_rdSchId" Caption=" week(s)" For="txtSchWeeks_rdSchId"/>
+                </Column>
+              </Row>
+              <Row ID="rowSchWeekDays_rdSchId" IdeDisplayStatus="Collapsed">
+                <Column ID="cellSchWeekDays_rdSchId">
+                  <DataMultiColumnList ID="dlstSchWeekDays_rdSchId" MultiListColumns="4" MultiListDirection="Across">
+                    <DataLayer Type="Linked" ID="dlSchDaysInWeek_rdSchId" LinkedDataLayerID="dllSchDaysInWeek" />
+                    <Division>
+                      <InputCheckbox ID="chkSchWeekDay_rdSchId" CheckedValue="1" DefaultValue="@Data.Checked~">
+                        <EventHandler DhtmlEvent="onclick">
+                          <Action Type="Link" ID="actSchWeekDay_rdSchId">
+                            <Target Type="Link" ID="tgtSchWeekDay_rdSchId" Link="javascript:rdSchSave('rdSchId');" />
+                          </Action>
+                        </EventHandler>
+                      </InputCheckbox>
+                      <Label ID="lblSchWeekDay_rdSchId" Caption="@Data.WeekDay~" For="chkSchWeekDay_rdSchId_Row{position()}"/>
+                    </Division>
+                  </DataMultiColumnList>
+                </Column>
+              </Row>
+              <Row ID="rowSchMonths_rdSchId" IdeDisplayStatus="Collapsed">
+                <Column ID="cellSchMonths_rdSchId">
+                  <InputRadioButtons ID="chkSchMonths_rdSchId" OptionCaptionColumn="None" OptionValueColumn="Value" DefaultValue="chkSchMonths">
+                    <DataLayer Type="Static" ID="dlchkSchMonths_rdSchId">
+                      <StaticDataRow Value="chkSchMonths" />
+                    </DataLayer>
+                    <EventHandler DhtmlEvent="onclick">
+                      <Action Type="Link" ID="actSchMonthsInterval_rdSchId">
+                        <Target Type="Link" ID="lnkSchMonthsInterval_rdSchId" Link="javascript:rdSchToggleMonthlyInterval('day', 'rdSchId');" />
+                      </Action>
+                    </EventHandler>
+                  </InputRadioButtons>
+                  <Division ID="divSchMonths_rdSchId">
+                    <InputText ID="txtSchMonths_rdSchId" Caption="Day " Format="General Number" InputMaxLength="2" InputSize="2">
+                      <Validation Type="Numeric" ErrorMsg="Day of the month(s) must be a number." />
+                      <EventHandler DhtmlEvent="onblur">
+                        <Action Type="Link" ID="actSchMonths_rdSchId">
+                          <Target Type="Link" ID="tgtSchMonths_rdSchId" Link="javascript:rdSchSave('rdSchId','DayOfMonth');" />
+                        </Action>
+                      </EventHandler>
+                    </InputText>
+                    <Label ID="lblSchMonths_rdSchId" Caption=" of the month(s)" For="txtSchMonths_rdSchId" />
+                  </Division>
+                  <Division ID="divSchMonthsPlaceHolder_rdSchId">
+                    <Label ID="lblSchMonthsPlaceholder_rdSchId" Caption="Day n of the month(s)." For ="chkSchMonths_TaskSchedule_1" />
+                  </Division>
+                </Column>
+              </Row>
+              <Row ID="rowSchVariableMonthDay_rdSchId" IdeDisplayStatus="Collapsed">
+                <Column ID="cellSchVariableMonthDay_rdSchId">
+                  <InputRadioButtons ID="chkSchMonthDayInterval_rdSchId" OptionCaptionColumn="None" OptionValueColumn="Value" DefaultValue="chkSchMonthDayInterval">
+                    <DataLayer Type="Static" ID="dlchkSchMonthDayInterval_rdSchId">
+                      <StaticDataRow Value="chkSchMonthDayInterval" />
+                    </DataLayer>
+                    <EventHandler DhtmlEvent="onclick">
+                      <Action Type="Link" ID="actSchMonthDayInterval_rdSchId">
+                        <Target Type="Link" ID="lnkSchMonthDayInterval_rdSchId" Link="javascript:rdSchToggleMonthlyInterval('variable', 'rdSchId');" />
+                      </Action>
+                    </EventHandler>
+                  </InputRadioButtons>
+                  <Division ID="divSchMonthDayInterval_rdSchId">
+                    <InputSelectList ID="selSchMonthDayInterval_rdSchId" OptionCaptionColumn="DayInterval" OptionValueColumn="Value" Caption="The ">
+                      <DataLayer Type="Static" ID="dlMonthDayInterval_rdSchId">
+                        <StaticDataRow DayInterval="first" Value="0" />
+                        <StaticDataRow DayInterval="second" Value="1" />
+                        <StaticDataRow DayInterval="third" Value="2" />
+                        <StaticDataRow DayInterval="fourth" Value="3" />
+                        <StaticDataRow DayInterval="last" Value="4" />
+                      </DataLayer>
+                      <EventHandler DhtmlEvent="onchange">
+                        <Action Type="Link" ID="actSchMonthDayInterval_rdSchId">
+                          <Target Type="Link" ID="tgtSchMonthDayInterval_rdSchId" Link="javascript:rdSchSave('rdSchId');" />
+                        </Action>
+                      </EventHandler>
+                    </InputSelectList>
+                    <InputSelectList ID="selSchVariableMonthDay_rdSchId" OptionCaptionColumn="WeekDay" OptionValueColumn="Value" DefaultValue="@Request.selSchVariableMonthDay_rdSchId~">
+                      <DataLayer Type="Linked" ID="dlSchMonthDayVariable_rdSchId" LinkedDataLayerID="dllSchDaysInWeek" />
+                      <EventHandler DhtmlEvent="onchange">
+                        <Action Type="Link" ID="actSchVariableMonthDay_rdSchId">
+                          <Target Type="Link" ID="tgtSchVariableMonthDay_rdSchId" Link="javascript:rdSchSave('rdSchId');" />
+                        </Action>
+                      </EventHandler>
+                    </InputSelectList>
+                    <Label ID="lblSchVariableMonthDay_rdSchId" Caption=" of the month(s)" For="selSchVariableMonthDay_rdSchId"/>
+                  </Division>
+                  <Division ID="divSchMonthDayIntervalPlaceHolder_rdSchId">
+                    <Label ID="lblSchVariableMonthDayPlaceHolder_rdSchId" Caption="The nth weekday of the month(s)" For = "chkSchMonthDayInterval_rdSchId_1"/>
+                  </Division>
+                </Column>
+              </Row>
+              <Row ID="rowSchMonthsList_rdSchId" IdeDisplayStatus="Collapsed">
+                <Column ID="cellSchMonthsList_rdSchId">
+                  <DataMultiColumnList ID="dlstSchMonthsList_rdSchId" MultiListColumns="4" MultiListDirection="Across">
+                    <DataLayer Type="Static" ID="dlSchMonthsInYear_rdSchId" />
+                    <Division>
+                      <InputCheckbox ID="chkSchMonth_rdSchId" CheckedValue="1" DefaultValue="@Data.Checked~">
+                        <EventHandler DhtmlEvent="onclick">
+                          <Action Type="Link" ID="actSchMonth_rdSchId">
+                            <Target Type="Link" ID="tgtSchMonth_rdSchId" Link="javascript:rdSchSave('rdSchId');" />
+                          </Action>
+                        </EventHandler>
+                      </InputCheckbox>
+                      <Label ID="lblSchMonth_rdSchId" Caption="@Data.Month~" For="chkSchMonth_rdSchId_Row{position()}" />
+                    </Division>
+                  </DataMultiColumnList>
+                </Column>
+              </Row>
+            </Rows>
+          </Division>
+        </Column>
+      </Row>
+      <Row>
+        <Column Class="rdScheduleVAlign" Width="100" WidthScale="%">
+          <Rows ID="rowsSchStartEndParams_rdSchId" Class="rdScheduleFloatLeft">
+            <Row ID="rowSchFirstRunTime_rdSchId" IdeDisplayStatus="Collapsed">
+              <Column>
+                <Label ID="lblSchFirstRunTime_rdSchId" Caption="Start Time" For="selSchFirstRunTime_rdSchId" />
+              </Column>
+              <Column Class="rdScheduleColumnGap" />
+              <Column>
+                <InputTime ID="selSchFirstRunTime_rdSchId" ClockLinkType="Image" InputSize="10">
+                  <InputTimeClock ClockHours="24Hours" />
+                  <Validation Type="Time" ErrorMsg="Start Time is not a valid time." />
+                  <Validation Type="Required" ErrorMsg="Start Time is required." />
+                  <EventHandler DhtmlEvent="onblur">
+                    <Action Type="Link" ID="actSchFirstRunTime_rdSchId">
+                      <Target Type="Link" ID="tgtSchFirstRunTime_rdSchId" Link="javascript:rdSchSave('rdSchId');" />
+                    </Action>
+                  </EventHandler>
+                </InputTime>
+              </Column>
+            </Row>
+            <Row ID="rowServerTime_rdSchId" IdeDisplayStatus="Collapsed">
+              <Column ColSpan="2">
+              </Column>
+              <Column>
+                <Spaces />
+                <Label Caption="Scheduling's current time is " />
+                <Label Caption="@Function.DateTime~" Format="Short Date" />
+                <Spaces />
+                <Label Caption="@Function.DateTime~" Format="Short Time" />
+              </Column>
+            </Row>
+            <Row ID="rowSchStartDate_rdSchId" IdeDisplayStatus="Collapsed">
+              <Column>
+                <Label ID="lblSchStartDate_rdSchId" Caption="Start Date" For="datSchStartDate_rdSchId"/>
+                <Label ID="lblSchRunOn_rdSchId" Caption="Run On" For="datSchStartDate_rdSchId"/>
+              </Column>
+              <Column Class="rdScheduleColumnGap" />
+              <Column>
+                <InputDate ID="datSchStartDate_rdSchId" Format="" DefaultValue="" InputSize="10" CalendarLinkType="Image">
+                  <Validation Type="Date" ErrorMsg="Start Date is not a valid date." />
+                  <Validation Type="Required" ErrorMsg="Start Date is required." />
+                  <EventHandler DhtmlEvent="onblur">
+                    <Action Type="Link" ID="actSchStartDate_rdSchId">
+                      <Target Type="Link" ID="tgtSchStartDate_rdSchId" Link="javascript:rdSchSave('rdSchId','StartDate');" />
+                    </Action>
+                  </EventHandler>
+                  <EventHandler DhtmlEvent="oncalendarchange">
+                    <Action Type="Link" ID="actSchStartDateChange_rdSchId">
+                      <Target Type="Link" ID="tgtSchStartDateChange_rdSchId" Link="javascript:rdSchSave('rdSchId');" />
+                    </Action>
+                  </EventHandler>
+                </InputDate>
+              </Column>
+            </Row>
+            <Row ID="rowSchEndDate_rdSchId" IdeDisplayStatus="Collapsed">
+              <Column>
+                <InputCheckbox CheckedValue="1" ID="chkSchEndDate_rdSchId" DefaultValue="0">
+                  <EventHandler DhtmlEvent="onclick">
+                    <Action Type="Link" ID="actSchEndDateChange_rdSchId">
+                      <Target Type="Link" ID="tgtSchEndDateChange_rdSchId" Link="javascript:rdSchToggleEndDate('rdSchId');" />
+                    </Action>
+                  </EventHandler>
+                </InputCheckbox>
+                <Label ID="lblSchEndDate_rdSchId" Caption="End Date " For="chkSchEndDate_rdSchId" />
+              </Column>
+              <Column Class="rdScheduleColumnGap" />
+              <Column>
+                <Division ShowModes="None" ID="divSchEndDate_rdSchId">
+                  <InputDate ID="datSchEndDate_rdSchId" Format="" DefaultValue="" InputSize="10" CalendarLinkType="Image">
+                    <Validation Type="Date" ErrorMsg="End Date is not a valid date." />
+                    <EventHandler DhtmlEvent="onblur">
+                      <Action Type="Link" ID="actSchEndDate_rdSchId">
+                        <Target Type="Link" ID="tgtSchEndDate_rdSchId" Link="javascript:rdSchSave('rdSchId','EndDate');" />
+                      </Action>
+                    </EventHandler>
+                    <EventHandler DhtmlEvent="oncalendarchange">
+                      <Action Type="Link" ID="actSchEndDateChange_rdSchId">
+                        <Target Type="Link" ID="tgtSchEndDateChange_rdSchId" Link="javascript:rdSchSave('rdSchId');" />
+                      </Action>
+                    </EventHandler>
+                  </InputDate>
+                </Division>
+              </Column>
+            </Row>
+            <Row ID="rowSchEndTime_rdSchId" ShowModes="None" IdeDisplayStatus="Collapsed">
+              <Column Class="rdScheduleTdRight">
+                <Spaces Size="3" />
+                <Label ID="lblSchEndTime_rdSchId" Caption="End Time " For="selSchEndTime_rdSchId"/>
+              </Column>
+              <Column Class="rdScheduleColumnGap" />
+              <Column>
+                <InputTime ID="selSchEndTime_rdSchId" ClockLinkType="Image" InputSize="10">
+                  <InputTimeClock ClockHours="24Hours" />
+                  <Validation Type="Time" ErrorMsg="End Time is not a valid time." />
+                  <EventHandler DhtmlEvent="onchange">
+                    <Action Type="Link" ID="actSchEndTime_rdSchId">
+                      <Target Type="Link" ID="tgtSchEndTime_rdSchId" Link="javascript:rdSchSave('rdSchId');" />
+                    </Action>
+                  </EventHandler>
+                  <EventHandler DhtmlEvent="onblur">
+                    <Action Type="Link" ID="actSchEndTime_rdSchId">
+                      <Target Type="Link" ID="tgtSchEndTime_rdSchId" Link="javascript:rdSchSave('rdSchId');" />
+                    </Action>
+                  </EventHandler>
+                </InputTime>
+              </Column>
+            </Row>
+          </Rows>
+        </Column>
+      </Row>
+      <Row ID="rdSch_rowProcessParamsLabel_rdSchId" IdeDisplayStatus="Collapsed">
+        <Column ColSpan="3">
+          <Label ID="lblProcessParams_rdSchId" Caption="Additional Parameters" For="lnkProcessParamsAdd_rdSchId" />
+          <Label ID="lnkProcessParamsAdd_rdSchId" Caption="+" Tooltip="Add an additional parameter.">
+            <Action Type="Link" ID="actProcessParamsAdd_rdSchId">
+              <Target Type="Link" ID="tgtProcessParamsAdd_rdSchId" Link="javascript:rdSchAddParam('rdSchId');" />
+            </Action>
+          </Label>
+        </Column>
+      </Row>
+      <Row ID="rdSch_rowProcessParams_rdSchId" IdeDisplayStatus="Collapsed">
+        <Column ColSpan="3">
+          <Rows ID="rdSch_rowsAddtParams_rdSchId" CellSpacing="0" Class="rdSchedule" Border="1">
+            <Row ID="rdSch_rowParam_rdSchId~">
+              <Column ID="ParamLabel">
+                <Label ID="rdSch_lblParam_rdSchId~" Caption="" For="rdSch_txtParam_rdSchId~" />
+              </Column>
+              <Column Class="rdScheduleColumnGap" />
+              <Column ID="ParamInput">
+                <InputText ID="rdSch_txtParam_rdSchId~" DefaultValue="" Tag="">
+                  <EventHandler DhtmlEvent="onblur">
+                    <Action Type="Link" ID="rdSch_actParam_rdSchId~">
+                      <Target Type="Link" ID="rdSch_tgtParam_rdSchId~" Link="javascript:rdSchSave('rdSchId');" />
+                    </Action>
+                  </EventHandler>
+                </InputText>
+                <Spaces Size="1" />
+                <Label ID="lnkProcessParamsRemove_rdSchId~" Caption="-" Tooltip="Remove this parameter.">
+                  <Action Type="Link" ID="actProcessParamsRemove_rdSchId~">
+                    <Target Type="Link" ID="tgtProcessParamsRemove_rdSchId~" Link="javascript:rdSchRemoveParam('rdSchId','rdSchParamName');" />
+                  </Action>
+                </Label>
+              </Column>
+            </Row>
+          </Rows>
+        </Column>
+      </Row>
+      <Row IdeDisplayStatus="Collapsed">
+        <Column ColSpan="2">
+          <InputHidden ID="rdSchId" />
+          <InputHidden ID="rdProcessParams_rdSchId" />
+          <InputHidden ID="rdProcessFileTasksIDs_rdSchId" />
+          <Division ID="divSchXml_rdSchId" HtmlDiv="True" Class="rdScheduleXml">
+            <Label ID="lblSchXmlCaption_rdSchId" Caption="ScheduleXml value for rdSchId:" />
+            <LineBreak />
+            <Label ID="lblSchXml_rdSchId" />
+          </Division>
+          <Label ID="lblUpdateControls" Format="HTML" Caption="&lt;SCRIPT&gt;rdSchUpdateControls('rdSchId')&lt;/SCRIPT&gt;" />
+        </Column>
+      </Row>
+    </Rows>
+  </Body>
+  <LocalData ID="ldSchDaysInWeek" IdeDisplayStatus="Collapsed">
+    <DataLayer Type="Static" ID="dlSchDaysInWeek">
+      <DataLayerLink ID="dllSchDaysInWeek" />
+    </DataLayer>
+  </LocalData>
+  <LocalData ID="ldSchRunTime" IdeDisplayStatus="Collapsed">
+    <DataLayer Type="Static" ID="dlSchRunTime">
+      <StaticDataRow RunTime="00" />
+      <StaticDataRow RunTime="01" />
+      <StaticDataRow RunTime="02" />
+      <StaticDataRow RunTime="03" />
+      <StaticDataRow RunTime="04" />
+      <StaticDataRow RunTime="05" />
+      <StaticDataRow RunTime="06" />
+      <StaticDataRow RunTime="07" />
+      <StaticDataRow RunTime="08" />
+      <StaticDataRow RunTime="09" />
+      <StaticDataRow RunTime="10" />
+      <StaticDataRow RunTime="11" />
+      <StaticDataRow RunTime="12" />
+      <StaticDataRow RunTime="13" />
+      <StaticDataRow RunTime="14" />
+      <StaticDataRow RunTime="15" />
+      <StaticDataRow RunTime="16" />
+      <StaticDataRow RunTime="17" />
+      <StaticDataRow RunTime="18" />
+      <StaticDataRow RunTime="19" />
+      <StaticDataRow RunTime="20" />
+      <StaticDataRow RunTime="21" />
+      <StaticDataRow RunTime="22" />
+      <StaticDataRow RunTime="23" />
+      <DataLayerLink ID="dllSchRunTime" />
+    </DataLayer>
+  </LocalData>
+  <LocalData ID="ldSchRunTimePart" IdeDisplayStatus="Collapsed">
+    <DataLayer Type="Static" ID="dlSchRunTimePart">
+      <StaticDataRow RunTime="00" />
+      <StaticDataRow RunTime="01" />
+      <StaticDataRow RunTime="02" />
+      <StaticDataRow RunTime="03" />
+      <StaticDataRow RunTime="04" />
+      <StaticDataRow RunTime="05" />
+      <StaticDataRow RunTime="06" />
+      <StaticDataRow RunTime="07" />
+      <StaticDataRow RunTime="08" />
+      <StaticDataRow RunTime="09" />
+      <StaticDataRow RunTime="10" />
+      <StaticDataRow RunTime="11" />
+      <StaticDataRow RunTime="12" />
+      <StaticDataRow RunTime="13" />
+      <StaticDataRow RunTime="14" />
+      <StaticDataRow RunTime="15" />
+      <StaticDataRow RunTime="16" />
+      <StaticDataRow RunTime="17" />
+      <StaticDataRow RunTime="18" />
+      <StaticDataRow RunTime="19" />
+      <StaticDataRow RunTime="20" />
+      <StaticDataRow RunTime="21" />
+      <StaticDataRow RunTime="22" />
+      <StaticDataRow RunTime="23" />
+      <StaticDataRow RunTime="24" />
+      <StaticDataRow RunTime="25" />
+      <StaticDataRow RunTime="26" />
+      <StaticDataRow RunTime="27" />
+      <StaticDataRow RunTime="28" />
+      <StaticDataRow RunTime="29" />
+      <StaticDataRow RunTime="30" />
+      <StaticDataRow RunTime="31" />
+      <StaticDataRow RunTime="32" />
+      <StaticDataRow RunTime="33" />
+      <StaticDataRow RunTime="34" />
+      <StaticDataRow RunTime="35" />
+      <StaticDataRow RunTime="36" />
+      <StaticDataRow RunTime="37" />
+      <StaticDataRow RunTime="38" />
+      <StaticDataRow RunTime="39" />
+      <StaticDataRow RunTime="40" />
+      <StaticDataRow RunTime="41" />
+      <StaticDataRow RunTime="42" />
+      <StaticDataRow RunTime="43" />
+      <StaticDataRow RunTime="44" />
+      <StaticDataRow RunTime="45" />
+      <StaticDataRow RunTime="46" />
+      <StaticDataRow RunTime="47" />
+      <StaticDataRow RunTime="48" />
+      <StaticDataRow RunTime="49" />
+      <StaticDataRow RunTime="50" />
+      <StaticDataRow RunTime="51" />
+      <StaticDataRow RunTime="52" />
+      <StaticDataRow RunTime="53" />
+      <StaticDataRow RunTime="54" />
+      <StaticDataRow RunTime="55" />
+      <StaticDataRow RunTime="56" />
+      <StaticDataRow RunTime="57" />
+      <StaticDataRow RunTime="58" />
+      <StaticDataRow RunTime="59" />
+      <DataLayerLink ID="dllSchRunTimePart" />
+    </DataLayer>
+  </LocalData>
+  <ideTestParams txtSchWeeks_rdSchId="" selSchVariableMonthDay_rdSchId="" selSchMinutes_rdSchId="" selSchHourly_rdSchId="" />
+</Report>

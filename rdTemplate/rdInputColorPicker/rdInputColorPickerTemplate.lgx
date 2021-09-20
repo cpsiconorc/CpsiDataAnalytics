@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Report ID="NewColorPicker">
+  <StyleSheet StyleSheet="rdRaStyle.css" />
+  <ReportHeader />
+  <Body>
+    <Division ID="ColorPickerWraper_rdElementID" Class="middleAlignment">
+      <Rows>
+        <Row>
+          <Column>
+            <InputText ID="rdElementID"/>
+          </Column>
+          <Column>
+            <Rectangle ID="rectColorIndicator_rdElementID" Height="10" Width="10" BorderThickness="1" BackgroundColor="#6AA84F" Color="lightgray" />
+          </Column>
+          <Column>
+            <PopupPanel ID="ppColors_rdElementID" PopupPanelLocation="Mouse" PopupModal="False">
+              <Rows>                 
+                <Row>
+                  <Column ID="ppSaturation_rdElementID">
+                  </Column>
+                  <Column >
+                    <Rows ID ="ppTiles_rdElementID">                      
+                    </Rows>
+                  </Column>
+                </Row>
+                <Row>
+                  <Column ColSpan="2">
+                    <Rows ID ="ppCustomPalette_rdElementID">
+                    </Rows>
+                  </Column>
+                </Row>
+              </Rows>
+              <Image Caption="rdTemplate/rdInputColorPicker/selectedColor.png" ID="selectedColor_rdElementID" Height="11" Width="11" Class="CheckedAlignment rdImageColorSelected hidden" />
+            </PopupPanel>
+            <Image Caption="rdTemplate/rdAnalysisGrid/ColorPicker.png" ID="colorPicker_rdElementID" Tooltip="Pick Color" Class="rd-colorpicker-image" IdeDisplayStatus="Collapsed">
+            </Image>
+          </Column>
+        </Row>
+      </Rows>
+    </Division>
+  </Body>
+  <ReportFooter />
+</Report>

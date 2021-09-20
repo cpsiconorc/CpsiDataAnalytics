@@ -1,0 +1,108 @@
+.yui3-dd-drop-active-valid {
+    background-color: #F3F3F3;
+    border-radius: 3px;
+}
+
+
+.yui3-dd-drop-over {
+    border: 1px solid gray;
+}
+
+.selectedFolderClass {
+font-weight:bold;
+}
+
+#dtFolders {
+width:100%;
+border-collapse: separate;
+}
+
+#colDepth_Row1{
+width:5px !important;
+}
+
+.rdDraggableElement {
+    cursor: move;
+}
+
+#dtSharedFolders {
+width: 100%;
+border-collapse: separate;
+}
+
+.InpUser {
+width: 400px !important;
+}
+
+#dtFolders > tbody > tr td{
+	height: 28px!important;
+}
+#dtFolders > tbody > tr td:nth-of-type(2n+1) img{
+	display: none;
+}
+#dtFolders > tbody > tr td:nth-of-type(2n+1) img{
+	height: 24px;
+}
+#dtFolders > tbody > tr:hover td:nth-of-type(2n+1) img{
+	display: inline;
+}
+
+a, a:link {
+text-decoration: none !important;
+}
+
+#dtBookmarkSharedWith a, #dtBookmarkSharedWith a:hover,
+#rdDivBookmarkShareTemplate a, #rdDivBookmarkShareTemplate a:hover{
+  text-decoration: none;
+}
+
+#frameShareFolder {
+background-color: transparent;
+}
+
+
+.iconAddUser{
+  background: transparent url("rdBookmarkSharingAdd.png") top left no-repeat; 
+  height: 24px;
+  display: block;
+  width: 24px;
+}
+
+.iconAddGroup{
+  background: transparent url("rdBookmarkGroupSharingAdd.png") top left no-repeat; 
+  height: 24px;
+  display: block;
+  width: 24px;
+}
+.cntBookmarks {
+  color: #3FB0AC;
+}
+.cntBookmarksZero {
+  color: #C0C0C0;
+}
+/* ingoGo - Table for Share Bookmarks list */
+
+table #dtBookmarkSharedWith a{
+  display: inline-block;
+  line-height: 28px;
+  padding-right: 25px;
+  background: transparent url("rdDelete.png") top right no-repeat; 
+}
+
+#rowBookmarkSharedWith {
+  min-height: 185px;
+  height: 185px;
+}
+
+table #dtBookmarkSharedWith td:first-of-type > span{
+  display: inline-block;
+  line-height: 28px;
+  padding-left: 25px;
+  background: transparent url("rdBookmarkSharingOn.png") top left no-repeat; 
+}
+
+
+#dtBookmarkSharedWith a, #dtBookmarkSharedWith a:hover,
+#rdDivBookmarkShareTemplate a, #rdDivBookmarkShareTemplate a:hover{
+    text-decoration: none;
+}

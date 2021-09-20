@@ -1,0 +1,35 @@
+<AnimatedMapDataXML>
+  <MapSpec InternalID="01" ShortName="AMA" LongName="Amazonas" />
+  <MapSpec InternalID="02" ShortName="ANT" LongName="Antioquia" />
+  <MapSpec InternalID="03" ShortName="ARA" LongName="Arauca" />
+  <MapSpec InternalID="04" ShortName="ATL" LongName="Atlántico" />
+  <MapSpec InternalID="34" ShortName="DC" LongName="Bogotá  (Distrito Capital)" />
+  <MapSpec InternalID="35" ShortName="BOL" LongName="Bolívar" />
+  <MapSpec InternalID="36" ShortName="BOY" LongName="Boyacá" />
+  <MapSpec InternalID="37" ShortName="CAL" LongName="Caldas" />
+  <MapSpec InternalID="08" ShortName="CAQ" LongName="Caquetá" />
+  <MapSpec InternalID="32" ShortName="CAS" LongName="Casanare" />
+  <MapSpec InternalID="09" ShortName="CAU" LongName="Cauca" />
+  <MapSpec InternalID="10" ShortName="CES" LongName="Cesar" />
+  <MapSpec InternalID="11" ShortName="CHO" LongName="Chocó" />
+  <MapSpec InternalID="12" ShortName="COR" LongName="Córdoba" />
+  <MapSpec InternalID="33" ShortName="CUN" LongName="Cundinamarca" />
+  <MapSpec InternalID="15" ShortName="GUA" LongName="Guainía" />
+  <MapSpec InternalID="14" ShortName="GUV" LongName="Guaviare" />
+  <MapSpec InternalID="16" ShortName="HUI" LongName="Huila" />
+  <MapSpec InternalID="17" ShortName="LAG" LongName="La Guajira" />
+  <MapSpec InternalID="38" ShortName="MAG" LongName="Magdalena" />
+  <MapSpec InternalID="19" ShortName="MET" LongName="Meta" />
+  <MapSpec InternalID="20" ShortName="NAR" LongName="Nariño" />
+  <MapSpec InternalID="21" ShortName="NSA" LongName="Norte de Santander" />
+  <MapSpec InternalID="22" ShortName="PUT" LongName="Putumayo" />
+  <MapSpec InternalID="23" ShortName="QUI" LongName="Quindío" />
+  <MapSpec InternalID="24" ShortName="RIS" LongName="Risaralda" />
+  <MapSpec InternalID="25" ShortName="SAP" LongName="San Andrés and Providencia" />
+  <MapSpec InternalID="26" ShortName="SAN" LongName="Santander" />
+  <MapSpec InternalID="27" ShortName="SUC" LongName="Sucre" />
+  <MapSpec InternalID="28" ShortName="TOL" LongName="Tolima" />
+  <MapSpec InternalID="29" ShortName="VAC" LongName="Valle del Cauca" />
+  <MapSpec InternalID="30" ShortName="VAU" LongName="Vaupés" />
+  <MapSpec InternalID="31" ShortName="CID" LongName="Vichada" />
+</AnimatedMapDataXML>

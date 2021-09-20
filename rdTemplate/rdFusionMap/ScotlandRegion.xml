@@ -1,0 +1,12 @@
+<AnimatedMapDataXML>
+  <MapSpec InternalID="78" ShortName="BO" LongName="Borders" />
+  <MapSpec InternalID="79" ShortName="CE" LongName="Central" />
+  <MapSpec InternalID="80" ShortName="DG" LongName="Dumfries and Galloway" />
+  <MapSpec InternalID="81" ShortName="FI" LongName="Fife" />
+  <MapSpec InternalID="82" ShortName="GP" LongName="Grampian" />
+  <MapSpec InternalID="83" ShortName="HI" LongName="Highland" />
+  <MapSpec InternalID="84" ShortName="LO" LongName="Lothian" />
+  <MapSpec InternalID="87" ShortName="SC" LongName="Strathclyde" />
+  <MapSpec InternalID="88" ShortName="TA" LongName="Tayside" />
+  <MapSpec InternalID="89" ShortName="WI" LongName="Western Isles" />
+</AnimatedMapDataXML>

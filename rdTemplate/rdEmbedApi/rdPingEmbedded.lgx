@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Report ID="ping">
+  <Body>
+    <Label Caption="@Function.DateTime~" ID="lblDateTime" />
+  </Body>
+</Report>

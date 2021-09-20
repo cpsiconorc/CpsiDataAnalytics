@@ -1,0 +1,11 @@
+<AnimatedMapDataXML>
+  <MapSpec InternalID="01" ShortName="AC" LongName="Acquaviva" />
+  <MapSpec InternalID="06" ShortName="BM" LongName="Borgo Maggiore" />
+  <MapSpec InternalID="02" ShortName="CH" LongName="Chiesanuova" />
+  <MapSpec InternalID="03" ShortName="DO" LongName="Domagnano" />
+  <MapSpec InternalID="04" ShortName="FA" LongName="Faetano" />
+  <MapSpec InternalID="05" ShortName="FI" LongName="Fiorentino" />
+  <MapSpec InternalID="08" ShortName="MG" LongName="Montegiardino" />
+  <MapSpec InternalID="07" ShortName="SM" LongName="San Marino" />
+  <MapSpec InternalID="09" ShortName="SE" LongName="Serravalle" />
+</AnimatedMapDataXML>

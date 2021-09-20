@@ -1,0 +1,1 @@
+<%@ Page Inherits="FusionChartsSave" Src="FusionChartsSave.cs" Debug="true" validateRequest="false" %>

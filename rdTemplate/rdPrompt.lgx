@@ -1,0 +1,15 @@
+<Report ID="rdPrompt" SavedBy="Dave" SavedAt="4/4/2003 1:38:21 PM" Caption="lgxReportDev Parameter Prompt">
+	<Body>
+		<Label Caption="Enter parameter values for the report, then click &quot;Run the Report&quot;." ID="lblInstruction"/>
+		<LineBreak/>
+		<LineBreak/>
+		<Division ID="divParams"/>
+		<LineBreak/>
+		<LineBreak/>
+		<Label Caption="Run the Report" ID="lblRunReport">
+			<Action Type="Report">
+				<Target Type="Report" RequestForwarding="True" ID="tgtRunReport"/>
+			</Action>
+		</Label>
+	</Body>
+</Report>

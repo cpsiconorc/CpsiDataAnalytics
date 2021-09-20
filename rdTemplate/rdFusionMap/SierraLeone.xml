@@ -1,0 +1,16 @@
+<AnimatedMapDataXML>
+  <MapSpec InternalID="SL.SO.BO" ShortName="BO" LongName="Bo" />
+  <MapSpec InternalID="SL.NO.BM" ShortName="BM" LongName="Bombali" />
+  <MapSpec InternalID="SL.SO.BN" ShortName="BN" LongName="Bonthe" />
+  <MapSpec InternalID="SL.EA.KL" ShortName="KL" LongName="Kailahun" />
+  <MapSpec InternalID="SL.NO.KM" ShortName="KM" LongName="Kambia" />
+  <MapSpec InternalID="SL.EA.KE" ShortName="KE" LongName="Kenema" />
+  <MapSpec InternalID="SL.NO.KD" ShortName="KD" LongName="Koinadugu" />
+  <MapSpec InternalID="SL.EA.KN" ShortName="KN" LongName="Kono" />
+  <MapSpec InternalID="SL.SO.MO" ShortName="MO" LongName="Moyamba" />
+  <MapSpec InternalID="SL.NO.PL" ShortName="PL" LongName="Port Loko" />
+  <MapSpec InternalID="SL.SO.PU" ShortName="PU" LongName="Pujehun" />
+  <MapSpec InternalID="SL.NO.TO" ShortName="TO" LongName="Tonkolili" />
+  <MapSpec InternalID="SL.WE.WR" ShortName="WR" LongName="Western Area Rural" />
+  <MapSpec InternalID="SL.WE.WU" ShortName="WU" LongName="Western Area Urban" />
+</AnimatedMapDataXML>

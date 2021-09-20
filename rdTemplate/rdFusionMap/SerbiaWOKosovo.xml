@@ -1,0 +1,27 @@
+<AnimatedMapDataXML>
+  <MapSpec InternalID="RS.BG" ShortName="BG" LongName="Belgrade" />
+  <MapSpec InternalID="RS.BO" ShortName="BO" LongName="Bor" />
+  <MapSpec InternalID="RS.BR" ShortName="BR" LongName="Branicevo" />
+  <MapSpec InternalID="RS.SD" ShortName="SD" LongName="Central Banat" />
+  <MapSpec InternalID="RS.PD" ShortName="PD" LongName="Danube" />
+  <MapSpec InternalID="RS.JA" ShortName="JA" LongName="Jablanica" />
+  <MapSpec InternalID="RS.KB" ShortName="KB" LongName="Kolubara" />
+  <MapSpec InternalID="RS.MA" ShortName="MA" LongName="Macva" />
+  <MapSpec InternalID="RS.MR" ShortName="MR" LongName="Morava" />
+  <MapSpec InternalID="RS.NS" ShortName="NS" LongName="Nisava" />
+  <MapSpec InternalID="RS.SC" ShortName="SC" LongName="North Backa" />
+  <MapSpec InternalID="RS.SN" ShortName="SN" LongName="North Banat" />
+  <MapSpec InternalID="RS.PC" ShortName="PC" LongName="Pcinja" />
+  <MapSpec InternalID="RS.PI" ShortName="PI" LongName="Pirot" />
+  <MapSpec InternalID="RS.PM" ShortName="PM" LongName="Pomoravlje" />
+  <MapSpec InternalID="RS.RN" ShortName="RN" LongName="Rasina" />
+  <MapSpec InternalID="RS.RS" ShortName="RS" LongName="Raska" />
+  <MapSpec InternalID="RS.JC" ShortName="JC" LongName="South Backa" />
+  <MapSpec InternalID="RS.JN" ShortName="JN" LongName="South Banat" />
+  <MapSpec InternalID="RS.SM" ShortName="SM" LongName="Srem" />
+  <MapSpec InternalID="RS.SU" ShortName="SU" LongName="Sumadija" />
+  <MapSpec InternalID="RS.TO" ShortName="TO" LongName="Toplica" />
+  <MapSpec InternalID="RS.ZC" ShortName="ZC" LongName="West Backa" />
+  <MapSpec InternalID="RS.ZJ" ShortName="ZJ" LongName="Zajecar" />
+  <MapSpec InternalID="RS.ZL" ShortName="ZL" LongName="Zlatibor" />
+</AnimatedMapDataXML>

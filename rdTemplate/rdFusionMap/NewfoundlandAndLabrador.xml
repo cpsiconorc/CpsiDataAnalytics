@@ -1,0 +1,7 @@
+<AnimatedMapDataXML>
+  <MapSpec InternalID="CA.NF.AV" ShortName="AV" LongName="Avalon Region" />
+  <MapSpec InternalID="CA.NF.CE" ShortName="CE" LongName="Central Region" />
+  <MapSpec InternalID="CA.NF.ES" ShortName="ES" LongName="Eastern Region" />
+  <MapSpec InternalID="CA.NF.LA" ShortName="LA" LongName="Labrador Region" />
+  <MapSpec InternalID="CA.NF.WS" ShortName="WS" LongName="Western Region" />
+</AnimatedMapDataXML>

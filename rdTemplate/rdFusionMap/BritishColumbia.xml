@@ -1,0 +1,30 @@
+<AnimatedMapDataXML>
+  <MapSpec InternalID="01" ShortName="AC" LongName="Alberni-Clayoquot" />
+  <MapSpec InternalID="02" ShortName="BN" LongName="Bulkley-Nechako" />
+  <MapSpec InternalID="03" ShortName="CA" LongName="Capital" />
+  <MapSpec InternalID="04" ShortName="CR" LongName="Cariboo" />
+  <MapSpec InternalID="05" ShortName="CN" LongName="Central Coast" />
+  <MapSpec InternalID="06" ShortName="CK" LongName="Central Kootenay" />
+  <MapSpec InternalID="07" ShortName="CO" LongName="Central Okanagan" />
+  <MapSpec InternalID="08" ShortName="CS" LongName="Columbia-Shuswap" />
+  <MapSpec InternalID="09" ShortName="CM" LongName="Comox-Strathcona" />
+  <MapSpec InternalID="10" ShortName="CV" LongName="Cowichan Valley" />
+  <MapSpec InternalID="11" ShortName="EK" LongName="East Kootenay" />
+  <MapSpec InternalID="12" ShortName="FV" LongName="Fraser Valley" />
+  <MapSpec InternalID="13" ShortName="FG" LongName="Fraser-Fort George" />
+  <MapSpec InternalID="14" ShortName="GV" LongName="Greater Vancouver" />
+  <MapSpec InternalID="15" ShortName="KS" LongName="Kitimat-Stikine" />
+  <MapSpec InternalID="16" ShortName="KB" LongName="Kootenay Boundary" />
+  <MapSpec InternalID="17" ShortName="MW" LongName="Mount Waddington" />
+  <MapSpec InternalID="18" ShortName="NA" LongName="Nanaimo" />
+  <MapSpec InternalID="19" ShortName="NO" LongName="North Okanagan" />
+  <MapSpec InternalID="20" ShortName="NR" LongName="Northern Rockies" />
+  <MapSpec InternalID="21" ShortName="OS" LongName="Okanagan-Similkameen" />
+  <MapSpec InternalID="22" ShortName="PR" LongName="Peace River" />
+  <MapSpec InternalID="23" ShortName="PO" LongName="Powell River" />
+  <MapSpec InternalID="24" ShortName="SQ" LongName="Skeena-Queen Charlotte" />
+  <MapSpec InternalID="25" ShortName="SL" LongName="Squamish-Lillooet" />
+  <MapSpec InternalID="26" ShortName="ST" LongName="Stikine" />
+  <MapSpec InternalID="27" ShortName="SC" LongName="Sunshine Coast" />
+  <MapSpec InternalID="28" ShortName="TN" LongName="Thompson-Nicola" />
+</AnimatedMapDataXML>

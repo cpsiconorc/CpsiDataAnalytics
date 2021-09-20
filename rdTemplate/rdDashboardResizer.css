@@ -1,0 +1,26 @@
+﻿td.rdResizerColumn {
+    border: none;
+    padding: 0px;
+    margin: 0px;
+    cursor: ew-resize;
+    border-radius: 5px;
+    z-index: 9999;
+    min-width: 6px;
+}
+
+td.rdResizerColumn:hover {
+    background-color: silver;
+    border-left: 1px black;
+    border-right: 1px black;
+}
+
+td.rdResizerColumn:active {
+    background-color: gray;
+}
+
+/*FF fix for active splitter state*/
+@-moz-document url-prefix() {
+    td.rdResizerColumn.yui3-dd-dragging  {
+        background-color: gray;
+    }
+}

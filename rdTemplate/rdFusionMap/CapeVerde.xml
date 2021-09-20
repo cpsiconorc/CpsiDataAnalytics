@@ -1,0 +1,19 @@
+<AnimatedMapDataXML>
+  <MapSpec InternalID="CV.BV" ShortName="BV" LongName="Boa Vista" />
+  <MapSpec InternalID="CV.BR" ShortName="BR" LongName="Brava" />
+  <MapSpec InternalID="CV.MA" ShortName="MA" LongName="Maio" />
+  <MapSpec InternalID="CV.MO" ShortName="MO" LongName="Mosteiros" />
+  <MapSpec InternalID="CV.PA" ShortName="PA" LongName="Paul" />
+  <MapSpec InternalID="CV.PN" ShortName="PN" LongName="Porto Novo" />
+  <MapSpec InternalID="CV.PI" ShortName="PI" LongName="Praia" />
+  <MapSpec InternalID="CV.RG" ShortName="RG" LongName="Ribeira Grande" />
+  <MapSpec InternalID="CV.SL" ShortName="SL" LongName="Sal" />
+  <MapSpec InternalID="CV.SC" ShortName="SC" LongName="Santa Catarina" />
+  <MapSpec InternalID="CV.SZ" ShortName="SZ" LongName="Santa Cruz" />
+  <MapSpec InternalID="CV.SD" ShortName="SD" LongName="Sao Domingos" />
+  <MapSpec InternalID="CV.SF" ShortName="SF" LongName="Sao Filipe" />
+  <MapSpec InternalID="CV.SM" ShortName="SM" LongName="Sao Miguel" />
+  <MapSpec InternalID="CV.SN" ShortName="SN" LongName="Sao Nicolau" />
+  <MapSpec InternalID="CV.SV" ShortName="SV" LongName="Sao Vicente" />
+  <MapSpec InternalID="CV.TF" ShortName="TF" LongName="Tarrafal" />
+</AnimatedMapDataXML>

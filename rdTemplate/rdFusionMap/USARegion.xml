@@ -1,0 +1,7 @@
+<AnimatedMapDataXML>
+  <MapSpec InternalID="01" ShortName="NE" LongName="NorthWest Region" />
+  <MapSpec InternalID="02" ShortName="NW" LongName="NorthEast Region" />
+  <MapSpec InternalID="03" ShortName="SE" LongName="SouthEast Region" />
+  <MapSpec InternalID="04" ShortName="SW" LongName="SouthWest Region" />
+  <MapSpec InternalID="05" ShortName="CR" LongName="Central Region" />
+</AnimatedMapDataXML>

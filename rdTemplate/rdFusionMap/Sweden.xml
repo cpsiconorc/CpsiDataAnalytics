@@ -1,0 +1,23 @@
+<AnimatedMapDataXML>
+  <MapSpec InternalID="02" ShortName="K" LongName="Blekinge" />
+  <MapSpec InternalID="10" ShortName="W" LongName="Dalarnas" />
+  <MapSpec InternalID="03" ShortName="X" LongName="Gävleborg" />
+  <MapSpec InternalID="05" ShortName="I" LongName="Gotland" />
+  <MapSpec InternalID="06" ShortName="N" LongName="Halland" />
+  <MapSpec InternalID="07" ShortName="Z" LongName="Jämtland" />
+  <MapSpec InternalID="08" ShortName="F" LongName="Jönköping" />
+  <MapSpec InternalID="09" ShortName="H" LongName="Kalmar" />
+  <MapSpec InternalID="12" ShortName="G" LongName="Kronoberg" />
+  <MapSpec InternalID="14" ShortName="BD" LongName="Norrbotten" />
+  <MapSpec InternalID="15" ShortName="T" LongName="Örebro" />
+  <MapSpec InternalID="16" ShortName="E" LongName="Östergötland" />
+  <MapSpec InternalID="27" ShortName="M" LongName="Skåne" />
+  <MapSpec InternalID="18" ShortName="D" LongName="Södermanland" />
+  <MapSpec InternalID="26" ShortName="AB" LongName="Stockholm" />
+  <MapSpec InternalID="21" ShortName="C" LongName="Uppsala" />
+  <MapSpec InternalID="22" ShortName="S" LongName="Värmland" />
+  <MapSpec InternalID="23" ShortName="AC" LongName="Västerbotten" />
+  <MapSpec InternalID="24" ShortName="Y" LongName="Västernorrland" />
+  <MapSpec InternalID="25" ShortName="U" LongName="Västmanland" />
+  <MapSpec InternalID="28" ShortName="O" LongName="Västra Götaland" />
+</AnimatedMapDataXML>

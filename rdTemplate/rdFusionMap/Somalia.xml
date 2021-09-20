@@ -1,0 +1,20 @@
+<AnimatedMapDataXML>
+  <MapSpec InternalID="SO.AW" ShortName="AW" LongName="Awdal" />
+  <MapSpec InternalID="SO.BK" ShortName="BK" LongName="Bakool" />
+  <MapSpec InternalID="SO.BN" ShortName="BN" LongName="Banaadir" />
+  <MapSpec InternalID="SO.BR" ShortName="BR" LongName="Bari" />
+  <MapSpec InternalID="SO.BY" ShortName="BY" LongName="Bay" />
+  <MapSpec InternalID="SO.GA" ShortName="GA" LongName="Galguduud" />
+  <MapSpec InternalID="SO.GE" ShortName="GE" LongName="Gedo" />
+  <MapSpec InternalID="SO.HI" ShortName="HI" LongName="Hiiraan" />
+  <MapSpec InternalID="SO.JD" ShortName="JD" LongName="Jubbada Dhexe" />
+  <MapSpec InternalID="SO.JH" ShortName="JH" LongName="Jubbada Hoose" />
+  <MapSpec InternalID="SO.MU" ShortName="MU" LongName="Mudug" />
+  <MapSpec InternalID="SO.NU" ShortName="NU" LongName="Nugaal" />
+  <MapSpec InternalID="SO.SA" ShortName="SA" LongName="Sanaag" />
+  <MapSpec InternalID="SO.SD" ShortName="SD" LongName="Shabeellaha Dhexe" />
+  <MapSpec InternalID="SO.SH" ShortName="SH" LongName="Shabeellaha Hoose" />
+  <MapSpec InternalID="SO.SO" ShortName="SO" LongName="Sool" />
+  <MapSpec InternalID="SO.TO" ShortName="TO" LongName="Togdheer" />
+  <MapSpec InternalID="SO.WO" ShortName="WO" LongName="Woqooyi Galbeed" />
+</AnimatedMapDataXML>

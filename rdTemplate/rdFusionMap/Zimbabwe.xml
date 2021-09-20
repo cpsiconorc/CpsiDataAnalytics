@@ -1,0 +1,12 @@
+<AnimatedMapDataXML>
+  <MapSpec InternalID="ZW.BU" ShortName="BU" LongName="Bulawayo" />
+  <MapSpec InternalID="ZW.HA" ShortName="HA" LongName="Harare" />
+  <MapSpec InternalID="ZW.MA" ShortName="MA" LongName="Manicaland" />
+  <MapSpec InternalID="ZW.MC" ShortName="MC" LongName="Mashonaland Central" />
+  <MapSpec InternalID="ZW.ME" ShortName="ME" LongName="Mashonaland East" />
+  <MapSpec InternalID="ZW.MW" ShortName="MW" LongName="Mashonaland West" />
+  <MapSpec InternalID="ZW.MV" ShortName="MV" LongName="Masvingo" />
+  <MapSpec InternalID="ZW.MN" ShortName="MN" LongName="Matabeleland North" />
+  <MapSpec InternalID="ZW.MS" ShortName="MS" LongName="Matabeleland South" />
+  <MapSpec InternalID="ZW.MI" ShortName="MI" LongName="Midlands" />
+</AnimatedMapDataXML>

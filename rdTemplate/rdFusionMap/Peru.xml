@@ -1,0 +1,28 @@
+<AnimatedMapDataXML>
+  <MapSpec InternalID="01" ShortName="AMA" LongName="Amazonas" />
+  <MapSpec InternalID="02" ShortName="ANC" LongName="Ancash" />
+  <MapSpec InternalID="03" ShortName="APU" LongName="Apurimac" />
+  <MapSpec InternalID="04" ShortName="ARE" LongName="Arequipa" />
+  <MapSpec InternalID="05" ShortName="AYA" LongName="Ayacucho" />
+  <MapSpec InternalID="06" ShortName="CAJ" LongName="Cajamarca" />
+  <MapSpec InternalID="07" ShortName="CAL" LongName="Callao" />
+  <MapSpec InternalID="08" ShortName="CUS" LongName="Cusco" />
+  <MapSpec InternalID="09" ShortName="HUV" LongName="Huancavelica" />
+  <MapSpec InternalID="10" ShortName="HUC" LongName="Huanuco" />
+  <MapSpec InternalID="11" ShortName="ICA" LongName="Ica" />
+  <MapSpec InternalID="12" ShortName="JUN" LongName="Junin" />
+  <MapSpec InternalID="13" ShortName="LAL" LongName="La Libertad" />
+  <MapSpec InternalID="14" ShortName="LAM" LongName="Lambayeque" />
+  <MapSpec InternalID="26" ShortName="LP" LongName="Lima Metropolitan" />
+  <MapSpec InternalID="15" ShortName="LIM" LongName="Lima" />
+  <MapSpec InternalID="16" ShortName="LOR" LongName="Loreto" />
+  <MapSpec InternalID="17" ShortName="MDD" LongName="Madre de Dios" />
+  <MapSpec InternalID="18" ShortName="MOQ" LongName="Moquegua" />
+  <MapSpec InternalID="19" ShortName="PAS" LongName="Pasco" />
+  <MapSpec InternalID="20" ShortName="PIU" LongName="Piura" />
+  <MapSpec InternalID="21" ShortName="PUN" LongName="Puno" />
+  <MapSpec InternalID="22" ShortName="SAM" LongName="San Martin" />
+  <MapSpec InternalID="23" ShortName="TAC" LongName="Tacna" />
+  <MapSpec InternalID="24" ShortName="TUM" LongName="Tumbes" />
+  <MapSpec InternalID="25" ShortName="UCA" LongName="Ucayali" />
+</AnimatedMapDataXML>

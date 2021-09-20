@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Report ID="rdPopup.rdDataMenuTemplate">
+  <Body ID="bodyMain">
+    <DataTable ID="rdMenuTable" Width="100" WidthScale="%">
+      <DataTableColumn ID="rdDataMenuTable">
+        <Rows Width="100" WidthScale="%">
+          <Row Condition="&quot;@Data.Action~&quot; = &quot;&quot;" IdeDisplayStatus="Collapsed">
+            <EventHandler DhtmlEvent="onclick">
+              <Action Type="Report">
+                <Target Type="Report" />
+                <LinkParams rdMenuID="@Data.TargetMenu~" />
+              </Action>
+            </EventHandler>
+            <Column ID="rdDataMenuImage" >
+              <Image Caption="_SupportFiles/@Data.rdMenuImage~">
+                <Note Note="Height and Width come from attributes optionally set in the Menu elelment." />
+              </Image>
+            </Column>
+            <Column ID="rdDataMenuCaption" Width="100" WidthScale="%">
+              <Label Caption="@Data.Caption~" ID="lblCaption" />
+            </Column>
+            <Column ID="rdDataMenuArrow" Width="20" WidthScale="px" Class="ThemeAlignRight ThemeTextLarger">
+              <Label ID="lblArrow" Caption="&gt;" />
+            </Column>
+          </Row>
+          <Row Condition="&quot;@Data.Action~&quot; = &quot;actionReport&quot;" IdeDisplayStatus="Collapsed">
+            <EventHandler DhtmlEvent="onclick">
+              <Action Type="Report">
+                <Target Type="Report" Report="@Data.Report~" />
+              </Action>
+            </EventHandler>
+            <Column ID="rdDataMenuImage" Width="20" WidthScale="px">
+				<Image Caption="_SupportFiles/@Data.rdMenuImage~">
+				</Image>
+			</Column>
+			<Column ID="rdDataMenuCaption" Width="100" WidthScale="%">
+				<Label Caption="@Data.Caption~" ID="lblCaption" />
+			</Column>
+			<Column ID="rdDataMenuArrow"  Width="20" WidthScale="px" Class="ThemeAlignRight ThemeTextLarger">
+              <Label Caption="&gt;" />
+            </Column>
+          </Row>
+        </Rows>
+      </DataTableColumn>
+    </DataTable>
+  </Body>
+</Report>

@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<UnitConversions>
+      <Unit Name="Meters" Scale="1" Shift="0" UnitType="Length" />
+      <Unit Name="Feet" Scale="3.2808398950131" Shift="0" UnitType="Length" />
+      <Unit Name="Inches" Scale="39.370078740158" Shift="0" UnitType="Length" /> 
+      <Unit Name="Yards" Scale="1.0936132983377" Shift="0" UnitType="Length" /> 
+      <Unit Name="Miles" Scale="0.000621371192237" Shift="0" UnitType="Length" /> 
+      <Unit Name="Nautical Miles" Scale="0.000539956803456" Shift="0" UnitType="Length" /> 
+      <Unit Name="Miles (Statute)" Scale="0.000621369949495" Shift="0" UnitType="Length" /> 
+      <Unit Name="Miles (US Survey)" Scale="0.000621369949495" Shift="0" UnitType="Length" /> 
+      <Unit Name="Millimeters" Scale="1000" Shift="0" UnitType="Length" /> 
+      <Unit Name="Centimeters" Scale="100" Shift="0" UnitType="Length" /> 
+      <Unit Name="Kilometers" Scale="0.001" Shift="0" UnitType="Length" /> 
+      <Unit Name="Celsius" Scale="1" Shift="0" UnitType="Temperature" /> 
+      <Unit Name="Fahrenheit" Scale="1.8" Shift="32" UnitType="Temperature" /> 
+      <Unit Name="Kelvin" Scale="1" Shift="273.15" UnitType="Temperature" /> 
+      <Unit Name="Rankine" Scale="1.8" Shift="273.15" UnitType="Temperature" /> 
+      <Unit Name="Delisle" Scale="1.5" Shift="-100" UnitType="Temperature" /> 
+      <Unit Name="Newton" Scale="0.33" Shift="0" UnitType="Temperature" />
+      <Unit Name="Reaumur" Scale="0.8" Shift="0" UnitType="Temperature" /> 
+      <Unit Name="Romer" Scale="0.525" Shift="7.5" UnitType="Temperature" /> 
+      <Unit Name="Grams" Scale="1" Shift="0" UnitType="Weight" /> 
+      <Unit Name="Kilograms" Scale="0.001" Shift="0" UnitType="Weight" /> 
+      <Unit Name="Milligrams" Scale="1000" Shift="0" UnitType="Weight" /> 
+      <Unit Name="Pounds" Scale="0.002204622621849" Shift="0" UnitType="Weight" /> 
+      <Unit Name="Ounces" Scale="0.03527396194958" Shift="0" UnitType="Weight" /> 
+      <Unit Name="Tons (Metric)" Scale="0.000001" Shift="0" UnitType="Weight" /> 
+      <Unit Name="Kilotons" Scale="0.000000001" Shift="0" UnitType="Weight" /> 
+      <Unit Name="Tons (US)" Scale="0.000001102311311" Shift="0" UnitType="Weight" /> 
+      <Unit Name="Liters" Scale="1" Shift="0" UnitType="Volume" /> 
+      <Unit Name="Gallons (US)" Scale="0.26417205235815" Shift="0" UnitType="Volume" />
+      <Unit Name="Gallons (UK)" Scale="0.21996924829909" Shift="0" UnitType="Volume" />
+      <Unit Name="Milliliters" Scale="1000" Shift="0" UnitType="Volume" />
+      <Unit Name="Kiloliters" Scale="0.001" Shift="0" UnitType="Volume" />
+      <Unit Name="Hectoliters" Scale="0.01" Shift="0" UnitType="Volume" />
+      <Unit Name="Dekaliters" Scale="0.1" Shift="" UnitType="Volume" />
+      <Unit Name="Pints (US)" Scale="2.1133764188652" Shift="0" UnitType="Volume" />
+      <Unit Name="Pints (UK)" Scale="1.7597539863927" Shift="0" UnitType="Volume" />
+      <Unit Name="Cups (US)" Scale="4.2267528377304" Shift="0" UnitType="Volume" />
+      <Unit Name="Cups (Metric)" Scale="4" Shift="0" UnitType="Volume" />
+      <Unit Name="Fluid Ounces (US)" Scale="33.814022702" Shift="0" UnitType="Volume" />
+      <Unit Name="Fluid Ounces (UK)" Scale="35.195079728" Shift="0" UnitType="Volume" />
+      <Unit Name="Quarts (US)" Scale="1.056688209" Shift="0" UnitType="Volume" />
+      <Unit Name="Quarts (UK)" Scale="0.879876993" Shift="0" UnitType="Volume" />
+      <Unit Name="Deciliters" Scale="10" Shift="0" UnitType="Volume" />
+      <Unit Name="Centiliters" Scale="100" Shift="0" UnitType="Volume" />
+      <Unit Name="Barrels (oil)" Scale="0.006289811" Shift="0" UnitType="Volume" />
+      <Unit Name="Barrels (US)" Scale="0.008386414" Shift="0" UnitType="Volume" />
+      <Unit Name="Barrels (UK)" Scale="0.006110257" Shift="0" UnitType="Volume" />
+      <Unit Name="Fluid Ounces (US)" Scale="33.814022701843" Shift="0" UnitType="Volume" />
+      <Unit Name="Fluid Ounces (UK)" Scale="35.195079727854" Shift="0" UnitType="Volume" />
+      <Unit Name="Square Meter" Scale="1" Shift="0" UnitType="Area" /> 
+      <Unit Name="Square Kilometer" Scale="0.000001" Shift="0" UnitType="Area" />
+      <Unit Name="Square Hectometer" Scale="0.0001" Shift="0" UnitType="Area" />
+      <Unit Name="Square Dekameter" Scale="0.01" Shift="0" UnitType="Area" />
+      <Unit Name="Square Decimeter" Scale="100" Shift="0" UnitType="Area" />
+      <Unit Name="Square Centimeter" Scale="10000" Shift="0" UnitType="Area" />
+      <Unit Name="Square millimeter" Scale="1000000" Shift="0" UnitType="Area" />
+      <Unit Name="Hectare" Scale="0.0001" Shift="0" UnitType="Area" />
+      <Unit Name="Square Mile" Scale="0.000000386" Shift="0" UnitType="Area" /> 
+      <Unit Name="Square Mile (US Survey)" Scale="0.000000386" Shift="0" UnitType="Area" />
+      <Unit Name="Square  Yard" Scale="1.195990046" Shift="0" UnitType="Area" />
+      <Unit Name="Square Foot" Scale="10.763910417" Shift="0" UnitType="Area" />
+      <Unit Name="Square Foot (US Survey)" Scale="10.763867361" Shift="0" UnitType="Area" />
+      <Unit Name="Square Inch" Scale="1973.52524139" Shift="0" UnitType="Area" />
+      <Unit Name="Acre" Scale="0.000247105" Shift="0" UnitType="Area" />
+      <Unit Name="Acre (US Survey)" Scale="0.000247104" Shift="0" UnitType="Area" />
+      <Unit Name="Pascal" Scale="1" Shift="0" UnitType="Pressure" /> 
+      <Unit Name="Kilopascal" Scale="0.001" Shift="0" UnitType="Pressure" />
+      <Unit Name="Hectopascal" Scale="0.01" Shift="0" UnitType="Pressure" />
+      <Unit Name="Dekapascal" Scale="0.1" Shift="0" UnitType="Pressure" />
+      <Unit Name="Decipascal" Scale="10" Shift="0" UnitType="Pressure" />
+      <Unit Name="Centipascal" Scale="100" Shift="0" UnitType="Pressure" />
+      <Unit Name="Millipascal" Scale="1000" Shift="0" UnitType="Pressure" />
+      <Unit Name="Micropascal" Scale="1000000" Shift="0" UnitType="Pressure" />
+      <Unit Name="Newton/Square Meter" Scale="1" Shift="0" UnitType="Pressure" /> 
+      <Unit Name="Newton/Square Centimeter" Scale="0.0001" Shift="0" UnitType="Pressure" />
+      <Unit Name="Newton/Square Millimeter" Scale="0.000001" Shift="0" UnitType="Pressure" />
+      <Unit Name="Kilonewton/Square Meter" Scale="0.001" Shift="0" UnitType="Pressure" />
+      <Unit Name="Bar" Scale="0.00001" Shift="0" UnitType="Pressure" />
+      <Unit Name="Millibar" Scale="0.01" Shift="0" UnitType="Pressure" />
+      <Unit Name="Microbar" Scale="10" Shift="0" UnitType="Pressure" />
+      <Unit Name="Kilogram-force/Square Meter" Scale="0.10197162129779" Shift="0" UnitType="Pressure" />
+      <Unit Name="Kilogram-force/Square Centimeter" Scale="0.000010197162129779" Shift="0" UnitType="Pressure" />
+      <Unit Name="Kilogram-force/Square Millimeter" Scale="0.00000010197162129779" Shift="0" UnitType="Pressure" />
+      <Unit Name="Ton-force (Short)/Square Foot" Scale="0.000010442717117" Shift="0" UnitType="Pressure" />
+      <Unit Name="Ton-force (Short)/Square Inch" Scale="0.000000072518869" Shift="0" UnitType="Pressure" />
+      <Unit Name="Ton-force (Long)/Square Foot" Scale="0.000009323854568" Shift="0" UnitType="Pressure" />
+      <Unit Name="Ton-force (Long)/Square Inch" Scale="0.00000006474899" Shift="0" UnitType="Pressure" />
+      <Unit Name="Pound-force/Square Foot" Scale="0.02088543423312" Shift="0" UnitType="Pressure" />
+      <Unit Name="Pound-force/Square Inch" Scale="0.00014503773773" Shift="0" UnitType="Pressure" />
+      <Unit Name="PSI" Scale="0.00014503773773" Shift="0" UnitType="Pressure" />
+      <Unit Name="Centimeter Mercury (0 C)" Scale="0.000750063755419" Shift="0" UnitType="Pressure" />
+      <Unit Name="Millimeter Mercury (0 C)" Scale="0.007500637554192" Shift="0" UnitType="Pressure" />
+      <Unit Name="Inch Mercury (32 F)" Scale="0.000295300586467" Shift="0" UnitType="Pressure" />
+      <Unit Name="Inch Mercury (60 C)" Scale="0.000296133971008" Shift="0" UnitType="Pressure" />
+      <Unit Name="Atmosphere (Technical)" Scale="0.00001019716213" Shift="0" UnitType="Pressure" /> 
+      <Unit Name="Atmosphere (Standard)" Scale="0.000009869232667" Shift="0" UnitType="Pressure" />
+      <Unit Name="Joules" Scale="1" Shift="0" UnitType="Energy" /> 
+      <Unit Name="Megajoules" Scale="0.000001" Shift="0" UnitType="Energy" />
+      <Unit Name="Kilojoules" Scale="0.001" Shift="0" UnitType="Energy" />
+      <Unit Name="Millijoules" Scale="1000" Shift="0" UnitType="Energy" />
+      <Unit Name="Microjoules" Scale="1000000" Shift="0" UnitType="Energy" />
+      <Unit Name="Nanojoules" Scale="1000000000" Shift="0" UnitType="Energy" />
+      <Unit Name="Ergs" Scale="10000000" Shift="0" UnitType="Energy" />
+      <Unit Name="Kilowatt-hours" Scale="0.000000277777778" Shift="0" UnitType="Energy" />
+      <Unit Name="Kilowatt-seconds" Scale="0.001" Shift="0" UnitType="Energy" /> 
+      <Unit Name="Watt-hours" Scale="0.000277777777778" Shift="0" UnitType="Energy" />
+      <Unit Name="Watt-seconds" Scale="1" Shift="0" UnitType="Energy" />
+      <Unit Name="Newton Meters" Scale="1" Shift="0" UnitType="Energy" />
+      <Unit Name="Horsepower Hours" Scale="0.000000372506136" Shift="0" UnitType="Energy" />
+      <Unit Name="Horsepowers (Metric)" Scale="0.000000377672671" Shift="0" UnitType="Energy" />
+      <Unit Name="Calories (IT)" Scale="0.2388458966275" Shift="0" UnitType="Energy" />
+      <Unit Name="Calories (Nutritional)" Scale="0.23900573613767" Shift="0" UnitType="Energy" />
+      <Unit Name="BTUs (IT)" Scale="0.000947817120313" Shift="0" UnitType="Energy" /> 
+      <Unit Name="BTUs (TH)" Scale="0.0009484516527" Shift="0" UnitType="Energy" />
+      <Unit Name="Pound-force Feet" Scale="0.7375621493" Shift="0" UnitType="Energy" />
+      <Unit Name="Pound-force Inches" Scale="8.8507457916" Shift="0" UnitType="Energy" />
+      <Unit Name="Ounce-force Inches" Scale="141.6119326656" Shift="0" UnitType="Energy" />
+      <Unit Name="Foot-pounds" Scale="0.7375621493" Shift="0" UnitType="Energy" />
+      <Unit Name="Inch-pounds" Scale="8.8507457916" Shift="0" UnitType="Energy" />
+      <Unit Name="Therms" Scale="0.00000000947817" Shift="0" UnitType="Energy" />
+      <Unit Name="Therms (EC)" Scale="0.00000000947817" Shift="0" UnitType="Energy" /> 
+      <Unit Name="Therms (US)" Scale="0.000000009480434" Shift="0" UnitType="Energy" />
+      <Unit Name="Meters/Second" Scale="1" Shift="0" UnitType="Velocity" /> 
+      <Unit Name="Meters/Hour" Scale="3600" Shift="0" UnitType="Velocity" />
+      <Unit Name="Miles/Hour" Scale="2.2369362920544" Shift="0" UnitType="Velocity" />
+      <Unit Name="Miles/Second" Scale="0.000621371192237" Shift="0" UnitType="Velocity" />
+      <Unit Name="Kilometers/Hour" Scale="3.6" Shift="0" UnitType="Velocity" />
+      <Unit Name="Kilometers/Second" Scale="0.001" Shift="0" UnitType="Velocity" />
+      <Unit Name="Knots" Scale="1.9438444924406" Shift="0" UnitType="Velocity" />
+      <Unit Name="Knots (UK)" Scale="1.9426025694156" Shift="0" UnitType="Velocity" /> 
+      <Unit Name="Kilometers/Liter" Scale="1" Shift="0" UnitType="FuelConsumption" />
+      <Unit Name="Megameters/Liter" Scale="0.001" Shift="0" UnitType="FuelConsumption" />
+      <Unit Name="Hectometers/Liter" Scale="10" Shift="0" UnitType="FuelConsumption" />
+      <Unit Name="Dekameters/Liter" Scale="100" Shift="0" UnitType="FuelConsumption" />
+      <Unit Name="Meters/Liter" Scale="1000" Shift="0" UnitType="FuelConsumption" />
+      <Unit Name="Miles (US)/Liter" Scale="0.62137119223733" Shift="0" UnitType="FuelConsumption" />
+      <Unit Name="Nautical Miles/Liter" Scale="0.53959407503258" Shift="0" UnitType="FuelConsumption" />
+      <Unit Name="Nautical Miles/Gallon (US)" Scale="2.0425857698111" Shift="0" UnitType="FuelConsumption" />
+      <Unit Name="Kilometers/Gallon (US)" Scale="3.7854117834003" Shift="0" UnitType="FuelConsumption" />
+      <Unit Name="Kilometers/Gallon (UK)" Scale="4.5460992939205" Shift="0" UnitType="FuelConsumption" /> 
+      <Unit Name="Miles/Gallon (US)" Scale="2.3521458329476" Shift="0" UnitType="FuelConsumption" />
+      <Unit Name="Miles/Gallon (UK)" Scale="2.8248093627967" Shift="0" UnitType="FuelConsumption" />
+</UnitConversions>

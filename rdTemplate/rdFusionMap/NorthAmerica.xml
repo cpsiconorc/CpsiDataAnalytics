@@ -1,0 +1,28 @@
+<AnimatedMapDataXML>
+  <MapSpec InternalID="001" ShortName="AG" LongName="Antigua      and Barbuda" />
+  <MapSpec InternalID="002" ShortName="BS" LongName="Bahamas" />
+  <MapSpec InternalID="003" ShortName="BB" LongName="Barbados" />
+  <MapSpec InternalID="004" ShortName="BZ" LongName="Belize" />
+  <MapSpec InternalID="005" ShortName="CA" LongName="Canada" />
+  <MapSpec InternalID="006" ShortName="CR" LongName="Costa      Rica" />
+  <MapSpec InternalID="007" ShortName="CU" LongName="Cuba" />
+  <MapSpec InternalID="008" ShortName="DM" LongName="Dominica" />
+  <MapSpec InternalID="009" ShortName="DO" LongName="Dominican Rep." />
+  <MapSpec InternalID="010" ShortName="SV" LongName="El      Salvador" />
+  <MapSpec InternalID="011" ShortName="GD" LongName="Grenada" />
+  <MapSpec InternalID="012" ShortName="GT" LongName="Guatemala" />
+  <MapSpec InternalID="013" ShortName="HT" LongName="Haiti" />
+  <MapSpec InternalID="014" ShortName="HN" LongName="Honduras" />
+  <MapSpec InternalID="015" ShortName="JM" LongName="Jamaica" />
+  <MapSpec InternalID="016" ShortName="MX" LongName="Mexico" />
+  <MapSpec InternalID="017" ShortName="NI" LongName="Nicaragua" />
+  <MapSpec InternalID="018" ShortName="PA" LongName="Panama" />
+  <MapSpec InternalID="019" ShortName="KN" LongName="St. Kitts &amp; Nevis" />
+  <MapSpec InternalID="020" ShortName="LC" LongName="St. Lucia" />
+  <MapSpec InternalID="021" ShortName="VC" LongName="St. Vincent &amp; the Grenadines" />
+  <MapSpec InternalID="022" ShortName="TT" LongName="Trinidad &amp; Tobago" />
+  <MapSpec InternalID="023" ShortName="US" LongName="United      States" />
+  <MapSpec InternalID="024" ShortName="GL" LongName="Greenland" />
+  <MapSpec InternalID="025" ShortName="PR" LongName="Puerto Rico" />
+  <MapSpec InternalID="026" ShortName="KY" LongName="Cayman Islands" />
+</AnimatedMapDataXML>

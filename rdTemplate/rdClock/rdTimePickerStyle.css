@@ -1,0 +1,80 @@
+﻿IMG
+{
+	border:0;
+}
+IMG.rdTimePickerImage
+{
+	padding-bottom: 3px;
+    padding-left: 3px;
+    padding-right: 3px;
+    vertical-align: middle;
+}
+.rdTimePicker
+{
+	font-size: 11px;
+	background-color: #CCCCCC;
+	text-decoration:none;
+}
+.rdTimePicker TABLE
+{
+	font-size: 11px;
+	text-decoration:none;
+}
+
+.rdTimePickerCell
+{
+	vertical-align:top;
+	background-color:#F8F8F8;
+	text-decoration:none;
+	width:22px;
+	padding:3px;
+	cursor: pointer;
+}
+
+.rdTimePickerAMPMCell
+{
+	background-color:#F8F8F8;
+	text-decoration:none;
+	width:22px;
+	padding:3px;
+	text-align:center;
+	vertical-align:middle;
+}
+
+.rdTimePickerLabel
+{
+	text-decoration:none;
+	text-align:center;
+	font-size: 11px;
+	font-family: arial, sans-serif;
+}
+
+.rdTimePickerLabelHighlight
+{
+	background-color:#D8D8D8;
+	padding:3px;
+	width:22px;
+	vertical-align:top;
+	cursor: pointer;
+}
+
+.rdTimePickerTableHeaderCaption
+{
+	text-align:center;
+	background-color:#F8F8F8;
+	font-weight:bold;
+	white-space:nowrap;
+	color:#555555;
+}
+
+.rdTimePickerPopup
+{
+	font-size: 11px;
+	white-space:nowrap;
+	color:#555555;
+}
+
+.rdTimePickerInnerTables
+{
+	padding:0px;
+}

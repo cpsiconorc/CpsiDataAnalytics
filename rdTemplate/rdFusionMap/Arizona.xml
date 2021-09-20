@@ -1,0 +1,17 @@
+<AnimatedMapDataXML>
+  <MapSpec InternalID="001" ShortName="AP" LongName="Apache" />
+  <MapSpec InternalID="003" ShortName="CO" LongName="Cochise" />
+  <MapSpec InternalID="005" ShortName="CC" LongName="Coconino" />
+  <MapSpec InternalID="007" ShortName="GI" LongName="Gila" />
+  <MapSpec InternalID="009" ShortName="GR" LongName="Graham" />
+  <MapSpec InternalID="011" ShortName="GE" LongName="Greenlee" />
+  <MapSpec InternalID="012" ShortName="LP" LongName="La Paz" />
+  <MapSpec InternalID="013" ShortName="MA" LongName="Maricopa" />
+  <MapSpec InternalID="015" ShortName="MO" LongName="Mohave" />
+  <MapSpec InternalID="017" ShortName="NA" LongName="Navajo" />
+  <MapSpec InternalID="019" ShortName="PI" LongName="Pima" />
+  <MapSpec InternalID="021" ShortName="PN" LongName="Pinal" />
+  <MapSpec InternalID="023" ShortName="SC" LongName="Santa Cruz" />
+  <MapSpec InternalID="025" ShortName="YA" LongName="Yavapai" />
+  <MapSpec InternalID="027" ShortName="YU" LongName="Yuma" />
+</AnimatedMapDataXML>

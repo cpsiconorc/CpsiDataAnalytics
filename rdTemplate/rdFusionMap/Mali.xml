@@ -1,0 +1,11 @@
+<AnimatedMapDataXML>
+  <MapSpec InternalID="ML.BA" ShortName="BA" LongName="Bamako" />
+  <MapSpec InternalID="ML.GA" ShortName="GA" LongName="Gao" />
+  <MapSpec InternalID="ML.KY" ShortName="KY" LongName="Kayes" />
+  <MapSpec InternalID="ML.KD" ShortName="KD" LongName="Kidal" />
+  <MapSpec InternalID="ML.KK" ShortName="KK" LongName="Koulikoro" />
+  <MapSpec InternalID="ML.MO" ShortName="MO" LongName="Mopti" />
+  <MapSpec InternalID="ML.SG" ShortName="SG" LongName="Segou" />
+  <MapSpec InternalID="ML.SK" ShortName="SK" LongName="Sikasso" />
+  <MapSpec InternalID="ML.TB" ShortName="TB" LongName="Tombouctou" />
+</AnimatedMapDataXML>

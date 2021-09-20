@@ -1,0 +1,12 @@
+<AnimatedMapDataXML>
+  <MapSpec InternalID="06" ShortName="AR" LongName="Artibonite" />
+  <MapSpec InternalID="07" ShortName="CE" LongName="Centre" />
+  <MapSpec InternalID="14" ShortName="GA" LongName="Grand'Anse" />
+  <MapSpec InternalID="15" ShortName="NI" LongName="Nippes" />
+  <MapSpec InternalID="09" ShortName="ND" LongName="Nord" />
+  <MapSpec InternalID="10" ShortName="NE" LongName="Nord-Est" />
+  <MapSpec InternalID="03" ShortName="NO" LongName="Nord-Ouest" />
+  <MapSpec InternalID="11" ShortName="OU" LongName="Ouest" />
+  <MapSpec InternalID="12" ShortName="SD" LongName="Sud" />
+  <MapSpec InternalID="13" ShortName="SE" LongName="Sud-Est" />
+</AnimatedMapDataXML>

@@ -1,0 +1,86 @@
+<AnimatedMapDataXML>
+  <MapSpec InternalID="MK.AD" ShortName="AD" LongName="Aerodrom" />
+  <MapSpec InternalID="MK.AR" ShortName="AR" LongName="Aracinovo" />
+  <MapSpec InternalID="MK.BR" ShortName="BR" LongName="Berovo" />
+  <MapSpec InternalID="MK.TL" ShortName="TL" LongName="Bitola" />
+  <MapSpec InternalID="MK.BG" ShortName="BG" LongName="Bogdanci" />
+  <MapSpec InternalID="MK.VJ" ShortName="VJ" LongName="Bogovinje" />
+  <MapSpec InternalID="MK.BS" ShortName="BS" LongName="Bosilovo" />
+  <MapSpec InternalID="MK.BN" ShortName="BN" LongName="Brvenica" />
+  <MapSpec InternalID="MK.BU" ShortName="BU" LongName="Butel" />
+  <MapSpec InternalID="MK.CE" ShortName="CE" LongName="Centar" />
+  <MapSpec InternalID="MK.CZ" ShortName="CZ" LongName="Centar Zupa" />
+  <MapSpec InternalID="MK.CI" ShortName="CI" LongName="Cair" />
+  <MapSpec InternalID="MK.CA" ShortName="CA" LongName="Caska" />
+  <MapSpec InternalID="MK.CH" ShortName="CH" LongName="Cesinovo Oblesevo" />
+  <MapSpec InternalID="MK.CS" ShortName="CS" LongName="Cucer Sandevo" />
+  <MapSpec InternalID="MK.DB" ShortName="DB" LongName="Debar" />
+  <MapSpec InternalID="MK.DA" ShortName="DA" LongName="Debartsa" />
+  <MapSpec InternalID="MK.DL" ShortName="DL" LongName="Delcevo" />
+  <MapSpec InternalID="MK.DM" ShortName="DM" LongName="Demir Hisar" />
+  <MapSpec InternalID="MK.DK" ShortName="DK" LongName="Demir Kapija" />
+  <MapSpec InternalID="MK.SD" ShortName="SD" LongName="Dojran" />
+  <MapSpec InternalID="MK.DE" ShortName="DE" LongName="Dolneni" />
+  <MapSpec InternalID="MK.DR" ShortName="DR" LongName="Drugovo" />
+  <MapSpec InternalID="MK.GB" ShortName="GB" LongName="Gazi Baba" />
+  <MapSpec InternalID="MK.GV" ShortName="GV" LongName="Gevgelija" />
+  <MapSpec InternalID="MK.GP" ShortName="GP" LongName="Gjorce Petrov" />
+  <MapSpec InternalID="MK.GT" ShortName="GT" LongName="Gostivar" />
+  <MapSpec InternalID="MK.GR" ShortName="GR" LongName="Gradsko" />
+  <MapSpec InternalID="MK.IL" ShortName="IL" LongName="Ilinden" />
+  <MapSpec InternalID="MK.JG" ShortName="JG" LongName="Jegunovtse" />
+  <MapSpec InternalID="MK.KB" ShortName="KB" LongName="Karbinci" />
+  <MapSpec InternalID="MK.KX" ShortName="KX" LongName="Karpos" />
+  <MapSpec InternalID="MK.AV" ShortName="AV" LongName="Kavadartsi" />
+  <MapSpec InternalID="MK.KH" ShortName="KH" LongName="Kicevo" />
+  <MapSpec InternalID="MK.VD" ShortName="VD" LongName="Kisela Voda" />
+  <MapSpec InternalID="MK.OC" ShortName="OC" LongName="Kocani" />
+  <MapSpec InternalID="MK.KN" ShortName="KN" LongName="Konce" />
+  <MapSpec InternalID="MK.KY" ShortName="KY" LongName="Kratovo" />
+  <MapSpec InternalID="MK.KZ" ShortName="KZ" LongName="Kriva Palanka" />
+  <MapSpec InternalID="MK.KG" ShortName="KG" LongName="Krivogastani" />
+  <MapSpec InternalID="MK.KS" ShortName="KS" LongName="Krusevo" />
+  <MapSpec InternalID="MK.UM" ShortName="UM" LongName="Kumanovo" />
+  <MapSpec InternalID="MK.LI" ShortName="LI" LongName="Lipkovo" />
+  <MapSpec InternalID="MK.LO" ShortName="LO" LongName="Lozovo" />
+  <MapSpec InternalID="MK.MK" ShortName="MK" LongName="Makedonska Kamenica" />
+  <MapSpec InternalID="MK.MD" ShortName="MD" LongName="Makedonski Brod" />
+  <MapSpec InternalID="MK.MR" ShortName="MR" LongName="Mavrovo and Rostusa" />
+  <MapSpec InternalID="MK.MG" ShortName="MG" LongName="Mogila" />
+  <MapSpec InternalID="MK.NG" ShortName="NG" LongName="Negotino" />
+  <MapSpec InternalID="MK.NV" ShortName="NV" LongName="Novatsi" />
+  <MapSpec InternalID="MK.NS" ShortName="NS" LongName="Novo Selo" />
+  <MapSpec InternalID="MK.OD" ShortName="OD" LongName="Ohrid" />
+  <MapSpec InternalID="MK.OS" ShortName="OS" LongName="Oslomej" />
+  <MapSpec InternalID="MK.PH" ShortName="PH" LongName="Pehcevo" />
+  <MapSpec InternalID="MK.PE" ShortName="PE" LongName="Petrovec" />
+  <MapSpec InternalID="MK.PN" ShortName="PN" LongName="Plasnica" />
+  <MapSpec InternalID="MK.PP" ShortName="PP" LongName="Prilep" />
+  <MapSpec InternalID="MK.PT" ShortName="PT" LongName="Probistip" />
+  <MapSpec InternalID="MK.RV" ShortName="RV" LongName="Radovis" />
+  <MapSpec InternalID="MK.RN" ShortName="RN" LongName="Rankovce" />
+  <MapSpec InternalID="MK.RE" ShortName="RE" LongName="Resen" />
+  <MapSpec InternalID="MK.RM" ShortName="RM" LongName="Rosoman" />
+  <MapSpec InternalID="MK.AJ" ShortName="AJ" LongName="Saraj" />
+  <MapSpec InternalID="MK.ST" ShortName="ST" LongName="Stip" />
+  <MapSpec InternalID="MK.SO" ShortName="SO" LongName="Suto Orizari" />
+  <MapSpec InternalID="MK.SS" ShortName="SS" LongName="Sopiste" />
+  <MapSpec InternalID="MK.NA" ShortName="NA" LongName="Staro Nagoricane" />
+  <MapSpec InternalID="MK.UG" ShortName="UG" LongName="Struga" />
+  <MapSpec InternalID="MK.RU" ShortName="RU" LongName="Strumitsa" />
+  <MapSpec InternalID="MK.SU" ShortName="SU" LongName="Studenicani" />
+  <MapSpec InternalID="MK.SL" ShortName="SL" LongName="Sveti Nikole" />
+  <MapSpec InternalID="MK.TR" ShortName="TR" LongName="Tearce" />
+  <MapSpec InternalID="MK.ET" ShortName="ET" LongName="Tetovo" />
+  <MapSpec InternalID="MK.VA" ShortName="VA" LongName="Valandovo" />
+  <MapSpec InternalID="MK.VL" ShortName="VL" LongName="Vasilevo" />
+  <MapSpec InternalID="MK.VE" ShortName="VE" LongName="Veles" />
+  <MapSpec InternalID="MK.VV" ShortName="VV" LongName="Vevcani" />
+  <MapSpec InternalID="MK.NI" ShortName="NI" LongName="Vinitsa" />
+  <MapSpec InternalID="MK.VC" ShortName="VC" LongName="Vranestica" />
+  <MapSpec InternalID="MK.VH" ShortName="VH" LongName="Vrapciste" />
+  <MapSpec InternalID="MK.ZA" ShortName="ZA" LongName="Zajas" />
+  <MapSpec InternalID="MK.ZK" ShortName="ZK" LongName="Zelenikovo" />
+  <MapSpec InternalID="MK.ZE" ShortName="ZE" LongName="Zelino" />
+  <MapSpec InternalID="MK.ZR" ShortName="ZR" LongName="Zrnovci" />
+</AnimatedMapDataXML>

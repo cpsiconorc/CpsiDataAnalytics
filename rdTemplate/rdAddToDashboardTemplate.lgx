@@ -1,0 +1,48 @@
+﻿<AddToDashboardTemplate>
+  <Action Type="ShowElement" ShowElementEffect="FadeIn" ElementID="ppAddToDashboardPrompt" ID="actShowAddToDashboardPrompt">
+  </Action>
+  <PopupPanel ID="ppAddToDashboardPrompt" Caption="Add the Chart to Dashboard" PopupPanelLocation="Mouse" Draggable="True" PopupModal="True">
+    <InputGrid>
+      <InputText ID="rdPanelTitle" Caption="Panel Title" DefaultValue="" InputSize="50">
+      </InputText>
+      <InputTextArea ID="rdPanelDescription" Caption="Panel Description" InputColumns="39" InputRows="4" DefaultValue=""/>
+    </InputGrid>
+    <Label Caption="Add to Dashboard" Class="ThemeLinkButtonSmall" ID="lblAddToDashboard">
+      <Action Type="RefreshElement" ElementID="ppAddToDashboardPrompt" ID="actAddToDashboard" RequestForwarding="True">
+        <LinkParams rdCommand="AddDashboardPanel"
+              rdCommandID="@Function.GUID~"
+              rdPanelContentHeight="@Request.rdPanelContentHeight~"
+              rdPanelContentElementID="@Request.rdPanelContentElementID~"
+              rdPopupCaption="@Request.rdPopupCaption"
+              rdAddButtonCaption="@Request.rdAddButtonCaption"
+              rdPanelParamsElementID="@Request.rdPanelParamsElementID~"
+              rdPanelSkipElementIDs="@Request.rdPanelSkipElementIDs~"
+              rdPanelTitle="@Request.rdPanelTitle~"
+              rdPanelDescription="@Request.rdPanelDescription~"
+              rdPanelRequestIDs="@Request.rdPanelRequestIDs~"
+              rdPanelSessionIDs="@Request.rdPanelSessionIDs~"
+              rdPanelLocalDataIDs="@Request.rdPanelLocalDataIDs~"
+              rdAddPanelLocalDataLayerIDs="@Request.rdAddPanelLocalDataLayerIDs~"
+              rdPanelImage="@Request.rdPanelImage~"
+              rdMultipleInstances="@Request.rdMultipleInstances~"
+              rdPanelSecurityRightID="@Request.rdPanelSecurityRightID~"
+              rdSecurityRightID="@request.rdSecurityRightID~"
+              rdBookmarkLinkbackCaption="@Request.rdBookmarkLinkbackCaption~"
+              rdHasBookmarkLinkback = ""
+              rdBookmarkCollection="@Request.rdBookmarkCollection~"
+              rdBookmarkID="@Request.rdBookmarkID~"
+              rdBookmarkReport="@Request.rdBookmarkReport~"
+              rdBookmarkFrameID="@Request.rdBookmarkFrameID~"
+              rdSkipLocalData="False"
+						/>
+		  <WaitPage />
+      </Action>
+
+      <EventHandler DhtmlEvent="onclick" ID="evtBookmark">
+        <Action Type="Javascript" ID="actAddBookmark" Javascript="rdAddBookmark('actAddBookmark', 'sReport', 'sBookmarkReqIds', 'sBookmarkSessionIds', 'sCollection', 'sName', '', '', 'sDescription', '', '', 'sBookmarkId');" />
+      </EventHandler>
+    </Label>
+  </PopupPanel>
+
+</AddToDashboardTemplate>
+

@@ -1,0 +1,10 @@
+<AnimatedMapDataXML>
+  <MapSpec InternalID="NE.AG" ShortName="AG" LongName="Agadez" />
+  <MapSpec InternalID="NE.DF" ShortName="DF" LongName="Diffa" />
+  <MapSpec InternalID="NE.DS" ShortName="DS" LongName="Dosso" />
+  <MapSpec InternalID="NE.MA" ShortName="MA" LongName="Maradi" />
+  <MapSpec InternalID="NE.NI" ShortName="NI" LongName="Niamey" />
+  <MapSpec InternalID="NE.TH" ShortName="TH" LongName="Tahoua" />
+  <MapSpec InternalID="NE.TL" ShortName="TL" LongName="Tillabery" />
+  <MapSpec InternalID="NE.ZI" ShortName="ZI" LongName="Zinder" />
+</AnimatedMapDataXML>

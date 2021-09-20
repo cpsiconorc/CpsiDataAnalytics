@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<Report ID="AnalysisGrid.rdAgHelpCalc" >
+	<StyleSheet StyleSheet="rdTemplate/rdAnalysisGrid/rdAg10Style.css"/>
+	<StyleSheet StyleSheet="@Session.rdAgStyleSheet~"/>
+	<Body Class="rdAg">
+		<Rows ID="rowsAnalysisGrid" CellSpacing="4">
+			<Row ID="rowTitle" Class="rdAgCaptionRow">
+				<Column ID="colTitle">
+					<Label ID="lblTitle" Caption="Formula Help - Redshift"/>
+				</Column>
+			</Row>
+			<Row ID="rowInstruct">
+				<Column ID="colInstruct">
+					<Label ID="lblInstruct" Caption="Formulas are expressions that must contain data columns, and can include constants, functions, and operators.
+
+Columns are values that come from the data.  Their names are are enclosed in square brackets, like [ShippedDate].  Depending on their data type, they may be used as text strings, numbers, and date/time values.
+
+Constants are simply specific fixed values that you enter into a Formula.
+
+Functions return values, usually computations based on columns and constants.
+
+Operators do arithmetic and logical comparisons. Logical comparisons must be used with Case statements.
+
+Since all of these formulas are sent to the PosgreSQL server for processing, please consult the PostgreSQL documenation for additional help.
+
+Here are some examples:
+
+[UnitPrice] * [Quantity]
+Multiply two data columns, UnitPrice and Quantity, to make an ExtendedPrice column.
+
+[UnitPrice] * .04
+Multiply a data column by a constant value to calculate the tax applied to the price.
+
+date_part('day',[shippeddate]-[orderdate])
+Get the number of days between the order date and the ship date.
+
+date_part(&apos;year&apos;, [ShippedDate]) - date_part(&apos;year&apos;, [OrderDate] ) * 12 + date_part(&apos;month&apos;, [ShippedDate]) - date_part(&apos;month&apos;, [OrderDate] )
+Get the number of months between the order date and the ship date.
+
+to_char([ShippedDate], &apos;day&apos;)
+Return the name of the day of the week of the shipment date.
+
+[LastName] || &apos;, &apos; || [FirstName]
+Concatenate columns and strings together.  This might return: Smith, John
+
+upper( [LastName] || &apos;, &apos; || [FirstName] )
+Convert to upper case.  This might return: SMITH, JOHN" Format="Preserve Line Feeds"/>
+					<LineBreak LineCount="2"/>
+				</Column>
+			</Row>
+			<Row ID="rowFunctions" Class="rdAgCaptionRow">
+				<Column ID="colFunctions">
+					<Label ID="lblFunctions" Caption="Functions"/>
+				</Column>
+			</Row>
+			<Row ID="rowFunctionsDetail">
+				<Column ID="colFunctions">
+					<Label ID="lblFunctions" Caption="Functions accept some number of values and return a single value." Format="Preserve Line Feeds"/>
+					<LineBreak LineCount="2"/>
+					<DataTable ID="dtFunctions" CellSpacing="0" TableBorder="1">
+            <DataLayer Type="XMLFile" ID="dlFunctions" XMLFile="@Function.AppPhysicalPath~/rdTemplate/rdAnalysisGrid/Help/Redshift/rdAg10RedshiftHelpCalcData.lgx" />
+						<DataTableColumn ID="colName" Header="Function Name" Class="cell" Width="100">
+							<Label ID="lblName" Caption="@Data.Name~"/>
+							<Label ID="lblSpace" Caption="&amp;nbsp;" Format="HTML"/>
+						</DataTableColumn>
+						<DataTableColumn ID="colDescription" Header="Description" Class="cell" Width="300">
+							<Label ID="lblDescription" Caption="@Data.Description~" Format="Preserve Line Feeds"/>
+							<Label ID="lblSpace" Caption="&amp;nbsp;" Format="HTML"/>
+						</DataTableColumn>
+						<DataTableColumn ID="colSyntax" Header="Syntax" Class="cell" Width="300">
+							<Label ID="lblSyntax" Caption="@Data.Syntax~" Format="Preserve Line Feeds"/>
+							<Label ID="lblSpace" Caption="&amp;nbsp;" Format="HTML"/>
+						</DataTableColumn>
+						<DataTableColumn ID="colNotes" Header="Notes" Class="cell">
+							<Label ID="lblNotes" Caption="@Data.Notes~" Format="Preserve Line Feeds"/>
+							<Label ID="lblSpace" Caption="&amp;nbsp;" Format="HTML"/>
+						</DataTableColumn>
+					</DataTable>
+					<LineBreak LineCount="2"/>
+					<Label ID="lblFunctions" Caption="In the Syntax column, parameters in square brackets are optional."/>
+					<LineBreak LineCount="2"/>
+				</Column>
+			</Row>
+			<Row ID="rowOperators" Class="rdAgCaptionRow">
+				<Column ID="colOperators">
+					<Label ID="lblOperators" Caption="Operators"/>
+				</Column>
+			</Row>
+			<Row ID="rowOperatorsDetail">
+				<Column ID="colOperators">
+					<Label ID="lblIntro" Caption="Operators do arithmetic and logical comparisons."/>
+					<LineBreak LineCount="2"/>
+					<DataTable ID="dtOperators" CellSpacing="0" TableBorder="1" IdeDisplayStatus="Collapsed">
+            <DataLayer Type="XMLFile" ID="dlFunctions" XMLFile="@Function.AppPhysicalPath~/rdTemplate/rdAnalysisGrid/Help/Redshift/rdAg10RedshiftHelpCalcDataOp.lgx" />
+            <DataTableColumn ID="colOperator" Header="Operator" Class="cell">
+							<Label ID="lblOperator" Caption="@Data.Operator~"/>
+							<Label ID="lblSpace" Caption="&amp;nbsp;" Format="HTML"/>
+						</DataTableColumn>
+						<DataTableColumn ID="colDescription" Header="Description" Class="cell">
+							<Label ID="lblDescription" Caption="@Data.Description~"/>
+							<Label ID="lblSpace" Caption="&amp;nbsp;" Format="HTML"/>
+						</DataTableColumn>
+					</DataTable>
+					<LineBreak LineCount="2"/>
+				</Column>
+			</Row>
+			<Row ID="rowOtherNotes" Class="rdAgCaptionRow">
+				<Column ID="colOtherNotes">
+					<Label ID="lblOtherNotes" Caption="Other Notes of Interest"/>
+				</Column>
+			</Row>
+			<Row ID="rowOtherNotes">
+				<Column ID="colOtherNotes">
+					<Label ID="lblInstruct" Caption="You may represent true and false values as True and False." Format="Preserve Line Feeds"/>
+					<LineBreak LineCount="2"/>
+				</Column>
+			</Row>
+		</Rows>
+	</Body>
+</Report>

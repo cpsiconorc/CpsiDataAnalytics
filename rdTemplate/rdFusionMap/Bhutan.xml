@@ -1,0 +1,22 @@
+<AnimatedMapDataXML>
+  <MapSpec InternalID="BT.BU" ShortName="BU" LongName="Bumthang" />
+  <MapSpec InternalID="BT.CK" ShortName="CK" LongName="Chhukha" />
+  <MapSpec InternalID="BT.CR" ShortName="CR" LongName="Chirang" />
+  <MapSpec InternalID="BT.DA" ShortName="DA" LongName="Daga" />
+  <MapSpec InternalID="BT.GA" ShortName="GA" LongName="Gasa" />
+  <MapSpec InternalID="BT.GE" ShortName="GE" LongName="Geylegphug" />
+  <MapSpec InternalID="BT.HA" ShortName="HA" LongName="Ha" />
+  <MapSpec InternalID="BT.LH" ShortName="LH" LongName="Lhuntshi" />
+  <MapSpec InternalID="BT.MO" ShortName="MO" LongName="Mongar" />
+  <MapSpec InternalID="BT.PR" ShortName="PR" LongName="Paro" />
+  <MapSpec InternalID="BT.PM" ShortName="PM" LongName="Pemagatsel" />
+  <MapSpec InternalID="BT.PN" ShortName="PN" LongName="Punakha" />
+  <MapSpec InternalID="BT.SM" ShortName="SM" LongName="Samchi" />
+  <MapSpec InternalID="BT.SJ" ShortName="SJ" LongName="Samdrup Jongkhar" />
+  <MapSpec InternalID="BT.SG" ShortName="SG" LongName="Shemgang" />
+  <MapSpec InternalID="BT.TY" ShortName="TY" LongName="Tashi Yangtse" />
+  <MapSpec InternalID="BT.TA" ShortName="TA" LongName="Tashigang" />
+  <MapSpec InternalID="BT.TM" ShortName="TM" LongName="Thimphu" />
+  <MapSpec InternalID="BT.TO" ShortName="TO" LongName="Tongsa" />
+  <MapSpec InternalID="BT.WP" ShortName="WP" LongName="Wangdi Phodrang" />
+</AnimatedMapDataXML>

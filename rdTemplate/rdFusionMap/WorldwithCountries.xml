@@ -1,0 +1,204 @@
+<AnimatedMapDataXML>
+  <MapSpec InternalID="01" ShortName="AG" LongName="Antigua and Barbuda" />
+  <MapSpec InternalID="02" ShortName="BS" LongName="Bahamas" />
+  <MapSpec InternalID="03" ShortName="BB" LongName="Barbados" />
+  <MapSpec InternalID="04" ShortName="BZ" LongName="Belize" />
+  <MapSpec InternalID="05" ShortName="CA" LongName="Canada" />
+  <MapSpec InternalID="06" ShortName="CR" LongName="Costa Rica" />
+  <MapSpec InternalID="07" ShortName="CU" LongName="Cuba" />
+  <MapSpec InternalID="08" ShortName="DM" LongName="Dominica" />
+  <MapSpec InternalID="09" ShortName="DO" LongName="Dominican Rep." />
+  <MapSpec InternalID="10" ShortName="SV" LongName="El Salvador" />
+  <MapSpec InternalID="11" ShortName="GD" LongName="Grenada" />
+  <MapSpec InternalID="12" ShortName="GT" LongName="Guatemala" />
+  <MapSpec InternalID="13" ShortName="HT" LongName="Haiti" />
+  <MapSpec InternalID="14" ShortName="HN" LongName="Honduras" />
+  <MapSpec InternalID="15" ShortName="JM" LongName="Jamaica" />
+  <MapSpec InternalID="16" ShortName="MX" LongName="Mexico" />
+  <MapSpec InternalID="17" ShortName="NI" LongName="Nicaragua" />
+  <MapSpec InternalID="18" ShortName="PA" LongName="Panama" />
+  <MapSpec InternalID="19" ShortName="KN" LongName="St. Kitts &amp; Nevis" />
+  <MapSpec InternalID="20" ShortName="LC" LongName="St. Lucia" />
+  <MapSpec InternalID="21" ShortName="VC" LongName="St. Vincent &amp; the Grenadines" />
+  <MapSpec InternalID="22" ShortName="TT" LongName="Trinidad &amp; Tobago" />
+  <MapSpec InternalID="23" ShortName="US" LongName="United States" />
+  <MapSpec InternalID="24" ShortName="GL" LongName="Greenland" />
+  <MapSpec InternalID="25" ShortName="AR" LongName="Argentina" />
+  <MapSpec InternalID="26" ShortName="BO" LongName="Bolivia" />
+  <MapSpec InternalID="27" ShortName="BR" LongName="Brazil" />
+  <MapSpec InternalID="28" ShortName="CL" LongName="Chile" />
+  <MapSpec InternalID="29" ShortName="CO" LongName="Colombia" />
+  <MapSpec InternalID="30" ShortName="EC" LongName="Ecuador" />
+  <MapSpec InternalID="31" ShortName="FK" LongName="Falkland Islands" />
+  <MapSpec InternalID="32" ShortName="GF" LongName="French Guiana" />
+  <MapSpec InternalID="33" ShortName="GY" LongName="Guyana" />
+  <MapSpec InternalID="34" ShortName="PY" LongName="Paraguay" />
+  <MapSpec InternalID="35" ShortName="PE" LongName="Peru" />
+  <MapSpec InternalID="36" ShortName="SR" LongName="Suriname" />
+  <MapSpec InternalID="37" ShortName="UY" LongName="Uruguay" />
+  <MapSpec InternalID="38" ShortName="VE" LongName="Venezuela" />
+  <MapSpec InternalID="39" ShortName="DZ" LongName="Algeria" />
+  <MapSpec InternalID="40" ShortName="AO" LongName="Angola" />
+  <MapSpec InternalID="41" ShortName="BJ" LongName="Benin" />
+  <MapSpec InternalID="42" ShortName="BW" LongName="Botswana" />
+  <MapSpec InternalID="43" ShortName="BF" LongName="Burkina Faso" />
+  <MapSpec InternalID="44" ShortName="BI" LongName="Burundi" />
+  <MapSpec InternalID="45" ShortName="CM" LongName="Cameroon" />
+  <MapSpec InternalID="46" ShortName="CV" LongName="Cape Verde" />
+  <MapSpec InternalID="47" ShortName="CP" LongName="Central African Republic" />
+  <MapSpec InternalID="48" ShortName="TD" LongName="Chad" />
+  <MapSpec InternalID="49" ShortName="KM" LongName="Comoros" />
+  <MapSpec InternalID="50" ShortName="CI" LongName="Cote d Ivoire" />
+  <MapSpec InternalID="51" ShortName="CD" LongName="Democratic Republic of the Congo" />
+  <MapSpec InternalID="52" ShortName="DJ" LongName="Djibouti" />
+  <MapSpec InternalID="53" ShortName="EG" LongName="Egypt" />
+  <MapSpec InternalID="54" ShortName="GQ" LongName="Equatorial Guinea" />
+  <MapSpec InternalID="55" ShortName="ER" LongName="Eritrea" />
+  <MapSpec InternalID="56" ShortName="ET" LongName="Ethiopia" />
+  <MapSpec InternalID="57" ShortName="GA" LongName="Gabon" />
+  <MapSpec InternalID="58" ShortName="GH" LongName="Ghana" />
+  <MapSpec InternalID="59" ShortName="GN" LongName="Guinea" />
+  <MapSpec InternalID="60" ShortName="GW" LongName="Guinea-Bissau" />
+  <MapSpec InternalID="61" ShortName="KE" LongName="Kenya" />
+  <MapSpec InternalID="62" ShortName="LS" LongName="Lesotho" />
+  <MapSpec InternalID="63" ShortName="LI" LongName="Liberia" />
+  <MapSpec InternalID="64" ShortName="LR" LongName="Libya" />
+  <MapSpec InternalID="65" ShortName="MS" LongName="Madagascar" />
+  <MapSpec InternalID="66" ShortName="MW" LongName="Malawi" />
+  <MapSpec InternalID="67" ShortName="ML" LongName="Mali" />
+  <MapSpec InternalID="68" ShortName="MR" LongName="Mauritania" />
+  <MapSpec InternalID="69" ShortName="MA" LongName="Morocco" />
+  <MapSpec InternalID="70" ShortName="MZ" LongName="Mozambique" />
+  <MapSpec InternalID="71" ShortName="NA" LongName="Namibia" />
+  <MapSpec InternalID="72" ShortName="NE" LongName="Niger" />
+  <MapSpec InternalID="73" ShortName="NG" LongName="Nigeria" />
+  <MapSpec InternalID="74" ShortName="RW" LongName="Rwanda" />
+  <MapSpec InternalID="75" ShortName="ST" LongName="Sao Tome and Principe" />
+  <MapSpec InternalID="76" ShortName="SN" LongName="Senegal" />
+  <MapSpec InternalID="77" ShortName="SC" LongName="Seycelles" />
+  <MapSpec InternalID="78" ShortName="SL" LongName="Sierra Leone" />
+  <MapSpec InternalID="79" ShortName="SO" LongName="Somalia" />
+  <MapSpec InternalID="80" ShortName="ZA" LongName="South Africa" />
+  <MapSpec InternalID="81" ShortName="SD" LongName="Sudan" />
+  <MapSpec InternalID="82" ShortName="SZ" LongName="Swaziland" />
+  <MapSpec InternalID="83" ShortName="TZ" LongName="Tanzania" />
+  <MapSpec InternalID="84" ShortName="TG" LongName="Togo" />
+  <MapSpec InternalID="85" ShortName="TN" LongName="Tunisia" />
+  <MapSpec InternalID="86" ShortName="UG" LongName="Uganda" />
+  <MapSpec InternalID="87" ShortName="WA" LongName="Western Sahara" />
+  <MapSpec InternalID="88" ShortName="ZM" LongName="Zambia" />
+  <MapSpec InternalID="89" ShortName="ZW" LongName="Zimbabwe" />
+  <MapSpec InternalID="90" ShortName="GM" LongName="Gambia" />
+  <MapSpec InternalID="91" ShortName="CG" LongName="Congo" />
+  <MapSpec InternalID="92" ShortName="MI" LongName="Mauritius" />
+  <MapSpec InternalID="93" ShortName="AF" LongName="Afghanistan" />
+  <MapSpec InternalID="94" ShortName="AM" LongName="Armenia" />
+  <MapSpec InternalID="95" ShortName="AZ" LongName="Azerbaijan" />
+  <MapSpec InternalID="96" ShortName="BD" LongName="Bangladesh" />
+  <MapSpec InternalID="97" ShortName="BT" LongName="Bhutan" />
+  <MapSpec InternalID="98" ShortName="BN" LongName="Brunei" />
+  <MapSpec InternalID="99" ShortName="MM" LongName="Burma (Myanmar)" />
+  <MapSpec InternalID="100" ShortName="KH" LongName="Cambodia" />
+  <MapSpec InternalID="101" ShortName="CN" LongName="China" />
+  <MapSpec InternalID="102" ShortName="TP" LongName="East Timor" />
+  <MapSpec InternalID="103" ShortName="GE" LongName="Georgia" />
+  <MapSpec InternalID="104" ShortName="IN" LongName="India" />
+  <MapSpec InternalID="105" ShortName="ID" LongName="Indonesia" />
+  <MapSpec InternalID="106" ShortName="IA" LongName="Iran" />
+  <MapSpec InternalID="107" ShortName="JP" LongName="Japan" />
+  <MapSpec InternalID="108" ShortName="KZ" LongName="Kazakhstan" />
+  <MapSpec InternalID="109" ShortName="KP" LongName="Korea (north)" />
+  <MapSpec InternalID="110" ShortName="KR" LongName="Korea (south)" />
+  <MapSpec InternalID="111" ShortName="KG" LongName="Kyrgyzstan" />
+  <MapSpec InternalID="112" ShortName="LA" LongName="Laos" />
+  <MapSpec InternalID="113" ShortName="MY" LongName="Malaysia" />
+  <MapSpec InternalID="114" ShortName="MN" LongName="Mongolia" />
+  <MapSpec InternalID="115" ShortName="NP" LongName="Nepal" />
+  <MapSpec InternalID="116" ShortName="PK" LongName="Pakistan" />
+  <MapSpec InternalID="117" ShortName="PH" LongName="Philippines" />
+  <MapSpec InternalID="118" ShortName="RU" LongName="Russia" />
+  <MapSpec InternalID="119" ShortName="SG" LongName="Singapore" />
+  <MapSpec InternalID="120" ShortName="LK" LongName="Sri Lanka" />
+  <MapSpec InternalID="121" ShortName="TJ" LongName="Tajikistan" />
+  <MapSpec InternalID="122" ShortName="TH" LongName="Thailand" />
+  <MapSpec InternalID="123" ShortName="TM" LongName="Turkmenistan" />
+  <MapSpec InternalID="124" ShortName="UZ" LongName="Uzbekistan" />
+  <MapSpec InternalID="125" ShortName="VN" LongName="Vietnam" />
+  <MapSpec InternalID="126" ShortName="TW" LongName="Taiwan" />
+  <MapSpec InternalID="127" ShortName="HK" LongName="Hong Kong" />
+  <MapSpec InternalID="128" ShortName="MO" LongName="Macau" />
+  <MapSpec InternalID="129" ShortName="AL" LongName="Albania" />
+  <MapSpec InternalID="130" ShortName="AD" LongName="Andorra" />
+  <MapSpec InternalID="131" ShortName="AT" LongName="Austria" />
+  <MapSpec InternalID="132" ShortName="BY" LongName="Belarus" />
+  <MapSpec InternalID="133" ShortName="BE" LongName="Belgium" />
+  <MapSpec InternalID="134" ShortName="BH" LongName="Bosnia and Herzegovina" />
+  <MapSpec InternalID="135" ShortName="BG" LongName="Bulgaria" />
+  <MapSpec InternalID="136" ShortName="HY" LongName="Croatia" />
+  <MapSpec InternalID="137" ShortName="CZ" LongName="Czech Republic" />
+  <MapSpec InternalID="138" ShortName="DK" LongName="Denmark" />
+  <MapSpec InternalID="139" ShortName="EE" LongName="Estonia" />
+  <MapSpec InternalID="140" ShortName="FI" LongName="Finland" />
+  <MapSpec InternalID="141" ShortName="FR" LongName="France" />
+  <MapSpec InternalID="142" ShortName="DE" LongName="Germany" />
+  <MapSpec InternalID="143" ShortName="GR" LongName="Greece" />
+  <MapSpec InternalID="144" ShortName="HU" LongName="Hungary" />
+  <MapSpec InternalID="145" ShortName="IS" LongName="Iceland" />
+  <MapSpec InternalID="146" ShortName="IR" LongName="Ireland" />
+  <MapSpec InternalID="147" ShortName="IT" LongName="Italy" />
+  <MapSpec InternalID="148" ShortName="LV" LongName="Latvia" />
+  <MapSpec InternalID="149" ShortName="LN" LongName="Liechtenstein" />
+  <MapSpec InternalID="150" ShortName="LT" LongName="Lithuania" />
+  <MapSpec InternalID="151" ShortName="LU" LongName="Luxembourg" />
+  <MapSpec InternalID="152" ShortName="MK" LongName="Macedonia" />
+  <MapSpec InternalID="153" ShortName="MT" LongName="Malta" />
+  <MapSpec InternalID="154" ShortName="MV" LongName="Moldova" />
+  <MapSpec InternalID="155" ShortName="MC" LongName="Monaco" />
+  <MapSpec InternalID="156" ShortName="MG" LongName="Montenegro" />
+  <MapSpec InternalID="157" ShortName="NL" LongName="Netherlands" />
+  <MapSpec InternalID="158" ShortName="NO" LongName="Norway" />
+  <MapSpec InternalID="159" ShortName="PL" LongName="Poland" />
+  <MapSpec InternalID="160" ShortName="PT" LongName="Portugal" />
+  <MapSpec InternalID="161" ShortName="RO" LongName="Romania" />
+  <MapSpec InternalID="162" ShortName="SM" LongName="San Marino" />
+  <MapSpec InternalID="163" ShortName="CS" LongName="Serbia" />
+  <MapSpec InternalID="164" ShortName="SK" LongName="Slovakia" />
+  <MapSpec InternalID="165" ShortName="SI" LongName="Slovenia" />
+  <MapSpec InternalID="166" ShortName="ES" LongName="Spain" />
+  <MapSpec InternalID="167" ShortName="SE" LongName="Sweden" />
+  <MapSpec InternalID="168" ShortName="CH" LongName="Switzerland" />
+  <MapSpec InternalID="169" ShortName="UA" LongName="Ukraine" />
+  <MapSpec InternalID="170" ShortName="UK" LongName="United Kingdom" />
+  <MapSpec InternalID="171" ShortName="VA" LongName="Vatican City" />
+  <MapSpec InternalID="172" ShortName="CY" LongName="Cyprus" />
+  <MapSpec InternalID="173" ShortName="TK" LongName="Turkey" />
+  <MapSpec InternalID="175" ShortName="AU" LongName="Australia" />
+  <MapSpec InternalID="176" ShortName="FJ" LongName="Fiji" />
+  <MapSpec InternalID="177" ShortName="KI" LongName="Kiribati" />
+  <MapSpec InternalID="178" ShortName="MH" LongName="Marshall Islands" />
+  <MapSpec InternalID="179" ShortName="FM" LongName="Micronesia" />
+  <MapSpec InternalID="180" ShortName="NR" LongName="Nauru" />
+  <MapSpec InternalID="181" ShortName="NZ" LongName="New Zealand" />
+  <MapSpec InternalID="182" ShortName="PW" LongName="Palau" />
+  <MapSpec InternalID="183" ShortName="PG" LongName="Papua New Guinea" />
+  <MapSpec InternalID="184" ShortName="WS" LongName="Samoa" />
+  <MapSpec InternalID="185" ShortName="SB" LongName="Solomon Islands" />
+  <MapSpec InternalID="186" ShortName="TO" LongName="Tonga" />
+  <MapSpec InternalID="187" ShortName="TV" LongName="Tuvalu" />
+  <MapSpec InternalID="188" ShortName="VU" LongName="Vanuatu" />
+  <MapSpec InternalID="189" ShortName="NC" LongName="New Caledonia" />
+  <MapSpec InternalID="190" ShortName="BA" LongName="Bahrain" />
+  <MapSpec InternalID="191" ShortName="IZ" LongName="Iraq" />
+  <MapSpec InternalID="192" ShortName="IE" LongName="Israel" />
+  <MapSpec InternalID="193" ShortName="JO" LongName="Jordan" />
+  <MapSpec InternalID="194" ShortName="KU" LongName="Kuwait" />
+  <MapSpec InternalID="195" ShortName="LB" LongName="Lebanon" />
+  <MapSpec InternalID="196" ShortName="OM" LongName="Oman" />
+  <MapSpec InternalID="197" ShortName="QA" LongName="Qatar" />
+  <MapSpec InternalID="198" ShortName="SA" LongName="Saudi Arabia" />
+  <MapSpec InternalID="199" ShortName="SY" LongName="Syria" />
+  <MapSpec InternalID="200" ShortName="AE" LongName="UnitedArabEmirates" />
+  <MapSpec InternalID="201" ShortName="YM" LongName="Yemen" />
+  <MapSpec InternalID="202" ShortName="PR" LongName="Puerto Rico" />
+  <MapSpec InternalID="203" ShortName="KY" LongName="Cayman Islands" />
+</AnimatedMapDataXML>

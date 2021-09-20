@@ -1,0 +1,42 @@
+﻿<Report ID="rdDataviewNavigator">
+  <Body>
+    <InputText ID="searchdv" Placeholder="Search Dataviews..." />
+    <Label Caption="Search" Class="ThemeLinkButtonSmall">
+      <Action ElementID="AvailableDataviews" ID="refreshChart" Type="RefreshElement">
+        <WaitPage Caption="Searching..." />
+      </Action>
+    </Label>
+    <DataTable ID="AvailableDataviews" SortArrows="True">
+      <DataTableColumn Header="Dataview Name" Width="180" WidthScale="px">
+        <Label Caption="@Data.payload/name~" />
+      </DataTableColumn>
+      <DataTableColumn Header="Created">
+        <Label Caption="@Data.created~" Format="General Date" />
+      </DataTableColumn>
+      <DataTableColumn Header="GUID">
+        <Label Caption="@Data.id~" />
+        <DataColumnSort DataColumn="@Data.id~" DataType="Text" />
+      </DataTableColumn>
+      <DataTableColumn Header="Actions">
+        <Division>
+          <Button Caption="Edit" ID="btnEdit">
+              <Action ID="openWizard" Javascript="window.external.LaunchUrlExternally('@Function.ApplicationPath~/rdTemplate/rdDiscovery/WizardTemplates/RedirectToNgpWizard.aspx?rdLasConnection=@Request.rdLasConnection~&amp;rdWizardType=Dataview&amp;rdValueParam=@Data.id~');" Type="Javascript" />
+          </Button>
+          <Division Condition="&quot;@Request.rdSelectedDvdId~&quot; != &quot;@Data.id~&quot;" ID="setDvdDiv">
+            <Button Caption="Select" ID="btnSetDvd">
+              <Action ID="setDvdId" Javascript="window.external.PassDvdId('@Data.id~');" Type="Javascript" />
+            </Button>
+          </Division>
+          <Division Condition="&quot;@Request.rdSelectedDvdId~&quot; == &quot;@Data.id~&quot;" ID="selectedDiv">
+            <Label Caption="Selected" />
+          </Division>
+        </Division>
+      </DataTableColumn>
+      <DataLayer ConnectionID="@Request.rdLasConnection~" HttpMethod="GET" ID="dlNGP" JsonFile="/api/platform/system.dataviews?$select=&quot;payload/name,created,id&quot;&amp;$filter=&quot;SystemTags/id%20eq%20%27EnrichmentView%27&quot;" Type="JsonFile">
+        <Flattener DataRowElementNames="AvailableDataviews" ID="flattensytemobjects" />
+        <ContainFilter CaseSensitive="False" ContainType="Contains" DataColumn="payload/name" IncludeCondition="'@Request.searchdv~' != ''" SearchString="@Request.searchdv~" />
+      </DataLayer>
+    </DataTable>
+  </Body>
+  <ideTestParams rdLasConnection="" rdSelectedDvdId="" searchdv="" />
+</Report>

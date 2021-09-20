@@ -1,0 +1,10 @@
+<AnimatedMapDataXML>
+  <MapSpec InternalID="MO.IL.CO" ShortName="CO" LongName="Coloane" />
+  <MapSpec InternalID="MO.IL.CT" ShortName="CT" LongName="Cotai" />
+  <MapSpec InternalID="MO.MA.NF" ShortName="NF" LongName="Nossa Senhora de Fátima" />
+  <MapSpec InternalID="MO.MA.SA" ShortName="SA" LongName="Santo António" />
+  <MapSpec InternalID="MO.MA.SC" ShortName="SC" LongName="São Lourenço" />
+  <MapSpec InternalID="MO.MA.SZ" ShortName="SZ" LongName="São Lázaro" />
+  <MapSpec InternalID="MO.MA.SE" ShortName="SE" LongName="Sé" />
+  <MapSpec InternalID="MO.IL.TA" ShortName="TA" LongName="Taipa" />
+</AnimatedMapDataXML>

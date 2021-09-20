@@ -1,0 +1,18 @@
+<AnimatedMapDataXML>
+  <MapSpec InternalID="SD.GZ" ShortName="GZ" LongName="Al Jazirah (Gezira)" />
+  <MapSpec InternalID="SD.GD" ShortName="GD" LongName="Al Qadarif (Gedarif)" />
+  <MapSpec InternalID="SD.BN" ShortName="BN" LongName="Blue Nile" />
+  <MapSpec InternalID="SD.KA" ShortName="KA" LongName="Kassala" />
+  <MapSpec InternalID="SD.KH" ShortName="KH" LongName="Khartoum" />
+  <MapSpec InternalID="SD.ND" ShortName="ND" LongName="North Darfur" />
+  <MapSpec InternalID="SD.NK" ShortName="NK" LongName="North Kurdufan" />
+  <MapSpec InternalID="SD.NO" ShortName="NO" LongName="Northern" />
+  <MapSpec InternalID="SD.RS" ShortName="RS" LongName="Red Sea" />
+  <MapSpec InternalID="SD.RN" ShortName="RN" LongName="River Nile" />
+  <MapSpec InternalID="SD.SI" ShortName="SI" LongName="Sennar" />
+  <MapSpec InternalID="SD.SD" ShortName="SD" LongName="South Darfur" />
+  <MapSpec InternalID="SD.SK" ShortName="SK" LongName="South Kurdufan" />
+  <MapSpec InternalID="SD.WD" ShortName="WD" LongName="West Darfur" />
+  <MapSpec InternalID="SD.WK" ShortName="WK" LongName="West Kurdufan" />
+  <MapSpec InternalID="SD.WN" ShortName="WN" LongName="White Nile" />
+</AnimatedMapDataXML>

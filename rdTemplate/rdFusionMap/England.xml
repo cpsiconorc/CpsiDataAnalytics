@@ -1,0 +1,48 @@
+<AnimatedMapDataXML>
+  <MapSpec InternalID="001" ShortName="BE" LongName="Bedforshire" />
+  <MapSpec InternalID="002" ShortName="BR" LongName="Berkshire" />
+  <MapSpec InternalID="003" ShortName="BU" LongName="Buckinghamshire" />
+  <MapSpec InternalID="004" ShortName="CA" LongName="Cambridgeshire" />
+  <MapSpec InternalID="005" ShortName="CH" LongName="Cheshire" />
+  <MapSpec InternalID="006" ShortName="CO" LongName="Cornwall" />
+  <MapSpec InternalID="007" ShortName="CU" LongName="Cumbria" />
+  <MapSpec InternalID="008" ShortName="DE" LongName="Derbyshire." />
+  <MapSpec InternalID="009" ShortName="DV" LongName="Devon" />
+  <MapSpec InternalID="010" ShortName="DO" LongName="Dorset" />
+  <MapSpec InternalID="011" ShortName="DU" LongName="Durham" />
+  <MapSpec InternalID="012" ShortName="ES" LongName="Essex" />
+  <MapSpec InternalID="013" ShortName="GL" LongName="Gloucestershire" />
+  <MapSpec InternalID="014" ShortName="HA" LongName="Hampshire" />
+  <MapSpec InternalID="015" ShortName="HE" LongName="Herefordshire" />
+  <MapSpec InternalID="016" ShortName="HR" LongName="Hertfordshire" />
+  <MapSpec InternalID="018" ShortName="KE" LongName="Kent" />
+  <MapSpec InternalID="019" ShortName="LA" LongName="Lancashire" />
+  <MapSpec InternalID="020" ShortName="LE" LongName="Leicestershire" />
+  <MapSpec InternalID="021" ShortName="LI" LongName="Lincolnshire" />
+  <MapSpec InternalID="022" ShortName="LO" LongName="London" />
+  <MapSpec InternalID="024" ShortName="NO" LongName="Norfolk" />
+  <MapSpec InternalID="025" ShortName="NR" LongName="Northamptonshire" />
+  <MapSpec InternalID="026" ShortName="NT" LongName="Northumberland" />
+  <MapSpec InternalID="027" ShortName="NG" LongName="Nottinghamshire" />
+  <MapSpec InternalID="028" ShortName="OX" LongName="Oxfordshire" />
+  <MapSpec InternalID="030" ShortName="SH" LongName="Shropshire" />
+  <MapSpec InternalID="031" ShortName="SO" LongName="Somerset" />
+  <MapSpec InternalID="032" ShortName="ST" LongName="Staffordshire" />
+  <MapSpec InternalID="033" ShortName="SU" LongName="Suffolk" />
+  <MapSpec InternalID="034" ShortName="SR" LongName="Surrey" />
+  <MapSpec InternalID="035" ShortName="SS" LongName="E.Sussex" />
+  <MapSpec InternalID="036" ShortName="WA" LongName="Warwickshire" />
+  <MapSpec InternalID="038" ShortName="WI" LongName="Wiltshire" />
+  <MapSpec InternalID="039" ShortName="WO" LongName="Worcestershire" />
+  <MapSpec InternalID="040" ShortName="NY" LongName="N. Yorkshire" />
+  <MapSpec InternalID="041" ShortName="TW" LongName="Tyne And Wear" />
+  <MapSpec InternalID="042" ShortName="MS" LongName="Mersey" />
+  <MapSpec InternalID="043" ShortName="GM" LongName="G.Manchester" />
+  <MapSpec InternalID="044" ShortName="WM" LongName="W.Midlands" />
+  <MapSpec InternalID="045" ShortName="RN" LongName="Rutland" />
+  <MapSpec InternalID="046" ShortName="IW" LongName="Isle     of Wight" />
+  <MapSpec InternalID="047" ShortName="WS" LongName="W.Sussex" />
+  <MapSpec InternalID="048" ShortName="EY" LongName="E.Yorkshire" />
+  <MapSpec InternalID="049" ShortName="SY" LongName="S.Yorkshire" />
+  <MapSpec InternalID="050" ShortName="WY" LongName="W.Yorkshire" />
+</AnimatedMapDataXML>

@@ -1,0 +1,15 @@
+<AnimatedMapDataXML>
+  <MapSpec InternalID="TL.AL" ShortName="AL" LongName="Aileu" />
+  <MapSpec InternalID="TL.AN" ShortName="AN" LongName="Ainaro" />
+  <MapSpec InternalID="TL.AM" ShortName="AM" LongName="Oecusse" />
+  <MapSpec InternalID="TL.BC" ShortName="BC" LongName="Baucau" />
+  <MapSpec InternalID="TL.BB" ShortName="BB" LongName="Bobonaro" />
+  <MapSpec InternalID="TL.CL" ShortName="CL" LongName="Cova Lima" />
+  <MapSpec InternalID="TL.DL" ShortName="DL" LongName="Dili" />
+  <MapSpec InternalID="TL.ER" ShortName="ER" LongName="Ermera" />
+  <MapSpec InternalID="TL.BT" ShortName="BT" LongName="Lautem" />
+  <MapSpec InternalID="TL.LQ" ShortName="LQ" LongName="Liquica" />
+  <MapSpec InternalID="TL.MT" ShortName="MT" LongName="Manatuto" />
+  <MapSpec InternalID="TL.MF" ShortName="MF" LongName="Manufahi" />
+  <MapSpec InternalID="TL.VQ" ShortName="VQ" LongName="Viqueque" />
+</AnimatedMapDataXML>

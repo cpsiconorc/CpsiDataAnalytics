@@ -1,0 +1,22 @@
+<AnimatedMapDataXML>
+  <MapSpec InternalID="01" ShortName="BK" LongName="Bács-Kiskun" />
+  <MapSpec InternalID="02" ShortName="BA" LongName="Baranya" />
+  <MapSpec InternalID="03" ShortName="BE" LongName="Békés" />
+  <MapSpec InternalID="04" ShortName="BO" LongName="Borsod-Abaúj-Zemplén" />
+  <MapSpec InternalID="05" ShortName="BU" LongName="Budapest" />
+  <MapSpec InternalID="06" ShortName="CS" LongName="Csongrád" />
+  <MapSpec InternalID="08" ShortName="FE" LongName="Fejér" />
+  <MapSpec InternalID="09" ShortName="GM" LongName="Győr-Moson-Sopron" />
+  <MapSpec InternalID="10" ShortName="HB" LongName="Hajdú-Bihar" />
+  <MapSpec InternalID="11" ShortName="HE" LongName="Heves" />
+  <MapSpec InternalID="12" ShortName="KE" LongName="Komárom-Esztergom" />
+  <MapSpec InternalID="14" ShortName="NO" LongName="Nógrád" />
+  <MapSpec InternalID="16" ShortName="PE" LongName="Pest" />
+  <MapSpec InternalID="17" ShortName="SO" LongName="Somogy" />
+  <MapSpec InternalID="18" ShortName="SZ" LongName="Szabolcs-Szatmár-Bereg" />
+  <MapSpec InternalID="20" ShortName="JN" LongName="Jász-Nagykun-Szolnok" />
+  <MapSpec InternalID="21" ShortName="TO" LongName="Tolna" />
+  <MapSpec InternalID="22" ShortName="VA" LongName="Vas" />
+  <MapSpec InternalID="23" ShortName="VE" LongName="Veszprém" />
+  <MapSpec InternalID="24" ShortName="ZA" LongName="Zala" />
+</AnimatedMapDataXML>

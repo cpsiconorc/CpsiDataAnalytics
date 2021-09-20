@@ -1,0 +1,7 @@
+<AnimatedMapDataXML>
+  <MapSpec InternalID="SG.CS" ShortName="CS" LongName="Central Singapore" />
+  <MapSpec InternalID="SG.EA" ShortName="EA" LongName="East Singapore" />
+  <MapSpec InternalID="SG.NO" ShortName="NO" LongName="North Singapore" />
+  <MapSpec InternalID="SG.SO" ShortName="SO" LongName="South Singapore" />
+  <MapSpec InternalID="SG.WE" ShortName="WE" LongName="West Singapore" />
+</AnimatedMapDataXML>

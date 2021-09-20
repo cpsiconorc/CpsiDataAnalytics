@@ -1,0 +1,15 @@
+﻿<DataLayer Type="Static">
+  <StaticDataRow Name="AVG" Description="Returns the average value of a column." Syntax="AVG ( [ DISTINCT ] expression )" Notes="" />
+  <StaticDataRow Name="BIT_AND" Description="Returns the bitwise AND of all bits in expression." Syntax="BIT_AND ( expression )" Notes="" />
+  <StaticDataRow Name="BIT_OR" Description="Returns the bitwise OR of all bits in expression." Syntax="BIT_OR ( expression )" Notes="" />
+  <StaticDataRow Name="BIT_XOR" Description="Returns the bitwise XOR of all bits in expression." Syntax="BIT_XOR ( expression )" Notes="" />
+  <StaticDataRow Name="COUNT" Description="Returns the number of items found in a group." Syntax="COUNT ( [ DISTINCT ] * | expression )" Notes="The COUNT function has three variations. COUNT ( * ) counts all the rows whether they include nulls or not. COUNT ( expression ) computes the number of rows with non-NULL values in expression. COUNT ( DISTINCT expression ) computes the number of distinct non-NULL values in expression." />
+  <StaticDataRow Name="GROUP_CONCAT" Description="Returns the concatenated non-NULL values." Syntax="GROUP_CONCAT ( [DISTINCT] expr [,expr ...] [ ORDER BY { unsigned_integer | col_name | expr } [ ASC | DESC ] [, col_name ...] ] [ SEPARATOR str_val ] )" Notes="" />
+  <StaticDataRow Name="MAX" Description="Returns the maximum value of a column." Syntax="MAX ( expression )" Notes="" />
+  <StaticDataRow Name="MIN" Description="Returns the minimum value of a column." Syntax="MIN ( expression )" Notes="" />
+  <StaticDataRow Name="STDDEV_POP" Description="Returns the population standard deviation of a set of numeric values." Syntax="STDDEV_POP ( expression )" Notes="The aggregate functions STD and STDDEV are equivalent to STDDEV_POP but are not standard SQL." />
+  <StaticDataRow Name="STDDEV_SAMP" Description="Returns the sample standard deviation of a set of numeric values, equivalent to the square root of the sample variance of the values." Syntax="STDDEV ( expression )" Notes="" />
+  <StaticDataRow Name="SUM" Description="Returns the sum of all non-null values in an expression." Syntax="SUM ( [ DISTINCT ] expression )" Notes="" />
+  <StaticDataRow Name="VAR_POP" Description="Returns the population variance of a set of numeric values." Syntax="VAR_POP ( expression )" Notes="The aggregate function VARIANCE is equivalent to VAR_POP but is not standard SQL." />
+  <StaticDataRow Name="VAR_SAMP" Description="Returns the sample variance of a set of numeric values, equivalent to the squared sample standard deviation of the same set of values." Syntax="VAR_SAMP ( expression )" Notes="" />
+</DataLayer>

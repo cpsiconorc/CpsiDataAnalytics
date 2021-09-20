@@ -1,0 +1,16 @@
+<AnimatedMapDataXML>
+  <MapSpec InternalID="001" ShortName="BA" LongName="Barnstable" />
+  <MapSpec InternalID="003" ShortName="BE" LongName="Berkshire" />
+  <MapSpec InternalID="005" ShortName="BR" LongName="Bristol" />
+  <MapSpec InternalID="007" ShortName="DU" LongName="Dukes" />
+  <MapSpec InternalID="009" ShortName="ES" LongName="Essex" />
+  <MapSpec InternalID="011" ShortName="FR" LongName="Franklin" />
+  <MapSpec InternalID="013" ShortName="HA" LongName="Hampden" />
+  <MapSpec InternalID="015" ShortName="HP" LongName="Hampshire" />
+  <MapSpec InternalID="017" ShortName="MI" LongName="Middlesex" />
+  <MapSpec InternalID="019" ShortName="NT" LongName="Nantucket" />
+  <MapSpec InternalID="021" ShortName="NO" LongName="Norfolk" />
+  <MapSpec InternalID="023" ShortName="PL" LongName="Plymouth" />
+  <MapSpec InternalID="025" ShortName="SU" LongName="Suffolk" />
+  <MapSpec InternalID="027" ShortName="WO" LongName="Worcester" />
+</AnimatedMapDataXML>

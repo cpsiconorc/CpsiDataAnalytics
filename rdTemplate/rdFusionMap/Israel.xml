@@ -1,0 +1,8 @@
+<AnimatedMapDataXML>
+  <MapSpec InternalID="001" ShortName="CE" LongName="Central" />
+  <MapSpec InternalID="002" ShortName="HA" LongName="Haifa" />
+  <MapSpec InternalID="003" ShortName="JE" LongName="Jerusalem" />
+  <MapSpec InternalID="004" ShortName="NR" LongName="Northern" />
+  <MapSpec InternalID="005" ShortName="SO" LongName="Southern" />
+  <MapSpec InternalID="006" ShortName="TA" LongName="Tel Aviv." />
+</AnimatedMapDataXML>

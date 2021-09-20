@@ -1,0 +1,36 @@
+<div id="mapdiv" align="center"></div>
+    <SCRIPT type="text/javascript" rdAjaxRunOnLoad="True">
+		function rdLoadFusionMap() { 
+		if (typeof FusionMaps == 'undefined') {
+                //Wait for the script to load. Especially for Widgets in Mozilla.
+                setTimeout('rdLoadFusionMap()', 500); 
+		} else {
+		    if (typeof FusionCharts !== 'undefined')
+		        FusionCharts.setCurrentRenderer('javascript');
+		    	var widtH = parseInt("width");
+			 	var map = new FusionMaps("mapType", "myMapId", (widtH || "100%").toString(), "height", "0", "0");
+        	 	map.setDataURL("Data.xml");
+        	 	map.render("mapdiv");
+			}
+		}
+       
+	   rdLoadFusionMap()
+        try{
+            if(rdInitAnimatedMapResizer) {
+				Y.on('domready', function(e) {
+					rdInitAnimatedMapResizer("mapType", "myMapId", "Data.xml", "OriginalChartID", "BGColor");
+				});
+			}
+        }
+        catch (e) { }
+
+        function myChartListener_myMapId(eventObject, argumentsObject) {
+            var wrapperNode = Y.one("#" + "myMapId").ancestor('.rdBrowserBorn');
+            if (wrapperNode) {
+                wrapperNode.setAttribute("data-rdBrowserBornReady", "true");
+            }
+        }
+
+        FusionCharts("myMapId").addEventListener("DrawComplete", myChartListener_myMapId);
+
+    </SCRIPT>

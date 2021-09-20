@@ -1,0 +1,35 @@
+<AnimatedMapDataXML>
+  <MapSpec InternalID="001" ShortName="AB" LongName="Aberdeenshire" />
+  <MapSpec InternalID="002" ShortName="AN" LongName="Angus" />
+  <MapSpec InternalID="003" ShortName="AR" LongName="Argyll" />
+  <MapSpec InternalID="004" ShortName="AY" LongName="Ayrshire" />
+  <MapSpec InternalID="005" ShortName="BA" LongName="Banffshire" />
+  <MapSpec InternalID="006" ShortName="BE" LongName="Berwickshire" />
+  <MapSpec InternalID="007" ShortName="BU" LongName="Bute" />
+  <MapSpec InternalID="008" ShortName="CA" LongName="Caithness" />
+  <MapSpec InternalID="009" ShortName="CL" LongName="Clackmannanshire" />
+  <MapSpec InternalID="010" ShortName="DM" LongName="Dumbartonshire" />
+  <MapSpec InternalID="011" ShortName="DU" LongName="Dumfriesshire" />
+  <MapSpec InternalID="012" ShortName="EA" LongName="East     Lothian" />
+  <MapSpec InternalID="013" ShortName="FI" LongName="Fife" />
+  <MapSpec InternalID="014" ShortName="IS" LongName="Inverness-shire" />
+  <MapSpec InternalID="015" ShortName="KC" LongName="Kincardineshire" />
+  <MapSpec InternalID="016" ShortName="KN" LongName="Kinross-shire" />
+  <MapSpec InternalID="017" ShortName="KI" LongName="Kirkcudbrightshire" />
+  <MapSpec InternalID="018" ShortName="LA" LongName="Lanarkshire" />
+  <MapSpec InternalID="019" ShortName="MI" LongName="Midlothian" />
+  <MapSpec InternalID="020" ShortName="MO" LongName="Moray" />
+  <MapSpec InternalID="021" ShortName="NA" LongName="Nairnshire" />
+  <MapSpec InternalID="022" ShortName="OR" LongName="Orkney" />
+  <MapSpec InternalID="023" ShortName="PB" LongName="Peeblesshire" />
+  <MapSpec InternalID="024" ShortName="PE" LongName="Perthshire" />
+  <MapSpec InternalID="025" ShortName="RE" LongName="Renfrewshire" />
+  <MapSpec InternalID="026" ShortName="RC" LongName="Ross    &amp; Cromarty" />
+  <MapSpec InternalID="027" ShortName="RO" LongName="Roxburghshire" />
+  <MapSpec InternalID="028" ShortName="SE" LongName="Selkirkshire" />
+  <MapSpec InternalID="029" ShortName="SH" LongName="Shetland" />
+  <MapSpec InternalID="030" ShortName="ST" LongName="Stirlingshire" />
+  <MapSpec InternalID="031" ShortName="SU" LongName="Sutherland" />
+  <MapSpec InternalID="032" ShortName="WE" LongName="West     Lothian" />
+  <MapSpec InternalID="033" ShortName="WI" LongName="Wingtonshire" />
+</AnimatedMapDataXML>

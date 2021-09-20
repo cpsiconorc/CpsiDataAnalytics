@@ -1,0 +1,31 @@
+.yui3-resize-large .yui3-resize-handle-inner-r,
+.yui3-resize-large .yui3-resize-handle-inner-l,
+.yui3-resize-large .yui3-resize-handle-inner-t,
+.yui3-resize-large .yui3-resize-handle-inner-b,
+.yui3-resize-large .yui3-resize-handle-inner-tr,
+.yui3-resize-large .yui3-resize-handle-inner-br,
+.yui3-resize-large .yui3-resize-handle-inner-tl,
+.yui3-resize-large .yui3-resize-handle-inner-bl {
+	background-image: url(ResizerSprite.png) !important;
+}
+
+.yui3-resize-large  .yui3-resize-handle-inner-t,
+.yui3-resize-large  .yui3-resize-handle-inner-tl,
+.yui3-resize-large  .yui3-resize-handle-inner-tr {
+	top: 0;
+}
+.yui3-resize-large  .yui3-resize-handle-inner-b,
+.yui3-resize-large  .yui3-resize-handle-inner-bl,
+.yui3-resize-large  .yui3-resize-handle-inner-br {
+	bottom: 0;
+}
+.yui3-resize-large  .yui3-resize-handle-inner-l,
+.yui3-resize-large  .yui3-resize-handle-inner-tl,
+.yui3-resize-large  .yui3-resize-handle-inner-bl {
+	left: 0;
+}
+.yui3-resize-large  .yui3-resize-handle-inner-r,
+.yui3-resize-large  .yui3-resize-handle-inner-tr,
+.yui3-resize-large  .yui3-resize-handle-inner-br {
+	right: 0;
+}

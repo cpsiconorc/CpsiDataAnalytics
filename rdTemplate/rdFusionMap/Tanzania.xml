@@ -1,0 +1,28 @@
+<AnimatedMapDataXML>
+  <MapSpec InternalID="TZ.AS" ShortName="AS" LongName="Arusha" />
+  <MapSpec InternalID="TZ.DS" ShortName="DS" LongName="Dar es Salaam" />
+  <MapSpec InternalID="TZ.DO" ShortName="DO" LongName="Dodoma" />
+  <MapSpec InternalID="TZ.IR" ShortName="IR" LongName="Iringa" />
+  <MapSpec InternalID="TZ.KR" ShortName="KR" LongName="Kagera" />
+  <MapSpec InternalID="TZ.KM" ShortName="KM" LongName="Kigoma" />
+  <MapSpec InternalID="TZ.KL" ShortName="KL" LongName="Kilimanjaro" />
+  <MapSpec InternalID="TZ.LI" ShortName="LI" LongName="Lindi" />
+  <MapSpec InternalID="TZ.MY" ShortName="MY" LongName="Manyara" />
+  <MapSpec InternalID="TZ.MA" ShortName="MA" LongName="Mara" />
+  <MapSpec InternalID="TZ.MB" ShortName="MB" LongName="Mbeya" />
+  <MapSpec InternalID="TZ.MO" ShortName="MO" LongName="Morogoro" />
+  <MapSpec InternalID="TZ.MT" ShortName="MT" LongName="Mtwara" />
+  <MapSpec InternalID="TZ.MW" ShortName="MW" LongName="Mwanza" />
+  <MapSpec InternalID="TZ.PN" ShortName="PN" LongName="Pemba North" />
+  <MapSpec InternalID="TZ.PS" ShortName="PS" LongName="Pemba South" />
+  <MapSpec InternalID="TZ.PW" ShortName="PW" LongName="Pwani" />
+  <MapSpec InternalID="TZ.RK" ShortName="RK" LongName="Rukwa" />
+  <MapSpec InternalID="TZ.RV" ShortName="RV" LongName="Ruvuma" />
+  <MapSpec InternalID="TZ.SH" ShortName="SH" LongName="Shinyanga" />
+  <MapSpec InternalID="TZ.SD" ShortName="SD" LongName="Singida" />
+  <MapSpec InternalID="TZ.TB" ShortName="TB" LongName="Tabora" />
+  <MapSpec InternalID="TZ.TN" ShortName="TN" LongName="Tanga" />
+  <MapSpec InternalID="TZ.ZS" ShortName="ZS" LongName="Zanzibar Central and South" />
+  <MapSpec InternalID="TZ.ZN" ShortName="ZN" LongName="Zanzibar North" />
+  <MapSpec InternalID="TZ.ZW" ShortName="ZW" LongName="Zanzibar West (Urban)" />
+</AnimatedMapDataXML>

@@ -1,0 +1,18 @@
+<AnimatedMapDataXML>
+  <MapSpec InternalID="01" ShortName="AL" LongName="Albania" />
+  <MapSpec InternalID="02" ShortName="AD" LongName="Andorra" />
+  <MapSpec InternalID="03" ShortName="BA" LongName="Bosnia &amp; Herzegovina" />
+  <MapSpec InternalID="04" ShortName="HY" LongName="Croatia" />
+  <MapSpec InternalID="05" ShortName="GR" LongName="Greece" />
+  <MapSpec InternalID="06" ShortName="IT" LongName="Italy" />
+  <MapSpec InternalID="07" ShortName="MK" LongName="Macedonia" />
+  <MapSpec InternalID="08" ShortName="MT" LongName="Malta" />
+  <MapSpec InternalID="09" ShortName="MO" LongName="Montenegro" />
+  <MapSpec InternalID="10" ShortName="PT" LongName="Portugal" />
+  <MapSpec InternalID="11" ShortName="SM" LongName="San Marino" />
+  <MapSpec InternalID="12" ShortName="CS" LongName="Serbia" />
+  <MapSpec InternalID="13" ShortName="ES" LongName="Spain" />
+  <MapSpec InternalID="14" ShortName="TK" LongName="Turkey" />
+  <MapSpec InternalID="15" ShortName="CY" LongName="Cyprus" />
+  <MapSpec InternalID="16" ShortName="VA" LongName="Vatican City" />
+</AnimatedMapDataXML>

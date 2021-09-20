@@ -1,0 +1,24 @@
+<AnimatedMapDataXML>
+  <MapSpec InternalID="01" ShortName="AV" LongName="Alta Verapaz" />
+  <MapSpec InternalID="02" ShortName="BV" LongName="Baja Verapaz" />
+  <MapSpec InternalID="03" ShortName="CM" LongName="Chimaltenango" />
+  <MapSpec InternalID="04" ShortName="CQ" LongName="Chiquimula" />
+  <MapSpec InternalID="05" ShortName="PR" LongName="El Progreso" />
+  <MapSpec InternalID="06" ShortName="ES" LongName="Escuintla" />
+  <MapSpec InternalID="07" ShortName="GU" LongName="Guatemala" />
+  <MapSpec InternalID="08" ShortName="HU" LongName="Huehuetenango" />
+  <MapSpec InternalID="09" ShortName="IZ" LongName="Izabal" />
+  <MapSpec InternalID="10" ShortName="JA" LongName="Jalapa" />
+  <MapSpec InternalID="11" ShortName="JU" LongName="Jutiapa" />
+  <MapSpec InternalID="12" ShortName="PE" LongName="Petén" />
+  <MapSpec InternalID="13" ShortName="QZ" LongName="Quetzaltenango" />
+  <MapSpec InternalID="14" ShortName="QC" LongName="Quiché" />
+  <MapSpec InternalID="15" ShortName="RE" LongName="Retalhuleu" />
+  <MapSpec InternalID="16" ShortName="SA" LongName="Sacatepéquez" />
+  <MapSpec InternalID="17" ShortName="SM" LongName="San Marcos" />
+  <MapSpec InternalID="18" ShortName="SR" LongName="Santa Rosa" />
+  <MapSpec InternalID="19" ShortName="SO" LongName="Sololá" />
+  <MapSpec InternalID="20" ShortName="SU" LongName="Suchitepequez" />
+  <MapSpec InternalID="21" ShortName="TO" LongName="Totonicapán" />
+  <MapSpec InternalID="22" ShortName="ZA" LongName="Zacapa" />
+</AnimatedMapDataXML>

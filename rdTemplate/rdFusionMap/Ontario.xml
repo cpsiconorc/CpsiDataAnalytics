@@ -1,0 +1,52 @@
+<AnimatedMapDataXML>
+  <MapSpec InternalID="01" ShortName="AL" LongName="Algoma" />
+  <MapSpec InternalID="02" ShortName="BR" LongName="Brant" />
+  <MapSpec InternalID="03" ShortName="BU" LongName="Bruce" />
+  <MapSpec InternalID="04" ShortName="CK" LongName="Chatham-Kent" />
+  <MapSpec InternalID="05" ShortName="CO" LongName="Cochrane" />
+  <MapSpec InternalID="06" ShortName="DU" LongName="Dufferin" />
+  <MapSpec InternalID="07" ShortName="DR" LongName="Durham" />
+  <MapSpec InternalID="08" ShortName="EL" LongName="Elgin" />
+  <MapSpec InternalID="09" ShortName="ES" LongName="Essex" />
+  <MapSpec InternalID="10" ShortName="FR" LongName="Frontenac" />
+  <MapSpec InternalID="11" ShortName="GS" LongName="Greater Sudbury" />
+  <MapSpec InternalID="12" ShortName="GR" LongName="Grey" />
+  <MapSpec InternalID="13" ShortName="HA" LongName="Haldimand" />
+  <MapSpec InternalID="14" ShortName="HL" LongName="Haliburton" />
+  <MapSpec InternalID="15" ShortName="HT" LongName="Halton" />
+  <MapSpec InternalID="16" ShortName="HM" LongName="Hamilton" />
+  <MapSpec InternalID="17" ShortName="HS" LongName="Hastings" />
+  <MapSpec InternalID="18" ShortName="HU" LongName="Huron" />
+  <MapSpec InternalID="19" ShortName="KL" LongName="Kawartha Lakes" />
+  <MapSpec InternalID="20" ShortName="KE" LongName="Kenora" />
+  <MapSpec InternalID="21" ShortName="LA" LongName="Lambton" />
+  <MapSpec InternalID="22" ShortName="LN" LongName="Lanark" />
+  <MapSpec InternalID="23" ShortName="LG" LongName="Leeds and Grenville" />
+  <MapSpec InternalID="24" ShortName="LE" LongName="Lennox and Addington" />
+  <MapSpec InternalID="25" ShortName="MA" LongName="Manitoulin" />
+  <MapSpec InternalID="26" ShortName="MI" LongName="Middlesex" />
+  <MapSpec InternalID="27" ShortName="MU" LongName="Muskoka" />
+  <MapSpec InternalID="28" ShortName="NI" LongName="Niagara" />
+  <MapSpec InternalID="29" ShortName="NP" LongName="Nipissing" />
+  <MapSpec InternalID="30" ShortName="NO" LongName="Norfolk" />
+  <MapSpec InternalID="31" ShortName="NR" LongName="Northumberland" />
+  <MapSpec InternalID="32" ShortName="OT" LongName="Ottawa" />
+  <MapSpec InternalID="33" ShortName="OX" LongName="Oxford" />
+  <MapSpec InternalID="34" ShortName="PS" LongName="Parry Sound" />
+  <MapSpec InternalID="35" ShortName="PE" LongName="Peel" />
+  <MapSpec InternalID="36" ShortName="PR" LongName="Perth" />
+  <MapSpec InternalID="37" ShortName="PT" LongName="Peterborough" />
+  <MapSpec InternalID="38" ShortName="PC" LongName="Prescott and Russell" />
+  <MapSpec InternalID="39" ShortName="PN" LongName="Prince Edward" />
+  <MapSpec InternalID="40" ShortName="RA" LongName="Rainy River" />
+  <MapSpec InternalID="41" ShortName="RE" LongName="Renfrew" />
+  <MapSpec InternalID="42" ShortName="SI" LongName="Simcoe" />
+  <MapSpec InternalID="43" ShortName="ST" LongName="Stormont, Dundas and Glengary" />
+  <MapSpec InternalID="44" ShortName="SU" LongName="Sudbury" />
+  <MapSpec InternalID="45" ShortName="TB" LongName="Thunder Bay" />
+  <MapSpec InternalID="46" ShortName="TI" LongName="Timiskaming" />
+  <MapSpec InternalID="47" ShortName="TO" LongName="Toronto" />
+  <MapSpec InternalID="48" ShortName="WA" LongName="Waterloo" />
+  <MapSpec InternalID="49" ShortName="WE" LongName="Wellington" />
+  <MapSpec InternalID="50" ShortName="YO" LongName="York" />
+</AnimatedMapDataXML>

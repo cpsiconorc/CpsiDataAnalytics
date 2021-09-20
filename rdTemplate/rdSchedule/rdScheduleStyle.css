@@ -1,0 +1,46 @@
+.rdScheduleVAlign
+{
+	vertical-align: top;
+}
+
+.rdScheduleFloatRight
+{
+	float: none;
+	padding-left: 5px;
+	margin-left: 5px;
+}
+
+.rdScheduleFloatLeft
+{
+	float: left;
+	margin-right: 4px;
+}
+
+.rdScheduleColumnGap
+{
+	width: 10px;
+}
+
+.rdSchedule IMG
+{
+	border: 0;
+	margin-top: 0px;
+	margin-left: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+}
+
+.rdScheduleHidden
+{
+	display: none;
+}
+
+DIV.rdScheduleXml
+{
+	border: solid 1px dimgray;
+}
+
+.rdScheduleTdRight
+{
+	text-align: right;
+}

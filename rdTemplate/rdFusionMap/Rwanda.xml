@@ -1,0 +1,7 @@
+<AnimatedMapDataXML>
+  <MapSpec InternalID="RW.ES" ShortName="ES" LongName="Eastern" />
+  <MapSpec InternalID="RW.KV" ShortName="KV" LongName="Kigali City" />
+  <MapSpec InternalID="RW.NO" ShortName="NO" LongName="Northern" />
+  <MapSpec InternalID="RW.SU" ShortName="SU" LongName="Southern" />
+  <MapSpec InternalID="RW.OU" ShortName="OU" LongName="Western" />
+</AnimatedMapDataXML>

@@ -1,0 +1,23 @@
+<AnimatedMapDataXML>
+  <MapSpec InternalID="YE.AB" ShortName="AB" LongName="Abyan" />
+  <MapSpec InternalID="YE.AD" ShortName="AD" LongName="Adan" />
+  <MapSpec InternalID="YE.BA" ShortName="BA" LongName="Al Bayda" />
+  <MapSpec InternalID="YE.DL" ShortName="DL" LongName="Al Dali" />
+  <MapSpec InternalID="YE.HU" ShortName="HU" LongName="Al Hudaydah" />
+  <MapSpec InternalID="YE.JA" ShortName="JA" LongName="Al Jawf" />
+  <MapSpec InternalID="YE.MR" ShortName="MR" LongName="Al Mahrah" />
+  <MapSpec InternalID="YE.AM" ShortName="AM" LongName="Amran" />
+  <MapSpec InternalID="YE.DH" ShortName="DH" LongName="Dhamar" />
+  <MapSpec InternalID="YE.HD" ShortName="HD" LongName="Hadramawt" />
+  <MapSpec InternalID="YE.HJ" ShortName="HJ" LongName="Hajjah" />
+  <MapSpec InternalID="YE.IB" ShortName="IB" LongName="Ibb" />
+  <MapSpec InternalID="YE.LA" ShortName="LA" LongName="Lahij" />
+  <MapSpec InternalID="YE.MA" ShortName="MA" LongName="Marib" />
+  <MapSpec InternalID="YE.MW" ShortName="MW" LongName="Ml Mahwit" />
+  <MapSpec InternalID="YE.RM" ShortName="RM" LongName="Raymah" />
+  <MapSpec InternalID="YE.SD" ShortName="SD" LongName="Sadah" />
+  <MapSpec InternalID="YE.SA" ShortName="SA" LongName="San`a’ [City]" />
+  <MapSpec InternalID="YE.SN" ShortName="SN" LongName="Sana" />
+  <MapSpec InternalID="YE.SH" ShortName="SH" LongName="Shabwah" />
+  <MapSpec InternalID="YE.TA" ShortName="TA" LongName="Taizz" />
+</AnimatedMapDataXML>

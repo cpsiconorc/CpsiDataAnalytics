@@ -1,0 +1,14 @@
+<AnimatedMapDataXML>
+  <MapSpec InternalID="01" ShortName="AB" LongName="Abkhazia" />
+  <MapSpec InternalID="02" ShortName="AJ" LongName="Adjara" />
+  <MapSpec InternalID="03" ShortName="GU" LongName="Guria" />
+  <MapSpec InternalID="04" ShortName="IM" LongName="Imereti" />
+  <MapSpec InternalID="05" ShortName="KA" LongName="Kakheti" />
+  <MapSpec InternalID="06" ShortName="KK" LongName="Kvemo Kartli" />
+  <MapSpec InternalID="07" ShortName="MM" LongName="Mtskheta-Mtianeti" />
+  <MapSpec InternalID="08" ShortName="RL" LongName="Racha-Lechkhumi and Kvemo Svaneti" />
+  <MapSpec InternalID="09" ShortName="SJ" LongName="Samtskhe-Javakheti" />
+  <MapSpec InternalID="10" ShortName="SK" LongName="Shida Kartli" />
+  <MapSpec InternalID="11" ShortName="SZ" LongName="Samegrelo-Zemo Svaneti" />
+  <MapSpec InternalID="12" ShortName="TB" LongName="Tbilisi" />
+</AnimatedMapDataXML>

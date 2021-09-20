@@ -1,0 +1,13 @@
+<AnimatedMapDataXML>
+  <MapSpec InternalID="SN.DK" ShortName="DK" LongName="Dakar" />
+  <MapSpec InternalID="SN.DB" ShortName="DB" LongName="Diourbel" />
+  <MapSpec InternalID="SN.FK" ShortName="FK" LongName="Fatick" />
+  <MapSpec InternalID="SN.KL" ShortName="KL" LongName="Kaolack" />
+  <MapSpec InternalID="SN.KD" ShortName="KD" LongName="Kolda" />
+  <MapSpec InternalID="SN.LG" ShortName="LG" LongName="Louga" />
+  <MapSpec InternalID="SN.MT" ShortName="MT" LongName="Matam" />
+  <MapSpec InternalID="SN.ST" ShortName="ST" LongName="Saint-Louis" />
+  <MapSpec InternalID="SN.TC" ShortName="TC" LongName="Tambacounda" />
+  <MapSpec InternalID="SN.TH" ShortName="TH" LongName="Thies" />
+  <MapSpec InternalID="SN.ZG" ShortName="ZG" LongName="Ziguinchor" />
+</AnimatedMapDataXML>

@@ -1,0 +1,9 @@
+<AnimatedMapDataXML>
+  <MapSpec InternalID="CA.YT.CA" ShortName="CA" LongName="Campbell" />
+  <MapSpec InternalID="CA.YT.KL" ShortName="KL" LongName="Klondike" />
+  <MapSpec InternalID="CA.YT.KU" ShortName="KU" LongName="Kluane" />
+  <MapSpec InternalID="CA.YT.NO" ShortName="NO" LongName="North Yukon" />
+  <MapSpec InternalID="CA.YT.ST" ShortName="ST" LongName="Silver Trail" />
+  <MapSpec InternalID="CA.YT.WL" ShortName="WL" LongName="Watson Lake &amp; Southern Lakes" />
+  <MapSpec InternalID="CA.YT.WH" ShortName="WH" LongName="Whitehorse" />
+</AnimatedMapDataXML>

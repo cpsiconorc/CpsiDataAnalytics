@@ -1,0 +1,10 @@
+<AnimatedMapDataXML>
+  <MapSpec InternalID="001" ShortName="FA" LongName="Fairfield" />
+  <MapSpec InternalID="003" ShortName="HA" LongName="Hartford" />
+  <MapSpec InternalID="005" ShortName="LI" LongName="Litchfield" />
+  <MapSpec InternalID="007" ShortName="MI" LongName="Middlesex" />
+  <MapSpec InternalID="009" ShortName="NH" LongName="New Haven" />
+  <MapSpec InternalID="011" ShortName="NL" LongName="New London" />
+  <MapSpec InternalID="013" ShortName="TO" LongName="Tolland" />
+  <MapSpec InternalID="015" ShortName="WI" LongName="Windham" />
+</AnimatedMapDataXML>

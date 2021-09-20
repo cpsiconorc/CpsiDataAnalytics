@@ -1,0 +1,17 @@
+<AnimatedMapDataXML>
+  <MapSpec InternalID="LR.BM" ShortName="BM" LongName="Bomi" />
+  <MapSpec InternalID="LR.BG" ShortName="BG" LongName="Bong" />
+  <MapSpec InternalID="LR.GP" ShortName="GP" LongName="Gbarpolu" />
+  <MapSpec InternalID="LR.GB" ShortName="GB" LongName="Grand Bassa" />
+  <MapSpec InternalID="LR.CM" ShortName="CM" LongName="Grand Cape Mount" />
+  <MapSpec InternalID="LR.GD" ShortName="GD" LongName="Grand Gedeh" />
+  <MapSpec InternalID="LR.GK" ShortName="GK" LongName="Grand Kru" />
+  <MapSpec InternalID="LR.LF" ShortName="LF" LongName="Lofa" />
+  <MapSpec InternalID="LR.MG" ShortName="MG" LongName="Margibi" />
+  <MapSpec InternalID="LR.MY" ShortName="MY" LongName="Maryland" />
+  <MapSpec InternalID="LR.MO" ShortName="MO" LongName="Montserrado" />
+  <MapSpec InternalID="LR.NI" ShortName="NI" LongName="Nimba" />
+  <MapSpec InternalID="LR.RG" ShortName="RG" LongName="River Gee" />
+  <MapSpec InternalID="LR.RI" ShortName="RI" LongName="Rivercess" />
+  <MapSpec InternalID="LR.SI" ShortName="SI" LongName="Sinoe" />
+</AnimatedMapDataXML>

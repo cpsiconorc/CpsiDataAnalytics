@@ -1,0 +1,1 @@
+﻿This folder contains license information for certain 3rd-party components which require inclusion of their licenses within any distributations.

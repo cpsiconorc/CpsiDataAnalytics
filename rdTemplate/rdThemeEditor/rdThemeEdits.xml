@@ -1,0 +1,304 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ThemeEdits>
+  <Edit EditGroup="Colors"  EditSubGroup="Page" EditID="PageBackground" EditName="Background Color" EditType="Color" DisplayOrder="1" SubDisplayOrder="1">
+    <CssStyle Comment="PageBackgroundColor" Property="background-color" />
+  </Edit>
+  <Edit EditGroup="Colors"  EditSubGroup="Page" EditID="PageFont" EditName="Font Color" EditType="Color" DisplayOrder="1" SubDisplayOrder="1">
+    <CssStyle Comment="PageFontColor" Property="color" />
+  </Edit>
+  <Edit EditGroup="Colors"  EditSubGroup="Modals" EditID="ModalBackground" EditName="Background Color" EditType="Color" DisplayOrder="1" SubDisplayOrder="2">
+    <CssStyle Comment="ModalBackgroundColor" Property="background-color" />
+  </Edit>
+  <Edit EditGroup="Colors"  EditSubGroup="Modals" EditID="ModalBorderColor" EditName="Border Color" EditType="Color" DisplayOrder="1" SubDisplayOrder="2">
+    <CssStyle Comment="ModalBorderColor" Property="color" />
+  </Edit>
+  <Edit EditGroup="Colors"  EditSubGroup="Modals" EditID="ModalTitleFont" EditName="Title Font Color" EditType="Color" DisplayOrder="1" SubDisplayOrder="2">
+    <CssStyle Comment="ModalTitleFontColor" Property="color" />
+  </Edit>
+  <Edit EditGroup="Colors"  EditSubGroup="Modals" EditID="ModalFont" EditName="Font Color" EditType="Color" DisplayOrder="1" SubDisplayOrder="2">
+    <CssStyle Comment="ModalFontColor" Property="color" />
+  </Edit>
+  <Edit EditGroup="Colors"  EditSubGroup="Menus" EditID="MenuBackground" EditName="Background Color" EditType="Color" DisplayOrder="1" SubDisplayOrder="3">
+    <CssStyle Comment="MenuBackgroundColor" Property="background-color" />
+  </Edit>
+  <Edit EditGroup="Colors"  EditSubGroup="Menus" EditID="MenuBorderColor" EditName="Border Color" EditType="Color" DisplayOrder="1" SubDisplayOrder="3">
+    <CssStyle Comment="MenuBorderColor" Property="color" />
+  </Edit>
+  <Edit EditGroup="Colors"  EditSubGroup="Menus" EditID="MenuItem" EditName="Item Color" EditType="Color" DisplayOrder="1" SubDisplayOrder="3">
+    <CssStyle Comment="MenuLinkColor" Property="color" />
+  </Edit>
+  <Edit EditGroup="Colors"  EditSubGroup="Menus" EditID="MenuItemHover" EditName="Item Hover Color" EditType="Color" DisplayOrder="1" SubDisplayOrder="3">
+    <CssStyle Comment="MenuItemHoverColor" Property="color" />
+  </Edit>
+  <Edit EditGroup="Colors"  EditSubGroup="Menus" EditID="MenuItemHoverBackground" EditName="Item Hover Background Color" EditType="Color" DisplayOrder="1" SubDisplayOrder="3">
+    <CssStyle Comment="MenuItemHoverBackgroundColor" Property="background-color" />
+  </Edit>
+  <Edit EditGroup="Colors"  EditSubGroup="Containers" EditID="ContainerBorderedBackground" EditName="CB Border Color" EditType="Color" DisplayOrder="1" SubDisplayOrder="4">
+    <CssStyle Comment="ContainerBorder" Property="background-color" />
+  </Edit>
+  <Edit EditGroup="Colors"  EditSubGroup="Containers" EditID="ContainerShadedBackground" EditName="CS Background Color" EditType="Color" DisplayOrder="1" SubDisplayOrder="4">
+    <CssStyle Comment="ShadedBackground" Property="background-color" />
+  </Edit>
+  <Edit EditGroup="Colors"  EditSubGroup="Containers" EditID="ContainerShadedFont" EditName="CS Font Color" EditType="Color" DisplayOrder="1" SubDisplayOrder="4">
+    <CssStyle Comment="ShadedFont" Property="color" />
+  </Edit>
+  <Edit EditGroup="Colors"  EditSubGroup="Containers" EditID="ContainerBorderedShadedBackground" EditName="CSB Background Color" EditType="Color" DisplayOrder="1" SubDisplayOrder="4">
+    <CssStyle Comment="ShadedAndBorderedBackground" Property="background-color" />
+  </Edit>
+  <Edit EditGroup="Colors"  EditSubGroup="Containers" EditID="ContainerBorderedShadedFont" EditName="CSB Font Color" EditType="Color" DisplayOrder="1" SubDisplayOrder="4">
+    <CssStyle Comment="ShadedAndBorderedFont" Property="color" />
+  </Edit>
+  <Edit EditGroup="Colors"  EditSubGroup="Master Report" EditID="MasterReportHeaderBackground" EditName="Header Background Color" EditType="Color" DisplayOrder="1" SubDisplayOrder="5">
+    <CssStyle Comment="HeaderBackground" Property="color" />
+  </Edit>
+  <Edit EditGroup="Colors"  EditSubGroup="Master Report" EditID="MasterReportHeaderFont" EditName="Header Font Color" EditType="Color" DisplayOrder="1" SubDisplayOrder="5">
+    <CssStyle Comment="HeaderFont" Property="color" />
+  </Edit>
+  <Edit EditGroup="Colors"  EditSubGroup="Master Report" EditID="MasterReportSideBackground" EditName="Side Background Color" EditType="Color" DisplayOrder="1" SubDisplayOrder="5">
+    <CssStyle Comment="SideBackground" Property="color" />
+  </Edit>
+  <Edit EditGroup="Colors"  EditSubGroup="Master Report" EditID="MasterReportSideFont" EditName="Side Font Color" EditType="Color" DisplayOrder="1" SubDisplayOrder="5">
+    <CssStyle Comment="SideFont" Property="color" />
+  </Edit>
+  <Edit EditGroup="Colors"  EditSubGroup="Master Report" EditID="MasterReportSideHoverBackground" EditName="Side Hover Background Color" EditType="Color" DisplayOrder="1" SubDisplayOrder="5">
+    <CssStyle Comment="SideHoverBackground" Property="color" />
+  </Edit>
+  <Edit EditGroup="Colors"  EditSubGroup="Master Report" EditID="MasterReportFooterBackground" EditName="Footer Background Color" EditType="Color" DisplayOrder="1" SubDisplayOrder="5">
+    <CssStyle Comment="FooterBackground" Property="color" />
+  </Edit>
+  <Edit EditGroup="Colors"  EditSubGroup="Master Report" EditID="MasterReportFooterFont" EditName="Footer Font Color" EditType="Color" DisplayOrder="1" SubDisplayOrder="5">
+    <CssStyle Comment="FooterFont" Property="color" />
+  </Edit>
+  <Edit EditGroup="Typography" EditSubGroup="Fonts And Colors" EditID="AllFonts" EditName="Theme Font Family" EditType="Font" DisplayOrder="2"  SubDisplayOrder="1">
+    <ThemeElement AttributeName="FontFilename"/>
+    <ThemeElement AttributeName="TickLabelFontName"/>
+    <ThemeElement AttributeName="FontName"/>
+    <ThemeElement AttributeName="FontFamily"/>
+    <ThemeElement AttributeName="LabelFontName"/>
+    <ThemeElement AttributeName="LabelFontFamily"/>
+    <ThemeElement AttributeName="BalloonLabelFontName"/>
+    <CssStyle Comment="MainFont" Property="font-family"/>
+  </Edit>
+  <Edit EditGroup="Typography" EditSubGroup="Fonts And Colors" EditID="FontLinkColor" EditName="Hyperlink Font Color" EditType="Color" DisplayOrder="2"  SubDisplayOrder="1">
+    <CssStyle Comment="LinkColor" Property="color"/>
+  </Edit>
+  <Edit EditGroup="Typography"  EditSubGroup="Fonts And Colors" EditID="FontLinkHoverColor" EditName="Hyperlink Hover Font Color" EditType="Color" DisplayOrder="2"  SubDisplayOrder="1">
+    <CssStyle Comment="LinkHoverColor" Property="color"/>
+  </Edit>
+  <Edit EditGroup="Typography"  EditSubGroup="Fonts And Colors" EditID="TextNegativeFontColor" EditName="Text Negative Font Color" EditType="Color" DisplayOrder="2"  SubDisplayOrder="1">
+    <CssStyle Comment="TextNegativeFont" Property="color"/>
+  </Edit>
+  <Edit EditGroup="Typography"  EditSubGroup="Fonts And Colors" EditID="TextPositiveFontColor" EditName="Text Positive Font Color" EditType="Color" DisplayOrder="2"  SubDisplayOrder="1">
+    <CssStyle Comment="TextPositiveFont" Property="color"/>
+  </Edit>
+  <Edit EditGroup="Typography"  EditSubGroup="Fonts And Colors" EditID="ErrorTextFontColor" EditName="Error Text Font Color" EditType="Color" DisplayOrder="2"  SubDisplayOrder="1">
+    <CssStyle Comment="ErrorFont" Property="color"/>
+  </Edit>
+  <Edit EditGroup="Typography"  EditSubGroup="Fonts And Colors" EditID="ErrorTextBackgroundColor" EditName="Error Text Background Color" EditType="Color" DisplayOrder="2"  SubDisplayOrder="1">
+    <CssStyle Comment="ErrorBackground" Property="color"/>
+  </Edit>
+  <Edit EditGroup="Typography"  EditSubGroup="Fonts And Colors" EditID="ErrorTextBorderColor" EditName="Error Text Border Color" EditType="Color" DisplayOrder="2"  SubDisplayOrder="1">
+    <CssStyle Comment="ErrorBorder" Property="color"/>
+  </Edit>
+  <Edit EditGroup="Typography"  EditSubGroup="Input Form" EditID="InputBoxFontColor" EditName="Input Box Font Color" EditType="Color" DisplayOrder="2"  SubDisplayOrder="2">
+    <CssStyle Comment="InputBoxFontColor" Property="color"/>
+  </Edit>
+  <Edit EditGroup="Typography"  EditSubGroup="Input Form" EditID="InputBoxBackground" EditName="Input Box Background" EditType="Color" DisplayOrder="2"  SubDisplayOrder="2">
+    <CssStyle Comment="InputBoxBackground" Property="color"/>
+  </Edit>
+  <Edit EditGroup="Typography"  EditSubGroup="Input Form" EditID="InputBoxBorderColor" EditName="Input Box Border Color" EditType="Color" DisplayOrder="2"  SubDisplayOrder="2">
+    <CssStyle Comment="InputBoxBorderColor" Property="color"/>
+  </Edit>
+  <Edit EditGroup="Typography"  EditSubGroup="Calendar/Time Picker" EditID="PickerBorderColor" EditName="Picker Border Color" EditType="Color" DisplayOrder="2"  SubDisplayOrder="3">
+    <CssStyle Comment="PickerBorderColor" Property="color"/>
+  </Edit>
+  <Edit EditGroup="Typography"  EditSubGroup="Calendar/Time Picker" EditID="SelectedBackgroundColor" EditName="Selected/Accent Color" EditType="Color" DisplayOrder="2"  SubDisplayOrder="3">
+    <CssStyle Comment="CalendarSelectionColor" Property="color"/>
+  </Edit>
+  <Edit EditGroup="Typography"  EditSubGroup="Calendar/Time Picker" EditID="TodayBackgroundColor" EditName="Today's Date Color" EditType="Color" DisplayOrder="2"  SubDisplayOrder="3">
+    <CssStyle Comment="TodayBackgroundColor" Property="color"/>
+  </Edit>
+  <Edit EditGroup="Typography"  EditSubGroup="Calendar/Time Picker" EditID="OutsideMonthBackground" EditName="Outside Month Color" EditType="Color" DisplayOrder="2"  SubDisplayOrder="3">
+    <CssStyle Comment="OutsideMonthBackground" Property="color"/>
+  </Edit>
+  <Edit EditGroup="Typography"  EditSubGroup="Calendar/Time Picker" EditID="WeekdayBackground" EditName="Weekday Background Color" EditType="Color" DisplayOrder="2"  SubDisplayOrder="3">
+    <CssStyle Comment="WeekdayBackground" Property="background-color"/>
+  </Edit>
+  <Edit EditGroup="Buttons and Tabs" EditSubGroup="Buttons"  EditID="ButtonBackgroundColor" EditName="Background Color" EditType="Color" DisplayOrder="3"  SubDisplayOrder="1">
+    <CssStyle Comment="ButtonBackgroundColor" Property="background-color"/>
+  </Edit>
+  <Edit EditGroup="Buttons and Tabs" EditSubGroup="Buttons"  EditID="ButtonFontColor" EditName="Font Color" EditType="Color" DisplayOrder="3"  SubDisplayOrder="1">
+    <CssStyle Comment="ButtonFontColor" Property="background-color"/>
+  </Edit>
+  <Edit EditGroup="Buttons and Tabs" EditSubGroup="Buttons"  EditID="ButtonHoverBackgroundColor" EditName="Hover Background Color" EditType="Color" DisplayOrder="3"  SubDisplayOrder="1">
+    <CssStyle Comment="ButtonHoverBackgroundColor" Property="background-color"/>
+  </Edit>
+  <Edit EditGroup="Buttons and Tabs" EditSubGroup="Buttons"  EditID="ButtonHoverFontColor" EditName="Hover Font Color" EditType="Color" DisplayOrder="3"  SubDisplayOrder="1">
+    <CssStyle Comment="ButtonHoverFontColor" Property="background-color"/>
+  </Edit>
+  <Edit EditGroup="Buttons and Tabs" EditSubGroup="Buttons"  EditID="ButtonBorderColor" EditName="Button Border Color" EditType="Color" DisplayOrder="3"  SubDisplayOrder="1">
+    <CssStyle Comment="ButtonBorderColor" Property="border-color"/>
+  </Edit>
+  <Edit EditGroup="Buttons and Tabs" EditSubGroup="Tabs"  EditID="TabActiveBackgroundColor" EditName="Active Background Color" EditType="Color" DisplayOrder="3"  SubDisplayOrder="2">
+    <CssStyle Comment="ActiveTabBackground" Property="background-color"/>
+  </Edit>
+  <Edit EditGroup="Buttons and Tabs" EditSubGroup="Tabs"  EditID="TabActiveFontColor" EditName="Active Font Color" EditType="Color" DisplayOrder="3"  SubDisplayOrder="2">
+    <CssStyle Comment="ActiveTabFontColor" Property="background-color"/>
+  </Edit>
+  <Edit EditGroup="Buttons and Tabs" EditSubGroup="Tabs"  EditID="TabInactiveBackgroundColor" EditName="Inactive Background Color" EditType="Color" DisplayOrder="3"  SubDisplayOrder="2">
+    <CssStyle Comment="InactiveTabBackground" Property="background-color"/>
+  </Edit>
+  <Edit EditGroup="Buttons and Tabs" EditSubGroup="Tabs"  EditID="TabInactiveFontColor" EditName="Inactive Font Color" EditType="Color" DisplayOrder="3"  SubDisplayOrder="2">
+    <CssStyle Comment="InactiveTabFontColor" Property="background-color"/>
+  </Edit>
+  <Edit EditGroup="Buttons and Tabs" EditSubGroup="Tabs"  EditID="TabInactiveHoverBackgroundColor" EditName="Inactive Hover Background Color" EditType="Color" DisplayOrder="3"  SubDisplayOrder="2">
+    <CssStyle Comment="InactiveHoverTabBackground" Property="background-color"/>
+  </Edit>
+  <Edit EditGroup="Buttons and Tabs" EditSubGroup="Tab Containers (super-elements tabs only)"  EditID="TabUnselectedBackgroundColor" EditName="Unselected Background Color" EditType="Color" DisplayOrder="3"  SubDisplayOrder="3">
+    <CssStyle Comment="TabContainerUnselectedBackground" Property="background-color"/>
+  </Edit>
+  <Edit EditGroup="Buttons and Tabs" EditSubGroup="Tab Containers (super-elements tabs only)"  EditID="TabUnselectedFontColor" EditName="Unselected Font Color" EditType="Color" DisplayOrder="3"  SubDisplayOrder="3">
+    <CssStyle Comment="TabContainerUnselectedFont" Property="background-color"/>
+  </Edit>
+  <Edit EditGroup="Buttons and Tabs" EditSubGroup="Tab Containers (super-elements tabs only)"  EditID="TabSelectedBackgroundColor" EditName="Selected Background Color" EditType="Color" DisplayOrder="3"  SubDisplayOrder="3">
+    <CssStyle Comment="TabContainerSelectedBackground" Property="background-color"/>
+  </Edit>
+  <Edit EditGroup="Buttons and Tabs" EditSubGroup="Tab Containers (super-elements tabs only)"  EditID="TabSelectedFontColor" EditName="Selected Font Color" EditType="Color" DisplayOrder="3"  SubDisplayOrder="3">
+    <CssStyle Comment="TabContainerSelectedFont" Property="background-color"/>
+  </Edit>
+  <Edit EditGroup="Buttons and Tabs" EditSubGroup="Tab Containers (super-elements tabs only)"  EditID="TabContainerBackgroundColor" EditName="Container Background Color" EditType="Color" DisplayOrder="3"  SubDisplayOrder="3">
+    <CssStyle Comment="TabContainerBackground" Property="background-color"/>
+  </Edit>
+  <Edit EditGroup="Buttons and Tabs" EditSubGroup="Tab Containers (super-elements tabs only)"  EditID="TabContainerFontColor" EditName="Container Font Color" EditType="Color" DisplayOrder="3"  SubDisplayOrder="3">
+    <CssStyle Comment="TabContainerFontColor" Property="background-color"/>
+  </Edit>
+  <CombineIntoCSV XPath="Edit/@EditID[starts-with(.,'ChartColor')]" EditID="ChartColorCSV">
+    <ThemeElement AttributeName="Colors" />
+    <ThemeElement AttributeName="Color" />
+  </CombineIntoCSV>
+  <CycleAttributeValues XPath="Edit/@EditID[starts-with(.,'ChartColor')]" EditID="ChartColorCycleValues">
+    <ThemeElement AttributeName="Color" />
+    <ThemeElement AttributeName="MarkerPointFillColor,MarkerPointBorderColor" />
+    <ThemeElement AttributeName="ChartSymbolFillColor,ChartSymbolEdgeColor" />
+  </CycleAttributeValues>
+  
+  <Edit EditGroup="Charts" EditSubGroup="Container UI"  EditID="ChartBackgroundColor" EditName="Charts Background Color" EditType="Color" DisplayOrder="4" SubDisplayOrder="1">
+    <ThemeElement AttributeName="BackgroundColor"/>
+    <ThemeElement AttributeName="PlotBackgroundColor"/>
+    <ThemeElement AttributeName="ChartBackgroundColor"/>
+    <ThemeElement AttributeName="CanvasBgColor"/>
+  </Edit>
+  <Edit EditGroup="Charts" EditSubGroup="Container UI"  EditID="ChartCaptionColor" EditName="Charts Caption Color" EditType="Color" DisplayOrder="4" SubDisplayOrder="1">
+    <ThemeElement AttributeName="CaptionColor"/>
+    <ThemeElement AttributeName="FontColor"/>
+    <ThemeElement AttributeName="TickLabelColor"/>
+    <ThemeElement AttributeName="LabelColor"/>
+    <ThemeElement AttributeName="TickColor"/>
+  </Edit>
+  <Edit EditGroup="Charts" EditSubGroup="Chart Colors"  EditID="ChartColor1" EditName="Starting Color" EditType="Color" DisplayOrder="4" SubDisplayOrder="2">
+  </Edit>
+  <Edit EditGroup="Charts" EditSubGroup="Chart Colors"  EditID="ChartColor2" EditName="Chart Color 2" EditType="Color" DisplayOrder="4" SubDisplayOrder="2">
+  </Edit>
+  <Edit EditGroup="Charts" EditSubGroup="Chart Colors"  EditID="ChartColor3" EditName="Chart Color 3" EditType="Color" DisplayOrder="4" SubDisplayOrder="2">
+  </Edit>
+  <Edit EditGroup="Charts" EditSubGroup="Chart Colors"  EditID="ChartColor4" EditName="Chart Color 4" EditType="Color" DisplayOrder="4" SubDisplayOrder="2">
+  </Edit>
+  <Edit EditGroup="Charts"  EditSubGroup="Chart Colors" EditID="ChartColor5" EditName="Chart Color 5" EditType="Color" DisplayOrder="4" SubDisplayOrder="2">
+  </Edit>
+  <Edit EditGroup="Charts" EditSubGroup="Chart Colors"  EditID="ChartColor6" EditName="Chart Color 6" EditType="Color" DisplayOrder="4" SubDisplayOrder="2">
+  </Edit>
+  <Edit EditGroup="Charts" EditSubGroup="Chart Colors"  EditID="ChartColor7" EditName="Chart Color 7" EditType="Color" DisplayOrder="4" SubDisplayOrder="2">
+  </Edit>
+  <Edit EditGroup="Charts"  EditSubGroup="Chart Colors" EditID="ChartColor8" EditName="Chart Color 8" EditType="Color" DisplayOrder="4" SubDisplayOrder="2">
+  </Edit>
+  <Edit EditGroup="Charts" EditSubGroup="Heatmap"  EditID="HeatmapColorLow" EditName="Heatmap Low Color" EditType="Color" DisplayOrder="4" SubDisplayOrder="3">
+    <ThemeElement AttributeName="LowValueColor" />
+  </Edit>
+  <Edit EditGroup="Charts" EditSubGroup="Heatmap"  EditID="HeatmapColorMedium" EditName="Heatmap Medium Color" EditType="Color" DisplayOrder="4" SubDisplayOrder="3">
+    <ThemeElement AttributeName="MediumValueColor" />
+  </Edit>
+  <Edit EditGroup="Charts" EditSubGroup="Heatmap"  EditID="HeatmapColorHigh" EditName="Heatmap High Color" EditType="Color" DisplayOrder="4" SubDisplayOrder="3">
+    <ThemeElement AttributeName="HighValueColor" />
+  </Edit>
+  <Edit EditGroup="Charts" EditSubGroup="Heatmap"  EditID="HeatmapBorderColor" EditName="Heatmap Border Color" EditType="Color" DisplayOrder="4" SubDisplayOrder="3">
+    <ThemeElement AttributeName="CellBorderColor" />
+  </Edit>
+  <Edit EditGroup="Gauges" EditSubGroup="Arc Gauge"  EditID="ArcBackgroundColor" EditName="Background Color" EditType="Color" DisplayOrder="4" SubDisplayOrder="2">
+    <ThemeElement AttributeName="ArcBackgroundColor"/>
+  </Edit>
+  <Edit EditGroup="Gauges"  EditSubGroup="Arc Gauge" EditID="ArcBorderColor" EditName="Border Color" EditType="Color" DisplayOrder="4" SubDisplayOrder="2">
+    <ThemeElement AttributeName="ArcBorderColor" />
+  </Edit>
+  <Edit EditGroup="Gauges"  EditSubGroup="Arc Gauge" EditID="ArcColor" EditName="Dial Color" EditType="Color" DisplayOrder="4" SubDisplayOrder="2">
+    <ThemeElement AttributeName="ArcColor" />
+  </Edit>
+  <Edit EditGroup="Gauges" EditSubGroup="Balloon Bar Gauge"  EditID="BalloonBackgroundColor" EditName="Background Color" EditType="Color" DisplayOrder="4" SubDisplayOrder="3">
+    <ThemeElement AttributeName="BarBackgroundColor" />
+  </Edit>
+  <Edit EditGroup="Gauges" EditSubGroup="Balloon Bar Gauge"  EditID="BalloonLabelColor" EditName="Label Color" EditType="Color" DisplayOrder="4" SubDisplayOrder="3">
+    <ThemeElement AttributeName="BalloonLabelColor" />
+  </Edit>
+  <Edit EditGroup="Gauges" EditSubGroup="Balloon Bar Gauge"  EditID="BalloonColor" EditName="Balloon Color" EditType="Color" DisplayOrder="4" SubDisplayOrder="3">
+    <ThemeElement AttributeName="BalloonColor" />
+  </Edit>
+  <Edit EditGroup="Gauges" EditSubGroup="Balloon Bar Gauge"  EditID="BalloonBorderColor" EditName="Border Color" EditType="Color" DisplayOrder="4" SubDisplayOrder="3">
+    <ThemeElement AttributeName="BalloonBorderColor" />
+  </Edit>
+  <Edit EditGroup="Gauges" EditSubGroup="Bullet Bar Gauge"  EditID="BulletBackgroundColor" EditName="Background Color" EditType="Color" DisplayOrder="4"  SubDisplayOrder="4">
+    <ThemeElement AttributeName="BarBackgroundColor" />
+  </Edit>
+  <Edit EditGroup="Gauges" EditSubGroup="Bullet Bar Gauge"  EditID="BulletColor" EditName="Bullet Color" EditType="Color" DisplayOrder="4" SubDisplayOrder="4">
+    <ThemeElement AttributeName="BulletColor" />
+  </Edit>
+  <Edit EditGroup="Gauges" EditSubGroup="Bullet Bar Gauge"  EditID="BulletMarkerBorderColor" EditName="Marker Border Color" EditType="Color" DisplayOrder="4" SubDisplayOrder="4">
+    <ThemeElement AttributeName="MarkerBorderColor" />
+  </Edit>
+  <Edit EditGroup="Gauges" EditSubGroup="Bullet Bar Gauge"  EditID="BulletMarkerColor" EditName="Marker Color" EditType="Color" DisplayOrder="4" SubDisplayOrder="4">
+    <ThemeElement AttributeName="MarkerColor" />
+  </Edit>
+  <Edit EditGroup="Tables"  EditSubGroup="" EditID="TableCaptionFontColor" EditName="Caption Font" EditType="Color" DisplayOrder="5" SubDisplayOrder="1">
+    <CssStyle Comment="TableCaptionFontColor" Property="color"/>
+  </Edit>
+  <Edit EditGroup="Tables" EditSubGroup=""  EditID="TableCaptionBackgroundColor" EditName="Caption Background" EditType="Color" DisplayOrder="5" SubDisplayOrder="1">
+    <CssStyle Comment="TableCaptionBackgroundColor" Property="background-color"/>
+  </Edit>
+  <Edit EditGroup="Tables"  EditSubGroup="" EditID="TableDataFontColor" EditName="Data Font" EditType="Color" DisplayOrder="5" SubDisplayOrder="1">
+    <CssStyle Comment="TableDataFontColor" Property="color"/>
+  </Edit>
+  <Edit EditGroup="Tables" EditSubGroup=""  EditID="TableDataBackgroundColor" EditName="Data Background" EditType="Color" DisplayOrder="5" SubDisplayOrder="1">
+    <CssStyle Comment="TableDataBackgroundColor" Property="background-color"/>
+  </Edit>
+  <Edit EditGroup="Tables" EditSubGroup=""  EditID="TableDataBorderColor" EditName="Table Data Border Color" EditType="Color" DisplayOrder="5" SubDisplayOrder="1">
+    <CssStyle Comment="TableBorderColor" Property="background-color"/>
+  </Edit>
+  <Edit EditGroup="Tables" EditSubGroup=""  EditID="TableColumnHeaderFontColor" EditName="Column Header Font" EditType="Color" DisplayOrder="5" SubDisplayOrder="1">
+    <CssStyle Comment="TableColumnHeaderFontColor" Property="color"/>
+  </Edit>
+  <Edit EditGroup="Tables" EditSubGroup=""  EditID="TableColumnHeaderBackgroundColor" EditName="Column Header Background" EditType="Color" DisplayOrder="5" SubDisplayOrder="1">
+    <CssStyle Comment="TableColumnHeaderBackgroundColor" Property="background-color"/>
+  </Edit>
+  <Edit EditGroup="Tables"  EditSubGroup="" EditID="TableHeaderRowFontColor" EditName="Header Row Font" EditType="Color" DisplayOrder="5" SubDisplayOrder="1">
+    <CssStyle Comment="TableHeaderRowFontColor" Property="color"/>
+  </Edit>
+  <Edit EditGroup="Tables" EditSubGroup=""  EditID="TableHeaderRowBackgroundColor" EditName="Header Row Background" EditType="Color" DisplayOrder="5" SubDisplayOrder="1">
+    <CssStyle Comment="TableHeaderRowBackgroundColor" Property="background-color"/>
+  </Edit>
+  <Edit EditGroup="Tables" EditSubGroup=""  EditID="TableGroupHeaderRowFontColor" EditName="Group Header Row Font" EditType="Color" DisplayOrder="5" SubDisplayOrder="1">
+    <CssStyle Comment="TableGroupHeaderRowFontColor" Property="color"/>
+  </Edit>
+  <Edit EditGroup="Tables" EditSubGroup=""  EditID="TableGroupHeaderRowBackgroundColor" EditName="Group Header Row Background" EditType="Color" DisplayOrder="5" SubDisplayOrder="1">
+    <CssStyle Comment="TableGroupHeaderRowBackgroundColor" Property="background-color"/>
+  </Edit>
+  <Edit EditGroup="Tables" EditSubGroup=""  EditID="TableGroup1HeaderRowBackgroundColor" EditName="Group Header Row 1 Background" EditType="Color" DisplayOrder="5" SubDisplayOrder="1">
+    <CssStyle Comment="TableGroup1HeaderRowBackgroundColor" Property="background-color"/>
+  </Edit>
+  <Edit EditGroup="Tables" EditSubGroup=""  EditID="TableGroup2HeaderRowBackgroundColor" EditName="Group Header Row 2 Background" EditType="Color" DisplayOrder="5" SubDisplayOrder="1">
+    <CssStyle Comment="TableGroup2HeaderRowBackgroundColor" Property="background-color"/>
+  </Edit>
+  <Edit EditGroup="Tables" EditSubGroup=""  EditID="TableGroup3HeaderRowBackgroundColor" EditName="Group Header Row 3 Background" EditType="Color" DisplayOrder="5" SubDisplayOrder="1">
+    <CssStyle Comment="TableGroup3HeaderRowBackgroundColor" Property="background-color"/>
+  </Edit>
+  <Edit EditGroup="Tables" EditSubGroup=""  EditID="TableGroup4HeaderRowBackgroundColor" EditName="Group Header Row 4 Background" EditType="Color" DisplayOrder="5" SubDisplayOrder="1">
+    <CssStyle Comment="TableGroup4HeaderRowBackgroundColor" Property="background-color"/>
+  </Edit>
+</ThemeEdits>

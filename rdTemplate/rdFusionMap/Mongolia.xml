@@ -1,0 +1,24 @@
+<AnimatedMapDataXML>
+  <MapSpec InternalID="MN.AR" ShortName="AR" LongName="Arkhangai" />
+  <MapSpec InternalID="MN.BO" ShortName="BO" LongName="Bayan Olgii" />
+  <MapSpec InternalID="MN.BH" ShortName="BH" LongName="Bayankhongor" />
+  <MapSpec InternalID="MN.BU" ShortName="BU" LongName="Bulgan" />
+  <MapSpec InternalID="MN.DA" ShortName="DA" LongName="Darkhan Uul" />
+  <MapSpec InternalID="MN.DD" ShortName="DD" LongName="Dornod" />
+  <MapSpec InternalID="MN.DG" ShortName="DG" LongName="Dornogovi" />
+  <MapSpec InternalID="MN.DU" ShortName="DU" LongName="Dundgovi" />
+  <MapSpec InternalID="MN.GA" ShortName="GA" LongName="Govi Altai" />
+  <MapSpec InternalID="MN.GS" ShortName="GS" LongName="Govisumber" />
+  <MapSpec InternalID="MN.HN" ShortName="HN" LongName="Khentii" />
+  <MapSpec InternalID="MN.HD" ShortName="HD" LongName="Khovd" />
+  <MapSpec InternalID="MN.HG" ShortName="HG" LongName="Khovsgol" />
+  <MapSpec InternalID="MN.OG" ShortName="OG" LongName="Omnogovi" />
+  <MapSpec InternalID="MN.ER" ShortName="ER" LongName="Orkhon" />
+  <MapSpec InternalID="MN.OH" ShortName="OH" LongName="Ovorkhangai" />
+  <MapSpec InternalID="MN.SL" ShortName="SL" LongName="Selenge" />
+  <MapSpec InternalID="MN.SB" ShortName="SB" LongName="Sukhbaatar" />
+  <MapSpec InternalID="MN.TO" ShortName="TO" LongName="Tov" />
+  <MapSpec InternalID="MN.UB" ShortName="UB" LongName="Ulan Bator" />
+  <MapSpec InternalID="MN.UV" ShortName="UV" LongName="Uvs" />
+  <MapSpec InternalID="MN.DZ" ShortName="DZ" LongName="Zavkhan" />
+</AnimatedMapDataXML>

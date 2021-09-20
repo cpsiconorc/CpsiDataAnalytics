@@ -1,0 +1,8 @@
+<AnimatedMapDataXML>
+  <MapSpec InternalID="02" ShortName="AK" LongName="Alaska" />
+  <MapSpec InternalID="16" ShortName="ID" LongName="Idaho" />
+  <MapSpec InternalID="30" ShortName="MT" LongName="Montana" />
+  <MapSpec InternalID="41" ShortName="OR" LongName="Oregon" />
+  <MapSpec InternalID="53" ShortName="WA" LongName="Washington" />
+  <MapSpec InternalID="56" ShortName="WY" LongName="Wyoming" />
+</AnimatedMapDataXML>

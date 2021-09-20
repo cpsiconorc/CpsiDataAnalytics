@@ -1,0 +1,9 @@
+<AnimatedMapDataXML>
+  <MapSpec InternalID="01" ShortName="AL" LongName="Alajuela" />
+  <MapSpec InternalID="02" ShortName="CA" LongName="Cartago" />
+  <MapSpec InternalID="03" ShortName="GU" LongName="Guanacaste" />
+  <MapSpec InternalID="04" ShortName="HE" LongName="Heredia" />
+  <MapSpec InternalID="06" ShortName="LI" LongName="Limón" />
+  <MapSpec InternalID="07" ShortName="PU" LongName="Puntarenas" />
+  <MapSpec InternalID="08" ShortName="SJ" LongName="San José" />
+</AnimatedMapDataXML>

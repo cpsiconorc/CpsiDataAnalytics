@@ -1,0 +1,8 @@
+<AnimatedMapDataXML>
+  <MapSpec InternalID="01" ShortName="AL" LongName="Åland" />
+  <MapSpec InternalID="06" ShortName="LA" LongName="Lapland" />
+  <MapSpec InternalID="08" ShortName="OU" LongName="Oulu" />
+  <MapSpec InternalID="13" ShortName="SF" LongName="Southern Finland" />
+  <MapSpec InternalID="14" ShortName="EF" LongName="Eastern Finland" />
+  <MapSpec InternalID="15" ShortName="WF" LongName="Western Finland" />
+</AnimatedMapDataXML>

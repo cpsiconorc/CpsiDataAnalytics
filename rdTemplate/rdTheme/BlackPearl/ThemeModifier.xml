@@ -1,0 +1,1054 @@
+<TemplateModifier>
+  <!-- StyleSheet -->
+  <PrependChildElement XPath="/MobileReport">
+    <NewElement>
+      <StyleSheet StyleSheet="@Function.ThemePath~/MobileTheme.css" />
+    </NewElement>
+  </PrependChildElement>
+  <PrependChildElement XPath="/Report | /MobileReport | /Widget">
+    <NewElement>
+      <StyleSheet StyleSheet="@Function.ThemePath~/Theme.css" />
+    </NewElement>
+  </PrependChildElement>
+  <!-- WaitPage -->
+  <SetAttributeWhenEmpty XPath=".//WaitPage" StyleSheet="@Function.ThemePath~/Theme.css" />
+  <!-- Tabs -->
+  <SetAttributeWhenEmpty XPath=".//Tabs" BorderColor="Transparent" ActiveTabBackgroundColor="Transparent" InactiveTabBackgroundColor="Transparent" />
+  <SetAttributeWhenEmpty XPath="//Tabs[@ID='rdDashboardTabs']" ActiveTabBackgroundColor="Transparent" />
+  <!-- DataTable -->
+  <SetAttribute XPath=".//DataTable[@Class='rdNoClass']" Class="rdNoClass" ColumnHeaderClass="rdNoClass" CaptionClass="rdNoClass" />
+  <SetAttribute XPath=".//DataTable/DataTableColumn[@Class='rdNoClass']" Class="rdNoClass" />
+  <SetAttribute XPath=".//DataTable/HeaderRow[@Class='rdNoClass']" Class="rdNoClass" />
+  <SetAttribute XPath=".//DataTable/SummaryRow[@Class='rdNoClass']" Class="rdNoClass" />
+  <SetAttributeWithInsert XPath=".//DataTable[not(@Class='rdNoClass')]" Class="rdThemeDataTable" ColumnHeaderClass="rdThemeDataTableHeader" CaptionClass="rdThemeDataTableMainHeader" />
+  <SetAttributeWithInsert XPath=".//DataTable/DataTableColumn[not(@Class='rdNoClass')]" Class="rdThemeDataTableCell" />
+  <SetAttributeWithInsert XPath=".//DataTable/HeaderRow[not(@Class='rdNoClass')]" Class="rdThemeDataTableHeaderRow" />
+  <SetAttributeWithInsert XPath=".//DataTable/SummaryRow[not(@Class='rdNoClass')]" Class="rdThemeDataTableSummaryRow" />
+  <CycleAttributeValues XPath=".//DataTable" CycleOnChildElement="GroupHeaderRow">
+    <CycleValue Class="rdThemeDataTableGroupHeaderRow0" />
+    <CycleValue Class="rdThemeDataTableGroupHeaderRow1" />
+    <CycleValue Class="rdThemeDataTableGroupHeaderRow2" />
+    <CycleValue Class="rdThemeDataTableGroupHeaderRow3" />
+    <CycleValue Class="rdThemeDataTableGroupHeaderRow4" />
+  </CycleAttributeValues>
+  <SetAttributeWhenEmpty XPath=".//DataTable/GroupSummaryRow" Class="rdThemeDataTableGroupSummaryRow" />
+  <SetAttributeWhenEmpty XPath=".//DataTable/MoreInfoRow" Class="rdThemeDataTableMoreInfoRow" />
+  <!-- SubDataTable -->
+  <SetAttributeWhenEmpty XPath=".//SubDataTable" Class="rdThemeSubDataTable" />
+  <SetAttributeWhenEmpty XPath=".//SubDataTable/DataTableColumn" Class="rdThemeSubDataTableDataTableCell" />
+  <SetAttributeWhenEmpty XPath=".//SubDataTable/HeaderRow" Class="rdThemeSubDataTableHeaderRow" />
+  <SetAttributeWhenEmpty XPath=".//SubDataTable/SummaryRow" Class="rdThemeSubDataTableSummaryRow" />
+  <SetAttributeWhenEmpty XPath=".//SubDataTable/GroupHeaderRow" Class="rdThemeSubDataTableGroupHeaderRow" />
+  <SetAttributeWhenEmpty XPath=".//SubDataTable/GroupSummaryRow" Class="rdThemeSubDataTableGroupSummaryRow" />
+  <SetAttributeWhenEmpty XPath=".//SubDataTable/MoreInfoRow" Class="rdThemeSubDataTableMoreInfoRow" />
+  <!-- Paging -->
+  <SetAttributeWithInsert XPath=".//InteractivePaging[not(@Class='rdNoClass')]" Class="rdThemePaging" CurrentPageClass="rdThemePagingCurrent" />
+  <SetAttribute XPath=".//AnalysisGrid" CurrentPageClass="rdThemePagingCurrent" />
+  <SetAttribute XPath=".//InteractivePaging[@CaptionType='Image']" FirstPageCaption="@Function.ThemePath~/images/rdPageFirstDark.png" PreviousPageCaption="@Function.ThemePath~/images/rdPagePreviousDark.png" NextPageCaption="@Function.ThemePath~/images/rdPageNextDark.png" LastPageCaption="@Function.ThemePath~/images/rdPageLastDark.png" />
+  <SetAttribute XPath=".//InteractivePaging[@CaptionType='Image' and @FirstPageCaption='page_first_en.png' ]" FirstPageCaption="@Function.ThemePath~/images/rdPageFirstDark.png" />
+  <SetAttribute XPath=".//InteractivePaging[@CaptionType='Image' and @PreviousPageCaption='page_prev_en.png']" PreviousPageCaption="@Function.ThemePath~/images/rdPagePreviousDark.png" />
+  <SetAttribute XPath=".//InteractivePaging[@CaptionType='Image' and @NextPageCaption='page_next_en.png']" NextPageCaption="@Function.ThemePath~/images/rdPageNextDark.png" />
+  <SetAttribute XPath=".//InteractivePaging[@CaptionType='Image' and @LastPageCaption='page_last_en.png']" LastPageCaption="@Function.ThemePath~/images/rdPageLastDark.png" />
+  <!-- for AG Paging only -->
+  <SetAttribute XPath="/Report[@ID='AnalysisGrid.rdAgTemplate']//InteractivePaging[@CaptionType='Image']" FirstPageCaption="@Function.ThemePath~/images/rdPageFirst.png" PreviousPageCaption="@Function.ThemePath~/images/rdPagePrevious.png" NextPageCaption="@Function.ThemePath~/images/rdPageNext.png" LastPageCaption="@Function.ThemePath~/images/rdPageLast.png" />
+  <SetAttribute XPath="/Report[@ID='AnalysisGrid.rdAgTemplate']//InteractivePaging[@CaptionType='Image' and @FirstPageCaption='page_first_en.png' ]" FirstPageCaption="@Function.ThemePath~/images/rdPageFirst.png" />
+  <SetAttribute XPath="/Report[@ID='AnalysisGrid.rdAgTemplate']//InteractivePaging[@CaptionType='Image' and @PreviousPageCaption='page_prev_en.png']" PreviousPageCaption="@Function.ThemePath~/images/rdPagePrevious.png" />
+  <SetAttribute XPath="/Report[@ID='AnalysisGrid.rdAgTemplate']//InteractivePaging[@CaptionType='Image' and @NextPageCaption='page_next_en.png']" NextPageCaption="@Function.ThemePath~/images/rdPageNext.png" />
+  <SetAttribute XPath="/Report[@ID='AnalysisGrid.rdAgTemplate']//InteractivePaging[@CaptionType='Image' and @LastPageCaption='page_last_en.png']" LastPageCaption="@Function.ThemePath~/images/rdPageLast.png" />
+  <SetAttributeWithInsert XPath=".//AppendPaging" Class="ThemeLinkButton" />
+  <!-- CrossTabTable -->
+  <SetAttributeWithInsert XPath=".//CrosstabTable[not(ancestor::Report[@ID='AnalysisGrid.rdAgTemplate']) and not(@rdAnalysisGrid='True')]" Class="rdAgDataTable" />
+  <SetAttributeWithInsert XPath=".//CrosstabTableLabelColumn" Class="rdThemeDataTableCell" />
+  <SetAttributeWithInsert XPath=".//CrosstabTableValueColumns" Class="rdThemeDataTableCell ThemeAlignRight" />
+  <SetAttributeWithInsert XPath=".//CrosstabTable/HeaderRow" Class="rdThemeDataTableHeaderRow" />
+  <SetAttributeWithInsert XPath=".//CrosstabTable/SummaryRow" Class="rdThemeDataTableSummaryRow" />
+  <!-- Analysis, OLAP Grid -->
+  <SetAttribute XPath="/Report[@ID='AnalysisGrid.rdAgTemplate']//Chart" BackgroundColor="#d2e9ff" OuterBorderColor="#90909c" />
+  <SetAttribute XPath="/Report[@ID='AnalysisGrid.rdAgTemplate' or @ID='OlapGrid.rdOgTemplate' or @ID='OlapGrid.rdDgTemplate' or @ID='TrellisChart.rdTcTemplate' or @ID='AnalysisChart.rdAcTemplate']//Chart" BackgroundColor="#242424" Transparency="" ChartTexture="" BarShading="" RoundedBorder="0" BorderColor="Transparent" OuterBorderColor="Transparent" GridHorizontalColor="#e6e6e6" ChartBackgroundColor="#242424" ChartBackgroundGradientColor="" AreaGradientColor="" LineWidth="3">
+    <ThemeEditor EditID="ChartBackgroundColor" />
+  </SetAttribute>
+  <SetAttribute XPath="/Report[@ID='AnalysisGrid.rdAgTemplate' or @ID='OlapGrid.rdOgTemplate' or @ID='OlapGrid.rdDgTemplate' or @ID='TrellisChart.rdTcTemplate' or @ID='AnalysisChart.rdAcTemplate']//Chart/FontChartTitle" FontFilename="Helvetica" FontColor="#FFFFFF" FontSize="18">
+    <ThemeEditor EditID="AllFonts" />
+    <ThemeEditor EditID="ChartCaptionColor" />
+  </SetAttribute>
+  <SetAttribute XPath="/Report[@ID='AnalysisGrid.rdAgTemplate' or @ID='OlapGrid.rdOgTemplate' or @ID='OlapGrid.rdDgTemplate' or @ID='TrellisChart.rdTcTemplate' or @ID='AnalysisChart.rdAcTemplate']//Chart/FontLabel" FontFilename="Helvetica" FontColor="#FFFFFF">
+    <ThemeEditor EditID="AllFonts" />
+    <ThemeEditor EditID="ChartCaptionColor" />
+  </SetAttribute>
+  <SetAttribute XPath="/Report[@ID='AnalysisGrid.rdAgTemplate' or @ID='OlapGrid.rdOgTemplate' or @ID='OlapGrid.rdDgTemplate' or @ID='TrellisChart.rdTcTemplate' or @ID='AnalysisChart.rdAcTemplate']//Chart/HeatmapFontTitle" FontFilename="Helvetica" FontBold="False" FontColor="#FFFFFF" FontSize="18">
+    <ThemeEditor EditID="AllFonts" />
+    <ThemeEditor EditID="ChartCaptionColor" />
+  </SetAttribute>
+  <SetAttribute XPath="/Report[@ID='AnalysisGrid.rdAgTemplate' or @ID='OlapGrid.rdOgTemplate' or @ID='OlapGrid.rdDgTemplate' or @ID='AnalysisChart.rdAcTemplate']//Chart[@XYChartType='Area']" Transparency="7" ChartSymbolEdgeColor="Transparent" />
+  <SetAttribute XPath="/Report[@ID='AnalysisGrid.rdAgTemplate' or @ID='OlapGrid.rdOgTemplate' or @ID='OlapGrid.rdDgTemplate' or @ID='AnalysisChart.rdAcTemplate']//Chart[@XYChartType='Bar']" D3="" />
+  <SetAttribute XPath="/Report[@ID='AnalysisGrid.rdAgTemplate' or @ID='OlapGrid.rdOgTemplate' or @ID='OlapGrid.rdDgTemplate' or @ID='AnalysisChart.rdAcTemplate']//Chart[@Type='Pie']" D3Angle="" D3="" LabelShading="" WedgeBorderColor="#ffffff" />
+  <SetAttribute XPath="/Report[@ID='AnalysisGrid.rdAgTemplate' or @ID='OlapGrid.rdOgTemplate' or @ID='OlapGrid.rdDgTemplate' or @ID='TrellisChart.rdTcTemplate' or @ID='AnalysisChart.rdAcTemplate']//Chart[@Type='Scatter']" BorderColor="#cccccc" ChartBackgroundColor="#242424" ChartSymbol="SymbolCircle" ChartSymbolEdgeColor="#45d2f0" ChartSymbolFillColor="#72C8C1">
+    <ThemeEditor EditID="ChartBackgroundColor" />
+  </SetAttribute>
+  <SetAttribute XPath="/Report[@ID='AnalysisGrid.rdAgTemplate' or @ID='OlapGrid.rdOgTemplate' or @ID='OlapGrid.rdDgTemplate' or @ID='TrellisChart.rdTcTemplate' or @ID='AnalysisChart.rdAcTemplate']//ChartTrendLine" LineWidth="3" Color="#01273C" />
+  <SetAttribute XPath="/Report[@ID='TrellisChart.rdTcTemplate']//Chart[@Type='Scatter']" ChartSymbolSize="5" />
+  <SetAttribute XPath="/Report[@ID='TrellisChart.rdTcTemplate']//Chart[@Type='XY']" LineWidth="2" D3="0" />
+  <UpdateOrAppendChildElement XPath="/Report[@ID='OlapGrid.rdDgTemplate' or @ID='TrellisChart.rdTcTemplate' or @ID='OlapGrid.rdOgTemplate']//Chart[@Type='XY']">
+    <NewElement>
+      <DimensionGridChartPanel Colors="#FF9900, #28B8D5, #36DB65, #D45CE2, #FF4D4D, #FFEA00, #F25C08, #7F28D5">
+        <ThemeEditor EditID="ChartColorCSV" />
+      </DimensionGridChartPanel>
+    </NewElement>
+  </UpdateOrAppendChildElement>
+  <UpdateOrAppendChildElement XPath="/Report[@ID='TrellisChart.rdTcTemplate']//Chart[@Type='XY' or @Type='Scatter']">
+    <NewElement>
+      <FontLabel FontSize="8" />
+    </NewElement>
+  </UpdateOrAppendChildElement>
+  <UpdateOrAppendChildElement XPath="/Report[@ID='TrellisChart.rdTcTemplate']//Chart[@Type='XY' or @Type='Scatter']">
+    <NewElement>
+      <FontData FontSize="8" />
+    </NewElement>
+  </UpdateOrAppendChildElement>
+  <!-- OlapTable-->
+  <SetAttributeWhenEmpty XPath=".//OlapTable" CellSpacing="1" />
+  <SetAttribute XPath=".//OlapTable" Class="rdThemeDataTable" ColumnHeaderClass="rdThemeDataTableHeader" CaptionClass="rdThemeDataTableMainHeader" />
+  <SetAttribute XPath=".//OlapTable/DataTableColumn" Class="rdThemeDataTableCell" />
+  <!-- PopupMenu -->
+  <SetAttributeWithInsert XPath=".//Action[@Type='Popup']" Class="rdThemePopupMenu" />
+  <!-- Charts -->
+  <SetAttributeWhenEmpty XPath=".//ChartTrendLine" LineWidth="3" Color="#01273C" />
+  <SetAttributeWhenEmpty XPath=".//ChartLowessCurveLine" LineWidth="3" Color="#01273C" />
+  <!-- Legend -->
+  <SetAttributeWhenEmpty XPath=".//Legend" BorderColor="Transparent" />
+  <UpdateOrAppendChildElement XPath=".//Legend">
+    <NewElement>
+      <FontLegend FontFilename="Helvetica" FontColor="#3B4247" FontSize="11">
+        <ThemeEditor EditID="AllFonts" />
+      </FontLegend>
+    </NewElement>
+  </UpdateOrAppendChildElement>
+  <!-- XYChart -->
+  <SetAttributeWhenEmpty XPath=".//Chart[DataLayer/CrosstabFilter] | .//Chart[DataLayer/SqlCrosstab]" Color="#FF9900, #28B8D5, #36DB65, #D45CE2, #FF4D4D, #FFEA00, #F25C08, #7F28D5">
+    <ThemeEditor EditID="ChartColorCSV" />
+  </SetAttributeWhenEmpty>
+  <SetAttributeWhenEmpty XPath=".//Chart[@XYChartType='Area' and (ExtraXYLayer or DataLayer/CrosstabFilter) ]" ChartSymbolEdgeColor="#ffffff" />
+  <SetAttributeWhenEmpty XPath=".//Chart[@XYChartType='Area' and not(ExtraXYLayer) and not(DataLayer/CrosstabFilter) ]" ChartSymbolEdgeColor="#ffffff" />
+  <SetAttributeWhenEmpty XPath=".//Chart[@XYChartType='Bar']" ChartSymbolEdgeColor="Transparent" />
+  <SetAttributeWhenEmpty XPath=".//Chart[@Type='XY' and @D3 and @D3 &gt; 0]" BorderColor="#3B4247" />
+  <SetAttributeWhenEmpty XPath=".//Chart[@Type='XY']" Color="#72C8C1" RoundedBorder="0" BarShape="Square" BackgroundColor="#242424" ChartBackgroundColor="#242424" AreaGradientColor="#ffffff" OuterBorderColor="Transparent" BorderColor="Transparent" GridHorizontalColor="#cccccc" LineWidth="3">
+    <ThemeEditor EditID="ChartBackgroundColor" />
+  </SetAttributeWhenEmpty>
+  <UpdateOrAppendChildElement XPath=".//Chart[@Type='XY']">
+    <NewElement>
+      <FontChartTitle FontFilename="Helvetica" FontSize="18" FontColor="#3B4247" Alignment="Center">
+        <ThemeEditor EditID="AllFonts" />
+      </FontChartTitle>
+    </NewElement>
+  </UpdateOrAppendChildElement>
+  <UpdateOrAppendChildElement XPath=".//Chart[@Type='XY']">
+    <NewElement>
+      <FontLabel FontFilename="Helvetica" FontColor="#3B4247" BorderColor="#3B4247" FontSize="11">
+        <ThemeEditor EditID="AllFonts" />
+      </FontLabel>
+    </NewElement>
+  </UpdateOrAppendChildElement>
+  <UpdateOrAppendChildElement XPath=".//Chart[@Type='XY']">
+    <NewElement>
+      <FontData FontFilename="Helvetica" FontColor="#3B4247" FontSize="11">
+        <ThemeEditor EditID="AllFonts" />
+      </FontData>
+    </NewElement>
+  </UpdateOrAppendChildElement>
+  <UpdateOrAppendChildElement XPath=".//Chart[@Type='XY']">
+    <NewElement>
+      <FontXAxisTitle FontFilename="Helvetica" FontColor="#3B4247" FontSize="11">
+        <ThemeEditor EditID="AllFonts" />
+      </FontXAxisTitle>
+    </NewElement>
+  </UpdateOrAppendChildElement>
+  <UpdateOrAppendChildElement XPath=".//Chart[@Type='XY']">
+    <NewElement>
+      <FontYAxisTitle FontFilename="Helvetica" FontColor="#3B4247" FontSize="11">
+        <ThemeEditor EditID="AllFonts" />
+      </FontYAxisTitle>
+    </NewElement>
+  </UpdateOrAppendChildElement>
+  <UpdateOrAppendChildElement XPath=".//Chart[@Type='XY']/SecondaryAxis">
+    <NewElement>
+      <FontData FontFilename="Helvetica" FontColor="#3B4247" FontSize="11">
+        <ThemeEditor EditID="AllFonts" />
+      </FontData>
+    </NewElement>
+  </UpdateOrAppendChildElement>
+  <UpdateOrAppendChildElement XPath=".//Chart[@Type='XY']/SecondaryAxis">
+    <NewElement>
+      <FontYAxisTitle FontFilename="Helvetica" FontColor="#3B4247" FontSize="11">
+        <ThemeEditor EditID="AllFonts" />
+      </FontYAxisTitle>
+    </NewElement>
+  </UpdateOrAppendChildElement>
+  <CycleAttributeValues XPath=".//Chart[@Type='XY']" CycleOnChildElement="ExtraXYDataColumn">
+    <ThemeEditor EditID="ChartColorCycleValues" />
+    <CycleValue Transparency="3" Color="#FF9900" />
+    <CycleValue Transparency="3" Color="#28B8D5" />
+    <CycleValue Transparency="3" Color="#36DB65" />
+    <CycleValue Transparency="3" Color="#D45CE2" />
+    <CycleValue Transparency="3" Color="#FF4D4D" />
+    <CycleValue Transparency="3" Color="#FFEA00" />
+    <CycleValue Transparency="3" Color="#F25C08" />
+    <CycleValue Transparency="3" Color="#7F28D5" />
+  </CycleAttributeValues>
+  <CycleAttributeValues XPath=".//Chart[@Type='XY']" CycleOnChildElement="ExtraXYLayer">
+    <ThemeEditor EditID="ChartColorCycleValues" />
+    <CycleValue ChartSymbolEdgeColor="Transparent" Transparency="3" Color="#FF9900" />
+    <CycleValue ChartSymbolEdgeColor="Transparent" Transparency="3" Color="#28B8D5" />
+    <CycleValue ChartSymbolEdgeColor="Transparent" Transparency="3" Color="#36DB65" />
+    <CycleValue ChartSymbolEdgeColor="Transparent" Transparency="3" Color="#D45CE2" />
+    <CycleValue ChartSymbolEdgeColor="Transparent" Transparency="3" Color="#FF4D4D" />
+    <CycleValue ChartSymbolEdgeColor="Transparent" Transparency="3" Color="#FFEA00" />
+    <CycleValue ChartSymbolEdgeColor="Transparent" Transparency="3" Color="#F25C08" />
+    <CycleValue ChartSymbolEdgeColor="Transparent" Transparency="3" Color="#7F28D5" />
+  </CycleAttributeValues>
+  <CycleAttributeValues XPath=".//Chart[@Type='XY']" CycleOnChildElement="ChartMarks">
+    <ThemeEditor EditID="ChartColorCycleValues" />
+    <CycleValue Color="#FF9900" />
+    <CycleValue Color="#28B8D5" />
+    <CycleValue Color="#36DB65" />
+    <CycleValue Color="#D45CE2" />
+    <CycleValue Color="#FF4D4D" />
+    <CycleValue Color="#FFEA00" />
+    <CycleValue Color="#F25C08" />
+    <CycleValue Color="#7F28D5" />
+  </CycleAttributeValues>
+  <CycleAttributeValues XPath=".//Chart[@Type='XY']/SecondaryAxis" CycleOnChildElement="ChartMarks">
+    <ThemeEditor EditID="ChartColorCycleValues" />
+    <CycleValue Color="#FF9900" />
+    <CycleValue Color="#28B8D5" />
+    <CycleValue Color="#36DB65" />
+    <CycleValue Color="#D45CE2" />
+    <CycleValue Color="#FF4D4D" />
+    <CycleValue Color="#FFEA00" />
+    <CycleValue Color="#F25C08" />
+    <CycleValue Color="#7F28D5" />
+  </CycleAttributeValues>
+  <!-- ZoomChart -->
+  <SetAttributeWhenEmpty XPath=".//ZoomChart" ResetZoomClass="rdDashboardCommand" />
+  <!-- PieChart -->
+  <!-- No longer using a single wedge color for internal labels
+	<SetAttributeWhenEmpty XPath=".//Chart[@Type='Pie' and @LabelLayout='InternalLayout']" Colors="#86CAC3" />-->
+  <SetAttributeWhenEmpty XPath=".//Chart[@Type='Pie']" WedgeBorderThickness="0" RoundedBorder="0" ShowDataValues="False" ExternalLayoutLabelColor="SameAsWedgeColor" BackgroundColor="#242424" ChartSymbolEdgeColor="Transparent" OuterBorderColor="#ffffff" LabelPointerColor="SameAsWedgeColor" Colors="#86CAC3, #DCD440, #01273C, #B84026, #85B74D, #363B42, #A5D9D4, #454D59, #DEDD79, #664581, #A23657, #AFCA85">
+    <ThemeEditor EditId="ChartColorCSV" />
+    <ThemeEditor EditID="ChartBackgroundColor" />
+  </SetAttributeWhenEmpty>
+  <UpdateOrAppendChildElement XPath=".//Chart[@Type='Pie']">
+    <NewElement>
+      <FontChartTitle FontFilename="Helvetica" FontColor="#424242" FontSize="18" Alignment="Center">
+        <ThemeEditor EditID="AllFonts" />
+      </FontChartTitle>
+    </NewElement>
+  </UpdateOrAppendChildElement>
+  <UpdateOrAppendChildElement XPath=".//Chart[@Type='Pie' and (not(@LabelLayout) or @LabelLayout='ExternalLayout')]">
+    <NewElement>
+      <FontLabel FontFilename="Helvetica" FontSize="11">
+        <ThemeEditor EditID="AllFonts" />
+      </FontLabel>
+    </NewElement>
+  </UpdateOrAppendChildElement>
+  <UpdateOrAppendChildElement XPath=".//Chart[@Type='Pie' and (@LabelLayout)]">
+    <NewElement>
+      <FontLabel FontFilename="Helvetica" FontColor="#ffffff" FontSize="11">
+        <ThemeEditor EditID="AllFonts" />
+      </FontLabel>
+    </NewElement>
+  </UpdateOrAppendChildElement>
+  <!-- ScatterChart -->
+  <SetAttributeWhenEmpty XPath=".//Chart[@Type='Scatter']" BackgroundColor="#242424" ChartBackgroundColor="#242424" RoundedBorder="0" BorderColor="#cccccc" OuterBorderColor="Transparent" GridHorizontalColor="#cccccc" GridVerticalColor="#cccccc" Transparency="3" ChartSymbol="SymbolCircle" ChartSymbolSize="10" ChartSymbolEdgeColor="#86CAC3" ChartSymbolFillColor="#86CAC3">
+    <ThemeEditor EditID="ChartBackgroundColor" />
+  </SetAttributeWhenEmpty>
+  <UpdateOrAppendChildElement XPath=".//Chart[@Type='Scatter']">
+    <NewElement>
+      <FontChartTitle FontFilename="Helvetica" FontSize="18" FontColor="#3B4247" Alignment="Center">
+        <ThemeEditor EditID="AllFonts" />
+      </FontChartTitle>
+    </NewElement>
+  </UpdateOrAppendChildElement>
+  <UpdateOrAppendChildElement XPath=".//Chart[@Type='Scatter']">
+    <NewElement>
+      <FontData FontFilename="Helvetica" FontColor="#3B4247" FontSize="11">
+        <ThemeEditor EditID="AllFonts" />
+      </FontData>
+    </NewElement>
+  </UpdateOrAppendChildElement>
+  <UpdateOrAppendChildElement XPath=".//Chart[@Type='Scatter']">
+    <NewElement>
+      <FontYAxisTitle FontFilename="Helvetica" FontColor="#3B4247" FontSize="11">
+        <ThemeEditor EditID="AllFonts" />
+      </FontYAxisTitle>
+    </NewElement>
+  </UpdateOrAppendChildElement>
+  <UpdateOrAppendChildElement XPath=".//Chart[@Type='Scatter']">
+    <NewElement>
+      <FontLabel FontFilename="Helvetica" FontColor="#3B4247" FontSize="11">
+        <ThemeEditor EditID="AllFonts" />
+      </FontLabel>
+    </NewElement>
+  </UpdateOrAppendChildElement>
+  <UpdateOrAppendChildElement XPath=".//Chart[@Type='Scatter']">
+    <NewElement>
+      <FontXAxisTitle FontFilename="Helvetica" FontColor="#3B4247" FontSize="11">
+        <ThemeEditor EditID="AllFonts" />
+      </FontXAxisTitle>
+    </NewElement>
+  </UpdateOrAppendChildElement>
+  <CycleAttributeValues XPath=".//Chart[@Type='Scatter']" CycleOnChildElement="ExtraScatterLayer">
+    <ThemeEditor EditID="ChartColorCycleValues" />
+    <CycleValue Transparency="3" ChartSymbol="SymbolCircle" ChartSymbolSize="8" ChartSymbolEdgeColor="#FF9900" ChartSymbolFillColor="#FF9900" />
+    <CycleValue Transparency="3" ChartSymbol="SymbolCircle" ChartSymbolSize="8" ChartSymbolEdgeColor="#28B8D5" ChartSymbolFillColor="#28B8D5" />
+    <CycleValue Transparency="3" ChartSymbol="SymbolCircle" ChartSymbolSize="8" ChartSymbolEdgeColor="#36DB65" ChartSymbolFillColor="#36DB65" />
+    <CycleValue Transparency="3" ChartSymbol="SymbolCircle" ChartSymbolSize="8" ChartSymbolEdgeColor="#D45CE2" ChartSymbolFillColor="#D45CE2" />
+    <CycleValue Transparency="3" ChartSymbol="SymbolCircle" ChartSymbolSize="8" ChartSymbolEdgeColor="#FF4D4D" ChartSymbolFillColor="#FF4D4D" />
+    <CycleValue Transparency="3" ChartSymbol="SymbolCircle" ChartSymbolSize="8" ChartSymbolEdgeColor="#FFEA00" ChartSymbolFillColor="#FFEA00" />
+    <CycleValue Transparency="3" ChartSymbol="SymbolCircle" ChartSymbolSize="8" ChartSymbolEdgeColor="#F25C08" ChartSymbolFillColor="#F25C08" />
+    <CycleValue Transparency="3" ChartSymbol="SymbolCircle" ChartSymbolSize="8" ChartSymbolEdgeColor="#7F28D5" ChartSymbolFillColor="#7F28D5" />
+  </CycleAttributeValues>
+  <CycleAttributeValues XPath=".//Chart[@Type='Scatter']" CycleOnChildElement="ChartMarks">
+    <ThemeEditor EditID="ChartColorCycleValues" />
+    <CycleValue Color="#FF9900" />
+    <CycleValue Color="#28B8D5" />
+    <CycleValue Color="#36DB65" />
+    <CycleValue Color="#D45CE2" />
+    <CycleValue Color="#FF4D4D" />
+    <CycleValue Color="#FFEA00" />
+    <CycleValue Color="#F25C08" />
+    <CycleValue Color="#7F28D5" />
+  </CycleAttributeValues>
+  <!-- Sparkline -->
+  <SetAttributeWhenEmpty XPath=".//Sparkline[@Type='Line']" Color="#72C8C1" LineWidth="1" ChartBackgroundColor="Transparent" OuterBorderColor="Transparent" BackgroundColor="Transparent" />
+  <SetAttributeWhenEmpty XPath=".//Sparkline[@Type='Area']" Color="#72C8C1" AreaGradientColor="Transparent" ChartBackgroundColor="Transparent" OuterBorderColor="Transparent" BackgroundColor="Transparent" />
+  <SetAttributeWhenEmpty XPath=".//Sparkline[@Type='WinLoss']" Color="#7FB15E" NegativeColor="#C64533" ChartBackgroundColor="Transparent" OuterBorderColor="Transparent" BackgroundColor="Transparent" />
+  <SetAttributeWhenEmpty XPath=".//Sparkline[@Type='Bar']" Color="#72C8C1" NegativeColor="#C64533" ChartBackgroundColor="Transparent" OuterBorderColor="Transparent" BackgroundColor="Transparent" />
+  <!-- Heatmap -->
+  <SetAttributeWhenEmpty XPath=".//Chart[@Type='Heatmap']" BackgroundColor="#242424" OuterBorderColor="Transparent" CellBorder="2" CellBorderColor="#FFFFFF" MediumValueColor="#FFEA00" LowValueColor="#FF4D4D" HighValueColor="#36DB65">
+    <ThemeEditor EditID="ChartBackgroundColor" />
+    <ThemeEditor EditID="HeatmapColorLow" />
+    <ThemeEditor EditID="HeatmapColorMedium" />
+    <ThemeEditor EditID="HeatmapColorHigh" />
+    <ThemeEditor EditID="HeatmapBorderColor" />
+  </SetAttributeWhenEmpty>
+  <UpdateOrAppendChildElement XPath=".//Chart[@Type='Heatmap']">
+    <NewElement>
+      <HeatmapFontTitle FontFilename="Helvetica" FontBold="False" FontColor="#464646" FontSize="18" Alignment="Center">
+        <ThemeEditor EditID="AllFonts" />
+      </HeatmapFontTitle>
+    </NewElement>
+  </UpdateOrAppendChildElement>
+  <UpdateOrAppendChildElement XPath=".//Chart[@Type='Heatmap']">
+    <NewElement>
+      <HeatmapFontLabel FontFilename="Helvetica" FontSize="11">
+        <ThemeEditor EditID="AllFonts" />
+      </HeatmapFontLabel>
+    </NewElement>
+  </UpdateOrAppendChildElement>
+  <SetAttributeWhenEmpty XPath=".//Chart[@Type='Heatmap']/HeatmapGroupColumn" BackgroundColor="#242424" CellBorder="2" CellBorderColor="#FFFFFF">
+    <ThemeEditor EditID="ChartBackgroundColor" />
+    <ThemeEditor EditID="HeatmapBorderColor" />
+  </SetAttributeWhenEmpty>
+  <UpdateOrAppendChildElement XPath=".//Chart[@Type='Heatmap']/HeatmapGroupColumn">
+    <NewElement>
+      <HeatmapFontGroupLabel FontFilename="Helvetica" FontSize="11">
+        <ThemeEditor EditID="AllFonts" />
+      </HeatmapFontGroupLabel>
+    </NewElement>
+  </UpdateOrAppendChildElement>
+  <SetAttributeWhenEmpty XPath=".//Heatmap" FontFilename="Helvetica" FontColor="#5b5b5b" FontSize="11">
+    <ThemeEditor EditID="AllFonts" />
+  </SetAttributeWhenEmpty>
+  <UpdateOrAppendChildElement XPath=".//Heatmap">
+    <NewElement>
+      <HeatmapColorSlider LeftColor="#B84026" CenterColor="#DCD440" RightColor="#85B74D" />
+    </NewElement>
+  </UpdateOrAppendChildElement>
+  <!-- PolarChart -->
+  <SetAttributeWhenEmpty XPath=".//Chart[@Type='Polar']" BackgroundColor="#242424" ChartBackgroundColor="#242424" Color="#72C8C1" RoundedBorder="0" BorderColor="#3B4247" OuterBorderColor="Transparent" GridHorizontalColor="#cccccc" GridVerticalColor="#cccccc" ChartSymbolEdgeColor="#626071">
+    <ThemeEditor EditID="ChartBackgroundColor" />
+  </SetAttributeWhenEmpty>
+  <UpdateOrAppendChildElement XPath=".//Chart[@Type='Polar']">
+    <NewElement>
+      <FontChartTitle FontFilename="Helvetica" FontSize="18" FontColor="#3B4247" Alignment="Center">
+        <ThemeEditor EditID="AllFonts" />
+      </FontChartTitle>
+    </NewElement>
+  </UpdateOrAppendChildElement>
+  <UpdateOrAppendChildElement XPath=".//Chart[@Type='Polar']">
+    <NewElement>
+      <FontData FontFilename="Helvetica" FontColor="#3B4247" FontSize="11">
+        <ThemeEditor EditID="AllFonts" />
+      </FontData>
+    </NewElement>
+  </UpdateOrAppendChildElement>
+  <UpdateOrAppendChildElement XPath=".//Chart[@Type='Polar']">
+    <NewElement>
+      <FontLabel FontFilename="Helvetica" FontColor="#3B4247" FontSize="11">
+        <ThemeEditor EditID="AllFonts" />
+      </FontLabel>
+    </NewElement>
+  </UpdateOrAppendChildElement>
+  <CycleAttributeValues XPath=".//Chart[@Type='Polar']" CycleOnChildElement="ExtraPolarLayer">
+    <ThemeEditor EditID="ChartColorCycleValues" />
+    <CycleValue Transparency="3" Color="#FF9900" />
+    <CycleValue Transparency="3" Color="#28B8D5" />
+    <CycleValue Transparency="3" Color="#36DB65" />
+    <CycleValue Transparency="3" Color="#D45CE2" />
+    <CycleValue Transparency="3" Color="#FF4D4D" />
+    <CycleValue Transparency="3" Color="#FFEA00" />
+    <CycleValue Transparency="3" Color="#F25C08" />
+    <CycleValue Transparency="3" Color="#7F28D5" />
+  </CycleAttributeValues>
+  <!-- GanttChart -->
+  <SetAttributeWhenEmpty XPath=".//Chart[@Type='Gantt']" BorderColor="#3B4247" GridHorizontalColor="#cccccc" GridVerticalColor="#cccccc" RoundedBorder="0" OuterBorderColor="Transparent" BackgroundColor="#242424" ChartBackgroundColor="#242424" Color="#72C8C1">
+    <ThemeEditor EditID="ChartBackgroundColor" />
+  </SetAttributeWhenEmpty>
+  <UpdateOrAppendChildElement XPath=".//Chart[@Type='Gantt']">
+    <NewElement>
+      <FontChartTitle FontFilename="Helvetica" FontSize="18" FontColor="#3B4247" Alignment="Center">
+        <ThemeEditor EditID="AllFonts" />
+      </FontChartTitle>
+    </NewElement>
+  </UpdateOrAppendChildElement>
+  <UpdateOrAppendChildElement XPath=".//Chart[@Type='Gantt']">
+    <NewElement>
+      <FontData FontFilename="Helvetica" FontColor="#3B4247" FontSize="11">
+        <ThemeEditor EditID="AllFonts" />
+      </FontData>
+    </NewElement>
+  </UpdateOrAppendChildElement>
+  <UpdateOrAppendChildElement XPath=".//Chart[@Type='Gantt']">
+    <NewElement>
+      <FontYAxisTitle FontFilename="Helvetica" FontColor="#3B4247" FontSize="11">
+        <ThemeEditor EditID="AllFonts" />
+      </FontYAxisTitle>
+    </NewElement>
+  </UpdateOrAppendChildElement>
+  <UpdateOrAppendChildElement XPath=".//Chart[@Type='Gantt']">
+    <NewElement>
+      <FontLabel FontFilename="Helvetica" FontColor="#3B4247" FontSize="11">
+        <ThemeEditor EditID="AllFonts" />
+      </FontLabel>
+    </NewElement>
+  </UpdateOrAppendChildElement>
+  <UpdateOrAppendChildElement XPath=".//Chart[@Type='Gantt']">
+    <NewElement>
+      <FontXAxisTitle FontFilename="Helvetica" FontColor="#3B4247" FontSize="11">
+        <ThemeEditor EditID="AllFonts" />
+      </FontXAxisTitle>
+    </NewElement>
+  </UpdateOrAppendChildElement>
+  <CycleAttributeValues XPath=".//Chart[@Type='Gantt']" CycleOnChildElement="ExtraGanttColumn">
+    <ThemeEditor EditID="ChartColorCycleValues" />
+    <CycleValue Color="#FF9900" />
+    <CycleValue Color="#28B8D5" />
+    <CycleValue Color="#36DB65" />
+    <CycleValue Color="#D45CE2" />
+    <CycleValue Color="#FF4D4D" />
+    <CycleValue Color="#FFEA00" />
+    <CycleValue Color="#F25C08" />
+    <CycleValue Color="#7F28D5" />
+  </CycleAttributeValues>
+  <CycleAttributeValues XPath=".//Chart[@Type='Gantt']" CycleOnChildElement="ChartMarks">
+    <ThemeEditor EditID="ChartColorCycleValues" />
+    <CycleValue Color="#FF9900" />
+    <CycleValue Color="#28B8D5" />
+    <CycleValue Color="#36DB65" />
+    <CycleValue Color="#D45CE2" />
+    <CycleValue Color="#FF4D4D" />
+    <CycleValue Color="#FFEA00" />
+    <CycleValue Color="#F25C08" />
+    <CycleValue Color="#7F28D5" />
+  </CycleAttributeValues>
+  <CycleAttributeValues XPath=".//Chart[@Type='Gantt']" CycleOnChildElement="MilestoneColumn">
+    <ThemeEditor EditID="ChartColorCycleValues" />
+    <CycleValue ChartSymbolFillColor="#FF9900" ChartSymbolEdgeColor="#FF9900" />
+    <CycleValue ChartSymbolFillColor="#28B8D5" ChartSymbolEdgeColor="#28B8D5" />
+    <CycleValue ChartSymbolFillColor="#36DB65" ChartSymbolEdgeColor="#36DB65" />
+    <CycleValue ChartSymbolFillColor="#D45CE2" ChartSymbolEdgeColor="#D45CE2" />
+    <CycleValue ChartSymbolFillColor="#FF4D4D" ChartSymbolEdgeColor="#FF4D4D" />
+    <CycleValue ChartSymbolFillColor="#FFEA00" ChartSymbolEdgeColor="#FFEA00" />
+    <CycleValue ChartSymbolFillColor="#F25C08" ChartSymbolEdgeColor="#F25C08" />
+    <CycleValue ChartSymbolFillColor="#7F28D5" ChartSymbolEdgeColor="#7F28D5" />
+  </CycleAttributeValues>
+  <!-- AnimatedPie -->
+  <SetAttributeWhenEmpty XPath=".//AnimatedChart[@Type='Pie']" BackgroundColor="#242424" WedgeBorderColor="#000000" WedgeBorderThickness="1" D3Effects="False" Colors="#FF9900, #28B8D5, #36DB65, #D45CE2, #FF4D4D, #FFEA00, #F25C08, #7F28D5">
+    <ThemeEditor EditID="ChartColorCSV" />
+    <ThemeEditor EditID="ChartBackgroundColor" />
+  </SetAttributeWhenEmpty>
+  <UpdateOrAppendChildElement XPath=".//AnimatedChart[@Type='Pie']">
+    <NewElement>
+      <FontLabel FontFilename="Helvetica" FontColor="#FFFFFF" FontSize="15" Bold="0">
+        <ThemeEditor EditID="AllFonts" />
+        <ThemeEditor EditID="ChartCaptionColor" />
+      </FontLabel>
+    </NewElement>
+  </UpdateOrAppendChildElement>
+  <UpdateOrAppendChildElement XPath=".//AnimatedChart[@Type='Pie']">
+    <NewElement>
+      <FontLegend FontFilename="Helvetica" FontColor="#FFFFFF" FontSize="15" Bold="0">
+        <ThemeEditor EditID="AllFonts" />
+        <ThemeEditor EditID="ChartCaptionColor" />
+      </FontLegend>
+    </NewElement>
+  </UpdateOrAppendChildElement>
+  <UpdateOrAppendChildElement XPath=".//AnimatedChart[@Type='Pie']">
+    <NewElement>
+      <FontData FontFilename="Helvetica" FontColor="#FFFFFF" FontSize="15" Bold="0">
+        <ThemeEditor EditID="AllFonts" />
+        <ThemeEditor EditID="ChartCaptionColor" />
+      </FontData>
+    </NewElement>
+  </UpdateOrAppendChildElement>
+  <UpdateOrAppendChildElement XPath=".//AnimatedChart[@Type='Pie']">
+    <NewElement>
+      <FontChartTitle FontFilename="Helvetica" FontColor="#FFFFFF" FontSize="24" Bold="0">
+        <ThemeEditor EditID="AllFonts" />
+        <ThemeEditor EditID="ChartCaptionColor" />
+      </FontChartTitle>
+    </NewElement>
+  </UpdateOrAppendChildElement>
+  <UpdateOrAppendChildElement XPath=".//AnimatedChart[@Type='Pie']">
+    <NewElement>
+      <FontTooltip FontFilename="Helvetica" FontColor="#FFFFFF" FontSize="15" Bold="0">
+        <ThemeEditor EditID="AllFonts" />
+        <ThemeEditor EditID="ChartCaptionColor" />
+      </FontTooltip>
+    </NewElement>
+  </UpdateOrAppendChildElement>
+  <!-- AnimatedXY -->
+  <SetAttributeWhenEmpty XPath=".//AnimatedChart[@Type='XY' and @XYChartType='Line']" LineWidth="3.5" />
+  <SetAttributeWhenEmpty XPath=".//AnimatedChart[@Type='XY']" BackgroundColor="#242424" BarStyle="Flat" Color="#e88622" AreaGradientColor="#e88622" D3="False" DivLineColor="#cccccc" DivLineThickness="2" ShowBorder="1" CanvasBgColor="#242424" AlternatingBackgroundColor="False" AnchorAlpha="0">
+    <ThemeEditor EditID="ChartBackgroundColor" />
+  </SetAttributeWhenEmpty>
+  <SetAttributeWhenEmpty XPath=".//AnimatedChart[@XYChartType='Area' and not(ExtraXYDataColumn)]" Transparency="3" PlotFillAlpha="0" PlotBorderColor="#72C8C1" />
+  <!-- Hide canvas base and gradient for 3d xy charts-->
+  <SetAttributeWhenEmpty XPath=".//AnimatedChart[@Type='XY' and @D3='True' and @XYChartType='Bar']" SlimCanvasBase="True" D3Effects="False" />
+  <UpdateOrAppendChildElement XPath=".//AnimatedChart[@Type='XY']">
+    <NewElement>
+      <FontLabel FontFilename="Helvetica" FontColor="#ffffff" FontSize="11" Bold="0">
+        <ThemeEditor EditID="AllFonts" />
+      </FontLabel>
+    </NewElement>
+  </UpdateOrAppendChildElement>
+  <UpdateOrAppendChildElement XPath=".//AnimatedChart[@Type='XY']">
+    <NewElement>
+      <FontLegend FontFilename="Helvetica" FontColor="#FFFFFF" FontSize="15" Bold="0">
+        <ThemeEditor EditID="AllFonts" />
+        <ThemeEditor EditID="ChartCaptionColor" />
+      </FontLegend>
+    </NewElement>
+  </UpdateOrAppendChildElement>
+  <UpdateOrAppendChildElement XPath=".//AnimatedChart[@Type='XY']">
+    <NewElement>
+      <FontData FontFilename="Helvetica" FontColor="#FFFFFF" FontSize="11" Bold="0">
+        <ThemeEditor EditID="AllFonts" />
+        <ThemeEditor EditID="ChartCaptionColor" />
+      </FontData>
+    </NewElement>
+  </UpdateOrAppendChildElement>
+  <UpdateOrAppendChildElement XPath=".//AnimatedChart[@Type='XY']">
+    <NewElement>
+      <FontChartTitle FontFilename="Helvetica" FontColor="#FFFFFF" FontSize="24" Bold="0">
+        <ThemeEditor EditID="AllFonts" />
+        <ThemeEditor EditID="ChartCaptionColor" />
+      </FontChartTitle>
+    </NewElement>
+  </UpdateOrAppendChildElement>
+  <UpdateOrAppendChildElement XPath=".//AnimatedChart[@Type='XY']">
+    <NewElement>
+      <FontTooltip FontFilename="Helvetica" FontColor="#FFFFFF" FontSize="15" Bold="0">
+        <ThemeEditor EditID="AllFonts" />
+        <ThemeEditor EditID="ChartCaptionColor" />
+      </FontTooltip>
+    </NewElement>
+  </UpdateOrAppendChildElement>
+  <CycleAttributeValues XPath=".//AnimatedChart[@Type='XY' and @D3='False']" CycleOnChildElement="ExtraXYDataColumn">
+    <ThemeEditor EditID="ChartColorCycleValues" />
+    <CycleValue Color="#FF9900" LineWidth="3.5" />
+    <CycleValue Color="#28B8D5" LineWidth="3.5" />
+    <CycleValue Color="#36DB65" LineWidth="3.5" />
+    <CycleValue Color="#D45CE2" LineWidth="3.5" />
+    <CycleValue Color="#FF4D4D" LineWidth="3.5" />
+    <CycleValue Color="#FFEA00" LineWidth="3.5" />
+    <CycleValue Color="#F25C08" LineWidth="3.5" />
+    <CycleValue Color="#7F28D5" LineWidth="3.5" />
+  </CycleAttributeValues>
+  <CycleAttributeValues XPath=".//AnimatedChart[@Type='XY']" CycleOnChildElement="ExtraXYDataColumn">
+    <ThemeEditor EditID="ChartColorCycleValues" />
+    <CycleValue Color="#FF9900" Transparency="3" />
+    <CycleValue Color="#28B8D5" Transparency="3" />
+    <CycleValue Color="#36DB65" Transparency="3" />
+    <CycleValue Color="#D45CE2" Transparency="3" />
+    <CycleValue Color="#FF4D4D" Transparency="3" />
+    <CycleValue Color="#FFEA00" Transparency="3" />
+    <CycleValue Color="#F25C08" Transparency="3" />
+    <CycleValue Color="#7F28D5" Transparency="3" />
+  </CycleAttributeValues>
+  <!-- AnimatedScatter -->
+  <SetAttributeWhenEmpty XPath=".//AnimatedChart[@Type='Scatter']" BackgroundColor="#0f0f0f" ChartBackgroundColor="#0f0f0f" ChartSymbolSize="4" Transparency="3" ChartSymbolSides="10" AlternatingBackgroundColor="False" BorderColor="#ffffff" CanvasBorderThickness="1" ChartSymbolEdgeColor="#e88622" ChartSymbolFillColor="#e88622">
+    <ThemeElement AttributeName="ChartBackgroundColor" />
+  </SetAttributeWhenEmpty>
+  <UpdateOrAppendChildElement XPath=".//AnimatedChart[@Type='Scatter']">
+    <NewElement>
+      <FontLabel FontFilename="Helvetica" FontColor="#FFFFFF" FontSize="15" Bold="0">
+        <ThemeEditor EditID="AllFonts" />
+        <ThemeEditor EditID="ChartCaptionColor" />
+      </FontLabel>
+    </NewElement>
+  </UpdateOrAppendChildElement>
+  <UpdateOrAppendChildElement XPath=".//AnimatedChart[@Type='Scatter']">
+    <NewElement>
+      <FontLegend FontFilename="Helvetica" FontColor="#FFFFFF" FontSize="15" Bold="0">
+        <ThemeEditor EditID="AllFonts" />
+        <ThemeEditor EditID="ChartCaptionColor" />
+      </FontLegend>
+    </NewElement>
+  </UpdateOrAppendChildElement>
+  <UpdateOrAppendChildElement XPath=".//AnimatedChart[@Type='Scatter']">
+    <NewElement>
+      <FontData FontFilename="Helvetica" FontColor="#FFFFFF" FontSize="15" Bold="0">
+        <ThemeEditor EditID="AllFonts" />
+        <ThemeEditor EditID="ChartCaptionColor" />
+      </FontData>
+    </NewElement>
+  </UpdateOrAppendChildElement>
+  <UpdateOrAppendChildElement XPath=".//AnimatedChart[@Type='Scatter']">
+    <NewElement>
+      <FontChartTitle FontFilename="Helvetica" FontColor="#FFFFFF" FontSize="24" Bold="0">
+        <ThemeEditor EditID="AllFonts" />
+        <ThemeEditor EditID="ChartCaptionColor" />
+      </FontChartTitle>
+    </NewElement>
+  </UpdateOrAppendChildElement>
+  <UpdateOrAppendChildElement XPath=".//AnimatedChart[@Type='Scatter']">
+    <NewElement>
+      <FontTooltip FontFilename="Helvetica" FontColor="#FFFFFF" FontSize="15" Bold="0">
+        <ThemeEditor EditID="AllFonts" />
+        <ThemeEditor EditID="ChartCaptionColor" />
+      </FontTooltip>
+    </NewElement>
+  </UpdateOrAppendChildElement>
+  <CycleAttributeValues XPath=".//AnimatedChart[@Type='Scatter']" CycleOnChildElement="AnimatedExtraScatterLayer">
+    <ThemeEditor EditID="ChartColorCycleValues" />
+    <CycleValue ChartSymbolSize="4" Transparency="3" ChartSymbolSides="10" ChartSymbolEdgeColor="#FF9900" ChartSymbolFillColor="#FF9900" />
+    <CycleValue ChartSymbolSize="4" Transparency="3" ChartSymbolSides="10" ChartSymbolEdgeColor="#28B8D5" ChartSymbolFillColor="#28B8D5" />
+    <CycleValue ChartSymbolSize="4" Transparency="3" ChartSymbolSides="10" ChartSymbolEdgeColor="#36DB65" ChartSymbolFillColor="#36DB65" />
+    <CycleValue ChartSymbolSize="4" Transparency="3" ChartSymbolSides="10" ChartSymbolEdgeColor="#D45CE2" ChartSymbolFillColor="#D45CE2" />
+    <CycleValue ChartSymbolSize="4" Transparency="3" ChartSymbolSides="10" ChartSymbolEdgeColor="#FF4D4D" ChartSymbolFillColor="#FF4D4D" />
+    <CycleValue ChartSymbolSize="4" Transparency="3" ChartSymbolSides="10" ChartSymbolEdgeColor="#FFEA00" ChartSymbolFillColor="#FFEA00" />
+    <CycleValue ChartSymbolSize="4" Transparency="3" ChartSymbolSides="10" ChartSymbolEdgeColor="#F25C08" ChartSymbolFillColor="#F25C08" />
+    <CycleValue ChartSymbolSize="4" Transparency="3" ChartSymbolSides="10" ChartSymbolEdgeColor="#7F28D5" ChartSymbolFillColor="#7F28D5" />
+  </CycleAttributeValues>
+  <!-- ChartCanvas -->
+  <SetAttributeWhenEmpty XPath=".//ChartCanvas" PlotBackgroundColor="#242424" BackgroundColor="#242424" BorderColor="#FFFFFF" BorderRadius="0" BorderColorTransparency="15">
+    <ThemeEditor EditID="ChartBackgroundColor" />
+  </SetAttributeWhenEmpty>
+  <SetAttributeWhenEmpty XPath=".//ChartCanvas/ChartXAxis/ChartTicksAndGrid" GridLineColor="#cccccc" GridLineThickness="3" />
+  <!-- ZoomControl -->
+  <SetAttributeWhenEmpty XPath=".//ZoomControl" SelectionAreaColorTransparency="7" SelectionAreaColor="#C6E6E2" />
+  <!-- ChartCanvas series -->
+  <SetAttributeWhenEmpty XPath=".//ChartCanvas[.//DataLayer/CrosstabFilter or .//DataLayer/SqlCrosstab]/Series" Color="#FF9900, #28B8D5, #36DB65, #D45CE2, #FF4D4D, #FFEA00, #F25C08, #7F28D5">
+    <ThemeEditor EditID="ChartColorCSV" />
+  </SetAttributeWhenEmpty>
+  <SetAttributeWhenEmpty XPath=".//ChartCanvas/Series[@Type='Scatter' and string(@rdCompareColumn)]" Color="#FF9900, #28B8D5, #36DB65, #D45CE2, #FF4D4D, #FFEA00, #F25C08, #7F28D5">
+    <ThemeEditor EditID="ChartColorCSV" />
+  </SetAttributeWhenEmpty>
+  <SetAttributeWhenEmpty XPath=".//ChartCanvas/Series" ChartSymbolEdgeColor="Transparent" Transparency="3" />
+  <SetAttributeWhenEmpty XPath=".//ChartCanvas/Series[@BarStacking='Overlay']" Transparency="6" />
+  <CycleAttributeValues XPath=".//ChartCanvas" CycleOnChildElement="Series">
+    <ThemeEditor EditID="ChartColorCycleValues" />
+    <CycleValue Color="#FF9900" />
+    <CycleValue Color="#28B8D5" />
+    <CycleValue Color="#36DB65" />
+    <CycleValue Color="#D45CE2" />
+    <CycleValue Color="#FF4D4D" />
+    <CycleValue Color="#FFEA00" />
+    <CycleValue Color="#F25C08" />
+    <CycleValue Color="#7F28D5" />
+  </CycleAttributeValues>
+  <!-- Legend -->
+  <UpdateOrAppendChildElement XPath=".//ChartCanvas[DataLayer/CrosstabFilter] | .//ChartCanvas[DataLayer/SqlCrosstab] | .//ChartCanvas[Series/DataLayer/CrosstabFilter] | .//ChartCanvas[Series/DataLayer/SqlCrosstab] | .//ChartCanvas[Series[@LegendLabel]] | .//ChartCanvas[count(Series)&gt;1] | .//ChartCanvas[Series[@Type='Scatter' and string(@rdCompareColumn)]]">
+    <NewElement>
+      <ChartCanvasLegend />
+    </NewElement>
+  </UpdateOrAppendChildElement>
+  <SetAttributeWhenEmpty XPath=".//ChartCanvasLegend" BorderColor="Transparent" />
+  <UpdateOrAppendChildElement XPath=".//ChartCanvasLegend[@LegendCaption]">
+    <NewElement>
+      <LegendCaptionStyle />
+    </NewElement>
+  </UpdateOrAppendChildElement>
+  <SetAttributeWhenEmpty XPath=".//ChartCanvasLegend[@LegendCaption]/LegendCaptionStyle" FontFamily="Helvetica" FontWeight="Normal" FontColor="#FFFFFF" FontSize="18">
+    <ThemeEditor EditID="AllFonts" />
+    <ThemeEditor EditID="ChartCaptionColor" />
+  </SetAttributeWhenEmpty>
+  <UpdateOrAppendChildElement XPath=".//ChartCanvasLegend">
+    <NewElement>
+      <LegendLabelStyle />
+    </NewElement>
+  </UpdateOrAppendChildElement>
+  <SetAttributeWhenEmpty XPath=".//ChartCanvasLegend/LegendLabelStyle" FontFamily="Helvetica" FontColor="#FFFFFF" FontSize="14">
+    <ThemeEditor EditID="AllFonts" />
+    <ThemeEditor EditID="ChartCaptionColor" />
+  </SetAttributeWhenEmpty>
+  <UpdateOrAppendChildElement XPath=".//ChartCanvasLegend">
+    <NewElement>
+      <LegendNavigationStyle />
+    </NewElement>
+  </UpdateOrAppendChildElement>
+  <SetAttributeWhenEmpty XPath=".//ChartCanvasLegend/LegendNavigationStyle" FontFamily="Helvetica" FontColor="#FFFFFF" FontSize="14">
+    <ThemeEditor EditID="AllFonts" />
+    <ThemeEditor EditID="ChartCaptionColor" />
+  </SetAttributeWhenEmpty>
+  <!-- ChartCanvas Fonts -->
+  <!-- chart title -->
+  <UpdateOrAppendChildElement XPath=".//ChartCanvas[@ChartCaption]">
+    <NewElement>
+      <ChartCaptionStyle />
+    </NewElement>
+  </UpdateOrAppendChildElement>
+  <SetAttributeWhenEmpty XPath=".//ChartCanvas/ChartCaptionStyle" FontFamily="Helvetica" FontWeight="Normal" FontColor="#FFFFFF" FontSize="24" AlignmentHorizontal="Center">
+    <ThemeEditor EditID="AllFonts" />
+    <ThemeEditor EditID="ChartCaptionColor" />
+  </SetAttributeWhenEmpty>
+  <!-- chart subtitle -->
+  <UpdateOrAppendChildElement XPath=".//ChartCanvas[@ChartSubCaption]">
+    <NewElement>
+      <ChartSubCaptionStyle />
+    </NewElement>
+  </UpdateOrAppendChildElement>
+  <SetAttributeWhenEmpty XPath=".//ChartCanvas/ChartSubCaptionStyle" FontFamily="Helvetica" FontWeight="Normal" FontColor="#FFFFFF" FontSize="18" AlignmentHorizontal="Center">
+    <ThemeEditor EditID="AllFonts" />
+    <ThemeEditor EditID="ChartCaptionColor" />
+  </SetAttributeWhenEmpty>
+  <!-- x- or y-axis title -->
+  <UpdateOrAppendChildElement XPath=".//ChartCanvas/ChartXAxis[@AxisCaption]">
+    <NewElement>
+      <AxisCaptionStyle />
+    </NewElement>
+  </UpdateOrAppendChildElement>
+  <UpdateOrAppendChildElement XPath=".//ChartCanvas/ChartYAxis[@AxisCaption]">
+    <NewElement>
+      <AxisCaptionStyle />
+    </NewElement>
+  </UpdateOrAppendChildElement>
+  <SetAttributeWhenEmpty XPath=".//AxisCaptionStyle" FontFamily="Helvetica" FontWeight="Normal" FontColor="#FFFFFF" FontSize="14">
+    <ThemeEditor EditID="AllFonts" />
+    <ThemeEditor EditID="ChartCaptionColor" />
+  </SetAttributeWhenEmpty>
+  <!-- x- and y-axis must exist to theme -->
+  <UpdateOrAppendChildElement XPath=".//ChartCanvas">
+    <NewElement>
+      <ChartXAxis />
+    </NewElement>
+  </UpdateOrAppendChildElement>
+  <UpdateOrAppendChildElement XPath=".//ChartCanvas">
+    <NewElement>
+      <ChartYAxis />
+    </NewElement>
+  </UpdateOrAppendChildElement>
+  <!-- x- or y-axis label -->
+  <UpdateOrAppendChildElement XPath=".//ChartCanvas/ChartXAxis">
+    <NewElement>
+      <AxisLabelStyle />
+    </NewElement>
+  </UpdateOrAppendChildElement>
+  <UpdateOrAppendChildElement XPath=".//ChartCanvas/ChartYAxis">
+    <NewElement>
+      <AxisLabelStyle />
+    </NewElement>
+  </UpdateOrAppendChildElement>
+  <SetAttributeWhenEmpty XPath=".//AxisLabelStyle" FontFamily="Helvetica" FontWeight="Normal" FontColor="#FFFFFF" FontSize="14">
+    <ThemeEditor EditID="AllFonts" />
+    <ThemeEditor EditID="ChartCaptionColor" />
+  </SetAttributeWhenEmpty>
+  <!-- data labels -->
+  <SetAttributeWhenEmpty XPath=".//ChartCanvas/Series/DataLabels" FontFamily="Helvetica" FontWeight="Normal" FontColor="#FFFFFF" FontSize="14">
+    <ThemeEditor EditID="AllFonts" />
+    <ThemeEditor EditID="ChartCaptionColor" />
+  </SetAttributeWhenEmpty>
+  <!-- DrillTo back button style -->
+  <UpdateOrAppendChildElement XPath=".//ChartCanvas/Series/ChartDrillTo">
+    <NewElement>
+      <DrillBackButtonStyle />
+    </NewElement>
+  </UpdateOrAppendChildElement>
+  <SetAttributeWhenEmpty XPath=".//ChartCanvas/Series/ChartDrillTo/DrillBackButtonStyle" FontFamily="Helvetica" FontWeight="Normal" FontColor="#FFFFFF" FontSize="14" BackgroundColor="#242424">
+  </SetAttributeWhenEmpty>
+    <!-- Chart Export button style -->
+  <UpdateOrAppendChildElement XPath=".//ChartCanvas/ChartExport">
+    <NewElement>
+      <ChartExportButtonStyle />
+    </NewElement>
+  </UpdateOrAppendChildElement>
+  <SetAttributeWhenEmpty XPath=".//ChartCanvas/ChartExport/ChartExportButtonStyle" FontFamily="Helvetica" FontWeight="Normal" FontColor="#FFFFFF" FontSize="14" BackgroundColor="#242424">
+  </SetAttributeWhenEmpty>
+  <!-- chart marks -->
+  <CycleAttributeValues XPath=".//ChartCanvas/ChartXAxis | .//ChartCanvas/ChartYAxis" CycleOnChildElement="MarkerBand">
+    <ThemeEditor EditID="ChartColorCycleValues" />
+    <CycleValue Color="#FF9900" />
+    <CycleValue Color="#28B8D5" />
+    <CycleValue Color="#36DB65" />
+    <CycleValue Color="#D45CE2" />
+    <CycleValue Color="#FF4D4D" />
+    <CycleValue Color="#FFEA00" />
+    <CycleValue Color="#F25C08" />
+    <CycleValue Color="#7F28D5" />
+  </CycleAttributeValues>
+  <CycleAttributeValues XPath=".//ChartCanvas/ChartXAxis | .//ChartCanvas/ChartYAxis" CycleOnChildElement="MarkerLine">
+    <ThemeEditor EditID="ChartColorCycleValues" />
+    <CycleValue Color="#FF9900" />
+    <CycleValue Color="#28B8D5" />
+    <CycleValue Color="#36DB65" />
+    <CycleValue Color="#D45CE2" />
+    <CycleValue Color="#FF4D4D" />
+    <CycleValue Color="#FFEA00" />
+    <CycleValue Color="#F25C08" />
+    <CycleValue Color="#7F28D5" />
+  </CycleAttributeValues>
+  <!-- ChartCanvas: XY (Area, Bar, Line, Spline, Whiskers) -->
+  <SetAttributeWhenEmpty XPath=".//ChartCanvas[(Series[@Type='Area'][1]) and (Series[2] or DataLayer/CrosstabFilter)]" ChartSymbolEdgeColor="#ffffff" />
+  <SetAttributeWhenEmpty XPath=".//ChartCanvas[(Series[@Type='Area']) and not(Series[2]) and not(DataLayer/CrosstabFilter)]" ChartSymbolEdgeColor="#ffffff" />
+  <SetAttributeWhenEmpty XPath=".//ChartCanvas/Series[@Type='Bar' and not(@BarBorderColor)]" BarBorderThickness="0" />
+  <SetAttributeWhenEmpty XPath=".//ChartCanvas/Series[@Type='Line']" LineWidth="3" />
+  <SetAttributeWhenEmpty XPath=".//ChartCanvas/Series[@Type='Whiskers']" Transparency="" StemColorTransparency="" WhiskerColorTransparency="" WhiskerLineThickness="2" WhiskerColor="#7FB15E" StemLineThickness="2" StemColor="#7FB15E" />
+  <!-- ChartCanvas: PieChart, PyramidChart, FunnelChart -->
+  <SetAttribute XPath=".//ChartCanvas/Series[@Type='Pie' or @Type='Pyramid' or @Type='Funnel']" Color="" />
+  <SetAttributeWhenEmpty XPath=".//ChartCanvas/Series[@Type='Pie' or @Type='Pyramid' or @Type='Funnel']" Colors="#FF9900, #28B8D5, #36DB65, #D45CE2, #FF4D4D, #FFEA00, #F25C08, #7F28D5" PieBorderColor="Transparent" PieBorderColorTransparency="0" PieBorderThickness="0">
+    <ThemeEditor EditID="ChartColorCSV" />
+  </SetAttributeWhenEmpty>
+  <UpdateOrAppendChildElement XPath=".//ChartCanvas/Series[@Type='Pie' or @Type='Pyramid' or @Type='Funnel']">
+    <NewElement>
+      <DataLabels />
+    </NewElement>
+  </UpdateOrAppendChildElement>
+  <SetAttributeWhenEmpty XPath=".//ChartCanvas/Series[@Type='Pie' or @Type='Pyramid' or @Type='Funnel']/DataLabels" FontFamily="Helvetica" FontWeight="Normal" FontColor="#FFFFFF" FontSize="14">
+    <ThemeEditor EditID="AllFonts" />
+    <ThemeEditor EditID="ChartCaptionColor" />
+  </SetAttributeWhenEmpty>
+  <UpdateOrAppendChildElement XPath=".//ChartCanvas/Series[@Type='Pie' or @Type='Pyramid' or @Type='Funnel']">
+    <NewElement>
+      <SideLabelStyle />
+    </NewElement>
+  </UpdateOrAppendChildElement>
+  <SetAttributeWhenEmpty XPath=".//ChartCanvas/Series[@Type='Pie' or @Type='Pyramid' or @Type='Funnel']/SideLabelStyle" FontFamily="Helvetica" FontWeight="Normal" FontColor="#FFFFFF" FontSize="14">
+    <ThemeEditor EditID="AllFonts" />
+    <ThemeEditor EditID="ChartCaptionColor" />
+  </SetAttributeWhenEmpty>
+  <!-- ChartCanvas: Scatter/Bubble -->
+  <SetAttributeWhenEmpty XPath=".//ChartCanvas/Series[@Type='Scatter' or @Type='Bubble']" Transparency="3" />
+  <SetAttributeWhenEmpty XPath=".//ChartCanvas/Series[@Type='Scatter' or @Type='Bubble']/MarkerPoints" MarkerPointFillColorTransparency="3" />
+  <CycleAttributeValues XPath=".//ChartCanvas" CycleOnChildElement="Series[@Type='Scatter' or @Type='Bubble']/MarkerPoints">
+    <ThemeEditor EditID="ChartColorCycleValues" />
+    <CycleValue MarkerPointFillColor="#FF9900" MarkerPointBorderColor="#FF9900" />
+    <CycleValue MarkerPointFillColor="#28B8D5" MarkerPointBorderColor="#28B8D5" />
+    <CycleValue MarkerPointFillColor="#36DB65" MarkerPointBorderColor="#36DB65" />
+    <CycleValue MarkerPointFillColor="#D45CE2" MarkerPointBorderColor="#D45CE2" />
+    <CycleValue MarkerPointFillColor="#FF4D4D" MarkerPointBorderColor="#FF4D4D" />
+    <CycleValue MarkerPointFillColor="#FFEA00" MarkerPointBorderColor="#FFEA00" />
+    <CycleValue MarkerPointFillColor="#F25C08" MarkerPointBorderColor="#F25C08" />
+    <CycleValue MarkerPointFillColor="#7F28D5" MarkerPointBorderColor="#7F28D5" />
+  </CycleAttributeValues>
+  <!-- ChartCanvas: Heatmap -->
+  <SetAttributeWhenEmpty XPath=".//ChartCanvas/Series[@Type='Heatmap']" BackgroundColor="#F32406" OuterBorderColor="Transparent" CellBorder="2" CellBorderColor="#FFFFFF" MediumValueColor="#FFEA00" LowValueColor="#FF4D4D" HighValueColor="#36DB65">
+    <ThemeEditor EditID="HeatmapColorLow" />
+    <ThemeEditor EditID="HeatmapColorMedium" />
+    <ThemeEditor EditID="HeatmapColorHigh" />
+    <ThemeEditor EditID="HeatmapBorderColor" />
+  </SetAttributeWhenEmpty>
+  <!-- Gauges -->
+  <SetAttributeWhenEmpty XPath=".//Gauge" PlotBackgroundColor="#242424" BackgroundColor="#242424" BorderColor="#FFFFFF" BorderRadius="0" BorderColorTransparency="15">
+    <ThemeEditor EditID="ChartBackgroundColor" />
+  </SetAttributeWhenEmpty>
+  <!-- Solid Gauge -->
+  <SetAttributeWhenEmpty XPath=".//Gauge[@Type='Arc']" ArcBackgroundColor="#3F3F3F" CaptionColor="#FFFFFF" ArcColor="#FF9900" ArcBorderThickness="1" ArcBorderColor="#D9D9D9">
+    <ThemeEditor EditID="ArcBackgroundColor" />
+    <ThemeEditor EditID="ChartCaptionColor" />
+    <ThemeEditor EditID="ArcBorderColor" />
+    <ThemeEditor EditID="ArcColor" />
+  </SetAttributeWhenEmpty>
+  <SetAttributeWhenEmpty XPath=".//Gauge[@Type='Arc']/GaugeRange" Color="#86CAC3">
+    <ThemeEditor EditID="ArcGaugeRangeColor" />
+  </SetAttributeWhenEmpty>
+  <!-- BallonBar -->
+  <SetAttributeWhenEmpty XPath=".//Gauge[@Type='BalloonBar']" BarBackgroundColor="#FF9900" BalloonLabelFontName="Helvetica" CaptionColor="#FFFFFF" BalloonLabelColor="#FFFFFF" BalloonColor="#3B4247" BarBorderColor="Transparent" BalloonBorderColor="#FFFFFF">
+    <ThemeEditor EditID="AllFonts" />
+    <ThemeEditor EditID="BalloonBackgroundColor" />
+    <ThemeEditor EditID="ChartCaptionColor" />
+    <ThemeEditor EditID="BalloonLabelColor" />
+    <ThemeEditor EditID="BalloonColor" />
+    <ThemeEditor EditID="BalloonBorderColor" />
+  </SetAttributeWhenEmpty>
+  <CycleAttributeValues XPath=".//Gauge[@Type='BalloonBar']" CycleOnChildElement="GaugeRange">
+    <ThemeEditor EditID="ChartColorCycleValues" />
+    <CycleValue Color="#FF9900" />
+    <CycleValue Color="#28B8D5" />
+    <CycleValue Color="#36DB65" />
+    <CycleValue Color="#D45CE2" />
+    <CycleValue Color="#FF4D4D" />
+    <CycleValue Color="#FFEA00" />
+    <CycleValue Color="#F25C08" />
+    <CycleValue Color="#7F28D5" />
+  </CycleAttributeValues>
+  <!-- BulletBar -->
+  <SetAttributeWhenEmpty XPath=".//Gauge[@Type='BulletBar']" BarBackgroundColor="#3F3F3F" BackgroundColor="Transparent" BulletColor="#FF9900" BarBorderColor="Transparent" CaptionColor="#FFFFFF" MarkerBorderColor="#3B4247" MarkerColor="#3B4247" PlotBackgroundColor="Transparent">
+    <ThemeEditor EditID="BulletBackgroundColor" />
+    <ThemeEditor EditID="ChartCaptionColor" />
+    <ThemeEditor EditID="BulletColor" />
+    <ThemeEditor EditID="BulletMarkerColor" />
+    <ThemeEditor EditID="BulletMarkerBorderColor" />
+  </SetAttributeWhenEmpty>
+  <CycleAttributeValues XPath=".//Gauge[@Type='BulletBar']" CycleOnChildElement="GaugeRange">
+    <ThemeEditor EditID="ChartColorCycleValues" />
+    <CycleValue Color="#FF9900" />
+    <CycleValue Color="#28B8D5" />
+    <CycleValue Color="#36DB65" />
+    <CycleValue Color="#D45CE2" />
+    <CycleValue Color="#FF4D4D" />
+    <CycleValue Color="#FFEA00" />
+    <CycleValue Color="#F25C08" />
+    <CycleValue Color="#7F28D5" />
+  </CycleAttributeValues>
+  <!-- NeedleGauge -->
+  <SetAttributeWhenEmpty XPath=".//Gauge[@Type='Needle']" TickLabelFontName="Helvetica" D3Effects="False" BorderColor="Transparent" BackgroundColor="#242424" NeedleColor="#1994b6" TickColor="#FFFFFF" TickThickness="3" NeedleThickness="4">
+    <ThemeEditor EditID="AllFonts" />
+    <ThemeEditor EditID="ChartCaptionColor" />
+    <ThemeEditor EditID="ChartBackgroundColor" />
+  </SetAttributeWhenEmpty>
+  <SetAttributeWhenEmpty XPath=".//GaugeRing" Color="#cccccc" RingThickness="3" />
+  <SetAttributeWhenEmpty XPath=".//GaugeLabel" FontName="Helvetica" FontColor="#FFFFFF" FontSize="11">
+    <ThemeEditor EditID="AllFonts" />
+    <ThemeEditor EditID="ChartCaptionColor" />
+  </SetAttributeWhenEmpty>
+  <CycleAttributeValues XPath=".//Gauge[@Type='Needle']" CycleOnChildElement="ExtraNeedle">
+    <CycleValue NeedleThickness="4" NeedleColor="#7FB15E" />
+    <CycleValue NeedleThickness="4" NeedleColor="#E2CE5D" />
+    <CycleValue NeedleThickness="4" NeedleColor="#47515A" />
+    <CycleValue NeedleThickness="4" NeedleColor="#01273C" />
+    <CycleValue NeedleThickness="4" NeedleColor="#3B4247" />
+  </CycleAttributeValues>
+  <!-- BarGauge -->
+  <SetAttributeWhenEmpty XPath=".//Gauge[@Type='Bar']" FontName="Helvetica" LabelColor="#FFFFFF" D3Effects="False" BackgroundColor="#242424" BarBackgroundColor="#E2CE5D" BarColor="#1994b6">
+    <ThemeEditor EditID="AllFonts" />
+    <ThemeEditor EditID="ChartCaptionColor" />
+    <ThemeEditor EditID="ChartBackgroundColor" />
+  </SetAttributeWhenEmpty>
+  <!-- IndicatorGauge -->
+  <SetAttributeWhenEmpty XPath=".//Gauge[@Type='Indicator']" BackgroundColor="#242424">
+    <ThemeEditor EditID="ChartBackgroundColor" />
+  </SetAttributeWhenEmpty>
+  <SetAttributeWhenEmpty XPath=".//IndicatorState" BorderColor="#FFFFFF" Color="#34bce7" />
+  <SetAttributeWhenEmpty XPath=".//Gauge" FontName="Helvetica" BackgroundColor="#242424" FontSize="24" FontBold="False" AlignmentHorizontal="Center" TickColor="#FFFFFF" TickLabelFontName="Helvetica" TickLabelFontBold="False" TickLabelFontSize="18" TickLabelColor="#FFFFFF" LabelFontName="Helvetica" LabelFontSize="24" LabelFontBold="False" LabelColor="#FFFFFF" LabelFontFamily="Helvetica" BorderColorTransparency="15">
+    <ThemeEditor EditID="AllFonts" />
+    <ThemeEditor EditID="ChartCaptionColor" />
+    <ThemeEditor EditID="ChartBackgroundColor" />
+  </SetAttributeWhenEmpty>
+  <!-- Gauge Angular -->
+  <SetAttributeWhenEmpty XPath=".//Gauge[@Type='Angular']" DialBackgroundColor="#3F3F3F" DialBorderColor="#D9D9D9" DialBorderThickness="2" MinorTickColor="#FFFFFF" NeedleColor="#FF9900" TickColor="#FF9900" TickLabelColor="#FFFFFF" TickAxisLineColor="#FF9900" TickLabelFontName="Helvetica" TickLabelFontSize="14" TickThickness="2">
+  </SetAttributeWhenEmpty>
+  <!-- AnimatedNeedle -->
+  <SetAttributeWhenEmpty XPath=".//AnimatedGauge[@Type='Needle']" TickLabelFontName="Helvetica" TickLabelColor="#FFFFFF" OuterRingStyle="Bevel" BackgroundColor="#242424" NeedleColor="#def5fe">
+    <ThemeEditor EditID="AllFonts" />
+    <ThemeEditor EditID="ChartCaptionColor" />
+    <ThemeEditor EditID="ChartBackgroundColor" />
+  </SetAttributeWhenEmpty>
+  <!-- AnimatedBar -->
+  <SetAttributeWhenEmpty XPath=".//AnimatedGauge[@Type='Bar']" TickLabelFontName="Helvetica" TickLabelColor="#FFFFFF" BackgroundColor="#242424" BarColor="#b2d640">
+    <ThemeEditor EditID="AllFonts" />
+    <ThemeEditor EditID="ChartCaptionColor" />
+  </SetAttributeWhenEmpty>
+  <CycleAttributeValues XPath=".//AnimatedGauge[@Type='Bar']" CycleOnChildElement="AnimatedGaugeLine">
+    <ThemeEditor EditID="ChartColorCycleValues" />
+    <CycleValue Color="#FF9900" />
+    <CycleValue Color="#28B8D5" />
+    <CycleValue Color="#36DB65" />
+    <CycleValue Color="#D45CE2" />
+    <CycleValue Color="#FF4D4D" />
+    <CycleValue Color="#FFEA00" />
+    <CycleValue Color="#F25C08" />
+    <CycleValue Color="#7F28D5" />
+  </CycleAttributeValues>
+  <!-- AnimatedPyramid -->
+  <SetAttributeWhenEmpty XPath=".//AnimatedGauge[@Type='Pyramid']" BackgroundColor="#242424">
+    <ThemeEditor EditID="ChartBackgroundColor" />
+  </SetAttributeWhenEmpty>
+  <!-- DataCalendar -->
+  <SetAttributeWithInsert XPath=".//DataCalendarRows//Label" Class="rdDataCalendarFont" />
+  <!-- UserInput -->
+  <!-- InputCheckBox -->
+  <SetAttributeWithInsert XPath=".//InputCheckbox" CaptionClass="rdThemeInputCaption" />
+  <!-- InputDate -->
+  <SetAttributeWithInsert XPath=".//InputDate" Class="rdThemeInput" CaptionClass="rdThemeInputCaption" />
+  <SetAttribute XPath=".//InputDate[not(@CalendarLinkType)]" CalendarLinkType="Image" CalendarLinkClass="rdDataCalendarImage" />
+  <SetAttribute XPath=".//InputDate[not(@CalendarLink) and @CalendarLinkType='Image']" CalendarLink="@Function.ThemePath~/images/imgCalendar.png" />
+  <!-- InputTime -->
+  <SetAttributeWithInsert XPath=".//InputTime" Class="rdThemeInput" CaptionClass="rdThemeInputCaption" />
+  <SetAttribute XPath=".//InputTime[not(@ClockLinkType)]" ClockLinkType="Image" ClockLinkClass="rdTimePickerImage" />
+  <SetAttribute XPath=".//InputTime[not(@ClockLink) and @ClockLinkType='Image']" ClockLink="@Function.ThemePath~/images/imgClock.png" />
+  <!-- InputRadioButtons -->
+  <SetAttributeWithInsert XPath=".//InputRadioButtons" CaptionClass="rdThemeInputCaption" />
+  <!-- InputText, InputEmail, InputTelephone InputTextArea, InputFileUpload, InputPassword, InputSelectList, InputSlider -->
+  <SetAttributeWithInsert XPath=".//InputText | .//InputEmail | .//InputTelephone | .//InputTextArea | .//InputFileUpload | .//InputPassword  | .//InputSelectList  | .//InputComboList" Class="rdThemeInput" CaptionClass="rdThemeInputCaption" />
+  <!-- Logi icon overloads -->
+  <!-- Menu -->
+  <SetAttribute XPath="/Report[@ID='AnalysisGrid.rdAgTemplate']//Image[@ID='imgQueryBuilder']" Caption="@Function.ThemePath~/images/imgQueryBuilder.png" />
+  <SetAttribute XPath="/Report[@ID='AnalysisGrid.rdAgTemplate']//Image[@ID='imgCalc']" Caption="@Function.ThemePath~/images/imgCalc.png" />
+  <SetAttribute XPath="/Report[@ID='AnalysisGrid.rdAgTemplate']//Image[@ID='imgLayout']" Caption="@Function.ThemePath~/images/imgLayout.png" />
+  <SetAttribute XPath="/Report[@ID='AnalysisGrid.rdAgTemplate']//Image[@ID='imgSortOrder']" Caption="@Function.ThemePath~/images/imgSortOrder.png" />
+  <SetAttribute XPath="/Report[@ID='AnalysisGrid.rdAgTemplate' or @ID='ChartGrid.rdCgTemplate' or @ID='OlapGrid.rdOgTemplate' or @ID='OlapGrid.rdDgTemplate']//Image[@ID='imgFilter']" Caption="@Function.ThemePath~/images/imgFilter.png" />
+  <SetAttribute XPath="/Report[@ID='AnalysisGrid.rdAgTemplate']//Image[@ID='imgGroup']" Caption="@Function.ThemePath~/images/imgGroup.png" />
+  <SetAttribute XPath="/Report[@ID='AnalysisGrid.rdAgTemplate']//Image[@ID='imgAggr']" Caption="@Function.ThemePath~/images/imgAggr.png" />
+  <SetAttribute XPath="/Report[@ID='AnalysisGrid.rdAgTemplate'  or @ID='ChartGrid.rdCgTemplate' or @ID='OlapGrid.rdOgTemplate' or @ID='OlapGrid.rdDgTemplate']//Image[@ID='imgChart']" Caption="@Function.ThemePath~/images/imgChart.png" />
+  <SetAttribute XPath="/Report[@ID='AnalysisGrid.rdAgTemplate']//Image[@ID='imgCrosstab']" Caption="@Function.ThemePath~/images/imgCrosstab.png" />
+  <SetAttribute XPath="/Report[@ID='AnalysisGrid.rdAgTemplate']//Image[@ID='imgPaging']" Caption="@Function.ThemePath~/images/imgPaging.png" />
+  <SetAttribute XPath=".//Image[@ID='imgMeasures']" Caption="@Function.ThemePath~/images/imgCrosstab.png" />
+  <SetAttribute XPath=".//Image[@ID='imgRows']" Caption="@Function.ThemePath~/images/rows.png" />
+  <SetAttribute XPath=".//Image[@ID='imgCols']" Caption="@Function.ThemePath~/images/cols.png" />
+  <SetAttribute XPath=".//Image[@ID='imgMeasures']" Caption="@Function.ThemePath~/images/measures.png" />
+  <SetAttribute XPath=".//Image[@ID='imgExport']" Caption="@Function.ThemePath~/images/export.png" />
+  <SetAttribute XPath=".//Image[@ID='imgTable']" Caption="@Function.ThemePath~/images/table.png" />
+  <SetAttribute XPath=".//Image[@ID='imgDimension']" Caption="@Function.ThemePath~/images/rdOgDimensions.png" />
+  <SetAttribute XPath=".//Image[@ID='imgMeasure']" Caption="@Function.ThemePath~/images/rdOgMeasures.png" />
+  <SetAttribute XPath=".//Image[@ID='imgCalculatedMeasure']" Caption="@Function.ThemePath~/images/rdOgCalculatedMeasure.png" />
+  <SetAttribute XPath=".//Image[@ID='imgFilter']" Caption="@Function.ThemePath~/images/imgFilter.png" />
+  <SetAttribute XPath=".//Image[@ID='imgHeatmap']" Caption="@Function.ThemePath~/images/rdOgHeatmap.png" />
+  <!-- OG atritubes -->
+  <SetAttribute XPath=".//Image[@ID='imgDimensionOG']" Caption="@Function.ThemePath~/images/rdOgDimensionsBlack.png" />
+  <SetAttribute XPath=".//Image[@ID='imgCalculatedMeasureOG']" Caption="@Function.ThemePath~/images/rdOgCalculatedMeasureBlack.png" />
+  <SetAttribute XPath=".//Image[@ID='imgTableOG']" Caption="@Function.ThemePath~/images/tableBlack.png" />
+  <SetAttribute XPath=".//Image[@ID='imgChartOG']" Caption="@Function.ThemePath~/images/imgChartBlack.png" />
+  <SetAttribute XPath=".//Image[@ID='imgViewDG']" Caption="@Function.ThemePath~/images/imgViewBlack.png" />
+  <SetAttribute XPath=".//Image[@ID='imgMeasureOG']" Caption="@Function.ThemePath~/images/rdOgMeasuresBlack.png" />
+  <SetAttribute XPath=".//Image[@ID='imgFilterOG']" Caption="@Function.ThemePath~/images/imgFilterBlack.png" />
+  <SetAttribute XPath=".//Image[@ID='imgHeatmapOG']" Caption="@Function.ThemePath~/images/rdOgHeatmapBlack.png" />
+  <SetAttribute XPath=".//Image[@ID='imgRowsOG']" Caption="@Function.ThemePath~/images/rowsBlack.png" />
+  <SetAttribute XPath=".//Image[@ID='imgColsOG']" Caption="@Function.ThemePath~/images/colsBlack.png" />
+  <SetAttribute XPath=".//Image[@ID='imgMeasuresOG']" Caption="@Function.ThemePath~/images/measuresBlack.png" />
+  <SetAttribute XPath=".//Image[@ID='imgExportOG']" Caption="@Function.ThemePath~/images/exportBlack.png" />
+  <!--Northwind sales -->
+  <SetAttribute XPath=".//Image[@ID='imgXAxis']" Caption="@Function.ThemePath~/images/xAxis.png" />
+  <SetAttribute XPath=".//Image[@ID='imgYAxis']" Caption="@Function.ThemePath~/images/yAxis.png" />
+  <SetAttribute XPath=".//Image[@ID='imgColumns']" Caption="@Function.ThemePath~/images/cols.png" />
+  <!-- Minus and pluss button -->
+  <SetAttribute XPath="/Report[@ID='AnalysisGrid.rdAgTemplate']//ToggleImage[starts-with(@ID, 'toggleShow')]" FalseImage="@Function.ThemePath~/images/rdMinus.png" TrueImage="@Function.ThemePath~/images/rdPlus.png" />
+  <!-- Minus and pluss button -->
+  <SetAttribute XPath="/Report[@ID='AnalysisGrid.rdAgTemplate']//Image[starts-with(@ID, 'imgMinus')]" Caption="@Function.ThemePath~/images/rdMinus.png" />
+  <SetAttribute XPath="/Report[@ID='AnalysisGrid.rdAgTemplate']//Image[starts-with(@ID, 'imgPlus')]" Caption="@Function.ThemePath~/images/rdPlus.png" />
+  <!-- Help icon -->
+  <SetAttribute XPath=".//Image[@ID='imgHelp']" Caption="@Function.ThemePath~/images/icoBtnHelp.png" />
+  <!-- SubMenu -->
+  <SetAttribute XPath="/Report[@ID='AnalysisGrid.rdAgTemplate']//Image[@ID='imgQueryBuilderSub']" Caption="@Function.ThemePath~/images/imgQueryBuilderSub.png" />
+  <SetAttribute XPath="/Report[@ID='AnalysisGrid.rdAgTemplate']//Image[@ID='imgCalcSub']" Caption="@Function.ThemePath~/images/imgCalcSub.png" />
+  <SetAttribute XPath="/Report[@ID='AnalysisGrid.rdAgTemplate']//Image[@ID='imgLayoutSub']" Caption="@Function.ThemePath~/images/imgLayoutSub.png" />
+  <SetAttribute XPath="/Report[@ID='AnalysisGrid.rdAgTemplate']//Image[@ID='imgSortOrderSub']" Caption="@Function.ThemePath~/images/imgSortOrderSub.png" />
+  <SetAttribute XPath="/Report[@ID='AnalysisGrid.rdAgTemplate']//Image[@ID='imgFilterSub']" Caption="@Function.ThemePath~/images/imgFilterSub.png" />
+  <SetAttribute XPath="/Report[@ID='AnalysisGrid.rdAgTemplate']//Image[@ID='imgGroupSub']" Caption="@Function.ThemePath~/images/imgGroupSub.png" />
+  <SetAttribute XPath="/Report[@ID='AnalysisGrid.rdAgTemplate']//Image[@ID='imgAggrSub']" Caption="@Function.ThemePath~/images/imgAggrSub.png" />
+  <SetAttribute XPath="/Report[@ID='AnalysisGrid.rdAgTemplate']//Image[@ID='imgChartSub']" Caption="@Function.ThemePath~/images/imgChartSub.png" />
+  <SetAttribute XPath="/Report[@ID='AnalysisGrid.rdAgTemplate']//Image[@ID='imgCrosstabSub']" Caption="@Function.ThemePath~/images/imgCrosstabSub.png" />
+  <SetAttribute XPath="/Report[@ID='AnalysisGrid.rdAgTemplate']//Image[@ID='imgPagingSub']" Caption="@Function.ThemePath~/images/imgPagingSub.png" />
+  <!-- Custom Aggregate Popup -->
+  <SetAttribute XPath="/Report[@ID='AnalysisGrid.rdAgTemplate']//InputHidden[@ID='rdAgImgCustAgg']" DefaultValue="@Function.ThemePath~/images/imgCalcSub.png" />
+</TemplateModifier>

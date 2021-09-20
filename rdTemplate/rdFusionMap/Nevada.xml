@@ -1,0 +1,19 @@
+<AnimatedMapDataXML>
+  <MapSpec InternalID="001" ShortName="CH" LongName="Churchill" />
+  <MapSpec InternalID="003" ShortName="CL" LongName="Clark" />
+  <MapSpec InternalID="005" ShortName="DO" LongName="Douglas" />
+  <MapSpec InternalID="007" ShortName="EL" LongName="Elko" />
+  <MapSpec InternalID="009" ShortName="ES" LongName="Esmeralda" />
+  <MapSpec InternalID="011" ShortName="EU" LongName="Eureka" />
+  <MapSpec InternalID="013" ShortName="HU" LongName="Humboldt" />
+  <MapSpec InternalID="015" ShortName="LA" LongName="Lander" />
+  <MapSpec InternalID="017" ShortName="LI" LongName="Lincoln" />
+  <MapSpec InternalID="019" ShortName="LY" LongName="Lyon" />
+  <MapSpec InternalID="021" ShortName="MI" LongName="Mineral" />
+  <MapSpec InternalID="023" ShortName="NY" LongName="Nye" />
+  <MapSpec InternalID="025" ShortName="PE" LongName="Pershing" />
+  <MapSpec InternalID="027" ShortName="ST" LongName="Storey" />
+  <MapSpec InternalID="029" ShortName="WA" LongName="Washoe" />
+  <MapSpec InternalID="031" ShortName="WP" LongName="White Pine" />
+  <MapSpec InternalID="033" ShortName="CA" LongName="Carson City" />
+</AnimatedMapDataXML>

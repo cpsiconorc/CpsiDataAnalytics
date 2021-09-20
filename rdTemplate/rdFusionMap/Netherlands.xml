@@ -1,0 +1,14 @@
+<AnimatedMapDataXML>
+  <MapSpec InternalID="1" ShortName="DR" LongName="Drenthe" />
+  <MapSpec InternalID="2" ShortName="FL" LongName="Flevoland" />
+  <MapSpec InternalID="3" ShortName="FR" LongName="Friesland" />
+  <MapSpec InternalID="4" ShortName="GD" LongName="Gelderland" />
+  <MapSpec InternalID="5" ShortName="GR" LongName="Groningen" />
+  <MapSpec InternalID="6" ShortName="LB" LongName="Limburg" />
+  <MapSpec InternalID="7" ShortName="NB" LongName="Noord-Brabant" />
+  <MapSpec InternalID="8" ShortName="NH" LongName="Noord-Holland" />
+  <MapSpec InternalID="9" ShortName="OV" LongName="Overijssel" />
+  <MapSpec InternalID="10" ShortName="UT" LongName="Utrecht" />
+  <MapSpec InternalID="11" ShortName="ZL" LongName="Zeeland" />
+  <MapSpec InternalID="12" ShortName="ZH" LongName="Zuid-Holland" />
+</AnimatedMapDataXML>

@@ -1,0 +1,34 @@
+<AnimatedMapDataXML>
+  <MapSpec InternalID="01" ShortName="AK" LongName="Acklins" />
+  <MapSpec InternalID="02" ShortName="BR" LongName="Berry Islands" />
+  <MapSpec InternalID="03" ShortName="BI" LongName="Bimini" />
+  <MapSpec InternalID="04" ShortName="BP" LongName="Black Point" />
+  <MapSpec InternalID="05" ShortName="CI" LongName="Cat Island" />
+  <MapSpec InternalID="06" ShortName="CB" LongName="Central Abaco" />
+  <MapSpec InternalID="07" ShortName="CN" LongName="Central Andros" />
+  <MapSpec InternalID="08" ShortName="CE" LongName="Central Eleuthera" />
+  <MapSpec InternalID="09" ShortName="FP" LongName="City of Freeport" />
+  <MapSpec InternalID="10" ShortName="CK" LongName="Crooked Island" />
+  <MapSpec InternalID="11" ShortName="EB" LongName="East Grand Bahama" />
+  <MapSpec InternalID="12" ShortName="EM" LongName="Exuma" />
+  <MapSpec InternalID="13" ShortName="GC" LongName="Grand Cay" />
+  <MapSpec InternalID="14" ShortName="HB" LongName="Harbour Island" />
+  <MapSpec InternalID="15" ShortName="HT" LongName="Hope Town" />
+  <MapSpec InternalID="16" ShortName="IN" LongName="Inagua" />
+  <MapSpec InternalID="17" ShortName="LI" LongName="Long Island" />
+  <MapSpec InternalID="18" ShortName="MC" LongName="Mangrove Cay" />
+  <MapSpec InternalID="19" ShortName="MG" LongName="Mayaguana" />
+  <MapSpec InternalID="20" ShortName="MI" LongName="Moore's Island" />
+  <MapSpec InternalID="21" ShortName="NW" LongName="New Providence" />
+  <MapSpec InternalID="22" ShortName="NB" LongName="North Abaco" />
+  <MapSpec InternalID="23" ShortName="NN" LongName="North Andros" />
+  <MapSpec InternalID="24" ShortName="NE" LongName="North Eleuthera" />
+  <MapSpec InternalID="25" ShortName="RI" LongName="Ragged Island" />
+  <MapSpec InternalID="26" ShortName="RC" LongName="Rum Cay" />
+  <MapSpec InternalID="27" ShortName="SS" LongName="San Salvador" />
+  <MapSpec InternalID="28" ShortName="SB" LongName="South Abaco" />
+  <MapSpec InternalID="29" ShortName="SN" LongName="South Andros" />
+  <MapSpec InternalID="30" ShortName="SE" LongName="South Eleuthera" />
+  <MapSpec InternalID="31" ShortName="SW" LongName="Spanish Wells" />
+  <MapSpec InternalID="32" ShortName="WB" LongName="West Grand Bahama" />
+</AnimatedMapDataXML>

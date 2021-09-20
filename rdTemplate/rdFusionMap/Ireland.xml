@@ -1,0 +1,29 @@
+<AnimatedMapDataXML>
+  <MapSpec InternalID="001" ShortName="CA" LongName="Ceatharlach" />
+  <MapSpec InternalID="002" ShortName="CV" LongName="Cabhán" />
+  <MapSpec InternalID="003" ShortName="CL" LongName="Clár" />
+  <MapSpec InternalID="004" ShortName="CO" LongName="Corcaigh" />
+  <MapSpec InternalID="005" ShortName="DO" LongName="Dún na nGall" />
+  <MapSpec InternalID="006" ShortName="DU" LongName="Baile Átha Cliath" />
+  <MapSpec InternalID="007" ShortName="GA" LongName="Gaillimh" />
+  <MapSpec InternalID="008" ShortName="KE" LongName="Ciarraí" />
+  <MapSpec InternalID="009" ShortName="KI" LongName="Cill Dara" />
+  <MapSpec InternalID="010" ShortName="KL" LongName="Cill Chainnigh" />
+  <MapSpec InternalID="011" ShortName="LA" LongName="Laois" />
+  <MapSpec InternalID="012" ShortName="LE" LongName="Liatroim" />
+  <MapSpec InternalID="013" ShortName="LI" LongName="Luimneach" />
+  <MapSpec InternalID="014" ShortName="LO" LongName="Longfort" />
+  <MapSpec InternalID="015" ShortName="LU" LongName="Lú" />
+  <MapSpec InternalID="016" ShortName="MA" LongName="Maigh Eo" />
+  <MapSpec InternalID="017" ShortName="ME" LongName="Mí" />
+  <MapSpec InternalID="018" ShortName="MO" LongName="Muineacháin" />
+  <MapSpec InternalID="019" ShortName="OF" LongName="Ua Fáilghe" />
+  <MapSpec InternalID="020" ShortName="RO" LongName="Ros Comán" />
+  <MapSpec InternalID="021" ShortName="SL" LongName="Sligeach" />
+  <MapSpec InternalID="022" ShortName="TI" LongName="Tiobraid Arainn" />
+  <MapSpec InternalID="023" ShortName="WA" LongName="Port Lairge" />
+  <MapSpec InternalID="024" ShortName="WE" LongName="Iarmhí" />
+  <MapSpec InternalID="025" ShortName="WX" LongName="Loch Garman" />
+  <MapSpec InternalID="026" ShortName="WI" LongName="Cill Mhantáin" />
+  <MapSpec InternalID="027" ShortName="NL" LongName="Northern Ireland" />
+</AnimatedMapDataXML>

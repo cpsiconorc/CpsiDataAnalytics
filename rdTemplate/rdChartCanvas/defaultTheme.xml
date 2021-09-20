@@ -1,0 +1,85 @@
+<Theme>
+  <Body>
+    <ResetZoomButtonHoverStyle>
+      <BackgroundColor Value="White"/>
+      <Stroke Value="Gray"/>
+    </ResetZoomButtonHoverStyle>
+    <ResetZoomButton>
+      <BackgroundColor Value="White"/>
+      <Stroke Value="Gray"/>
+    </ResetZoomButton>
+    <ChartCanvas>
+      <BackgroundColor Value="White"/>
+      <BorderColor Value="Black"/>
+      <PlotBackgroundColor Value="White"/>
+      <PlotBorderColor Value="Black" />
+      <ChartXAxis>
+        <AxisLineColor Value="DarkGray" />
+        <ChartTicksAndGrid>
+          <AlternateGridColor Value="Red"/>
+          <GridLineColor Value="Green"/>
+          <TickLineColor Value="Blue"/>
+        </ChartTicksAndGrid>
+        <ChartMinorTicksAndGrid>
+          <GridLineColor Value="Green"/>
+          <TickLineColor Value="Blue"/>
+        </ChartMinorTicksAndGrid>
+      </ChartXAxis>
+      <Legend>
+        <BorderColor Value="Green"/>
+        <BackgroundColor Value="White"/>
+      </Legend>
+      <Marker>
+        <Color Value="Grey"/>
+      </Marker>
+      <Series>
+        <DataLabels>
+          <Color Value="Black"/>
+          <BackgroundColor Value="Silver"/>
+          <BorderColor Value="Purple"/>
+        </DataLabels>
+        <NegativeColor Value="Red"/>
+        <MarkerPoints>
+          <LineColor Value="Blue"/>
+          <FillColor Value="Pink"/>
+        </MarkerPoints>
+        <Color Value="Black"/>
+        <Pie>
+          <BorderColor Value="Blue"/>
+        </Pie>
+        <Area>
+          <LineColor Value="Brown"/>
+          <NegativeFillColor Value="Pink"/>
+        </Area>
+        <BoxPlot>
+          <StemColor Value="Cyan"/>
+          <WhiskerColor Value="Orange"/>
+          <MedianColor Value="Blush"/>
+        </BoxPlot>
+        <Whiskers>
+          <StemColor Value="Black"/>
+          <WhiskerColor Value="Black"/>
+        </Whiskers>
+        <Bar>
+          <BorderColor Value="Brown"/>
+        </Bar>
+        <Heatmap>
+          <BorderColor Value="Red"/>
+        </Heatmap>
+        <Colors>
+          <Color Value="#2f7ed8"/>
+          <Color Value="#0d233a"/>
+          <Color Value="#8bbc21"/>
+          <Color Value="#910000"/>
+          <Color Value="#1aadce"/>
+          <Color Value="#492970"/>
+          <Color Value="#f28f43"/>
+          <Color Value="#77a1e5"/>
+          <Color Value="#c42525"/>
+          <Color Value="#a6c96a"/>
+        </Colors>
+      </Series>
+    </ChartCanvas>
+  </Body>
+</Theme>
+

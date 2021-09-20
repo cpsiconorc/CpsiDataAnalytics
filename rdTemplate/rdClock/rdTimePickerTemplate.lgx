@@ -1,0 +1,599 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report ID="DatePicker" >
+  <Body>
+      <PopupPanel ID="PPTimePickerForInputTime" Draggable="True" Caption="Time Picker" CloseButtonCaption="X">
+        <Rows CellSpacing="0" ID="12HourTable" IdeDisplayStatus="Collapsed" Element="rdInputTime">
+          <Row>
+            <Column ID="colHours">
+              <Rows CellSpacing="1" Class="rdTimePicker" ID="rdTimePicker_Hours">
+                <Row IdeDisplayStatus="Collapsed">
+                  <Column Class="rdTimePickerTableHeaderCaption" ColSpan="2" ID="rdTimePicker_HourCaptionCell" >
+                    <Label Caption="Hours" ID="lblHoursCaption" />
+                  </Column>
+                </Row>
+                <Row>
+                  <Column Class="rdTimePickerInnerTables">
+                    <Rows CellSpacing="1" ID="rdTimePicker_AmPmTable" Width="100" WidthScale="%">
+                      <Row>
+                        <Column Class="rdTimePickerAMPMCell" ID="rdTimePicker_AmCell">
+                          <Label Caption="AM" ID="lblAm" />
+                        </Column>
+                      </Row>
+                      <Row>
+                        <Column Class="rdTimePickerAMPMCell" ID="rdTimePicker_PmCell">
+                          <Label Caption="PM" ID="lblPm" />
+                        </Column>
+                      </Row>
+                    </Rows>
+                  </Column>
+                  <Column Class="rdTimePickerInnerTables">
+                    <Rows CellSpacing="1" ID="rdTimePicker_HoursTable" Width="100" WidthScale="%">
+                      <Row>
+                        <Column Class="rdTimePickerCell" ID="rdTimePicker_HourCell_00">
+                          <Label Caption="12" ID="lblTimePicker_Hour" Class="rdTimePickerLabel" />
+                          <InputHidden ID="lblTimePicker_Hour_Hidden" DefaultValue="00" />
+                          <Action Type="Javascript" ID="actPickHour" Javascript="rdClockPickHours(this)" />
+                        </Column>
+                        <Column Class="rdTimePickerCell" ID="rdTimePicker_HourCell_01">
+                          <Label Caption="01" ID="lblTimePicker_Hour" Class="rdTimePickerLabel" />
+                          <InputHidden ID="lblTimePicker_Hour_Hidden" DefaultValue="01" />
+                          <Action Type="Javascript" ID="actPickHour" Javascript="rdClockPickHours(this)" />
+                        </Column>
+                        <Column Class="rdTimePickerCell" ID="rdTimePicker_HourCell_02">
+                          <Label Caption="02" ID="lblTimePicker_Hour" Class="rdTimePickerLabel" />
+                          <InputHidden ID="lblTimePicker_Hour_Hidden" DefaultValue="02" />
+                          <Action Type="Javascript" ID="actPickHour" Javascript="rdClockPickHours(this)" />
+                        </Column>
+                        <Column Class="rdTimePickerCell" ID="rdTimePicker_HourCell_03">
+                          <Label Caption="03" ID="lblTimePicker_Hour" Class="rdTimePickerLabel" />
+                          <InputHidden ID="lblTimePicker_Hour_Hidden" DefaultValue="03" />
+                          <Action Type="Javascript" ID="actPickHour" Javascript="rdClockPickHours(this)" />
+                        </Column>
+                        <Column Class="rdTimePickerCell" ID="rdTimePicker_HourCell_04">
+                          <Label Caption="04" ID="lblTimePicker_Hour" Class="rdTimePickerLabel" />
+                          <InputHidden ID="lblTimePicker_Hour_Hidden" DefaultValue="04" />
+                          <Action Type="Javascript" ID="actPickHour" Javascript="rdClockPickHours(this)" />
+                        </Column>
+                        <Column Class="rdTimePickerCell" ID="rdTimePicker_HourCell_05">
+                          <Label Caption="05" ID="lblTimePicker_Hour" Class="rdTimePickerLabel" />
+                          <InputHidden ID="lblTimePicker_Hour_Hidden" DefaultValue="05" />
+                          <Action Type="Javascript" ID="actPickHour" Javascript="rdClockPickHours(this)" />
+                        </Column>
+                      </Row>
+                      <Row>
+                        <Column Class="rdTimePickerCell" ID="rdTimePicker_HourCell_06">
+                          <Label Caption="06" ID="lblTimePicker_Hour" Class="rdTimePickerLabel" />
+                          <InputHidden ID="lblTimePicker_Hour_Hidden" DefaultValue="06" />
+                          <Action Type="Javascript" ID="actPickHour" Javascript="rdClockPickHours(this)" />
+                        </Column>
+                        <Column Class="rdTimePickerCell" ID="rdTimePicker_HourCell_07">
+                          <Label Caption="07" ID="lblTimePicker_Hour" Class="rdTimePickerLabel" />
+                          <InputHidden ID="lblTimePicker_Hour_Hidden" DefaultValue="07" />
+                          <Action Type="Javascript" ID="actPickHour" Javascript="rdClockPickHours(this)" />
+                        </Column>
+                        <Column Class="rdTimePickerCell" ID="rdTimePicker_HourCell_08">
+                          <Label Caption="08" ID="lblTimePicker_Hour" Class="rdTimePickerLabel" />
+                          <InputHidden ID="lblTimePicker_Hour_Hidden" DefaultValue="08" />
+                          <Action Type="Javascript" ID="actPickHour" Javascript="rdClockPickHours(this)" />
+                        </Column>
+                        <Column Class="rdTimePickerCell" ID="rdTimePicker_HourCell_09">
+                          <Label Caption="09" ID="lblTimePicker_Hour" Class="rdTimePickerLabel" />
+                          <InputHidden ID="lblTimePicker_Hour_Hidden" DefaultValue="09" />
+                          <Action Type="Javascript" ID="actPickHour" Javascript="rdClockPickHours(this)" />
+                        </Column>
+                        <Column Class="rdTimePickerCell" ID="rdTimePicker_HourCell_10">
+                          <Label Caption="10" ID="lblTimePicker_Hour" Class="rdTimePickerLabel" />
+                          <InputHidden ID="lblTimePicker_Hour_Hidden" DefaultValue="10" />
+                          <Action Type="Javascript" ID="actPickHour" Javascript="rdClockPickHours(this)" />
+                        </Column>
+                        <Column Class="rdTimePickerCell" ID="rdTimePicker_HourCell_11">
+                          <Label Caption="11" ID="lblTimePicker_Hour" Class="rdTimePickerLabel" />
+                          <InputHidden ID="lblTimePicker_Hour_Hidden" DefaultValue="11" />
+                          <Action Type="Javascript" ID="actPickHour" Javascript="rdClockPickHours(this)" />
+                        </Column>
+                      </Row>
+                      <Row>
+                        <Column Class="rdTimePickerCell" ID="rdTimePicker_HourCell_12">
+                          <Label Caption="12" ID="lblTimePicker_Hour" Class="rdTimePickerLabel" />
+                          <InputHidden ID="lblTimePicker_Hour_Hidden" DefaultValue="12" />
+                          <Action Type="Javascript" ID="actPickHour" Javascript="rdClockPickHours(this)" />
+                        </Column>
+                        <Column Class="rdTimePickerCell" ID="rdTimePicker_HourCell_13">
+                          <Label Caption="01" ID="lblTimePicker_Hour" Class="rdTimePickerLabel" />
+                          <InputHidden ID="lblTimePicker_Hour_Hidden" DefaultValue="13" />
+                          <Action Type="Javascript" ID="actPickHour" Javascript="rdClockPickHours(this)" />
+                        </Column>
+                        <Column Class="rdTimePickerCell" ID="rdTimePicker_HourCell_14">
+                          <Label Caption="02" ID="lblTimePicker_Hour" Class="rdTimePickerLabel" />
+                          <InputHidden ID="lblTimePicker_Hour_Hidden" DefaultValue="14" />
+                          <Action Type="Javascript" ID="actPickHour" Javascript="rdClockPickHours(this)" />
+                        </Column>
+                        <Column Class="rdTimePickerCell" ID="rdTimePicker_HourCell_15">
+                          <Label Caption="03" ID="lblTimePicker_Hour" Class="rdTimePickerLabel" />
+                          <InputHidden ID="lblTimePicker_Hour_Hidden" DefaultValue="15" />
+                          <Action Type="Javascript" ID="actPickHour" Javascript="rdClockPickHours(this)" />
+                        </Column>
+                        <Column Class="rdTimePickerCell" ID="rdTimePicker_HourCell_16">
+                          <Label Caption="04" ID="lblTimePicker_Hour" Class="rdTimePickerLabel" />
+                          <InputHidden ID="lblTimePicker_Hour_Hidden" DefaultValue="16" />
+                          <Action Type="Javascript" ID="actPickHour" Javascript="rdClockPickHours(this)" />
+                        </Column>
+                        <Column Class="rdTimePickerCell" ID="rdTimePicker_HourCell_17">
+                          <Label Caption="05" ID="lblTimePicker_Hour" Class="rdTimePickerLabel" />
+                          <InputHidden ID="lblTimePicker_Hour_Hidden" DefaultValue="17" />
+                          <Action Type="Javascript" ID="actPickHour" Javascript="rdClockPickHours(this)" />
+                        </Column>
+                      </Row>
+                      <Row>
+                        <Column Class="rdTimePickerCell" ID="rdTimePicker_HourCell_18">
+                          <Label Caption="06" ID="lblTimePicker_Hour" Class="rdTimePickerLabel" />
+                          <InputHidden ID="lblTimePicker_Hour_Hidden" DefaultValue="18" />
+                          <Action Type="Javascript" ID="actPickHour" Javascript="rdClockPickHours(this)" />
+                        </Column>
+                        <Column Class="rdTimePickerCell" ID="rdTimePicker_HourCell_19">
+                          <Label Caption="07" ID="lblTimePicker_Hour" Class="rdTimePickerLabel" />
+                          <InputHidden ID="lblTimePicker_Hour_Hidden" DefaultValue="19" />
+                          <Action Type="Javascript" ID="actPickHour" Javascript="rdClockPickHours(this)" />
+                        </Column>
+                        <Column Class="rdTimePickerCell" ID="rdTimePicker_HourCell_20">
+                          <Label Caption="08" ID="lblTimePicker_Hour" Class="rdTimePickerLabel" />
+                          <InputHidden ID="lblTimePicker_Hour_Hidden" DefaultValue="20" />
+                          <Action Type="Javascript" ID="actPickHour" Javascript="rdClockPickHours(this)" />
+                        </Column>
+                        <Column Class="rdTimePickerCell" ID="rdTimePicker_HourCell_21">
+                          <Label Caption="09" ID="lblTimePicker_Hour" Class="rdTimePickerLabel" />
+                          <InputHidden ID="lblTimePicker_Hour_Hidden" DefaultValue="21" />
+                          <Action Type="Javascript" ID="actPickHour" Javascript="rdClockPickHours(this)" />
+                        </Column>
+                        <Column Class="rdTimePickerCell" ID="rdTimePicker_HourCell_22">
+                          <Label Caption="10" ID="lblTimePicker_Hour" Class="rdTimePickerLabel" />
+                          <InputHidden ID="lblTimePicker_Hour_Hidden" DefaultValue="22" />
+                          <Action Type="Javascript" ID="actPickHour" Javascript="rdClockPickHours(this)" />
+                        </Column>
+                        <Column Class="rdTimePickerCell" ID="rdTimePicker_HourCell_23">
+                          <Label Caption="11" ID="lblTimePicker_Hour" Class="rdTimePickerLabel" />
+                          <InputHidden ID="lblTimePicker_Hour_Hidden" DefaultValue="23" />
+                          <Action Type="Javascript" ID="actPickHour" Javascript="rdClockPickHours(this)" />
+                        </Column>
+                      </Row>
+                    </Rows>
+                  </Column>
+                </Row>
+              </Rows>
+            </Column>
+            <Column ID="colMinutes">
+              <Rows CellSpacing="1" Class="rdTimePicker" ID="rdTimePicker_Minutes">
+                <Row>
+                  <Column Class="rdTimePickerTableHeaderCaption" ID="rdTimePicker_MinuteCaptionCell">
+                    <Label Caption="Minutes" ID="lblMinutesCaption" />
+                  </Column>
+                </Row>
+                <Row IdeDisplayStatus="Collapsed">
+                  <Column Class="rdTimePickerInnerTables">
+                    <Rows CellSpacing="1" ID="rdTimePicker_MinutesTable" Width="100" WidthScale="%">
+                      <Row>
+                        <Column Class="rdTimePickerCell" ID="rdTimePicker_MinutesCell_00">
+                          <Label Caption="00" ID="lblTimePicker_Minutes" Class="rdTimePickerLabel" />
+                          <Action Type="Javascript" ID="actPickMinutes" Javascript="rdClockPickMinutes(this)" />
+                        </Column>
+                        <Column Class="rdTimePickerCell" ID="rdTimePicker_MinutesCell_05">
+                          <Label Caption="05" ID="lblTimePicker_Minutes" Class="rdTimePickerLabel" />
+                          <Action Type="Javascript" ID="actPickMinutes" Javascript="rdClockPickMinutes(this)" />
+                        </Column>
+                        <Column Class="rdTimePickerCell" ID="rdTimePicker_MinutesCell_10">
+                          <Label Caption="10" ID="lblTimePicker_Minutes" Class="rdTimePickerLabel" />
+                          <Action Type="Javascript" ID="actPickMinutes" Javascript="rdClockPickMinutes(this)" />
+                        </Column>
+                      </Row>
+                      <Row>
+                        <Column Class="rdTimePickerCell" ID="rdTimePicker_MinutesCell_15">
+                          <Label Caption="15" ID="lblTimePicker_Minutes" Class="rdTimePickerLabel" />
+                          <Action Type="Javascript" ID="actPickMinutes" Javascript="rdClockPickMinutes(this)" />
+                        </Column>
+                        <Column Class="rdTimePickerCell" ID="rdTimePicker_MinutesCell_20">
+                          <Label Caption="20" ID="lblTimePicker_Minutes" Class="rdTimePickerLabel" />
+                          <Action Type="Javascript" ID="actPickMinutes" Javascript="rdClockPickMinutes(this)" />
+                        </Column>
+                        <Column Class="rdTimePickerCell" ID="rdTimePicker_MinutesCell_25">
+                          <Label Caption="25" ID="lblTimePicker_Minutes" Class="rdTimePickerLabel" />
+                          <Action Type="Javascript" ID="actPickMinutes" Javascript="rdClockPickMinutes(this)" />
+                        </Column>
+                      </Row>
+                      <Row>
+                        <Column Class="rdTimePickerCell" ID="rdTimePicker_MinutesCell_30">
+                          <Label Caption="30" ID="lblTimePicker_Minutes" Class="rdTimePickerLabel" />
+                          <Action Type="Javascript" ID="actPickMinutes" Javascript="rdClockPickMinutes(this)" />
+                        </Column>
+                        <Column Class="rdTimePickerCell" ID="rdTimePicker_MinutesCell_35">
+                          <Label Caption="35" ID="lblTimePicker_Minutes" Class="rdTimePickerLabel" />
+                          <Action Type="Javascript" ID="actPickMinutes" Javascript="rdClockPickMinutes(this)" />
+                        </Column>
+                        <Column Class="rdTimePickerCell" ID="rdTimePicker_MinutesCell_40">
+                          <Label Caption="40" ID="lblTimePicker_Minutes" Class="rdTimePickerLabel" />
+                          <Action Type="Javascript" ID="actPickMinutes" Javascript="rdClockPickMinutes(this)" />
+                        </Column>
+                      </Row>
+                      <Row>
+                        <Column Class="rdTimePickerCell" ID="rdTimePicker_MinutesCell_45">
+                          <Label Caption="45" ID="lblTimePicker_Minutes" Class="rdTimePickerLabel" />
+                          <Action Type="Javascript" ID="actPickMinutes" Javascript="rdClockPickMinutes(this)" />
+                        </Column>
+                        <Column Class="rdTimePickerCell" ID="rdTimePicker_MinutesCell_50">
+                          <Label Caption="50" ID="lblTimePicker_Minutes" Class="rdTimePickerLabel" />
+                          <Action Type="Javascript" ID="actPickMinutes" Javascript="rdClockPickMinutes(this)" />
+                        </Column>
+                        <Column Class="rdTimePickerCell" ID="rdTimePicker_MinutesCell_55">
+                          <Label Caption="55" ID="lblTimePicker_Minutes" Class="rdTimePickerLabel" />
+                          <Action Type="Javascript" ID="actPickMinutes" Javascript="rdClockPickMinutes(this)" />
+                        </Column>
+                      </Row>
+                    </Rows>
+                  </Column>
+                </Row>
+              </Rows>
+            </Column>
+            <Column ID="colSeconds">
+              <Rows CellSpacing="1" Class="rdTimePicker" ID="rdTimePicker_Seconds">
+                <Row>
+                  <Column Class="rdTimePickerTableHeaderCaption" ID="rdTimePicker_SecondsCaptionCell">
+                    <Label Caption="Seconds" ID="lblSecondsCaption" />
+                  </Column>
+                </Row>
+                <Row>
+                  <Column Class="rdTimePickerInnerTables">
+                    <Rows CellSpacing="1" ID="rdTimePicker_SecondsTable" Width="100" WidthScale="%">
+                      <Row>
+                        <Column Class="rdTimePickerCell" ID="rdTimePicker_SecondsCell_00">
+                          <Label Caption="00" ID="lblTimePicker_Seconds" Class="rdTimePickerLabel" />
+                          <Action Type="Javascript" ID="actPickSeconds" Javascript="rdClockPickSeconds(this)" />
+                        </Column>
+                        <Column Class="rdTimePickerCell" ID="rdTimePicker_SecondsCell_05">
+                          <Label Caption="05" ID="lblTimePicker_Seconds" Class="rdTimePickerLabel" />
+                          <Action Type="Javascript" ID="actPickSeconds" Javascript="rdClockPickSeconds(this)" />
+                        </Column>
+                        <Column Class="rdTimePickerCell" ID="rdTimePicker_SecondsCell_10">
+                          <Label Caption="10" ID="lblTimePicker_Seconds" Class="rdTimePickerLabel" />
+                          <Action Type="Javascript" ID="actPickMinutes" Javascript="rdClockPickSeconds(this)" />
+                        </Column>
+                      </Row>
+                      <Row>
+                        <Column Class="rdTimePickerCell" ID="rdTimePicker_SecondsCell_15">
+                          <Label Caption="15" ID="lblTimePicker_Seconds" Class="rdTimePickerLabel" />
+                          <Action Type="Javascript" ID="actPickSeconds" Javascript="rdClockPickSeconds(this)" />
+                        </Column>
+                        <Column Class="rdTimePickerCell" ID="rdTimePicker_SecondsCell_20">
+                          <Label Caption="20" ID="lblTimePicker_Seconds" Class="rdTimePickerLabel" />
+                          <Action Type="Javascript" ID="actPickSeconds" Javascript="rdClockPickSeconds(this)" />
+                        </Column>
+                        <Column Class="rdTimePickerCell" ID="rdTimePicker_SecondsCell_25">
+                          <Label Caption="25" ID="lblTimePicker_Seconds" Class="rdTimePickerLabel" />
+                          <Action Type="Javascript" ID="actPickSeconds" Javascript="rdClockPickSeconds(this)" />
+                        </Column>
+                      </Row>
+                      <Row>
+                        <Column Class="rdTimePickerCell" ID="rdTimePicker_SecondsCell_30">
+                          <Label Caption="30" ID="lblTimePicker_Seconds" Class="rdTimePickerLabel" />
+                          <Action Type="Javascript" ID="actPickSeconds" Javascript="rdClockPickSeconds(this)" />
+                        </Column>
+                        <Column Class="rdTimePickerCell" ID="rdTimePicker_SecondsCell_35">
+                          <Label Caption="35" ID="lblTimePicker_Seconds" Class="rdTimePickerLabel" />
+                          <Action Type="Javascript" ID="actPickSeconds" Javascript="rdClockPickSeconds(this)" />
+                        </Column>
+                        <Column Class="rdTimePickerCell" ID="rdTimePicker_SecondsCell_40">
+                          <Label Caption="40" ID="lblTimePicker_Seconds" Class="rdTimePickerLabel" />
+                          <Action Type="Javascript" ID="actPickSeconds" Javascript="rdClockPickSeconds(this)" />
+                        </Column>
+                      </Row>
+                      <Row>
+                        <Column Class="rdTimePickerCell" ID="rdTimePicker_SecondsCell_45">
+                          <Label Caption="45" ID="lblTimePicker_Seconds" Class="rdTimePickerLabel" />
+                          <Action Type="Javascript" ID="actPickSeconds" Javascript="rdClockPickSeconds(this)" />
+                        </Column>
+                        <Column Class="rdTimePickerCell" ID="rdTimePicker_SecondsCell_50">
+                          <Label Caption="50" ID="lblTimePicker_Seconds" Class="rdTimePickerLabel" />
+                          <Action Type="Javascript" ID="actPickSeconds" Javascript="rdClockPickSeconds(this)" />
+                        </Column>
+                        <Column Class="rdTimePickerCell" ID="rdTimePicker_SecondsCell_55">
+                          <Label Caption="55" ID="lblTimePicker_Seconds" Class="rdTimePickerLabel" />
+                          <Action Type="Javascript" ID="actPickSeconds" Javascript="rdClockPickSeconds(this)" />
+                        </Column>
+                      </Row>
+                    </Rows>
+                  </Column>
+                </Row>
+              </Rows>
+            </Column>
+          </Row>
+        </Rows>
+        <Rows CellSpacing="0" ID="24HourTable" IdeDisplayStatus="Collapsed">
+          <Row>
+            <Column ID="colHours">
+              <Rows CellSpacing="1" Class="rdTimePicker" ID="rdTimePicker_Hours">
+                <Row IdeDisplayStatus="Collapsed">
+                  <Column Class="rdTimePickerTableHeaderCaption" ColSpan="2" ID="rdTimePicker_HourCaptionCell">
+                    <Label Caption="Hours" ID="lblHoursCaption" />
+                  </Column>
+                </Row>
+                <Row>
+                  <Column Class="rdTimePickerInnerTables">
+                    <Rows CellSpacing="1" ID="rdTimePicker_HoursTable" Width="100" WidthScale="%">
+                      <Row>
+                        <Column Class="rdTimePickerCell" ID="rdTimePicker_HourCell_00">
+                          <Label Caption="00" ID="lblTimePicker_Hour" Class="rdTimePickerLabel" />
+                          <InputHidden ID="lblTimePicker_Hour_Hidden" DefaultValue="00" />
+                          <Action Type="Javascript" ID="actPickHour" Javascript="rdClockPickHours(this)" />
+                        </Column>
+                        <Column Class="rdTimePickerCell" ID="rdTimePicker_HourCell_01">
+                          <Label Caption="01" ID="lblTimePicker_Hour" Class="rdTimePickerLabel" />
+                          <InputHidden ID="lblTimePicker_Hour_Hidden" DefaultValue="01" />
+                          <Action Type="Javascript" ID="actPickHour" Javascript="rdClockPickHours(this)" />
+                        </Column>
+                        <Column Class="rdTimePickerCell" ID="rdTimePicker_HourCell_02">
+                          <Label Caption="02" ID="lblTimePicker_Hour" Class="rdTimePickerLabel" />
+                          <InputHidden ID="lblTimePicker_Hour_Hidden" DefaultValue="02" />
+                          <Action Type="Javascript" ID="actPickHour" Javascript="rdClockPickHours(this)" />
+                        </Column>
+                        <Column Class="rdTimePickerCell" ID="rdTimePicker_HourCell_03">
+                          <Label Caption="03" ID="lblTimePicker_Hour" Class="rdTimePickerLabel" />
+                          <InputHidden ID="lblTimePicker_Hour_Hidden" DefaultValue="03" />
+                          <Action Type="Javascript" ID="actPickHour" Javascript="rdClockPickHours(this)" />
+                        </Column>
+                        <Column Class="rdTimePickerCell" ID="rdTimePicker_HourCell_04">
+                          <Label Caption="04" ID="lblTimePicker_Hour" Class="rdTimePickerLabel" />
+                          <InputHidden ID="lblTimePicker_Hour_Hidden" DefaultValue="04" />
+                          <Action Type="Javascript" ID="actPickHour" Javascript="rdClockPickHours(this)" />
+                        </Column>
+                        <Column Class="rdTimePickerCell" ID="rdTimePicker_HourCell_05">
+                          <Label Caption="05" ID="lblTimePicker_Hour" Class="rdTimePickerLabel" />
+                          <InputHidden ID="lblTimePicker_Hour_Hidden" DefaultValue="05" />
+                          <Action Type="Javascript" ID="actPickHour" Javascript="rdClockPickHours(this)" />
+                        </Column>
+                      </Row>
+                      <Row>
+                        <Column Class="rdTimePickerCell" ID="rdTimePicker_HourCell_06">
+                          <Label Caption="06" ID="lblTimePicker_Hour" Class="rdTimePickerLabel" />
+                          <InputHidden ID="lblTimePicker_Hour_Hidden" DefaultValue="06" />
+                          <Action Type="Javascript" ID="actPickHour" Javascript="rdClockPickHours(this)" />
+                        </Column>
+                        <Column Class="rdTimePickerCell" ID="rdTimePicker_HourCell_07">
+                          <Label Caption="07" ID="lblTimePicker_Hour" Class="rdTimePickerLabel" />
+                          <InputHidden ID="lblTimePicker_Hour_Hidden" DefaultValue="07" />
+                          <Action Type="Javascript" ID="actPickHour" Javascript="rdClockPickHours(this)" />
+                        </Column>
+                        <Column Class="rdTimePickerCell" ID="rdTimePicker_HourCell_08">
+                          <Label Caption="08" ID="lblTimePicker_Hour" Class="rdTimePickerLabel" />
+                          <InputHidden ID="lblTimePicker_Hour_Hidden" DefaultValue="08" />
+                          <Action Type="Javascript" ID="actPickHour" Javascript="rdClockPickHours(this)" />
+                        </Column>
+                        <Column Class="rdTimePickerCell" ID="rdTimePicker_HourCell_09">
+                          <Label Caption="09" ID="lblTimePicker_Hour" Class="rdTimePickerLabel" />
+                          <InputHidden ID="lblTimePicker_Hour_Hidden" DefaultValue="09" />
+                          <Action Type="Javascript" ID="actPickHour" Javascript="rdClockPickHours(this)" />
+                        </Column>
+                        <Column Class="rdTimePickerCell" ID="rdTimePicker_HourCell_10">
+                          <Label Caption="10" ID="lblTimePicker_Hour" Class="rdTimePickerLabel" />
+                          <InputHidden ID="lblTimePicker_Hour_Hidden" DefaultValue="10" />
+                          <Action Type="Javascript" ID="actPickHour" Javascript="rdClockPickHours(this)" />
+                        </Column>
+                        <Column Class="rdTimePickerCell" ID="rdTimePicker_HourCell_11">
+                          <Label Caption="11" ID="lblTimePicker_Hour" Class="rdTimePickerLabel" />
+                          <InputHidden ID="lblTimePicker_Hour_Hidden" DefaultValue="11" />
+                          <Action Type="Javascript" ID="actPickHour" Javascript="rdClockPickHours(this)" />
+                        </Column>
+                      </Row>
+                      <Row>
+                        <Column Class="rdTimePickerCell" ID="rdTimePicker_HourCell_12">
+                          <Label Caption="12" ID="lblTimePicker_Hour" Class="rdTimePickerLabel" />
+                          <InputHidden ID="lblTimePicker_Hour_Hidden" DefaultValue="12" />
+                          <Action Type="Javascript" ID="actPickHour" Javascript="rdClockPickHours(this)" />
+                        </Column>
+                        <Column Class="rdTimePickerCell" ID="rdTimePicker_HourCell_13">
+                          <Label Caption="13" ID="lblTimePicker_Hour" Class="rdTimePickerLabel" />
+                          <InputHidden ID="lblTimePicker_Hour_Hidden" DefaultValue="13" />
+                          <Action Type="Javascript" ID="actPickHour" Javascript="rdClockPickHours(this)" />
+                        </Column>
+                        <Column Class="rdTimePickerCell" ID="rdTimePicker_HourCell_14">
+                          <Label Caption="14" ID="lblTimePicker_Hour" Class="rdTimePickerLabel" />
+                          <InputHidden ID="lblTimePicker_Hour_Hidden" DefaultValue="14" />
+                          <Action Type="Javascript" ID="actPickHour" Javascript="rdClockPickHours(this)" />
+                        </Column>
+                        <Column Class="rdTimePickerCell" ID="rdTimePicker_HourCell_15">
+                          <Label Caption="15" ID="lblTimePicker_Hour" Class="rdTimePickerLabel" />
+                          <InputHidden ID="lblTimePicker_Hour_Hidden" DefaultValue="15" />
+                          <Action Type="Javascript" ID="actPickHour" Javascript="rdClockPickHours(this)" />
+                        </Column>
+                        <Column Class="rdTimePickerCell" ID="rdTimePicker_HourCell_16">
+                          <Label Caption="16" ID="lblTimePicker_Hour" Class="rdTimePickerLabel" />
+                          <InputHidden ID="lblTimePicker_Hour_Hidden" DefaultValue="16" />
+                          <Action Type="Javascript" ID="actPickHour" Javascript="rdClockPickHours(this)" />
+                        </Column>
+                        <Column Class="rdTimePickerCell" ID="rdTimePicker_HourCell_17">
+                          <Label Caption="17" ID="lblTimePicker_Hour" Class="rdTimePickerLabel" />
+                          <InputHidden ID="lblTimePicker_Hour_Hidden" DefaultValue="17" />
+                          <Action Type="Javascript" ID="actPickHour" Javascript="rdClockPickHours(this)" />
+                        </Column>
+                      </Row>
+                      <Row>
+                        <Column Class="rdTimePickerCell" ID="rdTimePicker_HourCell_18">
+                          <Label Caption="18" ID="lblTimePicker_Hour" Class="rdTimePickerLabel" />
+                          <InputHidden ID="lblTimePicker_Hour_Hidden" DefaultValue="18" />
+                          <Action Type="Javascript" ID="actPickHour" Javascript="rdClockPickHours(this)" />
+                        </Column>
+                        <Column Class="rdTimePickerCell" ID="rdTimePicker_HourCell_19">
+                          <Label Caption="19" ID="lblTimePicker_Hour" Class="rdTimePickerLabel" />
+                          <InputHidden ID="lblTimePicker_Hour_Hidden" DefaultValue="19" />
+                          <Action Type="Javascript" ID="actPickHour" Javascript="rdClockPickHours(this)" />
+                        </Column>
+                        <Column Class="rdTimePickerCell" ID="rdTimePicker_HourCell_20">
+                          <Label Caption="20" ID="lblTimePicker_Hour" Class="rdTimePickerLabel" />
+                          <InputHidden ID="lblTimePicker_Hour_Hidden" DefaultValue="20" />
+                          <Action Type="Javascript" ID="actPickHour" Javascript="rdClockPickHours(this)" />
+                        </Column>
+                        <Column Class="rdTimePickerCell" ID="rdTimePicker_HourCell_21">
+                          <Label Caption="21" ID="lblTimePicker_Hour" Class="rdTimePickerLabel" />
+                          <InputHidden ID="lblTimePicker_Hour_Hidden" DefaultValue="21" />
+                          <Action Type="Javascript" ID="actPickHour" Javascript="rdClockPickHours(this)" />
+                        </Column>
+                        <Column Class="rdTimePickerCell" ID="rdTimePicker_HourCell_22">
+                          <Label Caption="22" ID="lblTimePicker_Hour" Class="rdTimePickerLabel" />
+                          <InputHidden ID="lblTimePicker_Hour_Hidden" DefaultValue="22" />
+                          <Action Type="Javascript" ID="actPickHour" Javascript="rdClockPickHours(this)" />
+                        </Column>
+                        <Column Class="rdTimePickerCell" ID="rdTimePicker_HourCell_23">
+                          <Label Caption="23" ID="lblTimePicker_Hour" Class="rdTimePickerLabel" />
+                          <InputHidden ID="lblTimePicker_Hour_Hidden" DefaultValue="23" />
+                          <Action Type="Javascript" ID="actPickHour" Javascript="rdClockPickHours(this)" />
+                        </Column>
+                      </Row>
+                    </Rows>
+                  </Column>
+                </Row>
+              </Rows>
+            </Column>
+            <Column ID="colMinutes">
+              <Rows CellSpacing="1" Class="rdTimePicker" ID="rdTimePicker_Minutes">
+                <Row>
+                  <Column Class="rdTimePickerTableHeaderCaption" ID="rdTimePicker_MinuteCaptionCell">
+                    <Label Caption="Minutes" ID="lblMinutesCaption" />
+                  </Column>
+                </Row>
+                <Row IdeDisplayStatus="Collapsed">
+                  <Column Class="rdTimePickerInnerTables">
+                    <Rows CellSpacing="1" ID="rdTimePicker_MinutesTable" Width="100" WidthScale="%">
+                      <Row>
+                        <Column Class="rdTimePickerCell" ID="rdTimePicker_MinutesCell_00">
+                          <Label Caption="00" ID="lblTimePicker_Minutes" Class="rdTimePickerLabel" />
+                          <Action Type="Javascript" ID="actPickMinutes" Javascript="rdClockPickMinutes(this)" />
+                        </Column>
+                        <Column Class="rdTimePickerCell" ID="rdTimePicker_MinutesCell_05">
+                          <Label Caption="05" ID="lblTimePicker_Minutes" Class="rdTimePickerLabel" />
+                          <Action Type="Javascript" ID="actPickMinutes" Javascript="rdClockPickMinutes(this)" />
+                        </Column>
+                        <Column Class="rdTimePickerCell" ID="rdTimePicker_MinutesCell_10">
+                          <Label Caption="10" ID="lblTimePicker_Minutes" Class="rdTimePickerLabel" />
+                          <Action Type="Javascript" ID="actPickMinutes" Javascript="rdClockPickMinutes(this)" />
+                        </Column>
+                      </Row>
+                      <Row>
+                        <Column Class="rdTimePickerCell" ID="rdTimePicker_MinutesCell_15">
+                          <Label Caption="15" ID="lblTimePicker_Minutes" Class="rdTimePickerLabel" />
+                          <Action Type="Javascript" ID="actPickMinutes" Javascript="rdClockPickMinutes(this)" />
+                        </Column>
+                        <Column Class="rdTimePickerCell" ID="rdTimePicker_MinutesCell_20">
+                          <Label Caption="20" ID="lblTimePicker_Minutes" Class="rdTimePickerLabel" />
+                          <Action Type="Javascript" ID="actPickMinutes" Javascript="rdClockPickMinutes(this)" />
+                        </Column>
+                        <Column Class="rdTimePickerCell" ID="rdTimePicker_MinutesCell_25">
+                          <Label Caption="25" ID="lblTimePicker_Minutes" Class="rdTimePickerLabel" />
+                          <Action Type="Javascript" ID="actPickMinutes" Javascript="rdClockPickMinutes(this)" />
+                        </Column>
+                      </Row>
+                      <Row>
+                        <Column Class="rdTimePickerCell" ID="rdTimePicker_MinutesCell_30">
+                          <Label Caption="30" ID="lblTimePicker_Minutes" Class="rdTimePickerLabel" />
+                          <Action Type="Javascript" ID="actPickMinutes" Javascript="rdClockPickMinutes(this)" />
+                        </Column>
+                        <Column Class="rdTimePickerCell" ID="rdTimePicker_MinutesCell_35">
+                          <Label Caption="35" ID="lblTimePicker_Minutes" Class="rdTimePickerLabel" />
+                          <Action Type="Javascript" ID="actPickMinutes" Javascript="rdClockPickMinutes(this)" />
+                        </Column>
+                        <Column Class="rdTimePickerCell" ID="rdTimePicker_MinutesCell_40">
+                          <Label Caption="40" ID="lblTimePicker_Minutes" Class="rdTimePickerLabel" />
+                          <Action Type="Javascript" ID="actPickMinutes" Javascript="rdClockPickMinutes(this)" />
+                        </Column>
+                      </Row>
+                      <Row>
+                        <Column Class="rdTimePickerCell" ID="rdTimePicker_MinutesCell_45">
+                          <Label Caption="45" ID="lblTimePicker_Minutes" Class="rdTimePickerLabel" />
+                          <Action Type="Javascript" ID="actPickMinutes" Javascript="rdClockPickMinutes(this)" />
+                        </Column>
+                        <Column Class="rdTimePickerCell" ID="rdTimePicker_MinutesCell_50">
+                          <Label Caption="50" ID="lblTimePicker_Minutes" Class="rdTimePickerLabel" />
+                          <Action Type="Javascript" ID="actPickMinutes" Javascript="rdClockPickMinutes(this)" />
+                        </Column>
+                        <Column Class="rdTimePickerCell" ID="rdTimePicker_MinutesCell_55">
+                          <Label Caption="55" ID="lblTimePicker_Minutes" Class="rdTimePickerLabel" />
+                          <Action Type="Javascript" ID="actPickMinutes" Javascript="rdClockPickMinutes(this)" />
+                        </Column>
+                      </Row>
+                    </Rows>
+                  </Column>
+                </Row>
+              </Rows>
+            </Column>
+            <Column ID="colSeconds">
+              <Rows CellSpacing="1" Class="rdTimePicker" ID="rdTimePicker_Seconds">
+                <Row>
+                  <Column Class="rdTimePickerTableHeaderCaption" ID="rdTimePicker_SecondsCaptionCell">
+                    <Label Caption="Seconds" ID="lblSecondsCaption" />
+                  </Column>
+                </Row>
+                <Row>
+                  <Column Class="rdTimePickerInnerTables">
+                    <Rows CellSpacing="1" ID="rdTimePicker_SecondsTable" Width="100" WidthScale="%">
+                      <Row>
+                        <Column Class="rdTimePickerCell" ID="rdTimePicker_SecondsCell_00">
+                          <Label Caption="00" ID="lblTimePicker_Seconds" Class="rdTimePickerLabel" />
+                          <Action Type="Javascript" ID="actPickSeconds" Javascript="rdClockPickSeconds(this)" />
+                        </Column>
+                        <Column Class="rdTimePickerCell" ID="rdTimePicker_SecondsCell_05">
+                          <Label Caption="05" ID="lblTimePicker_Seconds" Class="rdTimePickerLabel" />
+                          <Action Type="Javascript" ID="actPickSeconds" Javascript="rdClockPickSeconds(this)" />
+                        </Column>
+                        <Column Class="rdTimePickerCell" ID="rdTimePicker_SecondsCell_10">
+                          <Label Caption="10" ID="lblTimePicker_Seconds" Class="rdTimePickerLabel" />
+                          <Action Type="Javascript" ID="actPickMinutes" Javascript="rdClockPickSeconds(this)" />
+                        </Column>
+                      </Row>
+                      <Row>
+                        <Column Class="rdTimePickerCell" ID="rdTimePicker_SecondsCell_15">
+                          <Label Caption="15" ID="lblTimePicker_Seconds" Class="rdTimePickerLabel" />
+                          <Action Type="Javascript" ID="actPickSeconds" Javascript="rdClockPickSeconds(this)" />
+                        </Column>
+                        <Column Class="rdTimePickerCell" ID="rdTimePicker_SecondsCell_20">
+                          <Label Caption="20" ID="lblTimePicker_Seconds" Class="rdTimePickerLabel" />
+                          <Action Type="Javascript" ID="actPickSeconds" Javascript="rdClockPickSeconds(this)" />
+                        </Column>
+                        <Column Class="rdTimePickerCell" ID="rdTimePicker_SecondsCell_25">
+                          <Label Caption="25" ID="lblTimePicker_Seconds" Class="rdTimePickerLabel" />
+                          <Action Type="Javascript" ID="actPickSeconds" Javascript="rdClockPickSeconds(this)" />
+                        </Column>
+                      </Row>
+                      <Row>
+                        <Column Class="rdTimePickerCell" ID="rdTimePicker_SecondsCell_30">
+                          <Label Caption="30" ID="lblTimePicker_Seconds" Class="rdTimePickerLabel" />
+                          <Action Type="Javascript" ID="actPickSeconds" Javascript="rdClockPickSeconds(this)" />
+                        </Column>
+                        <Column Class="rdTimePickerCell" ID="rdTimePicker_SecondsCell_35">
+                          <Label Caption="35" ID="lblTimePicker_Seconds" Class="rdTimePickerLabel" />
+                          <Action Type="Javascript" ID="actPickSeconds" Javascript="rdClockPickSeconds(this)" />
+                        </Column>
+                        <Column Class="rdTimePickerCell" ID="rdTimePicker_SecondsCell_40">
+                          <Label Caption="40" ID="lblTimePicker_Seconds" Class="rdTimePickerLabel" />
+                          <Action Type="Javascript" ID="actPickSeconds" Javascript="rdClockPickSeconds(this)" />
+                        </Column>
+                      </Row>
+                      <Row>
+                        <Column Class="rdTimePickerCell" ID="rdTimePicker_SecondsCell_45">
+                          <Label Caption="45" ID="lblTimePicker_Seconds" Class="rdTimePickerLabel" />
+                          <Action Type="Javascript" ID="actPickSeconds" Javascript="rdClockPickSeconds(this)" />
+                        </Column>
+                        <Column Class="rdTimePickerCell" ID="rdTimePicker_SecondsCell_50">
+                          <Label Caption="50" ID="lblTimePicker_Seconds" Class="rdTimePickerLabel" />
+                          <Action Type="Javascript" ID="actPickSeconds" Javascript="rdClockPickSeconds(this)" />
+                        </Column>
+                        <Column Class="rdTimePickerCell" ID="rdTimePicker_SecondsCell_55">
+                          <Label Caption="55" ID="lblTimePicker_Seconds" Class="rdTimePickerLabel" />
+                          <Action Type="Javascript" ID="actPickSeconds" Javascript="rdClockPickSeconds(this)" />
+                        </Column>
+                      </Row>
+                    </Rows>
+                  </Column>
+                </Row>
+              </Rows>
+            </Column>
+          </Row>
+        </Rows>
+      </PopupPanel>
+  </Body>
+</Report>

@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Report ID="ReportAuthorDev.Templates.RowEditorTemplate">
+  <StyleSheet StyleSheet="rdTemplate/rdReportAuthor/reportauthor.css" />
+  <Body>
+    <DraggableDivision HtmlDiv="True" ID="RowEditorTemplate" rdReportAuthorEditorFor="Row" Class="rd-element-editor" DragHandlerElementID="imgDragHandler_rdElementID">
+      <ProxyDivision MoveOnEnd="True" HideOnEnd="True" HideOnStart="True" />
+      <LinkedParams action="rdAjaxRequestWithFormVars('rdAjaxCommand=RefreshElement&amp;rdRefreshElementID=rdReportAuthorID,rdReturnElementID&amp;rdReportAuthorAction=move&amp;rdReportAuthorElementID=rdElementID&amp;rdReportAuthorParentID=rdNewParentID&amp;rdReportAuthorSiblingElementID=rdSiblingID&amp;rdReportAuthorRefreshElementID=rdReturnElementID&amp;rdReport=rdCurrentReport&amp;rdReportAuthorSilentUpdate=True','false','',null,null,null,['','',''])" />
+      <Rows Width="100" WidthScale="%" ID="rdElementID" rdReportAuthorElementType="Row" Class="row-editor-table">
+        <Row ID="editorHeaderRow_rdElementID" Class="rdResponsiveColumnResizer">
+          <Column Class="ThemeAlignRight rd-element-editor-header-droppable reportAuthorbgc reportAuthorHeightMenu" ID="header_rdColumnID">
+            <Division Class="rd-drag-block" />
+            <Division Class="rd-header-buttons">
+              <Division ID="divDragHandlerBox_rdElementID">
+                <Image ID="imgDragHandler_rdElementID" Caption="../rdTemplate/rdReportAuthor/drag-handler-light.png" Class="rd-drag-handler rd-row-drag-handler" Tooltip="Move split row" />
+                <Division Class="separator-horizontal" />
+              </Division>
+              <Division ID="divAddColumn_rdElementID" Class="addColumnButtonDiv">
+                <Image ID="imgAddColumn_rdElementID" Caption="../rdTemplate/rdReportAuthor/addColumn.png" Tooltip="Split Column">
+                  <Action Type="RefreshElement" ElementID="rdReportAuthorID, EditorFor_rdElementID" ID="actAddColumnElement_rdElementID">
+                    <LinkParams rdReportAuthorAction="add" rdReportAuthorElementID="rdElementID" rdReportAuthorColumnID="rdColumnID" rdElementType="Row" rdReportAuthorParentID="rdElementID" />
+                    <WaitPage />
+                  </Action>
+                </Image>
+                <Division Class="separator-horizontal" />
+              </Division>
+              <Image ID="imgDelete_rdElementID_rdColumnID" Caption="../rdTemplate/rdReportAuthor/close.png" Tooltip="Remove column">
+                <Action Type="RefreshElement" ElementID="rdReportAuthorID, rdParentID, ppChangeDashboard" ID="actDeleteColumnElement_rdElementID" ConfirmMessage="Remove? Are you sure?">
+                  <LinkParams rdReportAuthorAction="delete" rdReportAuthorElementID="rdElementID" rdReportAuthorColumnID="rdColumnID" rdElementType="Row" rdReportAuthorRefreshElementID="rdParentID" />
+                  <WaitPage />
+                </Action>
+              </Image>
+            </Division>
+          </Column>
+        </Row>
+        <Row ID="editorContainerRow_rdElementID">
+          <Column ID="rdColumnID" Class="column-with-droppable rdDroppableContainer">
+            <Division Class="rdDropPlaceholder" HtmlDiv="True" ShowModes="None" ID="divPlaceholder">
+              <Label ID="lblDragHere" Caption="DRAG CONTENT HERE" />
+            </Division>
+          </Column>
+        </Row>
+      </Rows>
+    </DraggableDivision>
+  </Body>
+</Report>

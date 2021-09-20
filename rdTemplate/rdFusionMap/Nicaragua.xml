@@ -1,0 +1,19 @@
+<AnimatedMapDataXML>
+  <MapSpec InternalID="01" ShortName="BO" LongName="Boaco" />
+  <MapSpec InternalID="02" ShortName="CA" LongName="Carazo" />
+  <MapSpec InternalID="03" ShortName="CI" LongName="Chinandega" />
+  <MapSpec InternalID="04" ShortName="CO" LongName="Chontales" />
+  <MapSpec InternalID="05" ShortName="ES" LongName="Estelí" />
+  <MapSpec InternalID="06" ShortName="GR" LongName="Granada" />
+  <MapSpec InternalID="07" ShortName="JI" LongName="Jinotega" />
+  <MapSpec InternalID="08" ShortName="LE" LongName="León" />
+  <MapSpec InternalID="09" ShortName="MD" LongName="Madriz" />
+  <MapSpec InternalID="10" ShortName="MN" LongName="Managua" />
+  <MapSpec InternalID="11" ShortName="MS" LongName="Masaya" />
+  <MapSpec InternalID="12" ShortName="MT" LongName="Matagalpa" />
+  <MapSpec InternalID="13" ShortName="NS" LongName="Nueva Segovia" />
+  <MapSpec InternalID="15" ShortName="RI" LongName="Rivas" />
+  <MapSpec InternalID="14" ShortName="SJ" LongName="Río San Juan" />
+  <MapSpec InternalID="17" ShortName="AN" LongName="Región Autónoma del    Atlántico Norte" />
+  <MapSpec InternalID="18" ShortName="AS" LongName="Región Autónoma del Atlántico Sur" />
+</AnimatedMapDataXML>

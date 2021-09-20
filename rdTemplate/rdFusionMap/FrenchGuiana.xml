@@ -1,0 +1,24 @@
+<AnimatedMapDataXML>
+  <MapSpec InternalID="GF.SL.AP" ShortName="AP" LongName="Apatou" />
+  <MapSpec InternalID="GF.SL.AY" ShortName="AY" LongName="Awala Yalimapo" />
+  <MapSpec InternalID="GF.CY.CM" ShortName="CM" LongName="Camopi" />
+  <MapSpec InternalID="GF.CY.CY" ShortName="CY" LongName="Cayenne" />
+  <MapSpec InternalID="GF.SL.GS" ShortName="GS" LongName="Grand Santi" />
+  <MapSpec InternalID="GF.CY.IR" ShortName="IR" LongName="Iracoubo" />
+  <MapSpec InternalID="GF.CY.KR" ShortName="KR" LongName="Kourou" />
+  <MapSpec InternalID="GF.CY.MC" ShortName="MC" LongName="Macouria" />
+  <MapSpec InternalID="GF.SL.MN" ShortName="MN" LongName="Mana" />
+  <MapSpec InternalID="GF.SL.MP" ShortName="MP" LongName="Maripasoula" />
+  <MapSpec InternalID="GF.CY.MY" ShortName="MY" LongName="Matoury" />
+  <MapSpec InternalID="GF.CY.MT" ShortName="MT" LongName="Montsinery Tonnegrande" />
+  <MapSpec InternalID="GF.CY.OU" ShortName="OU" LongName="Ouanary" />
+  <MapSpec InternalID="GF.SL.PA" ShortName="PA" LongName="Papaichton" />
+  <MapSpec InternalID="GF.CY.RK" ShortName="RK" LongName="Regina" />
+  <MapSpec InternalID="GF.CY.RM" ShortName="RM" LongName="Remire Montjoly" />
+  <MapSpec InternalID="GF.CY.RO" ShortName="RO" LongName="Roura" />
+  <MapSpec InternalID="GF.CY.SE" ShortName="SE" LongName="Saint Elie" />
+  <MapSpec InternalID="GF.CY.SG" ShortName="SG" LongName="Saint Georges" />
+  <MapSpec InternalID="GF.SL.SL" ShortName="SL" LongName="Saint Laurent" />
+  <MapSpec InternalID="GF.SL.SA" ShortName="SA" LongName="Saul" />
+  <MapSpec InternalID="GF.CY.SI" ShortName="SI" LongName="Sinnamary" />
+</AnimatedMapDataXML>

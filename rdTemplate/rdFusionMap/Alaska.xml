@@ -1,0 +1,29 @@
+<AnimatedMapDataXML>
+  <MapSpec InternalID="013" ShortName="AE" LongName="Aleutians east" />
+  <MapSpec InternalID="016" ShortName="AW" LongName="Aleutians west" />
+  <MapSpec InternalID="020" ShortName="AN" LongName="Anchorage" />
+  <MapSpec InternalID="050" ShortName="BE" LongName="Bethel" />
+  <MapSpec InternalID="060" ShortName="BR" LongName="Bristol     Bay" />
+  <MapSpec InternalID="068" ShortName="DE" LongName="Denali Borough" />
+  <MapSpec InternalID="070" ShortName="DI" LongName="Dillingham" />
+  <MapSpec InternalID="090" ShortName="FA" LongName="Fairbanks North Star" />
+  <MapSpec InternalID="100" ShortName="HA" LongName="Haines" />
+  <MapSpec InternalID="110" ShortName="JU" LongName="Juneau" />
+  <MapSpec InternalID="122" ShortName="KE" LongName="Kenai     Peninsula" />
+  <MapSpec InternalID="130" ShortName="KG" LongName="Ketchikan Gateway" />
+  <MapSpec InternalID="150" ShortName="KO" LongName="Kodiak     Island" />
+  <MapSpec InternalID="170" ShortName="MA" LongName="Matanuska-Susitna" />
+  <MapSpec InternalID="180" ShortName="NO" LongName="Nome" />
+  <MapSpec InternalID="185" ShortName="NS" LongName="North     Slope" />
+  <MapSpec InternalID="188" ShortName="NA" LongName="Northwest    Arctic" />
+  <MapSpec InternalID="164" ShortName="PL" LongName="Peninsula    and Lake" />
+  <MapSpec InternalID="201" ShortName="PW" LongName="Prince of    Wales-Outer Ketchika" />
+  <MapSpec InternalID="220" ShortName="SI" LongName="Sitka" />
+  <MapSpec InternalID="231" ShortName="SY" LongName="Skagway-Yakutat-Angoon" />
+  <MapSpec InternalID="240" ShortName="SF" LongName="Southeast     Fairbanks" />
+  <MapSpec InternalID="261" ShortName="VC" LongName="Valdez-Cordova" />
+  <MapSpec InternalID="270" ShortName="WH" LongName="Wade    Hampton" />
+  <MapSpec InternalID="280" ShortName="WP" LongName="Wrangell-Petersburg" />
+  <MapSpec InternalID="282" ShortName="YA" LongName="Yakutat" />
+  <MapSpec InternalID="290" ShortName="YK" LongName="Yukon-Koyukuk" />
+</AnimatedMapDataXML>

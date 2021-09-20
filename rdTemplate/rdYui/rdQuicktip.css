@@ -1,0 +1,111 @@
+/* Based on 
+ * http://tantek.com/CSS/Examples/polygons.html
+ * http://www.filamentgroup.com/lab/image_free_css_tooltip_pointers_a_use_for_polygonal_css/
+ */
+
+.rdquicktip {
+	position: absolute;
+	z-index: 9010; /* PopupPanel uses z-index of 9001 and 9002.  YUI Resize uses 100 and 200.  Need to be above it */
+	opacity: 0;
+}
+
+.rdquicktip-hidden {
+	visibility: hidden;
+}
+
+.rdquicktip-content {
+	text-align: left;
+	position: relative;
+	padding: 3px;
+	word-wrap: break-word;
+    white-space: normal;
+	background-color: #e5f4f4;
+	border: 1px solid #526666;
+	border-radius: 8px;
+	box-shadow: 0 2px 5px rgba(0,0,0,0.4);
+}
+
+.rdquicktip-content .header {
+	font-weight: bold;
+	border-radius: 5px 5px 0 0;
+}
+
+.rdquicktip-content .body {
+	overflow: hidden;
+
+}
+
+.quicktip-pointer, .quicktip-pointer-inner  {
+	width: 0; 
+	height: 0;
+	background: none;
+	position: absolute;
+	border-style: solid;
+	border-radius: 0;
+}
+
+.quicktip-pointer {
+	border-color: #526666 transparent;
+}
+
+.quicktip-pointer-inner {
+	border-color: #e5f4f4 transparent;
+}
+
+.quicktip-pointer.top {
+	border-left: 7px solid transparent;
+	border-right: 7px solid transparent;
+	border-width: 0 7px 14px;
+	top: -14px;
+}
+
+.quicktip-pointer.bottom {
+	border-left: 7px solid transparent;
+	border-right: 7px solid transparent;
+	border-width: 14px 7px 0;
+	bottom: -14px;
+}
+
+.quicktip-pointer.center {
+	left: 50%;
+	margin-left: -7px;
+}
+
+.quicktip-pointer.left {
+	left: 10px;
+}
+
+.quicktip-pointer.right {
+	right: 10px;
+}
+
+.quicktip-pointer-inner {
+	margin-left: -6px;
+}
+
+.top .quicktip-pointer-inner {
+	border-left: 6px solid transparent;
+	border-right: 6px solid transparent;
+	border-width: 0 6px 12px;
+	bottom: -14px;
+}
+
+.bottom .quicktip-pointer-inner {
+	border-left: 6px solid transparent;
+	border-right: 6px solid transparent;
+	border-width: 12px 6px 0;
+	top: -14px;
+}
+
+.rdquicktip-content .header {
+	text-align: center;
+}
+
+.rdquicktip-list {
+	margin: 0;
+	padding: 0 0 0 18px;
+}
+
+.rdquicktip-table td {
+	padding: 2px;
+}

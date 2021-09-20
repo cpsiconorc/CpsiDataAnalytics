@@ -1,0 +1,13 @@
+<AnimatedMapDataXML>
+  <MapSpec InternalID="ET.AA" ShortName="AA" LongName="Addis Ababa" />
+  <MapSpec InternalID="ET.AF" ShortName="AF" LongName="Afar" />
+  <MapSpec InternalID="ET.AM" ShortName="AM" LongName="Amhara" />
+  <MapSpec InternalID="ET.BE" ShortName="BE" LongName="Benshangul Gumaz" />
+  <MapSpec InternalID="ET.DD" ShortName="DD" LongName="Dire Dawa" />
+  <MapSpec InternalID="ET.GA" ShortName="GA" LongName="Gambela Peoples" />
+  <MapSpec InternalID="ET.HA" ShortName="HA" LongName="Harari People" />
+  <MapSpec InternalID="ET.OR" ShortName="OR" LongName="Oromia" />
+  <MapSpec InternalID="ET.SO" ShortName="SO" LongName="Somali" />
+  <MapSpec InternalID="ET.SN" ShortName="SN" LongName="Southern (Nations,Nationalities and People’s Region)" />
+  <MapSpec InternalID="ET.TI" ShortName="TI" LongName="Tigray" />
+</AnimatedMapDataXML>

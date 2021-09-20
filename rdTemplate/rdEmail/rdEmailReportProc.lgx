@@ -1,0 +1,56 @@
+﻿<Process ID="rdEmailReportProc">
+	<!--<DefaultRequestParams rdExcelFormat="Excel2007" /> 18518 - do not default to excel2007, format is picked up from target element instead. -->
+	<DefaultRequestParams rdExportFilename="Report-@Function.FUID~@Request.rdExportExtension~" />
+	<Task ID="rdEmailReport">
+		<Procedure Type="If" Expression="&quot;Report&quot; = &quot;@Request.rdFormat~&quot;" ID="ifHtml">
+			<Procedure Type="SendHtmlReport" EmailSubject="@Request.rdSubject~" FromEmailAddress="@Request.rdFrom~" ID="rdSendHtmlEmail" ToEmailAddress="@Request.rdTo~" BccEmailAddress="@Request.rdBcc~" CcEmailAddress="@Request.rdCc~" ConnectionID="@Session.rdEmailReportConnId~">
+				<Target Type="Report" Report="@Request.rdReportID~" KeepShowElements="@Request.rdKeepShowElements~" ReportShowModes="@Request.rdShowModes~" RequestForwarding="True" Paging="NoPaging" ID="targetHtml" />
+			</Procedure>
+		</Procedure>
+		<Procedure Type="If" Expression="&quot;Report&quot; &lt;&gt; &quot;@Request.rdFormat~&quot;" ID="ifNotHtml">
+			<Procedure Type="DeleteFile" Filename="@Session.rdAttachmentFilename~" ID="rdDeleteAttachmentFile" />
+			<Procedure Type="SetSessionVars" ID="SetFilename">
+				<SessionParams rdAttachmentFilename="@Function.AppPhysicalPath~\rdDownload\@Request.rdExportFilename~" />
+			</Procedure>
+			<Procedure Type="If" Expression="&quot;CSV&quot; = &quot;@Request.rdFormat~&quot;" ID="ifCsv">
+				<Procedure Type="ExportToCSV" Filename="@Session.rdAttachmentFilename~" ID="rdExportCSV">
+					<Target Type="CSV" ID="targetCsv" Report="@Request.rdReportID~" ReportShowModes="@Request.rdShowModes~" RequestForwarding="True" CsvRowDelimiter="@Request.rdCsvRowDelimiter~" CsvStringColumns="@Request.rdCsvStringColumns~" CsvFieldDelimiter="@Request.rdCsvFieldDelimiter~" ExportDataTableID="@Request.rdExportTableID~" />
+				</Procedure>
+			</Procedure>
+			<Procedure Type="If" Expression="&quot;PDF&quot; = &quot;@Request.rdFormat~&quot;" ID="ifPdf">
+				<Procedure Type="ExportToPDF" ID="rdExportPdf" Filename="@Session.rdAttachmentFilename~">
+					<Target Type="PDF" Report="@Request.rdReportID~" RequestForwarding="True" ReportShowModes="@Request.rdShowModes~" KeepTableHeadersWithMoreInfoRow="@Request.rdTableHeaders~" KeepShowElements="@Request.rdKeepShowElements~" ExportDataTableID="@Request.rdExportTableID~" ID="targetPDF" />
+				</Procedure>
+			</Procedure>
+			<Procedure Type="If" Expression="&quot;NativeExcel&quot; = &quot;@Request.rdFormat~&quot;" ID="ifExcel">
+				<Procedure Type="ExportToNativeExcel" Filename="@Session.rdAttachmentFilename~" ID="rdExportExcel">
+					<Target Type="NativeExcel" Report="@Request.rdReportID~" RequestForwarding="True" ExportDataTableID="@Request.rdExportTableID~" ExcelPaperSize="@Request.rdExcelPaperSize~" ExcelOutputFormat="@Request.rdExcelFormat~" ID="targetExcel" KeepShowElements="@Request.rdKeepShowElements~" ReportShowModes="@Request.rdShowModes~" ShowGridlines="@Request.rdExcelGridlines~" />
+				</Procedure>
+			</Procedure>
+			<Procedure Type="If" Expression="&quot;NativeWord&quot; = &quot;@Request.rdFormat~&quot;" ID="ifWord">
+				<Procedure Type="ExportToNativeWord" Filename="@Session.rdAttachmentFilename~" ID="rdExportWord">
+					<Target Type="NativeWord" ID="targetWord" KeepShowElements="@Request.rdKeepShowElements~" Report="@Request.rdReportID~" ReportShowModes="@Request.rdShowModes~" RequestForwarding="True" />
+				</Procedure>
+			</Procedure>
+			<Procedure Type="If" Expression="&quot;Template&quot; = &quot;@Request.rdFormat~&quot;" ID="ifTemplate">
+				<Procedure Type="SaveTemplate" Filename="@Session.rdAttachmentFilename~" ID="rdExportTemplate">
+					<Target Type="Template" ID="targetTemplate" TemplateDefinition="@Request.rdReportID~" RequestForwarding="True" />
+				</Procedure>
+			</Procedure>
+			<Procedure Type="If" Expression="&quot;Html&quot; = &quot;@Request.rdFormat~&quot;" ID="ifHtml">
+				<Note Note="Send as an Email, there is no attachment." />
+				<Procedure Type="SendHtmlReport" ID="rdSendHtml" EmailSubject="@Request.rdSubject~" FromEmailAddress="@Request.rdFrom~" ToEmailAddress="@Request.rdTo~" BccEmailAddress="@Request.rdBcc~" CcEmailAddress="@Request.rdCc~" ConnectionID="@Session.rdEmailReportConnId~">
+					<Target Type="Report" Report="@Request.rdReportID~" />
+				</Procedure>
+				<Response Type="AjaxShowStatus" StatusMessage="Email was sent." />
+			</Procedure>
+			<Procedure Type="SendMail" EmailBody="@Request.rdBody~ " EmailBodyType="PlainText" EmailSubject="@Request.rdSubject~" FromEmailAddress="@Request.rdFrom~" ID="rdSendMail" ToEmailAddress="@Request.rdTo~" ConnectionID="@Session.rdEmailReportConnId~" BccEmailAddress="@Request.rdBcc~" CcEmailAddress="@Request.rdCc~">
+				<Note Note="Send mail with the attachment." />
+				<Attachment Filename="@Session.rdAttachmentFilename~" />
+			</Procedure>
+			<Procedure Type="DeleteFile" ID="deleteFile" Filename="@Session.rdAttachmentFilename~" />
+		</Procedure>
+		<Response Type="AjaxShowStatus" StatusMessage="Email was sent." />
+	</Task>
+	<ideTestParams rdFormat="" rdSubject="" rdFrom="" rdTo="" rdBcc="" rdCc="" rdReportID="" rdKeepShowElements="" rdShowModes="" rdExportFilename="" rdCsvRowDelimiter="" rdCsvStringColumns="" rdCsvFieldDelimiter="" rdExportTableID="" rdTableHeaders="" rdExcelPaperSize="" rdExcelFormat="" rdExcelGridlines="" rdBody="" rdTaskID="(Select a task)" />
+</Process>

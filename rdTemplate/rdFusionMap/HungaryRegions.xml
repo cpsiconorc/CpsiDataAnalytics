@@ -1,0 +1,9 @@
+<AnimatedMapDataXML>
+  <MapSpec InternalID="HU.CH" ShortName="CH" LongName="Central Hungary" />
+  <MapSpec InternalID="HU.CT" ShortName="CT" LongName="Central Transdanubia" />
+  <MapSpec InternalID="HU.NG" ShortName="NG" LongName="Northern Great Plain" />
+  <MapSpec InternalID="HU.NH" ShortName="NH" LongName="Northern Hungary" />
+  <MapSpec InternalID="HU.SG" ShortName="SG" LongName="Southern Great Plain" />
+  <MapSpec InternalID="HU.ST" ShortName="ST" LongName="Southern Transdanubia" />
+  <MapSpec InternalID="HU.WT" ShortName="WT" LongName="Western Transdanubia" />
+</AnimatedMapDataXML>

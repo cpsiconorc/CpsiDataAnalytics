@@ -1,0 +1,7 @@
+<AnimatedMapDataXML>
+  <MapSpec InternalID="CA.SK.EC" ShortName="EC" LongName="East Central Region" />
+  <MapSpec InternalID="CA.SK.NR" ShortName="NR" LongName="North Region" />
+  <MapSpec InternalID="CA.SK.SE" ShortName="SE" LongName="South East Region" />
+  <MapSpec InternalID="CA.SK.SW" ShortName="SW" LongName="South West Region" />
+  <MapSpec InternalID="CA.SK.WC" ShortName="WC" LongName="West Central Region" />
+</AnimatedMapDataXML>

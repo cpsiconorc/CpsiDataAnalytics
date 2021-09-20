@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Report ID="rdVisualEditorTemplate" Class="rdAgBackground" >
+  <Body>
+  <StyleSheet StyleSheet="rdTemplate/rdDashboard/rdDashboard2.css"/>
+  <Rows Width="100" WidthScale="%">
+    <Row>
+      <Column Class="ThemeAlignTop rdVisEditLeft" Width="24" WidthScale="px">
+        <Image Caption="InfoGo.iconCog.png" Class="go-title-menu-icon" Height="24px" ID="imgCog" Width="24px" Tooltip="Edit Visualization">
+          <Action ElementID="popupEditAgViz_@Session.goBookmarkID~" ID="actEditAgViz" Type="ShowElement" />
+        </Image>
+        <PopupPanel Caption="Edit Visualization" Draggable="True" ID="popupEditAgViz_@Session.goBookmarkID~" PopupModal="True" rdNoElementShowHistory="True">
+          <IncludeFrame Class="rdEditAgVizFrame" FrameBorder="False" ID="subEditAgViz_@Session.goBookmarkID~" Title="Edit Panel">
+            <Target ID="targetEditAgViz_@Session.goBookmarkID~" Report="rdStandaloneEditAgViz" RequestForwarding="True" Type="IncludeFrameReport" />
+            <LinkParams rdBookmarkCollection="@Session.goBookmarkCollection~" rdBookmarkID="@Session.goBookmarkID~" rdDashboardReportID="@Function.Report~" rdRnd="@Function.GUID~" ID="lnkParamsEdit" rdInstanceID=""/>
+          </IncludeFrame>
+        </PopupPanel>
+      </Column>
+      <Column Class="rdVisEditRight" Width="100" WidthScale="%" ID="rdContentColumn">
+        <Row ID="MissingDataMessage" Class="ThemeHidden" Condition="False">
+          <Column>
+            <Label ID="MissingDataMessage" Caption="This panel's data is no longer available. {0}" Class="ThemeErrorText" />
+          </Column>
+        </Row>
+        <Visualization ID="rdVisPlaceholder"/>
+      </Column>
+    </Row>
+  </Rows>
+    </Body>
+</Report>

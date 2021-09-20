@@ -1,0 +1,31 @@
+<AnimatedMapDataXML>
+  <MapSpec InternalID="002" ShortName="AM" LongName="Armenia" />
+  <MapSpec InternalID="003" ShortName="AZ" LongName="Azerbaijan" />
+  <MapSpec InternalID="005" ShortName="BD" LongName="Bangladesh" />
+  <MapSpec InternalID="006" ShortName="BT" LongName="Bhutan" />
+  <MapSpec InternalID="007" ShortName="BN" LongName="Brunei" />
+  <MapSpec InternalID="008" ShortName="MM" LongName="Burma (Myanmar)" />
+  <MapSpec InternalID="009" ShortName="KH" LongName="Cambodia" />
+  <MapSpec InternalID="010" ShortName="CN" LongName="China" />
+  <MapSpec InternalID="012" ShortName="TP" LongName="East Timor" />
+  <MapSpec InternalID="013" ShortName="GE" LongName="Georgia" />
+  <MapSpec InternalID="014" ShortName="IN" LongName="India" />
+  <MapSpec InternalID="015" ShortName="ID" LongName="Indonesia" />
+  <MapSpec InternalID="019" ShortName="JP" LongName="Japan" />
+  <MapSpec InternalID="021" ShortName="KZ" LongName="Kazakhstan" />
+  <MapSpec InternalID="022" ShortName="KP" LongName="Korea (north)" />
+  <MapSpec InternalID="023" ShortName="KR" LongName="Korea (south)" />
+  <MapSpec InternalID="026" ShortName="LA" LongName="Laos" />
+  <MapSpec InternalID="028" ShortName="MY" LongName="Malaysia" />
+  <MapSpec InternalID="030" ShortName="MN" LongName="Mongolia" />
+  <MapSpec InternalID="031" ShortName="NP" LongName="Nepal" />
+  <MapSpec InternalID="034" ShortName="PH" LongName="Philippines" />
+  <MapSpec InternalID="036" ShortName="RU" LongName="Russian      Federation" />
+  <MapSpec InternalID="038" ShortName="SG" LongName="Singapore" />
+  <MapSpec InternalID="039" ShortName="LK" LongName="Sri Lanka" />
+  <MapSpec InternalID="042" ShortName="TH" LongName="Thailand" />
+  <MapSpec InternalID="047" ShortName="VN" LongName="Vietnam" />
+  <MapSpec InternalID="049" ShortName="TW" LongName="Taiwan" />
+  <MapSpec InternalID="050" ShortName="HK" LongName="Hong Kong" />
+  <MapSpec InternalID="051" ShortName="MO" LongName="Macau" />
+</AnimatedMapDataXML>

@@ -1,0 +1,15 @@
+﻿<DataLayer Type="Static">
+  <StaticDataRow Name="AVG" Description="Returns the average value of a column." Syntax="AVG ( expression )" Notes="" />
+  <StaticDataRow Name="CORRELATION" Description="Returns the correlated coefficent." Syntax="CORRELATION ( expression_Y, expression_X )" Notes="" />
+  <StaticDataRow Name="COUNT" Description="Returns the number of items found in a group." Syntax="COUNT ( [ DISTINCT ] * | expression )" Notes="COUNT returns an int." />
+  <StaticDataRow Name="COUNT_BIG" Description="Returns the number of items found in a group." Syntax="COUNT_BIG ( [ DISTINCT ] expression )" Notes="COUNT_BIG returns a bigint." />
+  <StaticDataRow Name="COVAR" Description="Returns the population covariance." Syntax="COVAR ( expression_Y, expression_X )" Notes="Alias COVARIANCE" />
+  <StaticDataRow Name="COVAR_SAMP" Description="Returns the unbiased sample covariance." Syntax="COVAR_SAMP ( expression_Y, expression_X )" Notes="Alias COVARIANCE_SAMP" />
+  <StaticDataRow Name="MAX" Description="Returns the maximum value of a column." Syntax="MAX ( expression )" Notes="" />
+  <StaticDataRow Name="MIN" Description="Returns the minimum value of a column." Syntax="MIN ( expression )" Notes="" />
+  <StaticDataRow Name="STDDEV_POP" Description="Returns the population standard deviation of all values in the specified expression." Syntax="STDDEV_POP ( expression )" Notes="Alias STDDEV" />
+  <StaticDataRow Name="STDDEV_SAMP" Description="Returns the sample standard deviation of all values in the specified expression." Syntax="STDDEV_POP ( expression )" Notes="" />
+  <StaticDataRow Name="SUM" Description="Returns the sum of all non-null values in an expression." Syntax="SUM ( expression )" Notes="" />
+  <StaticDataRow Name="VAR_POP" Description="Returns the biased variance of a set of numeric values." Syntax="VAR_POP ( expression )" Notes="" />
+  <StaticDataRow Name="VAR_SAMP" Description="Returns the sample variance of a set of numeric values." Syntax="VAR_SAMP ( expression )" Notes="" />
+</DataLayer>

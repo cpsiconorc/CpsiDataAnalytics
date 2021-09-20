@@ -1,0 +1,18 @@
+<AnimatedMapDataXML>
+  <MapSpec InternalID="MA.CO" ShortName="CO" LongName="Chaouia-Ouardigha" />
+  <MapSpec InternalID="MA.DA" ShortName="DA" LongName="Doukkala-Abda" />
+  <MapSpec InternalID="MA.FB" ShortName="FB" LongName="Fès Boulemane" />
+  <MapSpec InternalID="MA.GB" ShortName="GB" LongName="Gharb Chrarda Béni Hssen" />
+  <MapSpec InternalID="MA.GC" ShortName="GC" LongName="Grand Casablanca" />
+  <MapSpec InternalID="MA.GE" ShortName="GE" LongName="Guelmim Es Semara" />
+  <MapSpec InternalID="MA.LB" ShortName="LB" LongName="Laâyoune Boujdour Sakia El Hamra" />
+  <MapSpec InternalID="MA.MK" ShortName="MK" LongName="Marrakech Tensift Al Haouz" />
+  <MapSpec InternalID="MA.MT" ShortName="MT" LongName="Meknès Tafilalet" />
+  <MapSpec InternalID="MA.OR" ShortName="OR" LongName="Oriental" />
+  <MapSpec InternalID="MA.OL" ShortName="OL" LongName="Oued Ed Dahab Lagouira" />
+  <MapSpec InternalID="MA.RZ" ShortName="RZ" LongName="Rabat Salé Zemmour Zaer" />
+  <MapSpec InternalID="MA.SM" ShortName="SM" LongName="Souss Massa Draâ" />
+  <MapSpec InternalID="MA.TD" ShortName="TD" LongName="Tadla Azilal" />
+  <MapSpec InternalID="MA.TO" ShortName="TO" LongName="Tanger Tétouan" />
+  <MapSpec InternalID="MA.TH" ShortName="TH" LongName="Taza Al Hoceima Taounate" />
+</AnimatedMapDataXML>

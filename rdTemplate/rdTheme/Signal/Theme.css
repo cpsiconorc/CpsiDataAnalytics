@@ -1,0 +1,1846 @@
+/* Page Layout */
+body {
+  background-color: #ECEDEE /*PageBackgroundColor*/ ;
+}
+form[name="rdForm"] {
+  margin-bottom: 0;
+}
+
+/* Global Typography */
+body {
+  font-family: Segoe UI /*MainFont*/, 'Avenir Next', 'Avenir', 'Helvetica Neue', 'Helvetica', 'Arial', 'sans-serif';
+  color: #363B42 /*PageFontColor*/ ;
+  font-size: 100%;
+  min-height: 100%;
+  text-decoration: none;
+  text-transform: none;
+}
+h1, h2, h3, h4, h5, h6, .ThemeHeaderLargest, .ThemeHeaderLarger, .ThemeHeaderLarge, .ThemeHeader, .ThemeHeaderSmall, .ThemeHeaderSmaller, .ThemeHeaderSmallest {
+  text-align: center;
+  min-height: 100%;
+  position: relative;
+}
+p, .ThemeTextLargest, .ThemeTextLarger, .ThemeTextLarge, .ThemeText, .ThemeTextSmall, .ThemeTextSmaller, .ThemeTextSmallest {
+  min-height: 100%;
+  position: relative;
+}
+table, .rdDashboard, .rdDashboard table {
+  color: #363B42 /*PageFontColor*/ ;
+  font-size: 100%;
+}
+strong {
+  font-weight: bold;
+}
+em {
+  font-style: italic;
+}
+#rdMainBody {
+  font-size: 12px;
+}
+
+/*User classes*/
+h1, .ThemeHeaderLargest {
+  font-size: 250%;
+  font-weight: normal;
+}
+h2, .ThemeHeaderLarger {
+  font-size: 200%;
+  font-weight: normal;
+}
+h3, .ThemeHeaderLarge {
+  font-size: 185%;
+  font-weight: normal;
+}
+h4, .ThemeHeader {
+  font-size: 150%;
+}
+h5, .ThemeHeaderSmall {
+  font-size: 120%;
+}
+h6, .ThemeHeaderSmaller {
+  font-size: 100%;
+  font-weight: 600;
+}
+.ThemeHeaderSmallest {
+  font-size: 90%;
+  font-weight: 600;
+}
+blockquote {
+  font-size: 120%;
+}
+.ThemeBold {
+  font-weight: bold;
+}
+.ThemeItalic {
+  font-style: italic;
+}
+.ThemeTextLargest {
+  font-size: 185%;
+}
+.ThemeTextLarger {
+  font-size: 150%;
+}
+.ThemeTextLarge {
+  font-size: 120%;
+}
+.ThemeTextNormal {
+  font-size: 100%;
+  color: #363B42 /*PageFontColor*/ ;
+}
+.ThemeTextSmall {
+  font-size: 95%;
+}
+.ThemeTextSmaller {
+  font-size: 90%;
+}
+.ThemeTextSmallest {
+  font-size: 85%;
+}
+.ThemeTextPositive {
+  color: #85B74D /*TextPositiveFont*/ ;
+}
+.ThemeTextNegative {
+  color: #B84026 /*TextNegativeFont*/ ;
+}
+.ThemeErrorText {
+color: #B84026 /*ErrorFont*/ !important;
+background: #FEF5F7 !important;
+border-radius: 2px;
+font-weight: bold;
+padding: 3px;
+}
+.ThemeNoWrap {
+  white-space: nowrap;
+}
+.ThemePanel {
+  padding: 12px;
+  background-color: #FFFFFF /*ModalBackgroundColor*/ ;
+  -webkit-box-shadow: 0 1px 2px 0px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 0 1px 2px 0px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 1px 2px 0px rgba(0, 0, 0, 0.2);
+  border-radius: 0px;
+}
+.ThemeHidden {
+  display: none;
+}
+.ThemeAlignCenter {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+.ThemeAlignLeft {
+  text-align: left;
+}
+.ThemeAlignRight {
+  text-align: right;
+}
+.ThemeAlignTop {
+  vertical-align: top;
+}
+.ThemeAlignTopLeft {
+  vertical-align: top;
+  text-align: left;
+}
+.ThemeAlignTopRight {
+  vertical-align: top;
+  text-align: right;
+}
+.ThemeAlignBottom {
+  vertical-align: bottom;
+}
+.ThemeAlignBottomLeft {
+  vertical-align: bottom;
+  text-align: left;
+}
+.ThemeAlignBottomRight {
+  vertical-align: bottom;
+  text-align: right;
+}
+.ThemeMarginLargest {
+  margin: 72px;
+}
+.ThemeMarginLarger {
+  margin: 36px;
+}
+.ThemeMarginLarge {
+  margin: 12px;
+}
+.ThemeMargin {
+  margin: 6px;
+}
+.ThemePaddingLargest {
+  padding: 72px;
+}
+.ThemePaddingLarger {
+  padding: 36px;
+}
+.ThemePaddingLarge {
+  padding: 12px;
+}
+.ThemePadding {
+  padding: 6px;
+}
+.ThemeContainerBordered {
+  border: solid 2px !important;
+  border-color: #3FB0AC /*ContainerBorder*/ !important;
+  padding: 6px;
+  border-radius: 0px;
+}
+.ThemeContainerShaded {
+  background-color: #DCD440 /*ShadedBackground*/ ;
+  color: #FFFFFF /*ShadedFont*/ ;
+  padding: 6px;
+  border-radius: 0px;
+}
+.ThemeContainerShadedAndBordered {
+  border: solid 2px !important;
+  border-color: #3FB0AC /*ContainerBorder*/ !important;
+  background-color: #3FB0AC /*ShadedAndBorderedBackground*/ ;
+  color: #FFFFFF /*ShadedAndBorderedFont*/ ;
+  padding: 6px;
+  border-radius: 0px;
+}
+.ThemeContainerShadedAndBordered a {
+  color: #ffffff /*ShadedAndBorderedLink*/ !important;
+}
+.ThemeLinkButton ,
+.ThemeLinkButtonSmall ,
+.ThemeAlternatingRow {}
+
+/*User classes end*/
+
+tr.ThemeAlternatingRow td, .rdAg tr.ThemeAlternatingRow td, .rdAgDataTable tr.ThemeAlternatingRow td, .rdThemeDataTable tr.ThemeAlternatingRow > td {
+  background-color: #F5F5F5 /*TableDataAlternateBackgroundColor*/ ;
+}
+
+.ThemeClearfix:before, .ThemeClearfix:after {
+  display: table;
+  line-height: 0;
+  content: "";
+}
+.ThemeClearfix:after {
+  clear: both;
+}
+.ThemeClearfix {
+  zoom: 1;
+}
+
+/* Images */
+
+img {
+  border: 0;
+  -ms-interpolation-mode: bicubic;
+}
+
+/* Links and Buttons */
+a, a:link {
+  color: #3FB0AC /*LinkColor*/ ;
+  text-decoration: none;
+}
+a:active {
+  color: #3FB0AC /*LinkColor*/ ;
+  text-decoration: none;
+}
+a:visited {
+  color: #3FB0AC /*LinkColor*/ ;
+  text-decoration: none;
+}
+.rdPreviewHyperlink, a:hover {
+  color: #19706D /*LinkHoverColor*/ ;
+  text-decoration: none;
+}
+a:hover.ThemeLinkButton, a:hover.ThemeLinkButtonSmall, a:link.ThemeLinkButton, a:link.ThemeLinkButtonSmall, a:visited.ThemeLinkButton, a:visited.ThemeLinkButtonSmall, a:active.ThemeLinkButton, a:active.ThemeLinkButtonSmall {
+  color: #FFFFFF /*ButtonFontColor*/ ;
+  text-decoration: none;
+}
+.ThemeLinkButton, .ThemeLinkButtonSmall, .rdAgCommand, .rdOgCommand, .rdAcCommand, span.rdCgCommand, .rdDashboardCommand, input[type="button"] {
+  color: #FFFFFF /*ButtonFontColor*/ !important;
+  background-image: none;
+  background-color:  #37393d /*ButtonBackgroundColor*/ !important;
+  border-radius: 5px;
+  text-decoration: none;
+  cursor: pointer;
+  white-space: nowrap;
+  vertical-align: baseline;
+  border-color: RGBA(255,255,255,0) /*ButtonBorderColor*/ !important;
+  border: 1px solid;
+}
+.ThemeLinkButton {
+  font-size: 110%;
+  padding: 3px 7px 4px;
+  margin: 3px 6px;
+  border-color: RGBA(255,255,255,0) /*ButtonBorderColor*/ !important;
+  border: 1px solid;
+}
+input[type="button"] {
+  padding: 5px 7px 3px;
+  margin: 3px 6px;
+  border-color: RGBA(255,255,255,0) /*ButtonBorderColor*/ !important;
+  border: 1px solid;
+}
+.ThemeLinkButtonSmall {
+  font-size: 100%;
+  padding: 2px 5px 3px;
+  margin-top: 3px !important;
+  border-color: RGBA(255,255,255,0) /*ButtonBorderColor*/ !important;
+  border: 1px solid;
+}
+.ThemeLinkButton span, .ThemeLinkButtonSmall span {
+  color: #FFFFFF /*ButtonFontColor*/ !important;
+}
+.rdPreviewHoverState, .rdPreviewHoverState:hover, .ThemeLinkButton:hover, .ThemeLinkButtonSmall:hover, span:hover.rdAgCommand, span:hover.rdAcCommand, span:hover.rdOgCommand, span:hover.rdCgCommand, span:hover.rdDashboardCommand, #rowChangeTab span:hover.rdDashboardCommand, span:hover.rdPopupPanelCommand, .rdAgUnselectedTab:hover, .rdOgUnselectedTab:hover, input[type="button"]:hover {
+  background-color: #3FB0AC /*ButtonHoverBackgroundColor*/ !important;
+  color: #FFFFFF /*ButtonHoverFontColor*/ !important;
+  text-decoration: none;
+}
+img:active.rdThemePaging, span:active.rdAgCommand, span:active.rdOgCommand, span:active.rdCgCommand, span:active.rdDashboardCommand, #rowChangeTab span:active.rdDashboardCommand, span:active.rdPopupPanelCommand {
+  top: 1px;
+}
+
+/* Data Table / Crosstab Table */
+.rdThemeDataTable, .rdAgDataTable, .rdOgOlapTable, .rdDgOlapTable {
+  background-color: #DCDCDC /*TableBorderColor*/;
+  border-radius: 0px;
+  border-spacing: 1px;
+}
+td.rdDgPanelLine #mclDimensions, td.rdDgPanelLine #mclMeasures, td.rdDgPanelLine #mclFilters, #rowTable table.rdDgPanel table.rdDgContentHeadingRow, #otOlapGrid th.rdOgPositionCellXAxis table, #rowChart table.rdDgPanel tr:first-child table.rdDgContentHeadingRow, #rowHeatmap table.rdDgPanel tr:first-child table.rdDgContentHeadingRow, #rowsChartLists, #rowChartYColumnContainer, #rowChartExtraDataColumnContainer {
+  border: none !important;
+  background-color: transparent !important;
+}
+.rdThemeDataTableCell {
+  padding: 2px 10px;
+  color: #454D59 /*TableDataFontColor*/ ;
+  background-color: #FFFFFF /*TableDataBackgroundColor*/;
+}
+.rdThemeDataTableMainHeader a {
+  color: #FFFFFF /*TableCaptionFontColor*/ ;
+}
+.rdThemeDataTableMainHeader {
+  color: #FFFFFF /*TableCaptionFontColor*/ ;
+  background-color: #303137 /*TableCaptionBackgroundColor*/ ;
+  font-size: 150%;
+  padding-left: 12px;
+  text-align: left;
+  margin-bottom: 1px;
+}
+.rdThemeDataTableHeader {
+  color: #3FB0AC /*TableColumnHeaderFontColor*/ ;
+  background-color: #F3F3F3 /*TableColumnHeaderBackgroundColor*/ ;
+  padding: 4px 10px 4px 10px;
+  font-size: 100%;
+}
+.rdThemeDataTableHeader td {
+  color: #3FB0AC /*TableColumnHeaderFontColor*/ ;
+  background-color: #F3F3F3 /*TableColumnHeaderBackgroundColor*/ !important;
+  font-size: 100%;
+  font-weight: bold;
+}
+.rdThemeDataTableHeader a {
+  color: #3FB0AC /*TableColumnHeaderFontColor*/ ;
+}
+.rdThemeDataTableHeaderAlternate {
+  background-color: #F3F3F3 /*TableColumnHeaderBackgroundColor*/ ;
+  border: none;
+}
+.rdThemeDataTableHeaderAlternate  a {
+  color: #3FB0AC /*TableColumnHeaderFontColor*/ !important;
+}
+.rdThemeDataTableHeaderRow th {
+  background-color: #D9D9D9 /*TableHeaderRowBackgroundColor*/ ;
+  color: #454D59 /*TableHeaderRowFontColor*/ ;
+}
+.rdThemeDataTableSummaryRow td {
+  background-color: #F3F3F3 /*TableColumnHeaderBackgroundColor*/ ;
+  color: #3FB0AC /*TableColumnHeaderFontColor*/ ;
+}
+.rdThemeDataTableGroupHeaderRow0 td, table.rdAgDataTable tr.rdAgGroup0HeaderRow td, .rdThemeDataTableGroupHeaderRow1 td, table.rdAgDataTable tr.rdAgGroup1HeaderRow td, .rdThemeDataTableGroupHeaderRow2 td, table.rdAgDataTable tr.rdAgGroup2HeaderRow td, .rdThemeDataTableGroupHeaderRow3 td, table.rdAgDataTable tr.rdAgGroup3HeaderRow td, .rdThemeDataTableGroupHeaderRow4 td, table.rdAgDataTable tr.rdAgGroup4HeaderRow td {
+  color: #454D59 /*TableGroupHeaderRowFontColor*/ ;
+  padding: 2px 10px 2px 10px;
+  font-weight: bold;
+}
+.rdThemeDataTableGroupHeaderRow0 td, table.rdAgDataTable tr.rdAgGroup0HeaderRow td {
+  background-color: #BDE2DE /*TableGroupHeaderRowBackgroundColor*/ ;
+}
+.rdThemeDataTableGroupHeaderRow1 td, table.rdAgDataTable tr.rdAgGroup1HeaderRow td {
+  background-color: #CCCCCC /*TableGroup1HeaderRowBackgroundColor*/ ;
+}
+.rdThemeDataTableGroupHeaderRow2 td, table.rdAgDataTable tr.rdAgGroup2HeaderRow td {
+  background-color: #D9D9D9 /*TableGroup2HeaderRowBackgroundColor*/ ;
+}
+.rdThemeDataTableGroupHeaderRow3 td, table.rdAgDataTable tr.rdAgGroup3HeaderRow td {
+  background-color: #EFEFEF /*TableGroup3HeaderRowBackgroundColor*/ ;
+}
+.rdThemeDataTableGroupHeaderRow4 td, table.rdAgDataTable tr.rdAgGroup4HeaderRow td {
+  background-color: #F3F3F3 /*TableGroup4HeaderRowBackgroundColor*/ ;
+}
+.rdThemeDataTableGroupSummaryRow td {
+  padding: 3px;
+}
+td.rdThemeDataTableMoreInfoRow {
+  color: #3FB0AC /*TableColumnHeaderFontColor*/ ;
+  background-color: #F3F3F3 /*TableColumnHeaderBackgroundColor*/;
+}
+.rdAgPickDistinct {
+    background-color: #FFFFFF /*ModalBackgroundColor*/;
+}
+#rdDataTableDiv-dtFilter .rdThemeDataTableCell {
+    background-color: transparent;
+}
+
+/* Analysis Grid */
+.rdAg, .rdAc, .rdDg, .rdOg, .rdCg, .rdAg table, .rdAc table, .rdDg table, .rdOg table, .rdCg table {
+  font-size: 100%;
+}
+.rdAgCaptionRow {
+  height: 12px;
+  background-image: none;
+  color: #363B42 /*PageFontColor*/ ;
+  font-size: 185%;
+}
+.rdAgCaptionRow TD {
+  background-color: #ECEDEE /*PageBackgroundColor*/ ;
+}
+.PreviewUnselected, #rowMenu table {
+  background: transparent;
+  border: none;
+  border-spacing: 0;
+  padding: 0;
+}
+#rowMenu .rdAgPanel > tbody > tr > td {
+  padding: 0;
+}
+#rowsAnalysisGrid {
+
+  /* bring in to make continuous menu */
+  margin-bottom: 12px;
+  border-collapse: collapse;
+  display: block; /* keep it from expanding to entire width */
+}
+.PreviewMenuBG, #rowsAnalysisGrid .rdAgContentRow, #rowsAnalysisGrid #rowMenu>table>table {
+  background-color: #DEDFE0 /*TabContainerBackground*/ ;
+}
+#rowsAnalysisGrid #rowMenu {
+
+  /* but not remaining row after buttons */
+  background-color: transparent;
+}
+#rowsAnalysisGrid .ThemeLinkButton:hover, #rowsAnalysisGrid .ThemeLinkButtonSmall:hover, #rowsAnalysisGrid span:hover.rdAgCommand {
+  background-color: #37393d /*ButtonBackgroundColor*/ ;
+}
+#colSpacerCalculatedMeasure, #colSpacerDimension, #colSpacerMeasure, #colSpacerQueryBuilder, #colSpacerCalc, #colSpacerLayout, #colSpacerLayout, #colSpacerSort, #colSpacerFilter, #colSpacerGroup, #colSpacerAggr, #colSpacerChart, #colSpacerCrosstab {
+  width: 0 !important;
+  display: inline;
+}
+#lblChartAdd {
+  display: none;
+}
+.rdAg #lblExport, .rdAg #lblExportCrosstab {
+  color: #473E4C /*TabContainerSelectedFont*/ ;
+}
+#colTableExportControls {
+  float: none !important;
+}
+
+/* AnalysisGrid: Main Menu */
+.rdAgUnselectedTab, .rdOgUnselectedTab, .rdAgSelectedTab, .rdOgSelectedTab {
+  background-image: none;
+  background: #3FB0AC /*TabContainerUnselectedBackground*/ ;
+  border: none;
+  padding: 5px;
+  text-decoration: none;
+  text-align: center;
+  color: #FFFFFF /*TabContainerUnselectedFont*/ ;
+  border-radius: 0px;
+}
+.rdAgSelectedTab span, .rdAgSelectedTab, .rdOgSelectedTab, .rdOgSelectedTab span {
+  background-color: #DEDFE0 /*TabContainerSelectedBackground*/ ;
+  color: #473E4C /*TabContainerSelectedFont*/ ;
+}
+.rdAgUnselectedTab td, .rdOgUnselectedTab td {
+  color: #FFFFFF /*TabContainerUnselectedFont*/ ;
+}
+.rdAgTabHeading a {
+  color: #FFFFFF /*TabContainerUnselectedFont*/ !important;
+}
+.rdAgUnselectedTab td, .rdAgSelectedTab td {
+  padding-bottom: 6px;
+  padding-top: 6px;
+}
+.rdAgSelectedTabOn {
+  background-color: #DEDFE0 /*TabContainerSelectedBackground*/ ;
+}
+.rdAgUnselectedTabOn {
+  background-color: #3FB0AC /*TabContainerUnselectedBackground*/ ;
+}
+.rdAgUnselectedTabOn:hover, .rdAgUnselectedTab:hover, .rdOgUnselectedTabOn:hover, .rdOgUnselectedTab:hover {
+  background-color: #37393d /*ButtonBackgroundColor*/ !important;
+  color: #FFFFFF /*TabContainerUnselectedFont*/ !important;
+}
+.PreviewSelectedFont, #rowQueryBuilder table, #rowPaging table, #rowCrosstab table, #rowAggr table, #rowGroup table, #rowFilter table, #rowSortOrder table, #rowLayout table, #rowCalc table {
+  color: #363B42 /*TabContainerFontColor*/ ;
+  border: none;
+  background-color: transparent;
+}
+#rowChart table {
+  color: #363B42 /*TabContainerFontColor*/;
+}
+.rdAgTabHeading {
+  font-size: 120%;
+  padding-left: 3px;
+}
+.rdAgCommandHightlight {
+  background: transparent;
+  color: #DEDFE0 /*TabContainerSelectedBackground*/ !important;
+  border-bottom: 4px solid;
+  border-color: #DEDFE0 /*TabContainerSelectedBackground*/ ;
+}
+#rowsAnalysisGrid span:hover.rdAgCommandHightlight {
+  background: transparent;
+}
+#rowsAnalysisGrid a {
+  color: #363B42 /*TabContainerFontColor*/ ;
+  text-decoration: none;
+}
+#rowsAnalysisGrid a:hover {
+  color: #363B42 /*TabContainerFontColor*/ ;
+  text-decoration: none;
+}
+.rdAgPanel, .rdOgPanel, .rdDgPanel {
+  background-color: #FFFFFF /*ModalBackgroundColor*/ ;
+  color: #363B42 /*ModalFontColor*/ ;
+  vertical-align: top;
+  padding: 12px;
+  border-collapse: separate;
+}
+.rdDgPanel {
+  border-radius: 0px;
+}
+#rdDivAgPanels .rdAgPanel {
+  -webkit-box-shadow: 0 1px 2px 0px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 0 1px 2px 0px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 1px 2px 0px rgba(0, 0, 0, 0.2);
+  border-radius: 0px;
+}
+.rdAgPanel .rdAgUnselectedTab, .rdAgPanel .rdAgSelectedTab, .rdOgPanel .rdOgUnselectedTab, .rdOgPanel .rdOgSelectedTab {
+  padding-top: 6px;      /* but not for menu */
+}
+.rdAgPanel td td, .rdOgPanel td td {
+  padding: 3px;  /* add extra padding since buttons are squished otherwise */
+}
+.rdAgPanel td td#col2Row3Calc {
+  padding: 0px;
+}
+.rdAgContentHeadingRow, .rdOgContentHeading {
+  background-color: transparent;
+  color: #363B42 /*ModalFontColor*/ ;
+}
+.rdAgContentHeading, .rdOgContentHeading {
+  font-size: 180%;
+}
+.rdAgContentHeadingItem .rdAgContentHeading, .rdAgContentHeadingItem td.rdAgPanelHeading {
+  color: #363B42 /*ModalFontColor*/ ;
+  padding-top: 0;
+  vertical-align: middle;
+}
+tr.rdAgContentRow tr.rdAgContentHeadingItem td table.rdAgContentHeadingRow td {
+  padding-top: 0px !important;
+  padding-left: 1px !important;
+  vertical-align: middle;
+}
+.rdAgInstruct {
+}
+.rdAgError, .rdOgError {
+  color: #B84026 /*ErrorBackground*/ ;
+}
+.rdAgMessage {
+  color: #363B42 /*ModalFontColor*/ ;
+  font-weight: bold;
+  padding-left: 12px;
+}
+
+/* Analysis Grid Data Table */
+table.rdAgDataTable td {
+  padding: 5px 10px;
+  background-color: #FFFFFF /*TableDataBackgroundColor*/;
+}
+.rdAgCrossTabDataTable, th.rdAgDataTable td, table.rdAgDataTable th, table.rdAgDataTable > th a, table.rdOgOlapTable th, tr.rdAgHeaderRow th, table.rdDgPanel th, rdAgQbColor1 {
+  background-image: none;
+  background-color: #F3F3F3 /*TableColumnHeaderBackgroundColor*/ !important;
+
+  color: #3FB0AC /*TableColumnHeaderFontColor*/ !important;
+  font-size: 100%;
+  font-weight: bold;
+}
+table.rdAgDataTable > th span, th.rdAgDataTable > a  {
+  color: #3FB0AC /*TableColumnHeaderFontColor*/ !important;
+}
+tr.rdAgHeaderRow td {
+  background-image: none;
+  background-color: #F3F3F3 /*TableColumnHeaderBackgroundColor*/ ;
+  color: #3FB0AC /*TableColumnHeaderFontColor*/ ;
+  font-weight: bold;
+  font-size: 100%;
+}
+table#dtAnalysisGrid {
+  color: #454D59 /*TableDataFontColor*/ ;
+}
+.rdAg .rdThemeDataTableHeader td {
+  background-color: #F3F3F3 /*TableColumnHeaderBackgroundColor*/ !important;
+  color: #3FB0AC /*TableColumnHeaderFontColor*/ ;
+}
+
+/* Super-element Buttons */
+.rdAgCommand, .rdOgCommand, .rdAcCommand, span.rdCgCommand, .rdDashboardCommand {
+  font-size: 110%;
+  margin-right: 4px;
+  padding: 3px 8px 5px;
+  vertical-align: baseline;
+}
+
+/* AG Edit Gear and new Sub menu */
+.rdAgEditOff {
+  background-color: none;
+  width: 24px;
+  height: 22px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.rdAgEditOff:Hover {
+  width: 24px;
+  height: 22px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.rdAgEditOn {
+  width: 24px;
+  height: 22px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.rdAgEditOn:Hover {
+  width: 24px;
+  height: 22px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.rdAcContentRow {
+  border: 0px solid;
+  border-color: #E0E0E0 /*ModalBorderColor*/ ;
+  background-color: transparent;
+}
+.rdAcBackground {
+  background-color: #FFFFFF /*ModalBackgroundColor*/ ;
+}
+.rdAcCommandIdle, .rdAcCommandLeft, .rdAcCommandMiddle, .rdAcCommandRight, .rdAgCommandIdle, .rdAgCommandLeft, .rdAgCommandMiddle, .rdAgCommandRight {
+  color: #363B42 /*TabContainerFontColor*/ !important;
+  cursor: pointer;
+  text-decoration: none;
+  vertical-align: baseline;
+  white-space: nowrap;
+  font-size: 120%;
+  border-bottom: 4px solid;
+  border-color: #e1e1e1;
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  padding: 3px;
+  margin: 1px;
+  border-radius: 0;
+  background: none;
+}
+.rdAcCommandHighlight, .rdAgCommandHighlight {
+  border-radius: 0;
+  color: #363B42 /*TabContainerFontColor*/ !important;
+  cursor: pointer;
+  text-decoration: none;
+  vertical-align: baseline;
+  white-space: nowrap;
+  font-size: 120%;
+  border-bottom: 4px solid;
+  border-color: #3FB0AC /*ButtonHoverBackgroundColor*/ ;
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  background: none;
+  padding: 3px;
+  margin: 1px;
+}
+.rdRemoveTableStyle td, .rdAg .rdRemoveTableStyle td, .rdRemoveTableStyle th {
+  background-image: none;
+  background-color: transparent;
+  height: 6px;
+  border: none;
+  border-collapse: collapse;
+}
+
+/* Query Builder */
+.rdQueryColumn {
+  display: block;
+  padding: 6px 12px;
+  margin: 6px 0;
+  background: #FFFFFF /*ModalBackgroundColor*/ ;
+  -webkit-box-shadow: 0 1px 2px 0px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 0 1px 2px 0px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 1px 2px 0px rgba(0, 0, 0, 0.2);
+  border-radius: 0px;
+}
+.rdQueryColumn td td {
+
+  /* Multi-column list of columns */
+  padding: 6px 12px !important;
+  line-height: 1.5;
+}
+#lblMetadataCaption, #lblStartTableCaption, #lblJoinTableCaption {
+  font-size: 120%;
+}
+.rdQueryRow .rdThemeInput {
+  font-size: 120%;
+  min-width: 180px;
+}
+#colMetadata {
+  background: transparent;
+  box-shadow: none;
+  border: none;
+  padding: 0 12px 6px;
+}
+#rowNoColumnsContainer .rdQueryColumn {
+  display: inline-block;
+  margin: 12px;
+}
+
+/* QB dropdowns */
+.rdQueryColumn select {
+}
+
+/* QB dropdowns and AG table headers */
+select.rdAgQbColor1, table.rdAgDataTable th.rdAgQbColor1 {
+  border-top: 4px solid #2f7ed8 !important;
+}
+
+select.rdAgQbColor2, table.rdAgDataTable th.rdAgQbColor2 {
+  border-top: 4px solid #c42525 !important;
+}
+select.rdAgQbColor3, table.rdAgDataTable th.rdAgQbColor3 {
+  border-top: 4px solid #8bbc21 !important;
+}
+select.rdAgQbColor4, table.rdAgDataTable th.rdAgQbColor4 {
+  border-top: 4px solid #910000 !important;
+}
+select.rdAgQbColor5, table.rdAgDataTable th.rdAgQbColor5 {
+  border-top: 4px solid #1aadce !important;
+}
+select.rdAgQbColor6, table.rdAgDataTable th.rdAgQbColor6 {
+  border-top: 4px solid #492970 !important;
+}
+
+/* Non-AG table headers */
+.rdDashboard table.rdAgDataTable th.rdAgQbColor1, .rdDashboard table.rdAgDataTable th.rdAgQbColor2, .rdDashboard table.rdAgDataTable th.rdAgQbColor3, .rdDashboard table.rdAgDataTable th.rdAgQbColor4, .rdDashboard table.rdAgDataTable th.rdAgQbColor5, .rdDashboard table.rdAgDataTable th.rdAgQbColor6, #rdReportAuthor table.rdAgDataTable th.rdAgQbColor1, #rdReportAuthor table.rdAgDataTable th.rdAgQbColor2, #rdReportAuthor table.rdAgDataTable th.rdAgQbColor3, #rdReportAuthor table.rdAgDataTable th.rdAgQbColor4, #rdReportAuthor table.rdAgDataTable th.rdAgQbColor5, #rdReportAuthor table.rdAgDataTable th.rdAgQbColor6 {
+  border-top: none;
+}
+
+/*SubDataTable*/
+
+/*BEN-Make sub data tables get updated the same as regular data tables*/
+.rdThemeSubDataTable {
+  background-color: #FFFFFF /*ModalBackgroundColor*/ ;  /* This is used as the border for the subtable */
+  margin-top: 6px;
+  margin-bottom: 6px;
+}
+table.rdThemeSubDataTable th, .rdThemeSubDataTable th {
+  color: #454D59 /*TableGroupHeaderRowFontColor*/ ;
+  background-color: #BDE2DE /*TableGroupHeaderRowBackgroundColor*/ ;
+  padding: 1px 3px;
+}
+.rdThemeSubDataTableGroupHeaderRow td {
+  color: #454D59 /*TableGroupHeaderRowFontColor*/ ;
+  background-color: #BDE2DE /*TableGroupHeaderRowBackgroundColor*/ ;
+  padding-left: 3px;
+}
+.rdThemeSubDataTableDataTableCell {
+  color: #454D59 /*TableDataFontColor*/ ;
+}
+.rdThemeSubDataTableMoreInfoRow {
+  background-color: #FFFFFF /*ModalBackgroundColor*/ ;
+  color: #363B42 /*ModalFontColor*/ ;
+  padding-left: 3px;
+}
+.rdThemeSubDataTableGroupSummaryRow td {
+  color: #454D59 /*TableGroupHeaderRowFontColor*/ ;
+  background-color: #BDE2DE /*TableGroupHeaderRowBackgroundColor*/ ;
+  padding-left: 3px;
+}
+.rdThemeSubDataTableSummaryRow td {
+  background-color: #F3F3F3 /*TableColumnHeaderBackgroundColor*/ ;
+  color: #3FB0AC /*TableColumnHeaderFontColor*/ ;
+  padding-left: 3px;
+}
+.rdAg a:link {
+  color: #3FB0AC /*TableColumnHeaderFontColor*/ ;
+}
+
+/* User Input Controls */
+.rdThemeInputCaption {
+  padding-right: 6px;
+  vertical-align: middle;
+}
+input, input.rdThemeInput, textarea, textarea.rdThemeInput, select.rdThemeInput, select.rdDataCalendarDropdown {
+  font-size: 100%;
+  font-family: Segoe UI /*MainFont*/, 'Avenir Next', 'Avenir', 'Helvetica Neue', 'Helvetica', 'Arial', 'sans-serif';
+  background-color: #FFFFFF /*InputBoxBackground*/ ;
+  color: #454D59 /*InputBoxFontColor*/ ;
+  border: 1px solid;
+  border-color: #B7B7B7 /*InputBoxBorderColor*/ ;
+  padding: 3px;
+  margin: 3px;
+  border-radius: 5px;
+  box-shadow: inset 0px 1px 6px rgba(0,0,0,0.1);
+}
+.rd-checkboxlist-dropdown {
+  color: #454D59 /*InputBoxFontColor*/ ;
+  background-color: #FFFFFF /*InputBoxBackground*/ ;
+  border: 1px solid;
+  border-color: #B7B7B7 /*InputBoxBorderColor*/ ;
+  border-radius: 5px;
+  box-shadow: inset 0px 1px 6px rgba(0,0,0,0.1);
+}
+.rdAgContentRow input.rdThemeInput, #rowsAxControls input.rdThemeInput, #cellAcControls input.rdThemeInput {
+  min-width: 120px;
+}
+.rdAgContentRow select.rdThemeInput, #rowsAxControls select.rdThemeInput, #cellAcControls select.rdThemeInput {
+  min-width: 152px;
+}
+input#upldFile {
+  background-color: transparent;
+  border: none;
+}
+
+/* Input checkbox */
+input[type="checkbox"] {
+  margin: 1px;
+  margin-top: 5px;
+  border-radius: 5px;
+/* Input radio buttons */
+}input[type="radio"]{
+  margin: 1px;
+  margin-top: 5px;
+  border-radius: 5px;
+}
+
+.rd-checkboxlist-popup {
+  border: 1px solid;
+  color: #454D59 /*InputBoxFontColor*/ ;
+  border-color: #B7B7B7 /*InputBoxBorderColor*/ ;
+  background-color: #FFFFFF /*InputBoxBackground*/ ;
+  padding: 3px;
+}
+.rd-checkboxlist ul li span {
+  color: #454D59 /*InputBoxFontColor*/;
+}
+.yui3-skin-sam .yui3-aclist-content {
+  background: #FFFFFF /*InputBoxBackground*/ !important;
+  border: 1px solid;
+  border-color: #B7B7B7 /*InputBoxBorderColor*/ !important;
+}
+
+/* Paging */
+.rdThemePaging {
+  vertical-align: middle;
+}
+table.rdThemePaging {
+  margin: 6px 0;
+}
+.rdAg .rdThemePaging {
+  background-color: #FFFFFF /*ModalBackgroundColor*/ ;
+}
+.rdThemePaging a {
+  font-size: 100%;
+  color: #3FB0AC /*LinkColor*/ !important;
+}
+.rdThemePagingCurrent {
+  background-color: #37393d /*ButtonBackgroundColor*/ ;
+  color: #FFFFFF /*ButtonFontColor*/ ;
+  padding: 1px 3px;
+  text-align: center;
+  font-size: 120%;
+}
+input.rdThemePagingCurrent {
+  background-color: #FFFFFF /*ModalBackgroundColor*/ ;
+  color: #19706D /*LinkHoverColor*/ ;
+  padding: 1px;
+}
+
+/* Quicktip */
+.highcharts-tooltip .rdquicktip-table {
+  font-family: Segoe UI /*MainFont*/, 'Avenir Next', 'Avenir', 'Helvetica Neue', 'Helvetica', 'Arial', 'sans-serif';
+  background-color: #182639 /*QuicktipBackgroundColor*/ !important;
+  color: #ffffff /*QuicktipFontColor*/ !important;
+}
+.rdquicktip-content, .rdCcTextNormal, .rdCcTextNormal table, .rdCcTextNormal td, .rdCcTextNormal span {
+  background-color: #182639 /*QuicktipBackgroundColor*/ !important;
+  border-color: #363b42 /*QuicktipBorderColor*/ ;
+  color: #ffffff /*QuicktipFontColor*/ ;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=90)";
+  filter: alpha(opacity=95);
+  opacity: 0.99;
+  border-radius: 0;
+  font-weight: bold;
+  font-size: 100%;
+  padding: 1px 2px 2px;
+}
+.rdquicktip-content .rdquicktip-table {
+  color: #ffffff /*QuicktipFontColor*/ ;
+}
+.quicktip-pointer {
+  border-color: #363b42 /*QuicktipBorderColor*/ transparent;
+}
+.quicktip-pointer-inner {
+  border-color: #363b42 /*QuicktipBorderColor*/ transparent;
+}
+.rdquicktip-content .header {
+  background-color: #182639 /*QuicktipBackgroundColor*/ ;
+  font-size: 120%;
+}
+
+/* CrosstabComparison */
+.rdCcTextNormal {
+}
+.rdCcTextNormal .rdPopupContent span {
+  color: #ffffff /*QuicktipFontColor*/ ;
+}
+.rdCcTextPositive, .rdCcTextNormal .rdPopupContent .rdCcTextPositive span {
+  color: #85B74D /*TextPositiveFont*/ ;
+}
+.rdCcTextNegative, .rdCcTextNormal .rdPopupContent .rdCcTextNegative span {
+  color: #B84026 /*TextNegativeFont*/ ;
+}
+.rdCcTextNormal .rdPopupContent {
+  font-size: 90%;
+}
+
+/* Dimension / OLAP / Chart Grid */
+.rdAgPanel, .rdOgPanel, .rdDgPanel {
+    border: 1px solid;
+    border-color: #E0E0E0 /*ModalBorderColor*/;
+    border-radius: 0px;
+}
+.rdDgCaptionRow, .rdDgCaptionRow td {
+  background-color: #ECEDEE /*PageBackgroundColor*/ ;
+  color: #363B42 /*PageFontColor*/ ;
+  background-image: none;
+}
+.rdDgCaptionRow {
+  font-size: 185%;
+}
+#lblOgTitle, #lblOgDrillthroughTitle {
+    font-size: 133%;
+    font-weight: bold;
+    padding: 0px;
+}
+.rdCgPanel {
+  background-color: #FFFFFF /*ModalBackgroundColor*/ ;
+  border: none;
+}
+.rdCgFilterTable td, .rdDg #popupFilter td, .rdDg #popupFilter a {
+  background-color: #FFFFFF /*ModalBackgroundColor*/ !important;
+  color: #363B42 /*ModalFontColor*/ ;
+}
+td.rdDgPanel table, .rdDgContentHeadingRow, td.rdCgPanel table, .rdCgContentHeadingRow {
+  color: #363B42 /*ModalFontColor*/;
+  background-color: #FFFFFF /*ModalBackgroundColor*/;
+}
+.rdDg A:link, .rdOg a:link, #dtFilter a {
+  color: #3FB0AC /*LinkColor*/;
+}
+.rdCg IMG {
+  margin-bottom: -8px;
+  padding-left: 6px;
+}
+.rdCgPanel > table > tbody > tr > td {
+  padding: 6px;
+}
+td.rdDgPanel .rdThemeDataTableCell, td.rdCgPanel .rdThemeDataTableCell {
+  background-color: #FFFFFF /*ModalBackgroundColor*/ !important;
+}
+.rdOgDataCell, .rdCgDataCell {
+  padding: 5px 10px;
+  color: #454D59 /*TableDataFontColor*/ ;
+  background-color: #FFFFFF /*TableDataBackgroundColor*/ ;
+  white-space: nowrap;
+}
+.rdOgPanel table.rdOgOlapTable tr:last-child td, .rdOgPanel table.rdOgOlapTable tr:last-child th, .rdDgPanel table.rdDgOlapTable tr:last-child td, .rdDgPanel table.rdDgOlapTable tr:last-child th {
+  border-bottom: none;
+}
+.rdOgPanel table.rdOgOlapTable td:last-child, .rdDgPanel table.rdDgOlapTable td:last-child {
+  border-right: none;
+}
+.rdOgPositionCellXAxis {
+  border-right: 0 solid #CCCCCC !important;
+}
+#rowDimension #mclDimensions, #rowMeasure #mclMeasures, #rowFilter #mclFilters, .rdOg #rowFilter {
+  background-color: #DEDFE0 /*TabContainerBackground*/;
+}
+td.rdDgPanelLine, .rdDgPanelLine td, .rdDgPanelLine a:link, td.rdCgPanelLine, .rdCgPanelLine td, .rdCgPanelLine a:link {
+  background-color: #FFFFFF /*ModalBackgroundColor*/ ;
+  font-size: 100%;
+  border: none;
+}
+.rdDgPanelLine .rdDgSelected a:link
+.rdCgPanelLine .rdCgSelected a:link {
+  color: #363B42 /*TabContainerFontColor*/ !important;
+}
+.rdDgPanelLine .rdDgSelected, .rdCgPanelLine .rdCgSelected, .rdCgPanelLine .rdCgSelected span {
+  background-color: #3FB0AC /*SideHoverBackground*/ !important;
+  color: #FFFFFF /*SideFont*/ !important;
+}
+th.rdOgPositionCellXAxis, td.rdOgPositionCellXAxis, td.rdOgPositionCellXAxis td, th.rdOgPositionCellYAxis, th.rdOgSortColumn, th.rdCgPositionCellXAxis, td.rdCgPositionCellXAxis, td.rdCgPositionCellXAxis td, th.rdCgPositionCellYAxis {
+  color: #3FB0AC /*TableColumnHeaderFontColor*/ ;
+  background-color: #F3F3F3 /*TableColumnHeaderBackgroundColor*/ ;
+  padding: 3px;
+}
+th.rdOgPositionCellXAxis, td.rdOgPositionCellXAxis, th.rdCgPositionCellXAxis, td.rdCgPositionCellXAxis {
+  padding: 3px;
+  white-space: nowrap;
+}
+td .rdDgPanelLine, td .rdDgPanelLine table {
+  background-color: #FFFFFF /*ModalBackgroundColor*/ !important;
+}
+#rowExport #lblExport {
+  color: #363B42;
+}
+.rdOgContentHeading {
+  color: #454D59 /*TableGroupHeaderRowFontColor*/ ;
+}
+.rdDgContentHeading, .rdCgContentHeading, .rdOgContentHeading {
+  color: #363B42 /*ModalTitleFontColor*/;
+  font-size: 180%;
+  vertical-align: bottom;
+}
+#lblOgDrillthroughTitle {
+  padding: 12px 6px;
+  color: #363B42 /*ModalTitleFontColor*/;
+}
+#divAxes .rdOgContentHeading #lblExport {
+  background-color: #ecedee !important;
+}
+#divExport #lblExport {
+  background-color: #454d59 !important;
+}
+.rdOgSortColumn span {
+  color: #3FB0AC /*TableColumnHeaderFontColor*/ ;
+}
+.rdCg #lblColumnTitle, .rdCg #lblRowTitle {
+  color: #363b42 !important;
+}
+.rdOgOlapTable {
+  border:none;
+}
+/*Row Selection Style for DG*/
+.rdOgOlapTable tr:hover td, .rdDgOlapTable tr:hover td {
+  background-color: #3FB0AC /*SideHoverBackground*/ !important;
+  color: #FFFFFF /*SideFont*/ !important;
+}
+.rdOgOlapTable tr:hover .rdOgPositionCellXAxis td {
+  background-color: #F3F3F3 /*TableColumnHeaderBackgroundColor*/!important;
+}
+.rdDgOlapTable tr:hover .rdOgPositionCellXAxis td {
+  background-color: #F3F3F3 /*TableColumnHeaderBackgroundColor*/ !important;
+}
+#otFilterTable input[type='checkbox'] {
+  margin: 1px 2px 0;
+  vertical-align: bottom;
+}
+#otFilterTable .rdOgPositionLabelYAxis {
+  vertical-align: sub;
+}
+.rdOgPositionLabelYAxis {
+  color: #3FB0AC  ;
+  background-color: #F3F3F3  ;
+}
+
+/* Tabs */
+#rdTabs {
+  background: transparent;
+}
+.yui-navset {
+  font-size: 100%;
+}
+.yui-navset .yui-nav .selected a, .yui-navset .yui-nav a {
+  font-size: 150%;
+  background-color: transparent !important;
+  background-image: none !important;
+  color: #454d59;
+  text-decoration: none;
+  border: none !important;
+}
+.yui-navset .yui-content {
+  border: none !important;
+}
+.yui-navset .yui-nav li {
+  background-color: #3FB0AC /*InactiveTabBackground*/ ;
+  padding: 6px 18px;
+  border-radius: 0px;
+}
+.yui-navset .yui-nav li.selected, .yui-navset .yui-nav li.selected:hover {
+  background-color: #E1E1E1 /*ActiveTabBackground*/ ;
+  border-radius: 2px 2px 0 0;
+  border-color: #DEDFE0 /*TabContainerSelectedBackground*/ ;
+}
+.yui-navset .yui-nav li a {
+  color: #FFFFFF /*InactiveTabFontColor*/ ;
+}
+.yui-navset .yui-nav li.selected a {
+  color: #473E4C /*ActiveTabFontColor*/ !important;
+  -webkit-transition: color 0.20s ease-in-out 0s;
+  -moz-transition: color 0.20s ease-in-out 0s;
+  transition: color 0.20s ease-in-out 0s;
+}
+.yui-navset .yui-nav li:hover {
+  background-color: #37393d /*InactiveHoverTabBackground*/ ;
+}
+.yui-navset div.yui-content {
+  background-color: #E1E1E1 /*ActiveTabBackground*/ !important;
+  overflow: none;
+}
+.yui-navset li em {
+  padding: 0 !important;
+}
+#rdTabs .selected.yui3-dd-drop a {
+  padding-right: 3px;
+}
+#rdTabs .selected.yui3-dd-drop a em {
+  font-weight: bold;
+}
+
+/* dashboard */
+table.rdDashboard {
+  left: 0;
+  right: 0;
+}
+td.rdDashboard {
+  background-color: #E1E1E1 /*ActiveTabBackground*/ ;
+}
+#rdDashboardPanelTable, #rdDivDashboardPanelTable, .rdDashboardDropZone {
+  background-color: #E1E1E1 /*ActiveTabBackground*/ ;
+}
+td.rdDashboardDropZoneActive, .rdAgDropZoneActive {
+  background-image: none;
+  background-color: #E2CE5D;
+}
+.rdDashboardPanel, .rdDashboardPanel > table {
+  background-color: #FFFFFF /*ModalBackgroundColor*/ ;
+  border-radius: 0px;
+}
+.rdDashboardPanel {
+  padding: 0px;
+  -webkit-box-shadow: 0 1px 5px 0px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 0 1px 5px 0px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 1px 5px 0px rgba(0, 0, 0, 0.5);
+  border-radius: 5px;
+}
+.rd-report-author-element {
+  padding: 0px;
+}
+.rdDashboardFilterPanel {
+    background-color: #3FB0AC /*SideHoverBackground*/;
+}
+
+.rdDashboardFilterPanel a{
+	color: #FFFFFF /*SideFont*/
+}
+
+
+#rdDashboardListTable {
+  margin: 0;
+}
+.rdDashboardTitle table {
+  background-image: none !important;
+  color: #363B42 /*ModalTitleFontColor*/ ;
+  padding: 0;
+}
+.rdDashboardTitle .rdDashboardCommand {
+}
+td.rdDashboardTitle {
+  background-image: none !important;
+  background-color: #FFFFFF /*ModalBackgroundColor*/ ;
+  padding: 0;
+}
+.rdDashboardText.panelTitleRename {
+  margin: 12px;
+}
+.rdDashboardColumn .rdDashboardTitleCaption, #rdDivDashboardPanelTable .rdDashboardTitleCaption {
+  color: #363B42 /*ModalTitleFontColor*/ ;
+}
+.rdDashboardTitleCaption {
+  font-size: 150%;
+}
+.rdDashboardTitle .rdDashboardControl {
+  padding: 5px;
+  vertical-align: top;
+}
+.panelInnerTable {
+  padding-left: 5px;
+}
+#rowChangeTab {
+  background-color: transparent;
+}
+#rowChangeTab .rdDashboardCommand {
+  background-color: transparent;
+}
+#rowsTabChange table, #rdDashboardListTable table {
+  background-color: transparent;
+}
+#rowsTabChange .rdDashboardTitle, #rowPanelList .rdDashboardTitle {
+  border: none;
+}
+#rdTabAddNewTab a {
+}
+#rdTabAddNewTab em {
+  padding-top: 0;
+  padding-right: 0;
+  padding-bottom: 6px;
+}
+.rdDashboardParams, td.rdDashboardParams, .rdDashboardParams table, tr.rdDashboardParams td  {
+  background-color: transparent;
+  color: #363B42 /*PageFontColor*/;
+}
+
+.rdDashboardText {
+  line-height: 1.25;
+}
+.rdDashboardPanel
+{
+    border-color: RGBA(134,202,195,0);
+}
+
+.rdDashboardPanelGlobalFiltered
+{
+    border-color: RGBA(134,202,195,.8);
+}
+/* Add Panels + Visual Gallery */
+.rdPopupPanelTitleCaption {
+  font-size: 150%;
+}
+.rdDashboardPanelDescription {
+  padding: 0 12px 24px 12px;
+}
+.rdDashboardPanelDescription .rdDashboardTitleCaption {
+  font-size: 120%;
+}
+.rdDashboardPanelDescription .rdDashboardPanelImage, .rdDashboardPanelDescription .rdDashboardTitleCaption, .rdDashboardPanelDescription .rdDashboardText {
+  margin-bottom: 12px;
+}
+.rdNewAnalysisText {
+  font-size: 120%;
+}
+.rdPopupContent a span.rdNewAnalysisLink {
+  color: #3FB0AC /*LinkColor*/ ;
+}
+.rdPopupContent a:hover span.rdNewAnalysisLink {
+  color: #19706D /*LinkHoverColor*/ ;
+  text-decoration: underline;
+}
+
+/*rdElement: DataList | rdElement: ListItem*/
+
+.ThemeULNone {
+  list-style-type: none;
+}
+
+.ThemeULDisc {
+  list-style-type: disc;
+}
+
+.ThemeULCircle {
+  list-style-type: circle;
+}
+
+.ThemeULSquare {
+  list-style-type: square;
+}
+
+.ThemeOLDecimal {
+  list-style-type: decimal;
+}
+
+.ThemeOLLowerAlpha {
+  list-style-type: lower-alpha;
+}
+
+.ThemeOLUpperAlpha {
+  list-style-type: upper-alpha;
+}
+
+.ThemeOLLowerRoman {
+  list-style-type: lower-roman;
+}
+
+.ThemeOLUpperRoman {
+  list-style-type: upper-roman;
+}
+
+/*End Element*/
+
+/* Report Layout */
+#rdReportAuthor {
+  -webkit-box-shadow: 0 1px 2px 0px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 0 1px 2px 0px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 1px 2px 0px rgba(0, 0, 0, 0.2);
+}
+#rdReportAuthor, #rdReportAuthor #rdDashboardPanelTable, #rdReportAuthor .rdDashboardDropZone {
+  background-color: #ffffff;
+}
+#rdReportAuthor #rdDivDashboardPanelTable {
+  background-color: #ffffff;
+  -webkit-box-shadow: 0 1px 2px 0px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 0 1px 2px 0px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 1px 2px 0px rgba(0, 0, 0, 0.2);
+}
+.rdDashboardPanelContainer {
+  background-color: transparent;
+}
+#rdReportAuthor .rdDashboardPanelContainer .rdDashboardPanel {
+  box-shadow: none;
+  border: 1px solid #f0f0f0;
+}
+#rdReportAuthor .rdDashboardPanelContainer .rdDashboardPanel:hover {
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2);
+}
+#rdReportAuthor .rdDashboardControl {
+  width: 1%;
+}
+
+/* Report Layout Toolbar */
+.rdReportLayoutToolbar {
+  border-collapse: collapse;
+}
+.rdReportLayoutToolbarItem {
+  padding: 12px 0;
+  border: 1px solid #42c7bd;
+}
+.rdReportLayoutToolbarItem:hover {
+  background-color: #abe4de;
+}
+.rdReportLayoutToolbarItem:active {
+  position: relative;
+  top: 1px;
+}
+.rdReportLayoutToolbarItemImage {
+  padding-right: 12px;
+}
+
+/* Popup Panel */
+.rdPopupPanel {
+  background-color: #FFFFFF /*ModalBackgroundColor*/ !important;
+  border-color: #E0E0E0 /*ModalBorderColor*/ ;
+  border-radius: 5px;
+  padding: 8px;
+  -webkit-box-shadow: 0 1px 2px 0px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 0 1px 2px 0px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 1px 2px 0px rgba(0, 0, 0, 0.2);
+}
+#PopupPanelContent {
+  padding: 5px;
+  margin: 0px !important;
+}
+#PopupPanelContent td.rdDashboardControl {
+  padding: 12px;  /* background-color: #e1e1e1;      /* add background for just bottom bar */
+}
+#PopupPanelContent .rdDashboard, #rowsSchedule, .sharePopup {
+
+  /* eliminate the gray container background */
+  background-color: #FFFFFF /*ModalBackgroundColor*/ ;
+}
+#PopupPanelContent a {
+  text-align: left;
+}
+#PopupPanelContent #colHours, #PopupPanelContent #colMinutes {
+  vertical-align: top;
+}
+.ModalPreviewFont, .rdPopupContent .rdThemeInputCaption, .rdPopupContent > td, .rdPopupContent < span, .rdPopupContent < a span {
+  color: #363B42 /*ModalFontColor*/ ;
+}
+.rdPopupPanelTitle, .rdPopupPanelTitle td, .rdPopupPanelTitle span {
+  background-color: #FFFFFF /*ModalBackgroundColor*/ !important;
+  background-image: none;
+}
+.ModalTitlePreview, .rdPopupPanelTitle, .rdPopupPanelTitle td, .rdPopupPanelTitle span {
+  color: #363B42 /*ModalTitleFontColor*/ !important;
+}
+.rdPopupPanelTitle {
+  padding-bottom: 6px;
+}
+.rdPopupPanelTitle .rdPopupPanelTitle {
+  padding-bottom: 0;
+}
+.rdPopupPanelTitle .rdPopupPanelCommand {
+  border: none !important;
+  border-radius: 5px;
+}
+.rdPopupPanelCommand {
+  font-size: 150%;
+  background: none;
+  text-decoration: none !important;
+  color: #363B42 /*ModalTitleFontColor*/ ;
+  border-color: transparent;
+  font-weight: bold;
+  padding: 0 3px;
+}
+.rdPopupPanelControl {
+  width: 1%;
+}
+.rdPopupPanel .rdDashboardPanel {
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+}
+input#txtEditBookmarkDescription {
+  margin: 18px 0 18px 3px;
+}
+#scriptUpdateCaption {
+  float: left;
+}
+.ppAddToDashboardPanel {
+  font-size: 100%;
+}
+
+/* PopupMenu */
+.yuimenu {
+  padding: 0 !important; /* 1px */
+  border-radius: 3px;
+  border: 1px solid;
+  border-color: #363B42 /*MenuBorderColor*/ !important;
+  -webkit-box-shadow: 0 1px 2px 0px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 0 1px 2px 0px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 1px 2px 0px rgba(0, 0, 0, 0.2);
+}
+.rdPreviewMenu, .yuimenu ul {
+  background: #3FB0AC /*MenuBackgroundColor*/ !important;
+  padding: 6px 0;
+}
+.yuimenu ul li {
+  background: #3FB0AC /*MenuBackgroundColor*/ !important;
+}
+.rdPopupMenu .yuimenuitemlabel {
+  font-size: 100%;
+}
+.rdPopupMenu A:visited, .rdPopupMenu A:link {
+  color: #363B42 /*MenuLinkColor*/ !important;
+}
+.yuimenubaritemlabel, .yuimenuitemlabel, .yuimenubaritem, .yuimenuitem {
+  font-size: 100%;
+  line-height: 2;
+}
+.yuimenubaritemlabel-selected, .yuimenuitemlabel-selected, .yuimenubaritem-selected, .yuimenuitem-selected {
+  background-color: #37393d /*MenuItemHoverBackgroundColor*/ ;
+  text-decoration: none;
+}
+.yuimenuitem-hassubmenu-selected > a span {
+  color: #FFFFFF /*MenuItemHoverColor*/ ;
+}
+.first-of-type {
+  background-color: #37393d /*MenuItemHoverBackgroundColor*/ ;
+  border: none;
+  display: block;
+  padding: 3px;
+  width: 100%;
+}
+.first-of-type li a:hover {
+  color: #FFFFFF /*MenuItemHoverColor*/ !important;
+  background-color: #37393d /*MenuItemHoverBackgroundColor*/ !important;
+  text-decoration: none;
+}
+.first-of-type:hover {
+  background-color: #37393d /*MenuItemHoverBackgroundColor*/ ;
+  text-decoration: none;
+}
+
+/* calendar */
+.rdDataCalendarFont, .rdDataCalendar, .rdDataCalendar table, .rdDataCalendarPopUp, .rdDataCalendarPopUp table, .rdTimePicker {
+  border-collapse: separate;
+}
+.rdPopupContent .rdTimePicker {
+  background-color: transparent;
+}
+table.rdDataCalendar {
+  background-color: transparent;
+  border-collapse: collapse;
+}
+.rdPopupContent table.rdDataCalendar {
+  background-color: transparent;
+  border-collapse: collapse;
+}
+.rdDataCalendarWeekdayCaption {
+  background-color: #FFFFFF /*WeekdayBackground*/ ;
+  color: #363B42 /*ModalFontColor*/ !important;
+  font-size: 120%;
+}
+.rdDataCalendarWeekdayCaption td {
+  color: #363B42 /*ModalFontColor*/ !important;
+}
+.rdDataCalendarDay, .rdTimePickerCell, .rdTimePickerAMPMCell {
+  background-color: transparent;
+  color: #363B42 /*ModalFontColor*/ ;
+}
+.rdPopupContent .rdDataCalendarDay, .rdPopupContent .rdTimePickerCell, .rdPopupContent .rdTimePickerAMPMCell, .rdPopupContent .rdDataCalendarDay span, .rdPopupContent .rdTimePickerCell span, .rdPopupContent .rdTimePickerAMPMCell span {
+  background-color: #FFFFFF /*ModalBackgroundColor*/ !important;
+  color: #363B42 /*ModalFontColor*/ !important;
+}
+.rdDataCalendarToday, .rdPopupContent .rdDataCalendarToday, .rdPopupContent .rdDataCalendarToday span {
+  background-color: #CCCCCC /*TodayBackgroundColor*/ !important;
+}
+.rdDataCalendarCaption, .rdDataCalendarDayCaption {
+  color: #363B42 /*ModalFontColor*/ !important;
+  font-size: 120%;
+}
+.rdDataCalendarDayOutsideMonth, .rdDataCalendarDayOutsideMonCellXAxisspan {
+  background-color: #ECEDEE /*OutsideMonthBackground*/ !important;
+  height: 24px; /*Issue 22365*/
+  ;
+}
+.rdDataCalendarDayOutsideMonth {
+  border: solid 1px;
+  border-color: #454D59 /*PickerBorderColor*/ ;
+}
+.rdPopupContent .rdDataCalendarDayOutsideMonth {
+  border: solid 1px;
+  border-color: #454D59 /*PickerBorderColor*/ ;
+}
+td.rdDataCalendarDay {
+  border: solid 1px;
+  border-color: #454D59 /*PickerBorderColor*/ ;
+}
+.rdPopupContent td.rdDataCalendarDay, .rdPopupContent .rdTimePickerInnerTables td {
+  border: solid 1px;
+  border-color: #454D59 /*PickerBorderColor*/ ;
+}
+.rdDataCalendarDayLabelHighlight, .rdTimePickerTableHeaderCaption, .rdDataCalendarCaption, .rdTimePickerLabelHighlight, .rdPopupContent .rdDataCalendarDayLabelHighlight span, .rdPopupContent .rdTimePickerLabelHighlight span {
+  background-color: #42C7BD /*CalendarSelectionColor*/ !important;
+}
+#Cal-2-CaptionCell.rdDataCalendarCaption, #Cal-3-CaptionCell.rdDataCalendarCaption {
+  line-height: 2.2;
+}
+
+/* WaitPage */
+.rdThemeWaitPanel {
+  background-color: #ECEDEE;
+  padding: 12px;
+  border-radius: 5px;
+}
+.rdThemeWaitCaption {
+  color: #000000;
+  font-size: 120%;
+}
+#rdWait span {
+  color: #000000 !important;
+}
+
+/* MultiColumnList */
+.ThemeContainer tr td span:hover {
+  background-color: #e0eefb;
+}
+.rdDataCalendar .rdDataCalendarDropdown {
+
+  /*Issue 22365*/
+  margin-bottom: 2px;
+  margin-top: 2px;
+}
+.rdDgSelectedNot a {
+  background-color: transparent !important;
+}
+#rdDataTableDiv-otFilterTable {
+  padding: 7px;
+}
+#rowsFilterDone #actFilterMember {
+  padding-left: 7px;
+}
+.rdPopupPanelTitle .rdPopupPanelTitleCaption {
+  padding-left: 0px;
+}
+.rd-settings-popup .rd-popup-content td {
+  padding-top: 0px !important;
+}
+.rdThemeWaitPanel .rdThemeWaitCaption {
+  color: #000000;
+}
+div[id^=LinkSettingPopup] .rd-popup-content #rdRows-3 tr td:first-child {
+  width: 100%;
+}
+div[id^=LinkSettingPopup] .rd-popup-content #rdRows-4 tr td {
+  width: 100%;
+}
+@media screen and (-ms-high-contrast:active), (-ms-high-contrast:none) {
+  div[id^=LinkSettingPopup] .rd-popup-content #rdRows-3 tr td:first-child {
+    width: 100%;
+  }
+  div[id^=LinkSettingPopup] .rd-popup-content #rdRows-4 tr td {
+    width: 100%;
+  }
+}
+.rdDgOlapTable tbody a {
+  display: inline-table;
+}
+.rdquicktip-content p {
+  color: #ffffff !important;
+}
+.rdThemeDataTableHeader > span {
+  color: #3FB0AC /*TableColumnHeaderFontColor*/ !important;
+}
+.rdAgContentHeadingRow td.rdAgAddDashboard {
+  float: none !important;
+}
+#divReportAuthorWorkContainer {
+  margin-left: 0px;
+}
+.rdAgControlsPosition {
+  padding-right: 40px;
+}
+.rdAgBackground {
+  background-color: #FFFFFF /*ModalBackgroundColor*/ ;
+  width: 100%;
+  white-space: nowrap;
+  border-radius: 0px;
+}
+#imgMinus, #rowTable #imgTableExport, #imgAddToDashboardDataTable, #imgTableEdit {
+  margin: 0 !important;
+}
+.rdOgCaptionRow, .rdOgCaptionRow td {
+  background: transparent !important;
+  color: #363B42 /*ModalTitleFontColor*/ !important;
+}
+#rowTable .rdOgContentHeadingRow span a, #rowTable .rdOgContentHeadingRow td, #rowChart .rdOgContentHeadingRow span a, #rowHeatmap .rdOgContentHeadingRow span a {
+  vertical-align: sub !important;
+}
+#rowDimension table, #rowMeasure table, #rowDimension .rdOgContentHeadingRow, #rowCalculatedMeasure table {
+  background-color: #DEDFE0 /*TabContainerBackground*/ ;
+  border: none;
+  color: #363B42 /*ModalTitleFontColor*/ ;
+}
+.rdOgContentHeadingRow, #rowTable .rdOgContentHeadingRow, #rowHeatmap .rdOgContentHeadingRow {
+  background-color: #FFFFFF /*ModalBackgroundColor*/ ;
+  border: none;
+  color: #363B42 /*ModalTitleFontColor*/ ;
+}
+.rdOg A:hover {
+    text-decoration: none;
+}
+#rowMenu .rdAgPanel IMG {
+  margin: 5px 0 2px;
+}
+#rowMenu .rdAgPanel table td:first-child, #rowMenu .rdOgPanel table td:first-child {
+  padding-left: 10px;
+}
+#rowMenu .rdAgPanel table td:last-child {
+  padding-right: 10px;
+}
+#rowMenu .rdAgTabHeading span {
+  padding-left: 0 !important;
+}
+#rowsAnalysisGrid {
+  padding-left: 1px;
+}
+.go-headers .go-box-container {
+  padding-left: 14px !important;
+}
+.yuimenuitemlabel {
+  padding: 2px 20px !important;
+  color: #000000 !important;
+}
+
+/* Master Report Top Frame*/
+.ThemeMasterReportTopFrame {
+  background-color: #172C42 /*HeaderBackground*/ ;
+  height: 40px;
+}
+.rd-gridsystem-scrollbar-wrap {
+  display: -webkit-flex;
+  display: inline;
+  -webkit-flex-direction: row;
+  flex-direction: row;
+}
+.ThemeMasterReportTopFrame .row.rd-gridsystem-scrollbar-wrap {
+    margin: 0;
+}
+.ThemeMasterReportTopFrame .rdResponsiveColumn {
+  align-self: center;
+}
+#FirstColumnResponsive {
+  width: auto;
+}
+#divLogo {
+  margin-right: 20px;
+}
+#LogoutColumn {
+  width: auto;
+  margin-left: auto;
+  float: right;
+}
+.ThemeMasterReportTopFrame img {
+  vertical-align: text-bottom;
+}
+.ThemeMasterReportTopFont, .ThemeMasterReportTopFrame a {
+  color: #FFFFFF /*HeaderFont*/ ;
+}
+.ThemeMasterReportTopFrame a:hover {
+  opacity: .9;
+  text-decoration: none;
+}
+
+/* Master Report Left Frame*/
+.ThemeMasterReportLeftFrame {
+  background-color: #2D9F9B /*SideBackground*/ ;
+  color: #FFFFFF /*SideFont*/ ;
+}
+.ThemeMasterReportLeftFrame a, .ThemeMasterReportLeftFrame span, .ThemeMasterReportLeftFrame #rdMenuTable {
+  width: 100%;
+  text-decoration: none;
+}
+#LeftFrame .ThemeLinkButtonSmall span, #LeftFrame .ThemeLinkButtonSmall {
+  background-color: transparent !important;
+  color: #FFFFFF /*SideFont*/ !important;
+}
+#LeftFrame .ThemeLinkButtonSmall:hover {
+  background-color: #3FB0AC /*SideHoverBackground*/ !important;
+  color: #FFFFFF /*SideFont*/ !important;
+}
+.ThemeMasterReportFooterFrame {
+  background-color: #FFFFFF /*FooterBackground*/ ;
+  color: #363B42 /*FooterFont*/ ;
+  height: 20px;
+  padding: 3px;
+}
+.rdTimePickerInnerTables {
+  padding: 0px !important;
+}
+
+/* NewMenuHoverEffect */
+#LeftFrame .ThemeMenuItemLink span, #LeftFrame .ThemeMenuItemLink {
+  background-color: transparent !important;
+  color: #FFFFFF /*SideFont*/ !important;
+}
+.ThemeMenuItemLink {
+  font-size: 12px;
+  line-height: 2.4;
+  margin-top: 3px !important;
+  padding: 3px 6px;
+  cursor: pointer;
+}
+.LaunchPanel, #LeftFrame .ThemeMenuItemLink:hover {
+  background-color: #3FB0AC /*SideHoverBackground*/ !important;
+  color: #FFFFFF /*SideFont*/ !important;
+}
+
+/* End NewMenuHoverEffect
+
+/*ThemeEditor*/
+.rdThemeEditorAccordion a {
+  text-decoration: none;
+}
+.rdThemeEditorAccordion {
+  background-color: #F9F9F9;
+  width: 100%;
+  text-decoration: none;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+.rdThemeEditorAccordion:hover {
+  background-color: #ffffff;
+  width: 100%;
+  text-decoration: none;
+}
+.rdThemeEditorAccordionSelected {
+  background-color: #F9F9F9;
+  width: 100%;
+  text-decoration: none;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-bottom: 4px solid;
+  border-color: #DEDFE0 /*TabContainerSelectedBackground*/ ;
+}
+.rdThemeEditorAccordionSelected a {
+  text-decoration: none;
+  cursor: default;
+}
+
+/*Theme Editor*/
+.rdPreviewBorder {
+  border: solid 4px #f5f5f5;
+  padding: 4px;
+  border-radius: 0px;
+}
+.rdPreviewColorBox {
+  height: 70px;
+  padding: 6px !important;
+}
+.rdPreviewDisable {
+  opacity: .2;
+  cursor: not-allowed;
+}
+#divPreview {
+  padding: 5px;
+}
+
+td.rdResizerColumn {
+    border: none;
+    padding: 0px;
+    margin: 0px;
+    cursor: ew-resize;
+    border-radius: 5px;
+    z-index: 9999;
+    min-width: 6px;
+}
+
+td.rdResizerColumn:hover {
+    background-color: silver;
+    border-left: 1px black;
+    border-right: 1px black;
+}
+
+td.rdResizerColumn:active {
+    background-color: gray;
+}
+
+/*FF fix for active splitter state*/
+@-moz-document url-prefix() {
+    td.rdResizerColumn.yui3-dd-dragging  {
+        background-color: gray;
+    }
+}
+
+td.rdInactiveResizerColumn {
+	border: none;
+    padding: 0px;
+    margin: 0px;
+    border-radius: 5px;
+    z-index: 9999;
+    min-width: 6px;
+}
+
+.ThemeSharingMessage a {
+  color: #3FB0AC /*LinkColor*/ ;
+  text-decoration: none;
+}
+
+.ThemeNewMessage {
+    font-weight: bold;
+    color: #4a4a4a;
+}
+
+.ThemeNewSharingMessage a {
+		font-weight: bold;
+    color: #1b989d /*LinkColor*/;
+    text-decoration: none;
+}
+
+.ThemeNewMessageIndicator {
+		font-weight: bold;
+		color: #e73b3b;
+}
+
+.ThemeMessageTime {
+		color: #898989;
+}
+
+.ThemeNewMessageTime {
+		font-weight: bold;
+		color: #898989;
+}

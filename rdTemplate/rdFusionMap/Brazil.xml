@@ -1,0 +1,29 @@
+<AnimatedMapDataXML>
+  <MapSpec InternalID="001" ShortName="AC" LongName="Acre" />
+  <MapSpec InternalID="002" ShortName="AL" LongName="Alagaos" />
+  <MapSpec InternalID="003" ShortName="AP" LongName="Amapa" />
+  <MapSpec InternalID="004" ShortName="AM" LongName="Amazonas" />
+  <MapSpec InternalID="005" ShortName="BA" LongName="Bahia" />
+  <MapSpec InternalID="006" ShortName="CE" LongName="Ceara" />
+  <MapSpec InternalID="007" ShortName="DF" LongName="Distrito    Federal" />
+  <MapSpec InternalID="008" ShortName="ES" LongName="Espirito    Santo" />
+  <MapSpec InternalID="009" ShortName="GO" LongName="Goias" />
+  <MapSpec InternalID="010" ShortName="MA" LongName="Maranhao" />
+  <MapSpec InternalID="011" ShortName="MT" LongName="Mato Grosso" />
+  <MapSpec InternalID="012" ShortName="MS" LongName="Mato Grosso do Sul" />
+  <MapSpec InternalID="013" ShortName="MG" LongName="Minas    Gerais" />
+  <MapSpec InternalID="014" ShortName="PA" LongName="Para" />
+  <MapSpec InternalID="015" ShortName="PB" LongName="Paraiba" />
+  <MapSpec InternalID="016" ShortName="PR" LongName="Parana" />
+  <MapSpec InternalID="017" ShortName="PE" LongName="Perambuco" />
+  <MapSpec InternalID="018" ShortName="PI" LongName="Piaui" />
+  <MapSpec InternalID="019" ShortName="RJ" LongName="Rio de Janeiro" />
+  <MapSpec InternalID="020" ShortName="RN" LongName="Rio Grande do Norte" />
+  <MapSpec InternalID="021" ShortName="RS" LongName="Rio Grande do Sul" />
+  <MapSpec InternalID="022" ShortName="RO" LongName="Rondonia" />
+  <MapSpec InternalID="023" ShortName="RR" LongName="Roraima" />
+  <MapSpec InternalID="024" ShortName="SC" LongName="Santa    Catarina" />
+  <MapSpec InternalID="025" ShortName="SP" LongName="Sao Paulo" />
+  <MapSpec InternalID="026" ShortName="SE" LongName="Sergipe" />
+  <MapSpec InternalID="027" ShortName="TO" LongName="Tocantins" />
+</AnimatedMapDataXML>

@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Report ID="rdDiagnostic">
+  <Body>
+    <Division ID="divOK">
+      <Label Caption="OK" ID="lblOK" />
+    </Division>
+    <Division ID="divTestrdDataCacherdDownload" ShowModes="None">
+      <DataTable ID="dtTestrdDataCache">
+        <DataLayer Type="Static" ID="dlSample">
+          <StaticDataRow Change="10" StockSymbol="LOGIX" />
+          <StaticDataRow Change="-20" StockSymbol="MSTR" />
+        </DataLayer>
+        <DataTableColumn ID="colSymbol" Header="Symbol">
+          <Label Caption="@Data.StockSymbol~" ID="lblSymbol" />
+        </DataTableColumn>
+        <DataTableColumn ID="colChange" Header="Price Change">
+          <CellColorSlider DataColumn="Change" ShowSlider="True" />
+          <Label Caption="@Data.Change~" ID="lblChange" />
+        </DataTableColumn>
+      </DataTable>
+    </Division>
+    <IncludeHtml Html="&lt;script language=&quot;javascript&quot;&gt;&#xD;&#xA;	document.getElementById('lblOK').style.color = 'green';&#xD;&#xA;&lt;/script&gt;" />
+  </Body>
+</Report>

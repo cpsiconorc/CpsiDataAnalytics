@@ -1,0 +1,24 @@
+<map borderColor='005879' fillColor='D7F4FF' numberSuffix=' Mill.' includeValueInLabels='1' labelSepChar=': ' baseFontSize='9' animation='1'>
+   <data>
+         <entity id='NA' value='515' />
+         <entity id='SA' value='373' />
+         <entity id='AS' value='3875' />
+         <entity id='EU' value='727' />
+         <entity id='AF' value='885' />
+         <entity id='AU' value='32' />
+      </data>   
+
+      <styles>
+   	<definition>
+      		<style name='MyFirstFontStyle' type='font' face='Verdana' size='11' color='0372AB' bold='1' bgColor='FFFFFF' />
+      		<style name='MyFirstAnimationStyle' type='animation' param='_xScale' start='0' duration='1' />
+      		<style name='MySecondAnimationStyle' type='animation' param='_yScale' start='0' duration='1' />
+      		<style name='MyFirstShadow' type='Shadow' />
+  	 </definition>
+   	<application>
+      		<apply toObject='Labels' styles='MyFirstFontStyle,MyFirstShadow' />
+      		<apply toObject='Plot' styles='MyFirstAnimationStyle,MySecondAnimationStyle' />
+   	</application> 
+      </styles>
+	  
+</map>

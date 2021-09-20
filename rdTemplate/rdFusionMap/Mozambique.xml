@@ -1,0 +1,13 @@
+<AnimatedMapDataXML>
+  <MapSpec InternalID="01" ShortName="CD" LongName="Cabo Delgado" />
+  <MapSpec InternalID="02" ShortName="GA" LongName="Gaza" />
+  <MapSpec InternalID="03" ShortName="IN" LongName="Inhambane" />
+  <MapSpec InternalID="04" ShortName="MP" LongName="Maputo" />
+  <MapSpec InternalID="05" ShortName="SO" LongName="Sofala" />
+  <MapSpec InternalID="06" ShortName="NA" LongName="Nampula" />
+  <MapSpec InternalID="07" ShortName="NI" LongName="Niassa" />
+  <MapSpec InternalID="08" ShortName="TE" LongName="Tete" />
+  <MapSpec InternalID="09" ShortName="ZM" LongName="Zambezia" />
+  <MapSpec InternalID="10" ShortName="MN" LongName="Manica" />
+  <MapSpec InternalID="11" ShortName="MT" LongName="Maputo(City)" />
+</AnimatedMapDataXML>

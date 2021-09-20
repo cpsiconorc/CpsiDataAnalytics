@@ -1,0 +1,11 @@
+<AnimatedMapDataXML>
+  <MapSpec InternalID="MU.BL" ShortName="BL" LongName="Black River" />
+  <MapSpec InternalID="MU.FL" ShortName="FL" LongName="Flacq" />
+  <MapSpec InternalID="MU.GP" ShortName="GP" LongName="Grand Port" />
+  <MapSpec InternalID="MU.MO" ShortName="MO" LongName="Moka" />
+  <MapSpec InternalID="MU.PA" ShortName="PA" LongName="Pamplemousses" />
+  <MapSpec InternalID="MU.PW" ShortName="PW" LongName="Plaines Wilhems" />
+  <MapSpec InternalID="MU.PL" ShortName="PL" LongName="Port Louis" />
+  <MapSpec InternalID="MU.RR" ShortName="RR" LongName="Riviere Du Rempart" />
+  <MapSpec InternalID="MU.SA" ShortName="SA" LongName="Savanne" />
+</AnimatedMapDataXML>
